@@ -1,0 +1,4746 @@
+Pauli — Theory of Relativity — Authoritative Graduate Reference (Relativity Cosmology, 264 pages). This authoritative work establishes foundational principles and rigorous derivations for lorentz covariance, minkowski spacetime, energy-momentum tensor, gravitational deflection of light, perihelion precession, unified field theories. Core physical concepts analyzed: lorentz covariance, minkowski spacetime, energy-momentum tensor, gravitational deflection of light, perihelion precession, unified field theories.
+
+[p.2] * [p.3] From the books of
+James John Klein
+May 18, 1932
+- August 15, 1991
+Professor of Physics,
+Mathematics and Astronomy [p.5] THEORY OF RELATIVITY [p.6] Digitized by the Internet Archive
+in 2015
+https://archive.org/details/theoryofrelativiOOpaul [p.7] THEORY OF RELATIVITY
+by
+W. PAULI
+Translated from
+the German by
+G. FIELD
+With Supplementary Notes by the Author
+PERGAMON
+PRESS
+NEW YORK
+• LONDON
+• PARIS
+• LOS ANGELES
+1958 [p.8] PERGAMON PRESS INC.
+122 East 55th Street , New York 22, N. Y.
+P.O. Box 47715 , Los Angeles , California.
+PERGAMON PRESS LTD.
+4 & 5 Fitzroy Square , London W.l.
+PERGAMON PRESS S.A.R.L.
+24 Rue des Ecoles , Pam F*
+Translated from the article " Relativitätstheorie" in Encyklopädie
+der
+mathematischen
+Wissenschaften ,
+Vol. VI 9,
+(B. G. Teubner,
+Leipzig
+1921).
+Sole authorized English translation of the original
+German edition by permission of the B. G. Teubner Publishing
+House,
+Stuttgart.
+Copyright
+/-
+©
+1958
+Pergamon Press Ltd.
+Library of Congress Card Number 58-7692
+PRINTED IN GREAT BRITAIN BY
+J. W. ARROWSMITH LTD., BRISTOL [p.9] PREFACE
+Thirty-five years ago this
+article on the theory of relativity, written
+by me at the rather young age of 21 years for the Mathematical Encyclo-
+pedia, was first published as a separate monograph together with a preface
+by Sommerfeld, who as the editor of this volume of the Encyclopedia was
+responsible for my authorship.
+It was the aim of the article to give a
+complete review of the whole literature on relativity theory existing at
+that time (1921). Meanwhile, the production of textbooks, reports and
+papers on the theory of relativity has grown into a flood, which rose anew
+at the 50th Anniversary of the first papers of Einstein on relativity, in
+the same year 1955 in which all physicists were mourning his death.
+In this situation any idea of completeness regarding the now existing
+literature in a revised new edition of the book had to be given up from the
+beginning. I decided therefore, in order to preserve the character of the
+book as an historical document, to reprint the old text in its original form,
+but to add a number of notes at the end of the book, which refer to
+certain passages of the text. These notes give to the reader selected information about the later developments connected with relativity theory
+and also my personal views upon some controversial questions.
+Especially in the last of these notes on unified field theories, I do not
+conceal to the reader my scepticism concerning all attempts of this kind
+which have been made until now, and also about the future chances of
+success of theories with such aims. These questions are closely connected
+with the problem of the range validity of the classical field concept in its
+application to the atomic features of Nature. The critical view, which I
+uttered in the last section of the original text with respect to any solution
+on these classical fines, has since been very much deepened by the epistemological analysis of quantum mechanics, or wave mechanics, which was
+formulated in 1927. On the other hand Einstein maintained the hope for
+a total solution on the fines of a classical field theory until the end of his
+fife. These differences of opinion are merging into the great open problem
+of the relation of relativity theory to quantum theory, which will presumably occupy physicists for a long while to come. In particular, a clear
+connection between the general theory of relativity and quantum mech-
+anics is not yet in sight.
+Just because I emphasize in the last of the notes a certain contrast
+between the views on problems beyond the original frame of special and
+general relativity held by Einstein himself on the one hand, and by most
+of the physicists, including myself, on the other, I wish to conclude this
+preface with some
+conciliatory remarks on the
+position
+of relativity
+theory in the development of physics.
+*
+There
+is a point of view according to which relativity theory
+is the
+end-point of "classical physics", which means physics in the
+style of
+Newton-Faraday-Maxwell,
+governed by the
+"deterministic"
+form
+of [p.10] VI
+Preface
+sß
+v
+.S'-
+causality in space and time, while afterwards the new quantum-mechanical
+style of the laws of Nature came into play. This point of view seems to me
+only partly true, and does not sufficiently do justice to the great influence
+of Einstein, the creator of the theory of relativity, on the general way of
+thinking of the physicists of today. By its epistemological analysis of the
+consequences of the finiteness of the velocity of light (and with it, of all
+signal-velocities) , the theory of special relativity was the first step away
+from naive
+visualization. The
+concept of the state of motion of the
+"luminiferous aether",
+as the hypothetical medium was
+called
+earlier,
+had to be given up, not only because it turned out to be unobservable,
+but because
+it became
+superfluous
+as an element
+of a
+mathematical
+formalism, the group-theoretical properties of which would only be disturbed by it.
+By the widening of the transformation group in general relativity the
+idea of distinguished inertial coordinate systems could also be eliminated
+by Einstein as inconsistent with the group -theoretical properties of the
+theory. Without
+this general
+critical attitude, which abandoned naive
+visualizations in favour of a conceptual analysis of the correspondence
+between observational data and the mathematical quantities in a theoretical formalism, the establishment of the modern form of quantum theory
+would not have been possible. In the "complementary" quantum theory,
+the epistemological analysis of the finiteness of the quantum of action led
+to further steps away from naive visualizations. In this case it was both
+the classical field concept, and the concept of orbits of particles (electrons)
+in space and time, which had to be given up in favour of rational general-
+izations. Again, these concepts were rejected, not only because the orbits
+are unobservable, but also be
+
+[p.15] PREFACE
+by A. Sommerfeld to the German special edition in book form
+In view of the apparently insatiable demand, especially in Germany, for
+accounts of the Theory of Relativity, both of a popular and of a highly
+specialized kind, I felt I ought to advise the publishers to arrange for a
+separate edition of the excellent
+article by Herr W.
+Pauli,
+jr., which
+appeared in the Encyldopädie der mathematischen Wissenschaften , Vol. V.
+Although Herr Pauli was
+still a student at the time, he was not only
+familiar with the most subtle arguments
+in the Theory of Relativity
+through his own research work, but was also fully conversant with the
+literature of the subject.
+In its whole lay-out, the article is made to fit into the framework of the
+Mathematical Encyclopedia. Certain references to earlier articles have had
+to be retained, of course, in this special edition and are hardly likely to
+trouble the reader. One of these, in particular,
+is H. A. Lorentz's article
+on Electron Theory, which presages in its final section the Theory of the
+Deformable Electron and thus itself represents a milestone in the develop-
+ment of the Theory of Relativity. In keeping with the general character
+of the Encyclopedia, the mathematical relationships are presented in a
+completely general and abstract way; especially Part II deals with the
+mathematical tools of the theory of invariants and multi-dimensional
+spaces. At the same time,
+in keeping with the aims of this particular
+volume of the Encyclopedia, which is devoted to physics, physical applica-
+tions are always kept to the fore and the possibility of confirmation by
+experiment
+is never lost sight
+of. In Part
+I,
+for instance, Ritz 's well-
+known counter-proposal to the Theory of Relativity is presented and is
+criticized in the light of experimental evidence with a thoroughness which
+is commensurate with the stature of its originator.
+In
+its
+comprehensive
+discussion
+of experimental
+data
+the
+present
+article
+differs from Weyl's great systematic treatment
+of Space-Time
+Theory. The latter naturally aims only at expressing Weyl's special point
+of view, which is in part opposed to that of Einstein
+; Weyl's theory and
+Mie's ideas, which it elaborates, are presented in a critical manner in the
+last Part. On the other hand, Pauli's article differs from Laue's textbook
+in that the proofs are not generally written out in
+full, but are only
+indicated
+in
+their main
+essentials.
+Whereas Laue's textbook has
+to
+restrict itself in many ways in its choice of material, the article aims at
+including all of the more valuable contributions to the theory which have
+appeared up to the end of 1920. Beyond this, the author's own opinions
+are to be found in many places throughout the article.
+It is to be hoped that this special edition will be welcomed as a useful
+addition to the existing literature on Relativity and that
+it
+will help
+physicists and mathematicians
+alike to gain a deeper understanding of
+the subject.
+Munich , 30 July 1921
+A. Sommerfeld.
+XI [p.17] BIBLIOGRAPHY f
+1. Fundamental papers
+E. Mach, Die Mechanik in ihrer Entwicklung historisch-kritisch dargestellt
+(Leipzig
+1 883).
+B. Riemann,
+Über
+die Hypothesen ,
+die
+der
+Geometrie zugrunde
+liegen
+.
+Newly edited and annotated by H. Weyl
+(Berlin
+1920)
+[reprinted
+from Nachr. Ges. Wiss. Göttingen , 13 (1868) 133].
+Lorentz-Einstein-Minkowski,
+Das
+Relativitätsprinzip. A
+collection
+of
+papers (Leipzig 1913, 3rd revised edn.,
+1920).
+H. Minkowski, Zwei Abhandlungen über die Grundgleichungen der Elektro-
+dynamik , (Leipzig 1910)
+[the first paper reprinted from Nachr. Ges.
+Wiss. Göttingen (1908) 53; the second from Math. Ann., 68, (1910)
+526].
+A. Einstein and M. Grossmann, Entwurf einer verallgemeinerten Relativi-
+tätstheorie und
+einer Theorie der Gravitation
+(Leipzig 1913) [reprinted
+from Z. Math. Phys., 63 (1914) 215].
+A.
+Einstein, Die Grundlagen der allgemeinen Relativitätstheorie
+(Leipzig
+1916) [reprinted from Ann. Phys., Lpz., 49 (1916) 769].
+2. Textbooks
+M. v. Laue, Das Relativitätsprinzip, (Leipzig 1911; 3rd edn., 1919, Vol.
+1,
+Das Relativitätsprinzip der Lorentz-Transformation
+; 4th edn.,
+1921).
+H. Weyl, Raum-Zeit-Materie. Lectures on the general theory of relativity
+(Berlin 1918; 3rd edn., 1920; 4th edn.,
+1921), (quoted from the 1st
+and 3rd
+edns.).
+A. S. Eddington, Space, Time and Gravitation, (Cambridge 1920).
+A. Kopff, Grundzüge der Einsteinschen Relativitätstheorie (Leipzig
+1921).
+E.
+Freundlich,
+Die
+Grundlagen
+der
+Einsteinschen
+Gravitationstheorie,
+(Berlin
+1916).
+A.
+Einstein,
+Über
+die
+spezielle
+und
+die
+allgemeine
+Relativitätstheorie
+(Braunschweig 1917) (for the general reader).
+M. Born, Die Relativitätstheorie Einsteins und ihre physikalischen Grund-
+lagen
+(Berlin
+1920)
+(for the general reader).
+3. Papers on specific topics.
+H. Poincare,
+six lectures given at Göttingen 22-28 April,
+1909;
+sixth
+lecture, La mecanique nouvelle, (Leipzig
+1910).
+P.
+Ehrenfest,
+Zur
+Krise
+der
+Lichtäther-Hypothese.
+Inaugural
+lecture
+delivered at Leyden (Berlin 1913).
+i
+H. A. Lorentz, Das Relativitätsprinzip. Three lectures given at the Teyler
+Foundation, Haarlem (Leipzig 1914).
+t See suppl. note
+1.
+xiii [p.18] xiv
+Bibliography
+A. Einstein, Äther und Relativätstheorie. Lecture given at Leyden on 5
+May 1920 (Berlin 1920).
+F.
+Klein,
+Gesammelte
+mathematische Abhandlungen ,
+Vol.
+1
+edited by
+R. Fricke and A. Ostrowski (Berlin 1921)
+(in particular the chapter
+'Zum Erlanger Programm
+[1872]').
+A. Brill, Das Relativitätsprinzip , (Leipzig 1912; 4th edn.,
+1920).
+E. Cohn, Physikalisches über Raum und Zeit
+, (Leipzig 1913).
+H. Witte, Raum und Zeit im Lichte der neueren Physik
+, (Braunschweig
+1914; 3rd edn.,
+1920).
+4. Papers of philosophical content
+M. Schlick, Raum und Zeit in der gegenwärtigen Physik , zur Einführung
+in das
+Verständnis
+der allgemeinen Relativitätstheorie
+(Berlin
+1917;
+3rd edn.,
+1920).
+H.
+Holst,
+Vort
+fysiske
+Verdensbillede
+og
+Einsteins
+Relativitetstheori
+(Copenhagen
+1920).
+H. Reichenbach, Relativitätstheorie und Erkenntnis a priori (Berlin 1920).
+E.
+
+[p.29] 5. Lorentz contraction. Time dilatation
+11
+The simple structure of formulae (I) makes one wonder whether they
+could not have been derived from general group-theoretical considerations,
+without having to assume the invariance of (2). To what extent this is in
+fact possible has been shown by Ignatowsky, and Frank and Rothe. 35 One
+need assume no more than the following conditions:
+(a)
+the
+transformations must form
+a
+one-parameter homogeneous
+linear group
+;
+(&)
+the velocity of K relative to K'
+is equal and opposite to that of
+K' relative to K
+;
+(c)
+the contraction of lengths at rest in K and observed in K is equal
+to that of lengths at rest in K and observed in K'.
+This already
+suffices
+to show that the transformation formulae must
+be of the form
+x - vt
+t - OLVX
+x' =
+,
+t' = - 
+-.
+(3)
+•\/(l - otv2
+)
+\/(l - av2
+)
+Nothing can, naturally, be said about the sign, magnitude and physical
+meaning of a. From the group -theoretical assumption it
+is only possible
+to derive the general form of the transformation formulae, but not their
+physical content. Incidentally, it is to be noted that (3) contains the transformation formulae of ordinary mechanics
+x
+f = x - vt ,
+t' =
+t }
+(4)
+which can be obtained by putting a = 0. Following P. Frank, these latter
+are now generally given the name "Galilean transformations." It is obvious
+that, by putting c =
+oo, they can equally well be derived from (1).
+5.
+Lorentz contraction and time dilatation
+The Lorentz contraction is the simplest consequence of the transformation formulae (1), and thus also of the two basic assumptions. Take a rod
+lying along the #-axis, at rest in reference system K'. The position coordinates of its ends, x± and x2
+are thus independent of t' and
+x2
+' - x\ =
+lo
+(5)
+but since
+r„ =
+(r *v)v
+r - r „ = r - 
+(r
+• v)v
+r' B + r'
+v
+1
+this can also be written
+r' = r + i(_i
+1)
+v* \ V(1 - ß
+2
+)
+/
+(r -v)v
+vt
+VU-j3
+2
+)
+f =
+t - (l/c2 )(r -v)
+v(i - W)
+(la)
+These formulae can be found in a paper by G. Herglotz, Ann. Phys., Lpz., 36 (1911) 497,
+Eq.
+9.
+35 W. v. Ignatowsky, Arch. Math. Phys., Lpz., 17 (1910)
+1 and 18 (1911)
+17; Phys.
+Z.,
+11
+(1910)
+972 and
+12
+(1911) 779; P. Frank and H. Rothe, Ann. Phys., Lpz., 34
+( 1 9 1 1 >
+825 and Phys. Z., 13 (1912) 750. [p.30] 12
+I. Foundations of Special Relativity
+is the rest length of the rod. On the other hand, we might determine the
+length of the rod in system K in the following way. We find x\ and X2 as
+functions of t. Then the distance between the two points which coincide
+simultaneously with the end points of the rod in system K will be called
+the length
+l of the rod in the moving system
+:
+%2 (t) - X! (t) =
+l.
+( 6 )
+Since these positions are not taken up simultaneously in system K ',
+it
+cannot be expected that l equals
+l0
+. In fact, it follows from (I) that
+X2 (t) - Vt
+Xi(t) - Vt
+X2 =
+,
+X\ =
+,
+V(i - ß
+z
+)
+V(l-(82
+)
+so that
+lo =
+../
+• ,
+1 =
+1oV('~ß2
+)-
+(?)
+V 0 - ß
+2
+)
+The rod is therefore contracted in the ratio -y/(l - yß2
+)
+:
+1, as was already
+assumed by Lorentz. Since the transverse dimensions of a body remain
+unaltered, the same formula applies to the contraction of its volume
+:
+V = fWU-£2
+).
+(7 a)
+We have seen that this contraction is connected with the relativity of
+simultaneity, and for this reason the argument has been put forward 36
+that it is only an "apparent" contraction, in other words, that it is only
+simulated by our space-time measurements. If a state is called real only
+when
+it can be determined in the same way in
+all Galilean reference
+systems, then the Lorentz contraction is indeed only apparent, since an
+observer at rest in K' will see the rod without contraction. But we do not
+consider such a point of view as appropriate, and in any case the Lorentz
+contraction
+is
+in
+principle
+observable.
+In
+this connection a
+"thought
+experiment" of Einstein's 37 is instructive. It shows that the determination
+of the simultaneity of spatially separated events, which
+is necessary for
+the observation of the Lorentz contraction, can be carried out entirely
+with the help of measuring rods, without the use of clocks. For let us
+think of using two rods A\B\ and A2B2 of the same rest length
+Z0 , which
+move relative to K with equal and opposite velocity
+v. We mark the
+points A * and B* in K at which the points Ax and A 2 and B± and B2 ,
+respectively,
+overlap. (For reasons of symmetry the overlappings take
+place simultaneously in K.) The distance A*B*, as measured by rods at
+rest in K } will then have the value
+l = hV( 1 " iß
+2
+)-
+It therefore follows that the Lorentz contraction is not a property of a
+single measuring rod taken by itself, but is a reciprocal relation between
+36 V. Varicak, Phys. Z ., 12 (1911) 169.
+37
+A. Einstein, Phys. Z. t 12 (1911) 509. [p.31] 5. Lorentz contraction. Time dilatation
+13
+two such rods moving relatively to each other, and this relation
+is in
+principle observable.
+Analogously, the time scale
+is changed by the motion. Let us again
+consider a clock which is at rest in K'. The time
+t' which it indicates in
+K' is its proper time r and we can put its coordinate x' equal to zero. It
+then follows from (la) that
+t =
+V(1 - P)'
+t = Vd - ß
+2)t-
+(8 )
+Measured in the time scale of K, therefore, a clock moving with velocity v
+will lag behind one at rest in K in the ratio -\/(l - ß
+2
+)
+:
+1. While this consequence of the Lorentz transformation was already implicitly contained
+in Lorentz's and Poincare's results,
+it received its
+first clear statement
+only by Einstein.
+The time
+dilatation
+gives
+rise
+to an apparent paradox which was
+already mentioned in Einstein's
+first paper and later discussed in more
+detail by Langevin38
+, Laue 39 and Lorentz40
+. Consider two synchronized
+clocks Ci and Cz at a point P. If one of them, say C2 , is now set in motion
+at time
+t = 0 and made to move with constant speed v along an arbitrary
+curve, reaching point P' after time t, then it will no longer be synchronous
+with C1 afterwards. On arrival at P'
+it will show the time t^/(l - ß
+2
+)
+instead of t. The same result will
+
+[p.43] 9.
+Affine tensor calculus
+25
+an attempt
+to
+interpret the
+contra- and
+co-variant components
+of a
+vector geometrically. Only in
+later papers by Hessenberg,
+Levi-Civita
+and Weyl57 do we find the geometrical aspect stressed again to a greater
+extent.
+It
+is fully brought out also in the dissertation by Lang56
+. The
+purely
+algebraic
+representation
+has
+the
+advantage
+of
+simplicity and
+clarity, the geometrical one that of being "anschaulich". We shall use the
+former to start off with, but shall later, in special cases, give geometrical
+interpretations to the concepts and theorems we shall develop.
+The quantities daam.J
+st - in which the indices can, independently, take
+on the values 1, 2, 3, 4 are called tensor components. They are, in particu-
+lar, called covariant components for the indices iklm
+... and contravariant
+for the indices rst
+..., if the following conditions are fulfilled: For an affine
+transformation
+x'* = oitfxk
+(22)
+with its inverse
+xk = afix'*,
+(23)
+and where the coefficients ä/ satisfy
+= afär
+10 =
+8ik
+}
+(24)
+the tensor components should transform as57a
+a'rnm.:st- = alK^.J"
+T
+-" Wale* 5ilx ... «
+(25)
+The summation convention is to be used here for indices occurring twice
+(see
+§ 14 for a generalization of this definition for arbitrary coordinate
+transformations). The number of indices which the components have,
+is
+called the rank of the tensor. Tensors of first rank are also called vectors.
+The simplest example of such a vector would be the
+(contravariant)
+coordinates xi of a point. Also, the quantities 8^ defined by (21) form,
+according to (24), the components of a tensor, covariant with respect to
+index i and contravariant with respect to index k. This tensor 8
+£
+has moreover the property that its components take on the same numerical values
+in all coordinate systems.
+By adding two tensors [of the same rank] one obtains a new tensor of
+equal rank; by multiplying them,
+a tensor of higher rank.
+Thus,
+for
+instance,
+ai + bi =
+Ci
+dibjc =
+Cijc ,
+dibk =
+c**.
+By contraction (summation over corresponding upper and lower indices),
+one obtains a tensor of lower rank. Thus the tensor of second rank tk gives
+57
+See references in §§ 10 and 14, footnotes 58 a (p. 27) and 65, 66, 67 (p. 37), resp.
+57a We would consider
+it more correct if the labels "contravariant" and "covariant" were
+interchanged, corresponding to the historically older nomenclature "cogredient" and "contragredient".
+Quantities which transform like the coordinates would then be called covariant.
+However, we adopt here the terminology which is now in general use and which
+was originated by Ricci and Levi-Civita and used by Einstein and Weyl (Cf. footnote 56,
+p. 24, ibid.). [p.44] 26
+II. Mathematical Tools
+rise to the invariant t = tf (where the summation sign is left out, accord-
+ing to our convention). -Multiplication and contraction can also be combined. One can, for instance, first form the tensor
+Sik = dibk
+by multiplying a i and b\ and then obtain the invariant
+s = s?
+by contraction. This can however be obtained directly from the vectors
+a t and b { by means of the operation
+s = aib 1
+.
+In the same way, a tensor of second rank aik and a vector xk can be combined to give the vector
+Vi = ai1c xk
+and the invariant
+J = CLiJcXW.
+The rule which we employed here can also be inverted
+: If a t xl is an invariant for any arbitrary vector xi
+, then the a i are the covariant compon-
+ents of a vector; if aik = aki and aik xixk is an invariant for any arbitrary
+vector x if then the aik are the contravariant components of a tensor of
+second rank, etc. The generalization of these results to tensors of arbitrary
+rank is immediately obvious.
+A tensor is called symmetrical or skew-symmetrical [(antisymmetrical)]
+in the indices i and
+lc if, on interchanging i and k , its components are not
+altered or only change
+sign,
+respectively
+(for instance, a ik = a ki and
+aik = - aki ,
+respectively).
+It can easily be verified that these relations
+are independent of the particular coordinate system chosen. It is however
+essential that the two indices should both be either upper or lower indices.
+The quantities gik introduced in (19) also form a tensor, as can be seen
+from the invariance58 of g ik xixk
+. This tensor is of the greatest importance
+both in geometry and physics and
+is called the fundamental (or metric)
+tensor. One can obtain new tensor components frnm the g ik as follows.
+Take the determinant of the gik ,
+g = det|<7*fc|
+(26)
+and divide the minor of a particular gik by g. In this way ten quantities
+gik
+(gik = gki^ are obtained, which satisfy the relations
+9ia gka = S<*
+(27)
+It should also be mentioned at this point that
+1
+det \glk
+\ - 
+-.
+(26 a)
+9
+68 In the region of validity of the affine group, the two points
+(of which the square of
+the distance
+is determined by g^xW) need not be assumed to be infinitesimally close to
+each other, cf.
+§ 10. [p.45] 27
+10. Contra- and co-variant vector components
+We now assert that the gik are the contravariant components of a tensor
+of second rank. For proof, take the contravariant components ak of a
+vector and multiply them by gik
+. By contraction one then obtains
+at = gacUk
+.
+(28)
+The inverse of this system of equations is then
+ai =
+giic aki
+(28 a)
+and since the components ak are quite arbitrary, the tensor character of
+the gik follows from the theorem quoted above.
+We call the quantities a i and a1 the covariant and contravariant com-
+ponents of the same vector. Correspondingly, one can define the raising
+and lowering of indices for tensors of higher rank, and can regard the
+resulting quantities as belonging to the same tensor. Thus, for instance,
+aik = 9irgksars = gir ark,
+aik = g
+ir gks ars = g
+lr ark
+.
+(28b)
+The raising and lowering of indices does not affect the correctness of a
+given relation between tensors, but one has always to sum over corresponding upper and lower indices when contracting, for instance
+J =
+cti bl = a1 bi
+,
+Ci = aiJc bk = aik bjc,
+cl = aik bk = ai
+jc bk
+.
+(29)
+This concludes
+
+[p.57] 15. Geodesic lines
+39
+and from
+dt
+(gik tih) = 0
+follows the identity
+dgik
+dxs
++,g
+iT krs +
+=
+0.
+(71)
+The following equations follow from (26) and (27) by differentiation,
+dgik = - g
+ir gks dgrs
+,
+dgik = - gir gks dgrs
+,
+dgik
+dx l
+- g
+ir gks dg
+irs
+dx l
+dgne
+5grs
+ - - gir Qks
+dx l
+dxl'
+and
+dg = gg
+ik dgik = - ggik dgik
+dgik
+dg
+= qq
+l
+dxl
+dx l
+iik
+- gga
+dgik
+dxl
+By contraction, one can also obtain
+iW-rv,, -
+-
+1
+iV3
+a
+'osV>
+dxl
+Vg
+dxl
+from (69) and then, using (71),
+1
+d \/g gik
+dxl
+\/g
+dxk
++ g
+r8 T irs = 0 .
+(72)
+(72a)
+(73)
+(73a)
+(74)
+(75)
+15.
+Geodesic lines
+The direction of the curve xk = xk(t) at any of its points P is characterized by the vector
+dxl
+v} =
+,
+(s = arc length)
+(76)
+ds
+which has the direction of the tangent to the curve at P and
+is of unit
+length. In fact,
+dxl dxk
+uiui = gik-
+ - =
+1.
+(77)
+ds
+ds
+The geodesic line, then,
+is a curve which always maintains its direction70
+.
+That is to say, if one constructs the appropriate direction vector id at an
+arbitrary point P0 of the geodesic line, one obtains the direction vectors
+at other points by a parallel displacement of
+along the geodesic line.
+70 H. Weyl, Raum- Zeit -Materie (1st edn., Berlin 1918), p. 102. [p.58] 40
+II. Mathematical Tools
+According to ($4) and (70) this can be expressed analytically by means
+of the (completely equivalent) relations
+and
+dUi
+1
+SQjrg
+ - - = rr isurus =
+urus
+ds
+*
+2 dxi
+dul
+ds
+= - T^uW;
+the latter can also be written
+d2xl
+dxr dxs
++ TVs
+=
+0.
+ds2
+ds
+ds
+(78)
+(79)
+(80)
+These are the differential equations of the geodesic line. Since the length
+of a vector is invariant for a parallel displacement,
+it follows from (80)
+that
+dxl dxk
+gtjc - 
+ - = const.
+(77 a)
+ds
+ds
+Thus (80) only holds for such parameters s which, apart from a constant
+factor, are equal to the arc length.
+The geodesic lines can also be characterized by means of a variational
+principle. For they are, at the same time, the "shortest" lines already
+mentioned in § 13, or, put more precisely, they are the "extremals" 7 0a for
+which the variation of the curve length vanishes
+(the latter need not
+necessarily be a minimum). Let A and B be the fixed initial and end points,
+s the arc length, A an arbitrary parameter. It will then have to be shown
+that for the geodesic lines
+r
+f
+//
+dxi dxk \
+(81)
+Here, the gik are given functions of the coordinates xi
+} and it is the func-
+tions xk = x^(A) which are varied.
+Relation (81) will now be transformed in a manner well known from
+mechanics7013
+. For this purpose we choose the parameter A in such a way
+that it coincides with the arc length s on the extremal and always covers
+the same range of values. In the resulting differential equations, then, A
+can be replaced by s. If we now put
+then
+dx{ dxk
+L = igik lxlx'
+(82)
+r
+sl
+d\,
+J
+'\/[gijc(dxi/dX)(dxk/dX)\
+70a
+Cf. A. Kneser, Encykl. math. Wiss. t II,
+8, pp. 597 and 600.
+70b
+There,
+it
+is a question of going over to Hamilton's Principle from Jacobi's form of
+the Principle of Least Action.
+Cf. A. Voss, Encykl. math. Wiss., IV,
+1, p. 96.
+jds = [p.59] 41
+16. Space curvature
+and since the square root becomes equal to
+1 for the extremal, we can
+simply write, instead of (81),
+B
+B
+|J SLdX = S J LdX =
+0.
+(83)
+A
+A
+We have thus obtained a complete analogy to Hamilton's Principle in
+mechanics, if L is looked upon as the Lagrangian. Let us therefore write,
+for
+the moment,
+xi
+instead
+of dxl\d\ = dxilds. Then
+the
+differential
+equations resulting from (83) will be70c
+d
+dL
+dL
+T
+. =
+o.
+(84)
+ds dx
+1
+dxi
+Since, according to (20),
+dL
+dxk
+J£ = gar
+da'
+we do obtain in fact
+d
+/
+dxk \
+1 dgrs dxr dxs
+ds
+\
+* ds
+)
+2 dx1
+ds
+ds
+'
+which agrees with (78). (In a manifold in which ds2 is an indefinite form,
+the derivation given here does not apply to those curves on which ds = 0
+throughout. Cf.
+§ 22 for the exceptional case of such "null lines".)
+16.
+Space curvature
+The concept of the curvature of space was first put forward by Riemann71
+as a generalization of the Gaussian curvature of a surface to w-dimensional
+manifolds
+(see
+§ 17). His analytical treatment of the problem, however,
+remained unknown until the publication of his Paris Prize Essay72
+;
+it
+contains his treatment in its entirety, using both the elimination method
+and
+the
+variational
+method.
+Before
+this,
+however,
+Christoffel73
+and
+Lipschitz 74 had obtained the same results, by formulating the condition
+for a given quadratic form
+guc dx1 dxk
+(gik functions of the x)
+to be transformed into
+2 (dx*)2.
+i
+700
+Whereas in ordinary mechanics the Lagrange equations are obtained by permitting
+all possible point transformations for the space coordinates, the above shows that the equa-
+tions are of the same form, even though the time coordinate is also subjected to arbitrary
+transformations ; the independent variable now is of course not t, but s.
+Cf. T. Levi-Civita,
+Enseign. math.,
+21
+(1920)
+5.
+71
+Cf. footnote 63, p. 34, ibid.
+72
+Cf. footnote 68, p. 38, ibid.
+73
+Cf. footnote 68, p. 38, ibid.
+74
+R. Lipschitz, J. reine angew. Math., 70 (1869) 71, 71 (1870) 244 and 288, and 72 (1870)
+1, as well as 82 (1877) 316. The last paper of this series was published only after the publication of Riemann's Prize Essay. [p.60] 42
+II. Mathematical Tools
+This
+is
+itself again a special case of the problem of the equivalence of
+quadratic differential forms, which Christoffel had also studied, namely
+under what conditions the two forms
+gac dxi dxk
+and
+g'^dx^dx^
+can be transformed into each other. This general question of equivalence
+has however not turned out to be of importance for physics, so far. Ricci
+and Levi-Civita75
+, whose presentation was followed closely by Einstein76
+,
+managed to derive the curvature tensor in a purely formal, but very concise, way, in contrast to Christoffel's rather lengthy calculations. Finally,
+Hessenberg77
+, and Levi-Civita78 found a geometrical, intuitive, interpretation of the curvature tensor by starting from the concept of the parallel
+displacement of a vector.
+In § 14 it was always a question of the parallel displacement of a v
+
+[p.71] 19. Gauss' and Stokes' theorems
+53
+of tensors for deriving new tensors, one will therefore have to take recourse
+to the concept of parallel displacement, developed in
+§ 14. The rules for
+this were first derived in a purely formal way by ChristofFel 91 and later
+systematized by Ricci and Levi-Civita56
+. Simplifications and geometrical
+interpretations were introduced in the papers by Weyl 92
+, Hessenberg 58 a
+and Lang56
+.
+For certain operations, the geodesic components do not enter the final
+result. Such operations will now be considered and refer to tensors of the
+first rank (see
+§ 11). It would therefore seem a natural requirement not
+to make use of the concept of parallel displacement in their derivation.
+First of all, a vector Grad
+</> can be derived from a scalar
+</> by differentiation. This follows immediately from the invariance of
+d6
+dcf> = - 
+: dxi
+.
+dxl
+It should be observed that the
+d(f>ldxi are covariant components,
+deb
+Grad *<£ = - 
+: .
+(131)
+dxl
+To
+find further
+relations, we have to apply the
+integral theorems
+of
+Gauss and Stokes to our case, but shall confine ourselves to four-dimensional manifolds. The corresponding generalizations of Gauss' and Stokes'
+theorems to manifolds of arbitrary dimensions can be found,
+in
+their
+most general form, in the papers by Poincare933 and Goursat93b
+. For the
+case of the special theory of relativity (Euclidean geometry and orthogonal
+coordinates), the formulae were also derived by Sommerfeld5515
+.
+Let
+f\ Fik
+,
+A ikl
+(132)
+be the components of a "fine", "surface" and "volume" tensor, respectively, and let
+ds\
+daik
+,
+dSikl
+,
+dZ
+(133)
+be the components of a fine-, surface-, space-, and world-element, having
+absolute magnitudes
+ds,
+da,
+dS,
+\dZ\.
+(133a)
+The components (133) can be expressed in terms of the coordinates in
+the following way. The ds1 are equal to the coordinate differentials
+dsi = dx'\
+(134 a)
+moreover, if dxi
+i 8xi and dxl
+, 8xi
+, b#* are the components of two and three
+91
+Cf. footnote 68, p. 38, ibid.
+92
+H. Weyl, Raum-Zeit -Materie (1st edn., 1918), pp. 103-107.
+93 a H. Poincare, Acta math., StocJch., 9 (1887) 321.
+03 b E. Goursat, J. Math, pures appl.
+(6) 4 (1908) 331.
+65 h A. Sommerfeld
+(Cf. footnote
+55,
+p.
+22,
+ibid.).
+His derivation of the divergence of a
+"surface" tensor is different from ours. [p.72] 54
+II. Mathematical Tools
+line elements in independent directions on the surface- and space-element
+respectively, then
+^
+daik =
+dxi
+.
+8xi
+dxk
+8xk
+(134b)
+dxl
+hx1
+dxk
+8xk
+\)xk
+(134 o)
+dx l
+8xi
+bx
+l
+dS<**
+Substituting these expressions into surface- or space-integrals of the type
+J
+<p(x ) ddik
+or
+J <f)(x ) dSikl
+, respectively,
+this
+corresponds to the way
+of
+writing multiple integrals which Klein94 introduced and called the Grass-
+mann notation. This
+is a natural notation, since
+it immediately allows
+one to read
+off the behaviour
+of multiple
+integrals under
+coordinate
+transformations and Klein 94 therefore preferred it to the ordinary notation. While the latter has the advantage of greater simplicity, it has, on
+the other hand, the disadvantage that the behaviour of the integrand
+under coordinate transformations is not shown up directly. The ordinary
+notation is arrived at by assuming the independent directions d , 8 (d, 8, b)
+for the separate components of the surface (space) element to be parallel
+to the corresponding coordinates. In that case,
+dcrik = dxi 8xk
+,
+dSikl = dxi 8xk '0x l
+or, more simply,
+daik - dxi dxk
+,
+dSikl = dxi dxk dx
+i
+.
+( 135 )
+It
+is however to be noted that these expressions behave, under trans-
+formations of the coordinates,
+like the components of a "surface" and
+"volume" tensor, respectively.
+We can now form two kinds of invariants from tensors (132) and (133):
+(a) The orthogonal projections of /,
+F, A on ds , der, dS , multiplied by the
+magnitude of the latter tensors
+fidxi
+(136a)
+fsds
+Fa d(j = Finder™
+As dS = Am d&*h
+(136b)
+(136c)
+(b ) The orthogonal projection of the vector / on the direction normal
+to dS, that of F on the direction normal to da, and that of A on the direction normal of ds , in each case multiplied by the magnitude of the second
+tensor. The values of these expressions are obtained with the help of the
+tensors dual to ds, da, dS (see
+§ 12, (54b) and (55)
+),
+fn dS = f*dS*i =
+2
+a/gp dSklm =
+2
+dSklm
+0iklm
+)
+(ikm
+)
+Fjydcr = Fik da*uc
+E VgF ik dalm =
+2
+?$
+ik do
+l
+tiklrn)
+(iklm)
+(137a)
+(137 b)
+94 F. Klein, 'Über die Integralform der Erhaltungssätze und die Theorie der räumlich
+geschlossenen Welt', Nachr. Oes. Wiss. Göttingen (1918) 394. [p.73] 19. Gauss' and Stokes' -theorems
+55
+An ds = Aalds*m =
+'£
+l VgAm dsm =
+2 Wkldsm
+.
+(137 c)
+(.iJclm)
+(iJclm)
+The sums 2 are to be taken over even permutations, and f*,
+(iJclm)
+are the tensor densities corresponding to /,
+F, A (§ 11).
+The generalizations of Gauss' and Stokes' theorems can now be formulated. Let us integrate (136 a) over a closed curve, (136b) and (137b) over
+a closed surface, and (137 a) over a closed space region. (We shall leave
+out the analogous theorems for (136 c) and (137c), since they have not,
+as yet, had any applications in physics.) These integrals can be transformed into integrals over the surface-, space-, and world-region, respectively, which are enclosed by them.
+j
+f
+s ds = J Curljv/- der = jCurlikfdo"'
+(138a)
+J Fa d<j =
+J Curl„ F -dS = J Curl«; F
+• dSm
+(138 b)
+J fndS = J Div j-dZ = J
+t>ivf-dx
+(139a)
+JFNda = | DivK F
+• dS = J
+2
+Dio* F
+• d,Sklm
+,
+(139 b)
+where
+Curlikf=
+dA- dA
+dxl
+dxk
+(140a)
+and
+CurIm F
+dFijc
+dFu
+dFjci
+dx l
+dxk
+dxi
+(140 b)
+Dfo /
+af
+dx1
+Dit)^ F
+dxk
+sVgß\
+dxl
+/
+dVgFik
+dxk
+)
+(141a)
+(141 b)
+The important point here is that the invariance of the initial integral
+also implies the invariance of the final integral. But this can only be the
+case
+if the integrand itself is invariant everywhere, since the region of
+integration can always be chosen arbitrarily small. It follows that Curl^
+and CurliW F are the covariant components of a "surface" and "volume"
+tensor, respectively, that £)iü / is a scalar density, and tha
+
+[p.85] 23.
+Infinitesimal coordinate transformations. Variational theorems
+67
+and from this derive the invariant
+L = \FilcF™.
+(172)
+If £ is the scalar density associated with L ,
+Q = LV(-g),
+one can derive from the invariant integral
+j Qdx
+a transformation which
+is of importance for the ponderomotive force in
+electrodynamics. We shall limit ourselves to those variations of the fields
+and coordinates which vanish at the boundary of the region of integration. We consider, first of all,
+<j)i and gik as independent variables. If they
+are varied in the manner given above, a simple calculation, using (165),
+leads to
+=
+<$
+ik 8Fijc - &k Sg iJcj
+where
+&ik =
+V(-g)
+An integration by parts then gives
+&ik = FriFslc g
+rs - lFrsFrs gik .
+with
+from which also follows
+8 j Qdx = J (25
+i
+8(j)i - 
+8gik)dx,
+S< =
+dsi
+dxi
+dxk
+0.
+(173)
+(174)
+(175)
+(175a)
+We now generate the variations
+&f>i and 8gik specifically from an infinitesimal coordinate transformation. This can be done by replacing, in (174),
+8(f>i and 8gik by 8*^ and 8*gik) since 8^ and 8gik vanish at the boundary,
+and because of (170). From (163) and (168) we first of all obtain
+\
+dxl
+dxk I
+and, after integrating by parts, because of (169) and (175 a),
+0 = J (2
+- &ik 8*gik)dx = - 2e j (Fik sk +
+dx.
+Since the last expression has to vanish for arbitrary f*, we have
+= - DtDi 0
+or, written out in full,
+iw__r 8s<*
+\
+dxk
+2
+dxl
+(176)
+F [p.86] 68
+II. Mathematical Tools
+This identity Mil be used in §§30 and 54.
+(b) The variation of the invariant integral
+| <Rdx
+corresponding to the curvature invariant B, becomes of particular interest
+because
+of
+the
+investigations
+by
+Lorentz100
+,
+Hilbert101
+,
+Einstein102
+,
+Weyl103
+, and Klein104 on the role of Hamilton's Principle in the general
+theory of relativity, the physical significance of which will be discussed
+in Part IV.
+Let
+us,
+first
+of
+all,
+split the invariant
+dx into a volume integral
+which only contains first derivatives of the gik , and a surface integral, i.e.
+jftdx = - j<Sdx+)
+J
+(...),
+(177)
+surface
+where
+= V( - g)
+Q = gik(rris r\r - rr<* ^rs ).
+(ns)
+G
+is evidently only invariant under hnear transformations,
+i.e.
+it
+is an
+affine scalar. Beyond
+this, however, the integral J© dx
+is, according to
+(177), invariant under all transformations which apply only to the interior
+of the region of integration and leave the boundary values of the coordinates and of the gi1c and their derivatives unchanged. These two invariance
+properties
+of
+J© dx
+will now be used
+to
+derive some mathematical
+identities which are of importance for the theory. Since now the integrand
+of the integral to be varied no longer contains second derivatives of the
+gik , this simplifies matters considerably, though it is not essential for the
+method to be described below.
+For an arbitrary variation of the g^-field we obtain first of all (using
+the abbreviation
+g
+ik
+a = (dgikldxa
+)
+),
+J
+8(5 dx =
+a©
+dgik 8gik +
+dx
+a
+a©
+dx* dgika
+100 H. A. Lorentz, Versl. gewone Vergad . Akad. Amst., 23 (1915) 1073; 24 (1916) 1389 and
+1759; 25 (1916) 468 and 1380.
+101 D. Hilbert, 'Grundlagen der Physik',
+1. Mitt., Nachr. Ges. Wiss. Göttingen (1915) 395.
+102 A.
+Einstein, S.B. preuss. Akad. Wiss. (1916)
+1115
+(Also reprinted in the
+collection,
+Lorentz, Einstein, Minkowski, Das Relativitätsprinzip (3rd edn., Leipzig
+1920)).
+103 H. Weyl, Ann. Phys., Lpz ., 54 (1917) 117; Raum-Zeit -Materie, (1st edn., 1918 and 3rd
+edn., 1920).
+104
+F. Klein, 'Zu Hilberts erster Note über die Grundlagen der Physik', Nachr. Ges. Wiss.
+Göttingen (1917) 469; 'Über die Differentialgesetze von Impuls und Energie in der Einstein-
+schen Gravitationstheorie',
+ibid. (1918) 235.
+The simplification of Klein's
+(as compared
+with Hilbert's) approach is due to his using also variations of the coordinates which do not
+vanish at the boundary of the region of integration.
+Since Lagrange, this has frequently
+been done in classical mechanics, too.
+In this way, many of the relations become more
+transparent.
+Lorentz
+(Cf. footnote
+100, ibid.) already uses a similar procedure, though
+not so systematically. [p.87] 23.
+Infinitesimal coordinate transformations. Variational theorems
+69
+An explicit evaluation now shows105 that
+a
+a©
+a© - = ©i£ =
+ - 
+dx* dg^Q.
+dgik
+where Gik is the tensor defined in (109).f We thus obtain
+-
+f 8© dx =
+f (5a Sgikdx-
+{ - l - ^-8gilc)dx.
+(179)
+J
+J
+J
+dx* \ dglka
+1
+Since the last integral can obviously be written as a surface integral, we
+also have, from (177),
+8 J ftdx = J
+(5a 8g
+i!cdx +
+J
+(...).
+(180)
+surface
+We now produce the variation of the
+gik specifically from a variation
+S* of the coordinate system. Because of (169) and (170), we then obtain
+from (179),
+8*
+J © dx = 2e J
+£)it)j ©
+. ^dx + e J - - ^
+^ S* g
+rs - 2©**£* + ©pj dx.
+dX
+d^k
+(181)
+Next,
+we
+specialize
+the
+infinitesimal
+coordinate
+transformation
+still
+further in such a way that it leaves J© cfo invariant.
+(i) The
+are to vanish at the boundary. It then follows that
+d(5ik
+1
+dgrs
+»tol® = "77 - -
+= 0
+(182a)
+dxk
+2
+dx1
+a©^
+Dto<© =
++
+= 0.
+(182 b)
+dxk
+If we had only wanted to derive this identity, we could have shortened
+the
+calculation
+quite
+considerably. J
+Herglotz82 pointed out that the
+identity leads very simply to an interesting theorem, which had previously
+been derived by Schur105 a in a different way. If, analogously to (116),
+RhijJc = - <x(9hj 9ik - Qij 9hlc)>
+where a can however still be a function of the coordinates, it follows by
+substitution of (119) in (182 a) immediately that, for n >
+2,
+doc = 0,
+oc = const.
+dx*
+This means that
+if the curvature of a Riemannian space Rn
+(n >
+2)
+is
+independent of the surface direction
+at each of
+its points ,
+it
+is also independent of the position.
+105 For details, see H. Weyl, Raum-Zeit -Materie (1st edn., 1918), p. 191, (3rd edn., 1920),
+pp. 205, 206; also A. Palatini, R. C. Circ. mat. Palermo 43 (1919) 203.
+f See suppl. note 8.
+% See suppl. note 7.
+106a F. Schur, Math. Ann. 27 (1886), 537. [p.88] 70
+II. Mathematical Tools
+(ii) The ^vge to be constants . We could even more generally take the
+to
+be
+
+[p.99] 81
+29. Ponderomotive forces. Dynamics of the electron
+Because of the covariance of the electromagnetic field equations under
+the Lorentz group it would seem natural to enquire whether there exist
+wider groups for which this covariance applies. This question was answered by Cunningham and Bateman126
+. The most general such group
+is formed by the affine transformations which transform the equation of
+the light cone
+s2 =0
+into
+itself (§8,
+(B')
+).
+Apart from the transformations of the Lorentz
+group,
+it also contains the inversion with respect to a four-dimensional
+sphere,
+or
+a hyperboloid
+in
+the
+real coordinate system,
+respectively.
+New light
+is thrown on Bateman's theorem by Weyl's theory
+(cf. Part
+V). P. Frank127 gives a simple proof for the fact that the Lorentz group,
+together with the group of the ordinary
+affine transformations,
+is the
+only linear group with respect to which Maxwell's equations are covariant.
+29.
+Ponderomotive forces. Dynamics of the electron
+Even in his first paper Einstein had shown that the theory of relativity
+could enable us to make quite definite statements about the motion of a
+point charge moving with arbitrary velocity in an electromagnetic field,
+provided it was known for infinitely small velocities. What we mean by
+a point charge, here, is a charge whose dimensions are so small that the
+external field can be assumed homogeneous throughout the region filled
+by the charge. The "point charge", therefore, need not be an electron.
+Let E be the intensity of the external electric field,
+e and m0 the charge
+and mass of such a "point charge" in a coordinate system K', in which
+the point charge is momentarily at rest. Then, in K',
+d2r
+f
+m0
+= eE\
+(210)
+0 dv 2
+With the help of formulae
+(194) and
+(204) we can immediately derive
+the equations of motion holding in a system K, in which the charge (and
+the system K ') moves with velocity u in the positive ^-direction. We
+obtain
+d2x
+(1 _ £2)3/2
+dt2
+eEx =
+6
+m (
+d2y
+V(l ~ß2
+) ^
+mf
+d2z
+VU-jS2
+)
+dt2
+|e + 1(uaH)J
+= ej^E + -(uAH)j
+= ej^E + -(uaH)J
+.
+V
+(211)
+First of all, it is seen that the right-hand side is precisely the expression
+for the Lorentz force128
+.
+The Lorentz force had, in earlier treatments, been
+126 E. Cunningham,
+Proc.
+Lond.
+math.
+Soc.,
+8
+(1910)
+77;
+H.
+Bateman, Proc. Lond.
+math. Soc., 8 (1910) 223.
+127 P. Frank, Ann. Phys., Lpz., 35 (1911) 599.
+128
+Cf. H. A. Lorentz, footnote 4, p.
+1, ibid.,
+§
+3, Eq. (VI). [p.100] 82
+III.
+Special Theory of Relativity
+introduced ds a new axiom , whereas here it is a consequence of the relativity
+principle. It should be mentioned, however, that this statement contains
+not a physical lawlbut a definition of the force, as far as terms of second
+and higher order in ujc are concerned. In fact, our choice of what to put
+on the right-hand or left-hand sides of the equations (211) would at first
+seem quite arbitrary. We could,
+e.g., multiply through by (1 - ß
+2
+)
+3/ 2 or
+(l - ß 2
+)
+1/2 and then denote the corresponding expressions on the right-
+hand side as components of a force. Einstein had,
+initially, considered
+eE' to be a force also in the moving system K. But relativistic mechanics
+shows that the most convenient and in fact the only natural definition
+is the one given above, which is due to Planck129
+. According to this, the
+Lorentz expression for an arbitrarily moving charge
+K = e|E + i(uAH)j,
+(212)
+is defined as force. For it
+is seen that only with this definition can the
+force be considered as the time derivative of a momentum, which remains
+constant in closed systems
+(cf.
+§ 37). From (212) and (207) we obtain the
+transformation formulae for the force,
+Kx = K'Xi
+Ky = K'y V(1 - ß
+2
+),
+Kz = K'z V(1 - ß
+2
+),
+(213)
+where the assumption has been made that the medium on which the force
+acts is, at the given moment, at rest in the coordinate system K'.
+In the earlier literature,
+rao/(l - ß
+2
+)
+312 has frequently been called the
+longitudinal, mo/(l - ß
+2
+)
+112 the transversal mass, because of (211); but it
+is more convenient to write (211) in the form
+d
+.
+ - (mr) = K
+dt
+(214)
+where now
+m0
+m =
+V(i-ß2
+)
+(215)
+appears throughout as the mass. 130 This expression
+for
+the
+velocity -
+dependence of the mass was derived for the first time by Lorentz 131 specifically for the electron mass, on the assumption that electrons, too, suffer
+a "Lorentz contraction" during their motion. Abraham's theory of the
+rigid electron had resulted in a more complicated formula for the change
+in mass. 132
+It constituted a
+definite
+progress that Lorentz 's law of the
+variability of mass could be derived from the theory of relativity without
+129 M. Planck, V erh. dtsch. phys. Ges., 4 (1906) 136.
+130 This
+result
+is
+already
+contained
+implicitly
+in
+Planck's work
+(cf.
+footnote
+129,
+ibid.) and was later stressed in particular by R. C. Tolman, Phil. Mag., 21 (1911) 296.
+131
+Cf. footnote 10, p. 2, Proc. Acad. Sei. Amst., loc.
+cit.
+132
+Cf. H. A. Lorentz, footnote 4, ibid.,
+§ 21, Eqs. (77) and (78). Because of its historical
+interest, Bucherer's
+(deformable)
+electron of constant volume should be mentioned: A.
+H.
+Bucherer, Mathematische
+Einleitung
+in
+die
+Elektronentheorie
+(1904),
+p.
+58.
+See
+also M. Abraham, Theorie der Elektrizität , Vol.
+2. (3rd edn., Leipzig 1914) p.
+188. [p.101] 83
+29. Ponderomotive forces. Dynamics of the electron
+making any specific assumptions on the electron shape or charge distribution. Also, nothing need be assumed about the nature of the mass:
+formula (215)
+is valid for every kind of ponderable mass, as was shown
+here for the case of electromagnetic forces and will be generalized for
+arbitrary forces in relativistic mechanics
+(cf.
+§ 37). The old idea that one
+could distinguish between the constant "true" mass and the "apparent"
+electromagnetic mass 133
+, by means of deflection experiments on cathode
+rays, can therefore not be maintained.
+Formula
+(215),
+or rather the equations of motion
+(211), provide an
+opportunity for testing the theory of relativity by means of experiments
+on the deflection of f
+
+[p.113] 95
+32. Applications to special cases
+amplitude transform in the same way as frequency; for the volume, on
+the other hand, the reverse is true,
+E
+r
+E
+A'
+A
+ - 
+,
+ - = - ,
+VV =
+Vv.
+(254 a)
+V
+V
+V
+V
+The first of these relations was stressed by Einstein165 as being of particular
+importance; Wien's law
+is connected with
+it.
+Closely
+related
+to
+these transformation formulae
+for the frequency
+and direction of a plane wave are the laws of reflection at a moving mirror
+(assumed to be perfectly conducting and plane). These laws can evidently
+be reduced to those valid for a mirror at rest, by introducing a coordinate
+system K' moving with the mirror. 165 Here, too, the theory of relativity
+can only produce something new in the form of the derivation, but not as
+far as the result is concerned. 166 In fact, the formulae of the earlier theory
+are exact, since
+all quantities occurring in them are measured with the
+measuring rods and clocks of the same system, so that the Lorentz contraction and time dilatation cannot influence the result.
+Let a 1 and
+oc2 be the angles, measured in K, which the normals of the
+incident and reflected waves make with the direction of motion of the
+mirror,
+ot\ and
+a'2 the corresponding angles
+in K\
+v ± and
+v2 the
+frequencies of the incident and
+reflected waves
+in K, v\ = v 2 =
+v'
+the
+corresponding frequencies in K'.
+If the mirror is moving parallel to its
+own plane, then
+at'2 = 277
+(x\ and
+it
+also follows from
+(15) and
+(16)
+that a 2 = 277 - a v v2 = vv In other words, the law of reflection in this case
+is no different from that for a mirror at rest. Moreover, it is always only the
+velocity component in the direction of the normal to the mirror, which is
+of importance.
+It
+can
+therefore
+be
+assumed
+that
+the mirror moves
+normal to its own plane
+; let its velocity v be taken positive in the direction
+of the inner normal;
+ot 1 and
+oc 2 as well as oc\ and a'2 are now the angles of
+incidence and
+reflection,
+respectively. Then
+a
+2 =
+77 - 0t\.
+From (15) and (16)
+it then follows that
+In addition,
+'2 (1 - ß cos a2 ) = iq(l - ß COSoq),
+(255)
+v2 sm ot2 =
+iq sin aq,
+(256)
+7T - 
+0t9
+tan - 
+:
+1+ß
+aq
+=
+-tan - 
+.
+(257)
+2
+l-ß
+2
+COS oq - ß
+COS a2 - ß
+1 - ß COS oq
+1 - ß cos ol2
+165
+Cf. footnote 12, p.
+2, ibid.,
+§
+7.
+166
+Cf. detailed discussions of the reflection laws at a moving mirror (published before
+the advent of relativity) by W. Hicks, Phil. Mag., 3 (1902)
+9; M. Abraham, Boltzmann-
+Festschrift (1904)
+p. 85; Ann. Phys.,
+Ljpz.,
+14 (1904) 236; Theorie der Elektrizität, Vol.
+2
+(1st edn., Leipzig 1905) p. 343,
+§ 40; also E. Kohl, Ann. Phys., Lpz., 28 (1909) 28. [p.114] 96
+III.
+Special Theory of Relativity
+from which we obtain
+cos a2
+(1 + ß
+2
+) cos cq - 2ß
+1 - 2ß COS oqTW
+(257 a)
+and
+^2
+1 - .2ß COS«! + ß
+2
+rqgT
+(258)
+A very elegant method for deriving these formulae is due to Bateman . 167
+To obtain, in K', the phase of the reflected from that of the incident wave,
+one has simply to replace x' by - x'. This amounts to going over to the
+mirror image. To
+obtain the corresponding transformation
+in K, one
+has first to go over to A', by means of an imaginary rotation through an
+angle + 9? (determined by (187)
+), then reverse the £-axis, and finally get
+back to A by a rotation - 9p. These operations , however , are equivalent to
+a rotation through 2cp and a subsequent reversal of the x~axis.
+If we therefore put
+then, from (187),
+tan 29? = iU
+c
+2c2 v
+c2 + v2
+'
+-
+(259)
+COS 299 =
+1 + jS2
+1 - 02
+*
+sin 299 =
+i
+1 -ß2
+The transformations
+x - Ut
+V[1 - (l7*/c*)]
+t - (U/c2)x
+V[1 - (U2lc2
+)]
+c2 + v2
+2c2 v
+rjß
+C2 - V2
+C2 - V2
+c2 + v2
+2v
+1
+,
+c2 - V2
+c2 - V2
+(260)
+give the connection between object
+(x,
+t) and image
+(x, t) in the moving
+mirror. A point of the moving mirror for which x^= vt , is transformed into
+itself (x - x, t =
+t)
+;
+if the object moves with the same velocity as the
+mirror (x = vt+a) then the same is true of the image (x = vt+a ), as it
+should. The image of a point at rest in K moves with velocity U, which
+can also be obtained from the addition theorem for velocities by combining v with v. The phase of the wave reflected at the moving mirror is
+obtained directly from that of the incident wave by means of the substitution
+(260). The relations
+(257),
+(257 a),
+(258) can be written,
+quite
+analogously to (16 a), (16) and (15),
+7T
+Oin
+tan
+2
+J
+1 + (m
+1 - (U/c)
+(257 ')
+167
+H. Bateman, Phil. Mag., 18 (1909) 890. [p.115] 97
+32. Applications to special cases
+COS (TT - a2 )
+coscq - (U/c)
+1 - (U/c) COSoq
+*
+(257' a)
+1 - (U/c) COSaq
+2
+Mi-W]
+(258')
+by introducing everywhere
+tt - a 2 instead of a 2 , because of the reversal
+of the #-axis. Varicak168 interprets these formulae in terms of the Bolyai-
+Lobachevski geometry.
+The relations (254a) allow us at once to write down the change in amplitude for reflection at a moving mirror. 168a
+A
+A 2 - Ax
+1 - 2ß COS oq + ß
+2
+1 - ß
+2
+(261)
+The
+difference,
+per
+unit
+time and
+unit
+area,
+between
+the
+outgoing
+energy
+J^42
+2 (c cos a2 - v)
+and the incident energy
+ - c cos cq + v)
+must be equal to the work done per unit time, pv , by the radiation
+pressure p.
+1QSa From
+this, p
+is obtained in agreement with the
+result
+given by pre-relativistic theory
+p = A*
+= A\
+2 cos2<x' = p'.
+(262)
+The radiation pressure is an invariant. In §45 it will be shown that this
+is so for every kind of pressure.
+(e) The radiation field of a moving dipole. The field of the Hertz oscillator is contained in (243) as a special case.
+If, in addition, we are only
+concerned with the field in the wave zone
+(i.e. at large distances), Xi can
+be measured from the centre of the dipole and we can use for ui the velocity
+vector of the dipole centre instead of that of the separate charges. Let
+v, v be the velocity of the dipole and the acceleration of the oscillating
+charge
+at time t - r/c
+; r the retarded and R = r - r(v/c) the simultaneous
+position vectors of the
+dipole,
+referred to the
+field point;
+r x the unit
+vector
+r/r, R x the corresponding vector R x = Rjr = r x - (v/c);
+6
+the
+angle between v and r. Because of
+
+[p.127] 35. Energy - momentum tensor, force. Joule heat
+109
+But whereas Maxwell and Heaviside191 suggest for the (three-dimensional)
+stress tensor, T,
+=
++
+1,2,3)
+(297)
+Hertz 191 makes use of the expression (symmetrical in i and k)
+Tut = UEiDt + EtDi) - *(E.D)V +
+( zy» j
++ *(iy,A + flitE,) -*(H.B)8A
+which
+differs from
+(297)
+for the
+case
+of anisotropic media
+(crystals).
+Similarly,
+there
+are two
+alternatives
+for the momentum density
+g.
+1
+Either
+g = - (D a B)
+(299)
+c
+which, from (296), can also be written
+g =
+(299a)
+C2
+for homogeneous isotropic media.
+1
+1
+Or
+g = -(EaH) = - S.
+(300)
+c
+c2
+If the expressions for W, S, T, g are given for stationary bodies, then
+the corresponding expressions for moving bodies are uniquely determined,
+since the components of a tensor in any coordinate system can be derived
+from those in another. Corresponding to the above-mentioned ambiguities
+in the expressions for Tik and g, the following forms for the tensor Sik
+have mainly been discussed up to the present.
+(i) Minkowski's192
+expression
+for Sik
+.
+He
+makes
+use
+of
+(297) and
+(299), for stationary bodies. As is easily shown, this leads to
+Si* = Firm - lHrsFrs 8ik
+y
+(301)
+and the expressions
+(296),
+(297) and
+(299)
+also remain valid for moving
+bodies.
+In
+addition,
+relation
+(223),
+which
+holds
+in vacuum,
+remains
+unaltered,
+=
+0.
+(223)
+The four-force f{
+is obtained from St
+k by means of (290). In the rest
+system K' its components have the values
+(A,A,A) = p'E' + (Jc'aB'),
+a = fW-E').
+(302)
+It
+should
+be
+mentioned
+that
+Dallenbach193
+,
+too, has derived the
+Minkowski energy-momentum tensor, but his argument, based on
+electron theory,
+is not very cogent. He writes the tensor in a form which is
+191 For references cf. footnote 48, p.
+17, H. A. Lorentz, ibid.,
+§ 23.
+192
+Cf. footnote 54, p. 21, Minkowski II. The same expressions for Sik are also obtained by
+G. Nordstrom
+(Dissertation (Helsingfors
+1908)
+) and, using a variational principle, by
+I.
+Ishiwara
+(cf. footnote 183, p. 104, Ann. Phys., Lpz., loc.
+cit.).
+193
+Cf. footnote 187, p. 104, ibid. [p.128] 110
+III.
+Special Theory of Relativity
+also
+valid
+for
+arbitrary inhomogeneous and
+anisotropic media.
+Using
+another rpethod, he obtains it from an action principle, which also gives
+him the field equations. 194
+(ii) Abraham's195
+Expression for Sik
+. The asymmetry of Minkowski's
+expression (301) for the energy-momentum tensor leads to results which
+are very peculiar, though not in contradiction with experiment. Torques,
+for instance, appear, which cannot be compensated for by a change in the
+electromagnetic
+angular momentum. For this reason, Abraham 195 constructed a symmetrical energy-momentum
+tensor, by assuming
+(298)
+and (300) for stationary bodies. For homogeneous isotropic media, this
+leads to
+Sik = \{FirHkr + HirFkr
+) - \FrsHrs hik - J(e/z - 1)(^£^ + Q.iVk
+)
+'j
+= FirHkr - l
+F
+rs H^Sik - (c/t - 1 )Clivk
+i
+(303)
+= HirFkr - %FrsHrs 8ik - 
+(e/x - 
+1 )vt Clk
+,
+)
+where the vector G* (already to be found in Minkowski's work as "Ruh-
+strahlvektor")
+is defined by
+Fi = Fijc vk
+i
+Hi = HijcVk
+,
+£1* = vjcFi{Hik v l + Hkl vl + Hli vk}. (304)
+In a coordinate system K
+' moving with the substance, the components
+of these vectors have the values
+(F'1 } F'2,F'2 ) = E',
+F\ = 0;
+(H\,H'2,H'z) = D',
+H\
+(O'i, Q' 2 , ß's) = cS',
+Ü'4 =
+0.
+0
+;
+(304 a)
+The identity of the three expressions (303) follows from their agreement
+in rest system K'. Relation (223)
+is also valid here. For moving bodies,
+W, S, Tik , g are no longer given by (296), (298) and (300), and Abraham 195
+has calculated the corresponding expressions explicitly, in addition to that
+for the ponderomotive force. The invariant formulation used here is due to
+Grammel. 196 In the expression for the ponderomotive force for stationary
+bodies an extra term
+€fJL - 
+l
+dS
+c2
+dt
+S'
+is added to
+(302) in Abraham's
+case. Because of the smallness of this
+term, it is hardly likely that an experiment could be devised for deciding
+in favour of one or other of the two approaches. It should also be mentioned that Laue197 agrees with Abraham's assumptions.
+The following electron-theoretical considerations, also due to Abraham198
+,
+seem to us to constitute a very weighty argument in favour of the symmetry property of the phenomenological energy-momentum tensor. The
+191 W. Dällenbach, Ann. Phys., Lpz., 59 (1919) 28.
+195 M. Abraham, R. C. Circ. mat. Palermo, 28 (1909)
+1, and 30 (1910) 33; Theorie der Elek-
+trizität, Vol. 2 (3rd edn., Leipzig 1914), p. 298 et seq., §§ 38 and 39.
+196 R. Grammel, Ann. Phys., Lpz., 41 (1913) 570.
+197
+footnote 178 a, p. 102, ibid.,
+§ 22, p. 135 et seq.
+198 M. Abraham, Ann. Phys., Lpz., 44 (1914) 537. [p.129] Ill
+36. Applications of the theory
+four-force is to be regarded as the average of the microscopic four-force,
+i.e. from (290) the energy-momentum tensor, too,
+is to be regarded as
+the average of its microscopic counterpart. 190 On averaging, the symmetry
+property of a tensor is preserved (and so is relation (223) ).f
+(iii) Einstein and
+Laub's 200
+expression for Sik
+.
+Einstein
+and
+Laub
+arrived
+at a completely
+different
+result from
+that
+of Minkowski and
+Abraham
+for the ponderomotive force on stationary bodies
+(and thus
+also for the energy-momentum tensor). They found that the observed
+force density
+f = (Jc a B)
+on
+a
+stationary
+current-carrying conductor
+is composed
+of a
+surface
+force (1-1/ft)
+(Jc a Hext ) (Hext = external magnetic
+field) and the force
+f - 
+(Jc A Hint)
+which is to be regarded as the volume force proper, in contrast to (302),
+where
+the volume
+force
+is
+(Jc a B).
+The
+energy-momentum
+tensor
+given by these authors
+will also have to be correspondingly modified.
+Gans201 has disputed the correctness202 of Einstein and Laub's arguments.
+36. Applications of the theory
+(a) The experiments of Rowland , Röntgen, Eichenwald and Wilson. The
+relativistic interpretation of these experiments can be taken over from
+electron theory203
+, so long as one is dealing with unmagnetizable bodies,
+and so long as terms of higher order in v\c can b
+
+[p.141] 123
+42. General dynamics
+We now let this system 1 interact with a system 2 which is only to consist
+of radiation. Let AG ± and AG2 be the changes in momentum, and AE l9
+AE2 the changes in energy, in the two systems. Then we must have
+AGi + AG2 =
+0,
+AG'i + AG' 2 = 0 ,
+AE± + AE2 = 0 ,
+and since, because of (228),
+AG2x - (v/c^)AE2
+A(jr 2x - 
+,
+VO - ß
+2
+)
+it directly follows that
+(339)
+This shows that it is quite immaterial what kind of energy we are dealing
+with.
+We can thus
+consider
+it
+as proved that the relativity principle,
+in
+conjunction with the momentum and energy conservation laws, leads to
+the fundamental principle of the equivalence of mass and (any kind of)
+energy. We may consider this principle
+(as was done by Einstein)
+as
+the most important of the
+results
+of the theory of special
+relativity.
+Quantitative experimental evidence has not, so far, been produced for it.
+Already in his first published paper on the subject, Einstein224 pointed to
+the possibility of using radioactive processes to check the theory. But
+the
+looked-for mass
+defects
+in the atomic weights
+of the
+radioactive
+elements 225 are too small to be measured experimentally. Langevin226 first
+pointed out that
+it might be possible to explain the deviations from
+integral numbers of the atomic weights
+(referred to H =
+1)
+of the ele-
+ments - in so far as they are not due to isotopes - by means of the equivalent mass of the interaction energy between the nucleons. This suggestion has been much discussed recently. 227 Perhaps the theorem of the
+equivalence of mass and energy can be checked at some future date by
+observations on the stability of nuclei. There exist indications of a qualitative agreement. 227 f
+42.
+General dynamics
+The situation becomes simpler still if we go over to the energy density
+and momentum
+density,
+instead
+of considering the
+total energy and
+224
+Cf. footnote 220, p.
+121, A. Einstein, ibid., 18.
+225 M. Planck, S. B. preuss. Akad.
+Wiss.
+(1907) 542; Ann. Phys., Lpz., 76
+(1908)
+1;
+A.
+Einstein (cf. footnote 223, p.
+122,
+ibid., p. 443).
+226 P. Langevin, J. Phys.
+theor. appl.
+(5) 3 (1913)
+553. Langevin, at the time, aimed at
+deriving all deviations of atomic weights from integral values, from the equivalent mass of
+the internal energy of atomic nuclei. It was stressed by R. Swinne, Phys. Z., 14 (1913) 145,
+that one would have to consider possible isotopes as well, such as have been shown to be
+actually present in most cases by Aston's experiments.
+227 W. D. Harkins and E. D. Wilson, Z. anorg. Ghent., 95 (1916)
+1 and 20; W. Lenz, S. B.
+bayer. Akad.
+TFt'ss. (1918) 35; Naturwissenschaften, 8 (1920) 181; O. Stern and M. Vollmer,
+Ann. Phys., Lpz., 59 (1919) 225;
+A.
+Smekal,
+Naturwissenschaften,
+8
+(1920)
+206;
+S.
+B.
+Akad. Wiss. Wien, Abt. Ila, 129 (1920) 455.
+f See suppl. note 13. [p.142] 124
+III. Special Theory of Relativity
+momentum, ^Ve saw in
+§
+30, Eq.
+(225), that the electromagnetic fourforce could be derived from the divergence of a stress tensor Sf. It leads
+to the obvious generalization that the sarhe must hold for any kind of
+force. With the present state of oür knowledge,, this can be proved. For
+we know that all forces (elastic, chemical, etc.) can be reduced to electro-
+magnetic forces - leaving gravitation* aside here. 227a An exception is formed
+by the forces which the electrons and hydrogen nuclei exert on themselves during their motion
+(cf. Part V). We shall therefore proceed in the
+following way: In expression (222) for the energy-momentum tensor, let
+us decompose the
+field tensor Fik into the separate parts due to each
+charged particle. The tensor Sf
+is then split into two
+parts, of which
+one consists of the products of the field-tensor components
+of different
+particles, the other of the products of the field-tensor components of one
+and the same particle. We shall only retain the former, which describes
+the interaction between the particles.
+If we now form the divergence,
+we obtain only the interaction forces. We can then write
+dui
+dSik
+^° dr
+dxk
+and from (322), (324),
+d(®ik + 8ik
+) _
+dxk
+The substance can thus be characterized by means of an energy-momen-
+tum tensor T
+f
+whose divergence vanishes,
+Tue - 
++ Siky
+(340 )
+(341)
+As in
+(224), the space components of Tik represent the stresses, which
+can also be interpreted as the components of the momentum current,
+whereas the remaining components determine the momentum density g,
+the energy current S and the energy density W
+:
+.
+Tu = icg,
+T4i = -S,
+[index* = 1,2,3]
+C
+Tu = W.
+The energy-momentum tensor has been represented here as the sum
+of a mechanical and an electromagnetical contribution.
+Cf. Part V on
+attempts to reduce the mechanical part, too, to an electromagnetic one.
+For the following, purely phenomenological, considerations it
+is not the
+nature of the energy-momentum tensor but solely the fact of its existence
+which is of importance. On the historical side it should be mentioned that
+the existence of such a tensor for the mechanical
+(elastic) energy was
+227a
+cannot, at present, say
+to what extent the dynamics which we are discussing
+here will be modified by quantum theory. [p.143] 125
+43. Energy and momentum in the presence of external forces
+first asserted by Abraham228 and conclusively formulated by Laue. 228 The
+symmetry of the energy-momentum tensor is ensured by going back to the
+mechanical and electromagnetic tensors; previously
+it had been introduced as a separate postulate.
+This symmetry property leads to a very
+important result. It follows from Tu - Tu , because of (342), that
+This
+is the theorem of the momentum of the energy current,
+first expressed by Planck229
+, according to which a momentum is associated with
+each energy
+current. This theorem can be considered as an extended
+version of the principle of the equivalence of mass and energy. Whereas
+the principle only refers to the total energy, the theorem has also something to say on the localization of momentum and energy.
+Just as in
+§ 30 we can deduce from
+(341) that the t
+
+[p.155] 137
+48. Relativity and statistical mechanics
+Then the entropy is given by
+S=klo$V,
+(374)
+where V is the volume enclosed by. the energy surface H = E, or by the
+energy shell E < H < E-\-dE,
+V =
+J
+dx}
+... dx%Ni
+or
+V=
+J
+dxi...dxnN .
+jj<E
+E<H<E+dE
+(ii) The free energy F = E - TS is given by
+F = - kT log Z
+\
+Z = J
+e~H/JcT dx\ ...dx2N>
+J
+(iii) The equipartition law. The time averages are
+Xi
+= kT , for all i from 1 to 2N t
+dxi
+dH
+Xi - - =
+0, for i ^ J-
+OXj
+In particular, for canonical variables,
+Piii = kT ,
+qi - = kT.
+(375)
+(376)
+(377)
+(377 a)
+Here we have disagreement with ordinary mechanics. For in the latter,
+Ekin = % 2 ptfi, so that the
+first equation (377 a) simply states that the
+time averages of those contributions to the kinetic energy which corres-
+pond
+to
+the
+different
+degrees
+of freedom
+are each equal
+to \kT . In
+relativistic mechanics the connection between the equipartition law and the
+average kinetic energy is lost.
+(iv) The Maxwellr-Boltzmann distribution law. Let the energy function
+H of our system be separated into two parts
+H = H1(x1 ,...,x2n) + Ho(X1) ...,X2N )>
+(378)
+which depend on
+different variables. The number,
+2n, of variables
+in
+H x
+is to be much smaller than the corresponding number, 2N,
+in H2
+.
+In addition, the two groups of variables are supposed to be produced
+from different canonical variables, with a functional determinant equal to
+unity. Then the probability that the first group of variables should take
+on certain prescribed values x x
+... x2n within the range dx x
+... dx2n , regard-
+less of the values of the second group of variables, is given by
+w(xi, ...,X2n)dxi ... dx2n = Ae~H^x),kT dx\ ...dx2n>
+(379)
+The quantity A, which
+is independent of the x ,
+is determined from the
+condition
+I w(xi,... > x2n)dxi...dx2n - L
+(379a) [p.156] 138
+III. Special Theory of Relativity
+The distribution law (379)
+is based on the assumption that the value of
+H x is small compared with the (constant) value of H.
+49.
+Special cases
+(a) Black-body radiation in a moving cavity. This case
+is of historical
+interest, since it can be treated entirely on the basis of electrodynamics,
+without relativity. When this is done, one comes to the inevitable conclusion that a momentum, and thus also an inertial mass, must be ascribed
+to the moving radiation energy. It is of interest that this result should
+have been found by Hasenöhrl 259 already before the theory of relativity
+had been formulated. Admittedly, his deductions were open to correction
+on some points. A complete solution of the problem was
+first given by
+Mosengeil. 260 Planck 261 derived many of his formulae for the dynamics of
+moving systems by generalizing Mosengeil's results.
+The theory of relativity permits us to determine directly the temperature
+dependence of radiation pressure, momentum, energy and entropy, and
+the dependence of the spectral distribution on temperature and direction,
+by reducing the case of a moving to that of a stationary cavity.
+For the latter we have
+Eq - aTo4 Fo,
+po = -aTo4
+,
+So = -aT$ Fo
+(380a)
+3
+3
+and from (369)
+L =
+l
+-aTo4 F0 .
+Finally, the intensity of radiation in the frequency range dv and
+solid
+angle dCl,
+is given by
+KovodvodQo =
+2h
+VQ3 dvQ
+c2 exp (hvo/kTo) - 
+1
+By means of the formulae of § 46 we then obtain
+d£> 0 -
+(381a)
+1 + iß
+3
+1 + fß
+2
+E = Eo - 
+= aT4V
+1
+V( l " ß
+2
+)
+1
+p =po = -aT4
+-
+F
+F
+3
+(l-ß2
+)
+2
+(l-iS2
+)3
+'
+S=So=-aT*V
+l - -,
+3
+(l-ß2
+)
+2
+x = W(1 -^) = hr4 F__L_,
+4 u
+1
+4
+1
+u
+G =
+E0 = -aT4 V
+-
+3
+c2 V(! - ß
+2
+)
+3
+(! - ß
+2
+)3
+c2
+(380 b)
+259 F. Hasenöhrl, S.B. Akad.
+Wiss. Wien, 113 (1904) 1039; Ann. Phys., Lpz., 15 (1904)
+344 and 16 (1905) 589.
+260 K. v. Mosengeil, Dissertation (Berlin 1906); Ann. Phys., Lpz., 22 (1907) 867 ; cf. also the
+account by M. Abraham, Theorie der Elektrizität, Vol. 2 (2nd edn.), p. 44.
+261
+Cf. footnote 225, p. 123, M. Planck, ibid. [p.157] 49. Special cases
+139
+To obtain also the spectral distribution in the moving cavity, we make
+use of the relations
+,r
+*r
+.
+/
+V
+1 - ß COS OL
+.
+v
+vu-/*
+2)'
+dv' = dv
+1 - ß cos ex
+va-iS
+2 )'
+dCl' =
+1 -ß2
+(1 - ß cos a)2
+K' v,dv'd£l' = Z.drdO
+(1 - ß cos a) 2
+1 - 
+/32
+which are easily derivable from
+(15),
+(17) and
+(253). The last quantity
+must transform like the square of the amplitude A. It further follows
+that
+K' v' = K.
+(1 - ß COS a )3
+(1 - ß
+2
+)
+3 '2
+'
+2h
+v*dv
+i.e.
+Kv dvdQ. =
+ - - - 
+d£l.
+c2
+exp{(hv/JcT)(l - ß cos a)} - 
+1
+In addition, because of
+K' v,dv' = KJv
+(1 - ß cos a)4
+(l~ß2
+)
+2
+~
+y
+(381b)
+we have
+K = - T4
+.
+(382)
+47t
+(1 - jScosa)4
+This formula gives the direction dependence of the total radiation intensity
+(integrated over all frequencies). It can, of course, also be obtained from
+(381 b) by integration over dv. The total energy
+is obtained from (382)
+by means of the relation
+E = V ^-KdO.
+and agrees with the first of equations (380 b).
+Because of the extreme smallness of the expected effects it seems unlikely that the inertia of the radiation energy could be demonstrated
+experimentally.
+(ß) The
+ideal
+gas. We can naturally only expect a deviation due to
+relativistic effects (variability of mass), in the behaviour of an ideal gas
+from that
+calculated by
+classical mechanics, when the mean velocity
+of the molecules becomes comparable with the velocity of light. A criterion
+for this is the size of the quantity
+raoc^
+~kT
+(383)
+For normal temperatures
+it
+is enormously large and reaches reasonable [p.158] 140
+y
+III. Special Theory of Relativity
+proportions only for temperatures of about 1012 °K. To ask for any devia-
+tions from the classical behaviour of an ideal gas required by relativistic
+mechanics
+is therefore not of practical, but only of theoretical, interest.
+The answer was given by Juttner. 262 The simplest way to proceed is to
+calculate the free energy from Theorem
+(ii),
+§ 48. Since the energy of a
+particle is of the form
+T
+1
+1 1/2
+E = m0 c2
+1 + - - {Vx2 + Py2 +1> 2
+)
+L
+mo2 c2
+J
+when expressed in terms of momenta, it follows that
+F = -RTlogZ,
+2 -
+<,*?{-
++
+x
+Xdpxdpydpz.
+It is assumed here that the amount of gas present is equ
+
+[p.169] 151
+53. Simple deductions from the principle of equivalence
+replaced by Ti 44 ,
+or by - J dg iJdx
+i
+, and
+the equations of motion
+(389)
+reduce to the Newtonian equations
+(fix1
+50
+dt2
+dx1
+'
+where we have put
+20
+G> = ~ic2(9u +
+1),
+gu= -
+1
+ - 
+•
+c2
+The
+additive
+constant,
+at
+first undetermined, in the expression for O
+is fixed in such a way that O vanishes when g44 has its normal value - 1
+.
+It is of interest to note that this particular approximation of the equa-
+tions
+of motion
+contains only
+gr44
+5 even though the deviations of the
+other gik from their normal values could be of the same order of magnitude
+as that of g44
+. It is for this reason that it is possible to describe, approximately, the gravitational field in terms of a scalar potential.
+(ß) The red shift of spectral lines. For the same reason, we are also able
+to make a general statement regarding the influence of a gravitational
+field on clocks, even before the behaviour of the 6r-field is known, since
+such an effect
+is determined by
+gr44
+. A similar statement regarding the
+behaviour of measuring rods can only be made when the remainder of the
+gik are known.
+Let us take a reference system K which rotates relative to the Galilean
+system K0 with angular velocity co. A clock at rest in K will then be slowed
+down the more, the farther away from the axis of rotation the clock
+is
+situated,
+because
+of the
+transverse Doppler
+effect.
+This can be
+seen
+immediately by considering the process as observed in system K0
+. The
+time dilatation is given by
+T
+T
+t =
+=
+.
+V[1 - (v2/c2
+)]
+V[! - (l/c2 )co2r2
+]
+The observer rotating with K will not interpret this shortening of the time
+as a transverse Doppler effect, since after all the clock is at rest relative
+to him. But in A a gravitational
+field
+(field of the
+centrifugal
+force)
+exists with potential
+(I> =
+ - \(x)2 r2
+.
+Thus the observer in K will come to the conclusion that the clocks will
+be slowed down the more, the smaller the gravitational potential at the
+particular
+spot. In
+particular,
+the time
+dilatation
+is
+given,
+to a
+first
+approximation, by
+r
+/
+O \
+A£
+t =
+~rl
+,
+ - =
+.
+V[1 + (2<0/c2
+)]
+\
+c2 /
+r
+c2
+Einstein 293
+applied an
+analogous argument
+to
+the
+case
+of uniformly
+accelerated systems. We thus see that the transverse Doppler effect and
+2»3 of footnote 270, p. 143, ibid.
+(390)
+(391) [p.170] 152
+IV. General Theory of Relativity
+the time
+dilatation produced by
+gravitation appear
+as two
+different
+modes
+of expressing the same
+fact, namely that
+a
+clock
+will always
+indicate the proper time
+In general, the time
+t =
+a?4/c will be different from the normal proper
+time t of a clock at rest. For the world line element of a clock at rest is
+i.e. according to (157),
+T
+V(-m)
+{dsf =
+</44 (<fa4
+)
+2
+,
+T
+V[1 + (20/c2
+)]
+At
+O - 
+. (392)
+c2
+Equation (392) has the following physical meaning: Consider two equal,
+originally synchronous, clocks at rest and let one of them be placed in a
+gravitational field for a certain length of time. Afterwards they will no
+longer be synchronous
+; the clock which had been placed in the gravitational
+field will have
+lost.
+As mentioned by Einstein 294
+,
+this
+is the
+basis of the explanation for the clock paradox described in
+§
+5
+[<q.v .].
+In the coordinate system K* in which the clock C2 is permanently at rest,
+a gravitational field exists during the time in which its motion is retarded,
+and the observer in A* can regard this field as causing the clock C2 to
+lose.
+Relation (392) has an important consequence which can be checked by
+experiment: The transport of clocks can also be effected by means of a
+light ray, if one regards the vibration process of light as a clock. For if
+the gravitational field is static, the time coordinate can always be determined in such a way that the gik do not depend on it. Then the number of
+wave-lengths of a light ray contained between two points P 1 and P2 will
+also be independent of the time. The frequency of the light ray, measured
+with the given time scale, will therefore be the same at P 1 and P2 , and thus
+independent of position. 295 On the other hand, the frequency measured
+in terms of the proper time does depend on
+position.
+If,
+therefore, a
+spectral line produced in the sun is observed on the earth, its frequency
+will, according to
+(392), be shifted towards the red compared with the
+corresponding terrestrial frequency. The amount of this shift will be
+Av
+~~
+v
+C2
+(393)
+where
+is the value of the gravitational potential on
+the
+earth,
+that on the surface of the sun. The numerical calculation gives
+Av - = 2*12 x
+10-6,
+(393a)
+v
+corresponding to a Doppler effect of 0*63 km/sec.
+294 A. Einstein, Naturwissenschaften, 6 (1918) 697.
+295 m
+v. Laue, Phys. Z., 21 (1920) 659, has confirmed this result by a direct calculation,
+based on the wave equation of light. [p.171] 53. Simple deductions from the principle of equivalence
+153
+A great number of attempts have been made to Investigate this relation
+experimentally.
+Jewell 296
+already discovered the red
+shift
+of spectral
+lines
+of the
+sun, but he interpreted if as a pressure effect. When, at a
+later date, Evershed 297 established that the shift did not agree with the
+experimentally determined pressure shift, it was natural that the Einstein
+effect should be used for an explanation. 298 A more accurate examination
+showed however that different lines appeared to be shifted by different
+amounts, so that the Einstein effect alone, at any rate, was not capable
+of explaining the phenomenon in
+all
+its
+details. Much more suited for
+checking the Einstein theory are the more recent observations on the
+nitrogen band A = 3883 A
+(the
+so-called cyanogen band). For
+this
+is
+distinguished by the fact that it does not show any perceptible pressure
+effects. A comparison of the absorption lines of this band in the solar
+spectrum
+with
+the
+corresponding
+terrestrial
+emission
+lines was
+first
+carried out by Schwarzschild 299 and later, with greater accuracy, by St.
+John 300 at the Mount-Wilson Observatory and by Evershed and Royds 
+
+[p.183] 58. Comparison with experiment
+165
+the components Ri1c of the curvature tensor can now be expressed in our
+case as follows,
+^
+Rile - 
+[-^22]^^ + ([-^n] " [-^22 ])
+~
+>
+for i,k =
+1,2,3,
+(414)
+[Ä11] = -
+r
+c
+[R22] =
+-
+i?44 = -
+A
+.- d
+i
+( r2 g'u \
+l gu
+2 dr
+'
+v
+A
+1
+1
+d
+/ rgu \
+r2 A dr \Air
+^44
+1 d
+/ r2g'n \
+r2 A 2 dr 1
+A
+)
+(415)
+It is seen that
+[jRn ] and [R&] are, respectively, the values of R X1 and of
+R22 and i?33 at the point x1 = r, x 2 = x 3 = 0. These values of Rik have now
+to be substituted in (412). We then obtain from the first and third equa-
+tions of (415) that
+A' - 
+0,
+A = const.
+We next impose the condition that at infinity the gik have their normal
+values. It
+is this condition which in fact defines the problem
+(cf.
+§ 62)
+in the first place. It then follows that
+A =
+1
+(416)
+and from the second equation (415),
+2m.
+gw = - 
+1 h
+>
+r
+(417)
+where m is an integration constant. By a comparison with the Newtonian
+potential O,
+(391),
+it is seen that this constant m is connected with the
+mass M of the point-mass generating the field, by means of the formula
+(418)
+Since m has the dimensions of a length, we call this quantity the gravitational radius of the mass. It is easy to convince oneself that all the field
+equations are actually satisfied by (416) and (417).
+According to Weyl one can avoid having to calculate the curvature
+components
+(415)
+by making
+use
+of the
+variational
+principle
+(403).
+Because of (177), this latter may also be written in the form
+8 J
+dx = 0
+(419)
+for matter-free space. In our case we need introduce neither the time nor
+the coordinates x1
+, x 2
+, x 3 separately, but can consider (5 to be a function
+of r alone. After evaluation,
+© = [p.184] 166
+IV. General Theory of Relativity
+so that (419) is of the form
+(420 )
+because
+dx =
+47ir2 dr.
+Varying A, we obtain A' = 0, A = const.; varying A,
+1V =0,
+(
+1V = const.,
+dr\h2
+1
+\h2
+/
+which again
+results in the
+field
+(416),
+(417), because of the
+definition
+(413) of A.
+It follows from (413) that the square of the line element is of the form
+ds2 = (dx1
+)
+2 + (dx2
+)
+2 + (dx2
+)
+2 +
+(42 1 a)
+2m
++
+r2 (r - 2m)
+(x1 dx1 + x2 dx2 + x
+I
+2m\
+3 dx2
+)
+2 - 
+1 1
+) (dx4
+)
+2
+.
+The first part of this expression, which refers to three-dimensional space,
+can be visualized in the following way, according to Flamm.325 On each
+plane passing through the origin (e.g. x 3 = 0) the geometry is the same as
+in the Euclidean space on the fourth-order surface
+2 = ^[Sm(r - 2m)]
+which is generated by the rotation of the parabola
+z2 = 8m(x1 - 2m),
+x{2) = 0
+about the 2-axis. In fact, on this plane
+2m
+ds2 - (dx1
+)
+2 + (dx2
+)
+2 -f
+r2 (r - 2m)
+= (dx1
+)
+2 + (dx2
+)2 + (dz)2
+.
+(x1 dx1 + x2 dx2
+)
+2
+For r - 2m the coordinate system becomes singular.
+The second normalized form (410 b) is obtained from (411) by using the
+transformation
+Then
+/
+m
+\ 2
+-
+1+ ^r*
+x'1 = - x1
+.
+r
+(i =
+1,!2,3)
+(422)
+/
+m \ 4
+r 1 - (ml2r) 1 2
+ds2 =
+1 + - 
+[(^1)2 + (dx2
+)
+2 + (dx3)2] -
+ - - 
+(dx4
+)
+2
+.
+(421 b)
+\
+2r 1
+L 1 + (m/2r) J
+This coordinate system extends to r = m/2.
+(y) Perihelion precession of Mercury and the bending of light rays. We
+now come to the calculation of the paths ofpoint-mass and light rays in the
+325 L. Flamm, Phys. Z., 17 (1916) 448. [p.185] 58. Comparison with experiment
+167
+gravitational field (421). They are geodesic lines in the four-dimensional
+world, determined by the variational principle
+S j ds = 0
+(81)
+or by the differential equations (80). From the latter we obtain by a simple
+calculation
+dPx1
+d2x2
+d2x3
+(423)
+dr2
+dr2
+dr2
+ - 
+'V»1
+•
+/y-2
+•
+'vS
+For the path of the point-mass, r denotes the proper time, for that of the
+light ray an
+arbitrary parameter
+for which
+the
+differential
+equation
+(395) is satisfied. We can first of all deduce that the paths of point-mass
+and
+light ray he
+in a plane;
+secondly, by taking x 3 perpendicular to
+this plane and introducing polar coordinates
+x2 = rsunp,
+(424)
+(425)
+the law of areas
+x1 = r cos 99
+d(p
+r2
+= const. = B
+dr
+is seen to be valid. On the other hand, it follows from (81) by varying the
+time, as in
+§ 53
+(y), that
+dx±
+<744 - - = const.
+dr
+If we square this equation and eliminate dx^/dr by using the relations
+dxl dxk
+9ik
+= - c2
+dr
+dr
+for the case of a point-mass, and
+dxi dxk
+9ik - - = 0
+dr
+dr
+for the case of the light ray, we obtain for the first case
+d(p\ 2
+2me2
+/ drA 2y +i* dw\ 2
+2mc2
+I dcp\ 2
+-y-
+2mr - 
+=
+dr J
+r
+\dr 1
+const. = 2E
+(426 a)
+and for the second
+('SMsF-Hs)'-
+const.
+(426 b)
+It is clear that (426 a) contains the energy conservation law. Both equa-
+tions differ from the Newtonian equations only by their last term.
+If,
+next, we introduce
+cp as independent variable in place of t , we obtain,
+with the help of (425),
+B2
+1
+/dr\ 2
+1
+me*
+r
+2mB2
+r4 \dcp I
+1
+I dr
+\
+2
+1
+2m
+r4 \dw /
+r2
+r3
+= 2E,
+i 1
+const. = - 
+.
+A 2
+(427 a)
+(427 b) [p.186] 168
+IV. General Theory of Relativity
+These
+equations
+completely
+determine
+the
+required
+paths.
+The
+last
+term on the left-hand
+side of
+(427 a) produces a displacement of the
+perihelion
+of planetary
+orbits
+in the
+direction
+of the
+planet's
+orbital
+motion which is of magnitude
+67rm
+Att =
+per revolution
+a(l - e2
+)
+(a = semi-major axis,
+e = eccentricity).
+(428 a)
+Because of (418) and Kepler's third law,
+47t2 a3
+= kM = me2
+,
+(T = period)
+this can also be written
+24tt3 a2
+Att =
+.
+c2 T2 (l - e2
+)
+(428 b)
+There remains to be discussed equation
+(427 b)
+for the light ray. If
+the last term on the left-hand side were not present, the light ray would
+be a straight line, at a distance A from the origin. The perturbation term
+produces a curvature of the light ray, concave towards the mass centre,
+which leads to a total deflection through an angle
+(429)
+where now A
+denotes the distance of the
+origin from the asymptotic
+directions of the path. This method for calculating the bending of light
+rays
+is due to Flamm 326
+. Einstein's 327 calculation was based on Huy-
+ghen's principle and leads to the same result, as it should, according to
+§ 53
+(y).
+The two consequences of Einstein's theory of gravitation developed
+here 
+
+[p.197] 179
+62. Relativity of inertia. Finite universe
+62.
+Modification of the field equations.
+Relativity of inertia and
+the space-bounded universe 357 !
+(a) The Mach principle. In
+§ 58 we discussed the perihelion precession
+of Mercury simply as such, without specifying how to determine physically
+the coordinate system
+Ül 0
+,
+relative to which this perihelion precession
+is to be measured. Such ä coordinate system
+is distinguished from
+all
+other systems K , rotating uniformly relative to K0
+, by the spherical symmetry of the 6r-field and above all by the behaviour of the gik in the spatial infinite; for the gik take on their normal values there.
+Certain coordinate systems K0 are singled out from others by the boundary con-
+ditions for the spatial infinite, which have to be added to the differential
+equations of the
+6r-field, in order to determine the gik completely from
+the positions and velocities of the masses,
+or, more generally, from the
+material energy tensor Tik
+. This
+difficulty made
+itself felt particularly
+strongly in connection with the problem of the relativity of centrifugal
+forces
+(§
+60). While such singling out of certain coordinate systems by
+means of the boundary conditions is not logically incompatible with the
+general covariance postulate,
+it
+is nevertheless in contradiction to the
+spirit of a relativistic theory and must be considered as a severe epistemological defect. Einstein 358 throws it into sharp relief by means of a 'thought
+experiment', dealing with two liquid masses rotating relative to each other
+about their common axis. This defect
+is a feature, not only of classical
+mechanics and
+special
+relativity, but
+also
+of the gravitational theory
+based on Eqs. (401), which we developed above. It is only removed when
+the boundary conditions can be specified in a generally covariant way.
+We therefore put forward the postulate
+: The G-field is to be determined
+in a unique and generally covariant manner ,
+solely by
+the values of the
+energy tensor
+(Tik ). Since Mach359 had already clearly recognized this defect
+in Newtonian mechanics, and had replaced absolute acceleration by acceleration relative to all the other masses in the universe, Einstein 360 called
+this postulate the 'Mach principle'. It has to be postulated, in particular,
+that the inertia of matter is solely determined by the surrounding masses.
+It must therefore vanish when all the other masses are removed, because
+it is meaningless, from a relativistic point of view, to talk of a resistance
+against absolute accelerations (relativity of inertia). J
+(ß ) Remarks on
+the
+statistical equilibrium of the system of fixed
+stars.
+The
+X-term.
+Quite
+apart from
+the boundary
+conditions
+at the
+spatial
+infinite, one comes across a further difficulty
+if one wants to apply the
+previously used field equations to the system of fixed stars as a whole.
+Once this difficulty is overcome, the postulates set up in (a) will then also
+be fulfilled.
+357 The ideas presented in this section are developed by Einstein in his paper 'Kosmolo-
+gische
+Betrachtungen
+zur
+allgemeinen
+Relativitätstheorie'
+(S.B.
+preuss.
+Akad.
+Wiss.,
+(1917)
+142). (Also reprinted in the collection of papers Das Relativitätsprinzip.)
+t
+See suppl. note 19.
+358
+Cf. footnote 279,
+p. 145, ibid.,
+§
+2.
+359 E. Mach, Mechanik, Chap. II, No. 6; 'Die Geschichte und die Wurzel des Satzes von der
+Erhaltung der Arbeit', Appendix note
+1.
+360 A. Einstein, Ann. Phys ., Lpz., 55 (1918) 241.
+*
+f
+See suppl. note 17.
+N [p.198] 180
+IV. General Theory of Relativity
+C. Neumann 361 and Seeliger362 had already pointed out that Newton's
+law of gravitation can only then he strictly valid when the mass density
+of the universe converges to zero more rapidly than
+1/r 2
+for
+r
+oo.
+Otherwise, the force exerted by all the masses of the universe on a material
+particle would be undetermined.
+In
+a
+subsequent
+paper,
+Seeliger 363
+further
+discusses the
+possibility that the mass density should remain
+different from zero at arbitrary distances, but that the Newtonian potential should be replaced by the potential
+o = A
+exp( ~ r^A)
+,
+r
+which decreases more rapidly with the distance. This potential had already
+been investigated mathematically by C. Neumann 364 in a different context.
+It amounts to replacing Poisson's equation
+Afi> =
+47? k/jio
+(ä)
+Ad> - Afi> =
+47r&/zo.
+(B)
+The difficulty which arises in Newtonian theory then disappears.
+According
+to
+Einstein, weighty arguments can be brought forward
+against the
+first possibility
+(strict validity of Newton's law and
+sufficiently rapid decrease of the mass density at infinity), by taking the view
+that the whole system of fixed stars must be in statistical equilibrium.
+If the potential were finite at great distances (and thus the mass density
+decreasing sufficiently strongly)
+it could happen that entire stars would
+leave the system. The system would thus become "depopulated" and this
+process would go
+on,
+according
+to the
+laws
+of
+statistical
+mechanics,
+for as long as the total energy of the stellar system is greater than the work
+required to remove a single star to infinity. Another alternative which
+had already been excluded by Neumann's and Seeliger's investigations
+was the case of an infinitely high potential value at very large distances
+(i.e. the mass density reaching to infinity or not decreasing sufficiently
+rapidly); according to Einstein this alternative's inadmissible because
+it would be
+in
+contradiction with the
+fact that the observed
+stellar
+velocities are comparatively small. If
+(B )
+is assumed valid, however,
+all
+these difficulties are removed. For in that case a uniform distribution of
+matter of density /zo and with the potential (constant in space)
+4:7rk
+is dynamically possible.
+The situation in relativity
+is quite analogous to that in Newtonian
+theory.
+If Eqs.
+(401)
+are
+retained,
+it proves impossible,
+according to
+361
+C. Neumann, Abh. sächs. Ges. Wiss., 26 (1874) 97.
+362 H. v. Seeliger, Astr. Nachr., 137 (1895) 129.
+383 H. v. Seeliger, S.B. bayer. Akad
+
+[p.211] 193
+65. Weyl's theory
+which claims to interpret all physical events in terms of gravitation and
+electromagnetism, and these, in turn, in terms of the world metric. The
+theory's basic structure and results obtained to date will be discussed
+at
+this juncture, because the theory also makes certain statements on
+the nature of material particles.
+(a) Pure infinitesimal geometry . Gauge invariance. The transition from
+Euclidean to Riemannian geometry was seen in Part II to be effected by
+no longer assuming that the transference of the direction of a vector from
+a point P to a point P' is independent of the path taken. Weyl takes this
+a step further by permitting a corresponding path dependence for the
+transference of length. It will then only be possible to compare lengths
+measured at one and the same world point, but not those at different world
+points. In other words, only the relations between the gik can be determined by measurements, but not these
+quantities themselves. Let us
+first assume some arbitrary (continuous) absolute values for the gik and
+define
+ds2 =
+gijc dxi dx1c
+to be the square of the length of a measuring rod, where dxl are the coordinate differences of its end points. (For brevity, we speak here, and in
+what follows, of the length of a measuring rod, but the same arguments
+apply of course to the period of a clock in the case of a time-like line ele-
+ment.)
+If now the measuring rod
+is
+displaced along a
+definite curve
+xi __
+from the point P(t) to the point P'(t-{-dt), the square of the length
+ds 2 =
+l, will then be changed. We
+shall assume
+axiomatically that
+it
+will always be changed by a definite fraction of l,
+dl
+d(p
+dt
+dt
+(472)
+where op is a certain function of t and is independent of l. We introduce as
+a second axiom that dcp/dt only depends on the
+first derivatives of the
+coordinates, dxijdt. Since, moreover, equation (472) has to hold for an
+arbitrary choice of the parameter t, dy\dt must he a homogeneous function
+offirst degree of the dxi/dt. This function can be specified still more by mak-
+ing use of the concept of a parallel displacement, which had been discussed in
+§
+14. This concept had been defined there by two conditions:
+The first stated that the components of a vector would remain unchanged
+for an infinitesimal parallel displacement in a suitably chosen coordinate
+system , whereas the second expressed the fact that the length of a vector
+would remain unaltered during a parallel displacement. The first assumption can be retained unchanged;
+it leads to the expression (64) for the
+change in the vector components,
+d£*
+dt
+= - r*rs
+dxs
+dt
+(64)
+with
+rV* = iv
+(65) [p.212] 194
+V. Elementary Particles
+The second assumption, however,
+loses
+its meaning here, because the
+lengths of two vectors at different points can no longer be compared.
+Instead, the assumption has to be replaced by- the condition that the
+length should change according to (472),
+4 (9a i
+l £k
+) = ~ (f«
+= - 9a& tk%
+(473)
+dt
+dt
+dt
+for a parallel displacement. Substituting
+(64),
+it first of all follows that
+dcpldt must be a linear form of the dx{ldt,
+dcp = fadxK
+(474)
+Only in this case, therefore,
+is a parallel displacement possible. Further-
+more, we have from
+that
+ri,rs - 9ik^krs>
+TVs - 9ik ^k,rs
+>
+dgif
+~Z
+t Qir^s = IY rs + Fr
+is
+•
+dxs
+(66 )
+(475)
+The geodesic components of Weyl's geometry are thus different from those
+of Riemannian geometry. We shall always denote by an asterisk expres-
+sions in Riemannian geometry. They reduce to those of Weyl's geometry
+for the case ^ =
+0. If therefore the quantities (69) are denoted by r* i>rs ,
+then
+= r\ rs + -^(gir&s + 9is<f>r ~ grs^i)*
+(476)
+We had fixed the absolute values of the gik quite arbitrarily. Instead of
+the set of values gik we could equally well have used the set Agik
+, where A
+is an arbitrary function of position. All elements of length would in that
+case have to be multiplied by A and, because of (472), we would have
+found the set of values
+<l>i - 
+d log A
+dx1
+i
+dx
+A dx1
+instead of
+<f>t
+. Fixing the factor A, the gauge, in Weyl's geometry is thus
+on a par with the choice of coordinates in Riemannian geometry. Just
+as there we had postulated the invariance of all geometrical relations and
+physical laws under arbitrary coordinate transformations,
+so we have now
+to postulate, in addition, their invariance with respect to the substitutions
+9ik = Aik
+<t>i = fa - 
+1
+dX
+X
+dxX
+'
+(477)
+i.e. with respect to changes in the gauge {gauge invariance).
+{ß )
+Electromagnetic field and world
+metric. From
+(472)
+it follows by [p.213] integration that
+65. Weyl's theory
+195
+P'
+P
+(478)
+P'
+When the linear form
+cj)i dxl is a total differential, the length of a vector
+becomes independent of the path along which
+it
+is transferred, and we
+revert to the Riemannian case. The necessary and sufficient condition for
+this is the vanishing of the expressions
+dcf>i
+dxk
+(479)
+We see from (477) that, in this case, the vector
+can always be made to
+vanish by a suitable choice of the gauge. In the general case, however,
+the quantities Fik will be different from zero. They then form the covariant components of an antisymmetric tensor of rank
+2, which moreover remain unchanged for changes in the gauge, because of (477). In
+addition, they satisfy the equations
+dFik
+dFu
+dFjd
+dx l
+dxk
+dxl
+(480)
+which follow from (479). We see that relations (479) and (480) are of exactly
+the same form as equations (206) and (203) of electron theory. But the
+analogy can be carried still further. If we take the view (contrary to the
+assumptions of Mie's theory) that electromagnetic phenomena are
+primarily determined by the space and time changes of the field strengths
+alone, and that the potentials, on the other hand, are only looked upon as
+mathematical
+auxiliary
+quantities, then
+all
+potential
+values
+fa which
+lead to the same
+field strengths are physically completely equivalent;
+thus a gradient
+dip/dx* remains undetermined in the fa. But as we have
+seen, exactly the same applies to the metric vector
+</>i
+
+
+[p.225] SUPPLEMENTARY NOTES
+Note 1. (p. xiii) Selection of books concerned with the later develop-
+ment of relativity theory
+A. Einstein, The Meaning of Relativity (5th edn., Princeton 1956).
+M. v. Laue, Die Relativitätstheorie (Braunschweig)
+:
+Vol.
+1, Spezielle Relativitätstheorie (6th edn., 1955).
+Vol. 2, Allgemeine Relativitätstheorie (3rd edn., 1953).
+H. Weyl, Raum-Zeit-Materie (5th edn., Berlin
+1923). English translation
+(with new preface) Space-Time-Matter (New York 1950).
+A.
+S. Eddington, The Mathematical Theory of Relativity (2nd edn., Cam-
+bridge
+1924;
+reprint
+1953).
+German
+translation with an appendix
+by A. Einstein (Berlin 1925).
+Richard C. Tolman, Relativity , Thermodynamics and Cosmology (Oxford
+1934).
+P. G. Bergmann, An Introduction to the Theory of Relativity (New York
+1942).
+E. Schrödinger, Space-Time Structure (Cambridge 1950).
+A. Lichnerowicz, Theories relativistes de
+la gravitation
+et de Velectromag-
+netisme (Paris 1955).
+P. Jordan, Schwerkraft und Weltall (2nd edn., Braunschweig 1955).
+CinguanV anni di relativitd, 1905-1955 (Florence
+1955).
+Proceedings of the Congress
+'Jubilee
+of Theory of Relativity,' Berne,
+July
+1955, Helv. phys. acta
+,
+Suppl. IV,
+1956.
+Volume 'Einstein' in the Library of living Philosophers (Evanston
+1949;
+2nd edn., 1951; German translation, Stuttgart 1955).
+Note 2. (p. 4)
+R. J. Kennedy and E. M. Thorndike, Phys. Rev., 42 (1932) 400, performed an important variation of the Michelson experiment, in which the
+difference in length of the two arms in the interferometer was kept large.
+The negative
+result of this experiment excludes
+the
+possibility
+of a
+dependence on the velocity of the earth of the time needed for the light
+to
+traverse any
+closed path
+in
+a
+terrestrial
+laboratory.
+See
+also
+the
+theoretical discussion of this experiment by H. P. Robertson, Rev. Mod.
+Phys., 21 (1949) 378.
+Note 3.
+(p. 8)
+Meanwhile, the Michelson experiment with extra-terrestrial light (sun
+and stars) has actually been carried out with negative result by R. Toma-
+schek, Ann. Phys., Lpz., 73 (1924) 105.
+Note 4.
+(p. 19)
+The experiments of Harress and Sagnac have been repeated by B.
+Pogany, Ann. Phys., Lpz., 80 (1926) 217; Naturwissenschaften, 15 (1927)
+177
+; Ann. Phys., Lpz., 85 (1928) 244. The proposed optical experiment to
+207 [p.226] 208
+Supplementary Notes
+test the rotation of the earth has actually been carried out
+: A. A. Michel-
+son, Astrophys. J. 61
+(1925) 137 and A. A. Michelson and H. G. Gale,
+Astrophys. J. 61 (1925) 1401.
+Note 5. (p. 20)
+The second-order Doppler effect has actually been verified experimentally by comparing the arithmetical mean of the frequency shift of two
+light beams of exactly opposite directions with the unshifted
+light
+fre-
+quency emitted by atoms at
+rest. The experiment has been made by
+H. E. Ives and C. R. Stilwell, J. opt. Soc. Amer., 28 (1938) 215; 31 (1941)
+369, and repeated by G. Otting, Phys. Z ., 40 (1939) 681. The prediction
+of special
+relativity theory
+is confirmed with great accuracy.
+(Hence
+the proposal of Abraham mentioned on p. 14 of the text is also disproved
+experimentally.
+)
+A good means of verifying experimentally the time dilatation of special
+relativity is the dependence of the life time of decaying mesons on their
+energy. Theoretically, the life time should be proportional to the relativistically defined energy of the particles (see § 37). Qualitatively, the effect
+is
+well
+checked both
+in
+cosmic
+raysf and with
+artificially produced
+mesons,} but the accuracy is not very good at present, as until now the
+experiments have not been made with the particular purpose of checking
+the theoretical formulas for time dilatation.
+Note 5a. (pp. 33 and 43-46)
+The systematic nomenclature introduced here has not found its way
+into the literature. It will strike the reader of today as particularly unusual
+that the rank of a
+* 'surface" tensor should be different from the number
+of tensor indices. The curvature
+tensor,
+for instance,
+is
+called here a
+"surface tensor of rank 2", while the number of its indices is four.
+Note 6.
+(p. 38)
+It
+is
+logically possible to abandon any
+derivation of the
+"geodesic
+components" Yl
+ik from the metric of the space, defined by the
+tensor
+gik
+. The "pseudotensor field" Yl
+ik is then axiomatically assumed to satisfy
+the transformation law
+dxr
+dxs
+I dx' 1
+d2x' 1
+\
+Y' l
+ijc =
+:
+r*r5
+dxA
+dx'k
+\ dx t
+dxr dxs J
+dx' 1 / dxr
+dxs
+d^x*
+= - 
+r*„ +
+:
+dx 1
+\ dx"1
+dx'k
+dx' 1 dx'k
+which
+is equivalent to the general covariance of the definition (64) for
+the parallel displacement of contravariant vectors.
+Instead of Eq.
+(67) of the text, which contains explicitly the metric,
+f See, for instance, B. Rossi and D. B. Hall, Phys. Rev., 59 (1941) 223.
+J R. Durbin, H. H. Loar and W. W. Havens, Phys. Rev., 88 (1952) 179 (Especially p.
+183) measured the life time of 7r-mesons of kinetic energy of 73 MeV, so that the tunedilatation factor was about
+1*5. The measured dilatation was in agreement with this to
+10 per cent. [p.227] Note 7
+209
+the invariance of any scalar product
+of a contravariant vector ai
+and covariant vector bt under parallel displacement has to be postulated
+here. With this condition,
+=
+°>
+at
+we derive from (64) the displacement law
+dbi
+dxs
+= + vrisnr
+br
+(2)
+for covariant vectors.
+This
+generalization
+of the Riemannian
+geometry
+is
+called
+"affine
+geometry", the
+parallel
+displacement
+of vectors
+is
+called "affine connexion" and
+a
+space
+in
+which
+it
+is
+defined
+an
+"affinely connected
+space".
+At first it would seem natural to maintain the symmetry condition (65)
+for the Ps, because the antisymmetric part of T
+l
+ik would be a new independent
+tensor
+in the proper
+sense,
+according
+to the transformation
+law (1). Only the symmetric part of F l
+ik can be locally transformed away
+at a given point. In Note 23 we shall, however, discuss also non-symmetric
+Ps, in connexion with attempts to apply this generalized affine geometry
+to physics.
+In the following Note 7, however, we restrict ourself to symmetric Ps.
+Note 7. (pp. 60 and 69)
+(a) Cov
+
+[p.239] Note 19
+221
+the pressure, so that u and p are time-dependent, but constant in space,
+we have for the components of the energy tensorf Tik with a, b =
+1, 2, 3
+Hence
+T44 = U ,
+T^a - 0 ,
+Tab - pQab - pR^yab
+T = - U + 3p,
+T44 - 1^44 T - \(U + 3p) y
+(4)
+(5)
+Tab - iflabT - \(u + 3p).
+The computation of the components of Rik gives, if a dot denotes differentiation with respect to X4 = ct ,
+oil
+R44 =
+,
+R4a - 0,
+Rab - ~ yab{2e + R2 + RR).
+(6)
+R
+The field equations without the cosmological A-term in the form (401 a),
+p. 161 of the text,{
+Rik = - K(Tik - \gacT ),
+give therefore
+or also
+R
+K
+S
+~R
+== ~2 {U + 3P)i
+2e + 2i?2 + BR = -R2(u - p ) 9
+2
+i?2 + e
+3
+R 2
+KUy
+2RR + R2 + e
+~R2
+= Kp.
+(7)
+( 8 )
+;
+The energy law (vanishing of the covariant divergence of Tik ) gives for
+i = 4 (the other three equations are identically fulfilled)
+3 R
+Ü + ~(U + P) =
+0,
+(9)
+K
+which also follows directly from
+(7) or
+(8). This equation can also be
+written
+d{uR3
+) +pd(Rs
+) =
+0,
+(9 a)
+which expresses the constancy of entropy in a material volume.
+In the case of pure matter one obtains
+p - 
+0,
+uRiz - const. = \A y
+(9jb)
+in the case of pure radiation
+p - \Uy
+uR4 = const.
+(9 c)
+t See Eq.
+(362), p.
+133 and also pp. 163 and 170 of the text. One has to put here ux
+= c and ua = 0 for a - 
+1, 2, 3.
+% Compare footnote 320, p. 163 on our notation for k. [p.240] 222
+Supplementary Notes
+The case p - 0 alone seems to be of practical interest, and will therefore
+be assumed in the following. Then
+(9 b) inserted in the
+first line of
+(8)
+gives immediately
+E(E2 + f) = kA,
+or
+(10)
+This equation can easily be integrated. For zero curvature one has, for
+instance,
+e =
+0,
+f jR3/2 = y(KÄ)c(t -
+t0 ).
+(11)
+The measured Hubble constant is therefore
+or
+1
+E
+1
+cy'M)
+2
+1
+Ih
+E
+tu
+E2/2
+3
+t - 
+to
+t - 
+to = f tjj = fH
+1
+.
+( 12 )
+(13)
+In
+this
+solution the time
+to corresponds to E = 0, u = oo where the
+idealizations assumed in the model are no longer justified. In the sense
+that
+it
+is not possible theoretically to trace further back the extremely
+dense state of matter which existed at the time
+to before the present,
+the time
+t - to can be interpreted as the age of the universe.
+For the other cases
+e = +1 and
+e = - 1 we refer to the literature
+quoted
+in
+footnotes
+(f) and
+(J),
+p. 220. If H =
+1 /tH is
+still defined by
+(12), and I? - 0 for t= to, one finds for the "age of the universe" t - to
+the
+inequalities
+t -
+to < S tH
+for
+€ = +
+1,
+(13a)
+t -
+to > \tH
+for
+6 = -
+1.
+(13b)
+In the latter case the time length t - to
+is also limited for known
+tH by
+the possibilities for the values of EjlcA.
+An empirical lower bound for
+t - to is given by the fact that the age of
+the firm crust of the earth is known to be about 3 X 10 9 years. For some
+time there seemed to be a discrepancy with thef empirical value of the
+Hubble constant, which led to a value of the age of the universe which was
+too low.f More recently the astronomers found, however, a lower value
+of the Hubble constant H , leading to
+1
+tn = - - =
+(5-6 ±
+2) x 109 years.J
+H
+There no longer seems to be any serious discrepancy between the empirical
+value of the Hubble constant, the age of the earth and the equations of
+general relativity without the cosmological term.||
+t See A.
+Einstein, The Meaning of Relativity, Appendix; and P. Jordan, Schwerkraft
+und Weltall, (2nd edn., 1955).
+X A. R. Sandage, Astr. J ., 59 (1954)
+180.
+|| See report H.
+P. Robertson in Proceedings of the Congress, "Jubilee of Theory of
+Relativity", Berne, 1955. [p.241] Notes 20, 21 and 22
+223
+Note 20.
+(p. 189)
+Here the invariant [see Eq. (54 a), p. 33)]
+ - - 
+"(^23^14 + ^31^24 + FizFm) = |FikF* lk
+V(~a)
+has been erroneously omitted. The quantity is not invariant with respect
+to reflections of the space coordinates
+(x'a - - xa for a - 
+1,
+2,
+3), but
+changes its sign under this transformation (pseudo-scalar)
+. As the Lagran-
+gians
+occurring
+in nature
+are
+invariant
+also under spatial
+reflections,
+only the square of this quantity can occur. This is actually the case in the
+application of the quantum theory of the positon to the polarization of the
+vacuum in homogeneous external electric and magnetic fields, as was shown
+by W. Heisenberg and H. Euler, Z. Phys., 98 (1936) 714.
+It also plays a
+role
+in
+the
+non-linear
+electrodynamics
+of M.
+Born,
+Proc. Roy.
+Soc.
+A143 (1934) 410 and of M. Born and L. Infeld, Proc. Roy. Soc. A144 (1934)
+425, 147 (1934) 522, 150 (1935)
+141.
+The other invariants mentioned under (2) to (4), p. 189 have, however,
+been entirely abandoned because of their lack of gauge invariance.
+Note 21. (pp.
+192, 202 and 205)
+After
+the
+properties
+of negatons and
+positons had turned
+out
+to
+exactly
+symmetrical,
+the
+negative
+antiproton
+was
+found
+experimentally, f
+All arguments in the text, which are based "on the asymmetry between
+the two kinds of electricity" have therefore to be discarded.
+Note 22. (pp. 192-202) Theory of Weyl
+While there has never been an empirical reason to believe that lengths
+and times of measuring rods and clocks depend on their prehistory (see
+§ 65 (ß)), the theoretical situation has also changed very much since the
+establishment
+of wave
+mechanics.
+In
+this
+theory
+the complex wave
+equation which describes electrically charged matter (the wave function
+ijj may have one or several components) permits the group (h - Planck's
+constant divided by
+2tt,
+e = elementary electric charge)
+% hc
+df
+<f>\ = <f>i-i - 
+,
+(1)
+€
+dxl
+which
+is in close analogy with the transformation (477) of the original
+theory of Weyl, but with an imaginary exponent in
+ip instead of the real
+exponent in qik
+. Moreover, the connexion of the conservation law for the
+electric charge with the new group is the same as with the old one.
+Both London,]; and Weyl|| himself, recognized this
+fact immediately
+t O. Chamberlain, E. Segre, C. Wiegand and Th. Ypsilantis, Phys. Rev., 100 (1955) 947.
+t
+F. London, Z. Phys., 42 (1927) 375.
+|| H. Weyl,
+Gruppentheorie und Quantenmechanik
+(Leipzig
+1928; 2nd
+edn.,
+1931);
+Z.
+Phys.
+56
+(1929)
+330; Rouse
+Ball
+lecture 'Geometry and
+Phy
+
+[p.253] AUTHOR INDEX
+235
+Noether, E., 48n., 131.
+Nordstrom,
+G.,
+24,
+108n.,
+109n.,
+144,
+157,
+159, 160, 199n.
+Oppenheim, S., xiv, 142n., 169n.
+Ostrowski,
+A.,
+(Fricke,
+R.
+and
+)
+(eds.), xiv.
+Otting, G., 208.
+Palatini, A., 69n., 154n., 214-5.
+Pauli, W.,
+7 On.,
+202n.,
+205n.,
+206n.,
+229;
+(Einstein, A. and
+) 219.
+Pekar, D.,
+146n.
+; (Eötvös, R.,
+and
+Fekete, E.) 146n.
+Perot, A., 153.
+Petzold, J., xiv, 15n.
+Planck, M.,
+82,
+86,
+116n.,
+119,
+123n.,
+125,
+126, 131n., 133n., 134, 138.
+Pogany, B., 207.
+Poincare, H.,
+xiii,
+2,
+3,
+5,
+10,
+16, 21n., 53,
+56,
+71,
+77, 78,
+84,
+88, 92n., 98, 142, 186.
+Rankine, A. O., (Trouton, F. T. and
+)
+4n., 113.
+Ratnowsky, S., 83.
+Rayleigh, Lord, 2n.
+Reichenbach, H., xiv.
+Reissner, H., 171.
+Ricci,
+G.
+and
+Levi-Civita,
+T.,
+24,
+25n.,
+29n., 42, 53, 59, 209.
+Riemann,
+B.,
+xiii,
+34,
+38n.,
+41,
+43,
+44-6,
+48, 52, 145, 149.
+Ritz, W., 5-9.
+Ritz, W. and Ehrenfest, P., 7n.
+Robertson, H. P., 207, 222n.
+Rogers, M.
+M.,
+McReynolds,
+A. W.
+and
+Rogers, F. T., 216.
+Röntgen, W. C., 111.
+Rosa, M. La,
+8.
+Rosen, N., (Einstein, A. and
+) 219.
+Rossi, B. and Hall, D. B., 208n.
+Rothe, H., (Frank, P. and
+)
+11.
+Rowland, H. A., 111.
+Royds, T., (Evershed, J. and
+) 153.
+Runge, C., 24n.
+Sagnac, G., 18n.,
+19, 207.
+St. John, C. E., 153.
+Sandage, A. R., 222n.
+Schäfer, C., 83.
+Scheidegger,
+A.,
+(Infeld,
+L.
+and
+)
+217n.
+Scheye, A., 115.
+Schild,
+A.,
+(Infeld,
+L. and
+)
+217n.,
+218.
+Schlick, M., xiv.
+Schottky, W., 125n.
+Schouten, J. A., 209n., 229.
+Schrödinger, E., 176-7, 207, 224n., 225n.
+Schur, F., 45n., 69.
+Schwarzschild, K.,
+88,
+91,
+153,
+164,
+170.
+Seeliger, H. V., 154, 169, 180.
+Segre,
+E.,
+(Chamberlain,
+O.,
+,
+Wiegand,
+C. and Ypsilantis, T.) 223n.
+Serini, R., 182n., 219.
+Smekal, A., 123n.
+Snethlage,
+A.,
+(Zeeman,
+P.
+and
+)
+18n.
+Sommerfeld, A., 22n.,
+24,
+53,
+74,
+7 6n.,
+76,
+77, 79, 83n., 90, 91, 93, 115, 133n., 142.
+Southerns, L., 146.
+Stark, J., 20.
+Stern, O. and Vollmer, M., 123n.
+Stewart, O. M.,
+7.
+Stilwell, C. R., (Ives, H. E. and
+) 208.
+Stras'ser, B., In.
+Straus,
+E.
+G.,
+(Einstein,
+A. and
+)
+225n.
+Swinne, R., 123n.
+Thirring, H., 174, 175.
+Thirring, H. and Lense, J., 174.
+Thiry, Y. R., 231.
+Thomson, J. J., 7.
+Thorndike,
+E.
+M.,
+(Kennedy, R.
+J.,
+and
+) 207.
+Tolman, R.
+C.,
+5,
+7,
+8,
+82n.,
+207,
+220n.
+;
+(Lewis,
+G.
+N.
+and
+)
+14n.,
+118,
+128, 217.
+Tomaschek, R., 207.
+Trouton, F. T. and Noble, H. R.,
+2, 127-8,
+186.
+Trouton, F. T. and Rankine, A. O., 4n., 113.
+Trumpier, R.
+J.,
+218;
+(Campbell, W. W.
+and
+) 218.
+Varicak, V., 12n., 74, 97.
+Veblen, O., 229.
+Vermeil, H., 45n., 47, 48n., 52, 64.
+Voigt, W.,
+1.
+Vollmer, M., (Stern, O. and
+) 123n.
+Voss, A., 40n.
+Walton, E. T., (Cockcroft, J. D. and
+)
+217.
+Watson, B.
+B., (DuMond,
+J., Lind, D. A.
+and
+) 217.
+Weber, A., 11 In.
+Weber, H., 45n.
+Weitzenböck, R., xiv, 24n., 198n.
+Weyl, H.,
+xiii, 24, 25, 32, 34n., 37-9, 42n.,
+44, 48, 53, 58, 68, 69n., 78, 81, 89, 103n.,
+112n.,
+1 13n.,
+147,
+150n.,
+154,
+158,
+164,
+165,
+170,
+171,
+182,
+188n.,
+190,
+192-202,
+207, 218n., 223, 224, 226n.
+Wiechert, E., 153n.
+Wiegand,
+C.,
+(Chamberlain,
+O.,
+Segrö,
+E.,
+and Ypsilantis, T.) 223n.
+Wien, W., 14n.
+Wigner, E., (Jordan, P. and
+) 224n.
+Wilson, E. B. and Lewis, G. N., 24n.
+Wilson, E. D., (Harkins, W. D. and
+)
+123n.
+Wilson, H. A., 112.
+Wilson, H. A. and Wilson, M., 113.
+Witte, H., xiv.
+Wolz, K., 83n.
+Ypsilantis, T., (Chamberlain, O., Segrö, E.,
+Wiegand, C. and
+) 223n.
+Zeeman, P.,
+18.
+Zeeman, P. and Snethlage, A., 18n.
+Zenneck, J., 142n., 169n.
+Zurhellen, W., 8n. [p.254] SUBJECT INDEX
+Aberration of light, 17, 20, 74n., 114.
+Action function,
+in five-dimensional theory, 230, 232.
+for gravitational field equations, 162, 182,
+215, 227.
+for Maxwell's equations, 199.
+mechanical-electrodynamical,
+88-9,
+158,
+216.
+in Mie's theory, 189-90, 192, 223.
+in relativistic mechanics, 119-20.
+thermodynamical, 135-6.
+in Weyl's theory, 200-1.
+Action principle, see Action function.
+Aether, 4-7.
+Affine
+connection, 197, 209, 212.
+geometry, 209.
+space, 209-12.
+tensors, 60-2.
+transformations, 23-7, 36, 81.
+tensor calculus for, 24-7.
+Age of universe, 222.
+Angle measurement,
+in Euclidean geometry, 28.
+in Riemannian geometry, 36.
+Antiproton, 223.
+Antisymmetric tensors, see Tensors.
+Bianchi identities, 212.
+Black-body radiation, 138-9.
+Bolyai-Lobachevski geometry, 74, 97.
+Canonical equations, 121.
+Cayley system of measurement, 74n.
+Centrifugal force, see Force.
+Charge
+conservation, see Conservation laws,
+distribution, in electron, 185-7, 192.
+total, of particle, 77, 191.
+Charged
+particles,
+equations
+of
+motion,
+82-4,
+191;
+see also Particles and Point-
+charge.
+Christoffel
+symbols,
+see
+Geodesic
+com-
+ponents.
+Clock
+paradox, 13, 72-3, 152.
+synchronization, 9.
+Closed system, 5.
+electromagnetic, 117.
+gravitational, energy-momentum law for,
+176-7.
+Complementarity, 224.
+Conduction current,
+electron theory, 106.
+Minkowski's electrodynamics, 101-3.
+Conductors, moving, 113.
+Conservation laws,
+angular momentum,
+125.
+charge, 76-8, 200-1.
+energy, 85-6, 107, 162, 189, 200-1.
+energy-momentum,
+see Energy - momen-
+tum law
+momentum, 85-6, 162.
+Contraction factor, 2, 3, 9-10.
+Contravariant components,
+of tensors, 25.
+of vectors, 27-8.
+Convection current, 101-2, 104, 111.
+Co-ordinate system,
+Gaussian, 149.
+geodesic, 38, 44.
+Riemannian, 44-8, 50-1.
+Coriolis force, see Force.
+Cosmological
+models,
+static
+(Einstein,
+de
+Sitter),
+179-83.
+non-static (Lemaitre, Friedmann), 219-
+22 .
+term, 181, 204, 219-20.
+Covariance,
+of Maxwell's equations, 78-81, 156-7.
+of physical laws, 3, 5, 144, 149-50, 205.
+Covariant
+components, of tensors, 25.
+of vectors, 29.
+differentiation, 57, 59.
+in affine space, 209-10.
+Curl, 55-6.
+Current vector, 76-7.
+in electron theory, 104.
+in Minkowski's electrodynamics, 100-1.
+in Weyl's theory, 201.
+Curvature,
+Gaussian, 45-6.
+of Riemannian space, 41-4, 46, 69.
+sectional, 46.
+of space (Weyl's theory), 201.
+space of constant, 49-52.
+Curvature invariant, 44, 48.
+in Einstein's theory, 204.
+in five-dimensional theory, 230, 232.
+in space of constant curvature, 49.
+weight of, 197-8.
+Curvature tensor, 42-3.
+in affine space, 210-12.
+Bianchi identities, 212.
+contracted, 44, 165.
+ge

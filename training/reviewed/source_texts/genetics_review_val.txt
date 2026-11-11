@@ -1,0 +1,1 @@
+During gene editing, CRISPR-Cas9 relies on single guide RNA to locate target DNA adjacent to a protospacer adjacent motif (PAM). In eukaryotic nuclei, RNA polymerase II transcribes messenger RNA precursors before spliceosomal intron excision removes noncoding sequences.

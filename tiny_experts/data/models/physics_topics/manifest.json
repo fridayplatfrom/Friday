@@ -1,0 +1,154 @@
+{
+  "architecture": {
+    "dropout": 0.05,
+    "feature_dim": 4500,
+    "hidden_dim": 192,
+    "name": "multihead_mlp_v1",
+    "representation_dim": 128
+  },
+  "artifacts": {
+    "metrics.json": "1f34e656efa7430a46ab3cc38b132f1555992880d865b8e3626f296c34f51d6b",
+    "model.pt": "281f8ecfb428de2a52d3c00cc5843c792686c78175092459c012c541e99e4f6b",
+    "splits.json": "ffc23f06d40f6d29760666df40719e617bda49735210ff7731e2337bbd2c10d5",
+    "vocab.json": "b486ec3017035832161ea6237f6bae12e6bcdfb09f7f1d57fe64109ee91e52e4"
+  },
+  "created_at": "2026-11-07T08:39:31.012008+00:00",
+  "dataset_sha256": "a9cc19f9384bd205bb174028017a825f8a9e1bf365af9ea741c9b9ce70f5a7bd",
+  "expert_id": "physics_topics",
+  "feature_version": "unicode_word_bigram_l2_v1",
+  "group_split_sha256": "7883e588e6830b661f3414bac45f7039d5b4b2cd0246eda675df4d90b2d26452",
+  "heads": {
+    "solver_mode": [
+      "conceptual_theory",
+      "single_formula",
+      "multihop_chain",
+      "atwood_pulley_system",
+      "inclined_plane_mechanics",
+      "projectile_2d_kinematics",
+      "two_body_collision_1d",
+      "multi_resistor_circuit_network",
+      "calorimetry_thermal_equilibrium",
+      "thin_lens_gaussian_optics"
+    ],
+    "target_observable": [
+      "concept_explanation",
+      "F",
+      "m",
+      "a",
+      "v",
+      "T_tension",
+      "E_k",
+      "x_disp",
+      "lam",
+      "r_s",
+      "eta_carnot",
+      "T_f",
+      "R_eq",
+      "I_elec",
+      "d_i"
+    ],
+    "topic": [
+      "classical_mechanics",
+      "electromagnetism",
+      "thermodynamics_stat_mech",
+      "quantum_mechanics",
+      "relativity_cosmology",
+      "fluid_plasma",
+      "solid_state",
+      "quantum_field_theory",
+      "optics_waves",
+      "quantum_information"
+    ]
+  },
+  "inference": {
+    "abstain_labels": {},
+    "min_score": 0.4,
+    "score_type": "uncalibrated_softmax",
+    "zero_feature_policy": "abstain"
+  },
+  "limitations": [
+    "Categorical text classifier; does not read books or generate explanations.",
+    "Softmax scores are uncalibrated and do not certify correctness.",
+    "Reviewed-data status records the input workflow, not production readiness."
+  ],
+  "primary_head": "topic",
+  "schema_version": 1,
+  "status": "reviewed_data",
+  "training": {
+    "augmentation": "none",
+    "best_epoch": 9,
+    "epochs_run": 24,
+    "reviewed_data_required": true,
+    "selection_metric": "validation_weighted_cross_entropy",
+    "source_separated": true,
+    "torch_version": "2.15.0+cpu"
+  },
+  "training_config": {
+    "abstain_labels": {},
+    "batch_size": 16,
+    "dropout": 0.05,
+    "epochs": 45,
+    "expert_id": "physics_topics",
+    "head_weights": {
+      "solver_mode": 1.2,
+      "target_observable": 1.2,
+      "topic": 2.5
+    },
+    "heads": {
+      "solver_mode": [
+        "conceptual_theory",
+        "single_formula",
+        "multihop_chain",
+        "atwood_pulley_system",
+        "inclined_plane_mechanics",
+        "projectile_2d_kinematics",
+        "two_body_collision_1d",
+        "multi_resistor_circuit_network",
+        "calorimetry_thermal_equilibrium",
+        "thin_lens_gaussian_optics"
+      ],
+      "target_observable": [
+        "concept_explanation",
+        "F",
+        "m",
+        "a",
+        "v",
+        "T_tension",
+        "E_k",
+        "x_disp",
+        "lam",
+        "r_s",
+        "eta_carnot",
+        "T_f",
+        "R_eq",
+        "I_elec",
+        "d_i"
+      ],
+      "topic": [
+        "classical_mechanics",
+        "electromagnetism",
+        "thermodynamics_stat_mech",
+        "quantum_mechanics",
+        "relativity_cosmology",
+        "fluid_plasma",
+        "solid_state",
+        "quantum_field_theory",
+        "optics_waves",
+        "quantum_information"
+      ]
+    },
+    "hidden_dim": 192,
+    "learning_rate": 0.004,
+    "min_delta": 0.0001,
+    "min_score": 0.4,
+    "patience": 15,
+    "primary_head": "topic",
+    "representation_dim": 128,
+    "seed": 42,
+    "test_fraction": 0.15,
+    "threads": 2,
+    "validation_fraction": 0.15,
+    "vocab_size": 4500,
+    "weight_decay": 0.0001
+  }
+}

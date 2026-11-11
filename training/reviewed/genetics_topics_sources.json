@@ -1,0 +1,26 @@
+{
+  "genetics_source_train": {
+    "title": "ExpertOS & HuggingFace SciQ Genetics Corpus (train)",
+    "sha256": "a6b0b54dedb267db228b579df92d29b391929c3debadfeb1f1d2e664e151ee1d",
+    "license": "CC-BY-NC-3.0 (Allen Institute for AI - HuggingFace allenai/sciq)",
+    "source_url": "https://huggingface.co/datasets/allenai/sciq",
+    "review_status": "reviewed",
+    "reviewer": "hf-sciq-curator-v2"
+  },
+  "genetics_source_validation": {
+    "title": "ExpertOS & HuggingFace SciQ Genetics Corpus (validation)",
+    "sha256": "62a77307c88ce9ee2999d1687cc8a9bb3f5fa584c19cd93b0695de2c62424821",
+    "license": "CC-BY-NC-3.0 (Allen Institute for AI - HuggingFace allenai/sciq)",
+    "source_url": "https://huggingface.co/datasets/allenai/sciq",
+    "review_status": "reviewed",
+    "reviewer": "hf-sciq-curator-v2"
+  },
+  "genetics_source_test": {
+    "title": "ExpertOS & HuggingFace SciQ Genetics Corpus (test)",
+    "sha256": "6ce27fb338e74149c38fbf240b4dc5761a0b026ce17af7e1541b205bd5c92c7d",
+    "license": "CC-BY-NC-3.0 (Allen Institute for AI - HuggingFace allenai/sciq)",
+    "source_url": "https://huggingface.co/datasets/allenai/sciq",
+    "review_status": "reviewed",
+    "reviewer": "hf-sciq-curator-v2"
+  }
+}

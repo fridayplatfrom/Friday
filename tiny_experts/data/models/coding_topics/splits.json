@@ -1,0 +1,66 @@
+{
+  "source_separated": true,
+  "split_by": "source",
+  "splits": {
+    "test": {
+      "case_ids": [
+        "case_coding_topics_algorithms_and_math_code_5",
+        "case_coding_topics_tax_and_spreadsheet_automation_5"
+      ],
+      "count": 2,
+      "example_ids": [
+        "coding_topics_0005",
+        "coding_topics_0011"
+      ],
+      "sha256": "6d004315ceab93131496a15d7a6115121535959abb31b62ff96a7e9838aee4db",
+      "source_ids": [
+        "source_coding_topics_test_5"
+      ]
+    },
+    "train": {
+      "case_ids": [
+        "case_coding_topics_algorithms_and_math_code_0",
+        "case_coding_topics_algorithms_and_math_code_1",
+        "case_coding_topics_algorithms_and_math_code_2",
+        "case_coding_topics_algorithms_and_math_code_3",
+        "case_coding_topics_tax_and_spreadsheet_automation_0",
+        "case_coding_topics_tax_and_spreadsheet_automation_1",
+        "case_coding_topics_tax_and_spreadsheet_automation_2",
+        "case_coding_topics_tax_and_spreadsheet_automation_3"
+      ],
+      "count": 8,
+      "example_ids": [
+        "coding_topics_0000",
+        "coding_topics_0001",
+        "coding_topics_0002",
+        "coding_topics_0003",
+        "coding_topics_0006",
+        "coding_topics_0007",
+        "coding_topics_0008",
+        "coding_topics_0009"
+      ],
+      "sha256": "4984effc71727edd75d12271846817976dbad1df368cd8098a9a877b63ca30bb",
+      "source_ids": [
+        "source_coding_topics_train_0",
+        "source_coding_topics_train_1",
+        "source_coding_topics_train_2",
+        "source_coding_topics_train_3"
+      ]
+    },
+    "validation": {
+      "case_ids": [
+        "case_coding_topics_algorithms_and_math_code_4",
+        "case_coding_topics_tax_and_spreadsheet_automation_4"
+      ],
+      "count": 2,
+      "example_ids": [
+        "coding_topics_0004",
+        "coding_topics_0010"
+      ],
+      "sha256": "e2014026bdc5692669483f4349aeeece7f95fad02d625096a9336e27b673f345",
+      "source_ids": [
+        "source_coding_topics_validation_4"
+      ]
+    }
+  }
+}

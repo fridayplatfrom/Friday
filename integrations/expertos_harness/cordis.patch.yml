@@ -1,0 +1,4 @@
+# Insert into a running DeepSeek Harness profile; do not replace other patches.
+- insert:
+    - id: expertos-harness
+      name: dsh-plugin-expertos

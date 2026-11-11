@@ -1,0 +1,11 @@
+{
+  "limits": {
+    "stream_bytes": 2147483648,
+    "extracted_bytes": 268435456,
+    "chunk_characters": 4096,
+    "crawl_pages": 1000,
+    "crawl_depth": 5,
+    "worker_timeout_seconds": 1800
+  },
+  "models": {}
+}

@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "status": "reviewed_data",
+  "architecture": "leaf_mobilenet_v3_small",
+  "labels": [
+    "bacterial_spot",
+    "early_blight",
+    "healthy",
+    "late_blight",
+    "powdery_mildew"
+  ],
+  "weights_sha256": "3917504ac53177b10a61b14420f6de61e29431ea290d6ea974f87b7a88f165b7",
+  "preprocessing": {
+    "size": 224,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "metrics": {
+    "best_epoch": 13,
+    "epochs_run": 16,
+    "history": [
+      {
+        "epoch": 1,
+        "training_loss": 1.2758564778736659,
+        "validation_loss": 1.7207818031311035
+      },
+      {
+        "epoch": 2,
+        "training_loss": 0.8223818497998374,
+        "validation_loss": 2.866572380065918
+      },
+      {
+        "epoch": 3,
+        "training_loss": 0.44359763498817173,
+        "validation_loss": 5.051522151154738
+      },
+      {
+        "epoch": 4,
+        "training_loss": 0.425408236682415,
+        "validation_loss": 1.9734641670268804
+      },
+      {
+        "epoch": 5,
+        "training_loss": 0.1349067778459617,
+        "validation_loss": 0.34682846641226206
+      },
+      {
+        "epoch": 6,
+        "training_loss": 0.16836747101375035,
+        "validation_loss": 0.20427423374106488
+      },
+      {
+        "epoch": 7,
+        "training_loss": 0.8205631614795753,
+        "validation_loss": 0.07467641083834071
+      },
+      {
+        "epoch": 8,
+        "training_loss": 0.4389282613992691,
+        "validation_loss": 0.28458134571944055
+      },
+      {
+        "epoch": 9,
+        "training_loss": 0.3371603467634746,
+        "validation_loss": 0.13250443777845552
+      },
+      {
+        "epoch": 10,
+        "training_loss": 0.29001950153282713,
+        "validation_loss": 0.11469324926535289
+      },
+      {
+        "epoch": 11,
+        "training_loss": 0.2615228353866509,
+        "validation_loss": 0.03054445485273997
+      },
+      {
+        "epoch": 12,
+        "training_loss": 0.2694515436887741,
+        "validation_loss": 0.08640837793548901
+      },
+      {
+        "epoch": 13,
+        "training_loss": 0.25896403659135103,
+        "validation_loss": 0.017630424350500107
+      },
+      {
+        "epoch": 14,
+        "training_loss": 0.2946656218596867,
+        "validation_loss": 0.7553528745969137
+      },
+      {
+        "epoch": 15,
+        "training_loss": 0.1065793013466256,
+        "validation_loss": 0.11273393034934998
+      },
+      {
+        "epoch": 16,
+        "training_loss": 0.07531625404953957,
+        "validation_loss": 0.15679081777731577
+      }
+    ],
+    "elapsed_seconds": 57.935553999996046,
+    "interpretation": "Held-out source/case evaluation; inspect per-class support.",
+    "validation": {
+      "count": 15,
+      "loss": 0.017630424350500107,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class": {
+        "bacterial_spot": {
+          "support": 3,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "early_blight": {
+          "support": 3,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "healthy": {
+          "support": 3,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "late_blight": {
+          "support": 3,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "powdery_mildew": {
+          "support": 3,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          3
+        ]
+      ],
+      "coverage_at_threshold": 1.0,
+      "accuracy_when_accepted": 1.0,
+      "score_type": "uncalibrated_softmax"
+    },
+    "test": {
+      "count": 15,
+      "loss": 0.017581362354879577,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class": {
+        "bacterial_spot": {
+          "support": 3,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "early_blight": {
+          "support": 3,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "healthy": {
+          "support": 3,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "late_blight": {
+          "support": 3,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "powdery_mildew": {
+          "support": 3,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          3
+        ]
+      ],
+      "coverage_at_threshold": 1.0,
+      "accuracy_when_accepted": 1.0,
+      "score_type": "uncalibrated_softmax"
+    }
+  },
+  "threshold": 0.4,
+  "score_type": "uncalibrated_softmax",
+  "dataset_sha256": "e8f60b430e9372519f26d963a2bb2255b735c97d0bf8c613bd208477e3e04310",
+  "group_split_sha256": "aa7fad3f0d058e82ddb3192edd353f56ef018abd86924409c925b98a3d15288b",
+  "splits_file_sha256": "258cb544caff0ed791977128fda3b0053684c0c96037d2c7c1dff718cca34cb3",
+  "training": {
+    "seed": 42,
+    "batch_size": 10,
+    "learning_rate": 0.002,
+    "best_epoch": 13,
+    "selection_metric": "validation_cross_entropy",
+    "source_separated": true,
+    "pretrained_weights": null,
+    "torch_version": "2.15.0+cpu"
+  },
+  "limitations": [
+    "Scores are uncalibrated; a reviewed-data marker does not establish deployment quality."
+  ]
+}

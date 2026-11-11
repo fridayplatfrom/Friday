@@ -1,0 +1,2 @@
+This is a NEW independent synthetic acceptance task. Do not resume any older request or print an older marker. Use the existing native pwsh tool exactly once with command exactly: Write-Output 'FRIDAY_Q2_CGB'
+Do not perform any other tool action. After the actual tool result returns, give a final plain text report beginning with FRIDAY_Q2_CGB_START and ending with FRIDAY_Q2_CGB_END, include the actual output FRIDAY_Q2_CGB, and state whether the tool succeeded. This print-only test does not require file edits, browser actions, network access, or permission changes.

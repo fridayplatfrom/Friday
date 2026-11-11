@@ -1,0 +1,1735 @@
+{
+  "best_epoch": 32,
+  "elapsed_seconds": 2.8734889999996085,
+  "epochs_run": 32,
+  "history": [
+    {
+      "epoch": 1,
+      "training_weighted_cross_entropy": 4.154645279049873,
+      "validation_weighted_cross_entropy": 3.718116283416748
+    },
+    {
+      "epoch": 2,
+      "training_weighted_cross_entropy": 3.538487210869789,
+      "validation_weighted_cross_entropy": 1.98991060256958
+    },
+    {
+      "epoch": 3,
+      "training_weighted_cross_entropy": 1.583741270005703,
+      "validation_weighted_cross_entropy": 0.5499788522720337
+    },
+    {
+      "epoch": 4,
+      "training_weighted_cross_entropy": 0.36365778371691704,
+      "validation_weighted_cross_entropy": 0.10888179391622543
+    },
+    {
+      "epoch": 5,
+      "training_weighted_cross_entropy": 0.08289433759637177,
+      "validation_weighted_cross_entropy": 0.028655603528022766
+    },
+    {
+      "epoch": 6,
+      "training_weighted_cross_entropy": 0.028737511835061014,
+      "validation_weighted_cross_entropy": 0.015500039793550968
+    },
+    {
+      "epoch": 7,
+      "training_weighted_cross_entropy": 0.015377584437374026,
+      "validation_weighted_cross_entropy": 0.011534092016518116
+    },
+    {
+      "epoch": 8,
+      "training_weighted_cross_entropy": 0.010551657527685165,
+      "validation_weighted_cross_entropy": 0.009346067905426025
+    },
+    {
+      "epoch": 9,
+      "training_weighted_cross_entropy": 0.00857862553675659,
+      "validation_weighted_cross_entropy": 0.007724089547991753
+    },
+    {
+      "epoch": 10,
+      "training_weighted_cross_entropy": 0.007339932053582743,
+      "validation_weighted_cross_entropy": 0.0066075106151402
+    },
+    {
+      "epoch": 11,
+      "training_weighted_cross_entropy": 0.0061692429590038955,
+      "validation_weighted_cross_entropy": 0.005803335923701525
+    },
+    {
+      "epoch": 12,
+      "training_weighted_cross_entropy": 0.005462220316985622,
+      "validation_weighted_cross_entropy": 0.00517567852512002
+    },
+    {
+      "epoch": 13,
+      "training_weighted_cross_entropy": 0.004918744991300628,
+      "validation_weighted_cross_entropy": 0.004651575814932585
+    },
+    {
+      "epoch": 14,
+      "training_weighted_cross_entropy": 0.004475842491956428,
+      "validation_weighted_cross_entropy": 0.0042403037659823895
+    },
+    {
+      "epoch": 15,
+      "training_weighted_cross_entropy": 0.004102846229216084,
+      "validation_weighted_cross_entropy": 0.0038634086959064007
+    },
+    {
+      "epoch": 16,
+      "training_weighted_cross_entropy": 0.003751494485186413,
+      "validation_weighted_cross_entropy": 0.003560004523023963
+    },
+    {
+      "epoch": 17,
+      "training_weighted_cross_entropy": 0.003314576591947116,
+      "validation_weighted_cross_entropy": 0.0033026072196662426
+    },
+    {
+      "epoch": 18,
+      "training_weighted_cross_entropy": 0.0032196480606216937,
+      "validation_weighted_cross_entropy": 0.003085055621340871
+    },
+    {
+      "epoch": 19,
+      "training_weighted_cross_entropy": 0.002969749504700303,
+      "validation_weighted_cross_entropy": 0.002887817332521081
+    },
+    {
+      "epoch": 20,
+      "training_weighted_cross_entropy": 0.0028745584131684154,
+      "validation_weighted_cross_entropy": 0.0027223580982536077
+    },
+    {
+      "epoch": 21,
+      "training_weighted_cross_entropy": 0.0025841707247309387,
+      "validation_weighted_cross_entropy": 0.0025849463418126106
+    },
+    {
+      "epoch": 22,
+      "training_weighted_cross_entropy": 0.002580003027105704,
+      "validation_weighted_cross_entropy": 0.002458664122968912
+    },
+    {
+      "epoch": 23,
+      "training_weighted_cross_entropy": 0.0024112746032187715,
+      "validation_weighted_cross_entropy": 0.002345581306144595
+    },
+    {
+      "epoch": 24,
+      "training_weighted_cross_entropy": 0.0022663732088403776,
+      "validation_weighted_cross_entropy": 0.002242366084828973
+    },
+    {
+      "epoch": 25,
+      "training_weighted_cross_entropy": 0.0021927151829004288,
+      "validation_weighted_cross_entropy": 0.00215740199200809
+    },
+    {
+      "epoch": 26,
+      "training_weighted_cross_entropy": 0.002055369841400534,
+      "validation_weighted_cross_entropy": 0.002085436601191759
+    },
+    {
+      "epoch": 27,
+      "training_weighted_cross_entropy": 0.0020580892378347926,
+      "validation_weighted_cross_entropy": 0.0020223730243742466
+    },
+    {
+      "epoch": 28,
+      "training_weighted_cross_entropy": 0.0019549575590644963,
+      "validation_weighted_cross_entropy": 0.001966117648407817
+    },
+    {
+      "epoch": 29,
+      "training_weighted_cross_entropy": 0.0018992348122992553,
+      "validation_weighted_cross_entropy": 0.0019161668606102467
+    },
+    {
+      "epoch": 30,
+      "training_weighted_cross_entropy": 0.0018231935464427806,
+      "validation_weighted_cross_entropy": 0.0018710657022893429
+    },
+    {
+      "epoch": 31,
+      "training_weighted_cross_entropy": 0.0018060178190353326,
+      "validation_weighted_cross_entropy": 0.0018341037211939692
+    },
+    {
+      "epoch": 32,
+      "training_weighted_cross_entropy": 0.0017347118482575752,
+      "validation_weighted_cross_entropy": 0.0018031123327091336
+    }
+  ],
+  "interpretation": "Held-out source/case evaluation; inspect class coverage and sample counts.",
+  "parameter_count": 65059,
+  "splits": {
+    "test": {
+      "count": 32,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 32,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "boltzmann_distribution",
+            "bose-einstein_condensate",
+            "canonical_ensemble",
+            "carnot_cycle",
+            "chemical_potential",
+            "fermi-dirac_distribution",
+            "fluctuation-dissipation",
+            "gibbs_free_energy",
+            "grand_canonical_ensemble",
+            "heat_capacity",
+            "helmholtz_free_energy",
+            "ising_model",
+            "liouville_theorem",
+            "partition_function",
+            "phase_transition",
+            "thermodynamic_entropy",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "boltzmann_distribution",
+            "bose-einstein_condensate",
+            "canonical_ensemble",
+            "carnot_cycle",
+            "chemical_potential",
+            "fermi-dirac_distribution",
+            "fluctuation-dissipation",
+            "gibbs_free_energy",
+            "grand_canonical_ensemble",
+            "heat_capacity",
+            "helmholtz_free_energy",
+            "ising_model",
+            "liouville_theorem",
+            "partition_function",
+            "phase_transition",
+            "thermodynamic_entropy"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0014946628361940384,
+          "per_class": {
+            "boltzmann_distribution": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "bose-einstein_condensate": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "canonical_ensemble": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "carnot_cycle": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "chemical_potential": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "fermi-dirac_distribution": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "fluctuation-dissipation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "gibbs_free_energy": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "grand_canonical_ensemble": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "heat_capacity": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "helmholtz_free_energy": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "ising_model": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "liouville_theorem": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "partition_function": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "phase_transition": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "thermodynamic_entropy": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 32,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "equilibrium_partition_ensemble",
+            "free_energy_potentials",
+            "quantum_statistical_gas",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              12,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              10,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "equilibrium_partition_ensemble",
+            "free_energy_potentials",
+            "quantum_statistical_gas"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.000499385001603514,
+          "per_class": {
+            "equilibrium_partition_ensemble": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 12
+            },
+            "free_energy_potentials": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            },
+            "quantum_statistical_gas": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.0019940477795898914,
+      "zero_feature_inputs": 0
+    },
+    "train": {
+      "count": 128,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 128,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "boltzmann_distribution",
+            "bose-einstein_condensate",
+            "canonical_ensemble",
+            "carnot_cycle",
+            "chemical_potential",
+            "fermi-dirac_distribution",
+            "fluctuation-dissipation",
+            "gibbs_free_energy",
+            "grand_canonical_ensemble",
+            "heat_capacity",
+            "helmholtz_free_energy",
+            "ising_model",
+            "liouville_theorem",
+            "partition_function",
+            "phase_transition",
+            "thermodynamic_entropy",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "boltzmann_distribution",
+            "bose-einstein_condensate",
+            "canonical_ensemble",
+            "carnot_cycle",
+            "chemical_potential",
+            "fermi-dirac_distribution",
+            "fluctuation-dissipation",
+            "gibbs_free_energy",
+            "grand_canonical_ensemble",
+            "heat_capacity",
+            "helmholtz_free_energy",
+            "ising_model",
+            "liouville_theorem",
+            "partition_function",
+            "phase_transition",
+            "thermodynamic_entropy"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0011705380165949464,
+          "per_class": {
+            "boltzmann_distribution": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "bose-einstein_condensate": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "canonical_ensemble": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "carnot_cycle": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "chemical_potential": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "fermi-dirac_distribution": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "fluctuation-dissipation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "gibbs_free_energy": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "grand_canonical_ensemble": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "heat_capacity": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "helmholtz_free_energy": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "ising_model": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "liouville_theorem": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "partition_function": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "phase_transition": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "thermodynamic_entropy": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 128,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "equilibrium_partition_ensemble",
+            "free_energy_potentials",
+            "quantum_statistical_gas",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              48,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              40,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              40,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "equilibrium_partition_ensemble",
+            "free_energy_potentials",
+            "quantum_statistical_gas"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0003882334567606449,
+          "per_class": {
+            "equilibrium_partition_ensemble": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 48
+            },
+            "free_energy_potentials": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 40
+            },
+            "quantum_statistical_gas": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 40
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.0015587714733555913,
+      "zero_feature_inputs": 0
+    },
+    "validation": {
+      "count": 32,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 32,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "boltzmann_distribution",
+            "bose-einstein_condensate",
+            "canonical_ensemble",
+            "carnot_cycle",
+            "chemical_potential",
+            "fermi-dirac_distribution",
+            "fluctuation-dissipation",
+            "gibbs_free_energy",
+            "grand_canonical_ensemble",
+            "heat_capacity",
+            "helmholtz_free_energy",
+            "ising_model",
+            "liouville_theorem",
+            "partition_function",
+            "phase_transition",
+            "thermodynamic_entropy",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "boltzmann_distribution",
+            "bose-einstein_condensate",
+            "canonical_ensemble",
+            "carnot_cycle",
+            "chemical_potential",
+            "fermi-dirac_distribution",
+            "fluctuation-dissipation",
+            "gibbs_free_energy",
+            "grand_canonical_ensemble",
+            "heat_capacity",
+            "helmholtz_free_energy",
+            "ising_model",
+            "liouville_theorem",
+            "partition_function",
+            "phase_transition",
+            "thermodynamic_entropy"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0013707666657865047,
+          "per_class": {
+            "boltzmann_distribution": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "bose-einstein_condensate": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "canonical_ensemble": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "carnot_cycle": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "chemical_potential": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "fermi-dirac_distribution": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "fluctuation-dissipation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "gibbs_free_energy": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "grand_canonical_ensemble": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "heat_capacity": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "helmholtz_free_energy": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "ising_model": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "liouville_theorem": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "partition_function": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "phase_transition": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "thermodynamic_entropy": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 32,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "equilibrium_partition_ensemble",
+            "free_energy_potentials",
+            "quantum_statistical_gas",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              12,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              10,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "equilibrium_partition_ensemble",
+            "free_energy_potentials",
+            "quantum_statistical_gas"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0004323456378187984,
+          "per_class": {
+            "equilibrium_partition_ensemble": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 12
+            },
+            "free_energy_potentials": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            },
+            "quantum_statistical_gas": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.0018031123327091336,
+      "zero_feature_inputs": 0
+    }
+  },
+  "unsupported_training_labels": {}
+}

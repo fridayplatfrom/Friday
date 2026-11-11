@@ -1,0 +1,3 @@
+Synthetic desktop streaming acceptance FRIDAY_DESKTOP_REFRESH_E_20261111.
+Do not use any tools, create a goal, read or write files, or perform any other action. Only produce the requested fictional text.
+Start your reply with exactly FRIDAY_DESKTOP_REFRESH_START_E_20261111 on its own line. Then write 220 numbered lines, 001 through 220 inclusive. Each line must be a different fictional observatory log sentence of 8 to 12 words. Do not skip or summarize any numbered lines. End your reply with exactly FRIDAY_DESKTOP_REFRESH_END_E_20261111 on its own line. This is a bounded text-generation test, not a real observing task.

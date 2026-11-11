@@ -1,48 +1,56 @@
-# Wordpress - ignore core, configuration, examples, uploads and logs.
-# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.env
+.env.*
+!.env.example
+*.db
+*.db-shm
+*.db-wal
+*.sqlite*
+*.pt
+*.pth
+*.safetensors
+!tiny_experts/data/models/**/*.pt
+!tiny_experts/data/models/*.pt
+runs/
+artifacts/
+training/private/
+tiny_experts/data/images/
+tiny_experts/data/storage/
+tiny_experts/data/knowledge_base.json
+state/
+harness_screenshots/
+harness_initial.png
+training/huggingface_cache/
+.DS_Store
 
-# Core
-#
-# Note: if you want to stage/commit WP core files
-# you can delete this whole section/until Configuration.
-/wp-admin/
-/wp-content/index.php
-/wp-content/languages
-/wp-content/plugins/index.php
-/wp-content/themes/index.php
-/wp-includes/
-/index.php
-/license.txt
-/readme.html
-/wp-*.php
-/xmlrpc.php
-
-# Configuration
-wp-config.php
-
-# Example themes
-/wp-content/themes/twenty*/
-
-# Example plugin
-/wp-content/plugins/hello.php
-
-# Uploads
-/wp-content/uploads/
-
-# Log files
+# Friday local dependencies, diagnostics, and private browser state.
+node_modules/
 *.log
+.playwright-cli/
+.playwright-mcp/
+goodbowl-native-*.png
+**/bridge-config.json
+**/connection.json
+**/browser-profiles/
+**/user-data/
+**/session-data/
+**/Cookies
+**/Login Data
 
-# htaccess
-/.htaccess
-
-# All plugins
-#
-# Note: If you wish to whitelist plugins,
-# uncomment the next line
-#/wp-content/plugins
-
-# All themes
-#
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-#/wp-content/themes
+# Keep the authored previews; runtime captures and downloaded inspection copies
+# remain local and may contain account/session data.
+/output/*
+!/output/friday-social-shopping-preview/
+!/output/friday-ui-concepts/
+/output/friday-social-shopping-preview/*.png
+/output/friday-social-shopping-preview/*.jpg
+/output/friday-ui-concepts/*response*.txt
+integrations/browser_harness/tasks/*-current.json
+integrations/browser_harness/tasks/file-recovery-outside-workspace.json

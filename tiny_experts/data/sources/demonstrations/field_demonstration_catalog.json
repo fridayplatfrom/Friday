@@ -1,0 +1,35 @@
+[
+  {
+    "demonstration_id": "DEMO-SPRAY-TECH-01",
+    "crop": "Tomato",
+    "disease": "Early Blight",
+    "video_title": "Field Agronomy Clinic: Proper Spray Technique for Foliar Blights",
+    "timestamp": "02:14",
+    "frame_file": "plate_11_4_early_blight_concentric_rings.png",
+    "technique_title": "Underside Canopy Spray Penetration & Nozzle Geometry",
+    "key_technique": "Walk at a steady 3 km/h pace; orient the hollow-cone nozzle 30° upward to penetrate the dense lower canopy. Fungal spores of Alternaria germinate primarily on the humid abaxial (underside) leaf surface.",
+    "demonstrator": "Agricultural Extension Field Specialist"
+  },
+  {
+    "demonstration_id": "DEMO-PRUNE-TECH-02",
+    "crop": "Tomato",
+    "disease": "Early Blight",
+    "video_title": "Commercial Solanaceae Sanitation & Sucker Pruning",
+    "timestamp": "04:30",
+    "frame_file": "plate_11_4_early_blight_concentric_rings.png",
+    "technique_title": "Bottom Foliage Defoliation (30 cm Clearance)",
+    "key_technique": "Disinfect pruning shears in 70% alcohol; snip all leaves within 30 cm of ground level to eliminate soil-splash inoculum.",
+    "demonstrator": "Horticultural Extension Service"
+  },
+  {
+    "demonstration_id": "DEMO-RICE-BLAST-03",
+    "crop": "Rice",
+    "disease": "Rice Blast",
+    "video_title": "Paddy Field Scouting for Spindle Lesions & Neck Blast",
+    "timestamp": "01:45",
+    "frame_file": "plate_11_4_early_blight_concentric_rings.png",
+    "technique_title": "Scouting Spindle Lesions on Flag Leaves",
+    "key_technique": "Inspect flag leaves early in the morning before dew evaporates; check for diamond/spindle shaped lesions with white center.",
+    "demonstrator": "ICAR Rice Protection Clinic"
+  }
+]

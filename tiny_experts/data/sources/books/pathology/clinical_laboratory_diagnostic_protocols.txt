@@ -1,0 +1,34 @@
+Section 1: Rapid In-Field Clinical Diagnostic Tests.
+Before running expensive molecular assays, clinical plant pathologists perform standardized field tests:
+1. The 10-Second 3% KOH String Test (Gram Status Differentiation):
+   - Principle: Distinguishes Gram-negative from Gram-positive phytopathogenic bacteria without microscopic Gram staining.
+   - Protocol: Place one drop of 3% aqueous potassium hydroxide (KOH) on a clean microscope slide. Using a sterile toothpick or loop, transfer a heavy mass of pure bacterial colony from agar into the drop. Vigorously emulsify for 10 to 15 seconds, then slowly raise the loop 1 to 2 cm above the slide.
+   - Interpretation: If the liquid becomes viscous and forms a persistent mucoid slime thread (stringing 5 to 20 mm high), the bacterium is Gram-Negative (cell walls lyse instantly, releasing high-molecular-weight chromosomal DNA; e.g. Xanthomonas, Ralstonia, Erwinia, Pseudomonas, Agrobacterium). If the mixture remains watery with no stringing, it is Gram-Positive (rigid peptidoglycan wall resists lysis; e.g. Clavibacter michiganensis).
+2. The Vascular Stem Streaming Assay:
+   - Protocol: Slice a 2 to 3 cm section of suspect wilted stem (e.g. tomato with suspected bacterial wilt). Suspend the cut end vertically in a clear beaker or test tube filled with still, room-temperature water against a dark background without agitating.
+   - Interpretation: Within 1 to 3 minutes, distinct milky white threads of bacterial slime and cells streaming downward from the vascular xylem bundles confirms bacterial vascular wilt (Ralstonia solanacearum). If no streaming occurs within 5 minutes, vascular wilt is caused by fungal pathogens (Fusarium oxysporum or Verticillium dahliae).
+
+Section 2: ImmunoStrip & Lateral Flow Diagnostic Strips.
+- Lateral Flow Immunoassay (LFIA): Agdia ImmunoStrip test kits provide 5-minute on-site clinical verification for high-threat viral and oomycete pathogens (ToBRFV, Phytophthora, CMV, INSV, TSWV).
+- Protocol: Place a 0.15 g sample of symptomatic leaf tissue into an extraction buffer pouch. Macerate thoroughly with a mesh roller. Insert the ImmunoStrip strip vertically into the liquid up to the sample line.
+- Reading: Capillary action draws antigen through colloidal-gold-labeled monoclonal antibodies. The appearance of two red lines (Test Line + Control Line) confirms a POSITIVE diagnosis. A single Control Line confirms a negative test.
+
+Section 3: Authoritative Molecular PCR Primers & DNA Barcoding.
+When species-level identification requires genetic sequence confirmation, standard validated PCR primers are utilized:
+1. Universal Fungal DNA Barcode (Ribosomal Internal Transcribed Spacer):
+   - Forward Primer (ITS1): 5'-TCCGTAGGTGAACCTGCGG-3'
+   - Reverse Primer (ITS4): 5'-TCCTCCGCTTATTGATATGC-3'
+   - Target: ITS1-5.8S-ITS2 nuclear ribosomal cistron (~550-650 bp amplicon). Validated for Alternaria, Fusarium, Botrytis, Venturia, Diplocarpon.
+2. Universal Bacterial 16S Ribosomal DNA Barcode:
+   - Forward Primer (27F): 5'-AGAGTTTGATCMTGGCTCAG-3'
+   - Reverse Primer (1492R): 5'-GGTTACCTTGTTACGACTT-3'
+   - Target: Near full-length 16S rRNA gene (~1,465 bp amplicon). Validated for Xanthomonas, Pseudomonas, Erwinia, Ralstonia, Agrobacterium.
+3. Oomycete-Specific Mitochondrial Cytochrome c Oxidase:
+   - Primers: CoxI and CoxII forward/reverse primers amplify the mitochondrial locus, discriminating Phytophthora infestans from Pythium and fungal lookalikes.
+4. ToBRFV Real-Time RT-qPCR Specific Primer Pair:
+   - Targets the RNA-dependent RNA polymerase (RdRp) or coat protein (CP) gene of Tomato Brown Rugose Fruit Virus, discriminating ToBRFV from TMV and ToMV.
+
+Section 4: Semi-Selective Culture Media Formulations.
+1. King's B Medium (KB): For isolating and confirming fluorescent Pseudomonas species. Contains proteose peptone, glycerol, K2HPO4, and MgSO4.7H2O. Under 365 nm UV ultraviolet light, colonies produce a brilliant blue-green or yellow-green fluorescent siderophore pigment (pyoverdine).
+2. PARP / PARPH Selective Agar: Specific isolation of Oomycetes (Phytophthora and Pythium) from soil and plant roots. Formulated with cornmeal agar amended with selective antibiotics: Pimaricin (antifungal), Ampicillin (antibacterial), Rifampicin (antibacterial), and PCNB (pentachloronitrobenzene, suppresses true fungi), plus Hymexazol (H) to inhibit Pythium when isolating Phytophthora.
+3. Komada's Selective Medium: Formulated with D-galactose, L-asparagine, bile salts, PCNB, and sodium tetraborate for the specific diagnostic enumeration of Fusarium oxysporum from soil and vascular xylem.

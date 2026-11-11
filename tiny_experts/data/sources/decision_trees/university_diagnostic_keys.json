@@ -1,0 +1,38 @@
+[
+  {
+    "condition": "Early Blight",
+    "crop": "Tomato",
+    "test_name": "60-Second In-Field Alternaria vs Phytophthora Differentiation Key",
+    "university_source": "UC Davis IPM & PAU Clinical Agronomy Key",
+    "in_field_steps": [
+      "1. Lesion Ring Test: Hold leaf toward sunlight. Observe necrotic spot. Concentric circular rings ('bullseye / target board') confirm Alternaria solani.",
+      "2. Abaxial Moisture Test: Check leaf underside early in morning. Absence of white downy mildew growth distinguishes Early Blight from Late Blight.",
+      "3. Stem Collar Check: Inspect stem base 2 cm above soil for dark brown sunken collar cankers."
+    ],
+    "rapid_diagnostic_outcome": "If concentric rings present without white abaxial sporulation -> Confirmed Early Blight (Alternaria solani)."
+  },
+  {
+    "condition": "Bacterial Wilt",
+    "crop": "Tomato",
+    "test_name": "Rapid 60-Second Clear Water Tumbler Vascular Streaming Test",
+    "university_source": "International Potato Center (CIP) & TNAU Diagnostic Key",
+    "in_field_steps": [
+      "1. Cut 3 cm of lower stem near ground level using clean blade.",
+      "2. Suspend cut stem in clear glass of clean water without touching bottom.",
+      "3. Observe for 60 seconds against dark background. Dense white milky bacterial streams oozing into clear water confirms Ralstonia solanacearum (Bacterial Wilt)."
+    ],
+    "rapid_diagnostic_outcome": "If milky streams flow within 60 seconds -> Confirmed Bacterial Wilt. If water stays completely clear -> Fusarium Fungal Wilt."
+  },
+  {
+    "condition": "Rice Blast",
+    "crop": "Rice",
+    "test_name": "Diamond Spindle Lesion Field Identification Key",
+    "university_source": "IRRI & ICAR National Rice Research Key",
+    "in_field_steps": [
+      "1. Inspect upper flag leaves. Look for diamond or spindle-shaped lesions with pointed ends.",
+      "2. Rub lesion center gently. Greyish ash-colored powdery center confirms Magnaporthe oryzae conidiophores.",
+      "3. Inspect neck node below panicle. Blackening indicates neck blast phase."
+    ],
+    "rapid_diagnostic_outcome": "Diamond spindle lesions with ash-colored centers confirm Rice Blast."
+  }
+]

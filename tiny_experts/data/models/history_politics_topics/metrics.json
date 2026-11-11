@@ -1,0 +1,349 @@
+{
+  "best_epoch": 26,
+  "elapsed_seconds": 0.7502559999993537,
+  "epochs_run": 26,
+  "history": [
+    {
+      "epoch": 1,
+      "training_weighted_cross_entropy": 1.0469124615192413,
+      "validation_weighted_cross_entropy": 0.6639893651008606
+    },
+    {
+      "epoch": 2,
+      "training_weighted_cross_entropy": 0.30804963409900665,
+      "validation_weighted_cross_entropy": 0.31184253096580505
+    },
+    {
+      "epoch": 3,
+      "training_weighted_cross_entropy": 0.10353023186326027,
+      "validation_weighted_cross_entropy": 0.09512046724557877
+    },
+    {
+      "epoch": 4,
+      "training_weighted_cross_entropy": 0.048123423010110855,
+      "validation_weighted_cross_entropy": 0.04240058735013008
+    },
+    {
+      "epoch": 5,
+      "training_weighted_cross_entropy": 0.0272147124633193,
+      "validation_weighted_cross_entropy": 0.024058012291789055
+    },
+    {
+      "epoch": 6,
+      "training_weighted_cross_entropy": 0.017276586964726448,
+      "validation_weighted_cross_entropy": 0.015199393965303898
+    },
+    {
+      "epoch": 7,
+      "training_weighted_cross_entropy": 0.011477291584014893,
+      "validation_weighted_cross_entropy": 0.010224402882158756
+    },
+    {
+      "epoch": 8,
+      "training_weighted_cross_entropy": 0.007919597206637263,
+      "validation_weighted_cross_entropy": 0.007246700581163168
+    },
+    {
+      "epoch": 9,
+      "training_weighted_cross_entropy": 0.005614130292087793,
+      "validation_weighted_cross_entropy": 0.005370855797082186
+    },
+    {
+      "epoch": 10,
+      "training_weighted_cross_entropy": 0.004361595842055976,
+      "validation_weighted_cross_entropy": 0.0041396357119083405
+    },
+    {
+      "epoch": 11,
+      "training_weighted_cross_entropy": 0.0032122833654284477,
+      "validation_weighted_cross_entropy": 0.0033049937337636948
+    },
+    {
+      "epoch": 12,
+      "training_weighted_cross_entropy": 0.002598389983177185,
+      "validation_weighted_cross_entropy": 0.0027201769407838583
+    },
+    {
+      "epoch": 13,
+      "training_weighted_cross_entropy": 0.0021364272106438875,
+      "validation_weighted_cross_entropy": 0.0023018151987344027
+    },
+    {
+      "epoch": 14,
+      "training_weighted_cross_entropy": 0.0018575534340925515,
+      "validation_weighted_cross_entropy": 0.001995100174099207
+    },
+    {
+      "epoch": 15,
+      "training_weighted_cross_entropy": 0.0016210712492465973,
+      "validation_weighted_cross_entropy": 0.0017649180954322219
+    },
+    {
+      "epoch": 16,
+      "training_weighted_cross_entropy": 0.00140315608587116,
+      "validation_weighted_cross_entropy": 0.0015889924252405763
+    },
+    {
+      "epoch": 17,
+      "training_weighted_cross_entropy": 0.001261949131730944,
+      "validation_weighted_cross_entropy": 0.0014525926671922207
+    },
+    {
+      "epoch": 18,
+      "training_weighted_cross_entropy": 0.001174077217001468,
+      "validation_weighted_cross_entropy": 0.0013449828838929534
+    },
+    {
+      "epoch": 19,
+      "training_weighted_cross_entropy": 0.0010789813240990043,
+      "validation_weighted_cross_entropy": 0.0012595843290910125
+    },
+    {
+      "epoch": 20,
+      "training_weighted_cross_entropy": 0.0009960505703929812,
+      "validation_weighted_cross_entropy": 0.001191125251352787
+    },
+    {
+      "epoch": 21,
+      "training_weighted_cross_entropy": 0.0009482401073910296,
+      "validation_weighted_cross_entropy": 0.0011357590556144714
+    },
+    {
+      "epoch": 22,
+      "training_weighted_cross_entropy": 0.0009021844598464668,
+      "validation_weighted_cross_entropy": 0.0010906698880717158
+    },
+    {
+      "epoch": 23,
+      "training_weighted_cross_entropy": 0.0009009133500512689,
+      "validation_weighted_cross_entropy": 0.0010533586610108614
+    },
+    {
+      "epoch": 24,
+      "training_weighted_cross_entropy": 0.0008660429448354989,
+      "validation_weighted_cross_entropy": 0.0010220003314316273
+    },
+    {
+      "epoch": 25,
+      "training_weighted_cross_entropy": 0.0008386860135942698,
+      "validation_weighted_cross_entropy": 0.0009959600865840912
+    },
+    {
+      "epoch": 26,
+      "training_weighted_cross_entropy": 0.0008068938041105866,
+      "validation_weighted_cross_entropy": 0.0009740875102579594
+    }
+  ],
+  "interpretation": "Held-out source/case evaluation; inspect class coverage and sample counts.",
+  "parameter_count": 23907,
+  "splits": {
+    "test": {
+      "count": 3,
+      "heads": {
+        "topic": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 3,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "constitutional_law_governance",
+            "economic_fiscal_policy",
+            "world_and_modern_history",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "constitutional_law_governance",
+            "economic_fiscal_policy",
+            "world_and_modern_history"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0008962688152678311,
+          "per_class": {
+            "constitutional_law_governance": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 1
+            },
+            "economic_fiscal_policy": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 1
+            },
+            "world_and_modern_history": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 1
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.0008962688152678311,
+      "zero_feature_inputs": 0
+    },
+    "train": {
+      "count": 12,
+      "heads": {
+        "topic": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 12,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "constitutional_law_governance",
+            "economic_fiscal_policy",
+            "world_and_modern_history",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              4,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "constitutional_law_governance",
+            "economic_fiscal_policy",
+            "world_and_modern_history"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0007675974047742784,
+          "per_class": {
+            "constitutional_law_governance": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "economic_fiscal_policy": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "world_and_modern_history": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.0007675974047742784,
+      "zero_feature_inputs": 0
+    },
+    "validation": {
+      "count": 3,
+      "heads": {
+        "topic": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 3,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "constitutional_law_governance",
+            "economic_fiscal_policy",
+            "world_and_modern_history",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "constitutional_law_governance",
+            "economic_fiscal_policy",
+            "world_and_modern_history"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0009740875102579594,
+          "per_class": {
+            "constitutional_law_governance": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 1
+            },
+            "economic_fiscal_policy": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 1
+            },
+            "world_and_modern_history": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 1
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.0009740875102579594,
+      "zero_feature_inputs": 0
+    }
+  },
+  "unsupported_training_labels": {}
+}

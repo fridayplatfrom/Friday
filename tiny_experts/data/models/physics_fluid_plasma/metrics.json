@@ -1,0 +1,1489 @@
+{
+  "best_epoch": 32,
+  "elapsed_seconds": 2.870215200000075,
+  "epochs_run": 32,
+  "history": [
+    {
+      "epoch": 1,
+      "training_weighted_cross_entropy": 3.9859248910631453,
+      "validation_weighted_cross_entropy": 3.4469094276428223
+    },
+    {
+      "epoch": 2,
+      "training_weighted_cross_entropy": 3.309650880949838,
+      "validation_weighted_cross_entropy": 2.246083974838257
+    },
+    {
+      "epoch": 3,
+      "training_weighted_cross_entropy": 1.5508657097816467,
+      "validation_weighted_cross_entropy": 0.6517082452774048
+    },
+    {
+      "epoch": 4,
+      "training_weighted_cross_entropy": 0.5248715153762272,
+      "validation_weighted_cross_entropy": 0.18487907946109772
+    },
+    {
+      "epoch": 5,
+      "training_weighted_cross_entropy": 0.15991912356444768,
+      "validation_weighted_cross_entropy": 0.04509809613227844
+    },
+    {
+      "epoch": 6,
+      "training_weighted_cross_entropy": 0.05416852621627705,
+      "validation_weighted_cross_entropy": 0.02481827884912491
+    },
+    {
+      "epoch": 7,
+      "training_weighted_cross_entropy": 0.01949548934187208,
+      "validation_weighted_cross_entropy": 0.011670185253024101
+    },
+    {
+      "epoch": 8,
+      "training_weighted_cross_entropy": 0.012568148784339428,
+      "validation_weighted_cross_entropy": 0.009049919433891773
+    },
+    {
+      "epoch": 9,
+      "training_weighted_cross_entropy": 0.008843002142384648,
+      "validation_weighted_cross_entropy": 0.007868205197155476
+    },
+    {
+      "epoch": 10,
+      "training_weighted_cross_entropy": 0.007255050220659801,
+      "validation_weighted_cross_entropy": 0.00664624385535717
+    },
+    {
+      "epoch": 11,
+      "training_weighted_cross_entropy": 0.006265367780412946,
+      "validation_weighted_cross_entropy": 0.005759108811616898
+    },
+    {
+      "epoch": 12,
+      "training_weighted_cross_entropy": 0.005415575412501182,
+      "validation_weighted_cross_entropy": 0.005108327604830265
+    },
+    {
+      "epoch": 13,
+      "training_weighted_cross_entropy": 0.004773402087656515,
+      "validation_weighted_cross_entropy": 0.004617413971573114
+    },
+    {
+      "epoch": 14,
+      "training_weighted_cross_entropy": 0.004429514220516596,
+      "validation_weighted_cross_entropy": 0.004171039909124374
+    },
+    {
+      "epoch": 15,
+      "training_weighted_cross_entropy": 0.0040221021543922165,
+      "validation_weighted_cross_entropy": 0.0038222691509872675
+    },
+    {
+      "epoch": 16,
+      "training_weighted_cross_entropy": 0.003647702297062746,
+      "validation_weighted_cross_entropy": 0.003535589436069131
+    },
+    {
+      "epoch": 17,
+      "training_weighted_cross_entropy": 0.0033707069399367484,
+      "validation_weighted_cross_entropy": 0.0032846848480403423
+    },
+    {
+      "epoch": 18,
+      "training_weighted_cross_entropy": 0.0031688135682738255,
+      "validation_weighted_cross_entropy": 0.0030707395635545254
+    },
+    {
+      "epoch": 19,
+      "training_weighted_cross_entropy": 0.0029620962283973184,
+      "validation_weighted_cross_entropy": 0.002882635220885277
+    },
+    {
+      "epoch": 20,
+      "training_weighted_cross_entropy": 0.002824104291253856,
+      "validation_weighted_cross_entropy": 0.0027237078174948692
+    },
+    {
+      "epoch": 21,
+      "training_weighted_cross_entropy": 0.0026606605388224125,
+      "validation_weighted_cross_entropy": 0.002582109998911619
+    },
+    {
+      "epoch": 22,
+      "training_weighted_cross_entropy": 0.0024678264411964585,
+      "validation_weighted_cross_entropy": 0.0024676371831446886
+    },
+    {
+      "epoch": 23,
+      "training_weighted_cross_entropy": 0.0023975760476397617,
+      "validation_weighted_cross_entropy": 0.0023602235596626997
+    },
+    {
+      "epoch": 24,
+      "training_weighted_cross_entropy": 0.0022706691857560407,
+      "validation_weighted_cross_entropy": 0.0022593489848077297
+    },
+    {
+      "epoch": 25,
+      "training_weighted_cross_entropy": 0.0021757813852413426,
+      "validation_weighted_cross_entropy": 0.002176364418119192
+    },
+    {
+      "epoch": 26,
+      "training_weighted_cross_entropy": 0.0021524883839966996,
+      "validation_weighted_cross_entropy": 0.002104508923366666
+    },
+    {
+      "epoch": 27,
+      "training_weighted_cross_entropy": 0.001990182133990207,
+      "validation_weighted_cross_entropy": 0.002039635553956032
+    },
+    {
+      "epoch": 28,
+      "training_weighted_cross_entropy": 0.001968979660887271,
+      "validation_weighted_cross_entropy": 0.0019839974120259285
+    },
+    {
+      "epoch": 29,
+      "training_weighted_cross_entropy": 0.0019154198318054633,
+      "validation_weighted_cross_entropy": 0.0019330676877871156
+    },
+    {
+      "epoch": 30,
+      "training_weighted_cross_entropy": 0.0018640238808334938,
+      "validation_weighted_cross_entropy": 0.0018888964550569654
+    },
+    {
+      "epoch": 31,
+      "training_weighted_cross_entropy": 0.0018613136323568011,
+      "validation_weighted_cross_entropy": 0.0018515981500968337
+    },
+    {
+      "epoch": 32,
+      "training_weighted_cross_entropy": 0.0018316544758688127,
+      "validation_weighted_cross_entropy": 0.0018213108414784074
+    }
+  ],
+  "interpretation": "Held-out source/case evaluation; inspect class coverage and sample counts.",
+  "parameter_count": 59105,
+  "splits": {
+    "test": {
+      "count": 28,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 28,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "alfven_wave",
+            "bernoulli_equation",
+            "boundary_layer",
+            "debye_length",
+            "incompressible_flow",
+            "kelvin_circulation",
+            "mach_number",
+            "magnetohydrodynamics",
+            "navier-stokes_equation",
+            "plasma_frequency",
+            "rayleigh-benard",
+            "reynolds_number",
+            "stokes_flow",
+            "vorticity",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "alfven_wave",
+            "bernoulli_equation",
+            "boundary_layer",
+            "debye_length",
+            "incompressible_flow",
+            "kelvin_circulation",
+            "mach_number",
+            "magnetohydrodynamics",
+            "navier-stokes_equation",
+            "plasma_frequency",
+            "rayleigh-benard",
+            "reynolds_number",
+            "stokes_flow",
+            "vorticity"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0014680953463539481,
+          "per_class": {
+            "alfven_wave": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "bernoulli_equation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "boundary_layer": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "debye_length": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "incompressible_flow": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "kelvin_circulation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "mach_number": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "magnetohydrodynamics": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "navier-stokes_equation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "plasma_frequency": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "rayleigh-benard": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "reynolds_number": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "stokes_flow": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "vorticity": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 28,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "inviscid_vorticity_bernoulli",
+            "mhd_kinetic_plasma",
+            "viscous_navier_stokes",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              10,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "inviscid_vorticity_bernoulli",
+            "mhd_kinetic_plasma",
+            "viscous_navier_stokes"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0003881662560161203,
+          "per_class": {
+            "inviscid_vorticity_bernoulli": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            },
+            "mhd_kinetic_plasma": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "viscous_navier_stokes": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.0018562616314738989,
+      "zero_feature_inputs": 0
+    },
+    "train": {
+      "count": 112,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 112,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "alfven_wave",
+            "bernoulli_equation",
+            "boundary_layer",
+            "debye_length",
+            "incompressible_flow",
+            "kelvin_circulation",
+            "mach_number",
+            "magnetohydrodynamics",
+            "navier-stokes_equation",
+            "plasma_frequency",
+            "rayleigh-benard",
+            "reynolds_number",
+            "stokes_flow",
+            "vorticity",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "alfven_wave",
+            "bernoulli_equation",
+            "boundary_layer",
+            "debye_length",
+            "incompressible_flow",
+            "kelvin_circulation",
+            "mach_number",
+            "magnetohydrodynamics",
+            "navier-stokes_equation",
+            "plasma_frequency",
+            "rayleigh-benard",
+            "reynolds_number",
+            "stokes_flow",
+            "vorticity"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.001201996929012239,
+          "per_class": {
+            "alfven_wave": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "bernoulli_equation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "boundary_layer": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "debye_length": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "incompressible_flow": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "kelvin_circulation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "mach_number": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "magnetohydrodynamics": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "navier-stokes_equation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "plasma_frequency": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "rayleigh-benard": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "reynolds_number": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "stokes_flow": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "vorticity": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 112,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "inviscid_vorticity_bernoulli",
+            "mhd_kinetic_plasma",
+            "viscous_navier_stokes",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              40,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              32,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              40,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "inviscid_vorticity_bernoulli",
+            "mhd_kinetic_plasma",
+            "viscous_navier_stokes"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0003934489213861525,
+          "per_class": {
+            "inviscid_vorticity_bernoulli": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 40
+            },
+            "mhd_kinetic_plasma": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 32
+            },
+            "viscous_navier_stokes": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 40
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.0015954459086060524,
+      "zero_feature_inputs": 0
+    },
+    "validation": {
+      "count": 28,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 28,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "alfven_wave",
+            "bernoulli_equation",
+            "boundary_layer",
+            "debye_length",
+            "incompressible_flow",
+            "kelvin_circulation",
+            "mach_number",
+            "magnetohydrodynamics",
+            "navier-stokes_equation",
+            "plasma_frequency",
+            "rayleigh-benard",
+            "reynolds_number",
+            "stokes_flow",
+            "vorticity",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "alfven_wave",
+            "bernoulli_equation",
+            "boundary_layer",
+            "debye_length",
+            "incompressible_flow",
+            "kelvin_circulation",
+            "mach_number",
+            "magnetohydrodynamics",
+            "navier-stokes_equation",
+            "plasma_frequency",
+            "rayleigh-benard",
+            "reynolds_number",
+            "stokes_flow",
+            "vorticity"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0013718541013076901,
+          "per_class": {
+            "alfven_wave": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "bernoulli_equation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "boundary_layer": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "debye_length": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "incompressible_flow": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "kelvin_circulation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "mach_number": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "magnetohydrodynamics": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "navier-stokes_equation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "plasma_frequency": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "rayleigh-benard": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "reynolds_number": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "stokes_flow": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "vorticity": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 28,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "inviscid_vorticity_bernoulli",
+            "mhd_kinetic_plasma",
+            "viscous_navier_stokes",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              10,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "inviscid_vorticity_bernoulli",
+            "mhd_kinetic_plasma",
+            "viscous_navier_stokes"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0004494567110668868,
+          "per_class": {
+            "inviscid_vorticity_bernoulli": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            },
+            "mhd_kinetic_plasma": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "viscous_navier_stokes": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.0018213108414784074,
+      "zero_feature_inputs": 0
+    }
+  },
+  "unsupported_training_labels": {}
+}

@@ -1,0 +1,28 @@
+{
+  "runs": [
+    {
+      "threadId": "session-80c770ce-550f-4e5e-a831-942e7f0ce3a2",
+      "site": "chatgpt-web",
+      "brief": "C:\\Users\\ankus\\.gemini\\antigravity\\scratch\\tiny_expert_system\\integrations\\browser_harness\\tasks\\parallel-q2-cga.txt",
+      "output": "FRIDAY_Q2_CGA",
+      "start": "FRIDAY_Q2_CGA_START",
+      "end": "FRIDAY_Q2_CGA_END"
+    },
+    {
+      "threadId": "session-b9227320-2827-4e26-9337-c3c3b6f6adc9",
+      "site": "chatgpt-web",
+      "brief": "C:\\Users\\ankus\\.gemini\\antigravity\\scratch\\tiny_expert_system\\integrations\\browser_harness\\tasks\\parallel-q2-cgb.txt",
+      "output": "FRIDAY_Q2_CGB",
+      "start": "FRIDAY_Q2_CGB_START",
+      "end": "FRIDAY_Q2_CGB_END"
+    },
+    {
+      "threadId": "session-addde502-835a-42fe-a9ce-afe12b11ba7e",
+      "site": "gemini-web",
+      "brief": "C:\\Users\\ankus\\.gemini\\antigravity\\scratch\\tiny_expert_system\\integrations\\browser_harness\\tasks\\parallel-q2-gem.txt",
+      "output": "FRIDAY_Q2_GEM",
+      "start": "FRIDAY_Q2_GEM_START",
+      "end": "FRIDAY_Q2_GEM_END"
+    }
+  ]
+}

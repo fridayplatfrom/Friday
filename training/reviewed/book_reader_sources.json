@@ -1,0 +1,23 @@
+{
+  "genetics_primer_v1": {
+    "sha256": "c910c9d803bc3db8f517936f8ed9a2e3784ded6e0b93d3e6bbf2ff50166d1dad",
+    "review_status": "reviewed",
+    "reviewer": "local-curator-v1",
+    "license": "CC-BY-4.0 Local Curated Corpus",
+    "source_family_id": "family_genetics_primer"
+  },
+  "thermo_primer_v1": {
+    "sha256": "121b731a8fe3c9d3e6257dda4d5ed066c87c87615ecb6c202f51ab70623376ca",
+    "review_status": "reviewed",
+    "reviewer": "local-curator-v1",
+    "license": "CC-BY-4.0 Local Curated Corpus",
+    "source_family_id": "family_thermo_primer"
+  },
+  "pathology_primer_v1": {
+    "sha256": "d0234e4a35acd760f31324264bc1875b7a16e5b7c4a8d515fbc699cfc704319f",
+    "review_status": "reviewed",
+    "reviewer": "local-curator-v1",
+    "license": "CC-BY-4.0 Local Curated Corpus",
+    "source_family_id": "family_pathology_primer"
+  }
+}

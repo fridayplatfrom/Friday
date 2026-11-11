@@ -1,0 +1,8 @@
+{
+  "mode": "partial",
+  "runs": [
+    {"runId":"16f53eb2-26c9-47c8-9211-0b34e9e7c352","cohort":"mixed","sourceVersion":"0.10.0","output":"FRIDAY_P10_MIX_CHATGPT_A","start":"FRIDAY_P10_MIX_CGA_START","end":"FRIDAY_P10_MIX_CGA_END"},
+    {"runId":"2ff8ddc5-05aa-4f2b-ac88-6ddc09696d26","cohort":"mixed","sourceVersion":"0.10.0","output":"FRIDAY_P10_MIX_GEMINI","start":"FRIDAY_P10_MIX_GEM_START","end":"FRIDAY_P10_MIX_GEM_END"}
+  ],
+  "earlierFailures": ["fded6451-c16b-420b-8453-0aaeb2c8fe62","579bf311-f8ec-44a4-8e02-c7a03ff30cf8","73b70924-d83f-4e06-ac36-82bafc224ecf"]
+}

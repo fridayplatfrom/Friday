@@ -1,0 +1,1730 @@
+{
+  "best_epoch": 31,
+  "elapsed_seconds": 2.9738061000002745,
+  "epochs_run": 31,
+  "history": [
+    {
+      "epoch": 1,
+      "training_weighted_cross_entropy": 4.203568771481514,
+      "validation_weighted_cross_entropy": 3.6364448070526123
+    },
+    {
+      "epoch": 2,
+      "training_weighted_cross_entropy": 3.569697842001915,
+      "validation_weighted_cross_entropy": 2.279186248779297
+    },
+    {
+      "epoch": 3,
+      "training_weighted_cross_entropy": 1.8215732350945473,
+      "validation_weighted_cross_entropy": 0.8479108214378357
+    },
+    {
+      "epoch": 4,
+      "training_weighted_cross_entropy": 0.5264590242877603,
+      "validation_weighted_cross_entropy": 0.16312219202518463
+    },
+    {
+      "epoch": 5,
+      "training_weighted_cross_entropy": 0.1337982735130936,
+      "validation_weighted_cross_entropy": 0.05060940235853195
+    },
+    {
+      "epoch": 6,
+      "training_weighted_cross_entropy": 0.042724999599158764,
+      "validation_weighted_cross_entropy": 0.02197408117353916
+    },
+    {
+      "epoch": 7,
+      "training_weighted_cross_entropy": 0.02191124518867582,
+      "validation_weighted_cross_entropy": 0.013261765241622925
+    },
+    {
+      "epoch": 8,
+      "training_weighted_cross_entropy": 0.013093449582811445,
+      "validation_weighted_cross_entropy": 0.009838379919528961
+    },
+    {
+      "epoch": 9,
+      "training_weighted_cross_entropy": 0.0089615213801153,
+      "validation_weighted_cross_entropy": 0.007923183962702751
+    },
+    {
+      "epoch": 10,
+      "training_weighted_cross_entropy": 0.007105669152224436,
+      "validation_weighted_cross_entropy": 0.006760776974260807
+    },
+    {
+      "epoch": 11,
+      "training_weighted_cross_entropy": 0.006057998834876344,
+      "validation_weighted_cross_entropy": 0.005861395504325628
+    },
+    {
+      "epoch": 12,
+      "training_weighted_cross_entropy": 0.005298602976836264,
+      "validation_weighted_cross_entropy": 0.00521153723821044
+    },
+    {
+      "epoch": 13,
+      "training_weighted_cross_entropy": 0.004872013640124351,
+      "validation_weighted_cross_entropy": 0.0046832747757434845
+    },
+    {
+      "epoch": 14,
+      "training_weighted_cross_entropy": 0.0042115466931136325,
+      "validation_weighted_cross_entropy": 0.004244535230100155
+    },
+    {
+      "epoch": 15,
+      "training_weighted_cross_entropy": 0.0038729563530068845,
+      "validation_weighted_cross_entropy": 0.0039027787279337645
+    },
+    {
+      "epoch": 16,
+      "training_weighted_cross_entropy": 0.003582363118766807,
+      "validation_weighted_cross_entropy": 0.003628053003922105
+    },
+    {
+      "epoch": 17,
+      "training_weighted_cross_entropy": 0.003297024581115693,
+      "validation_weighted_cross_entropy": 0.0033535994589328766
+    },
+    {
+      "epoch": 18,
+      "training_weighted_cross_entropy": 0.003101373804383911,
+      "validation_weighted_cross_entropy": 0.003100345376878977
+    },
+    {
+      "epoch": 19,
+      "training_weighted_cross_entropy": 0.002788036872516386,
+      "validation_weighted_cross_entropy": 0.0029042731039226055
+    },
+    {
+      "epoch": 20,
+      "training_weighted_cross_entropy": 0.0026769530086312443,
+      "validation_weighted_cross_entropy": 0.00275040534324944
+    },
+    {
+      "epoch": 21,
+      "training_weighted_cross_entropy": 0.002529167104512453,
+      "validation_weighted_cross_entropy": 0.0026065062265843153
+    },
+    {
+      "epoch": 22,
+      "training_weighted_cross_entropy": 0.002355378761421889,
+      "validation_weighted_cross_entropy": 0.0024774104822427034
+    },
+    {
+      "epoch": 23,
+      "training_weighted_cross_entropy": 0.002242730522993952,
+      "validation_weighted_cross_entropy": 0.002373842755332589
+    },
+    {
+      "epoch": 24,
+      "training_weighted_cross_entropy": 0.002141596036381088,
+      "validation_weighted_cross_entropy": 0.00227698334492743
+    },
+    {
+      "epoch": 25,
+      "training_weighted_cross_entropy": 0.0020098801687709056,
+      "validation_weighted_cross_entropy": 0.00219210097566247
+    },
+    {
+      "epoch": 26,
+      "training_weighted_cross_entropy": 0.0019806443524430506,
+      "validation_weighted_cross_entropy": 0.0021266534458845854
+    },
+    {
+      "epoch": 27,
+      "training_weighted_cross_entropy": 0.0019279898551758379,
+      "validation_weighted_cross_entropy": 0.0020618869457393885
+    },
+    {
+      "epoch": 28,
+      "training_weighted_cross_entropy": 0.001889699233288411,
+      "validation_weighted_cross_entropy": 0.002006200375035405
+    },
+    {
+      "epoch": 29,
+      "training_weighted_cross_entropy": 0.0017918107623700052,
+      "validation_weighted_cross_entropy": 0.0019567948766052723
+    },
+    {
+      "epoch": 30,
+      "training_weighted_cross_entropy": 0.0017945498912013136,
+      "validation_weighted_cross_entropy": 0.0019133087480440736
+    },
+    {
+      "epoch": 31,
+      "training_weighted_cross_entropy": 0.0017743484568200074,
+      "validation_weighted_cross_entropy": 0.0018735568737611175
+    }
+  ],
+  "interpretation": "Held-out source/case evaluation; inspect class coverage and sample counts.",
+  "parameter_count": 65779,
+  "splits": {
+    "test": {
+      "count": 32,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 32,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "born_rule",
+            "commutator",
+            "density_matrix",
+            "eigenstate",
+            "fermi_golden_rule",
+            "harmonic_oscillator",
+            "hermitian_operator",
+            "hilbert_space",
+            "pauli_matrices",
+            "perturbation_theory",
+            "schrodinger_equation",
+            "spinor",
+            "tunneling",
+            "uncertainty_principle",
+            "wavefunction",
+            "wkb_approximation",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "born_rule",
+            "commutator",
+            "density_matrix",
+            "eigenstate",
+            "fermi_golden_rule",
+            "harmonic_oscillator",
+            "hermitian_operator",
+            "hilbert_space",
+            "pauli_matrices",
+            "perturbation_theory",
+            "schrodinger_equation",
+            "spinor",
+            "tunneling",
+            "uncertainty_principle",
+            "wavefunction",
+            "wkb_approximation"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.001583998673595488,
+          "per_class": {
+            "born_rule": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "commutator": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "density_matrix": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "eigenstate": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "fermi_golden_rule": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "harmonic_oscillator": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "hermitian_operator": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "hilbert_space": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "pauli_matrices": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "perturbation_theory": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "schrodinger_equation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "spinor": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "tunneling": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "uncertainty_principle": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "wavefunction": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "wkb_approximation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 32,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "hilbert_operator_algebra",
+            "perturbation_semiclassical",
+            "wavefunction_schrodinger",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              10,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              10,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              12,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "hilbert_operator_algebra",
+            "perturbation_semiclassical",
+            "wavefunction_schrodinger"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0004506473196670413,
+          "per_class": {
+            "hilbert_operator_algebra": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            },
+            "perturbation_semiclassical": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            },
+            "wavefunction_schrodinger": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 12
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.0020346459932625294,
+      "zero_feature_inputs": 0
+    },
+    "train": {
+      "count": 128,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 128,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "born_rule",
+            "commutator",
+            "density_matrix",
+            "eigenstate",
+            "fermi_golden_rule",
+            "harmonic_oscillator",
+            "hermitian_operator",
+            "hilbert_space",
+            "pauli_matrices",
+            "perturbation_theory",
+            "schrodinger_equation",
+            "spinor",
+            "tunneling",
+            "uncertainty_principle",
+            "wavefunction",
+            "wkb_approximation",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "born_rule",
+            "commutator",
+            "density_matrix",
+            "eigenstate",
+            "fermi_golden_rule",
+            "harmonic_oscillator",
+            "hermitian_operator",
+            "hilbert_space",
+            "pauli_matrices",
+            "perturbation_theory",
+            "schrodinger_equation",
+            "spinor",
+            "tunneling",
+            "uncertainty_principle",
+            "wavefunction",
+            "wkb_approximation"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0011472697369754314,
+          "per_class": {
+            "born_rule": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "commutator": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "density_matrix": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "eigenstate": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "fermi_golden_rule": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "harmonic_oscillator": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "hermitian_operator": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "hilbert_space": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "pauli_matrices": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "perturbation_theory": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "schrodinger_equation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "spinor": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "tunneling": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "uncertainty_principle": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "wavefunction": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "wkb_approximation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 128,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "hilbert_operator_algebra",
+            "perturbation_semiclassical",
+            "wavefunction_schrodinger",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              40,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              40,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              48,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "hilbert_operator_algebra",
+            "perturbation_semiclassical",
+            "wavefunction_schrodinger"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.00037214215262793005,
+          "per_class": {
+            "hilbert_operator_algebra": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 40
+            },
+            "perturbation_semiclassical": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 40
+            },
+            "wavefunction_schrodinger": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 48
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.001519411918707192,
+      "zero_feature_inputs": 0
+    },
+    "validation": {
+      "count": 32,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 32,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "born_rule",
+            "commutator",
+            "density_matrix",
+            "eigenstate",
+            "fermi_golden_rule",
+            "harmonic_oscillator",
+            "hermitian_operator",
+            "hilbert_space",
+            "pauli_matrices",
+            "perturbation_theory",
+            "schrodinger_equation",
+            "spinor",
+            "tunneling",
+            "uncertainty_principle",
+            "wavefunction",
+            "wkb_approximation",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "born_rule",
+            "commutator",
+            "density_matrix",
+            "eigenstate",
+            "fermi_golden_rule",
+            "harmonic_oscillator",
+            "hermitian_operator",
+            "hilbert_space",
+            "pauli_matrices",
+            "perturbation_theory",
+            "schrodinger_equation",
+            "spinor",
+            "tunneling",
+            "uncertainty_principle",
+            "wavefunction",
+            "wkb_approximation"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0014884211122989655,
+          "per_class": {
+            "born_rule": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "commutator": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "density_matrix": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "eigenstate": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "fermi_golden_rule": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "harmonic_oscillator": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "hermitian_operator": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "hilbert_space": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "pauli_matrices": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "perturbation_theory": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "schrodinger_equation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "spinor": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "tunneling": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "uncertainty_principle": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "wavefunction": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "wkb_approximation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 32,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "hilbert_operator_algebra",
+            "perturbation_semiclassical",
+            "wavefunction_schrodinger",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              10,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              10,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              12,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "hilbert_operator_algebra",
+            "perturbation_semiclassical",
+            "wavefunction_schrodinger"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.00038513579056598246,
+          "per_class": {
+            "hilbert_operator_algebra": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            },
+            "perturbation_semiclassical": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            },
+            "wavefunction_schrodinger": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 12
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.0018735568737611175,
+      "zero_feature_inputs": 0
+    }
+  },
+  "unsupported_training_labels": {}
+}

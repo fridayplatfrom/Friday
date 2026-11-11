@@ -1,0 +1,3049 @@
+Landau & Lifshitz Vol. 9 — Statistical Physics (Part 2: Condensed Matter) — Authoritative Graduate Reference (Solid State, 396 pages). This authoritative work establishes foundational principles and rigorous derivations for fermi liquid theory, bose liquid, superfluidity, green functions, cooper pairing, bcs superconductivity. Core physical concepts analyzed: fermi liquid theory, bose liquid, superfluidity, green functions, cooper pairing, bcs superconductivity.
+
+[p.3] L.D. LANDAU 
+E.M. LIFSHITZ 
+ 
+ 
+ 
+ 
+ 
+ 
+COURSE OF 
+THEORETICAL PHYSICS 
+ 
+9 
+ 
+STATISTICAL PHYSICS 
+PART 2 [p.4] NOTATION 
+Vector suffixes are denoted by Latin letters i, k, ... Spin indices are denoted by 
+Greek letters a, /9, ... Summation is implied over all repeated indices. 
+"4-vectors" (see the footnote to equation (13.8)) are denoted by capital letters 
+X,P, ... 
+Volume element dV or dzx. 
+Limit on tending to zero from above or below -|-0 or - 0. 
+Operators are denoted by a circumflex. 
+Hamiltonian H, H' = H - fxN. 
+Perturbation operator V. 
+xp operators in the Schrodinger representation y>,y>+; in the Heisenberg represen¬ 
+tation *P, *P+; in the Matsubara representaion *PM, tyM. 
+Green's functions G, D. 
+Temperature Green's functions (T). 
+Thermodynamic quantities are denoted as in Part 1, for example T temperature, 
+V volume, P pressure, [x chemical potential. 
+Magnetic field H; magnetic induction B; external magnetic field $>. 
+References to earlier volumes in the Course of Theoretical Physics: 
+Mechanics = Vol. 1 (Mechanics, third English edition, 1976). 
+Fields = Vol. 2 (The Classical Theory of Fields, fourth English edition, 1975). 
+QM = Vol. 3 (Quantum Mechanics, third English edition, 1977). 
+RQT - Vol. 4 (Relativistic Quantum Theory, first English edition, Part 1, 1971; 
+Part 2, 1974). 
+Part 1 = Vol. 5 (Statistical Physics, Part 1, third English edition, 1980). 
+FM - Vol. 6 (Fluid Mechanics, first English edition, 1959). 
+ECM = Vol. 8 (Electrodynamics of Continuous Media, first English edition, 1960). 
+All are published by Pergamon Press. [p.5] PREFACE 
+As a brief characterization of its content, this ninth volume in the Course of 
+Theoretical Physics may be said to deal with the quantum theory of the con¬ 
+densed state of matter. It opens with a detailed exposition of the theory of 
+Bose and Fermi quantum liquids. This theory, set up by L. D. Landau follow¬ 
+ing the experimental discoveries by P. L. Kapitza, is now an independent 
+branch of theoretical physics. Its importance is in fact measured not so much by 
+even the remarkable phenomena that occur in the liquid isotopes of helium as by 
+the fact that the concepts of a quantum liquid and its spectrum are essentially 
+the foundation for the quantum description of macroscopic bodies. 
+For example, a thorough understanding of the properties of metals involves 
+treating the electrons in them as a Fermi liquid. The properties of the electron 
+liquid are, however, complicated by the presence of the crystal lattice, and a 
+study of the simpler case of a homogeneous isotropic liquid is a necessary pre¬ 
+liminary step in the construction of the theory. Similarly, superconductivity in 
+metals, which may be regarded as superfluidity of the electron liquid, is difficult 
+to understand clearly without a previous knowledge of the simpler theory 
+of superfluidity in a Bose liquid. 
+The Green's function approach is an indispensable part of the mathematical 
+formalism of modern statistical physics. This is not only because of the con¬ 
+venience of calculation of Green's functions by the diagram technique, but 
+particularly because the Green's functions directly determine the spectrum of 
+elementary excitations in the body, and therefore constitute the language that 
+affords the most natural description of the properties of these excitations. In 
+the present volume, therefore, considerable attention is paid to methodologi¬ 
+cal problems in the theory of Green's functions of macroscopic bodies. 
+Although the basic ideas of the method are the same for all systems, the specific 
+form of the diagram technique is different in different cases. It is consequently 
+natural to develop these methods for the isotropic quantum liquids, where the 
+essence of the procedure is seen in its purest form, without the complications 
+arising from spatial inhomogeneity, the presence of more than one kind of 
+particle, and so on. 
+For similar reasons, the microscopic theory of superconductivity is described 
+with the simple model of an isotropic Fermi gas with weak interaction, dis¬ 
+regarding the complications due to the presence of the crystal lattice and the 
+Coulomb interaction. 
+In respect of the chapters dealing with electrons in the crystal lattice and [p.6] Preface 
+with the theory of magnetism, we must again stress that this book is part of a 
+course of theoretical physics and in no way attempts to be a textbook of solid 
+state theory. Accordingly, only the most general topics are discussed here, and 
+no reference is made to problems that involve the use of specific experimental 
+results, nor to methods of calculation that have no evident theoretical basis. 
+Moreover, this volume does not include the transport properties of solids, 
+with which we intend to deal in the next and final volume of the Course. 
+Finally, this book also discusses the theory of electromagnetic fluctuations 
+in material media and the theory of hydrodynamic fluctuations. The former was 
+previously included in Volume 8, Electrodynamics of Continuous Media. Its 
+transfer to the present volume is a consequence of the need to make use of 
+Green's functions, whereby the entire theory can be simplified and made more 
+convenient for application. It is also more reasonable to treat electromagnetic 
+and hydrodynamic fluctuations in the same volume. 
+This is Volume 9 of the Course of Theoretical Physics (Part 1 of Statis¬ 
+tical Physics being Volume 5). The logic of the arrangement is that the 
+topics dealt with here are closely akin also to those in fluid mechanics 
+(Volume 6) and macroscopic electrodynamics (Volume 8). 
+L. D. Landau is not among those who have actually written this book. 
+But the reader will quickly observe how often his name occurs in it: a consid¬ 
+erable part of the results given here are due to him, alone or with his pupils 
+and colleagues. Our many years' association with him enables us to hope that 
+we have accurately reflected his views on these subjects 
+
+[p.15] § 2 Interaction of Quasi-particles 9 
+two spin operators can appear in it only as a scalar product. The functions 
+F and G as defined by (2.4) are dimensionless. The factor separated for this 
+purpose on the left of (2.4) is the number of quasi-particle states on the Fermi 
+surface per unit energy interval: 
+or 
+vF = pjf/nWvp = pFm*/n2fi3. (2.5) 
+Since the trace of a Pauli matrix is zero, the second term in (2.4) vanishes 
+when the trace tr' is taken, and tr'/is independent of o also. This in fact also 
+happens when the spin-orbit and spin-spin interactions are taken into account. 
+The reason is that the scalar function tr'/could contain the spin operator only 
+as the product s*pxp' of the two axial vectors § and p xp'; expressions quad¬ 
+ratic in the components of § need not be considered, since for spin y they reduce 
+to terms linear in s or independent of §. But this product is not invariant under 
+time reversal, and therefore cannot appear in the invariant quantity tr'/ 
+The following notation will be convenient: 
+fay, fiy( P, P') = W(P> P')> / = T trtr'/ (2*6) 
+From the expression (2.4), we have 
+(pFm*l7tW)m = 2F{fi). (2.7) 
+The quasi-particle interaction function satisfies a certain integral relation 
+which follows from Galileo's principle of relativity. A direct consequence of 
+this principle is that the momentum of the liquid per unit volume is equal to 
+its mass flux density. The velocity of a quasi-particle is de/dp, so that the quasi¬ 
+particle flux is 
+tr J A(jde/dp) dr. 
+Since the number of quasi-particles in the liquid is the same as the number of 
+actual particles, it is clear that the total mass transfer by quasi-particles is 
+found by multiplying their number flux by the actual particle mass m. Thus we 
+obtain the equation 
+tr J ph dr = tr J m(de/dp)ft dr. (2.8) 
+Putting nais = nd^ eaP = ebaP, we vary both sides of (2.8), use (2.1), and 
+take/from (2.6): 
+j*p bn dr - m ^~bndr+m j* n bn' dr dr', 
+= m f ~ bn dr - m[ /(p, p') ^ bn dt dt\ [p.16] 10 
+The Normal Fermi Liquid 
+where n' = «(p'); in the second integral, we have renamed the variables, and 
+integrated by parts. Since bn is arbitrary, this gives the required relation: 
+p/m = de/dp- J/(p, p') [dw(p')/0p'] dx'. (2.9) 
+For a step function n(p') = 0(p'), the derivative dn'/dp' reduces to a delta 
+function: 
+dO(p)l'dp= ~(p/p)b(p-pF). (2.10) 
+Substituting the function e(p) from (1.12) in (2.9), and then replacing the 
+momentum p = pn everywhere by the value pF = pFn on the Fermi surface, 
+and multiplying both sides of the equation by pF, we get the following relation 
+between the mass m of the actual particles and the effective mass of the quasi¬ 
+particles : 
+^^ + (2^J^C0S^0'- (2-U> 
+where do' is the element of solid angle in the direction of p'. If we substitute 
+here the expression (2.7) for/(#), this equation becomes 
+m*/m - 1 -!- F($) cos #, (2.12) 
+where the bar denotes averaging over directions, i.e. integration over do'/An - 
+= J sin ft d&. 
+Let us also calculate the compressibility of a Fermi liquid at absolute zero, 
+i.e. the quantity u2 - dP/dg.f The density of the liquid is o - mN/V, so that 
+u2 = -(V*/mN) dP/dV. 
+To calculate this derivative, it is convenient to express it in terms of the deriv¬ 
+ative of the chemical potential. Since the latter depends on N and V only 
+through the ratio N/V, and for T = constant = 0 the differential dp = VdP/N, 
+we have 
+op F dp_ _ _ F2 dP 
+dN ~ N dV ~ N2 eV ' 
+and hence 
+m dN 
+(2.13) 
+Since /i = «Ffor T - 0, the change dp when the number of particles changes 
+by dN is 
+&P = J/(Pf> P') bn' dt' + (dep/dpr) bpF. (2.14) 
++ When T - 0, S = 0 also, and so there is no need to distinguish the isothermal and adia¬ 
+batic compressibilities. The quantity u is defined by the usual expression for the velocity of 
+sound in the liquid. It must be borne in mind, however, that at T = 0 ordinary sound in fact 
+cannot be propagated in a Fermi liquid; see §4. [p.17] §2 
+Interaction of Quasi-particles 
+11 
+The first term here is the change of e(pF) due to the change in the distribution 
+function. The second term occurs because a change in the total number of 
+particles also affects the value of the limiting momentum: from (1.1), bN = 
+= Vppdpp/nHi3. Since bn' is appreciably different from zero only when p' % pF> 
+we can write, replacing/in the integral by its value on the Fermi surface, 
+J f6n'dr ~ J f/do'fdn'^r = 2 W^v- 
+Substituting this expression in (2.14) and putting deF/dpF = pFfn, we obtain 
+(2.15) 
+dp _ f n2hz 
+7^~ * 
+dN 2V pFm*V ' 
+Finally, with 1/m* from (2.11) and again using (1.1), we have 
+-5*+ 3sr(^)7/W(1-cos#)</0' (2I6) 
+With /(#) from (2.7), and using (2.12), we can put this expression in the form 
+"2=3^'I+fW 
+(2.17) 
+The function / must satisfy certain conditions that result from the require¬ 
+ment of stability of the ground state of the liquid. This state corresponds to 
+occupation of all quasi-particle states within the Fermi sphere, and its energy 
+must be a minimum with respect to any small deformation of the sphere. We 
+shall not give the calculations in full, but only the final result,1- which may be 
+conveniently expressed by expanding the functions F($) and G($) from (2.4) in 
+Legendre polynomials: 
+F(0) = £ (2 /+1) FiP,( cos 0), G(0) = £ (21+1) G,P,( cos 0); (2.18) 
+/ i 
+with this definition, the coefficients Fl and Gt are the mean values of the prod¬ 
+ucts FP, and GPt. Then the stability conditions are the inequalities 
+Fi+ 1 > 0, (2.19) 
+G,+1 >0. (2.20) 
+A comparison of (2.19) for / = 1 with the expression (2.12) for the effective 
+mass shows that the latter is positive. The condition (2.19) for / = 0 ensures 
+that (2.17) is positive.1 
+f See I. Ya. Pomeranchuk, Soviet Physics JETPS, 361,1959. 
+* For / = 1, we also have the inequality Fl ■=> Gu as shown by A. J. Leggett, Annals of 
+Physics 46, 76, 1968. [p.18] 12 
+The Normal Fermi Liquid 
+§ 3. Magnetic susceptibility of a Fermi liquid 
+A quasi-particle with non-zero spin has in general a magnetic moment also. 
+
+[p.29] §6 
+A Degenerate Almost Ideal Fermi Gas 
+23 
+The divergence of the sum in (6.4) for large p* and p2 is due to the replace¬ 
+ment of all matrix elements by constants and is not important, since, when 
+this expression is later used to calculate the energy of the system, a convergent 
+expression is still obtained, in which large momenta are not significant. We 
+take a to be the scattering length of slow particles, which is independent of 
+their energy. Formula (6.4) seems at first sight to depend on the momenta pi 
+and p2, but in fact this dependence is restricted to the imaginary part of the 
+scattering amplitude (which exists when the method of summation is appro¬ 
+priately defined; cf. QM, (130.9)), which need not be considered, since we know 
+that the final result will be real. This topic will be resumed in §21. 
+In the present section, we shall consider the model of a Fermi gas with a 
+repulsive interaction between the particles; for such an interaction, a > 0. In 
+this case, the gas has an energy spectrum of the Fermi type described in §§1 
+and 2. 
+The Hamiltonian of a system of particles (with spin ^) having a pair inter¬ 
+action is, in the second quantization method, 
+= Z ^ KA. + y I <P>i.Paa21 U! Pjctj, paa,) aPVp+;.A.«A,.,' (6-6) 
+p,a 
+see QM, §64. Here a^a and apa are creation and annihilation operators for a 
+free particle with momentum p and spin component a (= ±-|). The first term 
+in (6.6) corresponds to the kinetic energy of the particles, and the second term 
+to their potential energy; in the latter, the summation is over all values of the 
+momenta and spin components, subject to the conservation of momentum 
+in the collisions. 
+In accordance with the assumption that the particle momenta are small, 
+we again replace the matrix elements in (6.6) by their values for zero momenta: 
+(Ooci, 0a2| U |0ai, 0a2) = UojV. Next we note that, since the operators aPi<Xi and 
+dPnat anticommute in Fermi statistics, their product is antisymmetrical with 
+respect to the interchange of suffixes; the same applies to the products dp,aapia2. 
+In consequence, all terms cancel in the second sum in (6.6) that contain pairs 
+of equal suffixes a1} a2 (physically, this occurs because of the fact already men¬ 
+tioned that, in the limit of slow collisions, only particles with opposite spins 
+can scatter each other). 
+The Hamiltonian of the system thus becomes 
+# = I a;^iv-5i+. W) 
+P. " Pi, Pi, P( 
+where a1+ = aPi+, ax+ = dp[+, etc., and the suffixes + and - here and hence¬ 
+forward replace -f \ and - -§-. 
+The eigenvalues of this Hamiltonian are calculated by ordinary perturbation 
+theory; the second term in (6.6) is treated as a small correction to the first [p.30] 24 
+The Normal Fermi Liquid 
+term. The first term is diagonal, and its eigenvalues are 
+EV»= £ (pV2m)n»., 
+p, a 
+(6.8) 
+where «pa are the occupation numbers of the states p, a.f 
+The first-order correction is given by the diagonal matrix elements of the 
+interaction energy: 
+Pl.Pt 
+(6.9) 
+where n1+ = «Pl+ etc. 
+To find the second-order correction, we use the known formula of pertur¬ 
+bation theory, 
+L En-Em 
+where the suffixes n and m label the states of the unperturbed system. A simple 
+calculation (with the known matrix elements of the operators dpa and gives 
+Uj[ v n1+n2-(l~n'1+)(l-n^) 
+(Pl+Pt-P?~PW2m 
+(6.10) 
+The structure of this expression is very clear: the squared matrix element of the 
+transition pi,p 2 -*• Pi, p2ls proportional to the occupation numbers of the states 
+pt, p2, and to the numbers of unoccupied positions in the states p(, j>2. 
+The integral Uo in (6.9) and (6.10) must be expressed in terms of a real phys¬ 
+ical quantity, the scattering amplitude - a. In the second-order terms this can 
+be done from (6.2); in the first-order terms, the more exact formula (6.5) is 
+needed. After these substitutions, we find as the correction of the first order 
+in a 
+(6.11) 
+Pi.Pt 
+and as the second-order correction 
+2mg2 ^ «1+«i_[(l - «i+) (1 - «2-) - 1] . 
+** p..L: pI+pI-pI'-p? 
+for brevity, we use in the intermediate formulae the "coupling constant" of 
+the gas particles* g - 4nh2afm. In expanding the expression in the numerator, 
+t By assuming that the particles have definite values of the spin component, we assume that 
+the statistical matrix rt^ip) is also reduced to diagonal form; the functions nB(p) with a = ±-| 
+are then its diagonal elements. 
+* After the renormalization of the scattering amplitude, this quantity is no longer equal to 
+the constant Ua in (6.2). [p.31] §6 
+A Degenerate Almost Ideal Fermi Gas 
+25 
+we note that the terms with products of four n cancel, because their numerators 
+are symmetrical and their denominators antisymmetrical with respect to the 
+interchange of p*, p2 and pj, p£; and the summation over these variables is 
+symmetrical. The final result is 
+£<2> = - 2 mg2 
+V2 
+E 
+Pi. Pi. 
+ttl+«2-K++"2-) 
+Pl+Pl-P'l2-Pi2 
+(6.12) 
+This sum (in which all the npa -* 0 as p -► °o) is convergent. 
+From these formulae we can calculate, first of all, the energy of the ground 
+state. To do so, we must put all the npa equal to unity within the Fermi sphere 
+(p < pF = ft{3n2N/V)113) and zero outside. Here it should be noted that, al¬ 
+though in the original Hamiltonian the eigenvalues of the operator products 
+dpaapa give the occupation numbers of the states of the gas particles themselves, 
+after diagonalizing the Hamiltonian by means of perturbation theory we are 
+concerned with the quasi-particle distribution function (denoted, as in previous 
+sections, by npa). 
+Since £np+ = JX_ = \N, we find from (6.11) the first-order correction 
+Ejp = gN2/4V. 
+In (6.12) we replace the summation over three momenta, together with the 
+condition pi+p2 = Pi+P2, by integration over 
+so that 
+5(Pi+P2-Pi-P2) &Pi <Ppz cPp'x dp'2, 
+4mg2V f^Pi+Pz-Pi-Pa) 
+(Mf J ph-pl-p[2-p? cPpx cPp2 (Pp'x (Pp'z, 
+the integration being taken over the range pu p%, p[ =s pF. The calculation of 
+the integral gives the following final result for the energ
+
+[p.43] §8 
+Energy Spectrum from the Green's Function 
+37 
+The chief property of the Green's function in the momentum representation 
+is that its poles can only be at the points co = em - p>* where em are the discrete 
+excitation energies of the system, defined as shown above. Each of these energies 
+corresponds to a definite value of the momentum Pm of the system, as is evident 
+from the presence of a corresponding delta function in each pole term of the 
+Green's function. 
+We are interested here, however, in the Green's function of a macroscopic 
+body. This means that we are considering the limit in which the volume V and 
+the number of particles N tend to infinity (for a fixed finite value of the ratio 
+NfV). In this limit, the separations between the levels in the system tend to 
+zero, the poles of the function G((o, p) merge, and we can say only that this 
+function has an imaginary part for values of co+p in the continuous range of 
+possible values of the excitation energy of the system. Excitations in which the 
+whole momentum p of the macroscopic system can be ascribed to one quasi¬ 
+particle with a definite dispersion relation e(p) (in the ground state of the 
+system, p = 0) form an exception; such values correspond to isolated poles 
+of the Green's function. 
+If the momentum p is made up of the momenta of more than one quasi¬ 
+particle, the energy of the system is not uniquely determined by the value of p: 
+a given momentum of the system can be composed in various ways of quasi¬ 
+particle momenta, with the total energy of the quasi-particles covering a con¬ 
+tinuous range of values; the pole is removed by integration over all such states. 
+Thus the quasi-particle dispersion relation is determined by the equation 
+G-He-p, p) = 0 (8.16) 
+(V. L. Bonch-Bruevich 1955). 
+It should be emphasized that the definition of the excitation energy as in (8.9) 
+in fact corresponds to the definition of the quasi-particle energy in the Landau 
+theory: the difference e^) is the change in the energy of the system when one 
+particle is added to it, and if the whole of this change is ascribed to one quasi¬ 
+particle we have e defined in accordance with (1.3). Similarly, - is the change 
+in energy when one particle is removed, and so e^) is the energy of the quasi¬ 
+particle removed. It is therefore natural that ^ /*» s^nce in the Landau 
+theory a quasi-particle can be removed only from within the Fermi sphere.1" 
+Since all the excited states that occur in the expansion (8.7) are obtained 
+from the ground state by adding or removing one particle with spin -J, it is 
+clear that, for a system of fermions, the poles of the Green's function determine 
+only the spectrum of Fermi-type elementary excitations. It will be shown in §18 
+how the Bose branch is determined. 
+t It should be noted that the excited level Em of the system appears with the negative sign 
+in the definition of the quasi-particle energy e<^>. This is the reason why the momentum of 
+these quasi-particles p = - Pm, as is seen from the delta function <5(p+Pm) in the corresponding, 
+terms of the expansion (8.7). [p.44] 38 
+Green's Functions in a Fermi System at T - 0 
+The description of the spectrum of a macroscopic system by means of the 
+concept of quasi-particles with a definite dependence of e on p is an approxi¬ 
+mate one, whose accuracy diminishes with increasing \e - p\. The departure 
+from the picture of independent quasi-particles is shown by the shift of the 
+Green's function pole into the complex domain, e(p) becoming complex. 
+According to the general principles of quantum mechanics (see QM, §134), 
+complex energy levels signify a finite lifetime r of the excited state of the sys¬ 
+tem: t ~ 1/| im e\. The quantity im e itself represents the degree of "broaden¬ 
+ing" of the quasi-particle energy values (the level width). Of course, this treat¬ 
+ment is meaningful only if the imaginary part is sufficiently small, | im e) <sc 
+<?c|£ - fi\. As explained in §1, this condition is in fact satisfied for weakly 
+excited states of the system, since ! im e | ~ 1/toc (P - PfYi whereas re(e - /u) oc 
+oc \p-pF|. 
+The required sign of im e is ensured by the fixed sign of the imaginary part 
+of the Green's function: near its pole, this function has the form 
+C(«,p)^Z/[®+|«-e(p)], (8.17) 
+and the constant Z > 0, as follows from the fact that the coefficients Am and 
+Brn in the expansion (8.7) are positive; Z is often called the renormalization 
+constant (by analogy with quantum electrodynamics). The imaginary part 
+of the Green's function is 
+im G ^ Z im ej\ el2. 
+Since this expression relates to values of o> % e - p,we find, on comparing its 
+sign with the rule (8.14), that 
+im e < 0 when re e > jtt,l ^ ^ 
+im e >0 when re e < p, J 
+as it should be: this sign of im e corresponds in both cases (e^h) and e^") in (8.9)) 
+to the correct negative imaginary increment to the energy Em of the excited 
+state. 
+The analytical properties of the Green's function will be further discussed 
+in §36, where this question will be considered for the general case of arbitrary 
+temperatures. 
+§ 9. Green's function of an ideal Fermi gas 
+To illustrate the general relations given in §8, let us calculate the Green's 
+function of an ideal gas. 
+The Schrodinger ip operators can always be written as an expansion 
+y»«(r) = £ ap<jippjr, a) 
+(9.1) [p.45] §9 
+Green's Function of an Ideal Fermi Gas 
+39 
+in terms of a complete set of functions ippx, the spinor wave functions of a free 
+particle with momentum p (and spin projection a), i.e. in plane waves 
+(9.2) 
+where ua is the spinor amplitude normalized by the condition waw* = 1; this 
+choice of the functions ippa has no connection with the actual interaction of the 
+particles in the system. 
+For a system of non-interacting particles, the Heisenberg ip operator can 
+also be written in an explicit form. In this case, the change from the Schrodinger 
+to the Heisenberg representation consists in placing in each term of the sum in 
+
+
+[p.57] §13 The Diagram Technique for Fermi Systems 51 
+Thus the first-order correction to the Green's functions in the momentum, 
+representation is finally 
+iG§(P) = m<°> U(0)G($(P)G${P)- 
+- J G'£}(P)Gft(Pi) Gf$(P) CTp-pj cPP,H7jif. (13.12) 
+Each of the two terms in (13.12) corresponds to a particular Feynman dia¬ 
+gram, and this equation may be written 
+9 
+(13.13) 
+p - u p p -« - £■ - ■ v, - P 
+(a) (b) 
+The points of intersection of lines are called vertices of the diagram. Each 
+diagram has 2n vertices, where n is the order of the perturbation theory. At 
+each vertex, two continuous lines and one broken line meet. To each con¬ 
+tinuous line is attached its "4-momentum" P in the direction shown by the 
+arrow (and the direction of the arrows is unchanged along each continuous 
+sequence of such lines). To each broken line is attached a 4-momentum Q; for 
+these lines, conventionally any direction of the arrow may be chosen.1-The "con¬ 
+servation of 4-momentum" holds at the vertices of the diagram: the sum of the 
+4-momentum for the ingoing lines is equal to that for the outgoing lines at each 
+vertex. Each vertex also has a particular spin index a. Each diagram has two 
+external lines (one ingoing and one outgoing), whose 4-momentum is the argu¬ 
+ment of the required Green's function z(raj3(P); these two lines also have the 
+spin indices a and (5 of that function. The remaining lines in the diagram are 
+called internal lines. 
+The analytical form of the terms corresponding to each diagram is deduced 
+from the following rules: 
+1. Each continuous line between vertices a and f is associated with the factor 
+iG^jfcP), and each broken line with the factor - iU(Q). A closed loop with one 
+vertex is associated with the factor n^°\fj,). 
+The integration over d*X is effected by the formula 
+e<PxdiX= (2ji)<<54(P), 
+where the "four-dimensional" delta function <5(4) is defined as the product of delta functions 
+of the components of the "4-vector" P. The resulting factor <5<4) (P-P^-P^ is removed by 
+integration over d*P2, and we have the right-hand side of (13.11). 
+t The "time" components of the 4-vectors Q = (q0, q) are in general non-zero, but the 
+function U(Q) is independent of q0 by the definition (13.10). The arbitrariness of the direction 
+of the broken line arises because the function U( - Q)= U(Q) is even. [p.58] 52 
+Green's Functions in a Fermi System at T = 0 
+2. At each vertex, the conservation of 4-momentum holds. There is integra¬ 
+tion over d*P/(2ny for the 4-momentum of internal lines that are left indeter¬ 
+minate. At each vertex there is summation over a pair of dummy spin indices, 
+one from each of the adjacent G(0) factors. 
+3. The common factor of the diagram in iGaP is ( - 1)L, where L is the number 
+of closed loops of continuous lines with more than one vertex in the diagram. 
+This last rule arises as follows. A closed loop with k (> 1) vertices comes 
+from the contraction of ip operators in the form 
+Here, the contractions equal iGjjJ, ..., iG%Llik, and finally - iG($. For loops 
+with one vertex, the correct sign is already obtained by the presence of 
+from rule 1. 
+As an example, here is a set of diagrams giving the second-order correction 
+to the Green's functions: 
+Lastly, let us return to Wick's theorem and prove it in the "macroscopic 
+limit" (i.e. as F -*■<» or, equivalently for a given density of the system, as 
+N - oo ), which is the only important case in statistical applications. 
+Let us consider, for example, the averaged product of four ip operators, of 
+the type 
+{Vang'S,) = ^ I <Wp+A+,>«p(•■■); 
+P1...P1 
+(13.15) [p.59] The Self-energy Function 
+53 
+§ 14 
+the ip operators are in the form (9.3), and the obvious but lengthy exponents 
+are omitted. In this sum, the only non-zero terms are those containing equal 
+numbers of operators dp and df with the same values of the momenta. They 
+include terms in which the momenta are equal in pairs, e.g. pi = p4 and p2 = P3- 
+These correspond to the paired contraction 
+IPoiWi 
+and are expressed by a sum of the form 
+~p2 Z (^Pi^Pi)(^Pt^Pt)CXP(' ■ •)• 
+pi.pt 
+In the limit V -+ «>, the summation over pi and p2 is replaced by integration 
+over V2dipidip2/(2Tc)6m, the volume V cancels, and the expression remains 
+finite. In the sum (13.15), terms with pi = p2 = P3 = P4 are also non-zero; 
+they form a sum 
+pi E(WX)"P (■■•). 
+P 
+but after the change to integration one factor l/V remains, and this expression 
+vanishes in the limit V -►«». 
+This is clearly a general result: in the limit V -*■ «>, only the results of paired 
+contractions are non-zero in the mean value of a product of ip operators. 
+In the proof given, no essential use has been made of the fact that the aver¬ 
+aging is with respect to the ground state, and it therefore remains valid for 
+averaging with respect to any quantum state of the system. 
+§ 14. The self-energy function 
+The rules of the diagram technique formulated in §13 have an important 
+property: the common factor in the diagram is independent of its order. Con¬ 
+sequently, each "figure" in. the diagram has a definite analytical significance, 
+whatever the diagram in which it appears, and can be calculated independently 
+beforehand. In fact, we can calculate beforehand the sum of several figures 
+having a definite number of external lines, and then substitute it as a "block" 
+in more complex diagrams. This is one of the chief advantages of the diagram 
+technique. 
+One such block, which is also of considerable independent importance, is 
+the self-energy function.* In order to arrive at this concept, let us consider all 
+the Green's function diagrams that cannot be separated into two parts joined 
+by only one continuous line. These include, for example, the two diagrams of 
+t Compare the corresponding definition of the compact self-energy function in quantum 
+electrodynamics (RQT, §§100,102). [p.60] 54 
+Green's Functions in a Fermi System at T = 0 
+first-order perturbation theory (13.13), and the second-order d
+
+[p.71] §17 
+The Vertex Function for Small Momentum Transfers 
+65 
+To investigate this equation, let us first consider the product G(Q+K)G(Q) 
+in its kernel. As already mentioned, for small K the poles of the two factors 
+are close together. Near these poles, the G functions are represented by the 
+pole terms in (10.2). Denoting the components of the 4-vectors K and Q by 
+*«(q»,k), 2 = (?o,q), (17.6) 
+we can write in this region 
+G(Q)G(Q+K) za Z?[qo - vF(q - pF)+ib{\''1[qo+ai - vF(\q + 'b\ - pF)+id$-1i 
+(17.7) 
+where <5i and <52 are infinitesimal increments whose signs near the poles are given 
+by 
+sgn 3i = sgn{q-pF\ 
+sgn b2 = sgn(|q+k| - p). 
+The signs of <5i and b2 determine the position of the poles in the upper or 
+lower half-plane of the complex variable q0. The singularity in the kernel of 
+the integral equation, and therefore in the solution of the equation, arises from 
+the pinching of the contour of integration with respect to qo (the real axis) 
+between the poles, for which the latter must be on opposite sides of the contour, 
+i.e. in opposite half-planes. 
+Let us first suppose that q.k > 0, i.e. cos 0 > 0, where 0 is the angle be¬ 
+tween q and k. Then |q+k| > q, and <$i and b2 have opposite signs (<§i < 0, 
+b2 > 0) if q < pPi | q+k | > pF, which, in view of the smallness of k, is equiv¬ 
+alent to the conditions 
+pF - k cos 0 < q < pF. (17.9) 
+In the subsequent integration with respect to qo in (17.5), the contour of inte¬ 
+gration may be replaced by an infinite semicircle in either the upper or the lower 
+half-plane; the integral is then given by the residue of the integrand at the cor¬ 
+responding pole. Because of the narrowness of the range (17.9) when k is small, 
+we can take k = 0 in the factors JT and P in the integrand, and similarly 
+qo % 0 for the position of the poles when k and co are small. 
+In other words, as regards its role in the kernel of the integral equation 
+(17.5), the product of pole factors (17.7) is equivalent to the delta functions 
+Ab(q0) b(q - pF), with a coefficient A given by 
+_Z2 dqo dq,_ 
+[qo-vF(q-pF)+ibx] [^o+w-^ ^(|q+k|-pP)+/62] * 
+When q is outside the range (17.9), both poles lie in the same half-plane of 
+complex qo\ when the contour of integration with respect to qo is completed in 
+the other half-plane, we see that the integral is zero. In the range (17.9), 
+(17.8) [p.72] 66 
+Green's Functions in a Fermi System at T - 0 
+completing the contour in one half-plane and calculating the integral from the 
+residue at the pole in that half-plane, we find 
+A = f 
+TjtiZr dq 
+co - rF(|q-fk| - q) + iO 
+where we have used the fact that 8X < 0 and <52 > 0 in the range (17.9). Since, 
+by (17.9), q % pF » k, we can put | q-f-k | - q % k cos 6, and then, with the 
+limits given by (17.9), 
+A = 2niZ?k cos 0/(co - kvF cos 6). 
+It is easy to prove by the same method that a similar expression for A (but 
+with the opposite sign of /0) is obtained when cos 0 < 0 (when the integration 
+is to be taken over the range q =► pF, | q-f-k! < pF). Thus we have in the kernel 
+of (17.5) 
+G(Q) G(Q + K) 
+2ni2Zzl.kd(qo) b(q - pF) 
+(W - M.k-H'O.sgnft) 
+(17.10) 
+where I.k is written in place of k cos 6(1 = qjq), and the function has (when 
+K is small) no delta-function part, and we can therefore put in it K = 0. 
+Substituting (17.10) in (17.5), we get the basic integral equation in the form 
+Pu P.) = rrl,,.f(Pi, i>2) 
+-« I A:..,(A, Q) <KQ)rKt,a(K; Q, Pz)d'Q/(Z-r)' 
++§S fr«-{PuCM1'***'2"'(17-U) 
+In the last term we have written dAQ = q2 dq dot dqo (where dot is the element 
+of solid angle in the direction of 1) and have removed the delta functions by 
+integration over dq dq0. In this term the argument Q in the functions r and P is 
+taken on the Fermi surface: QF = (0, pF1). 
+The factor I.k/(co - pFI.k) in the kernel of (17.11) has a specific property: 
+its limit as k - 0 and a) 0 depends on the limit of the ratio co/k. The solution 
+of the equation must therefore have the same property: the limit of the function 
+r(K; Pu P2) as K - 0 depends on the way in which co and k tend to zero. 
+Let r°(Pu P2) denote the limit 
+r^(Pu Pz) = lim r^iK', Pu P2) for kjco - 0; (17.12) 
+K~* 0 
+we shall see in §18 that the quasi-particle interaction function is related to 
+this quantity. With that method of taking the limit, the kernel of the last integral 
+term in (17.11) is zero, and so JT" satisfies the equation 
+rzi^iPu P2) = r^Pu Px)-i J /'yC,.>(p1>e)«Q)rs,,w(Q,i>2)rf'Q/(Ziy, 
+(17.13) [p.73] 67 
+§ 3 7 The Vertex Function for Small Momentum Transfers 
+Because of (15.8), 
+r%.4tPuft) = / Wft, *)• (17*14> 
+We can eliminate from the two equations (17.11) and (17.13). The result is 
+ryo,*p(K; Pu ft) = r^^Pu ft) 
++|jjl |r%.UP» at*-,Qr, 07.15) 
+since, if we formally write (17.13) as t = Lrw, (17.11) becomes 
+lr - r+ - ^~ f 
+LI ~r+ (2jr)3 J rr l.k dot 
+(o - vF l.k ' 
+Substituting here P = LP° and applying the operator L~x to both sides of the 
+equation, we get (17.15). 
+We now define the function Tk by 
+Fkdt^(Pi, P2) = lim rvdt^{K\ ft, ft) with tojk - 0. (17.16) 
+K-+0 
+This function (multiplied by Z2) is the forward scattering amplitude (i.e. that 
+of the transition Pi, ft - Pi, ft), corresponding to actual physical processes 
+undergone by quasi-particles at the Fermi surface: collisions that leave the 
+quasi-particles on that surface are accompanied by a change of momentum 
+without change of energy, and therefore the passage to the limit of zero mo¬ 
+mentum transfer (k - 0) must be made with exactly zero energy transfer 
+(oj = 0). The function Fu> defined above corresponds to the non-physical limit 
+of "scattering" with a small energy transfer and exactly zero momentum trans¬ 
+fer (k = 0). 
+Putting co = 0 in (17.15), taking the limit k - 0 and multiplying both sides 
+by Z2, we get 
+z?rkdt!lp(Pi, p2) = z^nx^Pi, p2) 
+Z'r^,^P1,QF)Z'I*ti^Qr,P^dot. (17.17) 
+Thus there is a general relation between the two limiting forms of the forward 
+scattering amplitude. 
+The antisymmetry properties (15.8) for T give some 
+
+[p.85] §21 
+Green's Function of an Almost Ideal Fermi Gas 
+79 
+The diagrams (21.1a, b) include the first-order diagrams (14.10a) and (14.9a) 
+and the second-order diagrams (14.10b, c) and (14.9b, c); the latter differ from 
+the former only by corrections to the internal continuous line. These lines are 
+shown thick in (21.1a, b) and must therefore be correlated not with the ideal- 
+gas Green's functions G(0) but with the functions G corrected as far as firstorder terms. The diagrams (21.1c, d) are the second-order diagrams (14.10d, e). 
+All the diagrams have been subjected to a deformation in order to clarify 
+their structure; they are the first terms in a "ladder" series of diagrams with 
+four external lines, in each of which a pair of external lines have been "shortcircuited" in two different ways. 
+We first calculate the diagram (21.1a). Its analytical expression is 
+[ - i'X(P)]. = J V(Q) G(i> - 0 d*QI(2*Y, 1 
+G = (?o, q), P = (co, p); J 
+the common factor da/J is omitted. We first integrate over q0. Since the factor 
+U(Q) = U(q) does not depend on qo, and G cc \jqQ when q0 \ -* °°, the manner 
+of integration has to be more precisely described. For this, we must go back 
+to the origin of the diagram (21.1a), and note that the continuous line there 
+corresponds to the contraction of a pair of y operators arising from one 
+operator V. This means that P and P+ are taken at the same instant, and P~ 
+is to the left of P in the contraction. That is to say, in the coordinate representa¬ 
+tion the G function occurring is taken for t = ti - to - - 0. In the momentum 
+representation, this means including a factor exp ( - iqot) in the integrand of 
+(21.2) and taking the limit as f-*-0. Now using (7.23), we find 
+[-)T]„ = i J t/(q)AT(p - q)rfty(2*)=, (21.3) 
+where N(p) is the particle distribution function. 
+The Fourier component U(q) depends markedly on q only when q > 1 jr0, where 
+r0is the range of action of the field U(r); these values are certainly large (for a 
+rarefied gas) in comparison with pF. If we consider only values \ p - pF « 1 /r0. 
+then for these values of q we have TV(p-q) % 0. Hence U(q) in (21.3) may be 
+replaced by 17(0) and taken outside the integral.1 The remaining integral is half 
+(because of the specified value of the spin component) the gas density n(p): 
+[Z]a = -\n{p)U(Q>). 
+The diagram (21.1b), with the closed continuous line, gives [Z]b = n(ii) U(0). 
+Thus the contribution to 27 from the two diagrams is 
+[£]..» = i«G«) t/(0) = (2x/m)n(fl)a, (21.4) 
+where a is the scattering length defined by (6.2). 
+t The resulting error is easily seen to be of the relative order of magnitude ~ (pFr0)\ and 
+therefore has no effect even on the terms of the next order in pFr0. [p.86] 80 
+Green's Functions in a Fermi System at T = 0 
+The expression (21.4) includes, in particular, the whole of the first-order 
+effect. In this approximation, n(p) is to be understood as the ideal gas density 
+n<0)(p), so that 
+27(i) = [27](i), = (2n/m) a. (21.5) 
+For the subsequent calculation we define an auxiliary function F given by the 
+ladder diagrams 
+(as usual, Pi+P2 = F3+P4). In analytical form, 
+iFyi.'dP* P* Pi> P2) = a^(F(1) + F(2)), (21.7) 
+where 
+iF& = -iUiPs-PJ, (21.8) 
+l7r(2) = JGW(P') U^-P^G^KP^Pz-P') t/(P'-P3)d4P'A>)4. (21.9) 
+Expanding both diagrams (21.1c), (21.Id) and expressing them in terms of 
+F(2), we obtain 
+[-iZ(P)]c,„ = - JG<»)(0F«>(P, Q-,Q,P)d'QKpt)1 
++ 2 j G<°)(2)F(2)(P, Q; P, Q)d,Q/(2x)'; (21.10) 
+the same integrals with F(1) in place of F<2> give (21.5). The difference in sign 
+between the two integrals is due to the presence of the closed loop in the dia¬ 
+gram (21.Id); the delta factors in the first diagram give dxydyfi = 8^, and those 
+in the second diagram 8^8^ = 28a/3. 
+Let us now calculate F<2>. Since U(Q) is independent of qa, the integration 
+with respect to p^ reduces to 
+J G^(P') G^(P1+P2-P') dpo/2rt. 
+Substituting here <7(0> from (9.9) and using the convergence of the integral for 
+| Pq | -*■ oo, we close the contour of integration by an infinite semicircle in one 
+half-plane of the complex variable p0\ the integral is zero unless the poles of 
+the two functions G(0) lie in different half-planes, i.e. 
+sgn (p'-Pf) = sgnflPi + Pu-p'l-Pf). (21.11) 
+The result is 
+FVXP^P^P^PJ 
+= _ '_U(Pi ~ P') U(P' ~ P3) sgn (P' ~Pf)_dzp' 
+(o1 + co2 + 2p - [p'2 + (Pi + p2 - P')2] + «>• sgn (p' -Pf) ^ 
+(21.12) [p.87] §21 
+81 
+Green's Function of an Almost Ideal Fermi Gas 
+where coa = p10, coz - p2o. In order to satisfy the condition (21.11) automatic¬ 
+ally, we must substitute in the numerator of the integrand 
+sgn (pf -Pf) - 1 - 0(p') - 0(Pi + p2 - p')> 
+where 0(p) is the step function (1.10). 
+We have seen in §16 that a sequence of ladder diagrams determines (in a 
+vacuum) the mutual scattering amplitude of two particles. Hence the expression 
+(21.12) contains the correction to the first-order terms in the scattering ampli¬ 
+tude. This correction can be taken into account by substituting in F(1> (21.8) 
+^(Ps-Pi) - - (4?r/m)re/(p3, p^. 
+where / is the scattering amplitude1, in a vacuum, correct to the second order, 
+and at the same time subtracting from the expression F<2) (21.12) the real part 
+of its value in a vacuum, i.e. for pF = 0, p, = 0, and the values coi = pl/2m, 
+o)2 = p$/2m corresponding to the energies of two real colliding particles (the 
+"physical" external lines of the diagrams). We can then replace - re/by the 
+value for zero energy, i.e. the scattering length a.x We thus have 
+F«\P2,Px-,Pi,P2) 
+(Ana' 
+i-0(p')-0(Pi+p2 - pO 
+coi + <o2 + 2p - ~ [p'2 + (px-f- p^- p')2] + iO. sgn (/ -pF) 
+-P _2m_ 
+Pi+P2-Pn~ (Pi+p2 - P')2 
+d*pf 
+(2nf * 
+(21.13) 
+The symbol P in the second term means that the integral is taken as a principal 
+value; this is the result of separating the real part of the integral by means of 
+the rule (8.11). 
+Since the expression (21.13) is symmetrical in Pi and P2, the two integrals 
+in (21.10) are the same, and 
+[-iT(P)k„ = / Q; P, Q)d*QK2nf. 
+When the firs
+
+[p.99] §23 
+Superfluidity 
+93 
+whose number is equal to the number of impurity atoms, and whose energy 
+eimPiP) is a definite function of the momentum. In thermal equilibrium, the 
+energy of these quasi-particles is concentrated near the lowest minimum of 
+the function e^p(p). In practice, we are concerned with the He3 isotope impu¬ 
+rity, and empirical results show that this minimum is at p = 0; near that point, 
+the quasi-particle energy is 
+«imP(p) = />2/2m?mp, (23.9) 
+with the effective mass equal to 2.8 times the mass of the He3 atom. 
+Impurity quasi-particles interact with phonons and rotons when they col¬ 
+lide with these, and therefore belong to the normal part of the liquid. Because 
+of their low concentration, their thermal distribution is of the Boltzmann type, 
+and their contribution to Qn, determined from (23.6), is 
+/_ \ _ -Wimp p2 _ Nimp 1rYv 
+(£>«)imp - y yy - y Wimp, (ZO.IU) 
+where N-^JV is the number of impurity atoms per unit volume. 
+PROBLEMS 
+Problem 1. Find the limiting temperature dependence of the surface tension coefficient a 
+of liquid helium near absolute zero (K. R. Atkins 1953). 
+Solution. The coefficient a is the free energy per unit area of the liquid surface; see Part 1, 
+(154.6). It is calculated from Part 1, (64.1), in which the frequencies coa now relate to surface 
+vibrations. In the two-dimensional case, the change from summation to integration (over the 
+wave vectors of the vibrations) is effected by including a factor d?k[(2n)* or 2nk dk/(2n)-. 
+Integration by parts gives 
+a = a0+T J log (1 - e-*<°IT) k dk/In 
+h f k*d(o 
+~ a° - ~4n J 1 ' 
+where a0 is the surface tension at T = 0. At sufficiently low temperatures, only vibrations with 
+low frequencies (i.e. long wavelengths) are important. Such vibrations are hydrodynamic 
+capillary waves, for which or = ak3/g « a0kaJg (where g is the density of the liquid). Hence 
+h / g \2'3 f (oil3da> 
+a-a° 4n Uo/ J 1 ; 
+o 
+since the integral converges rapidly, the upper limit may be replaced by infinity. The calcu¬ 
+lation of the integral (see the note in Part 1, §58) gives 
+7'7/s 02/3 
+" = 4^Vr(7/3)C(7/3> 
+= a0 - 0.13 T7/3 gV3IW3a*j3. 
+This applies to liquid He4 at temperatures so low that the whole mass of the liquid may be 
+regarded as superfluid.t 
+t In a Fermi liquid (liquid He3) capillary waves of the type considered (like volume waves 
+of ordinary sound) do not exist, since the viscosity increases without limit as T -* 0. [p.100] 94 
+Superfluidity 
+Problem 2. Find the dispersion relation £lmp(p) for impurity particles in a moving super¬ 
+fluid if its form fifiSpO?) in a liquid at rest is known (J. Bardeen, G. Baym and D. Pines 1967). 
+Solution. After the addition to the liquid at rest (T - 0) of an impurity atom with mass 
+m and momentum p0, the energy and momentum of the liquid, in the coordinate system in 
+which it was originally at rest, areiio = 4mP(/>o)» P<> = p<>. In coordinates such that the liquid 
+is moving with velocity v, we have from (23.1) 
+E = effipCPo)+Po • y + i (M+ m) u2, P = p0+(M+m) v. 
+Hence we see that the changes of energy and momentum of the moving liquid when an impu¬ 
+rity atom is added to it are 
+e,mp = «imP(A))+Po • ▼ ■+ £ mu2, p = p0+mv. 
+Expressing £imp in terms of p, we find 
+elmp(p) = ®imp(p - mv) + p . V - I mu2. 
+For small v, as far as the first-order terms, with a spectrum efj"p(p) of the form (23.9), we have 
+§ 24. Phonons in a liquid 
+When we go from the classical picture of sound waves to the quantum concept 
+of phonons, the hydrodynamic quantities (density, velocity of the liquid, etc.) 
+are replaced by operators that can be expressed in terms of the phonon anni¬ 
+hilation and creation operators ck, ck . We shall derive such expressions. 
+First, we recall that, in the classical description of a sound wave, the density 
+of the liquid undergoes small oscillations whose frequencies and wave vectors 
+are related by co = uk. The velocity v of the liquid is a quantity of the same 
+order of smallness as the variable part q' = g - g0 of the density (where go 
+is the equilibrium value of the density). The motion of the liquid in the wave 
+is a potential flow, i.e. it can be described by a scalar velocity potential (j> 
+which determines the velocity according to 
+v = v<£. (24.1) 
+The velocity and the density are related by the equation of continuity dg'/dt = 
+= - div (pv) ^ - g0 div v, or 
+dg,ldt = - g0&<j>. (24.2) 
+The energy of the liquid in the sound wave is given by the integral 
+E = J (I o„v2 + «y V2ft,) d*x. (24.3) 
+The first term in the integrand is the kinetic energy density, and the second 
+the internal energy density, of the liquid; both are quadratic in the small 
+quantities v and g'. [p.101] §24 
+Phonons in a Liquid 
+95 
+The subsequent quantization procedure could be carried out in an exactly 
+similar way to that for phonons in solid crystals (see Part 1, §72). We shall 
+take a somewhat different route, however, which illustrates some instructive 
+points of methodology. Let us first consider the liquid density and velocity 
+operators expressed in terms of microscopic variables, the coordinates of the 
+particles. 
+In the classical theory, the density q and the mass flow density j of the liquid 
+can be written as sums 
+Q(r) ='Zm° d(T« ~ r)> Kr) = E P<Ar« - r), 
+a a 
+taken over all the particles, where ra and pa are the position vectors and mo¬ 
+menta of the particles. The integrals of these functions over any volume give 
+the total mass and total momentum of the liquid in that volume. When we 
+go to quantum theory, these functions are replaced by the corresponding oper¬ 
+ators. The density operator has the same form: 
+§(t) = £ mad(ra - r); (24.4) 
+a 
+the current density operator is 
+fr) = iE{M(r«-*-) + ^a-r)M, (24.5) 
+where = - ift\7a is the momentum operator of the particle.'* 
+Let us find the commutation rule for the operators j(r) and §(r') taken at 
+points r and r': for brevity, we may consider just one term in the sums (24.4) 
+and (24.5), since the operators corres
+
+[p.113] §27 
+Temperature Dependence of the Condensate Density 
+107 
+zero, long-wavelength oscillations play the main part in the fluctuation spectrum 
+of a macroscopic quantity. These oscillations in the liquid are sound waves 
+described by the macroscopic equations of hydrodynamics, and it is therefore 
+possible to construct an operator corresponding to 3 by independent quanti¬ 
+zation of 3. 
+In the present case, for 3 = y/no exp i0, in the long-wavelength limit, the 
+phase 0 fluctuates most strongly, and is directly related to the superfluid ve¬ 
+locity potential by (26.13). Both 0 and 0, it may be recalled, are defined only to 
+within additive constants. The uniquely defined quantity y/no can therefore be 
+expressed only in terms of the derivatives of#, and so the Fourier components 
+of its fluctuations will contain extra powers of the wave vector k, i.e. will be 
+small when k is small. 
+The relation of the phase 0 to the potential (j> allows 0 to be directly related 
+to quantities characterizing the phonon distribution in the liquid. For this pur¬ 
+pose, we regard <f>, and therefore #, as second-quantized operators, expressing 
+<j6 by (24.10) in terms of the phonon creation and annihilation operators: 
+(mu \ 1/2 
+_) (cp^ + c7e-'p^); (27.1) 
+the unperturbed liquid density is written as q = nm, where n is the particle num¬ 
+ber density, and the suffix 0 is omitted. According to the foregoing discussion* 
+this means that the operator of the macroscopic quantity 3, i.e. the long-wave 
+part of the operator can be expressed as 
+^ = V"0expi#, (27.2) 
+where no is the condensate particle density. 
+We first apply this formula to calculate the momentum distribution of par¬ 
+ticles "above the condensate" in a Bose liquid (for small momenta). In the 
+single-particle density matrix g(ri, r2), for large distances |n - r2|, we can use 
+the long-wave expression (27.2) for the tp operator: 
+No(r„ r2) = <P+(r2) ^(r,)) « (27.3) 
+where the mean value is taken with respect to the state of the liquid at a given 
+temperature. Since the fluctuations are small, this expression is to be expanded 
+in powers of $, retaining only the first non-vanishing (the quadratic) terms. 
+Since = #, we obtain 
+Ne(?i> *2) = nQ-n0(#2(r)>+w0($(r2)$(ii)>. (27.4) 
+The third term tends to zero as [ r2 - ri| - and gives the required above¬ 
+condensate part of the density matrix; the second term is independent of r in a 
+homogeneous liquid, and gives a correction to the condensate density that will [p.114] 108 
+Superfluidity 
+be calculated below by a somewhat different method. Using (27.1), we can 
+write the above-condensate part as 
+mr» r2) 
+where 
+np = \e*«T- l]"1. 
+Changing from summation to integration, we have 
+This expression applies, of course, only to the contribution from small p 
+{hip large compared with interatomic distances). The integrand in (27.5) 
+immediately gives the particle momentum distribution 
+JV(p)= (",+t) • (27-6) 
+When T = 0, this becomes 
+N{p) = ntfnu/lnp (27.7) 
+(J. Gavoret and P. Nozieres 1964); when T ^ 0 and up « T, 
+N{p) = nomT/np2 (27.8) 
+(P. C. Hohenberg and P. C. Martin 1965). 
+We can now determine the temperature dependence of the condensate den¬ 
+sity. By definition, 
+»oCO = n- J N(p) PpKlnKf. (27.9) 
+If we substitute (27.6) here directly, the integral diverges because of the zero- 
+point vibrations. This is related to the invalidity of (27.6) for large p, and means 
+only that we cannot calculate in such a way the value of the condensate density 
+at T = 0, which must here be regarded as a given quantity. To find the required 
+temperature dependence, we must subtract from rio(T) its value at T =0; 
+the integral is then convergent. The result is 
+n0{T)-ndO) __ mu j* np d3p 
+«o(0) n J P (2nhf 
+mT2 r xdx _ mT2 
+27i2nuh3 J e*-l ~ 12nuh* * 
+o 
+(27.10) 
+In the calculation we have neglected the temperature dependence of the to¬ 
+tal density of the liquid; this is legitimate, since the thermal expansion of the [p.115] § 28 Behaviour of the Superfluid Density Near the X-point 109 
+liquid (due to the excitation of phonons) is proportional to a higher power of 
+the temperature, namely T* (cf. Part 1, §67).* 
+Finally, we may make some remarks on the methodologically important 
+subject of a two-dimensional Bose liquid. In this case, the temperature-depend¬ 
+ent part of the integral (27.9) diverges logarithmically for small p, where the 
+formula for N(p) should have been correct. This means that in the two-dimen¬ 
+sional case the basic assumption is incorrect, namely that there exists a con¬ 
+densate at non-zero temperatures. In the two-dimensional case, the condensate 
+can exist only at T = 0.* The position here is analogous to that of two-dimen¬ 
+sional crystals (see Part 1, §137). As with the latter the fluctuations of the atomic 
+displacements smooth out the lattice, so the phase fluctuations eliminate the 
+condensate. The formal analogy between the two systems is that in both cases 
+the energy depends on quantities that can appear in it only as derivatives. 
+In the first case these are the atomic displacement vectors, which cannot them¬ 
+selves appear in the energy, because the latter is invariant under displacements 
+of the system as a whole. In the second case it is the phase of the condensate 
+wave function, which cannot itself appear in the energy, because it is not 
+uniquely determined. The dependence of the energy on only the gradients of 
+these quantities is the ultimate reason for the divergence of the fluctuations. 
+Next, we have seen in Part 1, §138, that the weak (logarithmic) divergence 
+of the fluctuations causes in a two-dimensional crystal a slow (power-function) 
+decrease of the correlation function in the system. Similarly, in a two-dimen¬ 
+sional Bose system the density matrix (27.3) decreases as | ri - r21 - «> according 
+to a power law, and does not tend to a constant limit as in the presence of the 
+condensate.8 Such a system thereby differs qualitatively from an ordinary 
+liquid, and s
+
+[p.127] §31 
+Green's Functions in a Bose Liquid 
+121 
+Next, arguments similar to those in §8 lead to the fundamental result that 
+the poles of the Green's function determine the spectrum of elementary exci¬ 
+tations 
+G~\e, p) = 0, (31.11) 
+and only the positive roots of this equation are to be taken; the subtraction of 
+fjt from e is here unnecessary, in contrast to (8.16). 
+Near its pole, the Green's function has the form 
+G((o, p) % Z±/[tyqFe(p)], Z+ >0, Z_ < 0; (31.12) 
+the sign of the residue at the pole is the same as that of to, as follows from the 
+fact that the coefficients Am and Bm in (31.8) are positive. The magnitude of the 
+residue is subject to no conditions such as (10.4) for example, for Fermi sys¬ 
+tems. Using the expression (31.12), we can easily verify (as in §8) that the in¬ 
+equality (31.9) automatically makes the quasi-particle damping coefficients 
+positive, i.e. gives the necessary sign - im e > 0, when the values of e move 
+into the complex domain. 
+The possible passage of above-condensate particles into the condensate and 
+back has the result that, in the mathematical formalism of Green's functions 
+for Bose systems, as well as the function (31.1), the following functions auto¬ 
+matically appear, as we shall see in §33: 
+iF(XvXJ = (N-2<T'P'(XiyP'(X2)\N), (31.13) 
+iF*(Xlt X,) = <N\T'P'+(X1)'P'+(X1)\N-2) 
+= (JV+2|T#"+(.y1)!?"+(X!)|JV>( (31.14) 
+where the matrix element is taken for transitions with change in the total number 
+of particles in the system, and \ N) denotes the ground state of the system with 
+N particles; the last equation in (31.14) is valid to within quantities ~1 fN 
+(cf. the fourth footnote to §26). The functions F and F* thus defined are called 
+anomalous Green's functions. We shall show that in a homogeneous liquid at 
+rest they are equal. 
+Like the function G, the functions Fand F+ for a homogeneous liquid depend 
+only on the difference X = Xx - X^ Since interchanging Xx and X2 changes 
+only the order of the operators in the product, which is in any case governed 
+by the chronological operator, we have 
+F(X) = F( - X). (31.15) 
+t The fact that the function F is independent of the sum of times ti+tt arises because the 
+term -juN is included in the definition of the Hamiltonian H' = H - fiN. This excludes from 
+the difference of energy eigenvalues of systems with different numbers of particles the term 
+E(N+2)-E(N) ft* 20E/0JV = 2n, 
+and correspondingly excludes the factor exp [-i/u(t1 + /2)] from the matrix elements of the 
+operator 'P[xp2. [p.128] 122 Superfluidity 
+Hence it follows, of'course, that in the momentum representation also Fis an 
+even function of its argument: 
+F(F) = F(-F). (31.16) 
+Next, a relation between F and F+ results from the following property of the 
+Heisenberg y> operator of a liquid at rest:* 
+P+{Ut) = P(-U -r). (31.17) 
+Taking, say, t2 > ti, we thus have 
+X2) = (N+2\'tf'+(Xi)'i"+(X1)\N) 
+= {N\$'+(X{)'f''+(X2)\N+2) 
+= (N\'P'(-X{)'P'(-X2)\N+2} 
+= iF( -X1, -XJ, 
+or F+(X) = F( - X). Using (31.15), we then obtain the required relation 
+F+(X) = F(X). (31.18) 
+Expressing F(X) in terms of the matrix elements of the y) operators, we can 
+derive for F(co, p) an expansion similar to (31.8), and thus determine the poles 
+of the function, but we shall not pause to do so here, merely mentioning that 
+the poles of F(co, p) coincide with those of G(a>, p). 
+To conclude this section, let us calculate the Green's function G(Q) of an ideal 
+Bose gas. First of all, since in the ground state of such a gas all particles are in 
+the condensate, the above-condensate particle annihilation operator P' acting 
+on the wave function of the ground state gives zero. Hence the function G(0>(f, r) 
+is non-zero only for t = ti - 1% =» 0 (when, according to (31.2), the creation 
+operator P'+ acts first). 
+t This property may be proved as follows. All non-zero matrix elements of the operators 
+dp and dp can be defined as real quantities; see QM,(64.7),(64.8). In this sense the operators 
+are real, i.e. d^=s d% = dp. (d denotes the transposed operator; cf. QM,§3.) The Schrodinger 
+y> operator 
+V»(r) = y-112^ dpC'D-1- 
+p 
+therefore has the property y>+ (r) = y}( - r). Hence in turn we have the equation (31.17) for the 
+Heisenberg operator 
+W(t, r) = exp (iHt) tp (r) exp (- iHt), 
+as is easily seen by noting that (for a system without spin interactions) the Hamiltonian H is 
+real (so that H* - H) and unchanged by inversion. We must emphasize, however, that if the 
+Hamiltonian is real, there can be no macroscopic superfluid motion in the liquid. For a Bose 
+system with condensate, the Hamiltonian depends on a macroscopic parameter, the conden¬ 
+sate wave function S. In a moving liquid, this parameter is complex, and therefore the Hamil¬ 
+tonian also is complex (but, of course, Hermitian). [p.129] §31 
+Green's Functions in a Bose Liquid 
+123 
+Although the chemical potential [x = 0 for an ideal gas, we shall not assert 
+this here, regarding /x as a free parameter not specified beforehand; such a 
+procedure is necessary with a view to the subsequent application of Gco) in the 
+diagram technique for an arbitrary liquid, where n acts as such a parameter. 
+Accordingly, the operator r) is written as 
+r) - ^ Z04exp [.• (p.r~|L(+„)] . (31.19) 
+differing from (26.1) by the term ipt in the exponents. When this expression is 
+substituted in the definition of G(0), in accordance with (31.2), we note that on 
+averaging (i.e. taking the diagonal matrix element) we can obtain a non-zero 
+result only from the products apd£ and dp. But, since in the ground state of 
+the gas the occupation numbers of all particle states with p 0 are zero, we 
+have 
+<W = 0, <dpdp+> = 1. 
+Now changing in the usual way from summation over p to integration, we get 
+G<°>(t, r): _'Jexp for ,='°' 
+for 
+(31.20) 
+Hence the Green's function in the momentum representation is 
+(r(°>(Ctf, p) = - i j* exp l^ - i t -f i/xt 4- icot^ dt. 
+o 
+The integration is effected by means of the formula 
+f e"'d' = !^lo'
+
+[p.141] §35 
+135 
+Properties of the Spectrum Near its Termination Point 
+states (plane waves) with momenta p and p'. Near the threshold, the phonon momentum 
+q « Pc, and the direction of q is almost the same as that of p.t We then find 
+-i&tfi)3 %-q^q*)- 
+-(■tr 
+i'-*+[£■&].., 
+Hence the differential phonon emission probability is 
+the delta function of momenta is removed by the integration over d3p'. Writing the argument 
+of the delta function in the approximate form - uq( 1 - cos 6) and integrating over d3q, we 
+obtain 
+w = 2A2(p - Pc)31 irtofi*. 
+§ 35. Properties of the spectrum near its termination point 
+In this section we shall consider the properties of the spectrum of a Bose 
+liquid near the decay thresholds (thresholds of disintegration) of elementary 
+excitations into two quasi-particles, neither of which is a phonon (cases (a) 
+and (b) in §34).* In contrast to phonon-creating disintegrations, these cases do 
+not allow the application of perturbation theory, and in order to investigate 
+them it is necessary to elucidate the nature of the singularities of the Green's 
+functions of the liquid at the threshold points. On the other hand, since we are 
+interested only in these singularities, we can to a large extent schematize and 
+thus simplify the calculations. In particular, we need not distinguish between 
+the functions G and F (since their analytical properties are the same), and can 
+proceed as if there were only one type of Green's function; taking account of 
+the difference between G and F would simply produce some terms with analo¬ 
+gous analytical properties in the equations, which would not affect the results. 
+The fact that the relevant singularity of the Green's function is related to the 
+disintegration (decay) of a quasi-particle into two others means, in terms of the 
+diagram technique, that it arises from diagrams of the type 
+o 
+p-o 
+t We are taking the particular case where the phonon is emitted in that direction (and not 
+the opposite one). For this to be so, e(p) near the threshold must have the form 
+e(p) ** e(pe)+(p-pe)u+ct(p-pe)2, 
+with a plus sign in the linear term. From the law of conservation of energy, we easily see that 
+phonon emission is then possible if a >■ 0, and occurs when p =*■ pe; the momentum of the 
+emitted phonon takes values in the range 0 «e q < 2(p-pe). 
+* The results in this section are due to L. P. Pitaevskil (1959). [p.142] 136 
+Superfluidity 
+which may be cut across two continuous lines, i.e. which contain two-particle 
+intermediate states. In these diagrams, there is integration with respect to the 
+intermediate 4-momentum Q = (<70, q), and a decisive role (as regards the oc¬ 
+currence of the singularity) is played by the range of values of Q and P - Q 
+with which quasi-particle decay products are formed near the threshold. The 
+basic proposition in the theory given below is that this range of 4-momentum 
+values is not special as regards the Green's function G(Q), which has there the 
+usual pole form 
+G(Q) = G(q0, q) oc [q0 - e(q) + /O]"1, (35.2) 
+where the function e(q) is the energy of the quasi-particles formed and has no 
+singularity. The only physically distinctive feature of this range is that within 
+it the quasi-particle can "stick" to another quasi-particle, but this process is 
+impossible at zero temperature, because of the absence of real excitations. The 
+only special region as regards the Green's function is the range of P values 
+(external lines in the diagrams (35.1)) near the decay threshold of the original 
+quasi-particle. 
+The two joining lines in the diagram (35.1) correspond to factors G(Q)G(P-Q), 
+and there is integration with respect to Q. Here, since only a small range of. <2 
+values is important, the remaining factors in the diagram may be taken as 
+constant in the integration and equal to their values at the threshold Q = Qcf 
+Thus the diagram includes a factor expressed by the integral 
+U(P) =_-_ f_^_, 
+1 ; (2*)*J [<7o - e{4) + *0][<w - #0 - e(| p - q |)+/0] ' 
+where P - (co, p). The integration with respect to qo is carried out by closing 
+the contour of integration with an infinite semicircle in one half-plane of the 
+complex variable qo, and gives 
+~ (2nf J o>-e(^)-e(|p-q|) + i0 ' (35'3) 
+We shall return later to the study of this integral; first, we must express in 
+terms of it the required exact function G{P), summing for this purpose all dia¬ 
+grams of the form (35.1). 
+For the function G(P) we can write a Dyson diagram equation: 
+0 
+(35.4) 
+t This statement needs to be made more precise. Since the factors G(Q)G(P-Q) are inde¬ 
+pendent of the angle <f) which defines the position of the (p, q) plane. Hence the integration 
+with respect to amounts to averaging the rest of the integrand with respect to <p, and then 
+d*Q can be taken as 2nq2dq0dq d cos 6. In this integration over d*Q, only a small range is 
+important. This remark applies also to corresponding stages in the following calculations. [p.143] §35 
+Properties of the Spectrum Near its Termination Point 
+137 
+Here the thick lines represent the exact function iG, and the thin lines the 
+"non-singular" part of this function, determined by the set of diagrams that 
+cannot be divided across two lines. The second term on the right of (35.4) 
+represents the set of diagrams of the form (35.1). The white circle stands for 
+the exact "three-point" vertex function, which we denote by r(Q,P - Q,P); 
+the shaded circle is its non-singular part, which excludes diagrams that can be 
+divided across two continuous lines.1- As explained previously, the integration 
+over cPQ leads to the presence of a factor II(P), and the remaining factors in the 
+diagram are replaced by their values at Q = Qc. Thus equation (35.4) signifies 
+that 
+G{P) = a{P) + HP) G(P) rc(P) II(P), (35.5) 
+where I\(P) = r(Qc, P - Qc, P), and a(P), b{P) are some functions regular near 
+the threshold P = Pc. 
+In (35.5) there are two singular functions G and jFc and to express them in 
+terms of II a 
+
+[p.155] §38 The Diagram Technique for Temperature Green's Functions 149 
+to determine the energy spectrum of the system), we must construct an analytic 
+function equal to #(CS, p) at the points co = j'Cs and having no singularity in the 
+upper half-plane of co. This procedure is unique if we add the requirement 
+that GR{co, p) - 0 as | co | - °o; see (36.11). Nevertheless, in specific cases such 
+an analytical continuation may involve some difficulties. It is, however, unne¬ 
+cessary in calculating the thermodynamic quantities. 
+For example, to calculate the potential Q, we can start from the expression 
+for the density matrix averaged over the Gibbs distribution, 
+Ngap(ri, r2) = ±#*p(ri, rr, ti+0, r2), (37.14) 
+which is evident from the definition (37.2); cf. (7.17). Putting r2 = ri and sum¬ 
+ming over a = ft, we find as the density of the system 
+v=±TlA\m--v)e'K,'-SA^-« (37-15) 
+This expression determines N as a function of p, T and V, and Q(p, 7\ V) is 
+then calculated by integrating the equation N = - dQ/dp. 
+§ 38. The diagram technique for temperature Green's functions 
+The diagram technique for calculating the temperature Green's function ^ 
+is established in a similar way to that in §§12 and 13 for the time function G. 
+The fact that the definition of the Matsubara xp operators (37.1) differs from 
+that of the Heisenberg operators only in the formal replacement of it by r 
+enables us to make considerable use of direct analogy. 
+First of all, let us define the Matsubara operators in the interaction represen¬ 
+tation; they differ from (37.1) in that the exact Hamiltonian A' is replaced by 
+the free-particle Hamiltonian A'Q: 
+P$(t, r) = exp (t#') v>a(r) exp (- rA'0). (38.1) 
+The relation between the operators P™ and P™ is given by the Matsubara 
+S-matrix, constructed similarly to (12.8): 
+<?(t2, ti) = Tt exp | - J P0(x) dxJ, (38.2) 
+where 
+?o(t) = exp (r#o) ^exp (- xfi'0) (38.3) 
+is the interaction operator in that representation. But, whereas in §12 the rela¬ 
+tion between and ^Pq was established with the initial condition that the inter¬ 
+action was "switched on" at t = - °°, the "initial" condition must now be 
+that PM and P™ are the same at r = 0. Accordingly, we have instead of 
+(12.11) 
+P?(x) = o~\x, 0)Pg(x)d(x, 0). 
+(38.4) [p.156] 150 
+Green's Functions at Non-zero Temperatures 
+We substitute this expression in the definition (37.3) of the Green's function; 
+taking the particular case tx > to, we find 
+r2) = - tr {wd-^ti, 0) %ri) 5(rls 0) <7_1(r2,0) ^(r2) d(r2, 0)}; 
+the arguments ri and r2 are omitted, for brevity. Noting that, when tx > r2 >r3. 
+tf(*i, r3) = 5(7!, r2) 5(t2, t3), 
+5(r2, Tj) 5-1(t3, tx) = 5(r2, r3), 
+we obtain 
+Tj) = - j 1 , o) j# 5(rj, r2) ?^(r2) 6(t2,0)j | • 
+The factors in the square brackets are already in order of increasing r from right 
+to left. We can therefore write 
+**) = - tr {tf*-»[rT y$(r2) 5]}, (38.5) 
+where 
+d = 5(1/7*, 0). 
+It is easily verified that in this form the expression remains valid for Ti < r2 
+also. 
+In contrast to (12.12), equation (38.5) contains an extra (Gibbs) factor, 
+and the averaging is over states of a system of interacting particles. We shall 
+show that these two differences cancel out, and a complete analogy with (12.14) 
+exists. To do so, we use the formula 
+e~r**' = e~r^o(t, 0), (38.6) 
+which is obtained by substituting (38.1) in (38.4) and then comparing the re¬ 
+sulting expression with the definition of (37.1). By means of (38.6) we can 
+substitute in (38.5) 
+e-r*iTd-i(i/T, o) = e-m>T. 
+The factor ea,T is taken outside the trace, moved from the numerator to the 
+denominator, and put in the form 
+e-air = tle-S'iT = tTe-miTd(l/T, 0). 
+Lastly, multiplying the numerator and denominator by exp(Qo/T), where Qo 
+is the thermodynamic potential of an ideal gas for the same values of p, T and V, 
+we find [p.157] §38 The Diagram Technique for Temperature Green's Functions 151 
+where the averaging is with respect to the states of a system of non-interacting 
+particles: 
+<...>o = tr {w0.. .}• 
+There is an evident analogy with (12.14). 
+To change to the diagrams of perturbation theory, as in §13, we expand (38.7) 
+in powers of the interaction operator Po(r). For a system with pair interaction 
+between particles, this operator differs from (13.2) only in that the Heisenberg 
+operators ^0, are replaced by Matsubara operators WM. The mean 
+values of the products of y) operators are again expanded by Wick's theorem 
+(i.e. by taking all possible ways of contracting pairs of operators); the validity 
+of this theorem in the macroscopic limit is proved in this case by the same 
+arguments as in §13. 
+The rules of the diagram technique thus obtained are entirely analogous to 
+the rules derived in §13 for T = 0. The graphical form of the diagrams is exactly 
+the same. There is only a slight change in the rules for analytical reading of the 
+diagrams. 
+In the coordinate representation, each continuous line from point 2 to 
+point 1 is associated with a factor - 0^(ru n; t2, r2) (with a minus sign). 
+Each broken line joining points 1 and 2 corresponds to a factor - U(i\ - r2) x 
+x<$(ti - r2). For all variables r and r of internal points in the diagram, there is 
+integration over cPx through all space, and over dr from 0 to 1 IT. 
+In changing to the momentum representation, we must expand all functions 
+0O) in the form (37.7). After the integration with respect to all the internal 
+variables r, a delta function appears at each vertex of the diagram, expressing 
+the law of conservation of momentum (2p = 0). There is also at each vertex 
+an integral of the form 
+1 IT 
+T J exp { - ir(£Sl + £Si + £*,)} dr. 
+o 
+This integral is (from (37.8)) zero unless 27CS = 0, and in this case is equal to 
+unity. Thus the law of conservation of discrete frequencies is also satisfied at 
+each vertex. Each continuous line is now associated with a factor - 0$ 
+(Cs,p); a closed continuous line again has a factor «(0)(iu, T), the ideal- 
+gas density for given p and T. Fo
+
+[p.169] 163 
+§ 40 A Superfluid Fermi Gas. Thermodynamic Properties 
+The total density of the gas is related to pF by 
+Hence 
+q = mN/V = $7zpjrm/3(2jifi)3. 
+0* 
+Q 
+dr}. 
+(40.13) 
+This integral does not need to be calculated specially, since it can be reduced 
+to the known function A(T). Differentiating (40.1) with respect to T and com¬ 
+paring the resulting integral with (40.13), we see that 
+(40.14) 
+Substituting here the limiting expressions (40.2) and (40.5), we obtain 
+T- 0: 
+On 
+Q 
+T -*• T ' - - 
+Q 
+(40.15) 
+(40.16) 
+Lastly, two comments are needed concerning the range of temperature in 
+which the above formulae are valid. 
+As the transition point Tc is approached, processes of interaction of quasi¬ 
+particles (not taken into account in the above theory) become important; they 
+are responsible in this case for the occurrence of the singularities of the thermo¬ 
+dynamic quantities that are characteristic of phase transitibns of the second 
+kind. Sufficiently close to such a point, the formulae derived above must 
+become invalid. However, because of the presence of a small parameter (the 
+coupling constant g) in the model considered, this happens only for extremely 
+small values of Tc - T\ we shall discuss this in more detail in §45. 
+As in a superfluid Bose liquid, sound can be propagated in the Fermi gas 
+under consideration (unlike one with repulsion; cf.§4), with a velocity u ~ pFjm 
+determined in the usual manner by the compressibility of the medium. This 
+means that, as well as the Fermi-type excitation spectrum dealt with here, the 
+spectrum of such a gas also contains a phonon (Bose) branch. The specific 
+heat due to phonons is proportional to T3 with a small coefficient, but as T -* 0 
+it must ultimately predominate over the exponentially decreasing specific heat 
+(40.6). [p.170] 164 
+Superconductivity 
+§ 41. Green's functions in a superfluid Fermi gas 
+Let us now set up the mathematical formalism of Green's functions for appli¬ 
+cation to superfluid Fermi systems.1- 
+We have seen in §26 that, in terms of ip operators, the Bose-Einstein conden¬ 
+sation in a Bose system is expressed by the existence of non-zero limiting values 
+(as the particle number N -+ <*>) of the matrix elements between states that 
+differ only in that N changes by unity. The physical significance of this statement 
+is that the removal or addition of one condensate particle does not alter the 
+state of a macroscopic system. 
+For a superfluid Fermi system, the same must be true of the condensate of 
+Cooper pairs: the state of the system cannot be altered when the number of 
+pairs in the condensate changes by unity. This is expressed mathematically by 
+the presence of non-zero limiting values (N -*■ of the matrix elements for 
+the product tyj^Xi), the two-particle annihilation operator, and its 
+Hermitian conjugate, the pair creation operator ^(Xi) ^(X2). These matrix 
+elements relate the "like" states of systems, differing only by the removal or 
+addition of one pair of particles: 
+lira (m,N\%(X2)1Pa(X1)\miN+2) 
+N-*- °o 
+= lim <m, iV+21 ^+(Zi) %+{X2) | m, iV>* ^ 0. (41.1) 
+Ar_-oo 
+We shall henceforward omit the symbol for taking the limit, and for brevity 
+also the diagonal matrix suffix m which labels the "like" states of systems with 
+different numbers of particles. 
+As with Bose systems (§31), the mathematical formalism of Green's functions 
+for superfluid Fermi systems involves several different functions. Together 
+with the ordinary Green's functions 
+iG^Xu jsy = (NI T'P^Xi) Pf(X2) IN) (41.2) 
+we need also the "anomalous" functions defined by 
+iF^XuXi) = <JV|T'?.(Ar1)^Ar2)!JV+2). 
+IF&Xu Xi) = (N+21 T$+(Xi) 'P?(X.) | IV). 
+Since each of the functions Fa(S and is composed of two equal operators, 
+F^(Xh X2) = - Ffa(X2,Xi), F&iXuX2) = - Fffc(X2,X\). (41.4) 
+The interchange of Fermi ip operators with the factors in chronological order 
+causes a change in the sign of the product. 
++ The technique described in this section is due to L. P. Gor'kov (1958). [p.171] § 41 Green's Functions in a Superfluid Fermi Gas 165 
+According to the fundamental principles of statistical physics, the result of sta¬ 
+tistical averaging does not depend on whether it is with respect to the exact wave 
+function of a stationary state of a closed system or by means of the Gibbs 
+distribution. The only difference is that in the first case the result of the averag¬ 
+ing is expressed in terms of E and N, the energy and number of particles in the 
+body; in the second case, in terms of Tand p, the temperature and the chemical 
+potential. The first method is the more convenient for the discussion that fol¬ 
+lows in this section. 
+In the model of a Fermi gas considered in §39, the bound pairs are in a singlet 
+state. The spin dependence of the matrix elements of the creation and anni¬ 
+hilation operators of such a pair reduces to a unit antisymmetric spinor: 
+3- 
+The functions (41.3) may be written1- 
+Fafi = gaf}F(X1,X2), F£p = gxPF+(Xu X2y, (41.6) 
+from (41.4), F and F+ are symmetrical in Xi and X2. The spin dependence of 
+the Green's function G^ for a non-ferromagnetic system reduces to a unit 
+matrix d 
+Gap = <5*pG. 
+In a homogeneous system macroscopically at rest, the Green's functions G, F 
+and F+ depend only on the differences of the coordinates of the points and the 
+difference of times (see the sixth footnote to §31). 
+Just as the function 3{X) defined in §26 had the sense of a wave function for 
+particles in the condensate, so the function iF(t,ru t, r2) may be regarded as 
+the wave function of particles bound in Cooper pairs in the condensate. Then 
+the function 
+3{X) = iF(X, X) (41.7) 
+will be the wave function for the motion of these pairs as a whole. From the 
+definitions (41.3) and (41.5) it is easily seen that then F*{Xt X) = i3*(X). In a 
+stationary system macroscopically at rest, the function 3(X) reduces to a 
+constant, which may be made real by a suitable choice of the phases of the ip 
+operators. 
+Let us now calculate th
+
+[p.183] §44 The Superconductivity Current 177 
+along the contour C is equal to the flux of the magnetic induction through a sur¬ 
+face spanning the contour, i.e. the flux (f> through the aperture of the torus: 
+j>A.dl = J curl A.df = fB.df = (f>. 
+On the other hand, equating (44.7) to zero and integrating it along the contour, 
+we have 
+j>A.dl = ^j,v0.dl = 
+where 80 is the change of phase of the wave function on passing round the 
+contour. Since this function must be one-valued, it follows that the phase change 
+can only be an integral multiple of 2n. Thus we have the result 
+<f> = n<f>o, (f)o = nhc/\ e \ = 2 X10-7 G.cm2, (44.15) 
+where n is an integer. The quantity <f> o is the quantum of magnetic flux. 
+The quantization of the magnetic flux has another aspect: it causes the values 
+of the total current / that can flow along a superconducting ring (in the absence 
+of an external magnetic field) to be discrete. This current / creates a magnetic 
+flux through the ring equal to £//c, where L is the self-inductance. Equating 
+this to n<f)o, we find as the possible values of the current 
+/ = C(f>dn/L = 7th c2nl \e\ L. (44.16) 
+In contrast to the magnetic flux quantum, the "quantum of total current", like 
+the self-inductance L, depends on the shape and size of the ring. 
+PROBLEM 
+Determine the magnetic moment of a superconducting sphere with radius /? <tc <5 in a mag¬ 
+netic field, in the London case. 
+Solution. When R <c <5, the magnetic field within the sphere may be regarded as constant 
+and equal to the external field If the vector potential is taken in the form A = |#Xr, we 
+can put simply 
+j = - (n^/mc) A, 
+i.e. take = 0 in (44.7): the boundary condition for the normal component of the current to 
+be zero on the surface of the sphere (n.j = 0) is then automatically satisfied. The magnetic 
+moment is calculated as the integral 
+M = ±f'X)dV 
+over the volume of the sphere, and is 
+M = - R*tfrf308t. [p.184] 178 
+Super conducti vity 
+§ 45. The Ginzburg-Landau equations 
+The complete theory of the behaviour of a superconductor in a magnetic 
+field is very complex. However, the position is considerably simpler in the 
+temperature range near the transition point. Here it is possible to set up a sys¬ 
+tem of relatively simple equations, valid in both weak and strong fields.1. 
+In the general Landau theory of phase transitions of the second kind, the 
+difference between the "unsymmetrical" and the "symmetrical" phase is de¬ 
+scribed by the order parameter, which is zero at the transition point (see Part 1, 
+§142). For a superconducting phase, the natural order parameter is the conden¬ 
+sate wave function 3. To avoid complications that are in principle unnecessary, 
+we shall assume that the metal crystal has cubic symmetry; as already men¬ 
+tioned in §44, the superconducting state is then characterized by a scalar quan¬ 
+tity ns, the superconducting electron density. A more convenient choice as the 
+order parameter in this case is a quantity ip that is proportional to 3 but is 
+normalized by the condition y = \tis. The phase of ip is the same as that 
+of S: 
+W = (45.1) 
+The superconductivity current density (44.2), expressed in terms of ip, is 
+js = - | y> i2 (ip*Vip - ipvip*). (45.2) 
+m 2m 
+The starting-point of the theory is the expression for the free energy of the 
+superconductor as a functional of ip(r). In accordance with the general ideas of 
+the Landau theory, this is found by expanding the free energy density in powers 
+of the small (near the transition point) order parameter ip and its derivatives 
+with respect to the coordinates. As a first step, let us consider a superconductor 
+in the absence of a magnetic field. 
+In accordance with its significance as a quantity proportional to the Green's 
+function F(X, X) = - iE{X\ the order parameter ip is not unique: since F(X, X) 
+is constructed from two operators P, an arbitrary change of phase of these 
+operators, P - Peia/2, causes a change of phase of the function F by a. Phys¬ 
+ical quantities, of course, must not be affected by this arbitrariness, i.e. must 
+be invariant under a transformation of the complex order parameter ip - ipt?a. 
+This excludes odd powers of ip in the expansion of the free energy. 
+The specific form of this expansion is established by the same considerations 
+as in the general theory of phase transitions of the second kind (see Part 1, 
+§146). Without repeating the arguments, we can write down the following ex- 
++ The theory given below is due to V. L. Ginzburg and L. D. Landau (1950). It is note¬ 
+worthy that this theory was constructed phenomenologically, before the microscopic theory 
+of superconductivity. [p.185] \19 
+§ 45 The Ginzhurg-Landau Equations 
+pansion of the total free energy of a superconducting body:* 
+F = F„ + | [ vip \2 + a 1 ip\2 + ^b ! y> |4| dV. (45.3> 
+Here Fn is the free energy in the normal state (i.e. for ip = 0); Ms a positive 
+coefficient depending only on the density of the substance (not on the temper¬ 
+ature); a is a function of the temperature given by 
+a = cc(T - Tc), (45.4) 
+and is zero at the transition point; the coefficient a > 0, in accordance with the 
+fact that the superconducting phase corresponds to the range T < Tc; the 
+coefficient of j vip\2 in (45.3) is chosen so that the expression (45.2) is obtained 
+for the current (see below).1 The fact that (45.3) contains only the first deriva¬ 
+tives of ip is the result of assuming sufficient slowness of spatial variation of ip. 
+In a homogeneous superconductor, with no external field, the parameter ip is 
+independent of the coordinates. Then the expression (45.3) reduces to 
+F= F' + aVW + ^bV]?]*. (45.5) 
+The equilibrium value of | ip\2 (for T < Tc) is determined by the condition for 
+this expression to be a minimum: 
+\y>\2 = -a/b = oc(Tc - T)b; (45.6) 
+the superconducting electron density, as a function of temperature, decreases 
+linearly to zero at the transition point. 
+Substituting (45.6) back into (45.5), we find the differen
+
+[p.197] §47 
+The Two Types of Superconductor 
+191 
+Hcl to purely normal at Hc2; at the same time, the magnetic field gradually 
+penetrates into it. The value of Hc determined only by the relation between 
+the bulk energies of the n and s phases has no special significance in this case. 
+The two critical fields depend, of course, on the temperature, and become 
+zero at T = Tc. This gives a phase diagram as shown in Fig. 7 for super¬ 
+conductors of the second kind. The broken curve in Fig. 7 is explained below. 
+The upper critical field can be determined (in the Ginzburg-Landau theory) 
+even without previously ascertaining the structure of the mixed state. We need 
+only observe that in fields somewhat below Hc2 a nucleus of the s phase must 
+have a small value of the order parameter -yj; it is evident that ip -» 0 when $ 
+tends to Hc2. Hence the state of these nuclei can be described by the Ginzburg- 
+Landau equations linearized with respect to ip. Omitting the non-linear term in 
+(45.12), we obtain the equation 
+±-^-mv-~Aj\=\a\V, (47.1) 
+where A is to be taken as the vector potential of the uniform field Q at ip = 0, 
+when the body is in the normal state and the external field penetrates it com¬ 
+pletely. 
+But (47.1) is in form just the Schrodinger's equation for a particle of mass 
+2m and charge 2e in a magnetic field, with | a [ as the energy level. The boundary 
+conditions also agree: ip = 0 at infinity. It is known (see QM, §112) that the 
+minimum energy of a particle moving in a uniform magnetic field is Eo = ^hcoH, 
+where (oH - 2\ e\lg/2mc; this is the energy value at which the continuous energy 
+spectrum begins. The analogy between the two problems therefore shows that 
+the 5-phase nuclei described by (47.1) can exist only if 
+| a | > \ e\ h^l2mct 
+so that the critical field Hc2 = 2mc\a\ l\e\fi. By means of (45.9), (45.17) and 
+(45.18) this formula may be written 
+Hc2 = V2 *HC 
+(47.2) 
+(A. A. Abrikosov 1952). 
+The solution of equation (47.1), with the boundary condition ip = 0 at 
+infinity, corresponds to the formation of an 5-phase nucleus within the sample, 
+far from its surface. We shall show that the presence of the surface favours 
+nucleation, and that nuclei may thus be formed in a thin surface layer even if 
+§ > Hc2 (P. G. de Gennes and D. Saint-James 1963). 
+The solution of equation (47.1), describing an 5-phase nucleus near the sur¬ 
+face of the body (assumed plane), must satisfy on the surface the boundary 
+condition dipldx = 0, where x is the coordinate along the normal to the surface 
+(the condition (45.15) with Ax - 0). To establish the required quantum- [p.198] 192 
+Superconductivity 
+mechanical analogy, we recall that the above-mentioned problem of the motion 
+of a particle in a uniform magnetic field is in turn equivalent to that of motion 
+in a one-dimensional parabolic potential well 
+U = 
+where xo is a constant corresponding to the "centre of the orbit" (see QM, 
+§112). Let us now consider a double well consisting of two equal parabolic 
+wells lying symmetrically relative to the plane x = 0 (Fig. 8). The ground 
+state of a particle in such a field corresponds to a wave function y(x) that is 
+even in jc and has no zeros; such a function automatically satisfies the condition 
+V' = 0 at x = 0. The ground level of a particle in the double well is, however, 
+below that in the single well;1 when applied to the nucleation problem, this 
+proves the above assertion about their easier formation near the surface. 
+Numerical calculation of the level in a double well gives the result that its 
+minimum value (as a function of the parameter x0) is 0.59£o. Repeating the 
+arguments that led to (47.2), we find that the upper limit of fields in which sur¬ 
+face nuclei of the s phase occur is HcZ = #c2/0.59, i.e. 
+Hcs = 1-lHci = 2AxHc • (47.3) 
+Thus, in the range of fields between Hc2 and HcZ, there arises the phenomenon 
+of surface superconductivity; the boundary of this region is shown by the 
+broken curve in Fig. 7. The thickness of the superconducting layer at the surface 
+of the normal phase is of the order of i(T). This estimate is easily derived from 
+the same quantum-mechanical analogy: the wave function of a particle in a 
+potential well (at the level E0) is concentrated in the region x^H('\/(mEo). The 
+corresponding dimension of the nucleus is obtained by replacing Eo by \a\ 
+and is, according to (45.17), £(T). 
+The above discussion relates entirely to superconductors of the second kind, 
+but the critical fields Hc2 and HcZ defined here may have a certain physical 
+significance for those of the first kind also. 
+If n is in the range 1/V2 = 0.71 >-« >- 0.59/-\/2 = 0.42, then Hc2 < Hc but 
+Hc3 > Hc. Although no mixed phase occurs in this case, there is surface super¬ 
+conductivity in the range of fields between Hc and HcZ. 
+t This is because the potential energy in the half-space .v < 0 is less than it would be for 
+a single well shown by the broken curve in Fig. 8; see, for example, QM,§50, Problem 3. [p.199] §48 
+The Structure of the Mixed State 
+193 
+Finally, in the sense of the above derivation, the value of HAx (47.2) deter¬ 
+mines (for any «) the upper limit of fields in which the formation of j-phase 
+nuclei with arbitrarily small ip is possible. Hence, in a superconductor of the 
+first kind (where Hc2 < Hc) in fields $ < Hc2i the thermodynamically un¬ 
+favourable normal phase is absolutely unstable; but in the range Hc2 < $ < 
+< Hc the normal phase can exist as a metastable phase. In this range, the phase 
+transition of the first kind from the n to the s phase can only occur by the for¬ 
+mation of s-phase nuclei with finite values of ip, which is opposed by the posi¬ 
+tive surface tension at their boundaries (V. L. Ginzburg 1956). 
+PROBLEM 
+Determine the critical field for a superconducting sphere of small radius R« 8 (V. L. 
+Ginzburg 1958). 
+Solution. In this case (as in a thin film; see §45, Problem) the superconductivity is de¬ 
+stroyed by a phase transition of th
+
+[p.211] § 50 The Josephson Effect 205 
+which differ by an integral multiple of 2it are physically identical, it is clear 
+that the function 
+j = j(& 21), #21 = (50.1) 
+must be periodic, with period 2ji. The operation of time reversal changes the 
+sign of the current j and also that of the phase <P2i» since the wave functions are 
+replaced by their complex conjugates. This means that the function (50.1) must 
+be odd, and is zero when &2i = 0. Being bounded, of course, j(&n) has maxi¬ 
+mum and minimum values, between which it varies with the phase difference; 
+since the function is odd, these values are equal in magnitude, and will be 
+denoted by ±jm. 
+The form (50.1) presupposes that the current is not affected by the magnetic 
+field of the currents within the contact. In the contrary case, the difference <&2x 
+would have to be replaced by the gauge-invariant expression 
+2 
+j Axdx. 
+Because the thickness of the insulating layer is very small, the condition for 
+the integral of the continuous function Ax(x) to be negligible is easily satisfied, 
+and the values of Ax itself on either side of the contact may be regarded as 
+equal. 
+The form of the function 7(^21) at all temperatures can be established only 
+from the microscopic theory. We shall give here only a phenomenological 
+treatment within the range of applicability of the Ginzburg-Landau theory. 
+If the contact were entirely impermeable to electrons, the wave functions ip 
+in each superconductor would satisfy at the boundary of the contact the con¬ 
+ditions (45.15): 
+dipi 
+dx 
+He . 
+= 0, 
+dy>2 
+dx 
+lie 
+'TcA^ 
+0. 
+The finite permeability of the barrier and the finite value of ip at the boundaries 
+of the contact lead to non-zero expressions on the right-hand sides of these 
+conditions, depending on the values of tp on the other side of the contact. 
+Since ip is small (near the transition point Tc), we need consider only the terms 
+linear in ip in these functions, putting 
+dif/1 
+"ax 
+lie A 
+¥2 'Vz 2 ie i//, 
+r dx fic "T 
+(50.2) 
+the coefficient 1/2 being proportional to the permeability of the barrier. The 
+equations (50.2) must satisfy the requirements of symmetry under time reversal, 
+remaining valid under the transformation ip - ip*, A -*■ - A, whence it [p.212] 206 
+Superconductivity 
+follows that the constant A is real; then, under the transformation mentioned, 
+equations (50.2) simply become their complex conjugates. 
+The relation between the superconductivity current through the contact and 
+the difference between the phases of ip can be determined by applying formula 
+(45.14) to either side of the contact, say side 1: 
+ieh ( . *dyti dy>t\ 2e2 
+dx - W i ex 
+Axip*ipi. 
+Substituting dipi/dx from the boundary condition (50.2), we find 
+For contacts of the same metal, ipi and ip2 differ only in phase, and we then 
+have for the current density 
+j = jm sin 02i, jm = (ehfmk)\ip\2. (50.3) 
+As the transition point is approached, \ip\2 tends to zero asTc - T, and there¬ 
+fore so does the maximum current density through the contact.1- 
+Now let a potential difference be applied from an external source to the 
+tunnel contact, so that there is an electric field E in the contact. We shall describe 
+this field by a scalar potential, denoted by V:E = - vV. The influence of 
+this field on the superconductivity current through the contact can be ascer¬ 
+tained from the requirements of gauge invariance. 
+In the absence of the field (V = 0), the phase of the wave function is inde¬ 
+pendent of time: 60/61 = 0.$ To generalize this equation to the case where 
+the electric field is present, we note that the general relation must be invariant 
+under the gauge transformation 
+y , v 1 e*(0 
+V V c dt 
+(50.4) 
+of the scalar potential, which does not affect the vector potential (assumed in¬ 
+dependent of time). Just as in the derivation of the transformation (44.3), 
+(44.6), we find that together with V, the phase of the wave function must be 
+transformed, by 
+0-0 +(2 e/hc)x(t). (50.5) 
+t The microscopic theory based on the BCS model shows that a relation of the type (50.3) 
+between j and <P21 is valid at all temperatures. The same theory gives a relation between jm 
+and the electrical resistance of the contact between two metals in the normal state. This 
+theory is described by I. O. Kulik and I. K. Yanson, The Josephson Effect in Superconductive 
+Tunneling Structures, Israel Program for Scientific Translations, Jerusalem 1972. 
+t The time factor exp (-2ipt/h) is eliminated from the wave function because the Hamil¬ 
+tonian H of the system is replaced by H' - H - pN; cf. the sixth footnote to §31. [p.213] § 50 The Josephson Effect 
+Hence it is clear that the relation 
+207 
+d& 
+~dt + 
+2e V = 0 
+(50.6) 
+is gauge-invariant; it becomes d0/dt = 0 when V = 0. 
+When the electric field is independent of time, integration of (50.6) gives 
+0 = 0(0) _ (2 e/h)Vt, 
+where 0m is independent of time. Hence, if a constant electric potential differ¬ 
+ence V2i is applied to the contact, the phase difference there is 
+021 = 0$>-(2e/h)V2it. 
+Substituting this expression in (50.3), we find the superconductivity current 
+through the contact: 
+j = jm sin (0g> - (2elh) Vnt). (50.7) 
+We thus arrive at a noteworthy result: the application of a constant potential 
+difference to the tunnel contact causes the appearance of a superconductivity 
+alternating current with frequency 
+(Oj = 2 l eV2i \/ft. (50.8) 
+The power consumed at the contact is jV2\, its (time) average value is zero, 
+i.e. there is no systematic expenditure of energy by the external source; this 
+is as it should be for a superconductivity current, which does not involve any 
+dissipation of energy. We must emphasize, however, that when there is an ex¬ 
+ternal e.m.f. there will also be a normal current (weak when V2i is small) 
+through the contact, and this is accompanied by dissipation. 
+The conclusion that the superconductivity current through the contact varies 
+periodically with the frequency (50.8) follows, in fact, fr
+
+[p.225] §54 
+Cooper Effect for Non-zero Orbital Angular Momenta 
+219 
+the existence of the condensate function and considerations of gauge invar¬ 
+iance, it is clear that the basic properties of the superconductor (the supercon¬ 
+ductivity current, and the Meissner effect) will continue to exist in this range. 
+The absence of a gap in the spectrum is shown (in the equilibrium properties of 
+the superconductor) by a non-exponential temperature dependence of the spe¬ 
+cific heat. There is no conflict with the Landau condition for superfluidity 
+(§23), because in disordered systems (such as the alloys in question) this condi¬ 
+tion does not apply, the elementary excitations having no definite momentum.f 
+§ 54. The Cooper effect for non-zero orbital angular momenta of the pair 
+It has been mentioned several times that the occurrence of superfluidity in a 
+Fermi system is due ultimately to the Cooper effect, the formation of bound 
+states (pairing) by mutually attracting particles at the Fermi surface. For a 
+Fermi gas, the condition of attraction is formulated as that of a negative 
+scattering length a = § U cl3x, i.e. a positive scattering amplitude for two 
+particles in a state with zero orbital angular momentum of their relative motion, 
+/ - 0 (this state makes the main contribution to the scattering at low energies). 
+A much stronger statement is valid, however: pairing (and therefore super¬ 
+fluidity) occurs if the interaction is attractive even for just one value of the 
+angular momentum / (L. D. Landau 1959). We must emphasize that the 
+system in question is an isotropic one (liquid or gas), in which the states can be 
+classified according to the value of /. 
+The statement will be proved for a Fermi gas by a method that in principle 
+allows us to determine the temperature Tc at which the transition to the super¬ 
+fluid state occurs, using only the properties of the system (normal Fermi gas) 
+at temperatures T > Tc. 
+It has been noted in §18 that, in the mathematical formalism of Green's 
+functions for a normal Fermi system, the energy of the bound state of the pair 
+of particles appears as the pole of the vertex function T; the same is true (when 
+T ^ 0) of the temperature vertex function, which we denote by r. When such 
+a pole appears, the whole formalism in fact becomes inapplicable, but it is still 
+applicable at the instant when, with decreasing temperature at T = Tc, a pole 
+appears; the binding energy of the pair must then be zero, and the states of the 
+superfluid and normal phases coincide. 
+In the skeleton diagram 
+* See also the fourth footnote to §39. The theory of zero-gap superconductivity is 
+described in the original paper by A. A. Abrikosov and L. P. Gor'kov, Soviet Physics JETP 
+12,1243,1961. [p.226] 220 
+Superconductivity 
+the circle denotes - T). The transition point Tc is determined, from the above, 
+as the temperature at which Tj has a pole with 
+Cal = Ci2 =0, P1 + P2 = 0. (54.1) 
+The first equation states that the particles paired are on the Fermi surface, 
+and that the binding energy of the pair is zero; the second equation states that 
+the particles paired have opposite momenta. 
+The pairing of particles occurs if they have any attraction, however slight. 
+It is clear that, if a pole is to occur, the perturbation-theory series for the vertex 
+function must include terms containing integrals that diverge with the condition 
+(54.1) and as Tc -*■ 0 (Tc is small when the attraction is weak); otherwise, 
+all corrections to the (finite) first-approximation term would certainly be small 
+in comparison with that term at all temperatures, and no pole could occur. 
+This requirement is satisfied by the series of ladder diagrams 
+As will be seen below, in all these diagrams (from the second onwards) the 
+smallness with regard to the interaction (from the adding of the broken lines) 
+is compensated, in the sense mentioned, by the divergence of the integrals.1' 
+Applying to this series the procedure used to obtain (17.4) from (17.3), we 
+find that the equation (54.2) is equivalent to the diagram equation 
+p 0, 
+- p*-Q 
+(54.3) 
+The external and internal lines in the diagrams correspond to the arguments 
+which are shown in (54.3) with (54.1) taken into account: 
+Pi = (0,Pi), P3 = (0,p3), Q = (iCs, q). 
+The spin dependence of the Green's functions of an ideal gas is separated in 
+the form = Kp0o) an£i the'spin dependence of the vertex function (with¬ 
+out antisymmetrization) in the form 
+Vyo. «u(Pa, iV, Pi, P2) = MwWs, P4; Pi, P2). 
+t The diagrams (54.2) should be supplemented by a further series of diagrams with the 
+external lines 3 and 4 interchanged, making the vertex function antisymmetrical with respect 
+to its spin and orbital arguments. However, for the present purpose of determining T„ this 
+is not necessary, since the pole appears simultaneously in both these parts of the vertex func¬ 
+tion. [p.227] Cooper Effect for Non-zero Orbital Angular Momenta 
+221 
+§ 54 
+Expanding the diagrams (54.3) by the rules given in §38 and cancelling the spin 
+factors, we obtain for T) the integral equation 
+^(ps, -ps;pi, -pi) 
++ T £ JI/(p3-q)q) <2<0)(-C1, -q)/ 
+x^(q, -q;pi, -Pi)(-0= ^(Pi-P3). (54.4) 
+In the sum and integrals here, small values of the discrete variable are 
+important, and values of q near the Fermi surface (see below). Hence we can 
+put Cs - 0 and q = pF in' the factors U and Tj in the integrand. The vectors pi 
+and p3 are also on the Fermi surface. Thus the functions fj and U in (54.4) 
+will each depend on only one independent variable, the angle between any two 
+of the three vectors pi, p3 and q on the Fermi surface. 
+Equation (54.4) can now be solved by expanding U and T> in series of Le¬ 
+gendre polynomials: 
+U{$) = £ (21+ l)u/F/(cos #), 
+/=o 
+rO{p) = £ (2/+l)^,F,(cos^), 
+(54.5) 
+where # is any of the angles mentioned. Substituting these expansions in (54.4) 
+and integrating by the addition theorem for spherical harmonics, we find 
+^,(1 + 0,77)= alt (54.6) 
+where 
+n
+
+[p.239] § 56 Effect of an External Field on Electron Motion in a Lattice 
+233 
+instead of continuous; it quantizes the levels (see §58). The weak field intensity, 
+in contrast to the potential, gives only small corrections. 
+We shall show that, when these corrections are neglected, the dependence of 
+the Hamiltonian on the field potential may be ascertained in a general form by 
+using only the requirements of gauge invariance. Since we are considering con¬ 
+stant fields, it is sufficient to use the invariance of the equations under time-inde¬ 
+pendent transformations of the potential and the wave functions, of the form 
+A - A + v/, y> - y> exp (ief/hc), (56.4) 
+where/(r) is an arbitrary function of the coordinates; see QM, (111.8), (111.9). 
+In a weak field, the potential A(r) is a slowly varying function of the coordi¬ 
+nates. In order to elucidate the significance of this slowness, let us first consider 
+the limiting case of a constant potential, A(r) = constant = Ao (the constant 
+potential is of course fictitious, there being then no actual field, so that a formal 
+transformation is in question). The change from A = 0 to A = Ao is equivalent 
+to the transformation (56.4) with /= A0.r; hence, instead of the original eigen¬ 
+functions (for A = 0) 
+Y'a = (56.5) 
+the eigenfunctions of the new Hamiltonian will be 
+usk (r) exp |z^k + -^- A0j .r 
+From this we see that, in order to give the quasi-momentum its previous signifi¬ 
+cance as a quantity determining the change in the phase of the wave function 
+in translations, we must put k+eAo/he = K; the quantity K thus defined may 
+be called the generalized quasi-momentum. Then the new eigenfunctions are 
+V>sK = Ws,K-eAo/*c(r)^K'r> 
+and the corresponding electron energy values are es(k) - es(K - eAo/Hc). 
+We can now assert that, for a potential A(r) that is not constant but varies 
+slowly in space, the wave functions of the "zero-order" approximation (with 
+respect to the field) are 
+V>sK = Us,K-eMr)/fic^K'r'i (56.6) 
+the functions u are no longer strictly periodic, because of the variability of 
+A.+ The energies es(K - eA/hc) must now be regarded as operators forming the 
+1 If the functions (56.6) are expanded in terms of the y>,k, the expansion will in general in¬ 
+clude functions with various s. It must be emphasized, however, that this does not signify an 
+actual transition to a different band, but simply expresses the change in the wave function un¬ 
+der the action of the constant field. In this connection it may be recalled that a constant field 
+cannot cause an actual transition with change of energy. To understand the position, it should 
+be remarked that, although the field is weak, the resulting change in the classification of states 
+(including the relation between quasi-momentum and energy) is considerable. [p.240] 234 
+Electrons in the Crystal Lattice 
+Hamiltonian in the K representation. In this representation, moreover, ? is to 
+be understood as the operator ? = id/dK, the second term (ft) in the definition 
+(55.14) being omitted. For, when the operator id/dK acts on the wave function, 
+the effect, in order of magnitude, is to multiply it by the "orbit dimension" rH, 
+which increases as the field decreases; the result of the action of the operator ft 
+on the wave function does not contain such an increasing factor. In this sense, 
+ft in a weak field is small compared with id/dK. Since, on the other hand, the 
+operator d/dK is diagonal with respect to the band numbers, the Hamiltonian 
+also is diagonal. 
+We thus conclude that the motion of an electron in a weak magnetic field is 
+described by the Hamiltonian (in the K representation) 
+A = **(K-TE-A(f))' f = (56,7) 
+(R. E. Peierls 1933). In this approximation, therefore, there is a complete anal¬ 
+ogy with the introduction of the magnetic field in the Hamiltonian of a free 
+particle in the momentum representation. 
+The expression (56.7) is still not fully determinate, as the order of action of the 
+non-commuting operators (the components of the vector £ = K - eA/hc) has 
+not been specified. This must be determined in such a way as to make the Hamil¬ 
+tonian Hermitian, which can in principle always be achieved by expressing the 
+function e5(k), which is periodic (in the reciprocal lattice) as a Fourier series 
+£s(k) = £Aneik*; (56.8) 
+a 
+the summation is over all vectors a in the original lattice. After the change 
+k -*» £, the exponent of each term in this series will contain only one operator 
+(the projection of the vector A on a), so that the question of the order of action 
+does not arise, everything reducing to powers of this one operator. This method 
+of "Hermitianization" is, of course, not the only one, but it is important that 
+the difference between the different methods lies beyond the range of the approx¬ 
+imation considered, since the commutators of the operators kx, ky, kz are small 
+quantities in this approximation. For instance, in a uniform field the operator 
+A = iHxf = I-IHX0/0K; (56.9) 
+a direct calculation easily shows that the commutators 
+kjky-kykx = i(e/hc)Hz, ..., (56.10) 
+are proportional to the low field strength H. 
+The operators ? - id/dK and K = K obey the same commutation rules as the 
+coordinates and generalized momenta of a "free" particle (without the lattice). 
+It is therefore natural that the calculation of the commutators of these operators [p.241] 235 
+§ 56 Effect of an External Field on Electron Motion in a Lattice 
+with the Hamiltonian gives the operator equations 
+UK = - 0#/dr, i = atiff dK, (56.11) 
+which have the form of the usual Hamilton's equations; for the calculation 
+see QM (16.4) and (16.5). 
+We repeat that the Hamiltonian (56.7) is approximate in the sense that it 
+omits all terms depending on the field H and not containing large factors of the 
+order of the orbit size rH. In subsequent approximations, the result may again 
+be expressed as an effective Hamiltonian jZfK - eAffic, H), diagonal with 
+respect to band numbers but not exp
+
+[p.253] § 60 Symmetry of Electron States in a Lattice in a Magnetic Field 
+247 
+PROBLEM 
+Find the quasi-classical energy levels for a particle with the quadratic dispersion relation 
+(59.1) in a magnetic field acting in any direction. 
+Solution. We reduce the tensor m(k to diagonal form, and measure energy and momentum 
+from an extremum point, say the minimum. Then 
+e(k ) = Y*2 
+k\ k\ 
+ - L+ - L+ 
+m-i m2 
+_*|\ 
+mz) ' 
+(1) 
+where mu m2, m3 are the principal values of the tensor mik (and are positive quantities). Let 
+n be a unit vector in the direction of the field H; then 
+kt = n.k = /Jx&1+/j2fc2-f-/j3&3, (2) 
+where nx, n2, n3 are the direction cosines of the field relative to the principal axes of the tensor 
+mik. We have to find the area S of the part of the plane (2) that lies within the ellipsoid (1); it 
+may be written as the integral 
+S= $ d(n.k-kz)d3k, (3) 
+taken over the volume of the ellipsoid (l).i' By the change of variables kk{ = (2em,)1/2 q{, the 
+integral is brought to the form 
+5 = (2«)3/2 «-3(m1m2m3)1'2 J <5(v .q- kt)d3q, 
+where the vector v in q-space has the components v{ = (2e/Mi)1/2/z<//i, and the integration is 
+taken over the volume of the sphere q2 = 1. The integration is easily carried out in cylindrical 
+polar coordinates with the axis along v, and gives 
+S(e, kz) = (2n/k2) m±(e - ft2kt/2mn). 
+where 
+m, | = mi/if+m2«l+m3«§, 
+m± = (m1m2m3lmli)112. 
+Substituting in (58.7), we find the energy levels 
+en(kt) = \e\m 
+m±c H) 
+h2k\ 
++ 2 
+(4) 
+(5) 
+§ 60. Symmetry of electron states in a lattice in a magnetic field 
+In this section we shall consider the exact general properties of translational 
+symmetry of the wave functions of a Bloch electron in a magnetic field, which 
+do not depend on any approximation (such as the condition for the field to 
+be weak or the quasi-classicality condition). 
+The application of a uniform magnetic field does not affect the physical 
+translational symmetry of the system, which remains spatially periodic. A 
+t Letf{x, y, z) = constant be a family of surfaces occupying a certain volume. The distance 
+dl between two of these surfaces, infinitely close to each other, is dl - df! \ v/l, and the volume 
+between them is dV=S(f)dl, where S(f) is the area of the surface having a given value of /. 
+Multiplying the equation S(f)df = | v/l dVby the delta function 6(f) and integrating over the 
+volume and df, we find the area of the surface f(x, y, z) = Oas 5(0)= J I V/|<5(/) d3x. In our 
+case | v/1 L and this gives equation (3). [p.254] 248 
+Electrons in the Crystal Lattice 
+distinctive feature is, however, that the electron Hamiltonian (56.2) does lose 
+its symmetry, because it involves not the constant field strength H but the 
+vector potential A(r), which depends on the coordinates and is not periodic. 
+The non-invariance of the Hamiltonian naturally complicates the transfor¬ 
+mation law for wave functions under translation. We take the vector potential 
+of the uniform field in the gauge 
+A = |Hxr, (60.1) 
+and let y>(r) be an eigenfunction of the Hamiltonian A(r). Under a translation 
+r - r-f-a (where a is any of the basic lattice vectors), this function becomes 
+y>(r+a), and is then an eigenfunction of the Hamiltonian #(r-fa), which is not 
+the same as #(r), because the vector potential has changed: 
+A(r) - A(r+a) = A(r) + |Hx»- 
+To find the required transformation law, we must go back to the original 
+Hamiltonian by the gauge transformation 
+A-A + vf, / = --§-Hxa.r. 
+The wave function is then transformed according to (56.4): ip -*■ ip exp (ieffhc). 
+Denoting the result of all these operations by Taip(r), we thus find 
+7>(r) = ip(r + a) exp ir.hx a), (60.2) 
+where h = \e \ H/ftc\ Ta is called the magnetic translation operator. If ip(r) is 
+a solution of Schrodinger's equation 6{v)ip = eipf then (60.2) is a solution of 
+that equation for the same energy e (R. E. Peierls 1933). 
+From the definition (60.2), we easily find that 
+T'aTV = 7;+a'ft>(a, a'), <u(a, a') = exp ( - f- zh. a X a'). (60.3) 
+When a and a' are interchanged, the exponent in the factor <u(a, a') changes 
+sign, and the operators 7^ and therefore do not in general commute: 
+T.7V = T<T% exp (-ih.aX a'). (60.4) 
+Thus the product of two operators TA and Tx> generally differs by a phase 
+factor from the operator 7^,. In mathematical terms, this means that the 
+operators 7* give not an ordinary but a projective representation of the trans¬ 
+lation group; the basis of these representations is formed by the wave functions 
+of the stationary states of a Bloch electron in a magnetic field.1" The classifica- 
+t Projective representations of groups have already been met with in Part 1,§134. The pro¬ 
+jective representations of a group G are those given by operators <? such that the relations 
+between them are the same as those between the corresponding elements of G only to within 
+phase factors: if GXG2 = G3, we have for the operators <ji<j2 = oil2G3, where col2 need only 
+have unit modulus. [p.255] § 60 Symmetry of Electron States in a Lattice in a Magnetic Field 
+249 
+tion of the energy levels must consequently be based on the irreducible project 
+tive representations of the translation group, just as, in the absence of the field, 
+they are based on the irreducible ordinary representations of this group. 
+The translation group is Abelian (all its elements commute), and therefore 
+all its irreducible ordinary representations are one-dimensional. The base 
+function y) of each such representation is simply multiplied by a phase factor 
+under translation; for two successive translations, this factor must be equal to 
+the product of the factors for each translation separately. This means that 
+Tjp = eik'av', 
+where k is a constant vector, the quasi-momentum of the electron, which is the 
+parameter classifying the irreducible representations. 
+A complete classification of the irreducible projective representations of the 
+translation group can be made (E. Brown 1964, J. Zak 1964) if the magnetic 
+f
+
+[p.267] §63 
+The de Haas-van Alphen Effect 
+261 
+Let us first separate from Q the part i5 that is an oscillatory function of the 
+field, transforming the sum (63.3) by means of Poisson's formula :f 
+T**(0)+ £ F(n) = J F(x)dx + 2re £ J F(x)e^xdx. (63.4) 
+""1 o /=1 0 
+The first term in this formula when applied to (63.3) gives the non-oscillatory 
+contribution to Q; we omit this, and write 
+£ = 
+1 e | BVT 
+4n2ch 2re £ £ 4, 
+1=1 a =±1 
+where 7/o is the oscillatory part of the integral 
+(63.5) 
+,=Miog{ 
+1 + exp - 
+~e„(kz) 
+e™lndkz 
+(63.6) 
+and we have used the notation pa = p - ofltB. 
+For the further analysis we define the function 
+n(e, kz) = 
+chS(e, kz) 1 
+2n\e\B 2 
+(63.7) 
+(cf. (62.8)), and change from integration over n in (63.6) to integration over e: 
+ho = 
+1 + exp f*o-e 
+T I 
+,zniin _^L dkz de; 
+de 
+(63.8) 
+the choice of the lower limit of integration over e, which has been arbitrarily 
+taken as zero, is immaterial, since in any case only the neighbourhood of 
+e = (xa is important in the integral. 
+Since the function n(e, k2) is large, the exponential factor in the integrand in 
+(63.8) is a rapidly oscillating function of kz. These oscillations reduce to nothing 
+the integral with respect to kz, and so the main contribution comes from the 
+ranges of the variable^ in which n(e,kr) varies least rapidly and the oscillations 
+are therefore slowest. That is, the main contribution to the integral comes from the 
+regions near the extrema of n as a function of kz for any given e. Let kz ex(e) be 
+one such point; near it, we calculate the integral by the saddle-point method, 
+putting in the exponent of the exponential 
+n(e, K) *= «„(£) + ! (H) 
+«ex(e) = n(e-kz,cx(e)). 
+t See Part 1,§60. It is not important that the term F(0) in the sum in (63.4) has a coefficient 
+since only the terms with large n are significant in the sum (63.3). [p.268] 262 
+Electrons in the Crystal Lattice 
+and in the non-exponential factors taking the value at kz - kz ex. The result is 
+that each of the extrema contributes to the integral the term 
+J log{l + exp ^V-} 4S..-L:-g{*} *. 
+0 
+The replacement of dn(e, kz)/de by dneJde is legitimate, since at the extremum 
+dnjdkz = 0. The plus and minus signs in the exponent refer respectively to the 
+cases where kzex is a minimum and a maximum of n(e, kz).+ We transform this 
+expression by integration by parts, with 
+exp (2nilnCy) de = d exp (2mln^(s)) 
+and using the fact that the slowly varying function \ d2njdkl 'ex need not be 
+differentiated. The integrated term does not give an oscillatory dependence on 
+the field; omitting it, we have 
+//* = £ 
+e±i*li 
+2niTlS12 
+exp (2mlnex) de 
+/» __ 
+(63.9) 
+where the summation is over all the extrema (whose significance is further dis¬ 
+cussed below). 
+The factor exp (2jiilnex) in the numerator of the integrand is a rapidly oscillat¬ 
+ing function of e. These oscillations reduce to nothing the integral with respect 
+to e everywhere except in the region e - fia ~ T, where the denominator varies 
+rapidly. The function nex(e) itself varies smoothly in this region, and may there¬ 
+fore be represented as 
+nn(e) % «ex(yWa) + nCJ(pa) (£ ~ P°) \ 
+the factor j d2n/dk2z | "1/2 is simply replaced by its value at e=(ia. Then, changing 
+from integration with respect to e to one with respect to x = (s - fiJ/T and 
+replacing the lower limit - pJT by - °© (since p/T » 1), we obtain5 
+t The saddle-point integral of the form J e,B*, dz is calculated by putting z = ue*"1* or 
+z = ue~tnlt for a =► 0 or a -< 0, after which the integration with respect to u extends from 
+- oo to oo. 
+* We use the value of the integral 
+/ = J 
+eta* £z __ _ i71 
+e*+l ~~ sinh?ra 
+This formula may be derived by considering the integral along a closed contour in the complex 
+z-plane, consisting of the real axis, the straight line imz - 2n, and two "sides" at infinity; to 
+ensure convergence on the latter, the real parameter a is replaced by a - iO. The integral along 
+this contour is determined by the residue at the pole z = in, whence we find I - e~ifmI - [p.269] §63 
+The de Haas-van Alphen Effect 
+263 
+In summing this expression over a = ± 1, we can everywhere (except in the 
+exponential factor) replace p,a by fi, since by the hypothesis (63.1) (5B « ft. In 
+the phase (exponential) factor, however, this replacement is not allowable: 
+since ncx(e) is large, even a relatively small change in its argument causes a con¬ 
+siderable change of the phase. It is sufficient here, nevertheless, to expand 
+WexC/tti/AB) in powers of (5B, taking only the linear terms. The result is 
+Vf - V exp[2*n7rtex0w)±T^] v 
+kla~ k l*l*\d*nldk* ia„ X 
+X sinh-1 [2nHTntx{p)\ cos [2nipB£exricx(p)], (63.10) 
+where £„ = |(kr ex). It remains to elucidate the significance of the quantities 
+appearing in this expression, and to substitute it in (63.5). 
+According to the definition (63.7), the function nex(e) is related to the extre¬ 
+mum value Scx(e) of the cross-sectional area of the constant-energy surface 
+<S(e, kz) as a function of kz, and its value at e = p is the area of the extremal 
+cross-section of the Fermi surface. As an illustration. Fig. 15 shows the extremal 
+Fig. 15. 
+(two maxima and one minimum) cross-sections of a dumb-bell-shaped Fermi 
+surface; they are perpendicular to the direction of the field, which is shown by 
+the arrow. The summation over ex in (63.10) is over all extremal closed cross- 
+sections of all sheets of the Fermi surface. To simplify the notation, we shall 
+also use the cyclotron mass of the conduction electron in its motion along an 
+extremal closed trajectory. According to the definition (57.6), this mass is 
+m 
+ft2 
+2tz [• 
+8S(e, kr) ■ 
+ds -Lv = 2^>> 
+where S^e) = S(e, kz ex(e)); the second equation again follows because at the 
+extremum point dS(e, kz)ldkz = 0. 
+We thus have the final formula for the oscillatory part of the thermodynamic 
+potential: a-MS- 4»). 
+^ _ 2V(mpB)*l2 | d*S({i,kz) -1 
+1 n'lmrfpl* I dk\ 
+ - cosnlm'Z'Jm, 
+(63.11) 
+A = l7i*Tm*/mPB, [p.270] 264 
+Elect
+
+[p.281] §66 
+The Electron Spectrum of Solid Insulators 
+275 
+acterized by the existence of a limiting Fermi surface in k-space, near which 
+the electron quasi-momenta lie. In the present case, however, there is no such 
+surface, and the electron and hole that appear simultaneously can have any 
+quasi-momenta. 
+The distinction between the two types of spectra can be more fully understood 
+by considering the decay of elementary excitations. In a Fermi liquid, any quasi¬ 
+particle outside the Fermi surface can create pairs of new excitations (a particle 
+and a hole), and therefore has a finite lifetime which decreases rapidly away 
+from the Fermi surface (an electron in a metal can also emit phonons; see 
+§65). The decay of an individual electron (or hole) in an insulator, in an ideal 
+lattice (at T = 0) is, however, precisely zero in a finite range of energies above 
+its minimum value:1, the formation of an electron-hole pair always requires a 
+finite expenditure of energy, because of the energy gap A (see below). The 
+emission of an acoustic phonon by a quasi-particle is possible only if the latter's 
+velocity v is not less than the velocity of sound u; see the third footnote to §65. 
+The possible values of the conduction electron energy e(°(k) and hole energy 
+e(A)(k) also occupy bands. The width of the energy gap in an insulator is usually 
+taken as the sum A = gffin+of the smallest possible values of the electron 
+and hole energies. Since the electron and the hole appear or disappear together, 
+it is this sum which has a real significance, not e^n or e^in separately; it is 
+usual to take arbitrarily ejJJ, = 0. The minimum energy values can be reached 
+for electrons and holes with the same or different values of the quasi-momen¬ 
+tum k = ko; the gap is said to be respectively direct and indirect. If the energy 
+levels in the band are not degenerate (or have only double degeneracy with 
+respect to the spin because of the symmetry under time reversal), e(k) near its 
+minimum has the form 
+e^e\\i) = A + \m^-xikqiqkt £(*>(k) = \nfh)-\kqiqk, (66.1) 
+where q = k - ko, and and m{$ are the electron and hole effective mass 
+tensors. 
+In the literature, the electron band is often called just the conduction bandr 
+and the hole band is referred to as the valency band, which in the ground state 
+of the crystal is completely filled with electrons. The formation of a pair of 
+quasi-particles (electron and hole) is then regarded as the result of the passage 
+of an electron from the valency band to the conduction band, leaving a hole 
+at its original position. 
+At large distances (compared with those between the atoms), the electron 
+and the hole attract each other in accordance with Coulomb's law. They can 
+therefore form bound states. The electron and the hole together constitute an 
+electrically neutral quasi-particle, i. e. an exdton. For a given quasi-momentum, 
+the bound states correspond to discrete energy levels of the electron-hole system, 
+t At finite temperatures there is, of course, always a decay due to scattering by other quasi¬ 
+particles. [p.282] 276 
+Electrons in the Crystal Lattice 
+with one exciton energy band for each level. The energies of the excitons 
+thus lie below those of electron-hole excitations; the energy gap in the sense 
+mentioned at the beginning of this section is consequently not the same as A, 
+but is less by an amount equal to the maximum binding energy of the exciton.1. 
+The exciton energy levels are easily calculated in the limiting case of weakly 
+bound states, when the mean distances between the electron and the hole are 
+large compared with the lattice constant a; this is called a Wannier-Mott 
+exciton. In the opposite limiting case, when the electron-hole distance is of the 
+order of atomic distances, we have a Frenkel' exciton, which can of course be 
+regarded only formally as a bound state of electron and hole. 
+Let us consider an insulator crystal having cubic symmetry. For a Wannier- 
+Mott exciton, we can suppose that the electron and the hole attract each other 
+according to Coulomb's law, the remaining atoms in the lattice serving only to 
+create a uniform dielectric background which weakens the interaction by a 
+factor e, the permittivity of the crystal (taken for the frequencies that corre¬ 
+spond in order of magnitude to the exciton binding energy); thus the electronhole interaction energy is written as U = - e?ler. Let the gap in the spectrum 
+be direct, and let us assume for simplicity that the electron and hole energy 
+minima are at k = 0. In a cubic crystal, the effective mass tensors reduce to 
+scalar constants me and mh, so that 
+e(*)(k) = A + h2k2/2me, e(*>(k) = h2k2Hmh. (66.2) 
+It has been mentioned at the end of §56 that the motion of the particle in a 
+crystal lattice subjected to an external electric field varying slowly in space is de¬ 
+scribed by Schrodinger's equation with a Hamiltonian in which e(k) plays the 
+part of the kinetic energy. Since in the present case the functions s(<0(k) - A and 
+£(/°(k) are the same in form as the kinetic energies of ordinary free particles, 
+Schrodinger's equation for the system in question is the same in form as that 
+for a system of two ordinary particles with Coulomb interaction, i.e. Schro¬ 
+dinger's equation for the hydrogen atom. We can therefore write down imme¬ 
+diately the energy levels of the system, i.e. the exciton energy, as 
+sf(k)-A 
+h2k2_me4 
+2 (me + mh) 2z2h2n2 
+(66.3) 
+(G. H. Wannier 1937). The first term in this expression is the energy of the 
+exciton moving "as a whole" with quasi-momentum k. The second term gives 
+the binding energy of the electron and hole in the exciton; m = m/nh!{jne+mh) 
+is the reduced mass of the system. For a given k, the discrete energy levels of 
+the system become closer as the energy increases to the limit of the continuous 
+spectrum. The condition for (66.3) to be valid is that the orbit radius should be 
+t Exciton states, however, have a finite lifetime, si
+
+[p.295] §70 
+Magnons in a Ferromagnet. The Spectrum 
+289 
+Let us now take into account the fact that in a ferromagnet there are not only 
+exchange interactions but the considerably weaker relativistic interactions 
+(spin-spin and spin-orbit) of the electron angular momenta. In the macroscop¬ 
+ic theory, they are described by the magnetic anisotropy energy, whose den¬ 
+sity t/an depends on the direction of the magnetization vector relative to the 
+crystal lattice; these interactions determine the equilibrium direction of the 
+spontaneous magnetization in the ferromagnet. The relativistic interactions in¬ 
+clude, as already mentioned, that of M with the magnetic field H. 
+In a uniaxial crystal, the anisotropy energy has the form 
+t/an = - (69.12) 
+If K > 0, the equilibrium magnetization is along the axis of symmetry (the 
+z-axis; a ferromagnet of the "easy axis" type); if K < 0, the direction of the 
+spontaneous magnetization lies in the xy-plane (a ferromagnet of the "easy 
+plane" type). In a cubic crystal, the anisotropy energy may be written 
+C/an = (K'IM2)(M*APy+M*M*+MlM*), (69.13) 
+where the axes x, y, z are along the three fourth-order axes of symmetry (the 
+edges of the cubic cells). If K' > 0, the equilibrium vector M is along one edge 
+of the cubic cells; if K' < 0, it is along one of the spatial diagonals of the cells.1. 
+We shall consider the particular case of a uniaxial ferromagnet. Adding to the 
+integrand in (69.5) the term C/an (69.12), we obtain on variation an additional 
+term - KMzv.bM, where v is a unit vector along the axis of symmetry of the 
+crystal. Thus we find for the effective field 
+Hcff = aat $~l- - +KM,v+H. (69.14) 
+It is easily seen that beyond this change in the effective field there is no altera¬ 
+tion of the equation of motion (69.9) due to the inclusion of relativistic effects: 
+the neglect of dissipation signifies as before that the right-hand side of the 
+equation of motion must be perpendicular to Heff, i.e. must have the form 
+M'xHtff, where M' can differ from M only by the inclusion of relativistic 
+effects, which are always small in comparison with the large quantity M and 
+are therefore unimportant. The relativistic terms in Heff are added to a quantity 
+that is small because M varies only slowly through the body; these terms may 
+become significant at sufficiently long wavelengths. 
+§ 70. Magnons in a ferromagnet. The spectrum 
+Let us apply the equations derived in §69 to the propagation of waves in 
+which the magnetic moment density executes small oscillations, precessing 
+about its equilibrium value Mo. We shall consider a one-domain sample with Mo 
+t The dimensionless quantities K and K' for various ferromagnetic substances have values 
+in a wide range from several tenths to several tens. The order of magnitude of the ratio of the 
+relativistic and exchange interactions is given by a3£/an/7'« which is usually 10~4-10~8. [p.296] 290 
+Magnetism 
+constant throughout its volume, and take only the case of wavelengths much 
+less than the size of the sample. The medium may then be regarded as infinite. 
+Let us first take account of the exchange interactions only, i.e. use equation 
+(69.11). We put M = Mo+m, where m is small, and linearize the equation by 
+omitting the terms of the second order in m; since M = Mo, in this approxi¬ 
+mation m JL Mo. The result is 
+\e\ d^m 
+me CCik dxi dxk XM0; 
+(70.1) 
+here and henceforward we take g = 2. For a coordinate and time dependence 
+of m in the form exp[i(k.r - cof)], we find 
+/com = (| e\/mc) ock2 m XMo, (70.2) 
+where a = a(n) = a.iknfik and n is the unit vector in the direction of the wave 
+vector k. Expanding this equation in components gives 
+mmx = Qe\/mc)ccMk2my, 
+icomy - - (| e | /me) ocMk2mx, 
+the z-axis being in the direction of M0. Hence the dispersion relation for spin 
+waves is1" 
+co = (| e | Mime) a(n) k2. (70.3) 
+We see that, in accordance with the discussion at the beginning of §69, the fre¬ 
+quency in the exchange approximation tends to zero as k ■* 0. The vector m 
+in the spin wave rotates in the xy-plane with constant angular velocity co, 
+remaining constant in magnitude. 
+In the quantum picture, the formula (70.3) determines the energy spectrum 
+of magnons (e = &»):* 
+e(k) = 2/9M«(n) k2. (70.4) 
+In the second-quantization formalism, the macroscopic quantities describing 
+the ferromagnet are replaced by operators expressed in terms of the magnon 
+annihilation and creation operators. We shall show how this is to be done for 
+the magnons (70.4). 
+We assign to the classical quantity M a vector operator whose compo¬ 
+nents satisfy certain commutation rules. Let §(r) bV be the operator of the 
+total spin of the atoms in a physically infinitesimal volume element bV at the 
+point r. The operators §(ri) bVi and S(r2) bV2 relating to different elements 
+t A quadratic dispersion relation for spin waves was first obtained by F. Bloch (1930), 
+using a microscopic theory. The expression of this spectrum in terms of macroscopic param¬ 
+eters was given by L. D. Landau and E. M. Lifshitz (1945). 
+* In this chapter, 0 everywhere denotes the Bohr magneton, = | e \ ft/lmc. [p.297] §70 
+Magnons in a Ferromagnet. The Spectrum 
+291 
+SVi and SV2 commute, but the components of one and the same operator 
+S(r)bV obey the usual commutation rules for angular momentum: 
+Sx bV. §y bV- §y bV. Sx bV = bV, 
+or SxSy - SySjg = iSjbV (and similarly for the other commutators). In the 
+limit as bV -* 0 these rules can be written for any ri and r2 
+&(n) Sy{r2)-§y{t2) &(ri) = *&(ri) $(ri-r2). 
+Now multiplying this equation by 4/12 and noting that the magnetization opera¬ 
+tor M = - 2$§, we obtain 
+Mx{n) My(r2)-My(r2) Mx{n) = -2i£Mr(n) b{n-r2). (70.5) 
+For spin waves in which M executes small oscillations round the z-axis, in 
+the first approximation with respect to the small quantities mx and my, we can 
+replace the operator Kfz by the number Mz % M; then 
+Wx(ri) my{ r2) - my{ r2) mx{n) = - 2i(5Mb(rx - r2). (70.6) 
+From this it is cl
+
+[p.309] §72 
+The Spin Hamiltonian 
+303 
+Finally, substituting this expression in (72.11), using (72.3), and changing to 
+summation over q = n - m, we have 
+e(k)*k = 
+The expression in the braces is the required magnon energy. The imaginary 
+part of the expression under the summation sign, being an odd function of 
+rq, gives zero on summation, and the result is 
+e(k) = 5 £ 4(l-cosk.rq)+2/?§ (72.13) 
+q * 0 
+(F. Bloch 1930). 
+This formula gives the exact dispersion relation for magnons in a system 
+described by the Hamiltonian (72.1). In the limit of small k, it becomes, of 
+course, the quadratic relation 
+«(k) = i-Sk,kk £ V„AT,t+2/?§. (72.14) 
+q 0 
+The Curie point of the system in question is at a temperature Tc ~ J, and 
+so at temperatures T» J the system is certainly paramagnetic. At such tem¬ 
+peratures we can, as a first approximation, altogether neglect the interaction 
+between the atoms. In this approximation, the magnetic susceptibility of the 
+system will be the same as that of an ideal gas of atoms with spin S, namely 
+__N 4p*S(S+l) 
+X V 3 T 
+(72.15) 
+(see Part 1, §52); the susceptibility is per unit volume. This expression is the 
+first term in the expansion of the function %(T) in powers of 1 IT. The subsequent 
+terms do depend on the interaction of the atoms; we shall determine the first 
+such term. 
+The susceptibility (in a zero field) is defined as the derivative % = 8MJ8S.? 
+as § - 0, and the magnetization M is calculated as the derivative of the free 
+energy: VM - - 8F/8$. To solve the problem, we need to calculate F as 
+far as the terms in l IT2. # 
+We start from the formula F = - T log Z, where Z is the partition function 
+Z = £e-En/T 
+En_ F* 
+T 2T2 
+6T3 ■)= 
+the summation is over all the energy levels of the system.1" The total number of 
+levels in the spectrum of the system is finite, and equal to the number of possible 
+t The following calculation of the free energy corresponds to that in Part 1,§73, continued 
+to the next term in the expansion. [p.310] 304 
+Magnetism 
+combinations of orientations of the atomic spins relative to the lattice. Each 
+spin has 25+1 different orientations; this number is therefore (2S' +1)*. Denoting 
+by a bar the arithmetic mean, we can write 
+z = (2s+ir • 
+The mean value Em = tr Bml{2S+ \)N. According to a well-known prop¬ 
+erty, the trace of the operator can be calculated with any complete set of 
+wave functions; we take as these the functions corresponding to all possible 
+combinations of orientations of the atomic spins. Then the averaging reduces 
+to an independent averaging of each spin over its directions, and E = 0. Now 
+taking the logarithm of Z and again expanding in powers of \/T, we have to 
+the same accuracy 
+F = -7Wlog(2S+l)-+jP + -+r£» (72.16) 
+In this expression, only the terms containing $2 contribute to the suscepti¬ 
+bility. Omitting all other terms, and noting that the odd powers of the spin 
+components give zero on averaging, we find 
+(2/?§)2v«r imf 1 
+2T v nz 2T2 *2 Z 2Jm(SnSj(SmS^). 
+The mean values are 
+= sa = o, si = }s(s+i). 
+Thus 
+F = -~/32&NS(S+l)- ^rffW(S+l)< £ J„ 
+q^O 
+and hence we have finally for the susceptibility 
+4p*S(S+l)N 
+3TV 
+1 + 5(5+1) 
+3 T 
+(72.17) 
+It should be noted that the sign of the correction term in the square brackets 
+depends on the sign of the exchange integral. 
+PROBLEMS 
+Problem 1. Find the magnetic part of the specific heat of a system described by the Hamil¬ 
+tonian (72.1) at temperatures T»J. 
+Solution. The first term in the expansion of the specific heat in powers of 1 jTcomes from 
+the term -E2/2T in the free energy (72.16). Averaging by the same method the square of the [p.311] §73 
+Hamiltonian (72.1), we get 
+Interaction of Magnons 
+305 
+Ez - •J.2 ^ Jam SmiSmft SaiS^ic 
+*nZ a, 
+y t q pt o 
+since StSk = |5(5+ 1)<5«. The specific heat is then 
+NS*(S+1)2 
+6T* 
+in agreement with Part 1, (73.4). 
+Problem 2. Neglecting the interaction between spins, calculate the magnetization of a 
+paramagnet with any relation between /?§ and T. 
+Solution. The partition function (for one spin in the field) is 
+Z= ata exp(-2/3$St/D 
+= sinh Wcs+p/r 
+sinh 
+A calculation of the free energy, followed by differentiation with respect to gives the magnet¬ 
+ization 
+M = TT-ku*z 
+^{(5-,|)co.h»i>-±cothm} 
+(L. Brillouin 1927). When T, this expression becomes (72.15). In the opposite limit, 
+when /?§ » T, the magnetization tends to its nominal value according to 
+§ 73. Interaction of magnons 
+There is considerable methodological interest in the problem of the contribu¬ 
+tion from magnon interaction to the magnetic part of the thermodynamic 
+quantities in a ferromagnet. The calculations in §71 were based on an ideal 
+gas of non-interacting magnons. Let us consider this problem for a system 
+described by the exchange spin Hamiltonian (72.1). 
+Having in view the determination of only the contribution of the lowest 
+order in the small ratio T/T# we need only consider the pair interaction of 
+magnons. This means that we have to consider two-magnon states of the system 
+in which the total-spin projection is NS - 2. 
+This corresponds to the wave functions 
+Znn = [4S(2S-1)]-!/* &-&-X0, 1 
+Xnm = (2S)-1 m ^ n; J 
+(73.1) [p.312] 306 
+Magnetism 
+since the spin operators of different atoms commute, ^ = ynm.f The func¬ 
+tions (73.1) are normalized by the condition y^Xmn - 1, as is easily seen by 
+expanding the product in the same way as was done in verifying the normaliza¬ 
+tion in (72.9). The same procedure can be used to show that different functions 
+Xtnn are mutually orthogonal. 
+The functions (73.1) are not themselves eigenfunctions of the Hamiltonian. 
+The wave functions of the two-magnon stationary states of the system must be 
+certain linear combinations of the functions Xan> which we write as 
+%= X /*) Vmn^mn + ^ y>aaXan (73.2) 
+m * nVz n 
+(since and Xmn are f^e same, we must also take = ynm). The set of 
+coefficients forms the wave function in the representation in which the 
+independent variables are the numbers labe
+
+[p.323] §75 
+Green's Function of a Photon in a Medium 
+317 
+According to Kubo's formula (see Part 1, (126.9)), the susceptibilities can be 
+expressed in terms of the mean values of the commutators of the Heisenberg 
+operators xa(t, r): 
+otab((o; r, r') = J eia,t(xa(t, r) xb(0, r') - xb(0, r') £a(t, r)) dt. (75.11) 
+o 
+We shall now regard the components of the current vector j as the "forces" 
+fa. Then it is seen by comparing (75.7) and (75.8) that the corresponding quan¬ 
+tities xa are the components of the vector potential A/c of the field. A compari¬ 
+son of (75.11) with the definitions (75.3), (75.4) shows that the generalized 
+susceptibilities a^co; r, r') are the same as the components of the tensor 
+ - Dfk((o; r, r')jhc2. By (75.10), this immediately gives (for non-magnetoactive 
+media) 
+Dfk(co; r, r') = D£t(a); rr). (75.12) 
+The relations (75.9) become 
+ZJ® = - ^ J DU<o;t, (75.13) 
+The mean value A is just the vector potential of the macroscopic (fully aver¬ 
+aged; see the beginning of this section) electromagnetic field in the medium; 
+henceforward the bar will be omitted from A and the other macroscopic quan¬ 
+tities. We now use the fact that the macroscopic field due to the classical current 
+j satisfies Maxwell's equation 
+. 4n . ico 
+curl Ho, = - jo,-Do,, 
+c c 
+where D is the electric induction; in the general case of an anisotropic medium, 
+DB is related to the field by Dlm = ; if the medium is inhomogeneous, 
+the permittivity tensor is also a function of the coordinates, %(ct), r). 
+In the gauge chosen for the potentials (75.1) we have 
+B„ = curl Ac, Ew = icoAJc, (75.14) 
+where B is the magnetic induction, related to the field H by Bim = (iikHko).f 
+The potential therefore satisfies the equation* 
+[curlim curl**) - (aP/c2) eik] Akm = 4njtjc. 
+t In macroscopic electrodynamics the mean value of the microscopic electric field is usually 
+denoted by E, and the mean value of the magnetic field by B, called the magnetic induction. 
+* Here and henceforward we use the notation curl,, = emdidxk, where em is the unit 
+antisymmetrical pseudo-tensor; (curl A), = curl,,,4,. [p.324] 318 Electromagnetic Fluctuations 
+Substituting Aw in the form (75.13), we find that the function D?k must satisfy 
+the equation 
+[curl^Ou-1™curl*/) - K/c2) e„] D?k(a>;r, r') = -4Mikd(r-r'). (75.15) 
+This equation is considerably simpler for media that are isotropic (in each 
+volume element), where the tensors eik and nlk reduce to scalars. The permeabil¬ 
+ity is usually close to unity, and we shall take fi = 1 in the rest of this section. 
+Putting elk = ebik and fxik = we get the equation 
+-<5,-/A - bn ^ e(co; r)l D?k(co; r, r') = - 4Mikb(r-r'). (75.16) 
+[ axiOXi c* j 
+Thus the calculation of the retarded Green's function for an inhomogenous 
+medium amounts to the solution of a certain differential equation (I. E. Dzya- 
+loshinskil and L. P. Pitaevskii 1959).f 
+At the interfaces between different media, the components of the tensor Dfk 
+must satisfy certain conditions. In equation (75.16), the second variable r' and 
+the second suffix k are not involved in the differential and algebraic operations 
+on the tensor D?k, i.e. they act only as parameters. Hence the boundary condi¬ 
+tions are to be imposed only with respect to the coordinates r for the function 
+Dfk(co\ r, r'), regarded as a vector with the suffix /. These conditions correspond 
+to the requirement that the tangential components of E and H be continuous, as 
+given by macroscopic electrodynamics.* Since E = - A/c, the role of the vector 
+E is here played by the derivative - (1 fc) dD%(t; r, r')/dt or, in Fourier com¬ 
+ponents, 
+i(co/c)Dfk(oy, r, r'). (75.17) 
+Similarly, the role of the vector H (which is the same as B when /a= 1) is played 
+by 
+curl// Dik((o; r, r'). (75.18) 
+For a spatially homogenous infinite medium, the function D?k depends only 
+on the difference r - r'. For the components of the Fourier expansion with re¬ 
+spect to this difference, the differential equation (75.16) becomes a set of alge¬ 
+braic equations 
+At \kjc,-b„k? + b„^e(m)\ D?k(co, k) = Slk. (75.19) 
+t The function Dfk is the Green's function of Maxwell's equations in the sense familiar in 
+mathematical physics, namely the solution of the field equations with a point source, satis¬ 
+fying the retardation condition. The advanced function Dfk satisfies the same equation with 
+e* instead of e. 
+* The boundary conditions for the normal components of B and D give nothing new in this 
+case, because in a field that varies with time as e~i03t the equations div D = 0 and div B = 0 
+are implied by the equations curl E - iwB/c and curl H = - icoDjc. [p.325] §76 
+Their solution is 
+Electromagnetic Field Fluctuations 
+319 
+^k>=h-Si]' (75-20) 
+According to (36.21), the Green's function Dik for a homogeneous medium 
+is expressed in terms of the retarded function D?k by 
+k) = re Dfk(co, k)+/ coth {fuajlT) im Dfk{(oy k). (75.21) 
+As T - 0, this becomes 
+k) = re D?k(co, k)+/ sgn ct>*im Dfk(a>, k). (75.22) 
+The function Dfk is given by (75.20); since re e(co) is an even function of to, and 
+im e(to) an odd function, we find at T = 0 
+Dik((ot k) = Dfk( | to |, k). (75.23) 
+In a vacuum, e(co) = 1. Since in any material medium im e(co) > 0 when 
+co > 0, the vacuum corresponds to the limit e 1 + iO. The resulting expres¬ 
+sion is 
+nCOV n 4n& U 
+-»s?Kk)- miic2_ki+m ^2 y 
+in agreement with the known result in quantum electrodynamics (see RQT, 
+§77). 
+§ 76. Electromagnetic field fluctuations 
+As already mentioned at the beginning of §75, in the treatment of electromag¬ 
+netic field fluctuations we are concerned with the oscillations in time of quan¬ 
+tities averaged only over physically infinitesimal volume elements (not over the 
+motion of particles within them). The quantum-mechanical operators of these 
+quantities are to be taken in the same sense. 
+The basic formulae of the theory of electromagnetic fluctuations can be 
+written down directly from the general formulae of the fluctuation-dissipat
+
+[p.337] §80 
+The van der Waals Stress Tensor 
+331 
+§ 80. The van der Waals stress tensor 
+Although the structure of condensed bodies is essentially determined (as 
+noted at the end of §79) by the forces acting between its particles at atomic 
+distances, a definite contribution to the thermodynamic quantities of the body 
+(its free energy, say) comes also from the van der Waals forces which act be¬ 
+tween the atoms at distances large compared with the atomic distances a. 
+For free atoms, the energy of this interaction decreases with increasing dis¬ 
+tance as r-6 (see QM, §89), and as r-7 when retardation effects have become 
+important (see RQT, §83). In a condensed medium, of course, the van der 
+Waals forces do not reduce to an interaction between separate pairs of atoms. 
+However, since their range of action is large compared with interatomic dis¬ 
+tances, we can use a macroscopic approach to the problem of their influence 
+on the thermodynamic properties of the body. 
+In the macroscopic theory, the van der Waals interaction in a material me¬ 
+dium is regarded as brought about through a long-wavelength electromag¬ 
+netic field (E. M. Lifshitz 1954); this concept includes not only thermal fluc¬ 
+tuations but also the zero-point oscillations of the field. An important property 
+of the contribution of this interaction to the free energy is that it is not additive; 
+it is not simply proportional to the volume of the bodies, but depends also on 
+parameters that characterize their shape and configuration. This non-additivity, 
+resulting from the long range of the van der Waals forces, is the property that 
+distinguishes their contribution to the free energy from the much larger addi¬ 
+tive part. In the macroscopic picture, this property arises from the fact that 
+any change in the electrical properties of the medium in some region causes, in 
+accordance with Maxwell's equations, a change in the fluctuational field even 
+outside that region. In practice, of course, the non-additivity effects are appre¬ 
+ciable only when the characteristic dimensions are sufficiently small (though 
+still large compared with atomic dimensions), e.g. in thin films or in bodies 
+separated by a narrow gap. 
+In the calculation of the contribution of the electromagnetic fluctuations to 
+the free energy, the important wavelengths in each case are of the order of the 
+characteristic dimensions of the inhomogeneity of the medium (film thickness, 
+gap width, etc.). In the macroscopic theory, this is the reason for the power-law 
+decrease of the van der Waals forces; if fluctuations with some fixed wave¬ 
+length ?,0 were important, this would give an exponential decrease, with expo¬ 
+nent ~ rjlo. Since the characteristic dimensions, and therefore the character¬ 
+istic wavelengths of the fluctuations, are much greater than atomic dimensions, 
+all properties of these fluctuations and their contribution to the free energy are 
+expressed entirely in terms of the complex permittivity of the bodies. 
+Our object will be to calculate the macroscopic forces acting in an inhomo¬ 
+geneous medium.1' As a first step in the derivation, we shall determine the change 
+t The theory given below is due to I. E. Dzyaloshinskii and L. P. Pitaevskil (1959). [p.338] 332 
+Electromagnetic Fluctuations 
+in the free energy of the medium due to a small change in its permittivity; the 
+magnetic properties of the material will be neglected (the permeability fx = 1). 
+We shall suppose that the change in e is caused by a small change bB in the 
+Hamiltonian of the system. Then the change in the free energy is 
+bF=(bB), (80.1) 
+where the averaging is taken (with given temperature and volume of the system) 
+over the Gibbs distribution with the unperturbed Hamiltonian B. We substitute 
+the latter in the form* 
+8=B„+V,„, flw =-j}.kdsx, (80.2) 
+where K describes the interaction of the particles with the long-wave electro¬ 
+magnetic field, and Bo includes all other interactions together with terms cor¬ 
+responding to free particles and photons. Strictly speaking, the integral in 
+(80.2) should be regarded as cut off at a wave number k0 « 11 a, but the cut-off 
+parameter does not appear in the final result. The operator A is the long-wave 
+field vector potential operator; it is important that the operator bB responsible 
+for the change in the permittivity does not contain A, since the permittivity is 
+determined solely by the interaction of particles at atomic distances. 
+Let us now change in (80.1) to Matsubara operators in what may be called 
+the long-wave representation of the interaction: in this representation, the 
+dependence of the operators on t is determined by all the terms in the Hamil¬ 
+tonian except Plw. By the same method as in the derivation of (38.7), we 
+obtain 
+(Tr bBMo)o, ] 
+1 IT f 
+<7 = Tt exp | J \M. AM d3x dr,\ 
+<*>o 
+(80.3) 
+where (.. .)o denotes averaging over the Gibbs distribution with the Hamilto¬ 
+nian B0. According to the meaning of the chosen representation, the Matsubara 
+operators are defined as 
+Am(t, r) = exp (t#0) A(r) exp ( - t#0), (80.4) 
+and similarly for bBM and for the ip operators from which the particle current 
+operator \M is constructed.* Since Bo does not contain the interaction of the 
+long-wavelength photons with anything else, AM is the same as the (Matsubara) 
+operator of the free photon field; for the ip operators of the particles this is, of 
+"Course, not so, since Bo includes the interaction between particles. 
+t In this section we take h = 1 ,c = 1. 
+* The suffix 0 which should also be attached to the operators in this representation is 
+omitted to simplify the notation. [p.339] §80 
+The van der Waals Stress Tensor 
+333 
+Following the general construction principles of the diagram technique, we 
+expand the exponential in (80.3) in powers of >v In each term of the expan¬ 
+sion, the product of the free-field operators AM is averaged in the usual way as 
+pair contractions, using Wick's theorem. The zero-order te
+
+[p.351] §82 
+Forces of Molecular Interaction Between Solid Bodies 
+345 
+(H. B. G. Casimir 1948). This force is independent of the nature of the metals, 
+a property which does not hold at small distances, where the interaction force 
+depends on the behaviour of the function e(z£) for all values of C and not only 
+at £ = 0. 
+Figure 18 shows a graph of the function (f>u(eo), which gives the attractive 
+force between two identical insulators (eio = £20 = £0); formula (82.4) is 
+written as 
+n2 He (eo-l\2 , , . 
+F = m-F vstt) W8o)- 
+(82.6) 
+*<«0) 
+The same diagram shows the function (f>im(eo), which gives the attractive force 
+for an insulator and a metal (eio = £0, £20 = °°), from the formula1 
+F = n2 he So - 1 
+(82.7) 
+In (82.4) we make the transition to the interaction of individual atoms, as was 
+done above for formula (82.1). For small eo - 1, we have 
+So~p « (fio-l)/2p, so-peo ~ (eo - 1)("JP+tJP-1)* 
+and the integral (82.4) becomes 
+F J ^e~xdxj dP' 
+whence 
+F = -5^- («10- !)(*«.-1). (82.8) 
+t As e„ -*• 1, the functions <pti and <f>tm tend to 0.35 and 0.46 respectively, corresponding to 
+the limiting forms (82.8) and (1) in the Problem. As e0 -* 00, both functions tend to unity, cor¬ 
+responding to (82.5). [p.352] 346 
+Electromagnetic Fluctuations 
+This force corresponds to the interaction of two atoms with energy 
+U{r) = - 2 3Hc 
+Anr7 ' 
+(82.9) 
+where oci and a2 are the static polarizabilities of the atoms (eo = 1 +4teh<x). 
+Formula (82.9) agrees with the result of the calculation in quantum electro¬ 
+dynamics for the attraction of two atoms at sufficiently large distances, when 
+retardation effects become important (see RQT,§&5). 
+Lastly, let us consider distances so great that ITjhc »1, the opposite inequal¬ 
+ity to that required for the effect of the temperature to be negligible. In this 
+case only the first term in the sum (81.9) need be retained, but we cannot 
+immediately put n = 0 in this term, since there is an indeterminacy: the factor 
+Cl is zero, but the integral with respect to p diverges. This difficulty can be 
+avoided by at first using instead of p a new variable of integration x = 2pCJ/c 
+(so that the factor Cl disappears). Then putting CH = 0, we obtain 
+T 
+16nP H 
+glO+ 1) (g20+ 1) ^ 
+[(£l0 - 1) (®20 1) 
+dx. 
+(82.10) 
+Thus, at sufficiently large distances the decrease of the attractive force becomes 
+slower, and returns to the l~z law, but with a coefficient that depends on the 
+temperature; all subsequent terms in the sum in (81.9) decrease exponentially 
+with increasing /. The condition IT/hc » 1 is essentially the classicality condi¬ 
+tion {hoi « Ty where co ~ cjl). It is therefore natural that the expression (82.10) 
+does not involve h? 
+PROBLEM 
+Find the law of interaction of an atom with a metal wall at "large" distances. 
+Solution. The interaction of an individual atom with a condensed body can be found by 
+considering only one of the bodies (labelled 2, say) as a rarefied medium. Regarding e20 - 1 
+as small and putting e10 = oo, we obtain from (82.4) 
+_ ttejea,- 1) } 
+3271*1* J 
+x \ *L. 
+J 2p2 
+3fc(e20 - 1) 
+327i*l* 
+(1) 
+If the atom-wall interaction energy is U = - aL~* (where L is the distance from the atom to 
+the wall), the energy of interaction of atoms in a half-space separated from the wall by a gap l 
+is C/tot = - an/3la, and the force F = dUtotldl = anil*. Thus the value found for F corre¬ 
+sponds to the attraction of an individual atom to the wall with the energy 
+U(L) = - 3cL2hcl%7tL* (2) 
+(H. B. G. Casimir and D. Polder 1948). 
+t The formulae obtained in §§81 and 82 can be generalized to include the case where the 
+gap between the solids is filled with a liquid and the case of a thin liquid film on a solid sur¬ 
+face; see I. E. Dzyaloshinskil, E. M. Lifshitz and L. P. Pitaevskil, Soviet Physics Uspekhi 4, 
+153,1961 (= Advances in Physics 10,165,1961). [p.353] 347 
+§ 83 Asymptotic Behaviour of the Correlation Function in a Liquid 
+For the interaction of an atom with an insulating wall, the same method gives 
+U(L) - - 3fc«2 e10 - 1 
+8ttL4 e10+l 0.<(«io) 
+with the function <fca( shown graphically in Fig. 18. As £i0 - 1 this function tends to the value 
+23/30 = 0.77, corresponding to (82.8). 
+§ 83. Asymptotic behaviour of the correlation function in a liquid 
+Long-wavelength electromagnetic fluctuations lead also to certain specific 
+properties of the correlation function of the density fluctuations in a homo¬ 
+geneous liquid. 
+The correlation function v(r) is determined (see Part 1, §116) in terms of the 
+mean value of the product of the fluctuations of the particle number density 
+n at two points in space by 
+(5«(ri) 8n(r2)> = «5(r)+«v(r), r = ri - r2. (83.1) 
+The correlation function is related to the interaction between particles, and 
+its asymptotic behaviour at large distances is determined by the long-range van 
+der Waals part of this interaction. Hence v(r), like the van der Waals forces, 
+decreases as an inverse power of the distance (J. E. Enderby, T. Gaskell and 
+N. H. March 1965). 
+This, of course, also affects the properties of the Fourier components of the 
+correlation function v(k) = v(k). If the only forces acting between particles 
+in the liquid had a range of the order of the atomic dimensions a, v(r) would 
+decrease exponentially with increasing distance, the exponent being ~ rja* 
+In terms of Fourier components this means that v(k) would be a regular function 
+of ka and could be expanded in even powers of ka when ka<& 1. The longrange forces, however, cause the occurrence in v{k) of a term vfjc) that varies 
+considerably even in the range k ~ 1/A0 (not k ~ 1/a), where X0 (»n) denotes 
+characteristic wavelengths in the spectrum of the liquid. In the range ka<c\, 
+the parameter kXo may be either small or large; the function vx(k) has a sin¬ 
+gularity in this range. 
+To calculate the correlation function, we use its relation to the second varia¬ 
+tional derivative of the free energy of the body with respect to its density. By 
+definition,
+
+[p.365] A Degenerate Plasma 
+359 
+§ 85 
+see ECM, §59. From the conditions (85.1), (85.2), all the non-zero frequencies 
+ts = 2stzT (nee21me)X/2, and for them we can therefore take e(/|Csl) = 1» i-e- 
+the plasma is not polarized and is small. 
+Formula (85.21) is expressed in terms of the thermodynamic variables T, V, 
+(ia. Hence the thermodynamic potential Q of the plasma can be found by direct 
+integration of the equation 
+(dQ/de*)T,v,Ma = (?)/<*; (85.22) 
+see Part 1, (80.4). The result for the correlation part of Q is (in ordinary units) 
+Oc 
+VTx3 
+I2n 
+lyJnVTe* 
+3 [Ha,r 
+(85.23) 
+(A. A. Vedenov 1959). According to the general theorem of small increments, 
+the same formula expressed in terms of other thermodynamic variables gives 
+the correction to other thermodynamic potentials. 
+For a non-degenerate plasma, all the derivatives dnjdfia = njT, and (85.23) 
+then becomes 
+fco,-(I (85.24) 
+for the correction to the free energy, the same as in Part 1, (78.12). 
+For strong degeneracy of the electrons in a plasma (T <sc ixe\ the derivative 
+dnjdfie ~ nj[ie « ne/T. In the sum over a in (85.23) we can then neglect the 
+electron term, and return to (85.24) with the difference that the sum is taken 
+only over the kinds of ion in the plasma. Thus with strong degeneracy the elec¬ 
+trons have no influence on the screening length or on the correlation part of the 
+thermodynamic quantities in the plasma. [p.366] CHAPTER IX 
+HYDRODYNAMIC FLUCTUATIONS 
+§ 86. Dynamic form factor of a liquid 
+The correlation function of density fluctuations, discussed in Part 1, §116, is a 
+particular case of a more general function which relates the density fluctuations 
+not only at different points in space but also at different times. In the classical 
+theory, this function is defined as the mean value 
+na(t; n, r2) - (bn(h, n) bn(t2, r2)>, (86.1) 
+where t = tx - 12; the factor n - NjV, the mean number density of particles, is 
+taken outside the definition of a. For a homogeneous isotropic medium (a liq¬ 
+uid or a gas) the function (86.1) depends on ri and r2 only through the dis¬ 
+tance r = | ri - r2 S between the two points, and this will be assumed in what 
+follows. 
+In the quantum theory, the corresponding function is defined by means of the 
+symmetrized product of time-dependent (Heisenberg) density operators as 
+fid(t, r) = {- (bft(tu ri) bPi(t2, r2)+bh(/2, r2) bft(tu ri)>, (86.2) 
+in accordance with the general definition as in Part 1, (118.4). There are certain 
+advantages in the present case, however, in using the asymmetric definition 
+na(t, r) = {bft(h, ri) bfi(t2, r2)> (86.3) 
+for which we retain the notation o(t, r).f Unlike a(t, r), a{t, r) is not an even 
+function of t\ it is evident that 
+r) = \[a(t, r)-f--1, r)]. (86.4) 
+The Fourier transform of the function o(t, r) with respect to time and coordi¬ 
+nates, 
+a(co, k) = a(co, k) - | | ^(",,_k-r)o'(r, r) dt <Px (86.5) 
+t It is this function which is a directly observable quantity, for example, in inelastic scatter¬ 
+ing of neutrons in a liquid (see Problem). 
+360 [p.367] §86 
+Dyn amic Form Factor of a Liquid 
+361 
+is called the dynamic form factor of the medium. Since cr(t, r) is isotropic, the 
+form factor depends only on the magnitude of the wave vector. It follows from 
+(86.4) that the Fourier transform of &(t, r) is 
+6{(o, k) = \ [o"(co, k)+cr(-(D, k)]. (86.6) 
+The purely spatial correlation of the liquid density fluctuations is determined 
+by (86.1) with t = 0: a(r) = a(t = 0, r) = a(t = 0, r). This function is related 
+to v(r), defined in Part 1 (§116) and used in §83, by <r(r) = v(r)+6(r); the Fourier 
+transforms are such that o(k) = v(k)+1. The function a(k) or v(k) is called the 
+static form factor of the liquid. The functions o(co, k) and a(k) are related by the 
+integral formula 
+a(k) = J or(co,k)e"to'^-j = Jcr(ft),k)^. (86.1) 
+The Schrodinger (time-independent) density operator is given by the sum 
+/l(r) = £3(r-rfl), (86.8) 
+a 
+taken over all the particles in the medium; the coordinates ra of the particles 
+act as parameters; cf. (24.4). We shall need the components of the Fourier 
+expansion of this operator with respect to the coordinates: 
+/}k = J /}(r) e~ik r cPx 
+= £ (86.9) 
+a 
+The change to the time-dependent (Heisenberg) operator is made by the gen¬ 
+eral rule 
+/}(/, r) = exp (ifit jit) /}(r) exp ( - ifitjK),] (86.10) 
+where fi is the Hamiltonian of the system. This operator may be represented by 
+the expressions J (86.8) and (86.9) with ra replaced by ?fl(/), the Heisenberg oper¬ 
+ators of the particle coordinates. 
+According to the basic principles of statistical physics, the averaging (...) 
+can be variously interpreted, according to the thermodynamic variables in terms 
+of which the result is to be expressed. For example, if the function a is defined 
+for given total energy and number of particles in the system, the averaging is 
+taken with respect to a definite (mth) stationary state, i.e. from the appropriate 
+diagonal matrix element. For a homogeneous system (a liquid), the dependence 
+of the matrix elements of the operator bfi(t, r) on the time and coordinates is 
+given by 
+(m | 6n(t, r) | /) = (m | 6/7(0)|/> exp kw/.r)], (86.11) [p.368] 362 
+Hydrodynamic Fluctuations 
+which is exactly analogous to (8.4); the right-hand side contains the matrix ele¬ 
+ment of the Schrodinger operator bMr) taken at r = 0. Using this formula, we 
+write 
+ha{t, r) = £(m| brt(h, ri) | /> (/1 bfi(t2i r2) |m) 
+i 
+= £ \(m | bn(0) | /)|2 exp [t(co„;,f - kw/.r)]. 
+i 
+The Fourier transform of this function is 
+no(co, k) = (2tt)4 £ [ (m| bn(0)[ /) |2 b(o) - o)!m) $(k - k/w). (86.12) 
+i 
+The summation in these formulae is over all states of the system with a given 
+number Nm of particles, since the operator 5/} does not affect this number. 
+If, however, we wish to express the form factor in terms of the temperature 
+and chemical potential of the liquid, the expression (86.12) must also be aver¬ 
+aged over the Gibbs distribution: 
+w(0>. k) = (2*)* £ exp (\{m\ «
+
+[p.379] § Hydrodynamic Fluctuations in an Infinite Medium 373 
+Similarly we obtain formulae for the correlation functions of the random 
+stress tensor: 
+ri) Slm(t2, r2)) = 27'[?7(£//£fcm + + (£ ~ I <5,/tS/w] 5(ri - r2) b(tX - r2). 
+(88.18) 
+Formulae (88.16) - (88.18) in principle solve this problem of calculating the 
+hydrodynamic fluctuations in any particular case. The solution procedure is as 
+follows. Regarding sik and g as given functions of coordinates and time, we 
+formally solve the linearized equations (88.6)-(88.8) for bg, b\, ..., with the 
+necessary hydrodynamic boundary conditions. This gives the quantities ex¬ 
+pressed as linear functionals of slk and g. Correspondingly, any quantity 
+quadratic in bg, bv, ... is expressed in terms of quadratic functionals of sik 
+and g, and the mean value is calculated from (88.16) - (88.18); the auxiliary 
+quantities sik and g do not appear in the result. 
+We can also write out formulae (88.16) - (88.18) in Fourier components with 
+respect to frequency, and we shall do this in a form which generalizes them to 
+the case of quantum fluctuations. According to the general rules of the fluctua¬ 
+tion-dissipation theorem, such a generalization is obtained by including an 
+extra factor (hojlT) coth (fico/lT) (which is unity in the classical limit ftco <sc T). 
+In the presence of dispersion of the viscosity and thermal conductivity, the 
+quantities % £ and x are complex functions of the frequency; in the formulae 
+for the fluctuations, they are replaced by the real parts of those functions: 
+(4^S2))a> = 0, (88.19) 
+(#A = bikb(xx-r2) ficoT coth (fico/lT) re *(o>), (88.20) 
+(4Mm)« = ficob(r1 - r2) coth {hcojlT) X 
+X [(bnbkm+bimbki-\ bikbim) re r)(co) +6 ikbim re £(«)]. (88.21) 
+§ 89. Hydrodynamic fluctuations in an infinite medium 
+In this section we shall consider hydrodynamic fluctuations in an infinite 
+liquid at rest. This problem can, of course, be solved by the method given in 
+§88. Here, however, we shall use a different method, and thus exemplify an 
+alternative way of solving problems of hydrodynamic fluctuations. 
+This other way employs the general theory of quasi-stationary fluctuations 
+in its earlier stage, before the introduction of the random forces. The relevant 
+general formulae are as follows (see Part 1, §122). 
+Let 
+Xa= - '£tAabXb (89.1) 
+<? 
+be the macroscopic "equations of motion" for the set of quantities xa(t) which 
+describe the non-equilibrium state of the system (in equilibrium, all the ;ca = 0). 
+These equations are valid if the xa are large compared with their mean flue- [p.380] 374 
+Hydrodynamic Fluctuations 
+tuations (but also so small that the equations of motion may be linearized). 
+We can then say that similar equations are satisfied (when t > 0) by the corre¬ 
+lation functions of the fluctuations: 
+4 WO *<0)> = - £ Kb(xt(t) *c(0», t =- 0. (89.2) 
+at b 
+The initial condition for these is formed by the equations 
+[<*fl(0 *c(0)>]f = +o ={xaxc), (89.3) 
+where (xaxc) is the one-time correlation function, assumed known. In the range 
+t < 0, the correlation functions are continued by the rule 
+(xa(t) xc(0)) = ±(xa(-t) xc(0)), (89.4) 
+the upper sign relating to the case where xa and xc are both even or both odd 
+under time reversal, and the lower sign to the case where one is even and the 
+other odd. The solution of equation (89.2) with the condition (89.3) is obtained 
+by means of a one-sided Fourier transformation: multiplying the equation by 
+ei(Ut and integrating with respect to t from 0 to °° (with integration by parts on 
+the left-hand side), we obtain the equations 
+-iai(xaxc)l+) = - 5]2a6(x6xc)L+)+<xa.\-c) (89.5) 
+- b 
+for the quantities (functions of frequency) 
+(wp = f ("WO <*• (89-6) 
+o 
+The ordinary Fourier components of the correlation function are expressed in 
+terms of the quantities (89.6) by 
+(xaxb)co = J° eiu>'(xa(t) xb(0)) dt 
+= (Wi)£+)±[(^^)L+)]* 
+= {XaXbWHXbXafU (89.7) 
+where the signs ± correspond to those in (89.4). 
+Proceeding to the stated problem of fluctuations in a liquid at rest, we first 
+linearize the hydrodynamic equations (88.6)-(88.8) with o'ik and q from (88.9) 
+and (88.10) (without the final terms). Putting q = Qo+dg, v = <$v, ..., and 
+omitting the non-linear terms we find 
+^-+edivv = 0, (89.8) 
+q dv/dt = - v&P+f?Av-I-(£+-§*?) V div v, (89.9) 
+f == jr ^ <8910> [p.381] § 89 Hydrodynamic Fluctuations in an Infinite Medium 375 
+the suffix 0 to the constant quantities £0 etc. is omitted after the linearization. 
+In equations (89.8)-(89.10) it will be convenient to divide the velocity at once 
+into the potential ("longitudinal") and rotational ("transverse1 
+v(0 defined by 
+") parts v(/) and 
+'► 
++ 
+* 
+II 
+> 
+(89.11) 
+div v(f) = 0, curl = 0. 
+In (89.8) only the longitudinal velocity occurs: 
++ q div vW = 0, 
+ot 
+(89.12) 
+and (89.9) separates into the two equations 
+dvW 7] 
+ - - = -L av<'>, 
+dt q 
+(89.13) 
+dyd) I 4 \ 
+Q - Qf =~VdP+ (C+y v\ V diviKO. 
+(89.14) 
+The equation for the transverse velocities is independent of the other equa¬ 
+tions. Accordingly, we also have one equation for the correlation function of its 
+fluctuations: 
+r) 0))-vA(v?>(t, r) e4°(0, 0)> = 0, (89.15) 
+where v = r}/g is the kinematic viscosity. Taking the one-sided Fourier trans¬ 
+form, we obtain 
+ - ico(vj°(r) *4°(0))£+) - va(^°(r) ^°(0))£+) = (v(p(r) «4°(0)>, 
+where the right-hand side is the one-time correlation function; or, with the 
+Fourier components with respect to the coordinates, 
+(®f° *4°)«>k = (v(i° vk\Kvk2 - icd). 
+The one-time correlation function of the velocity fluctuations is given by (88.5); 
+changing to Fourier components and separating the transverse part, we have 
+(®f'> = (r/e)(5«-fc,fcft/*2). (89.16) 
+Substituting in the preceding formula, we have finally^ 
+(®f° = 2 re (tf> <#>)&> = 3L • (89.17) 
+For the other variables we have a system of coupled equations (89.10), 
+(89.12), (89.14). This becomes simpler, however, in the limiting cases of high 
+t It is easy to see that, on integrating (89.17) wit
+
+[p.393] CONTENTS 
+Preface ix 
+Notation xi 
+I. THE NORMAL FERMI LIQUID 
+§ 1. Elementary exitations in a quantum Fermi liquid 1 
+§ 2. Interaction of quasi-particles 8 
+§ 3. Magnetic susceptibility of a Fermi liquid 12 
+§ 4. Zero sound 13 
+§ 5. Spin waves in a Fermi liquid 19 
+§ 6. A degenerate almost ideal Fermi gas with repulsion between the particles 21 
+II. GREEN'S FUNCTIONS IN A FERMI SYSTEM AT T =* 0 
+§ 7. Green's functions in a macroscopic system 28 
+§ 8. Determination of the energy spectrum from the Green's function 33 
+§ 9. Green's function of an ideal Fermi gas 38 
+§ 10. Particle momentum distribution in a Fermi liquid 41 
+§ 11. Calculation of thermodynamic quantities from the Green's function 42 
+§ 12. IP operators in the interaction representation 43 
+§ 13. The diagram technique for Fermi systems 46 
+§ 14. The self-energy function 53 
+§ 15. The two-particle Green's function 56 
+§ 16. The relation of the vertex function of the quasi-particle scattering amplitude 60 
+§ 17. The vertex function for small momentum transfers 63 
+§ 18. The relation of the vertex function to the quasi-particle interaction function 68 
+§ 19. Identities for derivatives of the Green's function 71 
+§ 20. Derivation of the relation between the limiting momentum and the density 76 
+§ 21. Green's function of an almost ideal Fermi gas 78 
+III. SUPERFLUIDITY 
+§ 22. Elementary excitations in a quantum Bose liquid 85 
+§ 23. Superfluidity 88 
+§ 24. Phonons in a liquid 94 
+§ 25. A degenerate almost ideal Bose gas 98 
+§ 26. The wave function of the condensate 102 
+§ 27. Temperature dependence of the condensate density 106 
+§ 28. Behaviour of the superfluid density near the 2-point 109 
+§ 29. Quantized vortex filaments 111 
+§ 30. A vortex filament in an almost ideal Bose gas 117 
+§ 31. Green's functions in a Bose liquid 118 
+§ 32. The diagram technique for a Bose liquid 124 [p.394] vi Contents 
+§ 33. Self-energy functions 127 
+§ 34. Disintegration of quasi-particles 131 
+§ 35. Properties of the spectrum near its termination point 135 
+IV. GREEN'S FUNCTIONS AT NON-ZERO TEMPERATURES 
+§ 36. Green's functions at non-zero temperatures 141 
+§ 37. Temperature Green's functions 146 
+§ 38. The diagram technique for temperature Green's functions 149 
+V. SUPERCONDUCTIVITY 
+§ 39. A superfluid Fermi gas. The energy spectrum 153 
+§ 40. A superfluid Fermi gas. Thermodynamic properties 159 
+§ 41. Green's functions in a superfluid Fermi gas 164 
+§ 42. Temperature Green's functions in a superfluid Fermi gas 169 
+§ 43. Superconductivity in metals 171 
+§ 44. The superconductivity current 173 
+§ 45. The Ginzburg^Lahdau equations 178 
+§ 46. Surface tension at the boundary of superconducting and normal phases 184 
+§ 47. The two types of superconductor 190 
+§ 48. The structure of the mixed state 193 
+§ 49. Diamagnetic susceptibility above the transition point 201 
+§ 50. The Josephson effect 204 
+§ 51. Relation between current and magnetic field in a superconductor 208 
+§ 52. Depth of penetration of a magnetic field into a superconductor 214 
+§ 53. Superconducting alloys 216 
+§ 54. The Cooper effect for non-zero orbital angular momenta of the pair 219 
+VI. ELECTRONS IN THE CRYSTAL LATTICE 
+§ 55. An electron in a periodic field 223 
+§ 56. Effect of an external field on electron motion in a lattice 232 
+§ 57. Quasi-classical trajectories 236 
+§ 58. Quasi-classical energy levels 240 
+§ 59. The electron effective mass tensor in the lattice 243 
+§ 60. Symmetry of electron states in a lattice in a magnetic field 247 
+§61. Electronic spectra of normal metals 251 
+§ 62. Green's function of electrons in a metal 255 
+§ 63. The de Haas-van Alphen effect 259 
+§ 64. Electron-phonon interaction 266 
+§ 65. Effect of the electron-phonon interaction on the electron spectrum in a metal 270 
+§ 66. The electron spectrum of solid insulators 274 
+§ 67. Electrons and holes in semiconductors 277 
+§ 68. The electron spectrum near the degeneracy point 279 
+VII. MAGNETISM 
+§ 69. Equation of motion of the magnetic moment in a ferromagnet 
+§ 70. Magnons in a ferromagnet. The spectrum 
+§ 71. Magnons in a ferromagnet. Thermodynamic quantities 
+284 
+289 
+294 [p.395] Contents 
+vii 
+§ 72. The spin Hamiltonian 300 
+§ 73. Interaction of magnons 305 
+§ 74. Magnons in an antiferromagnet 310 
+VIII. ELECTROMAGNETIC FLUCTUATIONS 
+§ 75. Green's function of a photon in a medium 314 
+§ 76. Electromagnetic field fluctuations 319 
+§ 77. Electromagnetic fluctuations in an infinite medium 321 
+§ 78. Current fluctuations in linear circuits 326 
+§ 79. Temperature Green's function of a photon in a medium 327 
+§ 80. The van der Waals stress tensor 331 
+§ 81. Forces of molecular interaction between solid bodies. The general formula 338 
+§ 82. Forces of molecular interaction between solid bodies. Limiting cases 342 
+§ 83. Asymptotic behaviour of the correlation function in a liquid 347 
+§ 84. Operator expression for the permittivity 350 
+§ 85. A degenerate plasma 353 
+IX. HYDRODYNAMIC FLUCTUATIONS 
+§ 86. Dynamic form factor of a liquid 360 
+§ 87. Summation rules for the form factor 364 
+§ 88. Hydrodynamic fluctuations 369 
+§ 89. Hydrodynamic fluctuations in an infinite medium 373 
+§ 90. Operator expressions for the transport coefficients 378 
+§ 91. Dynamic form factor of a Fermi liquid 380 
+Index 385

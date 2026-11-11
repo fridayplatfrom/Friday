@@ -1,0 +1,56 @@
+{
+  "statusTrace": "friday-parallel-status-q2-passed.json",
+  "runs": [
+    {
+      "runId": "b2179fdc-540c-4372-8d58-d9590cfd90ee",
+      "cohort": "two-chatgpt",
+      "sourceVersion": "0.10.2",
+      "site": "chatgpt-web",
+      "output": "FRIDAY_Q2_CGB",
+      "start": "FRIDAY_Q2_CGB_START",
+      "end": "FRIDAY_Q2_CGB_END"
+    },
+    {
+      "runId": "4a9310bf-9573-4919-b5c2-628fd0408a8f",
+      "cohort": "queued",
+      "sourceVersion": "0.10.2",
+      "site": "gemini-web",
+      "output": "FRIDAY_Q2_GEM",
+      "start": "FRIDAY_Q2_GEM_START",
+      "end": "FRIDAY_Q2_GEM_END"
+    },
+    {
+      "runId": "c9d50939-8a04-4a50-ab75-38750807f375",
+      "cohort": "two-chatgpt",
+      "sourceVersion": "0.10.2",
+      "site": "chatgpt-web",
+      "output": "FRIDAY_Q2_CGA",
+      "start": "FRIDAY_Q2_CGA_START",
+      "end": "FRIDAY_Q2_CGA_END"
+    },
+    {
+      "runId": "1cde5f12-08d8-4db4-9636-5cb088f8221f",
+      "cohort": "mixed",
+      "sourceVersion": "0.10.2",
+      "site": "chatgpt-web",
+      "output": "FRIDAY_M2_CG",
+      "start": "FRIDAY_M2_CG_START",
+      "end": "FRIDAY_M2_CG_END"
+    },
+    {
+      "runId": "111e0b6b-2df6-4517-8a7a-719cc150d676",
+      "cohort": "mixed",
+      "sourceVersion": "0.10.2",
+      "site": "gemini-web",
+      "output": "FRIDAY_M2_GEM",
+      "start": "FRIDAY_M2_GEM_START",
+      "end": "FRIDAY_M2_GEM_END"
+    }
+  ],
+  "earlierFailures": [
+    "df7df73f-a2a0-456d-9717-444b881a5d7b",
+    "d2203795-1b3b-4f48-919b-c4ea369fe9ae",
+    "5f6b1258-f800-432f-9335-d24b88c5a4d6",
+    "35ebe3fa-d6b1-41cc-8a0f-dbf2f6befa48"
+  ]
+}

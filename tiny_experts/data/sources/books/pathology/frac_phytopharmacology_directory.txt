@@ -1,0 +1,30 @@
+Section 1: Principles of Fungicide Resistance Management.
+The Fungicide Resistance Action Committee (FRAC) classifies chemical and biological active ingredients by their target biochemical site of action. Repeated application of single-site fungicides (e.g. FRAC 11 QoIs or FRAC 3 DMIs) exerts intense selective pressure, driving selection of resistant mutant subpopulations. To prevent resistance development:
+1. Tank-mix or alternate single-site systemic fungicides with multi-site contact protectants (FRAC Group M).
+2. Never exceed 2 sequential applications of a single FRAC group before rotating to an unrelated target site.
+3. Strictly adhere to label Pre-Harvest Intervals (PHI) and Maximum Residue Limits (MRL).
+
+Section 2: The Comprehensive FRAC Code Classification:
+1. FRAC Group M (Multi-Site Contact Protectants - Low Resistance Risk):
+   - FRAC M01 (Inorganic Copper: copper octanoate, copper sulfate, copper hydroxide): Non-specific binding to fungal protein thiol groups. Bactericidal against Xanthomonas and Pseudomonas.
+   - FRAC M02 (Inorganic Elemental Sulfur: micronized wettable sulfur): Multi-site disruptor of mitochondrial respiratory electron transport. Highly active on Powdery Mildew (Podosphaera) and mites. Phytotoxic above 30°C.
+   - FRAC M03 (Dithiocarbamates: Mancozeb, Maneb): Inactivates sulfhydryl groups in enzymes. Excellent protectant tank-mix partner.
+   - FRAC M04 (Phthalimides: Captan, Folpet): Thiol-reacting enzyme inhibitor. Core apple scab protectant.
+2. FRAC Group 7 (SDHI - Succinate Dehydrogenase Inhibitors):
+   - Active Ingredients: Boscalid, fluxapyroxad, fluopyram, penthiopyrad.
+   - Biochemical Target: Complex II (succinate dehydrogenase) in the mitochondrial respiration chain. High-potency translaminar activity against Botrytis, Alternaria, and powdery mildews. Moderate to high resistance risk.
+3. FRAC Group 3 (DMI - Demethylation Inhibitors / Triazoles):
+   - Active Ingredients: Difenoconazole, myclobutanil, propiconazole, tebuconazole, prothioconazole.
+   - Biochemical Target: Sterol 14alpha-demethylase (encoded by CYP51), inhibiting ergosterol biosynthesis in true fungal membranes. Systemic curative and preventative activity. Resistance mechanism is multi-step (CYP51 overexpression or point mutations).
+4. FRAC Group 11 (QoI - Quinone Outside Inhibitors / Strobilurins):
+   - Active Ingredients: Azoxystrobin, pyraclostrobin, trifloxystrobin.
+   - Biochemical Target: Cytochrome b Qo site (Complex III) in mitochondrial respiration. High resistance risk driven by a single qualitative point mutation (G143A amino acid substitution). Never spray during Fusarium Head Blight (triggers DON toxin surge).
+5. FRAC Group 40 (CAA - Carboxylic Acid Amides):
+   - Active Ingredients: Mandipropamid, dimethomorph.
+   - Biochemical Target: Cellulose synthase (CesA3) in Oomycetes. Ineffective on true fungi; highly specific for Phytophthora and Downy Mildew.
+6. FRAC Group 44 (Microbial Biological Lipopeptides):
+   - Active Ingredients: Bacillus amyloliquefaciens (strain D747), Bacillus subtilis (strain QST 713).
+   - Biochemical Mode of Action: Synthesize cyclic lipopeptides (surfactins, iturins, and fengycins) that insert into fungal membranes and form pore channels, causing osmotic burst. Zero chemical residues, 0-day PHI, OMRI-listed organic.
+7. FRAC Group P / P01 (Host Plant Defense Inducers):
+   - Active Ingredients: Salicylic acid, acibenzolar-S-methyl (ASM), laminarin, potassium silicate.
+   - Biochemical Mode of Action: Primes plant innate Systemic Acquired Resistance (SAR) without direct antimicrobial activity.

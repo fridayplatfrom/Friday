@@ -1,0 +1,27 @@
+{
+  "expert_id": "physics_topics",
+  "heads": {
+    "topic": [
+      "classical_mechanics",
+      "electromagnetism",
+      "thermodynamics_stat_mech",
+      "quantum_mechanics",
+      "relativity_cosmology",
+      "fluid_plasma",
+      "solid_state",
+      "quantum_field_theory",
+      "optics_waves",
+      "quantum_information"
+    ]
+  },
+  "primary_head": "topic",
+  "vocab_size": 2500,
+  "hidden_dim": 160,
+  "representation_dim": 112,
+  "dropout": 0.1,
+  "epochs": 40,
+  "batch_size": 16,
+  "learning_rate": 0.003,
+  "patience": 10,
+  "min_score": 0.5
+}

@@ -1,0 +1,76 @@
+{
+  "architecture": {
+    "dropout": 0.05,
+    "feature_dim": 132,
+    "hidden_dim": 96,
+    "name": "multihead_mlp_v1",
+    "representation_dim": 64
+  },
+  "artifacts": {
+    "metrics.json": "6ccadd1380e9cebb7d371303db75d9b86c3654472afe2eee4801a975fd11eded",
+    "model.pt": "f62651237c284e82ae6a9e2fdd5b3864c77fe28457213558f2e6f9f502e4ff4f",
+    "splits.json": "6df10413070bff34e36ab0dfc3c1bfc04285784a143a24e75181ac5a72c682e8",
+    "vocab.json": "84b9207d54d0db256dc5f8521931154e7f727c82a58b4d2e5ca07d90c56add57"
+  },
+  "created_at": "2026-11-06T23:35:37.312637+00:00",
+  "dataset_sha256": "7db775c2382520fe24dbc71235db190b36e80b8c936ef87ff5bb73e93f562647",
+  "expert_id": "coding_topics",
+  "feature_version": "unicode_word_bigram_l2_v1",
+  "group_split_sha256": "862d78a073cb103fc04c3df3ee2f1f053ad71947221e7ddc5052d18a1a531dc1",
+  "heads": {
+    "topic": [
+      "algorithms_and_math_code",
+      "tax_and_spreadsheet_automation"
+    ]
+  },
+  "inference": {
+    "abstain_labels": {},
+    "min_score": 0.4,
+    "score_type": "uncalibrated_softmax",
+    "zero_feature_policy": "abstain"
+  },
+  "limitations": [
+    "Categorical text classifier; does not read books or generate explanations.",
+    "Softmax scores are uncalibrated and do not certify correctness.",
+    "Reviewed-data status records the input workflow, not production readiness."
+  ],
+  "primary_head": "topic",
+  "schema_version": 1,
+  "status": "reviewed_data",
+  "training": {
+    "augmentation": "none",
+    "best_epoch": 42,
+    "epochs_run": 43,
+    "reviewed_data_required": true,
+    "selection_metric": "validation_weighted_cross_entropy",
+    "source_separated": true,
+    "torch_version": "2.15.0+cpu"
+  },
+  "training_config": {
+    "abstain_labels": {},
+    "batch_size": 6,
+    "dropout": 0.05,
+    "epochs": 45,
+    "expert_id": "coding_topics",
+    "head_weights": {},
+    "heads": {
+      "topic": [
+        "algorithms_and_math_code",
+        "tax_and_spreadsheet_automation"
+      ]
+    },
+    "hidden_dim": 96,
+    "learning_rate": 0.008,
+    "min_delta": 0.0001,
+    "min_score": 0.4,
+    "patience": 8,
+    "primary_head": "topic",
+    "representation_dim": 64,
+    "seed": 42,
+    "test_fraction": 0.15,
+    "threads": 2,
+    "validation_fraction": 0.15,
+    "vocab_size": 2000,
+    "weight_decay": 0.0001
+  }
+}

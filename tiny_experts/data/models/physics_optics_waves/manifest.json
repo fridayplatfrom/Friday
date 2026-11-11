@@ -1,0 +1,106 @@
+{
+  "architecture": {
+    "dropout": 0.05,
+    "feature_dim": 285,
+    "hidden_dim": 144,
+    "name": "multihead_mlp_v1",
+    "representation_dim": 96
+  },
+  "artifacts": {
+    "metrics.json": "8d0bde4a6b9b07233a9200195f39c5f73a8d7fb0e2dd0c3a81caaeb89d71ff31",
+    "model.pt": "a8c909715452df139249676c900240fe922d64946fc9af48c554afd0a665332d",
+    "splits.json": "4fc65885fd9ae17380153e16967dc604fdf7b091704de3dfc67334395090ba9c",
+    "vocab.json": "89ab0867591047353c33b303b77d53f3a89300f887f4e0976bfdb8255b6379e7"
+  },
+  "created_at": "2026-11-07T08:13:22.859749+00:00",
+  "dataset_sha256": "ecd8ef2f14a9d95c26fec1313f74eb36add5ec87efd6e771ef1f9c6cbfc14624",
+  "expert_id": "physics_optics_waves",
+  "feature_version": "unicode_word_bigram_l2_v1",
+  "group_split_sha256": "07447b2989ae7d378bf388d9c9bcdb1586b638b70a0c875a4a12f02d7cfc61db",
+  "heads": {
+    "concept": [
+      "birefringence",
+      "brewster_angle",
+      "diffraction_grating",
+      "doppler_shift",
+      "focal_length",
+      "fresnel_equations",
+      "group_velocity",
+      "huygens_principle",
+      "interferometer",
+      "phase_velocity",
+      "snell_law",
+      "standing_wave"
+    ],
+    "regime": [
+      "dispersive_polarization_wave",
+      "geometric_ray_lens",
+      "physical_interference_diffraction"
+    ]
+  },
+  "inference": {
+    "abstain_labels": {},
+    "min_score": 0.4,
+    "score_type": "uncalibrated_softmax",
+    "zero_feature_policy": "abstain"
+  },
+  "limitations": [
+    "Categorical text classifier; does not read books or generate explanations.",
+    "Softmax scores are uncalibrated and do not certify correctness.",
+    "Reviewed-data status records the input workflow, not production readiness."
+  ],
+  "primary_head": "concept",
+  "schema_version": 1,
+  "status": "reviewed_data",
+  "training": {
+    "augmentation": "none",
+    "best_epoch": 31,
+    "epochs_run": 31,
+    "reviewed_data_required": true,
+    "selection_metric": "validation_weighted_cross_entropy",
+    "source_separated": true,
+    "torch_version": "2.15.0+cpu"
+  },
+  "training_config": {
+    "abstain_labels": {},
+    "batch_size": 8,
+    "dropout": 0.05,
+    "epochs": 45,
+    "expert_id": "physics_optics_waves",
+    "head_weights": {},
+    "heads": {
+      "concept": [
+        "birefringence",
+        "brewster_angle",
+        "diffraction_grating",
+        "doppler_shift",
+        "focal_length",
+        "fresnel_equations",
+        "group_velocity",
+        "huygens_principle",
+        "interferometer",
+        "phase_velocity",
+        "snell_law",
+        "standing_wave"
+      ],
+      "regime": [
+        "dispersive_polarization_wave",
+        "geometric_ray_lens",
+        "physical_interference_diffraction"
+      ]
+    },
+    "hidden_dim": 144,
+    "learning_rate": 0.006,
+    "min_delta": 0.0001,
+    "min_score": 0.4,
+    "patience": 8,
+    "primary_head": "concept",
+    "representation_dim": 96,
+    "seed": 42,
+    "test_fraction": 0.15,
+    "threads": 2,
+    "validation_fraction": 0.15,
+    "vocab_size": 3000,
+    "weight_decay": 0.0001
+  }
+}

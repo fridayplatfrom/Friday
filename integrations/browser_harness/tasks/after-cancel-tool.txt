@@ -1,0 +1,2 @@
+NEW independent recovery test after deliberate cancellation. Do not continue the cancelled text stream or any earlier task. Use native pwsh exactly once with command exactly: Write-Output 'FRIDAY_AFTER_CANCEL_READY'
+After its actual result, reply beginning FRIDAY_AFTER_CANCEL_START and ending FRIDAY_AFTER_CANCEL_END, include actual output and whether succeeded. No other tools, retry, file changes, attachment uploads, downloads or permission changes.

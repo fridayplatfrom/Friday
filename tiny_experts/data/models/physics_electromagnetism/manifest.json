@@ -1,0 +1,114 @@
+{
+  "architecture": {
+    "dropout": 0.05,
+    "feature_dim": 329,
+    "hidden_dim": 144,
+    "name": "multihead_mlp_v1",
+    "representation_dim": 96
+  },
+  "artifacts": {
+    "metrics.json": "1297ccd3b8c2ea5058735d110c9f4deb8d8c97aec99f5eebacc900a0813c7f9b",
+    "model.pt": "b32f7e9936b0688c625d427872f68d8aa2b48db0df0f2a069631f1f2d5b6492b",
+    "splits.json": "e873b9d3162d909dcca94c206d72ee9b5123f4aadb1453f879146232fa3eb503",
+    "vocab.json": "aa87862059ee0622ca1eb5fbc16fc70d13d889e4003a401d48c931b61c6b51e7"
+  },
+  "created_at": "2026-11-07T08:13:03.020889+00:00",
+  "dataset_sha256": "f1958f14f4582754a4c49058d6bb594d1d3cd4dbf2bc9c7cde9fc540ecc666d5",
+  "expert_id": "physics_electromagnetism",
+  "feature_version": "unicode_word_bigram_l2_v1",
+  "group_split_sha256": "c9e2eeb112840e941131c19d63ebb052682d268b4d9625a649461a2552c511a9",
+  "heads": {
+    "concept": [
+      "ampere_law",
+      "coulomb_gauge",
+      "dielectric_tensor",
+      "electric_field",
+      "electromagnetic_wave",
+      "faraday_law",
+      "gauss_law",
+      "larmor_formula",
+      "lorentz_force",
+      "lorenz_gauge",
+      "magnetic_flux",
+      "maxwell_equations",
+      "multipole_expansion",
+      "poynting_vector",
+      "vector_potential",
+      "waveguide"
+    ],
+    "regime": [
+      "electrodynamic_maxwell_wave",
+      "electrostatic_gauss",
+      "magnetostatic_ampere"
+    ]
+  },
+  "inference": {
+    "abstain_labels": {},
+    "min_score": 0.4,
+    "score_type": "uncalibrated_softmax",
+    "zero_feature_policy": "abstain"
+  },
+  "limitations": [
+    "Categorical text classifier; does not read books or generate explanations.",
+    "Softmax scores are uncalibrated and do not certify correctness.",
+    "Reviewed-data status records the input workflow, not production readiness."
+  ],
+  "primary_head": "concept",
+  "schema_version": 1,
+  "status": "reviewed_data",
+  "training": {
+    "augmentation": "none",
+    "best_epoch": 31,
+    "epochs_run": 31,
+    "reviewed_data_required": true,
+    "selection_metric": "validation_weighted_cross_entropy",
+    "source_separated": true,
+    "torch_version": "2.15.0+cpu"
+  },
+  "training_config": {
+    "abstain_labels": {},
+    "batch_size": 8,
+    "dropout": 0.05,
+    "epochs": 45,
+    "expert_id": "physics_electromagnetism",
+    "head_weights": {},
+    "heads": {
+      "concept": [
+        "ampere_law",
+        "coulomb_gauge",
+        "dielectric_tensor",
+        "electric_field",
+        "electromagnetic_wave",
+        "faraday_law",
+        "gauss_law",
+        "larmor_formula",
+        "lorentz_force",
+        "lorenz_gauge",
+        "magnetic_flux",
+        "maxwell_equations",
+        "multipole_expansion",
+        "poynting_vector",
+        "vector_potential",
+        "waveguide"
+      ],
+      "regime": [
+        "electrodynamic_maxwell_wave",
+        "electrostatic_gauss",
+        "magnetostatic_ampere"
+      ]
+    },
+    "hidden_dim": 144,
+    "learning_rate": 0.006,
+    "min_delta": 0.0001,
+    "min_score": 0.4,
+    "patience": 8,
+    "primary_head": "concept",
+    "representation_dim": 96,
+    "seed": 42,
+    "test_fraction": 0.15,
+    "threads": 2,
+    "validation_fraction": 0.15,
+    "vocab_size": 3000,
+    "weight_decay": 0.0001
+  }
+}

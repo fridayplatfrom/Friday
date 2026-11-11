@@ -1,0 +1,70 @@
+Section 1: Rice Bacterial Leaf Blight and Kresek Wilt Phase (Xanthomonas oryzae pv. oryzae).
+- Pathogen: Xanthomonas oryzae pv. oryzae (Ishiyama) Swings et al., Kingdom Bacterium, Phylum Pseudomonadota, Class Gammaproteobacteria.
+- Host: Oryza sativa (Paddy / Rice). Major disease in the Indo-Gangetic plains, Punjab, Tamil Nadu, and delta regions.
+- Diagnostic Symptoms & Biphasic Manifestations:
+  1. The Kresek (Early Seedling Wilt) Phase: Occurs 2 to 4 weeks after transplanting. Leaves turn pale green, roll upward along the midrib, and completely wilt and collapse, resembling stem borer dead-heart damage. Squeezing the base of an infected seedling cut underwater produces diagnostic milky bacterial ooze streaming from vascular bundles.
+  2. The Leaf Blight Phase: Initiates as water-soaked translucent yellowish stripes along the leaf margins near tips. Lesions enlarge with undulating or wavy margins, rapidly turning straw-yellow and then bleaching white with gray necrotic centers. Under morning humidity, amber-colored bacterial droplets exude on leaf blades, which dry into small crusted beads.
+- Epidemiology: Dispersed by rain splash, flood irrigation water, and typhoon winds (25°C to 34°C with high humidity); heavy nitrogen application drastically increases susceptibility.
+- Integrated Disease Management (TNAU / ICAR): Balanced NPK fertilization (avoid excess nitrogen, apply split doses with potash); seed treatment with streptocycline (100 ppm) plus copper oxychloride (0.2%); spray copper hydroxide (FRAC M01) or fresh cow-dung filtrate (20%); cultivate resistant cultivars possessing Xa21, xa13, and xa5 resistance genes (e.g. Improved Samba Mahsuri).
+
+Section 2: Rice Sheath Blight (Rhizoctonia solani).
+- Pathogen: Rhizoctonia solani Kuhn (teleomorph Thanatephorus cucumeris), Kingdom Fungus, Phylum Basidiomycota, Class Agaricomycetes.
+- Diagnostic Symptoms: Prominent oval or oblong grayish-green water-soaked lesions (10 to 30 mm) develop on leaf sheaths just above the water line. As lesions expand, they develop characteristic irregular snake-skin or banding patterns featuring grayish-white centers encircled by distinct dark purplish-brown margins. In severe attacks, lesions coalesce, encircling the culm and reaching flag leaves, causing lodging and unfilled chaffy panicles. The fungus produces abundant dark brown to black globose resting sclerotia on the surface of infected leaf sheaths.
+- Epidemiology: Sclerotia float on irrigation water and attach to rice tillers at water-soil interfaces. High humidity (>95%) and warm temperatures (28°C to 32°C) in dense planting promote infection cushions.
+- Management: Clean field sanitation and burning of stubble; spray validamycin (3% L at 2 ml/L) or azoxystrobin (FRAC 11) / trifloxystrobin + tebuconazole (Nativo) at early boot leaf stage; incorporate Trichoderma viride or Pseudomonas fluorescens in nursery beds.
+
+Section 3: Cotton Leaf Curl Virus (CLCuV) and Vector Transmission.
+- Pathogen: Cotton Leaf Curl Virus (CLCuV), Kingdom Virus, Family Geminiviridae, Genus Begomovirus. Single-stranded circular DNA (ssDNA) virus associated with DNA-beta satellite molecules.
+- Host: Gossypium hirsutum (American / Upland Cotton) across northern India (Punjab, Haryana, Rajasthan).
+- Diagnostic Symptoms: Upward or downward curling of leaf margins, severe thickening and swelling of main and secondary veins on the abaxial (underside) leaf surface. Diagnostic pathognomonic symptom: Enations—leaf-like cup-shaped outgrowth structures developing directly from the veins on the underside of leaves. Severe plant stunting, shortened internodes, and drastic reduction in boll formation.
+- Vector Transmission: Transmitted in a persistent-circulative manner by the silverleaf whitefly (Bemisia tabaci).
+- Management: Eradicate solanaceous and malvaceous weed reservoir hosts (Parthenium hysterophorus, Sida cordifolia, Abutilon indicum); plant CLCuV-resistant or tolerant Bt-cotton hybrids; manage whitefly vectors using neem-based formulations (azadirachtin 1500 ppm), diafenthiuron (50% WP), or flonicamid (50% WG); avoid growing alternate hosts near cotton fields.
+
+Section 4: Cotton Bacterial Blight and Black Arm Phase (Xanthomonas citri pv. malvacearum).
+- Pathogen: Xanthomonas citri pv. malvacearum (Smith), Kingdom Bacterium, Phylum Pseudomonadota.
+- Biphasic Disease Symptoms:
+  1. Angular Leaf Spot: Small (1-2 mm) water-soaked greasy spots on lower leaf surfaces, strictly bounded by leaf veinlets, giving an angular polygonal appearance. Spots turn reddish-brown to black with yellow halos.
+  2. Black Arm Phase: Infection spreads from petioles down into stems and branches, producing elongated, sunken, dark brown to jet-black girdling cankers ('black arm'). Stems become brittle and snap under wind or boll weight.
+  3. Boll Rot: Dark water-soaked round spots on developing green bolls, staining internal lint yellow and causing premature boll drop.
+- Management: Delinting acid-treated certified seeds with concentrated sulfuric acid (100 ml/kg seed for 2-3 min) to destroy surface and fuzz-borne bacteria; foliar spray of copper oxychloride (0.3%) mixed with streptocycline (100 ppm).
+
+Section 5: Chickpea Fusarium Wilt and Ascochyta Blight (Gram / Chana).
+1. Chickpea Vascular Wilt (Fusarium oxysporum f. sp. ciceri):
+   - Symptoms: Slicing the taproot and collar region longitudinally reveals distinctive dark brown to black discoloration of internal xylem vascular strands. Early infection causes sudden drooping of petioles and rachis ('drooping wilt') without foliar chlorosis; late infection exhibits gradual yellowing and drying from lower to upper leaves.
+   - Management: 3 to 4-year crop rotation with non-hosts (sorghum or wheat); pre-plant seed treatment with carbendazim (FRAC 1) + thiram (1:1 at 2 g/kg seed) or Trichoderma harzianum (4 g/kg); cultivate wilt-resistant chickpea varieties (e.g. JG-315, Avrodhi, Pusa-391).
+2. Chickpea Ascochyta Blight (Ascochyta rabiei):
+   - Symptoms: Circular to elongated lesions with dark brown margins and sunken centers on leaves, stems, and pods. Inside lesions, concentric rings of tiny black pinpoint fruiting bodies (pycnidia) are clearly visible under hand lens. Stems girdle, break, and collapse.
+   - Management: Seed treatment with tebuconazole (FRAC 3); spray mancozeb (FRAC M03) or chlorothalonil upon first symptom onset.
+
+Section 6: Pigeonpea Sterility Mosaic Disease (SMD / Arhar).
+- Pathogen: Pigeonpea Sterility Mosaic Virus (PSMV), an emaravirus with multi-segmented negative-sense RNA.
+- Economic Impact: Known as the 'green plague' of pigeonpea (Cajanus cajan) across India.
+- Diagnostic Symptoms: Severe reduction in leaf size, mild to severe chlorotic mosaic mottling, bushy stunted clustering of branches, and complete cessation of reproductive development—infected plants produce zero flowers or pods ('complete sterility'). The entire bush remains perpetually green and barren while healthy plants bear mature brown pods.
+- Vector Transmission: Transmitted in a semi-persistent manner by the microscopic, invisible eriophyid mite Aceria cajani. The mite disperses passively on wind currents.
+- Integrated Management: Spray acaricides/miticides (fenazaquin 10% EC at 2 ml/L or propargite 57% EC at 2.5 ml/L) during early vegetative growth to eliminate the eriophyid mite vector; rogue infected sterile bushes in early season; cultivate SMD-resistant cultivars (e.g. BSMR-736, BSMR-853, Asha / ICPL-87119).
+
+Section 7: Sugarcane Red Rot (Colletotrichum falcatum).
+- Pathogen: Colletotrichum falcatum Went (teleomorph Glomerella tucumanensis), Kingdom Fungus, Phylum Ascomycota.
+- Regional Importance: One of the oldest and most devastating sugarcane diseases in India (Uttar Pradesh, Bihar, Haryana, Tamil Nadu), responsible for the collapse of historic varieties like Co 312 and Co 1148.
+- Diagnostic Hallmark Symptoms:
+  1. Foliar Decline: The third or fourth leaf from the top spindle shows yellowing and withering along the margins, progressing inwards. The leaf midrib exhibits blood-red elongated lesions with dark margins and tiny black acervuli.
+  2. Cane Internal Symptoms: When an infected stalk is split longitudinally, the pith tissues exhibit a brilliant blood-red discoloration interspersed with diagnostic white transverse bands or cross-patches across the width of the stalk.
+  3. Pathognomonic Odor: Splitting an infected cane releases an intense, distinctive, sour alcoholic fermentation odor caused by the fungal conversion of sucrose into ethyl alcohol.
+  4. The cane shrivels, develops longitudinal wrinkles, and the rind darkens.
+- Management: Use certified disease-free setts from approved seed nurseries; hot water treatment of seed setts at 52°C for 30 minutes (or moist hot air at 54°C for 2.5 hours); sett dipping in carbendazim (0.1%); avoid ratoon cropping in infected fields; plant red-rot resistant varieties (e.g. Co 0238, Co 86032).
+
+Section 8: Citrus Greening / Huanglongbing (Candidatus Liberibacter asiaticus).
+- Pathogen: Candidatus Liberibacter asiaticus, a fastidious, uncultured, Gram-negative, phloem-limited alpha-proteobacterium.
+- Vector: Asian citrus psyllid (Diaphorina citri). Major problem in Nagpur mandarin, Mosambi sweet orange, and Acid lime orchards across India.
+- Diagnostic Symptoms:
+  1. Foliar Blotchy Mottle: Asymmetric, non-uniform, patchy yellow and green mottling across leaf blades ('blotchy mottle'). Unlike nutritional zinc or iron deficiency (which is strictly symmetrical on both sides of the leaf midrib), citrus greening chlorosis is entirely asymmetrical.
+  2. Fruit Deformation: Fruits remain small, severely lopsided and asymmetric; greening persists at the stylar end while fruit shoulder turns pale orange ('inverted coloration'). Sliced fruit reveals dark, stained, aborted brown seeds and extremely bitter, salty-sour juice with high acidity.
+- Management: Rigorous vector suppression targeting Diaphorina citri psyllid nymphs and adults with dimethoate (30% EC) or imidacloprid (17.8% SL); remove severely affected declining trees; plant certified disease-free budwood produced under insect-proof screenhouses.
+
+Section 9: Mango Malformation (Fusarium mangiferae).
+- Pathogen: Fusarium mangiferae (Britz, Steenkamp & Marasas), Kingdom Fungus, Phylum Ascomycota.
+- Forms of Disease:
+  1. Vegetative Malformation: Occurs in nursery seedlings and young flush. Terminal buds produce a proliferation of tightly bunched, small, thickened, scale-like leaves, giving a 'bunchy top' appearance.
+  2. Floral Malformation: The flowering panicle develops into a massively hypertrophied, hyper-branched, compact, dense, cauliflower-like fleshy cluster. The flowers are sterile, predominantly staminate (male), with thick green fleshy pedicels. Malformed panicles set zero fruit, turn black, and hang dried on the tree for months.
+- Associated Vector: The mango bud mite (Aceria mangiferae) carries fungal spores into vegetative and floral bud bracts.
+- Management: Mechanical pruning of malformed panicles along with 15 to 20 cm of supporting healthy shoot; spray NAA (naphthalene acetic acid) at 200 ppm in October to delay panicle emergence; spray carbendazim (0.1%) or captan during bud swelling; apply wettable sulfur (0.2%) to suppress bud mites.

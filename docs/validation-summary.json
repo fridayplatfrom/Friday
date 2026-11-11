@@ -1,0 +1,30 @@
+{
+  "validation_date": "2026-11-05",
+  "regression_tests_passed": 99,
+  "command": "python -m pytest -q",
+  "smoke_training": {
+    "pathology": {
+      "epochs": 2,
+      "train": 115,
+      "validation": 25,
+      "test": 25,
+      "status": "experimental"
+    },
+    "router": {
+      "epochs": 1,
+      "train": 50,
+      "validation": 10,
+      "test": 10,
+      "status": "experimental"
+    },
+    "leaf": {
+      "epochs": 1,
+      "train": 87,
+      "validation": 19,
+      "test": 19,
+      "status": "experimental"
+    }
+  },
+  "expert_accuracy_established": false,
+  "note": "Software and training execution validation only. Legacy demo data are not independent field benchmarks."
+}

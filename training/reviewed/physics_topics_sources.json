@@ -1,0 +1,23 @@
+{
+  "physics_source_train": {
+    "title": "ExpertOS 35-Book Physics Curriculum Corpus (train)",
+    "sha256": "7049858afa9344cbe5c5cfb9ca919d2230a13be5b607ba75df1794ddfce1eb62",
+    "license": "Open Educational Physics Textbooks (Cambridge Tong / OpenStax / Crowell / MotionMountain)",
+    "review_status": "reviewed",
+    "reviewer": "director-5loop-curator"
+  },
+  "physics_source_validation": {
+    "title": "ExpertOS 35-Book Physics Curriculum Corpus (validation)",
+    "sha256": "3b36a1d33fbcb649d7c129b2fcde74fd2bf1933b133370074af4ebce2c9e3dbf",
+    "license": "Open Educational Physics Textbooks (Cambridge Tong / OpenStax / Crowell / MotionMountain)",
+    "review_status": "reviewed",
+    "reviewer": "director-5loop-curator"
+  },
+  "physics_source_test": {
+    "title": "ExpertOS 35-Book Physics Curriculum Corpus (test)",
+    "sha256": "16ab5a39bdb6e2e8a5e3a5a485a8949e8eb7b0478f83d2e1c4dd20797a944936",
+    "license": "Open Educational Physics Textbooks (Cambridge Tong / OpenStax / Crowell / MotionMountain)",
+    "review_status": "reviewed",
+    "reviewer": "director-5loop-curator"
+  }
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FRIDAY — Studio Workspace (UI Prototype)</title>
+<style>
+:root{--bg:#181613;--panel:#211e1a;--panel2:#282420;--line:#322d27;--ink:#ece4d4;--mut:#a99e8c;--dim:#7d7466;--lime:#c6e94b;--lime2:#9ec32e;--err:#e2705a;--rad:10px;--rail:46px;--side:210px;--insp:300px;--f:-apple-system,'Segoe UI',Inter,Roboto,sans-serif;--m:.18s cubic-bezier(.2,.7,.3,1)}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font:14px/1.55 var(--f);display:flex;overflow:hidden}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--lime);outline-offset:2px;border-radius:6px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+/* rail */
+.rail{width:var(--rail);background:var(--panel);border-right:1px solid var(--line);display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 0;flex:none}
+.rail .logo{width:30px;height:30px;border-radius:9px;background:var(--lime);color:#141310;font-weight:800;display:grid;place-items:center;font-size:15px;margin-bottom:8px}
+.rail button{width:34px;height:34px;border-radius:9px;color:var(--mut);display:grid;place-items:center}
+.rail button:hover{background:var(--panel2);color:var(--ink)}
+.rail button.on{color:var(--lime);background:var(--panel2)}
+.rail .sp{flex:1}
+/* side */
+.side{width:var(--side);background:var(--panel);border-right:1px solid var(--line);display:flex;flex-direction:column;overflow:hidden;flex:none}
+.side h4{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);padding:16px 14px 6px}
+.ws{padding:7px 12px;margin:1px 8px;border-radius:8px;color:var(--mut);font-weight:600;font-size:13px;text-align:left}
+.ws small{display:block;font-weight:400;color:var(--dim);font-size:11px}
+.ws:hover{background:var(--panel2)}
+.ws.on{background:var(--panel2);color:var(--ink)}
+.ws.on b{color:var(--lime)}
+.cv{padding:6px 12px;margin:1px 8px;border-radius:8px;color:var(--mut);text-align:left;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cv:hover{background:var(--panel2);color:var(--ink)}
+.cv.on{background:var(--panel2);color:var(--ink);box-shadow:inset 2px 0 0 var(--lime)}
+/* main */
+.main{flex:1;display:flex;flex-direction:column;min-width:0}
+.bar{height:52px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px;padding:0 14px;background:var(--panel);flex:none}
+.mbtn{display:flex;align-items:center;gap:8px;padding:6px 10px;border-radius:9px;border:1px solid var(--line);background:var(--panel2)}
+.mbtn:hover{border-color:var(--dim)}
+.mbtn svg,.cv svg{flex:none}
+.pop{position:absolute;top:56px;left:60px;background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:6px;min-width:200px;box-shadow:0 14px 40px #000a;display:none;z-index:20}
+.pop.open{display:block}
+.pop button{display:flex;align-items:center;gap:9px;width:100%;padding:8px 10px;border-radius:8px;color:var(--mut);text-align:left}
+.pop button:hover{background:var(--bg);color:var(--ink)}
+.pop button.on{color:var(--lime)}
+.tabs{margin-left:auto;display:flex;background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:3px}
+.tabs button{padding:4px 14px;border-radius:7px;color:var(--mut)}
+.tabs button.on{background:var(--lime);color:#161510;font-weight:700}
+.badge{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#161510;background:var(--lime);padding:3px 8px;border-radius:99px;font-weight:800}
+/* chat */
+.chat{flex:1;overflow-y:auto;padding:22px clamp(14px,6vw,70px)}
+.day{text-align:center;color:var(--dim);font-size:11px;margin:6px 0 18px}
+.msg{display:flex;gap:12px;margin-bottom:22px;max-width:860px}
+.ava{width:30px;height:30px;border-radius:9px;flex:none;display:grid;place-items:center;font-size:12px;font-weight:800}
+.ava.a{background:var(--lime);color:#161510}
+.ava.u{background:var(--panel2);border:1px solid var(--line);color:var(--mut)}
+.bub{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:11px 14px;min-width:0;flex:1}
+.msg.u .bub{background:var(--panel2)}
+.bub p{margin:6px 0}
+.bub p:first-child{margin-top:0}
+.meta{font-size:11px;color:var(--dim);margin-top:8px;display:flex;gap:12px;align-items:center}
+.pill{font-size:10px;padding:2px 8px;border-radius:99px;border:1px solid var(--line);color:var(--mut);text-transform:uppercase;letter-spacing:.08em}
+.pill.ok{color:var(--lime);border-color:#c6e94b44}
+.pill.warn{color:var(--err);border-color:#e2705a44}
+/* tool rows */
+details.tool{border:1px solid var(--line);border-radius:10px;margin:8px 0;background:var(--panel)}
+details.tool summary{display:flex;align-items:center;gap:9px;padding:9px 12px;cursor:pointer;list-style:none;font-size:13px}
+details.tool summary::-webkit-details-marker{display:none}
+details.tool summary .car{margin-left:auto;color:var(--dim);transition:transform var(--m)}
+details.tool[open] summary .car{transform:rotate(90deg)}
+details.tool .body{border-top:1px solid var(--line);padding:10px 12px;font-family:ui-monospace,Consolas,monospace;font-size:12px;color:var(--mut);white-space:pre-wrap}
+.spin{width:14px;height:14px;border-radius:50%;border:2px solid var(--line);border-top-color:var(--lime);animation:sp 1s linear infinite;flex:none}
+@keyframes sp{to{transform:rotate(360deg)}}
+/* plan */
+.plan{margin:8px 0;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--panel)}
+.plan li{list-style:none;display:flex;gap:9px;padding:4px 0;font-size:13px;color:var(--mut)}
+.plan li i{color:var(--lime);font-style:normal}
+.plan li.todo i{color:var(--dim)}
+/* cards */
+.card{border:1px solid #c6e94b33;border-radius:12px;padding:12px 14px;margin:10px 0;background:linear-gradient(180deg,#c6e94b0d,transparent)}
+.card h5{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--lime);margin-bottom:6px;display:flex;gap:8px;align-items:center}
+.card .row{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.btn{padding:6px 14px;border-radius:8px;border:1px solid var(--line);background:var(--panel2);font-weight:600}
+.btn:hover{border-color:var(--dim)}
+.btn.go{background:var(--lime);border-color:var(--lime);color:#161510}
+.btn.deny{border-color:#e2705a55;color:var(--err)}
+.btn:disabled{opacity:.55;cursor:default}
+.opt{display:flex;gap:10px;align-items:flex-start;width:100%;text-align:left;border:1px solid var(--line);border-radius:10px;padding:9px 11px;margin-top:8px;background:var(--panel)}
+.opt:hover{border-color:var(--dim)}
+.opt b{display:block;font-size:13px}
+.opt small{color:var(--dim)}
+.opt.sel{border-color:var(--lime);background:#c6e94b12}
+.opt .dot{width:16px;height:16px;border-radius:50%;border:2px solid var(--dim);flex:none;margin-top:2px}
+.opt.sel .dot{border-color:var(--lime);background:radial-gradient(circle,var(--lime) 0 42%,transparent 46%)}
+/* attachment */
+.att{display:flex;gap:11px;align-items:center;border:1px solid var(--line);border-radius:10px;padding:8px 11px;margin:8px 0;background:var(--panel);max-width:340px}
+.att .th{width:38px;height:38px;border-radius:8px;background:var(--panel2);display:grid;place-items:center;flex:none}
+.att b{font-size:13px;display:block}
+.att small{color:var(--dim)}
+/* shot */
+.shot{border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:10px 0;max-width:520px}
+.shot figcaption{padding:7px 11px;font-size:11px;color:var(--dim);border-top:1px solid var(--line);background:var(--panel)}
+.rec{display:flex;gap:9px;align-items:center;border:1px solid #e2705a33;background:#e2705a0d;border-radius:10px;padding:9px 12px;margin:8px 0;font-size:12px;color:var(--mut);max-width:520px}
+.rec .dot{width:8px;height:8px;border-radius:50%;background:var(--err);flex:none}
+.rec b{color:var(--err)}
+/* composer */
+.comp{border-top:1px solid var(--line);padding:12px clamp(14px,6vw,70px);background:var(--panel);flex:none}
+.cin{display:flex;gap:10px;align-items:flex-end;max-width:860px;margin:0 auto;background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:10px 12px}
+.cin textarea{flex:1;background:none;border:0;resize:none;color:var(--ink);font:inherit;min-height:38px;max-height:120px}
+.cin textarea:focus{outline:none}
+.snd{width:36px;height:36px;border-radius:10px;background:var(--lime);color:#161510;display:grid;place-items:center;flex:none}
+.cin:hover,.cin:focus-within{border-color:var(--dim)}
+.hint{text-align:center;font-size:11px;color:var(--dim);margin-top:7px}
+/* inspector */
+.insp{width:var(--insp);border-left:1px solid var(--line);background:var(--panel);display:flex;flex-direction:column;overflow:hidden;flex:none;transition:width var(--m)}
+.insp.closed{width:38px}
+.insp.closed .ibody,.insp.closed .ihd h3{display:none}
+.ihd{display:flex;align-items:center;gap:8px;padding:10px;border-bottom:1px solid var(--line);height:52px;flex:none}
+.ihd h3{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);flex:1;white-space:nowrap;overflow:hidden}
+.cbt{width:26px;height:26px;border-radius:7px;color:var(--dim);display:grid;place-items:center}
+.cbt:hover{background:var(--panel2);color:var(--ink)}
+.ibody{overflow-y:auto;padding:12px}
+.frow{display:flex;gap:9px;align-items:center;padding:7px 9px;border-radius:8px;font-size:13px;color:var(--mut);width:100%;text-align:left}
+.frow:hover{background:var(--panel2);color:var(--ink)}
+.frow.on{background:var(--panel2);color:var(--ink);box-shadow:inset 2px 0 0 var(--lime)}
+.prev{margin-top:12px;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--bg)}
+.prev .pv{height:130px;display:grid;place-items:center;background:repeating-linear-gradient(45deg,#1e1b17 0 12px,#211e1a 12px 24px)}
+.prev .pd{padding:9px 11px;font-size:12px;color:var(--dim)}
+.prev .pd b{color:var(--ink);font-size:13px}
+/* responsive */
+@media (max-width:1120px){.insp{position:absolute;right:0;top:52px;bottom:0;height:auto;box-shadow:-20px 0 50px #0008;z-index:15}}
+@media (max-width:880px){.side{display:none}.chat,.comp{padding-left:14px;padding-right:14px}}
+.act{display:none;font-size:13px;color:var(--mut);max-width:640px}
+.act li{list-style:none;padding:7px 2px;border-bottom:1px solid var(--line);display:flex;gap:10px}
+.act time{color:var(--dim);flex:none;font-size:11px;margin-top:2px}
+body.act .act{display:block}body.act .chatzone{display:none}
+</style>
+</head>
+<body>
+<!-- rail -->
+<nav class="rail" aria-label="Primary">
+<div class="logo" title="FRIDAY">F</div>
+<button class="on" aria-label="Chat"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a8 8 0 0 1-8 8H5l-2 2V12a8 8 0 0 1 8-8h2a8 8 0 0 1 8 8z"/></svg></button>
+<button aria-label="Files"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></button>
+<button aria-label="Tasks"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6h11M9 12h11M9 18h11M4 5l1 1 2-2M4 11l1 1 2-2M4 17l1 1 2-2"/></svg></button>
+<span class="sp"></span>
+<button aria-label="Settings"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.1-1.2l2-1.5-2-3.4-2.3 1a7 7 0 0 0-2-1.2L14 3h-4l-.5 2.7a7 7 0 0 0-2 1.2l-2.3-1-2 3.4 2 1.5A7 7 0 0 0 5 12a7 7 0 0 0 .1 1.2l-2 1.5 2 3.4 2.3-1a7 7 0 0 0 2 1.2L10 21h4l.5-2.7a7 7 0 0 0 2-1.2l2.3 1 2-3.4-2-1.5A7 7 0 0 0 19 12z"/></svg></button>
+</nav>
+<!-- side -->
+<aside class="side">
+<h4>Workspaces</h4>
+<button class="ws on"><b>Meridian Studio</b><small>Brand & web</small></button>
+<button class="ws">Nebula Lab<small>Research notes</small></button>
+<button class="ws">Ember Ops<small>Launch checklist</small></button>
+<h4>Recent</h4>
+<button class="cv on">Onboarding email draft</button>
+<button class="cv">Q3 launch summary</button>
+<button class="cv">Moodboard color audit</button>
+<button class="cv">Release notes tone pass</button>
+<button class="cv">Studio handbook outline</button>
+</aside>
+<!-- main -->
+<section class="main">
+<header class="bar">
+<button class="mbtn" id="modelBtn" aria-haspopup="true" aria-expanded="false">
+<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2"><path d="M12 2l2.5 6.5L21 11l-6.5 2.5L12 20l-2.5-6.5L3 11l6.5-2.5z"/></svg>
+<span id="modelName">Kimi</span>
+<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+</button>
+<div class="pop" id="modelPop" role="menu" aria-label="Choose model"></div>
+<div class="tabs" role="tablist">
+<button class="on" id="tabChat" role="tab" aria-selected="true">Chat</button>
+<button id="tabAct" role="tab" aria-selected="false">Activity</button>
+</div>
+<span class="badge">UI prototype</span>
+</header>
+<div class="chat chatzone" id="chat">
+<div class="day">Today · Meridian Studio · fictional fixtures</div>
+<!-- user -->
+<article class="msg u"><div class="ava u">AK</div><div class="bub">
+<p>Can you turn the launch-notes doc into a short studio update email, and check the new hero screenshot for contrast issues?</p>
+<div class="att"><span class="th"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--mut)" stroke-width="1.8"><path d="M6 2h9l5 5v15H6z"/><path d="M15 2v5h5"/></svg></span><span><b>launch-notes-q3.docx</b><small>24 KB · attached</small></span></div>
+</div></article>
+<!-- assistant -->
+<article class="msg"><div class="ava a">F</div><div class="bub">
+<p>On it. I sketched a three-step plan, pulled the doc, and queued a screenshot review — all shown below. Nothing has left this workspace.</p>
+<ul class="plan" aria-label="Task plan">
+<li><i>✓</i> Read launch-notes-q3.docx</li>
+<li><i>✓</i> Draft studio update email</li>
+<li class="todo"><i>○</i> Review hero screenshot for contrast</li>
+</ul>
+<details class="tool" open><summary><span class="spin" aria-hidden="true"></span><b>read_file</b> launch-notes-q3.docx <span class="pill">running</span><span class="car" aria-hidden="true">▸</span></summary><div class="body">Parsing document…
+- Section 1: Launch summary (412 words)
+- Section 2: Timeline notes (8 items)
+- Section 3: Open questions (3)</div></details>
+<details class="tool"><summary><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2"><path d="M4 12l5 5L20 7"/></svg><b>draft_email</b> studio-update-em… <span class="pill ok">done</span><span class="car" aria-hidden="true">▸</span></summary><div class="body">Subject: Studio update — Q3 launch notes, cleaned up
+Hi team, here’s the friendly version of the Q3 notes… (fixture preview)</div></details>
+<figure class="shot">
+<svg viewBox="0 0 520 150" width="100%" role="img" aria-label="Fixture screenshot preview of the hero section">
+<rect width="520" height="150" fill="#211e1a"/><rect x="20" y="24" width="180" height="12" rx="6" fill="#ece4d4"/><rect x="20" y="46" width="250" height="8" rx="4" fill="#7d7466"/><rect x="20" y="62" width="210" height="8" rx="4" fill="#7d7466"/><rect x="20" y="90" width="86" height="26" rx="8" fill="#c6e94b"/><rect x="350" y="20" width="150" height="110" rx="10" fill="#2c2823"/><circle cx="425" cy="62" r="26" fill="#c6e94b" opacity=".55"/>
+</svg>
+<figcaption>hero-concept.png · fixture screenshot</figcaption>
+</figure>
+<div class="rec"><span class="dot" aria-hidden="true"></span><span><b>Recovery:</b> screenshot review paused — one render timed out. I can retry it without losing draft progress.</span></div>
+<div class="card" id="appr">
+<h5><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4m0 4h.01M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg> Approval requested</h5>
+<p style="font-size:13px;color:var(--mut)">Send the drafted email to <b style="color:var(--ink)">studio@example.com</b>? Simulated control — no message will be sent.</p>
+<div class="row">
+<button class="btn go" data-a="allow">Allow</button>
+<button class="btn deny" data-a="deny">Deny</button>
+<button class="btn" data-a="edit">Edit draft</button>
+</div>
+<p class="meta" id="apprState" aria-live="polite"></p>
+</div>
+<div class="card" id="qcard" style="border-color:var(--line);background:var(--panel)">
+<h5 style="color:var(--mut)"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.4 2.3c-.8.3-.9 1-.9 1.7M12 17h.01"/></svg> Quick question</h5>
+<p style="font-size:13px;color:var(--mut)">Which tone should the studio update use?</p>
+<button class="opt" data-q="0"><span class="dot" aria-hidden="true"></span><span><b>Warm & plainspoken (Recommended)</b><small>Short sentences, friendly close.</small></span></button>
+<button class="opt" data-q="1"><span class="dot" aria-hidden="true"></span><span><b>Formal briefing</b><small>Headed sections, sign-off block.</small></span></button>
+<button class="opt" data-q="2"><span class="dot" aria-hidden="true"></span><span><b>Playful studio voice</b><small>Looser, with a light aside or two.</small></span></button>
+<p class="meta" id="qState" aria-live="polite"></p>
+</div>
+<p class="meta">FRIDAY · Kimi · plan 2/3 · fictional task</p>
+</div></article>
+</div>
+<!-- activity tab -->
+<ul class="chat act" aria-label="Activity log">
+<li><time>02:14</time>Plan created: 3 steps for launch email</li>
+<li><time>02:15</time>read_file · launch-notes-q3.docx · done</li>
+<li><time>02:16</time>draft_email · saved draft fixture</li>
+<li><time>02:17</time>screenshot review · paused (render timeout)</li>
+<li><time>02:18</time>Approval requested · send email to studio@example.com</li>
+</ul>
+<!-- composer -->
+<form class="comp" id="cform">
+<div class="cin">
+<textarea id="txt" rows="1" placeholder="Message FRIDAY… (local demo only)" aria-label="Message FRIDAY"></textarea>
+<button type="button" class="btn" style="padding:6px 10px" title="Attach a file (simulated)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12.5l-8.2 8.2a6 6 0 0 1-8.5-8.5l8.9-8.9a4 4 0 0 1 5.7 5.7l-8.6 8.6a2 2 0 0 1-2.9-2.9l7.8-7.8"/></svg></button>
+<button class="snd" type="submit" title="Send (simulated)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></svg></button>
+</div>
+<p class="hint">Demo prototype — messages stay in this page. Press Esc to close popovers.</p>
+</form>
+</section>
+<!-- inspector -->
+<aside class="insp" id="insp" aria-label="File inspector">
+<div class="ihd">
+<button class="cbt" id="inspT" aria-label="Collapse inspector" aria-expanded="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button>
+<h3>Inspector</h3>
+</div>
+<div class="ibody">
+<button class="frow on"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2h9l5 5v15H6z"/></svg>studio-update-em…</button>
+<button class="frow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 15l-5-5-9 9"/></svg>hero-concept.png</button>
+<button class="frow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2h9l5 5v15H6z"/></svg>launch-notes-q3.d…</button>
+<div class="prev">
+<div class="pv"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--dim)" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></div>
+<div class="pd"><b>studio-update-em…</b><br>Fixture preview · 1.2 KB<br>Word count: 168 · Tone: warm</div>
+</div>
+</div>
+</aside>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const models=[["ChatGPT","#10a37f"],["Gemini","#1b72e8"],["Kimi","#c6e94b"],["DeepSeek","#4d6bfe"]];
+const pop=$("#modelPop");
+models.forEach(([n,c])=>{const b=document.createElement("button");b.role="menuitem";b.className=n==="Kimi"?"on":"";b.innerHTML=`<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="${c}" stroke-width="2.2"><circle cx="12" cy="12" r="7"/></svg>${n}`;b.onclick=()=>{$("#modelName").textContent=n;$$("#modelPop button").forEach(x=>x.classList.remove("on"));b.classList.add("on");closePop()};pop.appendChild(b)});
+function closePop(){pop.classList.remove("open");$("#modelBtn").setAttribute("aria-expanded","false")}
+$("#modelBtn").onclick=e=>{e.stopPropagation();pop.classList.toggle("open");$("#modelBtn").setAttribute("aria-expanded",pop.classList.contains("open"))};
+document.addEventListener("click",e=>{if(!pop.contains(e.target))closePop()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closePop()});
+$$(".cv").forEach(c=>c.onclick=()=>{$$(".cv").forEach(x=>x.classList.remove("on"));c.classList.add("on")});
+$$(".ws").forEach(c=>c.onclick=()=>{$$(".ws").forEach(x=>x.classList.remove("on"));c.classList.add("on")});
+const tc=$("#tabChat"),ta=$("#tabAct");
+function tab(t){tc.classList.toggle("on",!t);ta.classList.toggle("on",t);tc.setAttribute("aria-selected",!t);ta.setAttribute("aria-selected",t);document.body.classList.toggle("act",t)}
+tc.onclick=()=>tab(false);ta.onclick=()=>tab(true);
+const insp=$("#insp");
+$("#inspT").onclick=()=>{const c=insp.classList.toggle("closed");$("#inspT").setAttribute("aria-expanded",!c)};
+const st=$("#apprState");
+$$("#appr [data-a]").forEach(b=>b.onclick=()=>{const a=b.dataset.a;$$("#appr [data-a]").forEach(x=>x.disabled=true);$("#appr").style.borderColor=a==="allow"?"#c6e94b66":"#e2705a66";st.textContent=a==="allow"?"Allowed — visual state only; nothing was sent.":a==="deny"?"Denied — the draft stays local.":"Opening draft for edits (simulated).";st.style.color=a==="deny"?"var(--err)":"var(--lime)"});
+$$("#qcard .opt").forEach(o=>o.onclick=()=>{$$("#qcard .opt").forEach(x=>x.classList.remove("sel"));o.classList.add("sel");$("#qState").textContent="Answer noted: "+o.querySelector("b").textContent.split(" (")[0]});
+const chat=$("#chat"),form=$("#cform"),txt=$("#txt");
+form.addEventListener("submit",e=>{e.preventDefault();const v=txt.value.trim();if(!v)return;
+const u=document.createElement("article");u.className="msg u";u.innerHTML=`<div class="ava u">AK</div><div class="bub"><p></p></div>`;u.querySelector("p").textContent=v;chat.appendChild(u);
+const a=document.createElement("article");a.className="msg";a.innerHTML=`<div class="ava a">F</div><div class="bub"><p style="color:var(--mut)">Noted. This is a local demo reply — the prototype records nothing and sends nothing. Try the tool rows, approval card, question card, tabs, model picker, or collapse the inspector.</p><p class="meta">FRIDAY · <span class="mname"></span> · demo</p></div>`;a.querySelector(".mname").textContent=$("#modelName").textContent;chat.appendChild(a);
+txt.value="";chat.scrollTop=chat.scrollHeight});
+</script>
+</body>
+</html>

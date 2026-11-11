@@ -1,0 +1,28 @@
+name: Source Studio acceptance
+on:
+  pull_request:
+    paths:
+      - 'tiny_experts/source_studio/**'
+      - 'tests/studio/**'
+      - 'pyproject.toml'
+      - '.github/workflows/source-studio.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'tiny_experts/source_studio/**'
+      - 'tests/studio/**'
+      - 'pyproject.toml'
+      - '.github/workflows/source-studio.yml'
+jobs:
+  studio-tests:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install -e '.[studio,documents,dev]'
+      - run: python -m pytest -q tests/studio
+      - run: python -m compileall -q tiny_experts/source_studio

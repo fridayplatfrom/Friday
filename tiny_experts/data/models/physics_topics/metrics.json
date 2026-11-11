@@ -1,0 +1,2763 @@
+{
+  "best_epoch": 9,
+  "elapsed_seconds": 11.79053900000008,
+  "epochs_run": 24,
+  "history": [
+    {
+      "epoch": 1,
+      "training_weighted_cross_entropy": 2.918620930223986,
+      "validation_weighted_cross_entropy": 0.4331144392490387
+    },
+    {
+      "epoch": 2,
+      "training_weighted_cross_entropy": 0.19076737953152303,
+      "validation_weighted_cross_entropy": 0.264586478471756
+    },
+    {
+      "epoch": 3,
+      "training_weighted_cross_entropy": 0.06379629670375796,
+      "validation_weighted_cross_entropy": 0.2546495497226715
+    },
+    {
+      "epoch": 4,
+      "training_weighted_cross_entropy": 0.04382460663795854,
+      "validation_weighted_cross_entropy": 0.16907998919487
+    },
+    {
+      "epoch": 5,
+      "training_weighted_cross_entropy": 0.04312814960938989,
+      "validation_weighted_cross_entropy": 0.1858169138431549
+    },
+    {
+      "epoch": 6,
+      "training_weighted_cross_entropy": 0.026220178976505276,
+      "validation_weighted_cross_entropy": 0.15687188506126404
+    },
+    {
+      "epoch": 7,
+      "training_weighted_cross_entropy": 0.01804464368128676,
+      "validation_weighted_cross_entropy": 0.15295176208019257
+    },
+    {
+      "epoch": 8,
+      "training_weighted_cross_entropy": 0.0268595035059132,
+      "validation_weighted_cross_entropy": 0.17974598705768585
+    },
+    {
+      "epoch": 9,
+      "training_weighted_cross_entropy": 0.016433613881666417,
+      "validation_weighted_cross_entropy": 0.13694517314434052
+    },
+    {
+      "epoch": 10,
+      "training_weighted_cross_entropy": 0.017565441511757072,
+      "validation_weighted_cross_entropy": 0.14940863847732544
+    },
+    {
+      "epoch": 11,
+      "training_weighted_cross_entropy": 0.012968230642186676,
+      "validation_weighted_cross_entropy": 0.15363557636737823
+    },
+    {
+      "epoch": 12,
+      "training_weighted_cross_entropy": 0.01925022953483381,
+      "validation_weighted_cross_entropy": 0.14502835273742676
+    },
+    {
+      "epoch": 13,
+      "training_weighted_cross_entropy": 0.012329560419667356,
+      "validation_weighted_cross_entropy": 0.1480698585510254
+    },
+    {
+      "epoch": 14,
+      "training_weighted_cross_entropy": 0.022425419664447617,
+      "validation_weighted_cross_entropy": 0.18100368976593018
+    },
+    {
+      "epoch": 15,
+      "training_weighted_cross_entropy": 0.018238221145821944,
+      "validation_weighted_cross_entropy": 0.1527961641550064
+    },
+    {
+      "epoch": 16,
+      "training_weighted_cross_entropy": 0.009985193932111528,
+      "validation_weighted_cross_entropy": 0.1464461386203766
+    },
+    {
+      "epoch": 17,
+      "training_weighted_cross_entropy": 0.014657861677034372,
+      "validation_weighted_cross_entropy": 0.15049205720424652
+    },
+    {
+      "epoch": 18,
+      "training_weighted_cross_entropy": 0.013172242929335456,
+      "validation_weighted_cross_entropy": 0.15559469163417816
+    },
+    {
+      "epoch": 19,
+      "training_weighted_cross_entropy": 0.014015653920419802,
+      "validation_weighted_cross_entropy": 0.14952364563941956
+    },
+    {
+      "epoch": 20,
+      "training_weighted_cross_entropy": 0.00969074858678954,
+      "validation_weighted_cross_entropy": 0.15760856866836548
+    },
+    {
+      "epoch": 21,
+      "training_weighted_cross_entropy": 0.01077430251943864,
+      "validation_weighted_cross_entropy": 0.15243257582187653
+    },
+    {
+      "epoch": 22,
+      "training_weighted_cross_entropy": 0.007568944580411281,
+      "validation_weighted_cross_entropy": 0.16099993884563446
+    },
+    {
+      "epoch": 23,
+      "training_weighted_cross_entropy": 0.0080471625669494,
+      "validation_weighted_cross_entropy": 0.1630365252494812
+    },
+    {
+      "epoch": 24,
+      "training_weighted_cross_entropy": 0.005908920510875666,
+      "validation_weighted_cross_entropy": 0.1703088879585266
+    }
+  ],
+  "interpretation": "Held-out source/case evaluation; inspect class coverage and sample counts.",
+  "parameter_count": 894051,
+  "splits": {
+    "test": {
+      "count": 250,
+      "heads": {
+        "solver_mode": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 250,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "conceptual_theory",
+            "single_formula",
+            "multihop_chain",
+            "atwood_pulley_system",
+            "inclined_plane_mechanics",
+            "projectile_2d_kinematics",
+            "two_body_collision_1d",
+            "multi_resistor_circuit_network",
+            "calorimetry_thermal_equilibrium",
+            "thin_lens_gaussian_optics",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              178,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              22,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              12,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              10,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              4,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "conceptual_theory",
+            "single_formula",
+            "multihop_chain",
+            "atwood_pulley_system",
+            "inclined_plane_mechanics",
+            "projectile_2d_kinematics",
+            "two_body_collision_1d",
+            "multi_resistor_circuit_network",
+            "calorimetry_thermal_equilibrium",
+            "thin_lens_gaussian_optics"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.00033059119596146047,
+          "per_class": {
+            "atwood_pulley_system": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 12
+            },
+            "calorimetry_thermal_equilibrium": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "conceptual_theory": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 178
+            },
+            "inclined_plane_mechanics": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            },
+            "multi_resistor_circuit_network": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "multihop_chain": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "projectile_2d_kinematics": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "single_formula": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 22
+            },
+            "thin_lens_gaussian_optics": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "two_body_collision_1d": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "target_observable": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 250,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "concept_explanation",
+            "F",
+            "m",
+            "a",
+            "v",
+            "T_tension",
+            "E_k",
+            "x_disp",
+            "lam",
+            "r_s",
+            "eta_carnot",
+            "T_f",
+            "R_eq",
+            "I_elec",
+            "d_i",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              178,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              12,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              4,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              4,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "concept_explanation",
+            "F",
+            "m",
+            "a",
+            "v",
+            "T_tension",
+            "E_k",
+            "x_disp",
+            "lam",
+            "r_s",
+            "eta_carnot",
+            "T_f",
+            "R_eq",
+            "I_elec",
+            "d_i"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.00041011901339516044,
+          "per_class": {
+            "E_k": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "F": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "I_elec": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "R_eq": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "T_f": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "T_tension": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 6
+            },
+            "a": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 12
+            },
+            "concept_explanation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 178
+            },
+            "d_i": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "eta_carnot": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "lam": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "m": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "r_s": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 6
+            },
+            "v": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "x_disp": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "topic": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 250,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "classical_mechanics",
+            "electromagnetism",
+            "thermodynamics_stat_mech",
+            "quantum_mechanics",
+            "relativity_cosmology",
+            "fluid_plasma",
+            "solid_state",
+            "quantum_field_theory",
+            "optics_waves",
+            "quantum_information",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              61,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              28,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              28,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              24,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              25,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              18,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              16,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              16,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              20,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              14,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "classical_mechanics",
+            "electromagnetism",
+            "thermodynamics_stat_mech",
+            "quantum_mechanics",
+            "relativity_cosmology",
+            "fluid_plasma",
+            "solid_state",
+            "quantum_field_theory",
+            "optics_waves",
+            "quantum_information"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0006313216872513294,
+          "per_class": {
+            "classical_mechanics": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 61
+            },
+            "electromagnetism": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 28
+            },
+            "fluid_plasma": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 18
+            },
+            "optics_waves": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 20
+            },
+            "quantum_field_theory": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 16
+            },
+            "quantum_information": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 14
+            },
+            "quantum_mechanics": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 24
+            },
+            "relativity_cosmology": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 25
+            },
+            "solid_state": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 16
+            },
+            "thermodynamics_stat_mech": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 28
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.0024671563878655434,
+      "zero_feature_inputs": 0
+    },
+    "train": {
+      "count": 1244,
+      "heads": {
+        "solver_mode": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 1244,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "conceptual_theory",
+            "single_formula",
+            "multihop_chain",
+            "atwood_pulley_system",
+            "inclined_plane_mechanics",
+            "projectile_2d_kinematics",
+            "two_body_collision_1d",
+            "multi_resistor_circuit_network",
+            "calorimetry_thermal_equilibrium",
+            "thin_lens_gaussian_optics",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              956,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              88,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              16,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              48,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              40,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              16,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              16,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              32,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              16,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              16,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "conceptual_theory",
+            "single_formula",
+            "multihop_chain",
+            "atwood_pulley_system",
+            "inclined_plane_mechanics",
+            "projectile_2d_kinematics",
+            "two_body_collision_1d",
+            "multi_resistor_circuit_network",
+            "calorimetry_thermal_equilibrium",
+            "thin_lens_gaussian_optics"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.00030138433794490993,
+          "per_class": {
+            "atwood_pulley_system": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 48
+            },
+            "calorimetry_thermal_equilibrium": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 16
+            },
+            "conceptual_theory": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 956
+            },
+            "inclined_plane_mechanics": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 40
+            },
+            "multi_resistor_circuit_network": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 32
+            },
+            "multihop_chain": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 16
+            },
+            "projectile_2d_kinematics": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 16
+            },
+            "single_formula": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 88
+            },
+            "thin_lens_gaussian_optics": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 16
+            },
+            "two_body_collision_1d": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 16
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "target_observable": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 1244,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "concept_explanation",
+            "F",
+            "m",
+            "a",
+            "v",
+            "T_tension",
+            "E_k",
+            "x_disp",
+            "lam",
+            "r_s",
+            "eta_carnot",
+            "T_f",
+            "R_eq",
+            "I_elec",
+            "d_i",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              956,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              16,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              16,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              48,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              16,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              24,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              16,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              32,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              16,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              24,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              16,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              16,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              16,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              16,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              16,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "concept_explanation",
+            "F",
+            "m",
+            "a",
+            "v",
+            "T_tension",
+            "E_k",
+            "x_disp",
+            "lam",
+            "r_s",
+            "eta_carnot",
+            "T_f",
+            "R_eq",
+            "I_elec",
+            "d_i"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.00038910581497475505,
+          "per_class": {
+            "E_k": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 16
+            },
+            "F": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 16
+            },
+            "I_elec": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 16
+            },
+            "R_eq": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 16
+            },
+            "T_f": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 16
+            },
+            "T_tension": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 24
+            },
+            "a": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 48
+            },
+            "concept_explanation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 956
+            },
+            "d_i": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 16
+            },
+            "eta_carnot": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 16
+            },
+            "lam": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 16
+            },
+            "m": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 16
+            },
+            "r_s": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 24
+            },
+            "v": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 16
+            },
+            "x_disp": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 32
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "topic": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 1244,
+          "accuracy": 0.9967845678329468,
+          "accuracy_when_accepted": 0.9967845678329468,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "classical_mechanics",
+            "electromagnetism",
+            "thermodynamics_stat_mech",
+            "quantum_mechanics",
+            "relativity_cosmology",
+            "fluid_plasma",
+            "solid_state",
+            "quantum_field_theory",
+            "optics_waves",
+            "quantum_information",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              274,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              142,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              143,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              127,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              130,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              88,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              84,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              88,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              101,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              63,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "classical_mechanics",
+            "electromagnetism",
+            "thermodynamics_stat_mech",
+            "quantum_mechanics",
+            "relativity_cosmology",
+            "fluid_plasma",
+            "solid_state",
+            "quantum_field_theory",
+            "optics_waves",
+            "quantum_information"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 0.9971629106244017,
+          "negative_log_likelihood": 0.005131490062922239,
+          "per_class": {
+            "classical_mechanics": {
+              "f1": 0.9945553539019965,
+              "precision": 0.9891696750902527,
+              "recall": 1.0,
+              "support": 274
+            },
+            "electromagnetism": {
+              "f1": 0.9964912280701755,
+              "precision": 1.0,
+              "recall": 0.993006993006993,
+              "support": 143
+            },
+            "fluid_plasma": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 88
+            },
+            "optics_waves": {
+              "f1": 0.9805825242718447,
+              "precision": 0.9901960784313726,
+              "recall": 0.9711538461538461,
+              "support": 104
+            },
+            "quantum_field_theory": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 88
+            },
+            "quantum_information": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 63
+            },
+            "quantum_mechanics": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 127
+            },
+            "relativity_cosmology": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 130
+            },
+            "solid_state": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 84
+            },
+            "thermodynamics_stat_mech": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 143
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.013657313771545887,
+      "zero_feature_inputs": 0
+    },
+    "validation": {
+      "count": 302,
+      "heads": {
+        "solver_mode": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 302,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "conceptual_theory",
+            "single_formula",
+            "multihop_chain",
+            "atwood_pulley_system",
+            "inclined_plane_mechanics",
+            "projectile_2d_kinematics",
+            "two_body_collision_1d",
+            "multi_resistor_circuit_network",
+            "calorimetry_thermal_equilibrium",
+            "thin_lens_gaussian_optics",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              230,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              22,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              12,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              10,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              4,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "conceptual_theory",
+            "single_formula",
+            "multihop_chain",
+            "atwood_pulley_system",
+            "inclined_plane_mechanics",
+            "projectile_2d_kinematics",
+            "two_body_collision_1d",
+            "multi_resistor_circuit_network",
+            "calorimetry_thermal_equilibrium",
+            "thin_lens_gaussian_optics"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0003024075704161078,
+          "per_class": {
+            "atwood_pulley_system": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 12
+            },
+            "calorimetry_thermal_equilibrium": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "conceptual_theory": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 230
+            },
+            "inclined_plane_mechanics": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            },
+            "multi_resistor_circuit_network": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "multihop_chain": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "projectile_2d_kinematics": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "single_formula": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 22
+            },
+            "thin_lens_gaussian_optics": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "two_body_collision_1d": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "target_observable": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 302,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "concept_explanation",
+            "F",
+            "m",
+            "a",
+            "v",
+            "T_tension",
+            "E_k",
+            "x_disp",
+            "lam",
+            "r_s",
+            "eta_carnot",
+            "T_f",
+            "R_eq",
+            "I_elec",
+            "d_i",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              230,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              12,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              4,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              4,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "concept_explanation",
+            "F",
+            "m",
+            "a",
+            "v",
+            "T_tension",
+            "E_k",
+            "x_disp",
+            "lam",
+            "r_s",
+            "eta_carnot",
+            "T_f",
+            "R_eq",
+            "I_elec",
+            "d_i"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.00037835334660485387,
+          "per_class": {
+            "E_k": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "F": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "I_elec": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "R_eq": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "T_f": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "T_tension": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 6
+            },
+            "a": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 12
+            },
+            "concept_explanation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 230
+            },
+            "d_i": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "eta_carnot": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "lam": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "m": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "r_s": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 6
+            },
+            "v": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 4
+            },
+            "x_disp": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "topic": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 301,
+          "accuracy": 0.9867549538612366,
+          "accuracy_when_accepted": 0.9867109656333923,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "classical_mechanics",
+            "electromagnetism",
+            "thermodynamics_stat_mech",
+            "quantum_mechanics",
+            "relativity_cosmology",
+            "fluid_plasma",
+            "solid_state",
+            "quantum_field_theory",
+            "optics_waves",
+            "quantum_information",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              66,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              35,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              35,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              30,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              31,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              20,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              19,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              21,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              26,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              15,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "classical_mechanics",
+            "electromagnetism",
+            "thermodynamics_stat_mech",
+            "quantum_mechanics",
+            "relativity_cosmology",
+            "fluid_plasma",
+            "solid_state",
+            "quantum_field_theory",
+            "optics_waves",
+            "quantum_information"
+          ],
+          "coverage_at_threshold": 0.9966887417218543,
+          "macro_f1": 0.9876204257017003,
+          "negative_log_likelihood": 0.05445130541920662,
+          "per_class": {
+            "classical_mechanics": {
+              "f1": 0.9777777777777777,
+              "precision": 0.9705882352941176,
+              "recall": 0.9850746268656716,
+              "support": 67
+            },
+            "electromagnetism": {
+              "f1": 0.9859154929577464,
+              "precision": 0.9722222222222222,
+              "recall": 1.0,
+              "support": 35
+            },
+            "fluid_plasma": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 20
+            },
+            "optics_waves": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 26
+            },
+            "quantum_field_theory": {
+              "f1": 0.9545454545454546,
+              "precision": 0.9545454545454546,
+              "recall": 0.9545454545454546,
+              "support": 22
+            },
+            "quantum_information": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 15
+            },
+            "quantum_mechanics": {
+              "f1": 0.9836065573770492,
+              "precision": 1.0,
+              "recall": 0.967741935483871,
+              "support": 31
+            },
+            "relativity_cosmology": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 31
+            },
+            "solid_state": {
+              "f1": 0.9743589743589743,
+              "precision": 1.0,
+              "recall": 0.95,
+              "support": 20
+            },
+            "thermodynamics_stat_mech": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 35
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.13694517314434052,
+      "zero_feature_inputs": 0
+    }
+  },
+  "unsupported_training_labels": {}
+}

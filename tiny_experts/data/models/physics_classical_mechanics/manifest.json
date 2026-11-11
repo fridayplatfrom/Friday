@@ -1,0 +1,112 @@
+{
+  "architecture": {
+    "dropout": 0.05,
+    "feature_dim": 331,
+    "hidden_dim": 144,
+    "name": "multihead_mlp_v1",
+    "representation_dim": 96
+  },
+  "artifacts": {
+    "metrics.json": "6525753b94eb8fa5a5662baa3e5f77bf849486ffd2c7e628b1dcb255eea3d19b",
+    "model.pt": "7a365c4266b08879b2988f54231ac1eb7d03a73da1e7bfbc6d18914cb8f0688f",
+    "splits.json": "526a08dd3aad25c3dd49fa598cbbb2d7cf5952f5d2f4a8f9fbf60102901d4cea",
+    "vocab.json": "cab83ca4a14837f9a5ddbe1343dff1a05c24ae250cb4563249c5140a807625fe"
+  },
+  "created_at": "2026-11-07T08:12:59.827261+00:00",
+  "dataset_sha256": "63cfd4e0f88bd06961eb9e5bcd1c1169fb6f945d0f07358a2e637f41b0e055ac",
+  "expert_id": "physics_classical_mechanics",
+  "feature_version": "unicode_word_bigram_l2_v1",
+  "group_split_sha256": "0ab93f8268aa88140f39d274a8a2c9ebbc4ae5bd63f4579ca1de1c9ee7704613",
+  "heads": {
+    "concept": [
+      "action_principle",
+      "angular_momentum",
+      "canonical_transformation",
+      "coriolis_force",
+      "euler-lagrange_equation",
+      "generalized_coordinates",
+      "hamilton-jacobi_equation",
+      "hamiltonian",
+      "kepler_orbit",
+      "lagrangian",
+      "moment_of_inertia",
+      "noether_theorem",
+      "phase_space",
+      "poisson_bracket",
+      "symplectic"
+    ],
+    "regime": [
+      "hamiltonian_symplectic",
+      "lagrangian_variational",
+      "rigid_body_rotational"
+    ]
+  },
+  "inference": {
+    "abstain_labels": {},
+    "min_score": 0.4,
+    "score_type": "uncalibrated_softmax",
+    "zero_feature_policy": "abstain"
+  },
+  "limitations": [
+    "Categorical text classifier; does not read books or generate explanations.",
+    "Softmax scores are uncalibrated and do not certify correctness.",
+    "Reviewed-data status records the input workflow, not production readiness."
+  ],
+  "primary_head": "concept",
+  "schema_version": 1,
+  "status": "reviewed_data",
+  "training": {
+    "augmentation": "none",
+    "best_epoch": 31,
+    "epochs_run": 31,
+    "reviewed_data_required": true,
+    "selection_metric": "validation_weighted_cross_entropy",
+    "source_separated": true,
+    "torch_version": "2.15.0+cpu"
+  },
+  "training_config": {
+    "abstain_labels": {},
+    "batch_size": 8,
+    "dropout": 0.05,
+    "epochs": 45,
+    "expert_id": "physics_classical_mechanics",
+    "head_weights": {},
+    "heads": {
+      "concept": [
+        "action_principle",
+        "angular_momentum",
+        "canonical_transformation",
+        "coriolis_force",
+        "euler-lagrange_equation",
+        "generalized_coordinates",
+        "hamilton-jacobi_equation",
+        "hamiltonian",
+        "kepler_orbit",
+        "lagrangian",
+        "moment_of_inertia",
+        "noether_theorem",
+        "phase_space",
+        "poisson_bracket",
+        "symplectic"
+      ],
+      "regime": [
+        "hamiltonian_symplectic",
+        "lagrangian_variational",
+        "rigid_body_rotational"
+      ]
+    },
+    "hidden_dim": 144,
+    "learning_rate": 0.006,
+    "min_delta": 0.0001,
+    "min_score": 0.4,
+    "patience": 8,
+    "primary_head": "concept",
+    "representation_dim": 96,
+    "seed": 42,
+    "test_fraction": 0.15,
+    "threads": 2,
+    "validation_fraction": 0.15,
+    "vocab_size": 3000,
+    "weight_decay": 0.0001
+  }
+}

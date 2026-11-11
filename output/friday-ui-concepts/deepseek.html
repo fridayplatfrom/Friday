@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FRIDAY — AI Agent Workspace</title>
+<style>
+:root{
+  --bg:#0b1017;--surface:#111925;--surface2:#16202e;--surface3:#1c2838;
+  --line:#233246;--line2:#2c3f57;
+  --text:#e8eef6;--muted:#8b9db4;--dim:#61748d;
+  --accent:#38d9c0;--accent-dim:#1a4f48;--accent-soft:rgba(56,217,192,.12);
+  --warn:#e8b44c;--warn-soft:rgba(232,180,76,.12);
+  --danger:#e06c75;--radius:10px;--radius-sm:7px;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:14px;line-height:1.5;overflow:hidden}
+button{font-family:inherit;font-size:inherit;color:inherit;background:none;border:none;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+::-webkit-scrollbar{width:8px;height:8px}
+::-webkit-scrollbar-thumb{background:var(--line2);border-radius:4px}
+::-webkit-scrollbar-track{background:transparent}
+
+.app{display:grid;grid-template-columns:248px 1fr;height:100vh;height:100dvh}
+
+/* ---------- Sidebar ---------- */
+.sidebar{background:var(--surface);border-right:1px solid var(--line);display:flex;flex-direction:column;min-height:0}
+.brand{display:flex;align-items:center;gap:10px;padding:18px 16px 14px}
+.brand-mark{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#1f8f81);display:grid;place-items:center;flex:none}
+.brand-mark svg{width:17px;height:17px;stroke:#04211d}
+.brand-name{font-weight:650;letter-spacing:.12em;font-size:13px}
+.brand-sub{font-size:10px;color:var(--dim);letter-spacing:.14em;text-transform:uppercase}
+.sb-scroll{overflow-y:auto;padding:4px 10px 10px;flex:1;min-height:0}
+.sb-label{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--dim);padding:14px 8px 6px;font-weight:600}
+.ws-item,.conv-item{display:flex;align-items:center;gap:9px;width:100%;padding:7px 8px;border-radius:var(--radius-sm);color:var(--muted);text-align:left;transition:background .15s,color .15s}
+.ws-item:hover,.conv-item:hover{background:var(--surface2);color:var(--text)}
+.ws-item.active{background:var(--accent-soft);color:var(--text)}
+.ws-dot{width:7px;height:7px;border-radius:2px;flex:none;background:var(--accent)}
+.ws-dot.b{background:#7aa2f7}.ws-dot.c{background:#bb9af7}.ws-dot.d{background:var(--warn)}
+.ws-item span,.conv-item span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px}
+.conv-item{font-size:12.5px;padding:6px 8px 6px 24px}
+.conv-item.active{color:var(--text);background:var(--surface2)}
+.conv-item time{margin-left:auto;font-size:10px;color:var(--dim);flex:none}
+.sb-foot{border-top:1px solid var(--line);padding:10px 12px;display:flex;align-items:center;gap:9px}
+.avatar{width:26px;height:26px;border-radius:50%;background:var(--surface3);border:1px solid var(--line2);display:grid;place-items:center;font-size:11px;font-weight:600;color:var(--accent);flex:none}
+.sb-foot small{color:var(--muted);font-size:11.5px;display:block;line-height:1.3}
+.sb-foot .u-name{color:var(--text);font-size:12.5px;font-weight:550}
+.proto-chip{margin-left:auto;font-size:9px;letter-spacing:.09em;text-transform:uppercase;color:var(--dim);border:1px solid var(--line2);border-radius:20px;padding:2px 7px;white-space:nowrap}
+
+/* ---------- Main ---------- */
+.main{display:flex;flex-direction:column;min-width:0;min-height:0;background:var(--bg)}
+.toolbar{display:flex;align-items:center;gap:8px;padding:10px 18px;border-bottom:1px solid var(--line);background:rgba(11,16,23,.85);backdrop-filter:blur(6px);flex-wrap:wrap}
+.tb-title{font-size:13.5px;font-weight:600;margin-right:auto;display:flex;align-items:center;gap:8px;min-width:0}
+.tb-title .crumb{color:var(--dim);font-weight:400;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.status-pill{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:var(--accent);background:var(--accent-soft);border:1px solid var(--accent-dim);border-radius:20px;padding:2.5px 9px;white-space:nowrap}
+.status-pill .pulse{width:6px;height:6px;border-radius:50%;background:var(--accent);animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:6px 11px;border-radius:var(--radius-sm);border:1px solid var(--line2);color:var(--muted);font-size:12.5px;background:var(--surface);transition:background .15s,color .15s,border-color .15s;white-space:nowrap}
+.btn:hover{background:var(--surface2);color:var(--text)}
+.btn svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.8;flex:none}
+.btn.accent{background:var(--accent-soft);border-color:var(--accent-dim);color:var(--accent)}
+.btn.icon{padding:6px}
+.btn[aria-pressed="true"]{background:var(--surface3);color:var(--text);border-color:var(--line2)}
+
+.tabs{display:flex;gap:2px;border-bottom:1px solid var(--line);padding:0 18px;background:var(--bg)}
+.tab{padding:9px 12px;font-size:12.5px;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px;transition:color .15s,border-color .15s;display:flex;align-items:center;gap:6px}
+.tab:hover{color:var(--text)}
+.tab[aria-selected="true"]{color:var(--text);border-bottom-color:var(--accent);font-weight:550}
+.tab .badge{font-size:10px;background:var(--surface3);border-radius:20px;padding:1px 6px;color:var(--muted)}
+.tab .badge.warn{background:var(--warn-soft);color:var(--warn)}
+
+.body{flex:1;display:grid;grid-template-columns:1fr;min-height:0}
+.body.with-inspector{grid-template-columns:minmax(0,1fr) 336px}
+.chatcol{display:flex;flex-direction:column;min-width:0;min-height:0}
+
+/* ---------- Chat ---------- */
+.chat-scroll{flex:1;overflow-y:auto;padding:26px 22px 8px;min-height:0;scroll-behavior:smooth}
+.chat-inner{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
+.msg{display:flex;gap:12px;max-width:100%}
+.msg .av{width:28px;height:28px;border-radius:7px;flex:none;display:grid;place-items:center;font-size:10.5px;font-weight:700;letter-spacing:.03em}
+.msg.user .av{background:var(--surface3);border:1px solid var(--line2);color:var(--muted)}
+.msg.agent .av{background:linear-gradient(135deg,var(--accent),#1f8f81);color:#04211d}
+.msg-body{min-width:0;flex:1}
+.msg-head{display:flex;align-items:baseline;gap:8px;margin-bottom:5px;flex-wrap:wrap}
+.msg-head strong{font-size:12.5px;font-weight:600}
+.msg-head time{font-size:10.5px;color:var(--dim)}
+.msg-text{color:var(--text);font-size:14px;line-height:1.62;overflow-wrap:anywhere}
+.msg.assistant .msg-text,.msg.agent .msg-text{color:#d3deea}
+.msg-text p+p{margin-top:9px}
+.msg-text code{font-family:var(--mono);font-size:12px;background:var(--surface2);border:1px solid var(--line);border-radius:4px;padding:1px 5px;color:var(--accent)}
+.msg-text ul{margin:8px 0 0 18px}
+.msg-text li{margin:3px 0}
+.attach{display:flex;align-items:center;gap:9px;margin-top:10px;padding:9px 11px;border:1px solid var(--line);border-radius:var(--radius-sm);background:var(--surface);max-width:100%}
+.thumb{width:42px;height:32px;border-radius:5px;flex:none;background:linear-gradient(135deg,#1c3040,#274456);border:1px solid var(--line2);display:grid;place-items:center}
+.thumb svg{width:16px;height:16px;stroke:var(--muted);fill:none;stroke-width:1.6}
+.attach div{min-width:0}
+.attach .fname{font-size:12.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.attach .fmeta{font-size:10.5px;color:var(--dim)}
+
+/* inline cards */
+.card{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);margin-top:12px;overflow:hidden}
+.card-h{display:flex;align-items:center;gap:8px;padding:10px 12px;border-bottom:1px solid var(--line);font-size:12px;font-weight:600;color:var(--muted)}
+.card-h svg{width:14px;height:14px;stroke:var(--accent);fill:none;stroke-width:1.8;flex:none}
+.card-h .spacer{margin-left:auto}
+.card-b{padding:11px 12px;font-size:12.5px;color:var(--muted)}
+.q-options{display:flex;flex-direction:column;gap:7px;margin-top:10px}
+.opt{display:flex;align-items:center;gap:9px;padding:8px 11px;border:1px solid var(--line2);border-radius:var(--radius-sm);background:var(--surface2);text-align:left;font-size:12.5px;color:var(--text);transition:border-color .15s,background .15s;width:100%}
+.opt:hover{border-color:var(--accent-dim);background:var(--surface3)}
+.opt .radio{width:13px;height:13px;border-radius:50%;border:1.5px solid var(--line2);flex:none;display:grid;place-items:center}
+.opt[aria-checked="true"] .radio{border-color:var(--accent)}
+.opt[aria-checked="true"] .radio::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.opt[aria-checked="true"]{border-color:var(--accent-dim);background:var(--accent-soft)}
+.opt small{display:block;color:var(--dim);font-size:11px;margin-top:1px}
+.answers{display:none;padding:9px 12px;border-top:1px solid var(--line);font-size:12px;color:var(--accent);background:var(--accent-soft)}
+.answered .answers{display:block}
+.answered .q-options,.answered .approve-row{display:none}
+.approve-row{display:flex;gap:8px;margin-top:11px;flex-wrap:wrap}
+.btn.sm{padding:6px 12px;font-size:12px}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#04211d;font-weight:600}
+.btn.primary:hover{background:#4de5cd;color:#04211d}
+.btn.ghost-danger{border-color:var(--line2);color:var(--muted)}
+.btn.ghost-danger:hover{color:var(--danger);border-color:rgba(224,108,117,.4)}
+.approved .approve-row,.approved .answers{display:none}
+.approved .answers{display:block}
+
+/* execution rows */
+.exec-list{display:flex;flex-direction:column;gap:6px;margin-top:12px}
+.exec{display:flex;align-items:center;gap:10px;padding:8px 11px;border:1px solid var(--line);border-radius:var(--radius-sm);background:var(--surface);font-size:12.5px;color:var(--muted)}
+.exec .ic{width:16px;height:16px;flex:none;display:grid;place-items:center}
+.exec .ic svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2}
+.exec.done .ic{color:var(--accent)}
+.exec.run .ic{color:var(--warn)}
+.exec .txt{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.exec .txt b{color:var(--text);font-weight:550}
+.exec time{font-size:10.5px;color:var(--dim);flex:none}
+.dots{display:inline-flex;gap:3px}
+.dots i{width:4px;height:4px;border-radius:50%;background:var(--warn);animation:blink 1.2s infinite}
+.dots i:nth-child(2){animation-delay:.2s}.dots i:nth-child(3){animation-delay:.4s}
+@keyframes blink{0%,80%,100%{opacity:.25}40%{opacity:1}}
+
+/* tool result disclosure */
+details.tool{margin-top:10px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);overflow:hidden}
+details.tool summary{list-style:none;display:flex;align-items:center;gap:8px;padding:9px 12px;cursor:pointer;font-size:12px;color:var(--muted);transition:background .15s}
+details.tool summary::-webkit-details-marker{display:none}
+details.tool summary:hover{background:var(--surface2)}
+details.tool summary .chev{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;flex:none;transition:transform .2s}
+details.tool[open] summary .chev{transform:rotate(90deg)}
+details.tool summary code{font-family:var(--mono);font-size:11.5px;color:var(--text);background:var(--surface2);padding:1px 6px;border-radius:4px;border:1px solid var(--line2)}
+details.tool summary .ok{margin-left:auto;font-size:10.5px;color:var(--accent);flex:none}
+details.tool pre{margin:0;padding:11px 13px;border-top:1px solid var(--line);background:var(--bg);font-family:var(--mono);font-size:11.5px;line-height:1.6;color:#9db3c8;overflow-x:auto;max-height:220px;overflow-y:auto}
+details.tool pre .k{color:var(--accent)}
+details.tool pre .s{color:#c3a6ff}
+
+/* recovery */
+.recovery{display:flex;align-items:flex-start;gap:9px;margin-top:12px;padding:9px 12px;border:1px solid var(--warn-soft);border-radius:var(--radius-sm);background:var(--warn-soft);font-size:12px;color:var(--warn)}
+.recovery svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.9;flex:none;margin-top:1px}
+.recovery span{color:#cfd9e4}
+.recovery span b{color:var(--warn);font-weight:600}
+
+/* ---------- Composer ---------- */
+.composer-wrap{padding:10px 22px 16px;background:linear-gradient(to top,var(--bg) 65%,transparent)}
+.composer{max-width:760px;margin:0 auto;border:1px solid var(--line2);border-radius:14px;background:var(--surface);box-shadow:0 8px 28px rgba(0,0,0,.35);transition:border-color .15s}
+.composer:focus-within{border-color:var(--accent-dim)}
+.composer-input{display:flex;gap:10px;padding:12px 13px 8px;align-items:flex-start}
+.composer-input textarea{flex:1;background:none;border:none;resize:none;color:var(--text);font-family:inherit;font-size:13.5px;line-height:1.55;min-height:44px;max-height:160px;outline:none}
+.composer-input textarea::placeholder{color:var(--dim)}
+.composer-bar{display:flex;align-items:center;gap:6px;padding:6px 9px 9px;flex-wrap:wrap}
+.chip-btn{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;color:var(--muted);border:1px solid var(--line);border-radius:7px;padding:4.5px 9px;transition:color .15s,border-color .15s,background .15s;white-space:nowrap}
+.chip-btn:hover{color:var(--text);border-color:var(--line2);background:var(--surface2)}
+.chip-btn svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.8}
+.composer-bar .grow{margin-left:auto}
+.send-btn{width:31px;height:31px;border-radius:8px;background:var(--accent);display:grid;place-items:center;flex:none;transition:opacity .15s,transform .1s}
+.send-btn:hover{opacity:.9}
+.send-btn:active{transform:scale(.94)}
+.send-btn svg{width:15px;height:15px;stroke:#04211d;fill:none;stroke-width:2.2}
+.send-btn:disabled{opacity:.35;cursor:not-allowed}
+.hint{text-align:center;font-size:10.5px;color:var(--dim);margin-top:8px}
+
+/* model popover */
+.pop-wrap{position:relative}
+.pop{position:absolute;bottom:calc(100% + 8px);left:0;width:232px;background:var(--surface2);border:1px solid var(--line2);border-radius:var(--radius);box-shadow:0 14px 40px rgba(0,0,0,.5);padding:6px;z-index:60;display:none}
+.pop.open{display:block;animation:popIn .14s ease-out}
+@keyframes popIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+.pop-label{font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);padding:6px 8px 4px;font-weight:600}
+.model-opt{display:flex;align-items:center;gap:9px;width:100%;padding:7px 8px;border-radius:6px;text-align:left;font-size:12.5px;color:var(--muted);transition:background .12s,color .12s}
+.model-opt:hover{background:var(--surface3);color:var(--text)}
+.model-opt[aria-selected="true"]{color:var(--text);background:var(--accent-soft)}
+.model-opt .mi{width:18px;height:18px;flex:none;display:grid;place-items:center;border-radius:5px;background:var(--surface3);border:1px solid var(--line2)}
+.model-opt .mi svg{width:11px;height:11px;stroke:currentColor;fill:none;stroke-width:1.9}
+.model-opt .mname{flex:1}
+.model-opt .tick{width:13px;height:13px;stroke:var(--accent);fill:none;stroke-width:2.4;opacity:0}
+.model-opt[aria-selected="true"] .tick{opacity:1}
+.model-btn .mi{display:grid;place-items:center}
+.model-btn .mi svg{width:11px;height:11px;stroke:currentColor;fill:none;stroke-width:1.9}
+
+/* ---------- Activity tab ---------- */
+.activity-pane{flex:1;overflow-y:auto;padding:22px;display:none;min-height:0}
+.activity-pane.active{display:block}
+.act-inner{max-width:720px;margin:0 auto}
+.act-item{display:flex;gap:12px;padding:11px 0;border-bottom:1px solid var(--line)}
+.act-item:last-child{border-bottom:none}
+.act-ic{width:26px;height:26px;border-radius:6px;background:var(--surface2);border:1px solid var(--line);display:grid;place-items:center;flex:none;color:var(--accent)}
+.act-ic svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.8}
+.act-body{min-width:0;flex:1}
+.act-body strong{font-size:12.5px;font-weight:550;display:block}
+.act-body p{font-size:12px;color:var(--muted);margin-top:2px;overflow-wrap:anywhere}
+.act-body time{font-size:10.5px;color:var(--dim);display:block;margin-top:3px}
+
+/* ---------- Inspector ---------- */
+.inspector{border-left:1px solid var(--line);background:var(--surface);display:flex;flex-direction:column;min-height:0;min-width:0}
+.insp-head{display:flex;align-items:center;gap:8px;padding:12px 14px;border-bottom:1px solid var(--line)}
+.insp-head h2{font-size:12.5px;font-weight:600;margin-right:auto}
+.insp-tabs{display:flex;gap:4px;padding:10px 14px 0}
+.insp-tab{font-size:11.5px;padding:5px 10px;border-radius:6px;color:var(--muted)}
+.insp-tab[aria-selected="true"]{background:var(--surface3);color:var(--text)}
+.insp-body{flex:1;overflow-y:auto;padding:12px 14px;min-height:0}
+.preview{aspect-ratio:16/10;border-radius:var(--radius-sm);border:1px solid var(--line2);background:linear-gradient(160deg,#16283a,#0f1b28 60%,#122234);display:grid;place-items:center;position:relative;overflow:hidden;margin-bottom:12px}
+.preview::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 25%,rgba(56,217,192,.16),transparent 55%)}
+.preview .win{width:72%;height:64%;border-radius:6px;background:rgba(11,16,23,.82);border:1px solid var(--line2);position:relative;padding:7px;display:flex;flex-direction:column;gap:4px}
+.preview .win .bar{height:5px;width:38%;border-radius:3px;background:var(--accent);opacity:.75}
+.preview .win .ln{height:4px;border-radius:2px;background:var(--line2)}
+.preview .win .ln.s{width:72%}.preview .win .ln.m{width:88%}
+.preview .cap{position:absolute;bottom:6px;right:8px;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+.file-row{display:flex;align-items:center;gap:9px;padding:7px 8px;border-radius:6px;transition:background .12s;width:100%;text-align:left}
+.file-row:hover{background:var(--surface2)}
+.file-row .fi{width:22px;height:22px;border-radius:5px;background:var(--surface3);display:grid;place-items:center;flex:none;color:var(--muted);font-size:8.5px;font-weight:700;letter-spacing:.02em;border:1px solid var(--line)}
+.file-row .fname{font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.file-row .fsize{font-size:10.5px;color:var(--dim);margin-left:auto;flex:none}
+.insp-section{font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);font-weight:600;margin:14px 0 6px}
+.insp-section:first-child{margin-top:0}
+
+.empty-inspector{display:none}
+.body:not(.with-inspector) .inspector{display:none}
+
+/* mobile drawer bits */
+.mobile-only{display:none}
+
+@media (max-width:960px){
+  .body.with-inspector{grid-template-columns:1fr}
+  .inspector{position:fixed;inset:0 0 0 auto;width:min(340px,92vw);z-index:80;transform:translateX(102%);transition:transform .22s ease;box-shadow:-14px 0 40px rgba(0,0,0,.5)}
+  .body.with-inspector .inspector{transform:translateX(0)}
+  .insp-backdrop{position:fixed;inset:0;background:rgba(4,8,12,.55);z-index:79;opacity:0;pointer-events:none;transition:opacity .2s}
+  .insp-backdrop.show{opacity:1;pointer-events:auto}
+}
+@media (max-width:780px){
+  .app{grid-template-columns:1fr}
+  .sidebar{position:fixed;inset:0 auto 0 0;width:min(272px,86vw);z-index:90;transform:translateX(-102%);transition:transform .22s ease;box-shadow:14px 0 40px rgba(0,0,0,.5)}
+  .sidebar.open{transform:translateX(0)}
+  .sb-backdrop{position:fixed;inset:0;background:rgba(4,8,12,.55);z-index:89;opacity:0;pointer-events:none;transition:opacity .2s}
+  .sb-backdrop.show{opacity:1;pointer-events:auto}
+  .mobile-only{display:inline-flex}
+  .toolbar{padding:9px 12px;gap:6px}
+  .tb-title{order:-1;width:100%;margin-right:0;margin-bottom:2px}
+  .tabs{padding:0 10px}
+  .chat-scroll{padding:18px 12px 6px}
+  .composer-wrap{padding:8px 10px 12px}
+  .proto-chip{display:none}
+  .toolbar .btn .lbl{display:none}
+  .toolbar .btn{padding:6px 8px}
+  .msg{gap:9px}
+  .msg .av{width:24px;height:24px;font-size:9.5px}
+  .chat-inner{gap:18px}
+  .composer-bar .chip-btn .lbl{display:none}
+  .composer-bar .chip-btn{padding:5px 7px}
+}
+@media (max-width:400px){
+  .hint{display:none}
+  .msg-text{font-size:13.5px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+</style>
+</head>
+<body>
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar" aria-label="FRIDAY navigation">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18V7l8-3 8 3v11"/><path d="M9 18v-5h6v5"/><path d="M9 9h.01M15 9h.01"/></svg>
+      </div>
+      <div>
+        <div class="brand-name">FRIDAY</div>
+        <div class="brand-sub">Agent workspace</div>
+      </div>
+    </div>
+    <div class="sb-scroll">
+      <div class="sb-label">Workspaces</div>
+      <button class="ws-item active" type="button"><span class="ws-dot"></span><span>Product Studio</span></button>
+      <button class="ws-item" type="button"><span class="ws-dot b"></span><span>Design System</span></button>
+      <button class="ws-item" type="button"><span class="ws-dot c"></span><span>Research Lab</span></button>
+      <button class="ws-item" type="button"><span class="ws-dot d"></span><span>Personal Sandbox</span></button>
+
+      <div class="sb-label">Recent</div>
+      <button class="conv-item active" type="button"><span>Refactor pricing page</span><time>2m</time></button>
+      <button class="conv-item" type="button"><span>Audit onboarding flow</span><time>1h</time></button>
+      <button class="conv-item" type="button"><span>Draft API notes</span><time>3h</time></button>
+      <button class="conv-item" type="button"><span>Test matrix review</span><time>1d</time></button>
+      <button class="conv-item" type="button"><span>Logo spacing pass</span><time>1d</time></button>
+      <button class="conv-item" type="button"><span>Release checklist</span><time>2d</time></button>
+    </div>
+    <div class="sb-foot">
+      <div class="avatar" aria-hidden="true">AK</div>
+      <div style="min-width:0">
+        <span class="u-name">Ankur</span>
+        <small>Local session</small>
+      </div>
+      <span class="proto-chip">Prototype</span>
+    </div>
+  </aside>
+  <div class="sb-backdrop" id="sbBackdrop"></div>
+
+  <!-- Main -->
+  <div class="main">
+    <header class="toolbar">
+      <button class="btn icon mobile-only" type="button" id="menuBtn" aria-label="Open sidebar">
+        <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <div class="tb-title">
+        <span>Refactor pricing page</span>
+        <span class="crumb">Product Studio</span>
+      </div>
+      <span class="status-pill"><span class="pulse" aria-hidden="true"></span> Agent running</span>
+      <button class="btn" type="button"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><span class="lbl">New task</span></button>
+      <button class="btn icon" type="button" id="inspToggle" aria-label="Toggle inspector" aria-pressed="true">
+        <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M15 4v16"/></svg>
+      </button>
+    </header>
+
+    <div class="tabs" role="tablist" aria-label="Chat and activity">
+      <button class="tab" role="tab" id="tab-chat" aria-selected="true" aria-controls="pane-chat" type="button">Chat</button>
+      <button class="tab" role="tab" id="tab-activity" aria-selected="false" aria-controls="pane-activity" type="button">Activity <span class="badge warn">3</span></button>
+    </div>
+
+    <div class="body with-inspector" id="body">
+      <div class="chatcol">
+        <!-- Chat pane -->
+        <div id="pane-chat" role="tabpanel" aria-labelledby="tab-chat" style="display:flex;flex-direction:column;min-height:0;flex:1">
+          <div class="chat-scroll" id="chatScroll">
+            <div class="chat-inner" id="chatInner">
+
+              <!-- user msg -->
+              <div class="msg user">
+                <div class="av" aria-hidden="true">AK</div>
+                <div class="msg-body">
+                  <div class="msg-head"><strong>You</strong><time>10:24</time></div>
+                  <div class="msg-text"><p>Refactor the pricing page so tiers are data-driven. Here's the current screenshot and the source file.</p></div>
+                  <div class="attach">
+                    <div class="thumb" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>
+                    <div>
+                      <div class="fname">pricing-before.png</div>
+                      <div class="fmeta">Screenshot · 1280×720 · simulated</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- agent msg -->
+              <div class="msg agent">
+                <div class="av" aria-hidden="true">FR</div>
+                <div class="msg-body">
+                  <div class="msg-head"><strong>FRIDAY</strong><time>10:24</time></div>
+                  <div class="msg-text">
+                    <p>Got it. I'll extract the three tiers into a config array, keep the layout identical, and verify the render. First, one decision before I touch the markup.</p>
+                  </div>
+
+                  <!-- simulated question -->
+                  <div class="card" id="questionCard">
+                    <div class="card-h">
+                      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 013.9-2c1.4.9 1.4 2.6.1 3.4-.7.5-1.5.8-1.5 1.8"/><path d="M12 17h.01"/></svg>
+                      Question · simulated
+                      <span class="spacer"></span>
+                      <span style="font-size:10.5px;font-weight:400;color:var(--dim)">1 of 1</span>
+                    </div>
+                    <div class="card-b">
+                      Where should the tier data live?
+                      <div class="q-options" role="radiogroup" aria-label="Data location">
+                        <button class="opt" role="radio" aria-checked="true" type="button" data-q>
+                          <span class="radio" aria-hidden="true"></span>
+                          <span>In the page component<small>Fastest, scoped to one file</small></span>
+                        </button>
+                        <button class="opt" role="radio" aria-checked="false" type="button" data-q>
+                          <span class="radio" aria-hidden="true"></span>
+                          <span>Shared config module<small>Reusable across marketing pages</small></span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="answers">✓ Selected: In the page component · simulated</div>
+                  </div>
+
+                  <div class="exec-list" aria-label="Execution steps">
+                    <div class="exec done">
+                      <span class="ic"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>
+                      <span class="txt"><b>read</b> src/pages/pricing.tsx</span>
+                      <time>0.4s</time>
+                    </div>
+                    <div class="exec done">
+                      <span class="ic"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>
+                      <span class="txt"><b>grep</b> "tier" across src/</span>
+                      <time>0.2s</time>
+                    </div>
+                    <div class="exec run">
+                      <span class="ic"><span class="dots"><i></i><i></i><i></i></span></span>
+                      <span class="txt"><b>edit</b> extracting tier config</span>
+                      <time>running</time>
+                    </div>
+                  </div>
+
+                  <!-- approval -->
+                  <div class="card" id="approvalCard">
+                    <div class="card-h">
+                      <svg viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9L2 18a1.8 1.8 0 001.6 2.7h16.8A1.8 1.8 0 0022 18L13.7 3.9a1.9 1.9 0 00-3.4 0z"/></svg>
+                      Approval required · simulated
+                    </div>
+                    <div class="card-b">
+                      Overwrite <code style="font-family:var(--mono);font-size:11.5px;color:var(--accent)">pricing.tsx</code> with the refactored version? A backup copy is kept in the session.
+                      <div class="approve-row">
+                        <button class="btn sm primary" type="button" id="approveBtn">Approve write</button>
+                        <button class="btn sm ghost-danger" type="button" id="rejectBtn">Decline</button>
+                      </div>
+                    </div>
+                    <div class="answers" id="approvalResult">✓ Approved · write queued (simulated)</div>
+                  </div>
+
+                  <!-- tool result disclosure -->
+                  <details class="tool">
+                    <summary>
+                      <svg class="chev" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
+                      Tool result
+                      <code>grep "tier"</code>
+                      <span class="ok">4 matches</span>
+                    </summary>
+                    <pre><span class="k">src/pages/pricing.tsx</span>:12   const <span class="s">tiers</span> = [
+<span class="k">src/pages/pricing.tsx</span>:18   <span class="s">tiers</span>.map((t) =&gt; &lt;Card /&gt;)
+<span class="k">src/data/nav.ts</span>:7          { label: <span class="s">"Pricing"</span> }
+<span class="k">src/components/Card.tsx</span>:3   type <span class="s">Tier</span> = { name: string }</pre>
+                  </details>
+
+                  <div class="recovery">
+                    <svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 11-3-6.7"/><path d="M21 3v6h-6"/></svg>
+                    <span><b>Recovered</b> from a dropped tool stream at 10:25 — resumed from the last checkpoint without repeating the read.</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- second user -->
+              <div class="msg user">
+                <div class="av" aria-hidden="true">AK</div>
+                <div class="msg-body">
+                  <div class="msg-head"><strong>You</strong><time>10:26</time></div>
+                  <div class="msg-text"><p>Approved — go ahead and show me the result preview.</p></div>
+                </div>
+              </div>
+
+              <div class="msg agent">
+                <div class="av" aria-hidden="true">FR</div>
+                <div class="msg-body">
+                  <div class="msg-head"><strong>FRIDAY</strong><time>10:26</time></div>
+                  <div class="msg-text"><p>Done. The diff is small: tier definitions moved to a config block, and the render loop is unchanged. Preview is in the inspector.</p></div>
+                  <details class="tool">
+                    <summary>
+                      <svg class="chev" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
+                      Tool result
+                      <code>diff pricing.tsx</code>
+                      <span class="ok">+14 −9</span>
+                    </summary>
+                    <pre>- const basic = { name: <span class="s">"Basic"</span>, price: 9 }
+- const pro   = { name: <span class="s">"Pro"</span>,   price: 29 }
++ const <span class="k">tiers</span> = [
++   { name: <span class="s">"Basic"</span>, price: 9 },
++   { name: <span class="s">"Pro"</span>,   price: 29 },
++ ]</pre>
+                  </details>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Composer -->
+          <div class="composer-wrap">
+            <form class="composer" id="composer" aria-label="Message FRIDAY">
+              <div class="composer-input">
+                <label for="msgInput" class="sr-only">Message</label>
+                <textarea id="msgInput" rows="1" placeholder="Ask FRIDAY to do something… (Enter to send, Shift+Enter for newline)"></textarea>
+                <button class="send-btn" id="sendBtn" type="submit" aria-label="Send message" disabled>
+                  <svg viewBox="0 0 24 24"><path d="M4 12l16-8-6 16-2-6-8-2z"/></svg>
+                </button>
+              </div>
+              <div class="composer-bar">
+                <div class="pop-wrap">
+                  <button class="chip-btn model-btn" type="button" id="modelBtn" aria-haspopup="listbox" aria-expanded="false" aria-controls="modelPop">
+                    <span class="mi" id="modelIcon" aria-hidden="true"></span>
+                    <span id="modelName">ChatGPT</span>
+                    <svg viewBox="0 0 24 24" style="width:11px;height:11px;stroke:currentColor;fill:none;stroke-width:2"><path d="M6 9l6 6 6-6"/></svg>
+                  </button>
+                  <div class="pop" id="modelPop" role="listbox" aria-label="Select model">
+                    <div class="pop-label">Model</div>
+                    <button class="model-opt" role="option" aria-selected="true" type="button" data-model="ChatGPT">
+                      <span class="mi" data-icon="ChatGPT" aria-hidden="true"></span><span class="mname">ChatGPT</span>
+                      <svg class="tick" viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>
+                    </button>
+                    <button class="model-opt" role="option" aria-selected="false" type="button" data-model="Gemini">
+                      <span class="mi" data-icon="Gemini" aria-hidden="true"></span><span class="mname">Gemini</span>
+                      <svg class="tick" viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>
+                    </button>
+                    <button class="model-opt" role="option" aria-selected="false" type="button" data-model="Kimi">
+                      <span class="mi" data-icon="Kimi" aria-hidden="true"></span><span class="mname">Kimi</span>
+                      <svg class="tick" viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>
+                    </button>
+                    <button class="model-opt" role="option" aria-selected="false" type="button" data-model="DeepSeek">
+                      <span class="mi" data-icon="DeepSeek" aria-hidden="true"></span><span class="mname">DeepSeek</span>
+                      <svg class="tick" viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>
+                    </button>
+                  </div>
+                </div>
+                <button class="chip-btn" type="button" title="Attach (simulated)">
+                  <svg viewBox="0 0 24 24"><path d="M21 11.5l-8.4 8.4a5 5 0 01-7-7L14 4.5a3.3 3.3 0 014.7 4.7L10.3 17.6a1.7 1.7 0 01-2.4-2.4l7.8-7.8"/></svg>
+                  <span class="lbl">Attach</span>
+                </button>
+                <button class="chip-btn" type="button" title="Plan mode (simulated)">
+                  <svg viewBox="0 0 24 24"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1h9"/></svg>
+                  <span class="lbl">Plan</span>
+                </button>
+                <span class="grow"></span>
+                <button class="chip-btn" type="button" title="Voice (simulated)">
+                  <svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0014 0M12 18v3"/></svg>
+                </button>
+              </div>
+            </form>
+            <div class="hint">Simulated interface · no requests leave this page</div>
+          </div>
+        </div>
+
+        <!-- Activity pane -->
+        <div class="activity-pane" id="pane-activity" role="tabpanel" aria-labelledby="tab-activity">
+          <div class="act-inner">
+            <div class="act-item">
+              <div class="act-ic"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></div>
+              <div class="act-body"><strong>Approval granted</strong><p>Write to <code style="font-family:var(--mono);font-size:11px;color:var(--accent)">pricing.tsx</code> approved by you.</p><time>10:26</time></div>
+            </div>
+            <div class="act-item">
+              <div class="act-ic"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 11-3-6.7"/><path d="M21 3v6h-6"/></svg></div>
+              <div class="act-body"><strong>Stream recovered</strong><p>Reconnected after 1.2s; resumed from checkpoint 3.</p><time>10:25</time></div>
+            </div>
+            <div class="act-item">
+              <div class="act-ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></div>
+              <div class="act-body"><strong>Search completed</strong><p><code style="font-family:var(--mono);font-size:11px;color:var(--accent)">grep "tier"</code> returned 4 matches in 3 files.</p><time>10:24</time></div>
+            </div>
+            <div class="act-item">
+              <div class="act-ic"><svg viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
+              <div class="act-body"><strong>File read</strong><p><code style="font-family:var(--mono);font-size:11px;color:var(--accent)">src/pages/pricing.tsx</code> read into context (184 lines).</p><time>10:24</time></div>
+            </div>
+            <div class="act-item">
+              <div class="act-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+              <div class="act-body"><strong>Task started</strong><p>Refactor pricing page · model ChatGPT</p><time>10:24</time></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Inspector -->
+      <aside class="inspector" id="inspector" aria-label="Context inspector">
+        <div class="insp-head">
+          <h2>Inspector</h2>
+          <button class="btn icon" type="button" id="inspClose" aria-label="Close inspector">
+            <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+        <div class="insp-tabs" role="tablist" aria-label="Inspector sections">
+          <button class="insp-tab" role="tab" aria-selected="true" type="button">Files</button>
+          <button class="insp-tab" role="tab" aria-selected="false" type="button">Preview</button>
+        </div>
+        <div class="insp-body">
+          <div class="preview" aria-label="Preview of refactored pricing page (simulated)">
+            <div class="win">
+              <div class="bar"></div>
+              <div class="ln m"></div><div class="ln s"></div><div class="ln"></div>
+              <div class="ln m"></div><div class="ln s"></div>
+            </div>
+            <span class="cap">Simulated render</span>
+          </div>
+          <div class="insp-section">Changed</div>
+          <button class="file-row" type="button"><span class="fi">TSX</span><span class="fname">pricing.tsx</span><span class="fsize">+14/−9</span></button>
+          <div class="insp-section">Context files</div>
+          <button class="file-row" type="button"><span class="fi">TSX</span><span class="fname">Card.tsx</span><span class="fsize">3.1 KB</span></button>
+          <button class="file-row" type="button"><span class="fi">PNG</span><span class="fname">pricing-before.png</span><span class="fsize">212 KB</span></button>
+          <button class="file-row" type="button"><span class="fi">TS</span><span class="fname">nav.ts</span><span class="fsize">1.4 KB</span></button>
+          <div class="insp-section">Plan</div>
+          <div class="exec-list" style="margin-top:0">
+            <div class="exec done"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span><span class="txt">Extract tier data</span></div>
+            <div class="exec done"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span><span class="txt">Approve write</span></div>
+            <div class="exec run"><span class="ic"><span class="dots"><i></i><i></i><i></i></span></span><span class="txt">Verify render</span></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+<div class="insp-backdrop" id="inspBackdrop"></div>
+
+<script>
+(function(){
+  "use strict";
+  var $ = function(s){ return document.querySelector(s); };
+  var $$ = function(s){ return Array.prototype.slice.call(document.querySelectorAll(s)); };
+
+  /* ---- SVG icons per model ---- */
+  var icons = {
+    ChatGPT: '<svg viewBox="0 0 24 24"><path d="M12 3l7 4v10l-7 4-7-4V7z"/><path d="M12 8v8M8 10l8 4M16 10l-8 4"/></svg>',
+    Gemini: '<svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z"/></svg>',
+    Kimi: '<svg viewBox="0 0 24 24"><path d="M4 19V5h4v6l6-6h4l-6 7 6 7h-4l-6-6v6z"/></svg>',
+    DeepSeek: '<svg viewBox="0 0 24 24"><path d="M3 16c4-1 6-4 7-8 1 4 3 7 7 8-4 1-6 3-7 5-1-2-3-4-7-5z"/><path d="M17 5h4"/></svg>'
+  };
+  function setModelIcon(el, name){
+    if(!el) return;
+    el.innerHTML = icons[name] || icons.ChatGPT;
+  }
+
+  /* ---- Model selector ---- */
+  var modelBtn = $("#modelBtn"), modelPop = $("#modelPop"),
+      modelName = $("#modelName"), modelIcon = $("#modelIcon");
+
+  setModelIcon(modelIcon, "ChatGPT");
+  $$("[data-icon]").forEach(function(el){ setModelIcon(el, el.getAttribute("data-icon")); });
+
+  function openPop(){
+    modelPop.classList.add("open");
+    modelBtn.setAttribute("aria-expanded","true");
+    var sel = modelPop.querySelector('[aria-selected="true"]');
+    if(sel) sel.focus();
+  }
+  function closePop(){
+    modelPop.classList.remove("open");
+    modelBtn.setAttribute("aria-expanded","false");
+  }
+  modelBtn.addEventListener("click", function(e){
+    e.stopPropagation();
+    if(modelPop.classList.contains("open")) closePop(); else openPop();
+  });
+  modelBtn.addEventListener("keydown", function(e){
+    if(e.key === "ArrowUp" || e.key === "Down" && false){}
+  });
+
+  $$(".model-opt").forEach(function(opt){
+    opt.addEventListener("click", function(){
+      var name = opt.getAttribute("data-model");
+      $$(".model-opt").forEach(function(o){ o.setAttribute("aria-selected","false"); });
+      opt.setAttribute("aria-selected","true");
+      modelName.textContent = name;
+      setModelIcon(modelIcon, name);
+      closePop();
+      modelBtn.focus();
+    });
+    opt.addEventListener("keydown", function(e){
+      var opts = $$(".model-opt");
+      var i = opts.indexOf(opt);
+      if(e.key === "ArrowDown"){ e.preventDefault(); opts[(i+1)%opts.length].focus(); }
+      else if(e.key === "ArrowUp"){ e.preventDefault(); opts[(i-1+opts.length)%opts.length].focus(); }
+      else if(e.key === "Escape"){ e.preventDefault(); closePop(); modelBtn.focus(); }
+    });
+  });
+
+  document.addEventListener("click", function(e){
+    if(modelPop.classList.contains("open") && !modelPop.contains(e.target) && e.target !== modelBtn && !modelBtn.contains(e.target)){
+      closePop();
+    }
+  });
+  document.addEventListener("keydown", function(e){
+    if(e.key === "Escape"){
+      if(modelPop.classList.contains("open")){ closePop(); modelBtn.focus(); }
+      if(inspectorOpen()) closeInspector();
+      if(sidebarOpen()) closeSidebar();
+    }
+  });
+
+  /* ---- Question radio ---- */
+  $$("[data-q]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      $$("[data-q]").forEach(function(b){ b.setAttribute("aria-checked","false"); });
+      btn.setAttribute("aria-checked","true");
+      var card = $("#questionCard");
+      card.classList.add("answered");
+    });
+    btn.addEventListener("keydown", function(e){
+      var opts = $$("[data-q]");
+      var i = opts.indexOf(btn);
+      if(e.key === "ArrowDown" || e.key === "ArrowRight"){ e.preventDefault(); opts[(i+1)%opts.length].focus(); }
+      else if(e.key === "ArrowUp" || e.key === "ArrowLeft"){ e.preventDefault(); opts[(i-1+opts.length)%opts.length].focus(); }
+      else if(e.key === " " || e.key === "Enter"){ e.preventDefault(); btn.click(); }
+    });
+  });
+
+  /* ---- Approval ---- */
+  var approvalCard = $("#approvalCard"), approvalResult = $("#approvalResult");
+  var approveBtn = $("#approveBtn"), rejectBtn = $("#rejectBtn");
+  if(approveBtn){
+    approveBtn.addEventListener("click", function(){
+      approvalCard.classList.add("approved");
+      approvalResult.textContent = "✓ Approved · write queued (simulated)";
+      approvalResult.style.color = "var(--accent)";
+      approvalResult.style.display = "block";
+      approveBtn.disabled = true;
+      if(rejectBtn) rejectBtn.disabled = true;
+    });
+  }
+  if(rejectBtn){
+    rejectBtn.addEventListener("click", function(){
+      approvalCard.classList.add("approved");
+      approvalResult.textContent = "✕ Declined · no files changed (simulated)";
+      approvalResult.style.color = "var(--danger)";
+      approvalResult.style.display = "block";
+      approveBtn.disabled = true;
+      rejectBtn.disabled = true;
+    });
+  }
+
+  /* ---- Tabs ---- */
+  var tabChat = $("#tab-chat"), tabActivity = $("#tab-activity"),
+      paneChat = $("#pane-chat"), paneActivity = $("#pane-activity");
+
+  function selectTab(which){
+    var chat = which === "chat";
+    tabChat.setAttribute("aria-selected", chat ? "true" : "false");
+    tabActivity.setAttribute("aria-selected", chat ? "false" : "true");
+    paneChat.style.display = chat ? "flex" : "none";
+    paneActivity.classList.toggle("active", !chat);
+  }
+  tabChat.addEventListener("click", function(){ selectTab("chat"); });
+  tabActivity.addEventListener("click", function(){ selectTab("activity"); });
+  [tabChat, tabActivity].forEach(function(t){
+    t.addEventListener("keydown", function(e){
+      if(e.key === "ArrowRight" || e.key === "ArrowLeft"){
+        e.preventDefault();
+        if(t === tabChat){ selectTab("activity"); tabActivity.focus(); }
+        else { selectTab("chat"); tabChat.focus(); }
+      }
+    });
+  });
+
+  /* ---- Inspector toggle ---- */
+  var body = $("#body"), inspToggle = $("#inspToggle"),
+      inspClose = $("#inspClose"), inspBackdrop = $("#inspBackdrop");
+
+  function inspectorOpen(){ return body.classList.contains("with-inspector"); }
+  function closeInspector(){
+    body.classList.remove("with-inspector");
+    inspToggle.setAttribute("aria-pressed","false");
+    inspBackdrop.classList.remove("show");
+  }
+  function openInspector(){
+    body.classList.add("with-inspector");
+    inspToggle.setAttribute("aria-pressed","true");
+    if(window.innerWidth <= 960) inspBackdrop.classList.add("show");
+  }
+  inspToggle.addEventListener("click", function(){
+    if(inspectorOpen()) closeInspector(); else openInspector();
+  });
+  inspClose.addEventListener("click", closeInspector);
+  inspBackdrop.addEventListener("click", closeInspector);
+
+  /* ---- Mobile sidebar ---- */
+  var sidebar = $("#sidebar"), menuBtn = $("#menuBtn"), sbBackdrop = $("#sbBackdrop");
+  function sidebarOpen(){ return sidebar.classList.contains("open"); }
+  function closeSidebar(){ sidebar.classList.remove("open"); sbBackdrop.classList.remove("show"); }
+  if(menuBtn){
+    menuBtn.addEventListener("click", function(){
+      sidebar.classList.toggle("open");
+      sbBackdrop.classList.toggle("show", sidebarOpen());
+    });
+  }
+  sbBackdrop.addEventListener("click", closeSidebar);
+
+  /* ---- Composer send ---- */
+  var form = $("#composer"), input = $("#msgInput"),
+      sendBtn = $("#sendBtn"), chatInner = $("#chatInner"),
+      chatScroll = $("#chatScroll"), agentName;
+
+  function updateSend(){
+    sendBtn.disabled = input.value.trim().length === 0;
+  }
+  input.addEventListener("input", function(){
+    updateSend();
+    input.style.height = "auto";
+    input.style.height = Math.min(input.scrollHeight, 160) + "px";
+  });
+  input.addEventListener("keydown", function(e){
+    if(e.key === "Enter" && !e.shiftKey){
+      e.preventDefault();
+      if(input.value.trim()) form.requestSubmit();
+    }
+  });
+  updateSend();
+
+  function now(){
+    var d = new Date();
+    return String(d.getHours()).padStart(2,"0") + ":" + String(d.getMinutes()).padStart(2,"0");
+  }
+  function esc(s){
+    return s.replace(/[&<>"']/g, function(c){
+      return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];
+    });
+  }
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var text = input.value.trim();
+    if(!text) return;
+
+    var u = document.createElement("div");
+    u.className = "msg user";
+    u.innerHTML = '<div class="av" aria-hidden="true">AK</div><div class="msg-body"><div class="msg-head"><strong>You</strong><time>' + now() + '</time></div><div class="msg-text"></div></div>';
+    u.querySelector(".msg-text").textContent = text;
+    chatInner.appendChild(u);
+
+    input.value = "";
+    input.style.height = "auto";
+    updateSend();
+
+    var model = modelName.textContent;
+    var a = document.createElement("div");
+    a.className = "msg agent";
+    a.innerHTML = '<div class="av" aria-hidden="true">FR</div><div class="msg-body"><div class="msg-head"><strong>FRIDAY</strong><time>' + now() + '</time></div><div class="msg-text"><p></p></div><div class="exec-list"><div class="exec run"><span class="ic"><span class="dots"><i></i><i></i><i></i></span></span><span class="txt">thinking with <b>' + esc(model) + '</b></span><time>now</time></div></div></div>';
+    chatInner.appendChild(a);
+
+    chatScroll.scrollTop = chatScroll.scrollHeight;
+
+    setTimeout(function(){
+      var p = a.querySelector(".msg-text p");
+      p.textContent = "This is a local prototype, so nothing was sent to " + model + ". Your message appears here and the simulated execution row would normally continue.";
+      var row = a.querySelector(".exec");
+      row.className = "exec done";
+      row.querySelector(".ic").innerHTML = '<svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>';
+      row.querySelector(".txt").innerHTML = "response simulated locally";
+      row.querySelector("time").textContent = "0.1s";
+      chatScroll.scrollTop = chatScroll.scrollHeight;
+    }, 700);
+
+    chatScroll.scrollTop = chatScroll.scrollHeight;
+  });
+
+  /* ---- Keep inspector backdrop in sync on resize ---- */
+  window.addEventListener("resize", function(){
+    if(window.innerWidth > 960) inspBackdrop.classList.remove("show");
+    else if(inspectorOpen()) inspBackdrop.classList.add("show");
+    if(window.innerWidth > 780){ sidebar.classList.remove("open"); sbBackdrop.classList.remove("show"); }
+  });
+})();
+</script>
+</body>
+</html>

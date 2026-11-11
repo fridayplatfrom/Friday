@@ -1,0 +1,41 @@
+// Read-only checks for a native-composer upload and browser-generated download.
+import fs from 'node:fs';
+import {join} from 'node:path';
+import {homedir} from 'node:os';
+import {createHash} from 'node:crypto';
+import assert from 'node:assert/strict';
+import {consumeSSE} from '../ag-ui-client.mjs';
+const mode=process.argv[2]||'checkpoint';assert.ok(['checkpoint','recovery'].includes(mode));
+const spec=JSON.parse(fs.readFileSync('tasks/native-transfer-current.json','utf8'));
+const logs=join(homedir(),'.dsh/logs'),latest=fs.readdirSync(logs).filter(n=>/^browser-.*\.out\.log$/.test(n)).sort((a,b)=>fs.statSync(join(logs,b)).mtimeMs-fs.statSync(join(logs,a)).mtimeMs)[0];
+const login=fs.readFileSync(join(logs,latest),'utf8').match(/http:\/\/127\.0\.0\.1:3030\/\?token=[^\s]+/)?.[0];assert.ok(login);
+const admitted=await fetch(login,{redirect:'manual'}),cookie=admitted.headers.getSetCookie().map(v=>v.split(';')[0]).join('; ');assert.ok(cookie);
+const headers={Cookie:cookie,'X-Harness-Models':'1'},base='http://127.0.0.1:3030/browser-models';
+const get=async route=>{const res=await fetch(base+route,{headers,signal:AbortSignal.timeout(15000)});assert.ok(res.ok);return res;};
+const session=await(await get('/session/'+spec.threadId)).json(),status=await(await get('/status')).json();
+assert.equal(status.pending,0);assert.equal(session.nativeSession.status,'idle');
+const savedRunId=mode==='recovery'?JSON.parse(fs.readFileSync('../../output/friday-native-transfer-audit.json','utf8')).runId:null;
+const run=savedRunId?session.aguiRuns.find(r=>r.runId===savedRunId):session.aguiRuns.findLast(r=>r.startedAt>=Date.parse(spec.startedAt));assert.ok(run);assert.equal(run.status,'finished');
+const events=[],cursors=[];await consumeSSE(await get(`/ag-ui/runs/${run.runId}?threadId=${spec.threadId}`),{onEvent:(event,cursor)=>{events.push(event);cursors.push(cursor);}});
+assert.equal(events.filter(e=>e.type==='TOOL_CALL_START').length,0,'This website-native task must not execute local tools.');
+assert.equal(events.at(-1).outcome?.type,'success');
+const report=events.findLast(e=>e.type==='MESSAGES_SNAPSHOT')?.messages.filter(m=>m.role==='assistant').at(-1)?.content;
+assert.ok(report?.includes('FRIDAY_NATIVE_UPLOAD_START')&&report.includes('FRIDAY_NATIVE_UPLOAD_END')&&report.includes(spec.nonce)&&report.includes(spec.id)&&report.includes('47'));
+const uploads=session.files.filter(f=>f.direction==='to-website'&&f.name===spec.name);
+assert.equal(uploads.length,1);assert.equal(uploads[0].status,'delivered');assert.equal(uploads[0].sha256,spec.sha256);
+const downloads=session.files.filter(f=>f.direction==='from-website'&&f.name==='friday-return-'+spec.id.slice(0,8)+'.txt');
+assert.equal(downloads.length,1,'One actual generated file must return to Friday.');
+const bytes=Buffer.from(await(await get('/files/'+downloads[0].id)).arrayBuffer());
+assert.equal(createHash('sha256').update(bytes).digest('hex'),downloads[0].sha256);
+assert.equal(bytes.toString('utf8').replace(/\r\n/g,'\n'),spec.content+'RETURN_VERIFIED=yes\n');
+const digest=createHash('sha256').update(JSON.stringify(events)).digest('hex');
+const file='../../output/friday-native-transfer-audit.json';
+const current={status:'passed',testId:spec.id,threadId:spec.threadId,runId:run.runId,report,pair:session.pairs[spec.site],uploads,downloads,historyDigest:digest,verifiedAt:new Date().toISOString()};
+if(mode==='recovery'){
+ const before=JSON.parse(fs.readFileSync(file,'utf8'));for(const key of ['testId','threadId','runId','report','pair','uploads','downloads','historyDigest'])assert.deepEqual(current[key],before[key],key+' must survive refresh without duplication.');
+ current.refreshRecovery=true;
+}
+const after=cursors[Math.floor(cursors.length/2)],tail=[];await consumeSSE(await get(`/ag-ui/runs/${run.runId}?threadId=${spec.threadId}&after=${after}`),{onEvent:event=>tail.push(event)});
+assert.deepEqual(tail,events.filter((_,i)=>cursors[i]>after));current.cursorRecovery=true;
+fs.writeFileSync(file,JSON.stringify(current,null,2));
+console.log(JSON.stringify({status:'passed',nativeUpload:uploads[0].status,returnedFile:downloads[0].name,downloadBytes:bytes.length,refreshRecovery:!!current.refreshRecovery,cursorRecovery:true,pending:status.pending}));

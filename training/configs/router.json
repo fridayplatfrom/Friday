@@ -1,0 +1,35 @@
+{
+  "expert_id": "router",
+  "primary_head": "expert",
+  "heads": {
+    "expert": [
+      "vision",
+      "botany",
+      "wildlife",
+      "toxicity",
+      "biology",
+      "genetics",
+      "cell_biology",
+      "mycology",
+      "entomology",
+      "ornithology",
+      "ecology",
+      "pathology",
+      "marine",
+      "microbiology",
+      "evolution",
+      "math",
+      "format"
+    ]
+  },
+  "vocab_size": 500,
+  "hidden_dim": 128,
+  "representation_dim": 64,
+  "epochs": 40,
+  "min_score": 0.8,
+  "abstain_labels": {
+    "expert": [
+      "format"
+    ]
+  }
+}

@@ -1,0 +1,1165 @@
+{
+  "best_epoch": 32,
+  "elapsed_seconds": 2.2121554999998807,
+  "epochs_run": 32,
+  "history": [
+    {
+      "epoch": 1,
+      "training_weighted_cross_entropy": 3.842945922504772,
+      "validation_weighted_cross_entropy": 3.1320090293884277
+    },
+    {
+      "epoch": 2,
+      "training_weighted_cross_entropy": 3.2680954282934014,
+      "validation_weighted_cross_entropy": 2.5376272201538086
+    },
+    {
+      "epoch": 3,
+      "training_weighted_cross_entropy": 1.9979447559876875,
+      "validation_weighted_cross_entropy": 0.857017993927002
+    },
+    {
+      "epoch": 4,
+      "training_weighted_cross_entropy": 0.7055407708341425,
+      "validation_weighted_cross_entropy": 0.29164960980415344
+    },
+    {
+      "epoch": 5,
+      "training_weighted_cross_entropy": 0.20643311061642386,
+      "validation_weighted_cross_entropy": 0.09310474991798401
+    },
+    {
+      "epoch": 6,
+      "training_weighted_cross_entropy": 0.06537032279778611,
+      "validation_weighted_cross_entropy": 0.02858383022248745
+    },
+    {
+      "epoch": 7,
+      "training_weighted_cross_entropy": 0.02612924474206838,
+      "validation_weighted_cross_entropy": 0.016938921064138412
+    },
+    {
+      "epoch": 8,
+      "training_weighted_cross_entropy": 0.01558667633005164,
+      "validation_weighted_cross_entropy": 0.012818451970815659
+    },
+    {
+      "epoch": 9,
+      "training_weighted_cross_entropy": 0.01142352641644803,
+      "validation_weighted_cross_entropy": 0.010285243391990662
+    },
+    {
+      "epoch": 10,
+      "training_weighted_cross_entropy": 0.008920796384865587,
+      "validation_weighted_cross_entropy": 0.008325875736773014
+    },
+    {
+      "epoch": 11,
+      "training_weighted_cross_entropy": 0.007394668646156788,
+      "validation_weighted_cross_entropy": 0.007141598500311375
+    },
+    {
+      "epoch": 12,
+      "training_weighted_cross_entropy": 0.00653337776152925,
+      "validation_weighted_cross_entropy": 0.006364008877426386
+    },
+    {
+      "epoch": 13,
+      "training_weighted_cross_entropy": 0.006120175292546099,
+      "validation_weighted_cross_entropy": 0.005764045752584934
+    },
+    {
+      "epoch": 14,
+      "training_weighted_cross_entropy": 0.005271510051732714,
+      "validation_weighted_cross_entropy": 0.0052469391375780106
+    },
+    {
+      "epoch": 15,
+      "training_weighted_cross_entropy": 0.004873070696538145,
+      "validation_weighted_cross_entropy": 0.004823101684451103
+    },
+    {
+      "epoch": 16,
+      "training_weighted_cross_entropy": 0.0045623091811483555,
+      "validation_weighted_cross_entropy": 0.004474581219255924
+    },
+    {
+      "epoch": 17,
+      "training_weighted_cross_entropy": 0.004089913796633482,
+      "validation_weighted_cross_entropy": 0.004182282369583845
+    },
+    {
+      "epoch": 18,
+      "training_weighted_cross_entropy": 0.003969680475579066,
+      "validation_weighted_cross_entropy": 0.0039214519783854485
+    },
+    {
+      "epoch": 19,
+      "training_weighted_cross_entropy": 0.003646349534392357,
+      "validation_weighted_cross_entropy": 0.0036985548213124275
+    },
+    {
+      "epoch": 20,
+      "training_weighted_cross_entropy": 0.0034399519208818674,
+      "validation_weighted_cross_entropy": 0.0034936917945742607
+    },
+    {
+      "epoch": 21,
+      "training_weighted_cross_entropy": 0.0031866802071983166,
+      "validation_weighted_cross_entropy": 0.00332522951066494
+    },
+    {
+      "epoch": 22,
+      "training_weighted_cross_entropy": 0.0030562942635945296,
+      "validation_weighted_cross_entropy": 0.003170945681631565
+    },
+    {
+      "epoch": 23,
+      "training_weighted_cross_entropy": 0.0029686281499876218,
+      "validation_weighted_cross_entropy": 0.003042380791157484
+    },
+    {
+      "epoch": 24,
+      "training_weighted_cross_entropy": 0.0027531367430294103,
+      "validation_weighted_cross_entropy": 0.002920685801655054
+    },
+    {
+      "epoch": 25,
+      "training_weighted_cross_entropy": 0.002729114102707668,
+      "validation_weighted_cross_entropy": 0.0028235053177922964
+    },
+    {
+      "epoch": 26,
+      "training_weighted_cross_entropy": 0.0026772840541194787,
+      "validation_weighted_cross_entropy": 0.002732087392359972
+    },
+    {
+      "epoch": 27,
+      "training_weighted_cross_entropy": 0.002545484553345225,
+      "validation_weighted_cross_entropy": 0.002649020403623581
+    },
+    {
+      "epoch": 28,
+      "training_weighted_cross_entropy": 0.0025008760646662927,
+      "validation_weighted_cross_entropy": 0.0025775586254894733
+    },
+    {
+      "epoch": 29,
+      "training_weighted_cross_entropy": 0.002480796559459784,
+      "validation_weighted_cross_entropy": 0.002519848756492138
+    },
+    {
+      "epoch": 30,
+      "training_weighted_cross_entropy": 0.0023258272346786475,
+      "validation_weighted_cross_entropy": 0.0024657156318426132
+    },
+    {
+      "epoch": 31,
+      "training_weighted_cross_entropy": 0.0022986291865394874,
+      "validation_weighted_cross_entropy": 0.0024199411273002625
+    },
+    {
+      "epoch": 32,
+      "training_weighted_cross_entropy": 0.002283434828066013,
+      "validation_weighted_cross_entropy": 0.002372112823650241
+    }
+  ],
+  "interpretation": "Held-out source/case evaluation; inspect class coverage and sample counts.",
+  "parameter_count": 54206,
+  "splits": {
+    "test": {
+      "count": 22,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 22,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "bell_inequality",
+            "bloch_sphere",
+            "decoherence",
+            "quantum_circuit",
+            "quantum_entanglement",
+            "quantum_error_correction",
+            "quantum_teleportation",
+            "qubit",
+            "schmidt_decomposition",
+            "von_neumann_entropy",
+            "wigner_function",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "bell_inequality",
+            "bloch_sphere",
+            "decoherence",
+            "quantum_circuit",
+            "quantum_entanglement",
+            "quantum_error_correction",
+            "quantum_teleportation",
+            "qubit",
+            "schmidt_decomposition",
+            "von_neumann_entropy",
+            "wigner_function"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0016667075688019395,
+          "per_class": {
+            "bell_inequality": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "bloch_sphere": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "decoherence": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "quantum_circuit": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "quantum_entanglement": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "quantum_error_correction": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "quantum_teleportation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "qubit": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "schmidt_decomposition": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "von_neumann_entropy": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "wigner_function": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 22,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "error_correction_tomography",
+            "open_decoherence_entropy",
+            "qubit_circuit_entanglement",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              8,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "error_correction_tomography",
+            "open_decoherence_entropy",
+            "qubit_circuit_entanglement"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0009700875962153077,
+          "per_class": {
+            "error_correction_tomography": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 6
+            },
+            "open_decoherence_entropy": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "qubit_circuit_entanglement": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.002636795165017247,
+      "zero_feature_inputs": 0
+    },
+    "train": {
+      "count": 88,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 88,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "bell_inequality",
+            "bloch_sphere",
+            "decoherence",
+            "quantum_circuit",
+            "quantum_entanglement",
+            "quantum_error_correction",
+            "quantum_teleportation",
+            "qubit",
+            "schmidt_decomposition",
+            "von_neumann_entropy",
+            "wigner_function",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "bell_inequality",
+            "bloch_sphere",
+            "decoherence",
+            "quantum_circuit",
+            "quantum_entanglement",
+            "quantum_error_correction",
+            "quantum_teleportation",
+            "qubit",
+            "schmidt_decomposition",
+            "von_neumann_entropy",
+            "wigner_function"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0014088196912780404,
+          "per_class": {
+            "bell_inequality": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "bloch_sphere": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "decoherence": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "quantum_circuit": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "quantum_entanglement": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "quantum_error_correction": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "quantum_teleportation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "qubit": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "schmidt_decomposition": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "von_neumann_entropy": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "wigner_function": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 88,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "error_correction_tomography",
+            "open_decoherence_entropy",
+            "qubit_circuit_entanglement",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              24,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              32,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              32,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "error_correction_tomography",
+            "open_decoherence_entropy",
+            "qubit_circuit_entanglement"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.000608396774623543,
+          "per_class": {
+            "error_correction_tomography": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 24
+            },
+            "open_decoherence_entropy": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 32
+            },
+            "qubit_circuit_entanglement": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 32
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.0020172165241092443,
+      "zero_feature_inputs": 0
+    },
+    "validation": {
+      "count": 22,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 22,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "bell_inequality",
+            "bloch_sphere",
+            "decoherence",
+            "quantum_circuit",
+            "quantum_entanglement",
+            "quantum_error_correction",
+            "quantum_teleportation",
+            "qubit",
+            "schmidt_decomposition",
+            "von_neumann_entropy",
+            "wigner_function",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "bell_inequality",
+            "bloch_sphere",
+            "decoherence",
+            "quantum_circuit",
+            "quantum_entanglement",
+            "quantum_error_correction",
+            "quantum_teleportation",
+            "qubit",
+            "schmidt_decomposition",
+            "von_neumann_entropy",
+            "wigner_function"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0015519298613071442,
+          "per_class": {
+            "bell_inequality": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "bloch_sphere": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "decoherence": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "quantum_circuit": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "quantum_entanglement": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "quantum_error_correction": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "quantum_teleportation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "qubit": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "schmidt_decomposition": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "von_neumann_entropy": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "wigner_function": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 22,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "error_correction_tomography",
+            "open_decoherence_entropy",
+            "qubit_circuit_entanglement",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              8,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "error_correction_tomography",
+            "open_decoherence_entropy",
+            "qubit_circuit_entanglement"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0008201829623430967,
+          "per_class": {
+            "error_correction_tomography": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 6
+            },
+            "open_decoherence_entropy": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "qubit_circuit_entanglement": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.002372112823650241,
+      "zero_feature_inputs": 0
+    }
+  },
+  "unsupported_training_labels": {}
+}

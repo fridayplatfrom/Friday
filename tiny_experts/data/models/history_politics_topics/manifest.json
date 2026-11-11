@@ -1,0 +1,78 @@
+{
+  "architecture": {
+    "dropout": 0.05,
+    "feature_dim": 178,
+    "hidden_dim": 96,
+    "name": "multihead_mlp_v1",
+    "representation_dim": 64
+  },
+  "artifacts": {
+    "metrics.json": "9b525bb00ed90850e80a0db3cfd5ff6ab3881fa21b2deb5afca83fff14cf4a73",
+    "model.pt": "3f824289641a6fa238935389f98016114e7d3dbbd713dd07f60cca4b37c48c96",
+    "splits.json": "bb1f4b0f1184c6fabbb0a29d79b59c9d424c21dec05463e8e531188d5878488e",
+    "vocab.json": "53968d9bd777c2621241cb6dcb2f7881106ad962bd57740647eaddfb99fe1f2d"
+  },
+  "created_at": "2026-11-06T23:35:36.232629+00:00",
+  "dataset_sha256": "a0718ed942332fd69c7c9a96d4a97170a81b0f241a59d78d257cfe81a28e4936",
+  "expert_id": "history_politics_topics",
+  "feature_version": "unicode_word_bigram_l2_v1",
+  "group_split_sha256": "4a9ffaa587f09d6dcaf7bb4a5f05a02b751f2b9be6422aecc497e3f0a57817b6",
+  "heads": {
+    "topic": [
+      "constitutional_law_governance",
+      "economic_fiscal_policy",
+      "world_and_modern_history"
+    ]
+  },
+  "inference": {
+    "abstain_labels": {},
+    "min_score": 0.4,
+    "score_type": "uncalibrated_softmax",
+    "zero_feature_policy": "abstain"
+  },
+  "limitations": [
+    "Categorical text classifier; does not read books or generate explanations.",
+    "Softmax scores are uncalibrated and do not certify correctness.",
+    "Reviewed-data status records the input workflow, not production readiness."
+  ],
+  "primary_head": "topic",
+  "schema_version": 1,
+  "status": "reviewed_data",
+  "training": {
+    "augmentation": "none",
+    "best_epoch": 26,
+    "epochs_run": 26,
+    "reviewed_data_required": true,
+    "selection_metric": "validation_weighted_cross_entropy",
+    "source_separated": true,
+    "torch_version": "2.15.0+cpu"
+  },
+  "training_config": {
+    "abstain_labels": {},
+    "batch_size": 6,
+    "dropout": 0.05,
+    "epochs": 45,
+    "expert_id": "history_politics_topics",
+    "head_weights": {},
+    "heads": {
+      "topic": [
+        "constitutional_law_governance",
+        "economic_fiscal_policy",
+        "world_and_modern_history"
+      ]
+    },
+    "hidden_dim": 96,
+    "learning_rate": 0.008,
+    "min_delta": 0.0001,
+    "min_score": 0.4,
+    "patience": 8,
+    "primary_head": "topic",
+    "representation_dim": 64,
+    "seed": 42,
+    "test_fraction": 0.15,
+    "threads": 2,
+    "validation_fraction": 0.15,
+    "vocab_size": 2000,
+    "weight_decay": 0.0001
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "test": {
+    "answerable_examples": 2,
+    "count": 3,
+    "span_correct": 1,
+    "span_exact_match": 0.3333333333333333,
+    "unanswerable_examples": 1
+  },
+  "train": {
+    "answerable_examples": 4,
+    "count": 5,
+    "span_correct": 3,
+    "span_exact_match": 0.6,
+    "unanswerable_examples": 1
+  },
+  "validation": {
+    "answerable_examples": 2,
+    "count": 3,
+    "span_correct": 1,
+    "span_exact_match": 0.3333333333333333,
+    "unanswerable_examples": 1
+  }
+}

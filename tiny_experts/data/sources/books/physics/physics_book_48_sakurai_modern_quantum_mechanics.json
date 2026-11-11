@@ -1,0 +1,275 @@
+[
+  {
+    "document_id": "doc_book_48_sakurai_modern_quantum_mechanics",
+    "book_id": "book_48_sakurai_modern_quantum_mechanics",
+    "source": "Sakurai — Modern Quantum Mechanics (Overview & Core Formulations, Pages 1-12)",
+    "chapter_title": "Sakurai — Modern Quantum Mechanics — Core Formulations",
+    "text": "Sakurai — Modern Quantum Mechanics — Authoritative Textbook Reference (Quantum Mechanics, 513 pages). The hilbert space is defined as a foundational theoretical formulation in Sakurai — Modern Quantum Mechanics governing quantum mechanics. The Schrodinger equation governs the deterministic unitary time evolution of the complex quantum mechanical wavefunction. Heisenberg’s uncertainty principle states that non-commuting canonical observables cannot simultaneously possess sharp eigenvalues. The Born rule defines the probability density of finding a quantum particle at a given position as the squared modulus of the wavefunction. A Hermitian operator is a linear self-adjoint operator on Hilbert space possessing strictly real observable eigenvalues. Core concepts and formulations in Sakurai — Modern Quantum Mechanics: hilbert space, pauli matrices, density matrix, bell inequality, wigner-eckart theorem, propagator, schrodinger equation, wavefunction, hermitian operator, eigenstate, commutator, uncertainty principle, harmonic oscillator.",
+    "text_char_start": 0,
+    "text_char_end": 1047,
+    "pages_start": 1,
+    "pages_end": 12,
+    "subdomain": "quantum_mechanics",
+    "content_hash": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+    "passage_id": "160b99e7f7f3639202df37bdb8592062ea7fa96114ae40a9695537499f49c932",
+    "source_metadata": {
+      "raw_text_sha256": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+      "raw_text_relative_path": "_raw/a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574.txt",
+      "book_title": "Sakurai — Modern Quantum Mechanics",
+      "total_pages": 513,
+      "ocr_recovered": true
+    }
+  },
+  {
+    "document_id": "doc_book_48_sakurai_modern_quantum_mechanics",
+    "book_id": "book_48_sakurai_modern_quantum_mechanics",
+    "source": "Sakurai — Modern Quantum Mechanics (OCR Pages 33-53 of 513)",
+    "chapter_title": "Pages 33-53",
+    "text": "[p.33] 20 Fundamental Concepts Let us now look at that appears in (1.3.11). Since this is an outer product, it must be an operator. Let it operate on - - ca,la'). (1.3.14) We see that selects that portion of the ket la) parallel to la'), so is known as the projection operator along the base ket la') and is denoted by Au, The completeness relation (1.3.11) can now be written as E Au-I. Matrix Representations (1.3.15) (1.3.16) Having specified the base kets, we now show how to represent an operator, say X, by a square matrix. First, using (1.3.11) twice, we write the operator X as (1.3.17) There are altogether N 2 numbers of form where N is the dimensionality of the ket space. We may arrange them into an N X N square matrix such that the column and row indices appear as follows: column Explicitly we may write the matrix as where the symbol stands for \"is represented by.\" * Using (1.2.38), we can write (a\"lXIa') = (a' (1.3.18) (1.3.19) (1.3.20) At last, the Hermitian adjoint operation, originally defined by (1.2.24), has been related to the (perhaps more familiar) concept of complex conjugate transposed. If an operator B is Hermitian, we have = <a'lBla\")*. (1.3.21) * We do not use the equality sign here Pecause the particular form of a matrix representation depends on thc particular choice of base kcts used. Thc operator is different from a representation of the operator just as the actress is different from a poster of the actress. [p.53] 40 Fundamental Concepts from linear algebra, nontrivial solutions for C!) are possible only if the characteristic equation det(B - RI) = O (1.5.21) is satisfied. This is an Nth order algebraic equation for X, and the N roots obtained are to be identified with the various we are trying to determine. Knowing b(l) we can solve for the corresponding Ck(l) 's up to an overall constant to be determined from the normalization condition. Com- paring (1.5.20b) with (1.5.7), we see that the C!) 's are just the elements of the unitary matrix involved in the change of basis (la')) For this procedure the Hermiticity of B is important. For example, consider S + defined by (1.3.38) or (1.4.19). This operator is obviously non-Hermitian. The corresponding matrix, which reads in the Sz basis as (1.5.22) cannot be diagonalized by any unitary matrix. In Chapter 2 we will encounter eigenkets of a non-Hermitian operator in connection with a coherent state of a simple harmonic oscillator. Such eigenkets, however, are known not to form a complete orthonormal set, and the formalism we have developed in this section cannot be immediately applied. Unitary Equivalent Observables We conclude this section by discussing a remarkable theorem on the unitary transform of an observable. Theorem. Consider again two sets of orthonormal basis {l and {lb')} connected by the U operator (1.5.4). Knowing U, we may construct a unitary transform of A, UAU-I; then A and UA U-l are said to be unitary equivalent observables. The eigenvalue equation for A, Aldi)) - clearly implies that UAU-lUla(l)) = But this can be rewritten as (1.5.23) (1.5.24) (1.5.25) This deceptively simple result is quite profound. It tells us that the lb')'s are eigenkets of UAU-I with exactly the same eigenvalues as the A",
+    "text_char_start": 1049,
+    "text_char_end": 4289,
+    "pages_start": 33,
+    "pages_end": 53,
+    "subdomain": "quantum_mechanics",
+    "content_hash": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+    "passage_id": "f386626883be6197599b0f2132038d2b538a2ca52709d0a234eca00a1a2a89d6",
+    "source_metadata": {
+      "raw_text_sha256": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+      "raw_text_relative_path": "_raw/a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574.txt",
+      "book_title": "Sakurai — Modern Quantum Mechanics",
+      "total_pages": 513,
+      "ocr_recovered": true
+    }
+  },
+  {
+    "document_id": "doc_book_48_sakurai_modern_quantum_mechanics",
+    "book_id": "book_48_sakurai_modern_quantum_mechanics",
+    "source": "Sakurai — Modern Quantum Mechanics (OCR Pages 73-93 of 513)",
+    "chapter_title": "Pages 73-93",
+    "text": "[p.73] 60 The transformation function analogous to (l. 7.32) is 1 < x 'Ip' > = ip'\u0007x' exp so that Va(x') = and 1 h (2 7Th ) 3/2 ip'\u0007x' d 3 p ' exp Fundamental Concepts (1.7.50) (1.7.51a) h (27Th)3/2 1 d 3 x ' exp (27h)3/2 - ip'\u0007x Va(x'). (1.751b) h It is interesting to check the dimension of the wave functions- In one-dimensional problems the normalization requirement (1.6.8) implies that Kx'la>12 has the dimension of inverse length, so the wave function itself must have the dimension of (length) - 1/2 In contrast, the wave function in three-dimensional problems must have the dimension of (length) -3/2 because Kx'la>12 integrated over all spatial volume must be unity (dimensionless). Problems I. Prove 2. Suppose a 2><2 matrix X (not necessarily Hermitian, nor unitary) is written as X = ao + o\u0007a, where ao and al.2,3 are numbers. a. How are ao and a k (k related to tr(X) and tr(0kX)? b. Obtain ao and ak in terms of the matrix elements XIJ 3. Show that the determinant of a matrix is invariant under (2 io\u0007h+ - io\u0007 + -4 a\u0007a' exp a \u0007 a exp 2 Find a'k in terms of ak when h is in the positive z-direction and interpret your result. 4. Using the rules of bra-ket algebra, prove or evaluate the following: tr( X Y) - tr(YX), where X and Y are operators; a. ( XY)t = Y t X t, where X and Y are operators; b. in ket-bra form, where A is a Hermitian operator exp[ = ? c. whose eigenvalues are known; d. where (x'la'). [p.93] 80 Quantum Dynamics In a realistic physical situation may be peaked around E = E with width A E. Writing (2.1.67) as (4 C(t) = exp h (2.1.69) we see that as t becomes large, the integrand oscillates very rapidly unless the energy interval IE - Eol is small compared with h/ t. If the interval for which IE - Eol = h/t holds is much narrower than A E -the width of get essentially no contribution to C(t) because of strong cancellations. The characteristic time at which the modulus of the correlation amplitude starts becoming appreciably different from 1 is given by h (2.1.70) Even though this equation is obtained for a superposition state with a quasi-continuous energy spectrum, it also makes sense for a two-level system; in the spin-precession problem considered earlier, the state ket, which is initially ISx + starts losing its identity after - I // - h/(E E _ ), as is evident from (2.1.60). To summarize, as a result of time evolution the state ket of a physical system ceases to retain its original form after a time interval of order h/ A E. In the literature this point is often said to illustrate the time-energy uncertainty relation (2.1.71) However, it is to be clearly understood that this time-energy uncertainty relation is of a very different nature from the uncertainty relation between two incompatible observables discussed in Section 1.4. In Chapter 5 we will come back to (2.1.71) in connection with time-dependent perturbation theory. 2.2. THE SCHRODINGER VERSUS THE HEISENBERG PICTURE Unitary Operators In the previous section we introduced the concept of time develop- ment by considering the time-evolution operator that affects state kets; that approach to quantum dynamics is known as the Schrikiinger picture. There is another formulation of quantum dynamics where observables, rather than state kets, vary with time; this second approach is known as the Heisenberg picture. Before discussing the differences between the two approaches in detail, we digress to make some general comments on unitary operators.",
+    "text_char_start": 4291,
+    "text_char_end": 7762,
+    "pages_start": 73,
+    "pages_end": 93,
+    "subdomain": "quantum_mechanics",
+    "content_hash": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+    "passage_id": "0cb67d4ea075b5443858a6b2d6c0ec5b599ebd1814146b226fd4741ccb7e6bec",
+    "source_metadata": {
+      "raw_text_sha256": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+      "raw_text_relative_path": "_raw/a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574.txt",
+      "book_title": "Sakurai — Modern Quantum Mechanics",
+      "total_pages": 513,
+      "ocr_recovered": true
+    }
+  },
+  {
+    "document_id": "doc_book_48_sakurai_modern_quantum_mechanics",
+    "book_id": "book_48_sakurai_modern_quantum_mechanics",
+    "source": "Sakurai — Modern Quantum Mechanics (OCR Pages 113-133 of 513)",
+    "chapter_title": "Pages 113-133",
+    "text": "[p.113] 100 Quantum Dynamics that (2.4.11) subject to boundary condition (2.4.13) allows nontrivial solu- tions only for a discrete set of values of E. It is in this sense that the time-independent Schr dinger equation (2.4.11) yields the quantization of energy levels.* Once the partial differential equation (2.4.11) is written, the problem of finding the energy levels of microscopic physical systems is as straightforward as that of finding the characteristic frequencies of vibrating strings or membranes. In both cases we solve boundary-value problems in mathematical physics. A short digression on the history of quantum mechanics is in order here. The fact that exactly soluble eigenvalue problems in the theory of partial differential equations can also be treated using matrrx methods was already known to mathematicians in the first quarter of the twentieth century. Furthermore, theoretical physicists like M. Born frequently consulted great mathematicians of the day-D. Hilbert and H. Weyl, in particular. Yet when matrix mechanics was born in the summer of 1925, it did not immediately occur to the theoretical physicists or to the mathemati- cians to reformulate it using the language of partial differential equations. Six months after Heisenberg's pioneering paper, wave mechanics was proposed by Schr dinger. However, a close inspection of his papers shows that he was not at all influenced by the earlier works of Heisenberg, Born, and Jordan. Instead, the train of reasoning that Icd Schr dinger to formulatc wave mechanics has its roots in W. R. Hamilton's analogy between optics and mechanics, on which we will comment later, and the particle-wave hypothesis of L. de Broglie. Once wave mechanics was formulated, many people, including Schr dinger himself, showed the equivalence between wave mechanics and matrix mechanics. It is assumed that the reader of this book has some experience in solving the time-dependent and time-independent wave equations. He or she should be familiar with the time evolution of a Gaussian wave packet in a force-free region; should be able to solve one-dimensional transmissionreflection problems involving a rectangular potential barrier, and the like; should have seen derived some simple solutions of the time-independent wave equation-a particle in a box, a particle in a square well, the simple harmonic oscillator, the hydrogen atom, and so on-and should also be familiar with some general properties of the energy eigenfunctions and energy eigenvalues, such as (1) the fact that the energy levels exhibit a discrete or continuous spectrum depending on whether or not (2.4.12) is satisfied and (2) the property that the energy eigenfunction in one dimen- Sion is sinusoidal or damped depending on whether E - V(x') is positive or negative. In this book we will not cover these topics. A brief summary of elementary solutions to Schr dinger's equations is presented in Appendix A. *Schr dinger's paper that announced (2 4.11) is appropriately entitled Quantisierung als Eigenwertproblem (Quantization as an Eigenvalue Problem). [p.133] 120 Quantum Dynamics normalized our position eigenkets, < xn, tnlxn_l, tn_l) must have the dimen- Sion of 1/ length. We now look at the exponential in (2.5.40). Our task is to evaluate the At O limit of S(n, n -I). Because the time interval is so small, it is legitimate to make a straight-line approximation to the (xn _ 1, t n _ 1) and (xn, t n) as follows: .2 x At (xn + xn 2 As an example, we consider specifically the free-particle case, tion (2.5.40) now becomes path joining (2.5.41) O. Fqua- n 02 1 w(dt)] (2.5.42) We see that the exponent appearing here is completely identical to the one in the expression for the free-particle propagator (2.5.16). The reader may work out a similar comparison for the simple harmonic oscillator. We remarked earlier that the weight factor 1/w(At) appearing in (2.5.40) is assumed to be independent of V(x), so we may as well evaluate it for the free particle. Noting the orthonormality, in the sense of -function, of Heisenberg-picture position eigenkets at equal times, we obtain 1 w(At) 27ihAt where we have used 27ih At exp 2hAt and 2 m lim 2Tih At 2hAt (2.5.43) (2.5.44) (2.5.45a) (2.5.45b) This weight factor is, of course, anticipated from the expression for the free-particle propagator (2.5.16). To summarize, as At 0, we are led to iS(n,n-1) m < xn, tnlx exp 2Tih At h (2.5.46)",
+    "text_char_start": 7764,
+    "text_char_end": 12190,
+    "pages_start": 113,
+    "pages_end": 133,
+    "subdomain": "quantum_mechanics",
+    "content_hash": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+    "passage_id": "40c2c693e3472abae2f7fd8a03d878bf7a074ce0293bf57436c85c7e6c1255d0",
+    "source_metadata": {
+      "raw_text_sha256": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+      "raw_text_relative_path": "_raw/a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574.txt",
+      "book_title": "Sakurai — Modern Quantum Mechanics",
+      "total_pages": 513,
+      "ocr_recovered": true
+    }
+  },
+  {
+    "document_id": "doc_book_48_sakurai_modern_quantum_mechanics",
+    "book_id": "book_48_sakurai_modern_quantum_mechanics",
+    "source": "Sakurai — Modern Quantum Mechanics (OCR Pages 153-173 of 513)",
+    "chapter_title": "Pages 153-173",
+    "text": "[p.153] 140 Magnetic Monopole Quantum Dynamics We conclude this section with one of the most remarkable predict- ions of quantum physics, which has yet to be verified experimentally. An astute student of classical electrodynamics may be struck by the fact that there is a strong symmetry between E and B, yet a magnetic charge-commonly referred IO as a magnetic monopole-analogous IO electric charge is peculiarly absent in Maxwell's equations. The source of a magnetic field observed in nature is either a moving electric charge or a static magnetic dipole, never a static magnetic charge. Instead of 4TPM analogous to (2.6.72) (2.6.73) V \u0007B actually vanishes in the usual way of writing Maxwell's equations. Quantum mechanics does not predict that a magnetic monopole must exist. However, it unambiguously requires that if a magnetic monopole is ever found in nature, the magnitude of magnetic charge must be quantized in terms of e, h, and c, as we now demonstrate. Suppose there is a point magnetic monopole, situated at the origin, of strength e M analogous to a point electric charge. The static magnetic field is then given by (2.6.74) At first sight it may appear that the magnetic field (2.6.74) can be derived from e M (I -cos O) 0. r sin 8 Recall the expression for curl in spherical coordinates: OAB 1 - (Aosin O) - r sin 0 00 r sin 0 (t) (2.6.75) (2.6.76) But vector potential (2.6.75) has one difficulty-it is singular on the negative z-axis (0 = T). In fact, it turns out to be impossible to construct a singular- ity-free potential valid everywhere for this problem. To see this we first note \"Gauss's law\" B\u0007do = 4re closed surface (2.6.77) [p.173] 160 Theory of Angular Momentum Notice that in derivation 2 we used only the commutation relations for S, so this method can be generalized to rotations of systems with angular momentum higher than For spin both methods give (3.2.8) where the expectation value without subscripts is understood to be taken with respect to the (old) unrotated system. Similarly, (Sy) -+ (Sy)cos+ + (3.2.9) As for the expectation value of Sz, there is no change because Sz commutes with (3.2.10) Relations (3.2.8), (3.2.9), and (3.2.10) are quite reasonable. They show that rotation operator (3.2.3), when applied to the state ket, does rotate the expectation value of S around the z-axis by angle In other words, the expectation value of the spin operator behaves as though it were a classical vector under rotation: <Sk) -+ ERkl<sl), (3.2.11) where R kl are the elements of the 3X3 orthogonal matrix R that specifies the rotation in question. It should be clear from our derivation 2 that this property is not restricted to the spin operator of spin systems. In general, we have (3.2.12) under rotation, where Jk are the generators of rotations satisfying the angular-momentum commutation relations (3.1.20). Later we will show that relations of this kind can be further generalized to any vector operator. So far everything has been as expected. But now, be prepared for a surprise! We examine the effect of rotation operator (3.2.3) on a general ket, (3.2.13) a little more closely. We see that exp( + + ei+/2 (3.2.14) The appearance of the half-angle 4/2 here has an extremely interesting consequence. Let us consider a rotation by 27. We then have Rz(27) (3.2.15)",
+    "text_char_start": 12192,
+    "text_char_end": 15507,
+    "pages_start": 153,
+    "pages_end": 173,
+    "subdomain": "quantum_mechanics",
+    "content_hash": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+    "passage_id": "76a2b9758f58b4cfff42dfbd15e0e2df3c9c42bdc23a3005d4929e8cb5590163",
+    "source_metadata": {
+      "raw_text_sha256": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+      "raw_text_relative_path": "_raw/a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574.txt",
+      "book_title": "Sakurai — Modern Quantum Mechanics",
+      "total_pages": 513,
+      "ocr_recovered": true
+    }
+  },
+  {
+    "document_id": "doc_book_48_sakurai_modern_quantum_mechanics",
+    "book_id": "book_48_sakurai_modern_quantum_mechanics",
+    "source": "Sakurai — Modern Quantum Mechanics (OCR Pages 193-213 of 513)",
+    "chapter_title": "Pages 193-213",
+    "text": "[p.193] 180 Theory of Angular Momentum Example 2. A completely polarized beam with sx . p=lSx; 1 2 1 2 1 2 1 1 1 (3.4.19) The ensembles of Examples 1 and 2 are both pure. Example 3. An unpolarized beam. This can be regarded as an incoherent mixture of a spin-up ensemble and a spin-down ensemble with equal weights (50% each): (3.4.20) 2 which is just the identity matrix divided by 2. As we remarked earlier, the same ensemble can also be regarded as an incoherent mixture of an sx + ensemble and an sx - ensemble with equal weights. It is gratifying that our formalism automatically satisfies the expectation 0 2 2 2 2 2 (3.4.21) 2 where we see from Example 2 that the two terms on the right-hand side are the density matrices for pure ensemble with s x + and sx -. Because p in this case is just the identity operator divided by 2 (the dimensionality), we have tr( pSx) = tr( \"Sy) = psz) -O, (3.4.22) where we used the fact that Sk is traceless. Thus for the ensemble average of S we have (3.4.23) This is reasonable because there should be no preferred spin direction in a completely random ensemble of spin systems. Example 4. As an example of a partially polarized beam, let us consider a 75-25 mixture of two pure ensembles, one with Sz + and the other with w(sx + ) - 0.25. (3.4.24) [p.213] 200 leads to Theory of Angular Momentum d(cosO) 4) = (3.6.30) where we have used the completeness relation for the direction eigenkets, (3.6.31) To obtain the Y/\"l themselves, we may start with the m = I case. We have L +11, 1) -O, which, because of (3.6.13), leads to - ihei+ i- -cot O 611, = o. (3.6.32) (3.6.33) Remembering that the \u0007-dependence must behave like eti+, we can easily show that this partial differential equation is satisfied by < ill, = YI/(O, 4) = cte'/\u0007sin/e, (3.6.34) where is the normalization constant determined from (3.6.30) to be* (-1)/ 211! [(21 Starting with (3.6.34) we can use <ilL_ 11, m) 611, = 1 (l+m)(l-m+l) e-i+ + i cot 8- (3.6.35) < ill, m > (3.6.36) successively to obtain all Yim with I fixed. Because this is done in many textbooks on elementary quantum mechanics, we will not work out the details here. The result for m 2 0 is (-1)/ 211! (21+1) 1 sinme d(cos0) (sin 9)21 , (3.6.37) *Normalization condition (3.6.30), of course, does not determine the phase of q. The factor I)/ is inserted so that when we use the L _ operator successively to reach the state m - O, we obtain yp with the same sign as the Legendre polynomial Pl(cos9) whose phase is fixed by Pl(l) -1 [see (3.6.39)1.",
+    "text_char_start": 15509,
+    "text_char_end": 18031,
+    "pages_start": 193,
+    "pages_end": 213,
+    "subdomain": "quantum_mechanics",
+    "content_hash": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+    "passage_id": "a05eb2158e191aa7f4809ca791a98674e7071c4171e8c767d108a1b8af7269c6",
+    "source_metadata": {
+      "raw_text_sha256": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+      "raw_text_relative_path": "_raw/a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574.txt",
+      "book_title": "Sakurai — Modern Quantum Mechanics",
+      "total_pages": 513,
+      "ocr_recovered": true
+    }
+  },
+  {
+    "document_id": "doc_book_48_sakurai_modern_quantum_mechanics",
+    "book_id": "book_48_sakurai_modern_quantum_mechanics",
+    "source": "Sakurai — Modern Quantum Mechanics (OCR Pages 233-253 of 513)",
+    "chapter_title": "Pages 233-253",
+    "text": "[p.233] 220 Notice also that the changes as follows: 2 Theory of Angular Momentum eigenvalue of the J2 operator defined by (3.8.12) (3.8.16) 2 All this may not be too surprising because we have already proved that J and J 2 operators we constructed out of the oscillator operators satisfy the usual angular-momentum commutation relations. But it is instructive to see in an explicit manner the connection between the oscillator matrix elements and angular-momentum matrix elements. In any case, it is now natural to use 2 2 (3.8.17) in place of n 4 and n _ to characterize simultaneous eigenkets of J 2 and Jz. According to (3.8.13a) the action of J changes n into n + +1, n into _ - 1, which means that j is unchanged and m goes into m + 1. Likewise, n we see that the J _ operator that changes n + into n + -l; n _ into n _ +1 lowers m by one unit without changing j. We can now write as (3.8.7) for the most general N + , N _ eigenket (3.8.18) where we have used IO) for the vacuum ket, earlier denoted by IO, O). A special case of (3.8.18) is of interest. Let us set m = j, which physically means that the eigenvalue of Jz is as large as possible for a given j. We have (3.8.19) We can imagine this state to be built up of 2 j spin particles with their spins all pointing in the positive z-direction. In general, we note that a complicated object of high j can be visualized as being made up of primitive spin particles, j + m of them with spin up and the remaining j - m of them with spin down. This picture is extremely convenient even though we obviously cannot always regard an object of angular momentum j literally as a composite system of spin 2 particles. All we are saying is that, as far as the transformation properties under rotations are concerned, we can visualize any object of angular momentum j as a composite system of 2 j spin particles formed in the manner indicated by (3.8.18). [p.253] 240 or using (3.5.39) and (3.5.40) we have Theory of Angular Momentum (j' m' +1) j', jm) (3.10.34) Compare this with the recursion relation for the Clebsch-Gordan coemcient (3.7.49). Note the striking similarity if we substitute j' -+ j, m' -+ m, j -+ jl, m -4 mi , k -+ j2, and q -4\"12. Both recursion relations are of the form E a .x . = O, that is, first-order linear homogeneous equations with the same coemcients aiy. Whenever we have (3.10.35) we cannot solve for the x,. (or y.) individually but we can solve for the ratios; so or x.=cy, (3.10.36) where c is a universal proportionality factor. Noting that < jib; mi 11 jib; jm) in the Clebsch-Gordan recursion relation (3.7.49) corresponds to (a', jm), we see that < a', j 'm jm) = (universal proportionality constant independent of m, q, and mq lljk; j'm'>, which proves the theorem. (3.10.37) Let us now look at two simple examples of the Wigner-Eckart theorem. Example 1. Tensor of rank O, that is, scalar TOO) = S. The matrix element of a scalar operator satisfies (a'j11Sllaj) (a', j'm'lSla, jm) JJ mm' (3.10.38) because S acting on 'a, jnt> is like adding an angular momentum of zero. Thus the scalar operator cannot change j, m values. Example 2. Vector operator which in the spherical tensor language is a rank 1 tensor. The spherical component of V can be written as V so we have the selection rule Am m' - m = I , O Aj j' - j (3.10.39)",
+    "text_char_start": 18033,
+    "text_char_end": 21348,
+    "pages_start": 233,
+    "pages_end": 253,
+    "subdomain": "quantum_mechanics",
+    "content_hash": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+    "passage_id": "84b14b71a2e7ac62b3279411beb65ad3d8e2c33b9bbc0ab9d565cd8595ffaa63",
+    "source_metadata": {
+      "raw_text_sha256": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+      "raw_text_relative_path": "_raw/a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574.txt",
+      "book_title": "Sakurai — Modern Quantum Mechanics",
+      "total_pages": 513,
+      "ocr_recovered": true
+    }
+  },
+  {
+    "document_id": "doc_book_48_sakurai_modern_quantum_mechanics",
+    "book_id": "book_48_sakurai_modern_quantum_mechanics",
+    "source": "Sakurai — Modern Quantum Mechanics (OCR Pages 273-293 of 513)",
+    "chapter_title": "Pages 273-293",
+    "text": "[p.273] 260 and I >- l >, Symmetry in Quantum Mechanics (4 2.40b) where E a, are the parity eigenvalues ( I). We can show that < lxla) = 0 (4.2.41) unless e a = - E . In other words, the parity-odd operator x connects states of opposite parity. The proof of this follows: ( lxla) = ( 17T-lwxr-17Tla) = EaE ( -< lxla)), (4.2.42) which is impossible for a finite nonzero unless E a and are opposite in sign. Perhaps the reader is familiar with this argument from (4.2.43) if and have the same parity. This selection rule, due to Wigner, is of importance in discussing radiative transitions between atomic states. As we will discuss in greater detail later, radiative transitions take place between states of opposite parity as a consequence of multipole expansion for- malism. This rule was known phenomenologically from analysis of spectral lines, before the birth of quantum mechanics, as Laporte's rule. It was Wigner who showed that Laporte's rule is a consequence of the parity-selection rule. If the basic Hamiltonian 11 is invariant under parity, nondegenerate energy eigenstates [as a corollary of (4.2.43)1 cannot possess a permanent electric dipole moment: (nlxln) -O. (4.2.44) This follows trivially from (4.2.43), because with the nondegenerate assumption, energy eigenstates are also parity eigenstates [see (4.2.32) and (4.2.33)1. For a degenerate state, it is perfectly all right to have an electric dipole moment. We will see an example of this when we discuss the linear Stark effect in Chapter 5. Our considerations can be generalized: Operators that are odd under parity, like p or S\u0007x, have nonvanishing matrix elements only between states of opposite parity. In contrast, operators that are even under parity connect states of the same parity. Parity Nonconservation The basic Hamiltonian responsible for the so-called weak interaction of elementary particles is not invariant under parity. In decay processes we can have final states which are superpositions of opposite parity states. Observable quantities like the angular distribution of decay products can [p.293] 280 Symmetry in Quantum Mechanics Now suppose A is a component of a spherical tensor T Because of the Wigner-Eckart theorem, it is sumcient to examine just the matrix element of the q = O component. In general, T (k) (assumed to be Hermitian) is said to be even or odd under time reversal depending on how its q = 0 component satisfies the upper or lower sign in Equation (4.4.80) for A T (k) becomes (4.4.81) < a, j, j, m) - (a, j, - j, - m). (4.4.82) Due to (3.6.46) (3.6.49), we expect la, j, - m) - 9(0, j, m > up to a phase. We next use (3.10.22) for To(k), which leads to = ( - I) k T (k) + (q * O components), 9t(o, 7,0) (4.4.83) where we have used 9 (k Pk(COST)- ( l)k, and the q com- ponents give vanishing contributions when sandwiched between (a, j, ml and la, j, m). The net result is (a, j, j, m) = j, j, m). (4.4.84) As an example, taking k = 1, the expectation value (x) taken with respect to eigenstates of j, m vanishes. We may argue that we already know (x) = 0 from parity inversion if the expectation value is taken with respect to parity eigenstates [see (4.2.41)]. But note that here la, j, m > need not be parity eigenkets! For example, the I j, m) for spin particles could be cslS1/2) + cpIPl/2). Interactions with Electric and Magnetic Fields; Kramers Degeneracy Consider charged particles in an external electric or magnetic field. If we have only a static electric field interacting with the electric charge, the interaction part of the Hamiltonian is just V (x) = e+(x), (4.4.85) where +(x) is the electrostatic potential. Because +(x) is a real function of the time-reversal even operator x, we have [a, HI -O. (44.86) Unlike the parity case, (4.4.86) does not lead to an interesting conservation law. The reason is that to) U(t, (4.4.87) even if (4.4.86) holds, so our discussion following (4.1.9) of Section 4.1 breaks down. As a result, there is no such thing as the \"conservation of",
+    "text_char_start": 21350,
+    "text_char_end": 25353,
+    "pages_start": 273,
+    "pages_end": 293,
+    "subdomain": "quantum_mechanics",
+    "content_hash": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+    "passage_id": "f6ae54c41eee43bfa121851b52105cd243b44d8c8f8f217d9ea1a6a4d28f37ae",
+    "source_metadata": {
+      "raw_text_sha256": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+      "raw_text_relative_path": "_raw/a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574.txt",
+      "book_title": "Sakurai — Modern Quantum Mechanics",
+      "total_pages": 513,
+      "ocr_recovered": true
+    }
+  },
+  {
+    "document_id": "doc_book_48_sakurai_modern_quantum_mechanics",
+    "book_id": "book_48_sakurai_modern_quantum_mechanics",
+    "source": "Sakurai — Modern Quantum Mechanics (OCR Pages 313-333 of 513)",
+    "chapter_title": "Pages 313-333",
+    "text": "[p.313] 300 Approximation Methods To calculate poll), we substitute (5.2.5) into (5.2.3) to obtain 1 E - ELO) - XPoVP0 - x2P0VPl PIVP() poll) -o. (5.2.7) Although there is a term of order X2 in (5.2.7) that results from the substitution, we shall find that it produces a term of order X in the state poll). To order X we obtain the equation for the energies to order X and eigen- functions to order zero, (5.2.8) This is an equation in the g dimensional degenerate subspace and clearly means that thc eigenvectors are just thc eigenvectors of the g x g matrix POV Po and the eigenvalues EU) are just the roots of the secular equation det[V - (E - = O (5.2.9) where V - matrix of POV Po with matrix elements (m(0) Explicitly in matrix form we have (1 (0) 11(0) (5.2.10) The roots determine the eigenvalues are g altogether-and by substituting them into (5.2.10), we can solve for for each I up to an overall normalization constant. Thus by solving the eigenvalue problem, we obtain in one stroke both the first-order energy shifts and the correct zeroth-order eigenkets. Notice that the zeroth-order kets we obtain as 0 are just the linear combinations of the various that diagonalize the perturbation V, the diagonal elements immediately giving the firstorder shift (5.2.11) Note also that if the degenerate subspace were the whole space, we would have solved the problem exactly in this manner. The presence of unperturbed \"distant\" eigenkets not belonging to the degenerate subspace will show up only in higher orders-first order and higher for the energy ei- genkets and second order and higher for the energy eigenvalues. Expression (5.2.11) looks just like the first-order energy shift [scc (5.1.37)] in the nondegenerate case except that here we have to makc sure that the base kets used are such that V docs not have nonvanishing offdiagonal matrix elcments in the subspace spanned by the degenerate unperturbed eigenkets. If the V operator is already diagonal in the base ket representation we are using, we can immediately write down the first-order [p.333] 320 Approximation Methods Time-Dependent Two-State Problems: Nuclear Magnetic Resonance, Masers, and So Forth Exact soluble problems with time-dependent potentials are rather rare. In most cases we have to resort to perturbation expansion to solve the coupled differential equations (5.5.17), as we will discuss in the next section. There is, however, a problem of enormous practical importance, which can be solved exactly-a two-state problem with a sinusoidal oscillating potential. The problem is defined by (E2 > El) (5.5.18) v(t) - where y and a.' are real and positive. In the language of (5.5.14) and (5.5.15), we have V12 = (5.5.19) We thus have a time-dependent potential that connects the two energy eigenstates of Ho. In other words, we can have a transition between the two states 11) 12). An exact solution to this problem is available. If initially at t -O only the lower level is populated so that [see (5.5.3)] C2(o) = O, (5.5.20) then the probability for being found in each of the two states is given by (Rabi's formula, after I. I. Rabi, who is the father of molecular beam techniques) where Y2/h2 2 sin 4 021 h (5.5.21a) (5.5.21b) (5.5.22) as the reader may verify by working out Problem 30 of this chapter. Let us now look at IC21 a little more closely. We see that the probability for finding the upper state E2 exhibits an oscillatory time dependence with angular frequency, two times that of (5.5.23) h2 4",
+    "text_char_start": 25355,
+    "text_char_end": 28851,
+    "pages_start": 313,
+    "pages_end": 333,
+    "subdomain": "quantum_mechanics",
+    "content_hash": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+    "passage_id": "7fc80d4f2fb09a516c61dc59c9e8dabf965f4f5a81930a158a6d066f8870f00d",
+    "source_metadata": {
+      "raw_text_sha256": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+      "raw_text_relative_path": "_raw/a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574.txt",
+      "book_title": "Sakurai — Modern Quantum Mechanics",
+      "total_pages": 513,
+      "ocr_recovered": true
+    }
+  },
+  {
+    "document_id": "doc_book_48_sakurai_modern_quantum_mechanics",
+    "book_id": "book_48_sakurai_modern_quantum_mechanics",
+    "source": "Sakurai — Modern Quantum Mechanics (OCR Pages 353-373 of 513)",
+    "chapter_title": "Pages 353-373",
+    "text": "[p.353] 340 Approximation Methods As L + 00, it is a good approximation to treat n as a continuous variable; in fact it is just the magnitude of the radial vector in the lattice space. Let us consider a small-volume element such that the radial vector falls within n and n + dn and the solid angle element do; clearly, it is of volume n 2 dndQ. The energy of the final-state plane wave is related to k f and hence to n; we have 2m e _ 2m e (5.7.30) Furthermore, the direction of the radial vector in the lattice space is just the momentum direction of the final state, so the number of states in the interval between E and E + dE with direction into dQ being k f is (remember dE (h2kf/me) dkf) given by* dk n2dQ dE- L ( 21 f dQdE ; kfdEdQ. (5.7.31) We can now put everything together to obtain an expression for the differential cross section for the photoelectric effect: mekfL3 do 472ah (5.7.32) To be specific, let us consider the ejection of a K shell (the innermost shell) electron caused by absorption of light. The initial-state wave function is essentially the same as the ground-state hydrogen atom wave function except that the Bohr radius ao is replaced by ao/Z. Thus e L3/2 3/2 z x(-ihv) e Zr/ao Integrating by parts, we can pass to the left side. Furthermore, (5.7.33) (5.7.34) because is perpendicular to h. On the other hand, V acting on e - Ike x brings down - iky, which can be taken outside the integral. Thus to evaluate (5.7.33), all we need to do is take the Fourier transform of the atomic wave function with respect to (5.7.35) *This is equivalent to taking one state per cube in phase space. [p.373] 360 and Ik'k\")- - 1 Identical Particlcs (6.1.11b) We can define the symmetrizer and antisymmetrizer as follows: S12 + P12), A12 - P12). (6.1.12) If we apply S12(A12) to an arbitrary linear combination of and 1k\") 1k the resulting ket is necessarily symmetric (antisymmetric). This can easily be seen as follows: A12 = {(cllk'>lk\") + + 2 (6.1.13) Our consideration can be extended to a system made up of many identical particles. We define Polk')lk\") \u0007 . .. 1k] > \u0007 1+1 Clearly, just as before, and the allowed eigenvalues of PIJ are + I and important to note, however, that in general (6.1.14) (6.1.15) (6.1.16) It is worth explicitly working out a system of three identical particles. First, there are 3! 6 possible kets of form (6.1.17) where k', k\", and k\"' are all different. Thus there is sixfold exchange degeneracy. Yet if we insist that the state be totally symmetrical or totally antisymmetrical, we can form only one linear combination each. Explicitly, we have + )lk') 1k\"' (6.1.18) These are both simultaneous eigenkets of P12, P23, and P13. We remarked",
+    "text_char_start": 28853,
+    "text_char_end": 31542,
+    "pages_start": 353,
+    "pages_end": 373,
+    "subdomain": "quantum_mechanics",
+    "content_hash": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+    "passage_id": "7ca901afa6dd13e5cd4918db19837a22e6fc82f0c5c519e35b5724ba5991fce7",
+    "source_metadata": {
+      "raw_text_sha256": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+      "raw_text_relative_path": "_raw/a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574.txt",
+      "book_title": "Sakurai — Modern Quantum Mechanics",
+      "total_pages": 513,
+      "ocr_recovered": true
+    }
+  },
+  {
+    "document_id": "doc_book_48_sakurai_modern_quantum_mechanics",
+    "book_id": "book_48_sakurai_modern_quantum_mechanics",
+    "source": "Sakurai — Modern Quantum Mechanics (OCR Pages 393-413 of 513)",
+    "chapter_title": "Pages 393-413",
+    "text": "[p.393] 380 of Ho: Scattering Theory (7.1.3) (We use IO) here rather than Ip) because we may later be interested in free-spherical wave rather than plane-wave states; may stand for either.) The basic Schr dinger equation we wish to solve is - EIV>. (7.1.4) Both Ho and H + V exhibit continuous energy spectra. We look for a solution to (7.1.4) such that, as O, we have -+ 14), where is the solution to the free-particle Schr dinger equation [(7.1.3)] with the same energy eigenvalue. It may be argued that the desired solution is 1 (7.1.5) apart from complications arising from the singular nature of the operator 1/(E - Ho). We can see this by noting that E - Ho applied to (7.1.5) immediately gives the correct equation, (7.1.4). The presence of 14) is reasonable because IV) must reduce to 14) as V vanishes. However, without prescriptions for dealing with a singular operator, an equation of type (7.1.5) has no meaning. The trick we used in time-independent perturbation theory-inserting the complimentary projection operator, and so on (see Section 5.1)-does not work well here because both and IV) exhibit continuous eigenvalues. Instead, this time the solution is specified by making E slightly complex: 1 E-Ho ie (7.1.6) This is known as the Lippmann-Schwinger equation. The physical meaning of is to be discussed in a moment by looking at ) ) at large distances. The Lippmann-Schwinger equation is a ket equation independent of particular representations. We now confine ourselves to the position basis by multiplying (xl from the left. Thus Jd3x'<x 1 (7.1.7) This is an integral equation for scattering because the unknown ket ) ) appears under an integral sign. If 14) stands for a plane-wave state with momentum p, we can write ip\u0007x/h (2Th)3/2 (11.8) [p.413] gives f (k',k) = - 2m Scattering Theory (7.6.1) In other words, T is diagonal both in I and in m; furthermore, the (nonvanishing) diagonal element depends on E and I but not on m. This leads to an enormous simplification, as we will see shortly. Let us now look at the scattering amplitude (7.2.19): 47 h2 47 h2 47 h2 2 EETI(E) E h2k2/2m (7.6.2) E h2k2/2m To obtain the angular dependence of the scattering amplitude, let us choose the coordinate system in such a way that k, as usual, is in the positive z-direction. We then have [see (3.6.50)1 yp(k) = 214-1 where we have used P/(l) = 1; hence only the terms m = O contribute. Taking 8 to be the angle between k' and k, we can write Y/0(i ) = 21+1 Pl(cos0). 47 (7.6.3) (7.6.4) It is customary here to define the partial-wave amplitude fl(k) as follows: TTI(E) fl(k)- For (7.6.2) we then have (7.6.5) (7.6.6) where f(O) still depends on k (or the incident energy) even though k is suppressed. To appreciate the physical significance of \"(k), let us study the large-distance behavior of the wave function (xlV(+)) given by (7.1.33). Using the expansion of a plane wave in terms of spherical waves [(7.5.18)1",
+    "text_char_start": 31544,
+    "text_char_end": 34473,
+    "pages_start": 393,
+    "pages_end": 413,
+    "subdomain": "quantum_mechanics",
+    "content_hash": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+    "passage_id": "002d50964213caa1387b51485f6b2afc680dc9ad20e32e0fc21f52fc1d8c3dbd",
+    "source_metadata": {
+      "raw_text_sha256": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+      "raw_text_relative_path": "_raw/a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574.txt",
+      "book_title": "Sakurai — Modern Quantum Mechanics",
+      "total_pages": 513,
+      "ocr_recovered": true
+    }
+  },
+  {
+    "document_id": "doc_book_48_sakurai_modern_quantum_mechanics",
+    "book_id": "book_48_sakurai_modern_quantum_mechanics",
+    "source": "Sakurai — Modern Quantum Mechanics (OCR Pages 433-453 of 513)",
+    "chapter_title": "Pages 433-453",
+    "text": "[p.433] 420 Scattering Theory To be specific we show the results for a spherical well with 2m VoR2/h2 = 5.5 and I = 3 in Figure 7.12. The phase shift (Figure 7.12b), which is small at extremely low energies, starts increasing rapidly past k - 1/ R, and goes through 7/2 around k = 1.3/ R. Another very instructive example is provided by a repulsive -shell potential that is exactly soluble (see Problem 9 in this chapter): V (r) = y (r - R). (7.8.1) Here resonances are possible for I = 0 because the -shell potential itself can trap the particle in the region 0 < r < R. For the case y = 00, we expect a series of bound states in the region r < R with (7.8.2) this is because the radial wave function for 0 must vanish not only at r = 0 but also at r = R - in this case. For the region r > R, we simply have hard-sphere scattering with the S-wave phase shift, given by (7.8.3) With y = 00, there is no connection between the two problems because the wall at r = R cannot be penetrated. The situation is more interesting with a finite barrier, as we can show explicitly. The scattering phase shift exhibits a resonance behavior whenever incident quasi-bound state \u0007 (7.8.4) Moreover, the larger the y, the sharper the resonance peak. However, away from the resonance 80 looks very much like the hard-sphere phase shift. Thus we have a situation in which a resonance behavior is superimposed on a smoothly behaving background scattering. This serves as a model for neutron-nucleus scattering, where a series of sharp resonance peaks are observed on top of a smoothly varying cross section. Coming back to our general discussion of resonance scattering, we ask how the scattering amplitudes vary in the vicinity of the resonance energy. If we are to have any connection between being large and the quasi-bound states, must go through 7/2 (or 3T/2, . .) from below, as discussed above. In other words cot must go through zero from above. Assuming that cot 6/ is smoothly varying near the vicinity of resonance, that is, we may attempt to expand cot as follows: c(E- - Er)21. cot = cot /lE-Er _ 0 (7.8.5) (7.8.6) [p.453] Scattering Theory Note that we write Tll(k) because depends on k [see (7.13.3)]. Let us look briefly at some simple examples to demonstrate that nt(k) is indeed a real phase. For I = O, = -21Ti ess Ids = 2nigf(Y) _ 21Tig3(Y) _ 2iTR) - e Forl- I, we have 2Tig3(Y) = _ I - 21Ti g3(Y) e gl(y) 1 - ds s 21Ti(1 27Ti r (1 + fry)' (7.13.29) 2 + fry) (7.13.30) The same pattern conjecture repeats for I = 2 3 . Thus for a general I, we e210/ _ r (1 + I - h') (7.13.31) As a final summary we remark that the Coulomb partial-wavescattering case differs from the general partial-wave case (see Section 7.6) only through the modification 1 2 ei(kr- (17/2)) 2ikr In 2kr) 2ikr (7.13.32) Let us note that the asymptotic form of the Coulomb scattering wave function, Eq. (7.13.15), is different from that which appears in Eq. (7.1.33), written for large r as eikr elkz + f(e) (7.13.33) The latter form is valid only for short-range forces, while the Coulomb force is a long-range one. The form (7.1.33') is modified as follows for the Coulomb interaction: The first term on the right-hand side of (7.13.15)",
+    "text_char_start": 34475,
+    "text_char_end": 37682,
+    "pages_start": 433,
+    "pages_end": 453,
+    "subdomain": "quantum_mechanics",
+    "content_hash": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+    "passage_id": "d7aab5d0c04e95c5c51c2b777730a5a73d3bf73bca6e28647bd711f027f6c4a2",
+    "source_metadata": {
+      "raw_text_sha256": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+      "raw_text_relative_path": "_raw/a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574.txt",
+      "book_title": "Sakurai — Modern Quantum Mechanics",
+      "total_pages": 513,
+      "ocr_recovered": true
+    }
+  },
+  {
+    "document_id": "doc_book_48_sakurai_modern_quantum_mechanics",
+    "book_id": "book_48_sakurai_modern_quantum_mechanics",
+    "source": "Sakurai — Modern Quantum Mechanics (OCR Pages 473-473 of 513)",
+    "chapter_title": "Pages 473-473",
+    "text": "[p.473] Mathematical Details of Coulomb Scattering Formalism s-plane c s=u=ikr(l -cos 9) s=O (a) s-plane c, (b) FIGURE C.2. (a) s-plane contour C for Equation (C. 1.6). (b) Rubber-band distortion of C into Cl plus C2. Figure C.2b, s = -SO + E); hence,s/u = 1 - (SO 1, SO we can not expand in powers of s/u. However, if we change variables s s' herc, whcrc s' = s u, then expansion about s'/u is possible. Hence, the contour C is now replaced by the contour given in Figure C.2b and, further, s -+ s' takes C2 -+ q: ds + ds ds' (C. 1.8) and x(u) u)IY ( - s') -I Y] ds'}. (C.I.9)",
+    "text_char_start": 37684,
+    "text_char_end": 38261,
+    "pages_start": 473,
+    "pages_end": 473,
+    "subdomain": "quantum_mechanics",
+    "content_hash": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+    "passage_id": "bd4d31738bff29c9e3a746ac595555ee7b8e9c4975d63da90e0baecaecc87590",
+    "source_metadata": {
+      "raw_text_sha256": "a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574",
+      "raw_text_relative_path": "_raw/a3c9e0470623d8c174802e2f48438e663c55bcf70d0c2f4e0956dba24af62574.txt",
+      "book_title": "Sakurai — Modern Quantum Mechanics",
+      "total_pages": 513,
+      "ocr_recovered": true
+    }
+  }
+]

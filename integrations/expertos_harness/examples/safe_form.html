@@ -1,0 +1,10 @@
+<!doctype html>
+<html><head><title>ExpertOS safe form test</title></head><body>
+<h1>Local test form (does not submit)</h1>
+<form onsubmit="return false">
+<label for="company">Company Name</label><input id="company" name="company" type="text" />
+<label for="email">Business Email</label><input id="email" name="email" type="email" />
+<label for="password">Password (should never be auto-filled)</label><input id="password" name="password" type="password" />
+<button type="submit">Submit (disabled in test)</button>
+</form>
+</body></html>

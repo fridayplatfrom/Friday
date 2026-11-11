@@ -1,0 +1,2 @@
+NEW independent print-only test. Only this task is active. Use native pwsh exactly once with command exactly: Write-Output 'FRIDAY_M2_GEM'
+No other tool actions. Wait for the actual result, then reply with a plain text report starting FRIDAY_M2_GEM_START and ending FRIDAY_M2_GEM_END, including actual output and success/failure. Do not resume old tasks, retry actions, edit files or change permissions.

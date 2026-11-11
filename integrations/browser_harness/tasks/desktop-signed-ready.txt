@@ -1,0 +1,1 @@
+Friday authenticated desktop acceptance C. Reply exactly FRIDAY_DESKTOP_SIGNED_READY_C without tools, goals, files or any other work. This is a new synthetic text-only test. Do not repeat earlier requests.

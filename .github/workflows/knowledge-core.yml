@@ -1,0 +1,37 @@
+name: Knowledge Core acceptance
+on:
+  push:
+    paths:
+      - 'tiny_experts/knowledge_core/**'
+      - 'tests/regression/test_knowledge_core.py'
+      - '.github/workflows/knowledge-core.yml'
+  pull_request:
+    paths:
+      - 'tiny_experts/knowledge_core/**'
+      - 'tests/regression/test_knowledge_core.py'
+      - '.github/workflows/knowledge-core.yml'
+permissions:
+  contents: read
+jobs:
+  core-tests:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        python: ['3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '${{ matrix.python }}'
+      - run: python -m pip install 'pytest>=8,<10' 'Pillow>=10.4,<14'
+      - run: python -m compileall -q tiny_experts/knowledge_core
+      - run: python -m pytest -q tests/regression/test_knowledge_core.py --junitxml=core-tests.xml
+        env:
+          PYTHONPATH: '.'
+      - run: python -m tiny_experts.knowledge_core --root ./core-smoke demo
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: 'core-tests-${{ matrix.python }}'
+          path: core-tests.xml

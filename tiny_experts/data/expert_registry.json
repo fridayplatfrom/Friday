@@ -1,0 +1,2346 @@
+{
+  "schema_version": "1.1.0",
+  "title": "Component and Neural Model Catalog",
+  "counts": {
+    "component": 24,
+    "harness_tool": 9,
+    "neural_model": 5,
+    "planned": 7,
+    "support_service": 45,
+    "task_component": 8
+  },
+  "source": {
+    "repo": "fridayplatfrom/tiny-expert-system",
+    "main_revision": "23ffc7528534bd8eb8ff9d62db4205fc2f82e8bf",
+    "plugin_branch": "feature/expertos-harness-plugin"
+  },
+  "policy": {
+    "default_dispatch": "registered components only; neural adapters require compatible bundles",
+    "planned_cannot_run": true,
+    "sensitive_actions_require_human_approval": true
+  },
+  "entries": [
+    {
+      "id": "expert.communicator",
+      "name": "Result Renderer",
+      "kind": "component",
+      "category": "communication.output",
+      "description": "Converts completed structured results into deterministic prose.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/components/result_renderer.py",
+        "class": "ResultRenderer"
+      },
+      "execution_mode": "renderer",
+      "lifecycle": "registered_in_main",
+      "model_status": "not_a_neural_model",
+      "route_key": "communicator",
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Communicator",
+      "legacy_kind": "expert",
+      "component_type": "renderer",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "expert.format",
+      "name": "Output Formatter",
+      "kind": "component",
+      "category": "communication.output",
+      "description": "Formats structured results as cards or JSON.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/components/output_formatter.py",
+        "class": "OutputFormatter"
+      },
+      "execution_mode": "formatter",
+      "lifecycle": "registered_in_main",
+      "model_status": "not_a_neural_model",
+      "route_key": "format",
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Format",
+      "legacy_kind": "expert",
+      "component_type": "formatter",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "expert.biology",
+      "name": "Biology Reference Lookup",
+      "kind": "component",
+      "category": "knowledge.life_sciences",
+      "description": "Selects stored biology explanations and retrieves passages.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/components/biology_reference.py",
+        "class": "BiologyReferenceLookup"
+      },
+      "execution_mode": "reference_lookup",
+      "lifecycle": "registered_in_main",
+      "model_status": "not_a_neural_model",
+      "route_key": "biology",
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Biology",
+      "legacy_kind": "expert",
+      "component_type": "reference_lookup",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "expert.botany",
+      "name": "Botany Reference Lookup",
+      "kind": "component",
+      "category": "knowledge.life_sciences",
+      "description": "Matches plant records and reference passages using explicit rules.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/components/botany_reference.py",
+        "class": "BotanyReferenceLookup"
+      },
+      "execution_mode": "reference_lookup",
+      "lifecycle": "registered_in_main",
+      "model_status": "not_a_neural_model",
+      "route_key": "botany",
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Botany",
+      "legacy_kind": "expert",
+      "component_type": "reference_lookup",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "expert.cell_biology",
+      "name": "Cell Biology Reference Lookup",
+      "kind": "component",
+      "category": "knowledge.life_sciences",
+      "description": "Selects stored cell-biology explanations and retrieves passages.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/components/cell_biology_reference.py",
+        "class": "CellBiologyReferenceLookup"
+      },
+      "execution_mode": "reference_lookup",
+      "lifecycle": "registered_in_main",
+      "model_status": "not_a_neural_model",
+      "route_key": "cell_biology",
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Cell Biology",
+      "legacy_kind": "expert",
+      "component_type": "reference_lookup",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "expert.ecology",
+      "name": "Ecology Reference Lookup",
+      "kind": "component",
+      "category": "knowledge.life_sciences",
+      "description": "Selects stored ecology explanations and retrieves passages.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/components/ecology_reference.py",
+        "class": "EcologyReferenceLookup"
+      },
+      "execution_mode": "reference_lookup",
+      "lifecycle": "registered_in_main",
+      "model_status": "not_a_neural_model",
+      "route_key": "ecology",
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Ecology",
+      "legacy_kind": "expert",
+      "component_type": "reference_lookup",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "expert.entomology",
+      "name": "Entomology Reference Lookup",
+      "kind": "component",
+      "category": "knowledge.life_sciences",
+      "description": "Selects stored insect explanations and retrieves passages.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/components/entomology_reference.py",
+        "class": "EntomologyReferenceLookup"
+      },
+      "execution_mode": "reference_lookup",
+      "lifecycle": "registered_in_main",
+      "model_status": "not_a_neural_model",
+      "route_key": "entomology",
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Entomology",
+      "legacy_kind": "expert",
+      "component_type": "reference_lookup",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "expert.evolution",
+      "name": "Evolution Reference Lookup",
+      "kind": "component",
+      "category": "knowledge.life_sciences",
+      "description": "Selects stored evolution explanations and retrieves passages.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/components/evolution_reference.py",
+        "class": "EvolutionReferenceLookup"
+      },
+      "execution_mode": "reference_lookup",
+      "lifecycle": "registered_in_main",
+      "model_status": "not_a_neural_model",
+      "route_key": "evolution",
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Evolution",
+      "legacy_kind": "expert",
+      "component_type": "reference_lookup",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "expert.genetics",
+      "name": "Genetics Reference Lookup",
+      "kind": "component",
+      "category": "knowledge.life_sciences",
+      "description": "Selects stored genetics explanations and retrieves passages; this module is not the optional genetics neural classifier.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/components/genetics_reference.py",
+        "class": "GeneticsReferenceLookup"
+      },
+      "execution_mode": "reference_lookup",
+      "lifecycle": "registered_in_main",
+      "model_status": "not_a_neural_model",
+      "route_key": "genetics",
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Genetics",
+      "legacy_kind": "expert",
+      "component_type": "reference_lookup",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "expert.marine",
+      "name": "Marine Biology Reference Lookup",
+      "kind": "component",
+      "category": "knowledge.life_sciences",
+      "description": "Selects stored marine-biology explanations and retrieves passages.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/components/marine_biology_reference.py",
+        "class": "MarineBiologyReferenceLookup"
+      },
+      "execution_mode": "reference_lookup",
+      "lifecycle": "registered_in_main",
+      "model_status": "not_a_neural_model",
+      "route_key": "marine",
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Marine",
+      "legacy_kind": "expert",
+      "component_type": "reference_lookup",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "expert.microbiology",
+      "name": "Microbiology Reference Lookup",
+      "kind": "component",
+      "category": "knowledge.life_sciences",
+      "description": "Selects stored microbiology explanations and retrieves passages.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/components/microbiology_reference.py",
+        "class": "MicrobiologyReferenceLookup"
+      },
+      "execution_mode": "reference_lookup",
+      "lifecycle": "registered_in_main",
+      "model_status": "not_a_neural_model",
+      "route_key": "microbiology",
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Microbiology",
+      "legacy_kind": "expert",
+      "component_type": "reference_lookup",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "expert.mycology",
+      "name": "Mycology Reference Lookup",
+      "kind": "component",
+      "category": "knowledge.life_sciences",
+      "description": "Selects stored fungi explanations and retrieves passages.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/components/mycology_reference.py",
+        "class": "MycologyReferenceLookup"
+      },
+      "execution_mode": "reference_lookup",
+      "lifecycle": "registered_in_main",
+      "model_status": "not_a_neural_model",
+      "route_key": "mycology",
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Mycology",
+      "legacy_kind": "expert",
+      "component_type": "reference_lookup",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "expert.ornithology",
+      "name": "Ornithology Reference Lookup",
+      "kind": "component",
+      "category": "knowledge.life_sciences",
+      "description": "Selects stored bird explanations and retrieves passages.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/components/ornithology_reference.py",
+        "class": "OrnithologyReferenceLookup"
+      },
+      "execution_mode": "reference_lookup",
+      "lifecycle": "registered_in_main",
+      "model_status": "not_a_neural_model",
+      "route_key": "ornithology",
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Ornithology",
+      "legacy_kind": "expert",
+      "component_type": "reference_lookup",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "expert.pathology",
+      "name": "Plant Pathology Candidate Adapter",
+      "kind": "component",
+      "category": "knowledge.life_sciences",
+      "description": "Combines an optional neural classifier, condition-reference rules and retrieval; candidates are not confirmed diagnoses.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/components/pathology_candidates.py",
+        "class": "PathologyCandidateAdapter"
+      },
+      "execution_mode": "hybrid_adapter",
+      "lifecycle": "registered_in_main",
+      "model_status": "model_optional_not_proven",
+      "route_key": "pathology",
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [
+        "neural_model.pathology_classifier"
+      ],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Pathology",
+      "legacy_kind": "expert",
+      "component_type": "hybrid_adapter",
+      "uses_neural_model": true,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "expert.toxicity",
+      "name": "Toxicity Reference Lookup",
+      "kind": "component",
+      "category": "knowledge.life_sciences",
+      "description": "Looks up toxicity references and applies conservative safety rules.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/components/toxicity_reference.py",
+        "class": "ToxicityReferenceLookup"
+      },
+      "execution_mode": "reference_lookup",
+      "lifecycle": "registered_in_main",
+      "model_status": "not_a_neural_model",
+      "route_key": "toxicity",
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Toxicity",
+      "legacy_kind": "expert",
+      "component_type": "reference_lookup",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "expert.wildlife",
+      "name": "Wildlife Reference Lookup",
+      "kind": "component",
+      "category": "knowledge.life_sciences",
+      "description": "Matches animal records and reference passages using explicit rules.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/components/wildlife_reference.py",
+        "class": "WildlifeReferenceLookup"
+      },
+      "execution_mode": "reference_lookup",
+      "lifecycle": "registered_in_main",
+      "model_status": "not_a_neural_model",
+      "route_key": "wildlife",
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Wildlife",
+      "legacy_kind": "expert",
+      "component_type": "reference_lookup",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "expert.electronics",
+      "name": "Circuit Calculator",
+      "kind": "component",
+      "category": "knowledge.physical_sciences",
+      "description": "Calculates supported ideal resistor and RC circuit quantities.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/components/circuit_calculator.py",
+        "class": "CircuitCalculator"
+      },
+      "execution_mode": "symbolic_tool",
+      "lifecycle": "registered_in_main",
+      "model_status": "not_a_neural_model",
+      "route_key": "electronics",
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Electronics",
+      "legacy_kind": "expert",
+      "component_type": "symbolic_tool",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "expert.math",
+      "name": "Math Calculator",
+      "kind": "component",
+      "category": "knowledge.physical_sciences",
+      "description": "Runs deterministic arithmetic, unit conversion and bounded symbolic calculations.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/components/math_calculator.py",
+        "class": "MathCalculator"
+      },
+      "execution_mode": "symbolic_tool",
+      "lifecycle": "registered_in_main",
+      "model_status": "not_a_neural_model",
+      "route_key": "math",
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Math",
+      "legacy_kind": "expert",
+      "component_type": "symbolic_tool",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "expert.mechanics",
+      "name": "Mechanics Calculator",
+      "kind": "component",
+      "category": "knowledge.physical_sciences",
+      "description": "Parses supported mechanical quantities and applies numerical and symbolic formulas.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/components/mechanics_calculator.py",
+        "class": "MechanicsCalculator"
+      },
+      "execution_mode": "symbolic_tool",
+      "lifecycle": "registered_in_main",
+      "model_status": "not_a_neural_model",
+      "route_key": "mechanics",
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Mechanics",
+      "legacy_kind": "expert",
+      "component_type": "symbolic_tool",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "expert.thermodynamics",
+      "name": "Thermodynamics Calculator",
+      "kind": "component",
+      "category": "knowledge.physical_sciences",
+      "description": "Parses supported thermal quantities and applies numerical and symbolic formulas.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/components/thermodynamics_calculator.py",
+        "class": "ThermodynamicsCalculator"
+      },
+      "execution_mode": "symbolic_tool",
+      "lifecycle": "registered_in_main",
+      "model_status": "not_a_neural_model",
+      "route_key": "thermodynamics",
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Thermodynamics",
+      "legacy_kind": "expert",
+      "component_type": "symbolic_tool",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "expert.biographer",
+      "name": "Biography Lookup",
+      "kind": "component",
+      "category": "knowledge.research",
+      "description": "Searches stored person and invention records.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/components/biography_lookup.py",
+        "class": "BiographyLookup"
+      },
+      "execution_mode": "catalog_lookup",
+      "lifecycle": "registered_in_main",
+      "model_status": "not_a_neural_model",
+      "route_key": "biographer",
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Biographer",
+      "legacy_kind": "expert",
+      "component_type": "catalog_lookup",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "expert.librarian",
+      "name": "Book Catalog Lookup",
+      "kind": "component",
+      "category": "knowledge.research",
+      "description": "Searches bibliographic metadata; catalog membership does not imply full text is available.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/components/book_catalog_lookup.py",
+        "class": "BookCatalogLookup"
+      },
+      "execution_mode": "catalog_lookup",
+      "lifecycle": "registered_in_main",
+      "model_status": "not_a_neural_model",
+      "route_key": "librarian",
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Librarian",
+      "legacy_kind": "expert",
+      "component_type": "catalog_lookup",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "expert.review",
+      "name": "Review Record Lookup",
+      "kind": "component",
+      "category": "knowledge.research",
+      "description": "Retrieves stored reviews and applies explicit comparison rules; does not establish scientific consensus.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/components/review_lookup.py",
+        "class": "ReviewRecordLookup"
+      },
+      "execution_mode": "catalog_lookup",
+      "lifecycle": "registered_in_main",
+      "model_status": "not_a_neural_model",
+      "route_key": "review",
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Review",
+      "legacy_kind": "expert",
+      "component_type": "catalog_lookup",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "expert.vision",
+      "name": "Vision Classifier Adapter",
+      "kind": "component",
+      "category": "perception.visual",
+      "description": "Loads optional neural image classifiers and performs explicit text entity lookup.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/components/vision_classifier.py",
+        "class": "VisionClassifierAdapter"
+      },
+      "execution_mode": "neural_adapter",
+      "lifecycle": "registered_in_main",
+      "model_status": "model_optional_not_proven",
+      "route_key": "vision",
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [
+        "neural_model.leaf_vision"
+      ],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Vision",
+      "legacy_kind": "expert",
+      "component_type": "neural_adapter",
+      "uses_neural_model": true,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "harness_tool.expertos_browser_workflow",
+      "name": "Browser Workflow Tool",
+      "kind": "harness_tool",
+      "category": "task.browser",
+      "description": "Browser Workflow Tool; typed integration endpoint, not a neural model.",
+      "implementation": {
+        "branch": "feature/expertos-harness-plugin",
+        "path": "integrations/expertos_harness/plugin/tools.mjs"
+      },
+      "execution_mode": "typed_tool_call",
+      "lifecycle": "implemented_on_feature_branch",
+      "model_status": "no_neural_model",
+      "route_key": null,
+      "required_permissions": [
+        "browser_execute_allowlisted"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Browser Workflow",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "harness_tool.expertos_experts",
+      "name": "Component Catalog Tool",
+      "kind": "harness_tool",
+      "category": "task.browser",
+      "description": "Component Catalog Tool; typed integration endpoint, not a neural model.",
+      "implementation": {
+        "branch": "feature/expertos-harness-plugin",
+        "path": "integrations/expertos_harness/plugin/tools.mjs"
+      },
+      "execution_mode": "typed_tool_call",
+      "lifecycle": "implemented_on_feature_branch",
+      "model_status": "no_neural_model",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Experts",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "harness_tool.expertos_form_map",
+      "name": "Form Map Tool",
+      "kind": "harness_tool",
+      "category": "task.browser",
+      "description": "Form Map Tool; typed integration endpoint, not a neural model.",
+      "implementation": {
+        "branch": "feature/expertos-harness-plugin",
+        "path": "integrations/expertos_harness/plugin/tools.mjs"
+      },
+      "execution_mode": "typed_tool_call",
+      "lifecycle": "implemented_on_feature_branch",
+      "model_status": "no_neural_model",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Form Map",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "harness_tool.expertos_form_verify",
+      "name": "Form Verify Tool",
+      "kind": "harness_tool",
+      "category": "task.browser",
+      "description": "Form Verify Tool; typed integration endpoint, not a neural model.",
+      "implementation": {
+        "branch": "feature/expertos-harness-plugin",
+        "path": "integrations/expertos_harness/plugin/tools.mjs"
+      },
+      "execution_mode": "typed_tool_call",
+      "lifecycle": "implemented_on_feature_branch",
+      "model_status": "no_neural_model",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Form Verify",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "harness_tool.expertos_plan",
+      "name": "Plan Tool",
+      "kind": "harness_tool",
+      "category": "task.browser",
+      "description": "Plan Tool; typed integration endpoint, not a neural model.",
+      "implementation": {
+        "branch": "feature/expertos-harness-plugin",
+        "path": "integrations/expertos_harness/plugin/tools.mjs"
+      },
+      "execution_mode": "typed_tool_call",
+      "lifecycle": "implemented_on_feature_branch",
+      "model_status": "no_neural_model",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Plan",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "harness_tool.expertos_propose_action",
+      "name": "Propose Action Tool",
+      "kind": "harness_tool",
+      "category": "task.browser",
+      "description": "Propose Action Tool; typed integration endpoint, not a neural model.",
+      "implementation": {
+        "branch": "feature/expertos-harness-plugin",
+        "path": "integrations/expertos_harness/plugin/tools.mjs"
+      },
+      "execution_mode": "typed_tool_call",
+      "lifecycle": "implemented_on_feature_branch",
+      "model_status": "no_neural_model",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Propose Action",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "harness_tool.expertos_read_source",
+      "name": "Read Source Tool",
+      "kind": "harness_tool",
+      "category": "task.browser",
+      "description": "Read Source Tool; typed integration endpoint, not a neural model.",
+      "implementation": {
+        "branch": "feature/expertos-harness-plugin",
+        "path": "integrations/expertos_harness/plugin/tools.mjs"
+      },
+      "execution_mode": "typed_tool_call",
+      "lifecycle": "implemented_on_feature_branch",
+      "model_status": "no_neural_model",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Read Source",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "harness_tool.expertos_recover",
+      "name": "Recover Tool",
+      "kind": "harness_tool",
+      "category": "task.browser",
+      "description": "Recover Tool; typed integration endpoint, not a neural model.",
+      "implementation": {
+        "branch": "feature/expertos-harness-plugin",
+        "path": "integrations/expertos_harness/plugin/tools.mjs"
+      },
+      "execution_mode": "typed_tool_call",
+      "lifecycle": "implemented_on_feature_branch",
+      "model_status": "no_neural_model",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Recover",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "harness_tool.expertos_route",
+      "name": "Route Tool",
+      "kind": "harness_tool",
+      "category": "task.browser",
+      "description": "Route Tool; typed integration endpoint, not a neural model.",
+      "implementation": {
+        "branch": "feature/expertos-harness-plugin",
+        "path": "integrations/expertos_harness/plugin/tools.mjs"
+      },
+      "execution_mode": "typed_tool_call",
+      "lifecycle": "implemented_on_feature_branch",
+      "model_status": "no_neural_model",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Route",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "neural_model.leaf_vision",
+      "name": "Neural Image Classifier Architecture",
+      "kind": "neural_model",
+      "category": "models",
+      "description": "Neural Image Classifier Architecture; learned weights require a compatible bundle, and architecture presence does not establish accuracy.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/neural/leaf_training.py"
+      },
+      "execution_mode": "trainable_neural_architecture",
+      "lifecycle": "architecture_in_main",
+      "model_status": "optional_or_experimental",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Leaf Vision",
+      "uses_neural_model": true,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "neural_model.passage_reader",
+      "name": "Neural Extractive Reader Architecture",
+      "kind": "neural_model",
+      "category": "models",
+      "description": "Neural Extractive Reader Architecture; learned weights require a compatible bundle, and architecture presence does not establish accuracy.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/neural/passage_reader.py"
+      },
+      "execution_mode": "trainable_neural_architecture",
+      "lifecycle": "architecture_in_main",
+      "model_status": "optional_or_experimental",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Passage Reader",
+      "uses_neural_model": true,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "neural_model.pathology_classifier",
+      "name": "Neural Pathology Classifier Architecture",
+      "kind": "neural_model",
+      "category": "models",
+      "description": "Neural Pathology Classifier Architecture; learned weights require a compatible bundle, and architecture presence does not establish accuracy.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/neural/pathology_net.py"
+      },
+      "execution_mode": "trainable_neural_architecture",
+      "lifecycle": "architecture_in_main",
+      "model_status": "optional_or_experimental",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Pathology Classifier",
+      "uses_neural_model": true,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "neural_model.router",
+      "name": "Neural Routing Classifier Architecture",
+      "kind": "neural_model",
+      "category": "models",
+      "description": "Neural Routing Classifier Architecture; learned weights require a compatible bundle, and architecture presence does not establish accuracy.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/neural/neural_router.py"
+      },
+      "execution_mode": "trainable_neural_architecture",
+      "lifecycle": "architecture_in_main",
+      "model_status": "optional_or_experimental",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Router",
+      "uses_neural_model": true,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "neural_model.text_classifier",
+      "name": "Neural Text Classifier Architecture",
+      "kind": "neural_model",
+      "category": "models",
+      "description": "Neural Text Classifier Architecture; learned weights require a compatible bundle, and architecture presence does not establish accuracy.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/neural/text_expert.py"
+      },
+      "execution_mode": "trainable_neural_architecture",
+      "lifecycle": "architecture_in_main",
+      "model_status": "optional_or_experimental",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Text Classifier",
+      "uses_neural_model": true,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "planned.autonomous_browser_agent",
+      "name": "Autonomous Browser Agent (Planned)",
+      "kind": "planned",
+      "category": "planned.future",
+      "description": "Autonomous Browser Agent: not implemented. See referenced source for its exact contract.",
+      "implementation": {
+        "branch": null,
+        "path": null
+      },
+      "execution_mode": "not_implemented",
+      "lifecycle": "planned_not_implemented",
+      "model_status": "not_trained",
+      "route_key": null,
+      "required_permissions": [],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Autonomous Browser Agent",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "planned.coding_test_repair",
+      "name": "Coding Test Repair (Planned)",
+      "kind": "planned",
+      "category": "planned.future",
+      "description": "Coding Test Repair: not implemented. See referenced source for its exact contract.",
+      "implementation": {
+        "branch": null,
+        "path": null
+      },
+      "execution_mode": "not_implemented",
+      "lifecycle": "planned_not_implemented",
+      "model_status": "not_trained",
+      "route_key": null,
+      "required_permissions": [],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Coding Test Repair",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "planned.desktop_computer_agent",
+      "name": "Desktop Computer Agent (Planned)",
+      "kind": "planned",
+      "category": "planned.future",
+      "description": "Desktop Computer Agent: not implemented. See referenced source for its exact contract.",
+      "implementation": {
+        "branch": null,
+        "path": null
+      },
+      "execution_mode": "not_implemented",
+      "lifecycle": "planned_not_implemented",
+      "model_status": "not_trained",
+      "route_key": null,
+      "required_permissions": [],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Desktop Computer Agent",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "planned.general_code_generator",
+      "name": "General Code Generator (Planned)",
+      "kind": "planned",
+      "category": "planned.future",
+      "description": "General Code Generator: not implemented. See referenced source for its exact contract.",
+      "implementation": {
+        "branch": null,
+        "path": null
+      },
+      "execution_mode": "not_implemented",
+      "lifecycle": "planned_not_implemented",
+      "model_status": "not_trained",
+      "route_key": null,
+      "required_permissions": [],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "General Code Generator",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "planned.independent_pathology_benchmark",
+      "name": "Independent Pathology Benchmark (Planned)",
+      "kind": "planned",
+      "category": "planned.future",
+      "description": "Independent Pathology Benchmark: not implemented. See referenced source for its exact contract.",
+      "implementation": {
+        "branch": null,
+        "path": null
+      },
+      "execution_mode": "not_implemented",
+      "lifecycle": "planned_not_implemented",
+      "model_status": "not_trained",
+      "route_key": null,
+      "required_permissions": [],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Independent Pathology Benchmark",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "planned.robust_task_planner",
+      "name": "Robust Task Planner (Planned)",
+      "kind": "planned",
+      "category": "planned.future",
+      "description": "Robust Task Planner: not implemented. See referenced source for its exact contract.",
+      "implementation": {
+        "branch": null,
+        "path": null
+      },
+      "execution_mode": "not_implemented",
+      "lifecycle": "planned_not_implemented",
+      "model_status": "not_trained",
+      "route_key": null,
+      "required_permissions": [],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Robust Task Planner",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "planned.scientific_entailment",
+      "name": "Scientific Entailment (Planned)",
+      "kind": "planned",
+      "category": "planned.future",
+      "description": "Scientific Entailment: not implemented. See referenced source for its exact contract.",
+      "implementation": {
+        "branch": null,
+        "path": null
+      },
+      "execution_mode": "not_implemented",
+      "lifecycle": "planned_not_implemented",
+      "model_status": "not_trained",
+      "route_key": null,
+      "required_permissions": [],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Scientific Entailment",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.automated_contradiction_engine",
+      "name": "Passage Contradiction Heuristic",
+      "kind": "support_service",
+      "category": "service.evidence",
+      "description": "Passage Contradiction Heuristic; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/automated_contradiction_engine.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Automated Contradiction Engine",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.consensus_ranking_engine",
+      "name": "Reference Consensus Ranker",
+      "kind": "support_service",
+      "category": "service.evidence",
+      "description": "Reference Consensus Ranker; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/consensus_ranking_engine.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Consensus Ranking Engine",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.contradiction_detector",
+      "name": "Stored Contradiction Lookup",
+      "kind": "support_service",
+      "category": "service.evidence",
+      "description": "Stored Contradiction Lookup; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/contradiction_detector.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Contradiction Detector",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.corpus_validation",
+      "name": "Training Corpus Validator",
+      "kind": "support_service",
+      "category": "service.evidence",
+      "description": "Training Corpus Validator; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/corpus_validation.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Corpus Validation",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.critic",
+      "name": "Result Rule Checker",
+      "kind": "support_service",
+      "category": "service.evidence",
+      "description": "Result Rule Checker; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/critic.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Critic",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.debate_engine",
+      "name": "Stored Perspective Comparator",
+      "kind": "support_service",
+      "category": "service.evidence",
+      "description": "Stored Perspective Comparator; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/debate_engine.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Debate Engine",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.figure_extractor",
+      "name": "Source Figure Extractor",
+      "kind": "support_service",
+      "category": "service.evidence",
+      "description": "Source Figure Extractor; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/figure_extractor.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Figure Extractor",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.review_engine",
+      "name": "Review Catalog Search",
+      "kind": "support_service",
+      "category": "service.evidence",
+      "description": "Review Catalog Search; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/review_engine.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Review Engine",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.visual_reference_atlas",
+      "name": "Visual Reference Catalog",
+      "kind": "support_service",
+      "category": "service.evidence",
+      "description": "Visual Reference Catalog; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/visual_reference_atlas.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Visual Reference Atlas",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.bm25",
+      "name": "BM25 Passage Ranker",
+      "kind": "support_service",
+      "category": "service.index",
+      "description": "BM25 Passage Ranker; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/bm25.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Bm25",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.book_catalog_engine",
+      "name": "Bibliographic Catalog Search",
+      "kind": "support_service",
+      "category": "service.index",
+      "description": "Bibliographic Catalog Search; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/book_catalog_engine.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Book Catalog Engine",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.book_engine",
+      "name": "FTS/BM25 Passage Retrieval",
+      "kind": "support_service",
+      "category": "service.index",
+      "description": "FTS/BM25 Passage Retrieval; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/book_engine.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Book Engine",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.book_workflow",
+      "name": "Book Import and Dataset Workflow",
+      "kind": "support_service",
+      "category": "service.index",
+      "description": "Book Import and Dataset Workflow; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/book_workflow.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Book Workflow",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.dataset_exporter",
+      "name": "Dataset Export Service",
+      "kind": "support_service",
+      "category": "service.index",
+      "description": "Dataset Export Service; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/dataset_exporter.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Dataset Exporter",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.ingestion",
+      "name": "Document Text Importer",
+      "kind": "support_service",
+      "category": "service.index",
+      "description": "Document Text Importer; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/ingestion.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Ingestion",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.sqlite_fts_engine",
+      "name": "SQLite Full-Text Index",
+      "kind": "support_service",
+      "category": "service.index",
+      "description": "SQLite Full-Text Index; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/sqlite_fts_engine.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Sqlite Fts Engine",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.biography_engine",
+      "name": "Biography Catalog Search",
+      "kind": "support_service",
+      "category": "service.output",
+      "description": "Biography Catalog Search; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/biography_engine.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Biography Engine",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.diagram_engine",
+      "name": "SVG Diagram Renderer",
+      "kind": "support_service",
+      "category": "service.output",
+      "description": "SVG Diagram Renderer; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/diagram_engine.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Diagram Engine",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.lexicon_engine",
+      "name": "Dictionary Lookup Service",
+      "kind": "support_service",
+      "category": "service.output",
+      "description": "Dictionary Lookup Service; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/dictionary_lookup.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Lexicon Engine",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.market_economics_engine",
+      "name": "Archived Market Reference Lookup",
+      "kind": "support_service",
+      "category": "service.output",
+      "description": "Archived Market Reference Lookup; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/market_economics_engine.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Market Economics Engine",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.schema",
+      "name": "Source Record Schema",
+      "kind": "support_service",
+      "category": "service.output",
+      "description": "Source Record Schema; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/schema.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Schema",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.bayesian_calibrator",
+      "name": "Context Risk Heuristic",
+      "kind": "support_service",
+      "category": "service.reasoning",
+      "description": "Context Risk Heuristic; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/bayesian_calibrator.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Bayesian Calibrator",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.biochemical_engine",
+      "name": "Biochemical Pathway Reference Lookup",
+      "kind": "support_service",
+      "category": "service.reasoning",
+      "description": "Biochemical Pathway Reference Lookup; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/biochemical_engine.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Biochemical Engine",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.cas_engine",
+      "name": "Bounded Symbolic Calculator",
+      "kind": "support_service",
+      "category": "service.reasoning",
+      "description": "Bounded Symbolic Calculator; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/cas_engine.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Cas Engine",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.diagnostic_tree_engine",
+      "name": "Diagnostic Procedure Reference Lookup",
+      "kind": "support_service",
+      "category": "service.reasoning",
+      "description": "Diagnostic Procedure Reference Lookup; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/diagnostic_tree_engine.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Diagnostic Tree Engine",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.disease_triangle_engine",
+      "name": "Disease Context Rule Checker",
+      "kind": "support_service",
+      "category": "service.reasoning",
+      "description": "Disease Context Rule Checker; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/disease_triangle_engine.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Disease Triangle Engine",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.quantity_parser",
+      "name": "Quantity and Unit Parser",
+      "kind": "support_service",
+      "category": "service.reasoning",
+      "description": "Quantity and Unit Parser; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/quantity_parser.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Quantity Parser",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.taxonomic_graph",
+      "name": "Taxonomy Graph Lookup",
+      "kind": "support_service",
+      "category": "service.reasoning",
+      "description": "Taxonomy Graph Lookup; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/taxonomic_graph.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Taxonomic Graph",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.universal_concept_graph",
+      "name": "Concept Connection Lookup",
+      "kind": "support_service",
+      "category": "service.reasoning",
+      "description": "Concept Connection Lookup; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/universal_concept_graph.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Universal Concept Graph",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.conversational_synthesizer",
+      "name": "Template Narrative Renderer",
+      "kind": "support_service",
+      "category": "service.runtime",
+      "description": "Template Narrative Renderer; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/conversational_synthesizer.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Conversational Synthesizer",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.dag_orchestrator",
+      "name": "Dependency Execution Scheduler",
+      "kind": "support_service",
+      "category": "service.runtime",
+      "description": "Dependency Execution Scheduler; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/dag_orchestrator.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Dag Orchestrator",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.episodic_memory",
+      "name": "Scoped Observation Store",
+      "kind": "support_service",
+      "category": "service.runtime",
+      "description": "Scoped Observation Store; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/episodic_memory.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Episodic Memory",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.multilingual_normalizer",
+      "name": "Vernacular Alias Normalizer",
+      "kind": "support_service",
+      "category": "service.runtime",
+      "description": "Vernacular Alias Normalizer; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/multilingual_normalizer.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Multilingual Normalizer",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.reasoning_engine",
+      "name": "Execution Log Renderer",
+      "kind": "support_service",
+      "category": "service.runtime",
+      "description": "Execution Log Renderer; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/reasoning_engine.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Reasoning Engine",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.session_memory",
+      "name": "Session Context Store",
+      "kind": "support_service",
+      "category": "service.runtime",
+      "description": "Session Context Store; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/session_memory.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Session Memory",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.blog_engine",
+      "name": "Archived Guide Lookup",
+      "kind": "support_service",
+      "category": "service.sources",
+      "description": "Archived Guide Lookup; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/blog_engine.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Blog Engine",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.chemical_regulatory_registry",
+      "name": "Chemical Reference Registry",
+      "kind": "support_service",
+      "category": "service.sources",
+      "description": "Chemical Reference Registry; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/chemical_regulatory_registry.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Chemical Regulatory Registry",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.harvester",
+      "name": "Opt-In Source Harvester",
+      "kind": "support_service",
+      "category": "service.sources",
+      "description": "Opt-In Source Harvester; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/harvester.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Harvester",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.news_engine",
+      "name": "Archived News and Temporal Fact Lookup",
+      "kind": "support_service",
+      "category": "service.sources",
+      "description": "Archived News and Temporal Fact Lookup; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/news_engine.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "News Engine",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.source_fetch",
+      "name": "Bounded Public Source Fetcher",
+      "kind": "support_service",
+      "category": "service.sources",
+      "description": "Bounded Public Source Fetcher; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/source_fetch.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Source Fetch",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.toxicology_connector",
+      "name": "Toxicology Reference Connector",
+      "kind": "support_service",
+      "category": "service.sources",
+      "description": "Toxicology Reference Connector; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/toxicology_connector.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Toxicology Connector",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.video_audio_ingestor",
+      "name": "Media Demonstration Catalog",
+      "kind": "support_service",
+      "category": "service.sources",
+      "description": "Media Demonstration Catalog; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/video_audio_ingestor.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Video Audio Ingestor",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.web_directory_engine",
+      "name": "Website Directory Lookup",
+      "kind": "support_service",
+      "category": "service.sources",
+      "description": "Website Directory Lookup; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/web_directory_engine.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Web Directory Engine",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.knowledge_store",
+      "name": "Local Reference Record Store",
+      "kind": "support_service",
+      "category": "service.store",
+      "description": "Local Reference Record Store; supporting Python service, not a trained neural expert.",
+      "implementation": {
+        "branch": "main",
+        "path": "tiny_experts/pipeline/knowledge_store.py"
+      },
+      "execution_mode": "support_library_not_expert",
+      "lifecycle": "source_present_in_main",
+      "model_status": "not_applicable",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Knowledge Store",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "task_specialist.browser_action_policy",
+      "name": "Optional Neural Browser Action Classifier",
+      "kind": "task_component",
+      "category": "models.browser",
+      "description": "Optional Neural Browser Action Classifier; bounded integration component, not an autonomous general expert.",
+      "implementation": {
+        "branch": "feature/expertos-harness-plugin",
+        "path": "integrations/expertos_harness/python/expertos_bridge/action_policy.py"
+      },
+      "execution_mode": "optional_or_unavailable",
+      "lifecycle": "declared_on_feature_branch",
+      "model_status": "not_ready",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Browser Action Policy",
+      "legacy_kind": "task_specialist",
+      "uses_neural_model": true,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "task_specialist.browser_planner",
+      "name": "Rule-Based Browser Planner",
+      "kind": "task_component",
+      "category": "task.browser",
+      "description": "Rule-Based Browser Planner; bounded integration component, not an autonomous general expert.",
+      "implementation": {
+        "branch": "feature/expertos-harness-plugin",
+        "path": "integrations/expertos_harness/python/expertos_bridge/experts.py"
+      },
+      "execution_mode": "deterministic_baseline",
+      "lifecycle": "implemented_on_feature_branch",
+      "model_status": "rule_based",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Browser Planner",
+      "legacy_kind": "task_specialist",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "task_specialist.browser_verifier",
+      "name": "Browser Field Value Verifier",
+      "kind": "task_component",
+      "category": "task.browser",
+      "description": "Browser Field Value Verifier; bounded integration component, not an autonomous general expert.",
+      "implementation": {
+        "branch": "feature/expertos-harness-plugin",
+        "path": "integrations/expertos_harness/python/expertos_bridge/experts.py"
+      },
+      "execution_mode": "deterministic_baseline",
+      "lifecycle": "implemented_on_feature_branch",
+      "model_status": "rule_based",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Browser Verifier",
+      "legacy_kind": "task_specialist",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "task_specialist.form_mapper",
+      "name": "Accessible Label Form Mapper",
+      "kind": "task_component",
+      "category": "task.browser",
+      "description": "Accessible Label Form Mapper; bounded integration component, not an autonomous general expert.",
+      "implementation": {
+        "branch": "feature/expertos-harness-plugin",
+        "path": "integrations/expertos_harness/python/expertos_bridge/experts.py"
+      },
+      "execution_mode": "deterministic_baseline",
+      "lifecycle": "implemented_on_feature_branch",
+      "model_status": "rule_based",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Form Mapper",
+      "legacy_kind": "task_specialist",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "task_specialist.pathology_reference",
+      "name": "Pathology Reference Adapter",
+      "kind": "task_component",
+      "category": "task.browser",
+      "description": "Pathology Reference Adapter; bounded integration component, not an autonomous general expert.",
+      "implementation": {
+        "branch": "feature/expertos-harness-plugin",
+        "path": "integrations/expertos_harness/python/expertos_bridge/experts.py"
+      },
+      "execution_mode": "optional_or_unavailable",
+      "lifecycle": "declared_on_feature_branch",
+      "model_status": "not_ready",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Pathology Reference",
+      "legacy_kind": "task_specialist",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "task_specialist.recovery",
+      "name": "Browser Failure Rule Handler",
+      "kind": "task_component",
+      "category": "task.browser",
+      "description": "Browser Failure Rule Handler; bounded integration component, not an autonomous general expert.",
+      "implementation": {
+        "branch": "feature/expertos-harness-plugin",
+        "path": "integrations/expertos_harness/python/expertos_bridge/experts.py"
+      },
+      "execution_mode": "deterministic_baseline",
+      "lifecycle": "implemented_on_feature_branch",
+      "model_status": "rule_based",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Recovery",
+      "legacy_kind": "task_specialist",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "task_specialist.router",
+      "name": "Rule-Based Browser Task Router",
+      "kind": "task_component",
+      "category": "task.browser",
+      "description": "Rule-Based Browser Task Router; bounded integration component, not an autonomous general expert.",
+      "implementation": {
+        "branch": "feature/expertos-harness-plugin",
+        "path": "integrations/expertos_harness/python/expertos_bridge/experts.py"
+      },
+      "execution_mode": "deterministic_baseline",
+      "lifecycle": "implemented_on_feature_branch",
+      "model_status": "rule_based",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Router",
+      "legacy_kind": "task_specialist",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "task_specialist.source_reader",
+      "name": "Source Passage Retrieval Adapter",
+      "kind": "task_component",
+      "category": "task.browser",
+      "description": "Source Passage Retrieval Adapter; bounded integration component, not an autonomous general expert.",
+      "implementation": {
+        "branch": "feature/expertos-harness-plugin",
+        "path": "integrations/expertos_harness/python/expertos_bridge/server.py"
+      },
+      "execution_mode": "optional_or_unavailable",
+      "lifecycle": "declared_on_feature_branch",
+      "model_status": "not_ready",
+      "route_key": null,
+      "required_permissions": [
+        "local_compute"
+      ],
+      "optional_dependencies": [],
+      "evaluation_status": "independent_task_accuracy_unverified",
+      "legacy_name": "Source Reader",
+      "legacy_kind": "task_specialist",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false
+    },
+    {
+      "id": "support_service.source_candidate_extractor",
+      "name": "Leech Source Extractor",
+      "kind": "support_service",
+      "category": "service.extraction",
+      "description": "Extracts formula candidates, counts dictionary and biography patterns, and routes figure candidates from imported passages. Does not train neural weights or add dictionary definitions.",
+      "execution_mode": "pattern_extraction",
+      "lifecycle": "source_present_in_main",
+      "uses_neural_model": false,
+      "updates_parameters_at_inference": false,
+      "model_status": "not_a_neural_model",
+      "implementation": {
+        "path": "tiny_experts/source_studio/director.py",
+        "method": "extract_source_candidates"
+      },
+      "evaluation_status": "pattern_extraction_only",
+      "required_permissions": [
+        "local_compute"
+      ]
+    }
+  ],
+  "naming_policy": "Names describe mechanisms. Legacy IDs, route keys and model bundle identities remain stable; extraction and lookup are not neural learning."
+}

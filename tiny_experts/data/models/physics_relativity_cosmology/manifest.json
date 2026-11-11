@@ -1,0 +1,112 @@
+{
+  "architecture": {
+    "dropout": 0.05,
+    "feature_dim": 331,
+    "hidden_dim": 144,
+    "name": "multihead_mlp_v1",
+    "representation_dim": 96
+  },
+  "artifacts": {
+    "metrics.json": "1f8e813e5c7dc743b6eca8fd899e7e03395e201ccb98b7ddc8e40d02e618a601",
+    "model.pt": "21a1a30b188229f4daadedd59a5133bd80d2c76025b8b1f736310c17b6cedbff",
+    "splits.json": "9a84fdbea251442cd1091314d482ed99f98017f7298e9a0244006db5e439accc",
+    "vocab.json": "7359d99666b85a98fea1aea6989275179f60826c1e6a6f63fda4246089bee4b6"
+  },
+  "created_at": "2026-11-07T08:13:12.289034+00:00",
+  "dataset_sha256": "ed683591b28ed9510127a97cb8bc28c4425b4c646f8de73871c24630d6e9f1ab",
+  "expert_id": "physics_relativity_cosmology",
+  "feature_version": "unicode_word_bigram_l2_v1",
+  "group_split_sha256": "c8c186883305413f925166172705b7beef60952be13ac19af3899aa40417c45c",
+  "heads": {
+    "concept": [
+      "christoffel_symbol",
+      "cosmic_microwave_background",
+      "cosmological_redshift",
+      "einstein_field_equations",
+      "equivalence_principle",
+      "event_horizon",
+      "friedmann_equation",
+      "geodesic_equation",
+      "hubble_parameter",
+      "inflaton",
+      "lorentz_transformation",
+      "minkowski_metric",
+      "proper_time",
+      "riemann_curvature_tensor",
+      "schwarzschild_metric"
+    ],
+    "regime": [
+      "flrw_cosmological_expansion",
+      "minkowski_special_relativity",
+      "riemannian_einstein_gravity"
+    ]
+  },
+  "inference": {
+    "abstain_labels": {},
+    "min_score": 0.4,
+    "score_type": "uncalibrated_softmax",
+    "zero_feature_policy": "abstain"
+  },
+  "limitations": [
+    "Categorical text classifier; does not read books or generate explanations.",
+    "Softmax scores are uncalibrated and do not certify correctness.",
+    "Reviewed-data status records the input workflow, not production readiness."
+  ],
+  "primary_head": "concept",
+  "schema_version": 1,
+  "status": "reviewed_data",
+  "training": {
+    "augmentation": "none",
+    "best_epoch": 30,
+    "epochs_run": 30,
+    "reviewed_data_required": true,
+    "selection_metric": "validation_weighted_cross_entropy",
+    "source_separated": true,
+    "torch_version": "2.15.0+cpu"
+  },
+  "training_config": {
+    "abstain_labels": {},
+    "batch_size": 8,
+    "dropout": 0.05,
+    "epochs": 45,
+    "expert_id": "physics_relativity_cosmology",
+    "head_weights": {},
+    "heads": {
+      "concept": [
+        "christoffel_symbol",
+        "cosmic_microwave_background",
+        "cosmological_redshift",
+        "einstein_field_equations",
+        "equivalence_principle",
+        "event_horizon",
+        "friedmann_equation",
+        "geodesic_equation",
+        "hubble_parameter",
+        "inflaton",
+        "lorentz_transformation",
+        "minkowski_metric",
+        "proper_time",
+        "riemann_curvature_tensor",
+        "schwarzschild_metric"
+      ],
+      "regime": [
+        "flrw_cosmological_expansion",
+        "minkowski_special_relativity",
+        "riemannian_einstein_gravity"
+      ]
+    },
+    "hidden_dim": 144,
+    "learning_rate": 0.006,
+    "min_delta": 0.0001,
+    "min_score": 0.4,
+    "patience": 8,
+    "primary_head": "concept",
+    "representation_dim": 96,
+    "seed": 42,
+    "test_fraction": 0.15,
+    "threads": 2,
+    "validation_fraction": 0.15,
+    "vocab_size": 3000,
+    "weight_decay": 0.0001
+  }
+}

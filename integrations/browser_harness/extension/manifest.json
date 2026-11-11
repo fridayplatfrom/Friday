@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Friday",
+  "version": "0.10.3",
+  "description": "Friday connects chatbot websites to your local Harness. Experimental; no cookies or model API keys.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "alarms"
+  ],
+  "optional_permissions": [
+    "downloads"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8766/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Friday"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://gemini.google.com/*",
+        "https://www.kimi.com/*",
+        "https://kimi.com/*",
+        "https://www.kimi.ai/*",
+        "https://chat.deepseek.com/*"
+      ],
+      "js": [
+        "provider-catalog.js",
+        "turns.js",
+        "transfers.js",
+        "two-way.js",
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

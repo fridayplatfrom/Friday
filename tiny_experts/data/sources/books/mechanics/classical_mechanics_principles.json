@@ -1,0 +1,22 @@
+[
+  {
+    "source": "The Feynman Lectures on Physics, Vol. I, Ch. 9 (Newton's Laws & Dynamics)",
+    "text": "Newton's second law of motion dictates that the net force acting on a body is equal to the time rate of change of its linear momentum: F = dp/dt. For constant mass m, this simplifies to the foundational vector equation F = m * a. Linear momentum p is the product of mass and velocity: p = m * v. Under isolated conditions with zero net external force, total linear momentum is strictly conserved across all elastic and inelastic collisions.",
+    "book_id": "feynman_lectures_physics_millennium_ed",
+    "edition": "Millennium Edition",
+    "chapter_num": 9,
+    "chapter_title": "Newton's Laws of Dynamics",
+    "page_range": [9.1, 9.15],
+    "citation": "Feynman, Leighton, & Sands (2011). The Feynman Lectures on Physics, Millennium Ed."
+  },
+  {
+    "source": "The Feynman Lectures on Physics, Vol. I, Ch. 13 (Work & Kinetic Energy)",
+    "text": "Work done by a force on a particle moving along a displacement d is the line integral W = integral(F . ds), which for a constant force simplifies to W = F * d * cos(theta). The work-energy theorem states that net work done equals the change in kinetic energy: W_net = Delta(E_k), where kinetic energy is defined as E_k = 0.5 * m * v^2. In a uniform gravitational field of acceleration g, gravitational potential energy at height h is E_p = m * g * h. Total mechanical energy E = E_k + E_p is conserved in frictionless conservative systems.",
+    "book_id": "feynman_lectures_physics_millennium_ed",
+    "edition": "Millennium Edition",
+    "chapter_num": 13,
+    "chapter_title": "Work and Potential Energy (A)",
+    "page_range": [13.1, 13.10],
+    "citation": "Feynman, Leighton, & Sands (2011). The Feynman Lectures on Physics, Millennium Ed."
+  }
+]

@@ -1,0 +1,8 @@
+NEW isolated file-recovery acceptance task. Only this task is active. Do not resume failed earlier attempts. Use native pwsh TWO dependent calls in sequence: wait for first real result before requesting second. Do not batch, retry errors or perform other actions.
+First command EXACTLY:
+$ErrorActionPreference='Stop'; $taskPath='C:\Users\ankus\Documents\deepseek-harness\default-workspace\friday-acceptance\3153a970-3646-4e85-8271-6598a7a67ea2\state.json'; if(Test-Path -LiteralPath $taskPath){throw 'Acceptance state already exists; refusing to repeat creation'}; [System.IO.Directory]::CreateDirectory([System.IO.Path]::GetDirectoryName($taskPath)) | Out-Null; $taskState=[ordered]@{testId='3153a970-3646-4e85-8271-6598a7a67ea2'; nonce=[guid]::NewGuid().ToString(); creationCount=1}; $taskJson=$taskState | ConvertTo-Json -Compress; [System.IO.File]::WriteAllText($taskPath,$taskJson); Write-Output $taskJson
+
+Second command EXACTLY:
+$ErrorActionPreference='Stop'; $taskPath='C:\Users\ankus\Documents\deepseek-harness\default-workspace\friday-acceptance\3153a970-3646-4e85-8271-6598a7a67ea2\state.json'; $taskRaw=[System.IO.File]::ReadAllText($taskPath); $taskState=$taskRaw | ConvertFrom-Json; if($taskState.testId -ne '3153a970-3646-4e85-8271-6598a7a67ea2' -or $taskState.creationCount -ne 1){throw 'Acceptance state mismatch'}; Write-Output $taskRaw; Write-Output ('SHA256='+(Get-FileHash -LiteralPath $taskPath -Algorithm SHA256).Hash)
+
+After both results report beginning FRIDAY_FILE_RECOVERY_START and ending FRIDAY_FILE_RECOVERY_END. Include actual random nonce, creationCount, and SHA256. State whether both succeeded. Only create this isolated file inside the allowed workspace. Do not change permissions or touch other files.

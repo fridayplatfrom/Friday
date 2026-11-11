@@ -1,0 +1,28 @@
+# Tiny Expert OS — Native LLM Replacement Layer for DeepSeek Harness (Web Profile)
+- id: llm-deepseek
+  name: "@deepseek-ai/dsh-llm-deepseek-api-key"
+  disabled: true
+- id: llm-deepseek-account
+  name: "@deepseek-ai/dsh-llm-deepseek-account"
+  disabled: true
+- id: agent-default-model
+  name: "@deepseek-ai/dsh-agent-default-model"
+  config:
+    provider: tiny-experts
+    model: tiny-expert-physics-v1
+    reasoningEffort: high
+- id: ui-settings-general
+  name: "@deepseek-ai/dsh-client-ui-settings-general"
+  config:
+    welcomeNoticeVersion: 2026-09-28.1
+- id: ui-chat
+  name: "@deepseek-ai/dsh-client-ui-chat"
+  config:
+    transcriptView: detailed
+    performanceUsage: detailed
+- insert:
+    - id: tiny-experts-native-llm
+      name: "C:/Users/ankus/.gemini/antigravity/scratch/tiny_expert_system/integrations/deepseek_harness_native/index.mjs"
+      config:
+        pythonApiUrl: "http://127.0.0.1:8000"
+        streamChunkDelayMs: 5

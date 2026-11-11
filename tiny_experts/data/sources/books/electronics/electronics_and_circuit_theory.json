@@ -1,0 +1,22 @@
+[
+  {
+    "source": "Introduction to Electrodynamics, Ch. 7 (Electromotive Force & Ohm's Law)",
+    "text": "Ohm's law empirically relates current density J to electric field E inside a conductor: J = sigma * E, where sigma is the electrical conductivity. In linear macroscopic circuit elements, this integrates to V = I * R, where V is potential difference across the component, I is electric current in Amperes, and R is electrical resistance in Ohms. Electrical power dissipated as Joule heating is P = V * I = I^2 * R = V^2 / R. For resistors connected in series, equivalent resistance is R_eq = sum(R_i). For resistors connected in parallel, 1 / R_eq = sum(1 / R_i).",
+    "book_id": "griffiths_electrodynamics_4th_ed",
+    "edition": "4th Edition",
+    "chapter_num": 7,
+    "chapter_title": "Electrodynamics",
+    "page_range": [296, 312],
+    "citation": "Griffiths (2013). Introduction to Electrodynamics, 4th Ed."
+  },
+  {
+    "source": "Introduction to Electrodynamics, Ch. 7.2 (Kirchhoff's Laws & Capacitance)",
+    "text": "Kirchhoff's Current Law (KCL) is a direct consequence of charge conservation, stating that the algebraic sum of currents entering any circuit node must equal zero: sum(I_in) = sum(I_out). Kirchhoff's Voltage Law (KVL) is a consequence of energy conservation in electrostatic fields, stating that the directed sum of potential differences around any closed circuit loop is zero: sum(V_k) = 0. In an RC circuit, charging is governed by V(t) = V_0 * (1 - e^(-t / tau)), where the characteristic time constant is tau = R * C.",
+    "book_id": "griffiths_electrodynamics_4th_ed",
+    "edition": "4th Edition",
+    "chapter_num": 7,
+    "chapter_title": "Electrodynamics",
+    "page_range": [313, 335],
+    "citation": "Griffiths (2013). Introduction to Electrodynamics, 4th Ed."
+  }
+]

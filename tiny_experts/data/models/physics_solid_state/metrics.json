@@ -1,0 +1,1252 @@
+{
+  "best_epoch": 29,
+  "elapsed_seconds": 2.3071594999996705,
+  "epochs_run": 29,
+  "history": [
+    {
+      "epoch": 1,
+      "training_weighted_cross_entropy": 3.786084771156311,
+      "validation_weighted_cross_entropy": 3.021216630935669
+    },
+    {
+      "epoch": 2,
+      "training_weighted_cross_entropy": 2.6245110432306924,
+      "validation_weighted_cross_entropy": 1.2116066217422485
+    },
+    {
+      "epoch": 3,
+      "training_weighted_cross_entropy": 1.0262946585814159,
+      "validation_weighted_cross_entropy": 0.33989953994750977
+    },
+    {
+      "epoch": 4,
+      "training_weighted_cross_entropy": 0.2728518632551034,
+      "validation_weighted_cross_entropy": 0.08528750389814377
+    },
+    {
+      "epoch": 5,
+      "training_weighted_cross_entropy": 0.09005796909332275,
+      "validation_weighted_cross_entropy": 0.029614612460136414
+    },
+    {
+      "epoch": 6,
+      "training_weighted_cross_entropy": 0.03857814225678643,
+      "validation_weighted_cross_entropy": 0.01470657903701067
+    },
+    {
+      "epoch": 7,
+      "training_weighted_cross_entropy": 0.023759607303266723,
+      "validation_weighted_cross_entropy": 0.01367109827697277
+    },
+    {
+      "epoch": 8,
+      "training_weighted_cross_entropy": 0.012617621493215362,
+      "validation_weighted_cross_entropy": 0.00822196900844574
+    },
+    {
+      "epoch": 9,
+      "training_weighted_cross_entropy": 0.007956857366176942,
+      "validation_weighted_cross_entropy": 0.006367439869791269
+    },
+    {
+      "epoch": 10,
+      "training_weighted_cross_entropy": 0.006615710095502436,
+      "validation_weighted_cross_entropy": 0.005351705010980368
+    },
+    {
+      "epoch": 11,
+      "training_weighted_cross_entropy": 0.005659949189672868,
+      "validation_weighted_cross_entropy": 0.004679292440414429
+    },
+    {
+      "epoch": 12,
+      "training_weighted_cross_entropy": 0.004998510587029159,
+      "validation_weighted_cross_entropy": 0.0042120181024074554
+    },
+    {
+      "epoch": 13,
+      "training_weighted_cross_entropy": 0.0044197303941473365,
+      "validation_weighted_cross_entropy": 0.003830309957265854
+    },
+    {
+      "epoch": 14,
+      "training_weighted_cross_entropy": 0.004087753399896125,
+      "validation_weighted_cross_entropy": 0.0035234251990914345
+    },
+    {
+      "epoch": 15,
+      "training_weighted_cross_entropy": 0.003749769627271841,
+      "validation_weighted_cross_entropy": 0.0032686281483620405
+    },
+    {
+      "epoch": 16,
+      "training_weighted_cross_entropy": 0.0034169915209834776,
+      "validation_weighted_cross_entropy": 0.0030383707489818335
+    },
+    {
+      "epoch": 17,
+      "training_weighted_cross_entropy": 0.0031619301492658756,
+      "validation_weighted_cross_entropy": 0.0028398451395332813
+    },
+    {
+      "epoch": 18,
+      "training_weighted_cross_entropy": 0.002943868089156846,
+      "validation_weighted_cross_entropy": 0.002666704822331667
+    },
+    {
+      "epoch": 19,
+      "training_weighted_cross_entropy": 0.0028525711968541145,
+      "validation_weighted_cross_entropy": 0.002518804045394063
+    },
+    {
+      "epoch": 20,
+      "training_weighted_cross_entropy": 0.0026452685706317425,
+      "validation_weighted_cross_entropy": 0.0023909839801490307
+    },
+    {
+      "epoch": 21,
+      "training_weighted_cross_entropy": 0.0024723633541725576,
+      "validation_weighted_cross_entropy": 0.0022797284182161093
+    },
+    {
+      "epoch": 22,
+      "training_weighted_cross_entropy": 0.002413752838037908,
+      "validation_weighted_cross_entropy": 0.002183442935347557
+    },
+    {
+      "epoch": 23,
+      "training_weighted_cross_entropy": 0.0023201423852394023,
+      "validation_weighted_cross_entropy": 0.002094951458275318
+    },
+    {
+      "epoch": 24,
+      "training_weighted_cross_entropy": 0.0021979495650157332,
+      "validation_weighted_cross_entropy": 0.002014541532844305
+    },
+    {
+      "epoch": 25,
+      "training_weighted_cross_entropy": 0.0020905359997414052,
+      "validation_weighted_cross_entropy": 0.0019462751224637032
+    },
+    {
+      "epoch": 26,
+      "training_weighted_cross_entropy": 0.0020477574047011635,
+      "validation_weighted_cross_entropy": 0.0018886300968006253
+    },
+    {
+      "epoch": 27,
+      "training_weighted_cross_entropy": 0.0019963764934800565,
+      "validation_weighted_cross_entropy": 0.0018371300539001822
+    },
+    {
+      "epoch": 28,
+      "training_weighted_cross_entropy": 0.001900322347258528,
+      "validation_weighted_cross_entropy": 0.001789345988072455
+    },
+    {
+      "epoch": 29,
+      "training_weighted_cross_entropy": 0.001872105853787313,
+      "validation_weighted_cross_entropy": 0.0017479774542152882
+    }
+  ],
+  "interpretation": "Held-out source/case evaluation; inspect class coverage and sample counts.",
+  "parameter_count": 56751,
+  "splits": {
+    "test": {
+      "count": 24,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 24,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "band_gap",
+            "bloch_theorem",
+            "brillouin_zone",
+            "cooper_pair",
+            "drude_model",
+            "fermi_surface",
+            "meissner_effect",
+            "phonon_dispersion",
+            "quantum_hall_effect",
+            "reciprocal_lattice",
+            "superconductivity",
+            "tight-binding_model",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "band_gap",
+            "bloch_theorem",
+            "brillouin_zone",
+            "cooper_pair",
+            "drude_model",
+            "fermi_surface",
+            "meissner_effect",
+            "phonon_dispersion",
+            "quantum_hall_effect",
+            "reciprocal_lattice",
+            "superconductivity",
+            "tight-binding_model"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.001367296907119453,
+          "per_class": {
+            "band_gap": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "bloch_theorem": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "brillouin_zone": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "cooper_pair": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "drude_model": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "fermi_surface": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "meissner_effect": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "phonon_dispersion": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "quantum_hall_effect": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "reciprocal_lattice": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "superconductivity": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "tight-binding_model": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 24,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "correlated_superconducting_quantum",
+            "crystalline_bloch_band",
+            "phonon_lattice_transport",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              8,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "correlated_superconducting_quantum",
+            "crystalline_bloch_band",
+            "phonon_lattice_transport"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.00047756810090504587,
+          "per_class": {
+            "correlated_superconducting_quantum": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "crystalline_bloch_band": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "phonon_lattice_transport": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.0018448650371283293,
+      "zero_feature_inputs": 0
+    },
+    "train": {
+      "count": 96,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 96,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "band_gap",
+            "bloch_theorem",
+            "brillouin_zone",
+            "cooper_pair",
+            "drude_model",
+            "fermi_surface",
+            "meissner_effect",
+            "phonon_dispersion",
+            "quantum_hall_effect",
+            "reciprocal_lattice",
+            "superconductivity",
+            "tight-binding_model",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "band_gap",
+            "bloch_theorem",
+            "brillouin_zone",
+            "cooper_pair",
+            "drude_model",
+            "fermi_surface",
+            "meissner_effect",
+            "phonon_dispersion",
+            "quantum_hall_effect",
+            "reciprocal_lattice",
+            "superconductivity",
+            "tight-binding_model"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.001204218133352697,
+          "per_class": {
+            "band_gap": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "bloch_theorem": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "brillouin_zone": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "cooper_pair": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "drude_model": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "fermi_surface": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "meissner_effect": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "phonon_dispersion": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "quantum_hall_effect": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "reciprocal_lattice": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "superconductivity": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "tight-binding_model": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 96,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "correlated_superconducting_quantum",
+            "crystalline_bloch_band",
+            "phonon_lattice_transport",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              32,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              32,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              32,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "correlated_superconducting_quantum",
+            "crystalline_bloch_band",
+            "phonon_lattice_transport"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.00047748652286827564,
+          "per_class": {
+            "correlated_superconducting_quantum": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 32
+            },
+            "crystalline_bloch_band": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 32
+            },
+            "phonon_lattice_transport": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 32
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.0016817046562209725,
+      "zero_feature_inputs": 0
+    },
+    "validation": {
+      "count": 24,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 24,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "band_gap",
+            "bloch_theorem",
+            "brillouin_zone",
+            "cooper_pair",
+            "drude_model",
+            "fermi_surface",
+            "meissner_effect",
+            "phonon_dispersion",
+            "quantum_hall_effect",
+            "reciprocal_lattice",
+            "superconductivity",
+            "tight-binding_model",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "band_gap",
+            "bloch_theorem",
+            "brillouin_zone",
+            "cooper_pair",
+            "drude_model",
+            "fermi_surface",
+            "meissner_effect",
+            "phonon_dispersion",
+            "quantum_hall_effect",
+            "reciprocal_lattice",
+            "superconductivity",
+            "tight-binding_model"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0013014455325901508,
+          "per_class": {
+            "band_gap": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "bloch_theorem": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "brillouin_zone": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "cooper_pair": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "drude_model": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "fermi_surface": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "meissner_effect": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "phonon_dispersion": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "quantum_hall_effect": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "reciprocal_lattice": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "superconductivity": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "tight-binding_model": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 24,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "correlated_superconducting_quantum",
+            "crystalline_bloch_band",
+            "phonon_lattice_transport",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              8,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "correlated_superconducting_quantum",
+            "crystalline_bloch_band",
+            "phonon_lattice_transport"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0004465319507289678,
+          "per_class": {
+            "correlated_superconducting_quantum": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "crystalline_bloch_band": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "phonon_lattice_transport": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.0017479774542152882,
+      "zero_feature_inputs": 0
+    }
+  },
+  "unsupported_training_labels": {}
+}

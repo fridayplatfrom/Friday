@@ -1,0 +1,14 @@
+{
+  "expert_id": "genetics_topics",
+  "heads": {"topic": ["transcription", "mutation", "crispr", "unknown"]},
+  "primary_head": "topic",
+  "vocab_size": 1000,
+  "hidden_dim": 160,
+  "representation_dim": 112,
+  "epochs": 50,
+  "batch_size": 16,
+  "learning_rate": 0.003,
+  "patience": 8,
+  "min_score": 0.8,
+  "abstain_labels": {"topic": ["unknown"]}
+}

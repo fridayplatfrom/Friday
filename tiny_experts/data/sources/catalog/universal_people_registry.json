@@ -1,0 +1,239 @@
+[
+  {
+    "person_id": "albert_einstein",
+    "name": "Albert Einstein",
+    "vernacular_names": {
+      "hi": "अल्बर्ट आइंस्टीन",
+      "mr": "अल्बर्ट आइनस्टाइन",
+      "bn": "আলবার্ট আইনস্টাইন",
+      "ta": "ஆல்பர்ட் ஐன்ஸ்டீன்",
+      "te": "ఆల్బర్ట్ ఐన్‌స్టీన్"
+    },
+    "birth_death_years": "1879 – 1955",
+    "nationality": "German / Swiss / American",
+    "faculty": "Faculty of Physics & Mathematical Sciences",
+    "disciplines": ["Theoretical Physics", "Special Relativity", "General Relativity", "Quantum Theory"],
+    "institutions": ["ETH Zurich", "Humboldt University of Berlin", "Institute for Advanced Study (Princeton)"],
+    "major_inventions_and_theories": [
+      "Special Theory of Relativity (E = m*c^2, Lorentz covariance)",
+      "General Theory of Relativity (Curvature of Spacetime, G_mu_nu = 8*pi*G/c^4 * T_mu_nu)",
+      "Photoelectric Effect Theory (Light quanta / Photons, Nobel Prize in Physics 1921)",
+      "Theory of Brownian Motion (Evidence for atomic reality)",
+      "Bose-Einstein Condensate (with Satyendra Nath Bose)"
+    ],
+    "associated_books": ["feynman_lectures_physics_millennium_ed", "griffiths_electrodynamics_4th_ed"],
+    "landmark_quotes": [
+      "Imagination is more important than knowledge. For knowledge is limited, whereas imagination embraces the entire world.",
+      "God does not play dice with the universe."
+    ],
+    "epistemic_impact": "Overthrew 200 years of Newtonian absolute time and space, establishing relativistic spacetime and laying the foundational quanta for modern quantum mechanics.",
+    "biography_summary": "Albert Einstein was a German-born theoretical physicist widely acknowledged as one of the greatest and most influential physicists of all time. His Annus Mirabilis papers in 1905 transformed the foundational principles of modern physics."
+  },
+  {
+    "person_id": "dr_br_ambedkar",
+    "name": "Dr. Bhimrao Ramji Ambedkar (Babasaheb)",
+    "vernacular_names": {
+      "hi": "डॉ. भीमराव रामजी आंबेडकर (बाबासाहेब)",
+      "mr": "डॉ. भीमराव रामजी आंबेडकर (बाबासाहेब)",
+      "bn": "ড. বি আর আম্বেদকর (বাবাসাহেব)",
+      "ta": "டாக்டர் பி. ஆர். அம்பேத்கர்",
+      "te": "డాక్టర్ బి. ఆర్. అంబేద్కర్"
+    },
+    "birth_death_years": "1891 – 1956",
+    "nationality": "Indian",
+    "faculty": "Faculty of Law, Governance & Constitutional Jurisprudence",
+    "disciplines": ["Constitutional Law", "Economics", "Social Jurisprudence", "Political Philosophy"],
+    "institutions": ["Columbia University (Ph.D. Economics)", "London School of Economics (D.Sc. Economics)", "Gray's Inn (Barrister-at-Law)", "Constituent Assembly of India"],
+    "major_inventions_and_theories": [
+      "Architect and Chairman of the Drafting Committee of the Constitution of India (1947–1950)",
+      "Codification of Fundamental Rights (Articles 14–32) ensuring civic equality and abolishing untouchability (Article 17)",
+      "Constitutional Morality Theory: Upholding democratic values above transient political majorities",
+      "Foundational economic framework for the Reserve Bank of India (RBI) based on his doctoral thesis 'The Problem of the Rupee'",
+      "Hindu Code Bill: Champion of gender equality, property rights, and inheritance rights for women"
+    ],
+    "associated_books": ["constitution_of_india_1950", "guha_india_after_gandhi_2017"],
+    "landmark_quotes": [
+      "Educate, Agitate, Organise.",
+      "Constitutional morality is not a natural sentiment. It has to be cultivated. We must realize that our people have yet to learn it.",
+      "I measure the progress of a community by the degree of progress which women have achieved."
+    ],
+    "epistemic_impact": "Principal draftsman of the world's longest written democratic constitution. Revolutionized Indian jurisprudence by institutionalizing affirmative action, rule of law, and non-discrimination.",
+    "biography_summary": "Dr. B.R. Ambedkar was an Indian jurist, economist, social reformer, and politician who served as the Chairman of the Drafting Committee for the Constitution of India and independent India's first Minister of Law and Justice."
+  },
+  {
+    "person_id": "richard_feynman",
+    "name": "Richard P. Feynman",
+    "vernacular_names": {
+      "hi": "रिचर्ड फिलिप्स फाइनमैन",
+      "mr": "रिचर्ड फेनमन",
+      "bn": "রিচার্ড ফাইনম্যান",
+      "ta": "ரிச்சர்ட் ஃபெய்ன்மேன்",
+      "te": "రిచర్డ్ ఫేన్‌మన్"
+    },
+    "birth_death_years": "1918 – 1988",
+    "nationality": "American",
+    "faculty": "Faculty of Physics & Physical Sciences",
+    "disciplines": ["Quantum Electrodynamics (QED)", "Path Integral Formulation", "Statistical Mechanics", "Nanotechnology"],
+    "institutions": ["MIT", "Princeton University", "Cornell University", "California Institute of Technology (Caltech)"],
+    "major_inventions_and_theories": [
+      "Path Integral Formulation of Quantum Mechanics (Sum-over-histories)",
+      "Feynman Diagrams: Visual graphical calculus for subatomic particle scattering amplitudes",
+      "Quantum Electrodynamics (QED) renormalization (Nobel Prize in Physics 1965)",
+      "Parton Model of Hadronic Collisions in high-energy physics",
+      "Pioneering concept of Nanotechnology ('There's Plenty of Room at the Bottom', 1959)",
+      "Quantum Computing conceptualization (1982)"
+    ],
+    "associated_books": ["feynman_lectures_physics_millennium_ed"],
+    "landmark_quotes": [
+      "What I cannot create, I do not understand.",
+      "The first principle is that you must not fool yourself — and you are the easiest person to fool."
+    ],
+    "epistemic_impact": "Revolutionized how physicists visualize and calculate quantum interactions using Feynman diagrams, while delivering the world's most enduring physics lectures.",
+    "biography_summary": "Richard Feynman was an American theoretical physicist known for his work in the path integral formulation of quantum mechanics, quantum electrodynamics, and superfluidity, as well as his legendary pedagogical genius."
+  },
+  {
+    "person_id": "isaac_newton",
+    "name": "Sir Isaac Newton",
+    "vernacular_names": {
+      "hi": "सर आइजैक न्यूटन",
+      "mr": "सर आयझॅक न्यूटन",
+      "bn": "স্যার আইজ্যাক নিউটন",
+      "ta": "சர் ஐசக் நியூட்டன்",
+      "te": "సర్ ఐజాక్ న్యూటన్"
+    },
+    "birth_death_years": "1643 – 1727",
+    "nationality": "English",
+    "faculty": "Faculty of Physics & Mathematical Sciences",
+    "disciplines": ["Classical Mechanics", "Optics", "Infinitesimal Calculus", "Gravitation"],
+    "institutions": ["Trinity College, Cambridge", "Royal Society of London"],
+    "major_inventions_and_theories": [
+      "Three Laws of Motion (Inertia, F = m*a, Action-Reaction)",
+      "Universal Law of Gravitation (F = G * m1 * m2 / r^2)",
+      "Invention of Infinitesimal Calculus (Fluxions and Fluents)",
+      "Corpuscular Theory of Light and Dispersion through Prisms",
+      "Reflecting Telescope (Newtonian Reflector)"
+    ],
+    "associated_books": ["feynman_lectures_physics_millennium_ed"],
+    "landmark_quotes": [
+      "If I have seen further, it is by standing on the shoulders of Giants.",
+      "To every action there is always opposed an equal reaction."
+    ],
+    "epistemic_impact": "Laid the entire mathematical and conceptual foundation of classical physics and astronomy with the publication of the 'Philosophiae Naturalis Principia Mathematica' in 1687.",
+    "biography_summary": "Sir Isaac Newton was an English polymath active as a mathematician, physicist, astronomer, and author. A key figure in the Scientific Revolution, his seminal 1687 book Principia established classical mechanics."
+  },
+  {
+    "person_id": "cv_raman",
+    "name": "Sir Chandrasekhara Venkata Raman (C.V. Raman)",
+    "vernacular_names": {
+      "hi": "सर चंद्रशेखर वेंकट रामन (सी. वी. रामन)",
+      "mr": "सर सी. व्ही. रामन",
+      "bn": "চন্দ্রশেখর ভেঙ্কট রমন",
+      "ta": "சர் சி. வி. இராமன்",
+      "te": "సర్ సి. వి. రామన్"
+    },
+    "birth_death_years": "1888 – 1970",
+    "nationality": "Indian",
+    "faculty": "Faculty of Physics & Physical Sciences",
+    "disciplines": ["Optics", "Molecular Spectroscopy", "Acoustics", "Crystallography"],
+    "institutions": ["University of Calcutta", "Indian Association for the Cultivation of Science (IACS)", "Indian Institute of Science (IISc Bangalore)", "Raman Research Institute"],
+    "major_inventions_and_theories": [
+      "Discovery of the Raman Effect (Inelastic scattering of photons by molecules, 1928)",
+      "First Asian Nobel Prize in Physics (1930)",
+      "Acoustics of Indian musical drums (Mridangam and Tabla harmonics)",
+      "Optical diffraction of ultrasonic waves (Raman-Nath Theory)"
+    ],
+    "associated_books": ["feynman_lectures_physics_millennium_ed", "griffiths_electrodynamics_4th_ed"],
+    "landmark_quotes": [
+      "I would like to tell the young men and women before me not to lose hope and courage. Success can only come to you by your courageous devotion to the task.",
+      "The true wealth of a nation consists not in the stored-up gold but in the intellectual and physical strength of its people."
+    ],
+    "epistemic_impact": "Raman spectroscopy became an indispensable non-destructive analytical method across chemistry, materials science, pharmaceutical forensics, and medical diagnostics worldwide.",
+    "biography_summary": "Sir C.V. Raman was an Indian physicist who carried out ground-breaking work in the field of light scattering, earning the 1930 Nobel Prize in Physics. National Science Day in India is celebrated on 28 February in honor of his discovery."
+  },
+  {
+    "person_id": "george_n_agrios",
+    "name": "George N. Agrios",
+    "vernacular_names": {
+      "hi": "जॉर्ज एन. एग्रियोस",
+      "mr": "जॉर्ज एन. अ‍ॅग्रिओस",
+      "bn": "জর্জ এন. এগ্রিওস",
+      "ta": "ஜார்ஜ் என். அக்ரியோஸ்",
+      "te": "జార్జ్ ఎన్. అగ్రియోస్"
+    },
+    "birth_death_years": "1936 – 2010",
+    "nationality": "Greek / American",
+    "faculty": "Faculty of Biological & Agricultural Sciences",
+    "disciplines": ["Plant Pathology", "Virology", "Fungal Epidemiology", "Integrated Pest Management"],
+    "institutions": ["University of Massachusetts Amherst", "University of Florida", "American Phytopathological Society (APS)"],
+    "major_inventions_and_theories": [
+      "Author of 'Plant Pathology' (1st through 5th editions), the universal benchmark textbook translated into 10+ languages",
+      "Comprehensive schematic modeling of the Plant Disease Triangle (Host, Pathogen, Environment)",
+      "Molecular classification of fungal, viral, and bacterial infection cycles and haustorial mechanics",
+      "President of the American Phytopathological Society (APS)"
+    ],
+    "associated_books": ["agrios_plant_pathology_6th_ed"],
+    "landmark_quotes": [
+      "Plant diseases are as old as plants themselves and have affected human history and civilizations from the dawn of agriculture."
+    ],
+    "epistemic_impact": "Educated four generations of agricultural scientists and plant pathologists worldwide, standardizing disease diagnostic diagrams globally.",
+    "biography_summary": "George N. Agrios was a world-renowned plant pathologist whose monumental textbook 'Plant Pathology' established the gold standard curriculum across international universities."
+  },
+  {
+    "person_id": "rabindranath_tagore",
+    "name": "Rabindranath Tagore (Gurudev)",
+    "vernacular_names": {
+      "hi": "रवींद्रनाथ टैगोर (गुरुदेव)",
+      "mr": "रवींद्रनाथ टागोर (गुरुदेव)",
+      "bn": "রবীন্দ্রনাথ ঠাকুর (গুরুদেব)",
+      "ta": "இரவீந்திரநாத் தாகூர்",
+      "te": "రవీంద్రనాథ్ ఠాగూర్"
+    },
+    "birth_death_years": "1861 – 1941",
+    "nationality": "Indian",
+    "faculty": "Faculty of Humanities, Literature & Philosophy",
+    "disciplines": ["Poetry", "Philosophy", "Dramatic Literature", "Musicology (Rabindra Sangeet)", "Visual Art"],
+    "institutions": ["Visva-Bharati University (Santiniketan)"],
+    "major_inventions_and_theories": [
+      "First non-European Nobel Laureate in Literature (1913 for 'Gitanjali')",
+      "Composer of the National Anthems of two sovereign nations: India ('Jana Gana Mana') and Bangladesh ('Amar Shonar Bangla')",
+      "Pedagogical philosophy of open-air holistic education founded at Santiniketan (Visva-Bharati)",
+      "Pioneered modern Bengali prose, short stories, and free-verse poetic modernism"
+    ],
+    "associated_books": ["guha_india_after_gandhi_2017"],
+    "landmark_quotes": [
+      "Where the mind is without fear and the head is held high; Where knowledge is free; Where the world has not been broken up into fragments by narrow domestic walls...",
+      "Clouds come floating into my life, no longer to carry rain or usher storm, but to add color to my sunset sky."
+    ],
+    "epistemic_impact": "Redefined modern Asian literature on the global stage, synthesizing humanist spirituality with universalist internationalism.",
+    "biography_summary": "Rabindranath Tagore was an Indian polymath who reshaped Bengali literature and music, as well as Indian art with Contextual Modernism in the late 19th and early 20th centuries."
+  },
+  {
+    "person_id": "srinivasa_ramanujan",
+    "name": "Srinivasa Ramanujan",
+    "vernacular_names": {
+      "hi": "श्रीनिवास रामानुजन",
+      "mr": "श्रीनिवास रामानुजन",
+      "bn": "শ্রীনিবাস রামানুজন",
+      "ta": "சீனிவாச இராமானுசன்",
+      "te": "శ్రీనివాస రామానుజన్"
+    },
+    "birth_death_years": "1887 – 1920",
+    "nationality": "Indian",
+    "faculty": "Faculty of Physics & Mathematical Sciences",
+    "disciplines": ["Pure Mathematics", "Analytic Number Theory", "Infinite Series", "Modular Forms"],
+    "institutions": ["University of Madras", "Trinity College, Cambridge", "Royal Society of London (FRS)"],
+    "major_inventions_and_theories": [
+      "Ramanujan Prime and Ramanujan Theta Function",
+      "Hardy-Ramanujan Asymptotic Partition Formula: p(n) ~ (1 / 4*n*sqrt(3)) * exp(pi * sqrt(2*n/3))",
+      "Mock Theta Functions (foundational to modern String Theory and Black Hole entropy)",
+      "Ramanujan-Soldner Constant and highly composite numbers",
+      "Rapidly converging infinite series approximations for Pi (used in modern supercomputer calculations)"
+    ],
+    "associated_books": [],
+    "landmark_quotes": [
+      "An equation for me has no meaning unless it expresses a thought of God."
+    ],
+    "epistemic_impact": "Substantially transformed 20th-century mathematical analysis, modular forms, and combinatorial partition theory with nearly 3,900 self-discovered theorems.",
+    "biography_summary": "Srinivasa Ramanujan was an Indian mathematician who lived during the British Rule in India. Though he had almost no formal training in pure mathematics, he made substantial contributions to mathematical analysis, number theory, infinite series, and continued fractions."
+  }
+]

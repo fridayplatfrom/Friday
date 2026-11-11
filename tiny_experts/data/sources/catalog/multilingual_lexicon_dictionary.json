@@ -1,0 +1,122 @@
+[
+  {
+    "term": "entropy",
+    "part_of_speech": "noun",
+    "faculty": "Faculty of Physics & Thermodynamics",
+    "etymology": "From Ancient Greek en- (in) + trope (transformation, turning). Coined by Rudolf Clausius in 1865.",
+    "definitions": {
+      "physics": "A thermodynamic state function (S) representing the unavailable thermal energy per unit temperature (dS = dQ_rev / T), fundamentally quantifying the logarithmic measure of microstates corresponding to a macroscopic state (S = k_B * ln W).",
+      "general": "A measure of disorder, randomness, or uncertainty in a physical or informational system."
+    },
+    "multilingual_translations": {
+      "hi": "एन्ट्रॉपी (ऊष्मागतिक अव्यवस्था / रूपांतरण माप)",
+      "mr": "एन्ट्रॉपी (ऊष्मागतिकीय विस्कळीतपणा)",
+      "bn": "এনট্রপি (বিশৃঙ্খলার পরিমাপ)",
+      "ta": "என்ட்ரோபி (வெப்ப இயக்கவியல் ஒழுங்கின்மை)",
+      "te": "ఎంట్రోపీ (క్రమరాహిత్య కొలత)",
+      "sa": "रूपांतरणमानम् (अव्‍यवस्‍था)"
+    },
+    "example_sentence": "According to the Second Law of Thermodynamics, the total entropy of an isolated system always increases over time.",
+    "synonyms": ["thermal degradation", "disorder metric", "microstate multiplicity"]
+  },
+  {
+    "term": "photosynthesis",
+    "part_of_speech": "noun",
+    "faculty": "Faculty of Biological & Botanical Sciences",
+    "etymology": "From Greek phos (light) + synthesis (putting together, combination).",
+    "definitions": {
+      "botany": "The anabolic biochemical pathway wherein chlorophyll pigments in thylakoid membranes transduce solar photons (400-700nm) into chemical energy, photolyzing water into O2 and fixing atmospheric CO2 into hexose carbohydrates via the Calvin-Benson cycle.",
+      "general": "The natural process by which green plants and certain organisms synthesize nutrients using sunlight."
+    },
+    "multilingual_translations": {
+      "hi": "प्रकाश-संश्लेषण (पौधों द्वारा भोजन निर्माण की प्रक्रिया)",
+      "mr": "प्रकाशसंश्लेषण (अन्न निर्मिती प्रक्रिया)",
+      "bn": "সালোকসংশ্লেষ",
+      "ta": "ஒளிச்சேர்க்கை",
+      "te": "కిరణజన్య సంయోగక్రియ",
+      "sa": "प्रकाशसंश्लेषणम्"
+    },
+    "example_sentence": "Photosynthesis produces the primary biomass of Earth's terrestrial and marine trophic pyramids.",
+    "synonyms": ["carbon fixation", "phototrophic assimilation"]
+  },
+  {
+    "term": "constitution",
+    "part_of_speech": "noun",
+    "faculty": "Faculty of Law, Governance & Constitutional Jurisprudence",
+    "etymology": "From Latin constitutio (an establishment, decree, statute), from constituere (to cause to stand, set up).",
+    "definitions": {
+      "law": "The foundational supreme legal charter of a sovereign state, institutionalizing the separation of powers (Legislature, Executive, Judiciary), establishing rule of law, and codifying inviolable fundamental rights for citizens.",
+      "general": "The composition or physical makeup of something; or the basic principles by which an organization is governed."
+    },
+    "multilingual_translations": {
+      "hi": "संविधान (राष्ट्र का सर्वोच्च मौलिक कानून)",
+      "mr": "संविधान / राज्यघटना",
+      "bn": "সংবিধান / শাসনতন্ত্র",
+      "ta": "அரசியலமைப்புச் சட்டம்",
+      "te": "రాజ్యాంగం",
+      "sa": "संविधानम्"
+    },
+    "example_sentence": "The Constitution of India is the supreme law of the land, prevailing over all conflicting statutory enactments.",
+    "synonyms": ["supreme charter", "grundnorm", "organic law"]
+  },
+  {
+    "term": "pathogen",
+    "part_of_speech": "noun",
+    "faculty": "Faculty of Biological Sciences & Pathology",
+    "etymology": "From Greek pathos (suffering, disease) + -genes (producer of, born of).",
+    "definitions": {
+      "pathology": "Any biological microorganism (fungus, bacterium, virus, viroid, oomycete, phytoplasma, or nematode) capable of disrupting the normal physiological functioning of a host organism and inducing clinical disease symptoms.",
+      "general": "An infectious biological agent that causes illness or disease."
+    },
+    "multilingual_translations": {
+      "hi": "रोगजनक (बीमारी पैदा करने वाला सूक्ष्मजीव)",
+      "mr": "रोगकारक / रोगजंतू",
+      "bn": "রোগজীবাণু / প্যাথোজেন",
+      "ta": "நோய் உண்டாக்கும் கிருமி / நோய்க்கிருமி",
+      "te": "వ్యాధికారక సూక్ష్మజీవి",
+      "sa": "रोगजनकः"
+    },
+    "example_sentence": "Phytophthora infestans is an aggressive oomycete pathogen responsible for devastating potato late blight epidemics.",
+    "synonyms": ["infectious agent", "disease vector", "microbial causal agent"]
+  },
+  {
+    "term": "transpiration",
+    "part_of_speech": "noun",
+    "faculty": "Faculty of Botanical Sciences & Plant Physiology",
+    "etymology": "From Latin trans (across, through) + spirare (to breathe).",
+    "definitions": {
+      "botany": "The physiological vaporization of water from plant aerial surfaces, predominantly through stomatal pores in leaf mesophyll, generating negative hydrostatic tension that drives xylem sap ascent from root systems.",
+      "general": "The release of moisture vapor through pores in an organism."
+    },
+    "multilingual_translations": {
+      "hi": "वाष्पोत्सर्जन (पत्तियों से जलवाष्प का निकास)",
+      "mr": "बाष्पोत्सर्जन",
+      "bn": "প্রস্বেদন / বাষ্পমোচন",
+      "ta": "நீராவிப்போக்கு",
+      "te": "భాష్పోత్సేకం",
+      "sa": "वाष्पोत्सर्जनम्"
+    },
+    "example_sentence": "Transpiration provides essential evaporative cooling that protects the photosystem complexes of plant leaves during peak midday heat flux.",
+    "synonyms": ["stomatal evaporation", "xylem sap pull", "water vapor loss"]
+  },
+  {
+    "term": "jurisprudence",
+    "part_of_speech": "noun",
+    "faculty": "Faculty of Law & Legal Philosophy",
+    "etymology": "From Latin juris prudentia (the science or skill of law), from jus (right, law) + prudentia (knowledge, foresight).",
+    "definitions": {
+      "law": "The theoretical philosophy, science, and structural analysis of law and legal principles, examining the origins, authority, and normative justifications of judicial systems.",
+      "general": "A particular legal department, judicial philosophy, or body of court rulings."
+    },
+    "multilingual_translations": {
+      "hi": "विधिशास्त्र (कानून का वैज्ञानिक व दार्शनिक अध्ययन)",
+      "mr": "न्यायशास्त्र / विधिशास्त्र",
+      "bn": "আইনশাস্ত্র / ব্যবহারশাস্ত্র",
+      "ta": "சட்டவியல் / நீதிசாஸ்திரம்",
+      "te": "న్యాయశాస్త్రం",
+      "sa": "न्यायशास्त्रम्"
+    },
+    "example_sentence": "Modern constitutional jurisprudence relies on the doctrine of proportionality to balance individual liberties against executive restrictions.",
+    "synonyms": ["legal philosophy", "science of law", "normative legal theory"]
+  }
+]

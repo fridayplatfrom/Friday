@@ -1,0 +1,104 @@
+{
+  "architecture": {
+    "dropout": 0.05,
+    "feature_dim": 266,
+    "hidden_dim": 144,
+    "name": "multihead_mlp_v1",
+    "representation_dim": 96
+  },
+  "artifacts": {
+    "metrics.json": "62e39b06dbf1c1b2824e49491f97dcf7d4336594c4c606b5ce5c4d2bd2893c3e",
+    "model.pt": "2db89cc2489cf7181aea2e2ca2d806c49e03337a2fe3e007c13838362dfca0f0",
+    "splits.json": "6772a3caeb9742e0ca3c87749cb94b09db8c06a2372a42b783047337533fa1d9",
+    "vocab.json": "9194c0803be9e674f05aeab8eb61bff63b0fddbd2dd8454c1994aa8816ad0df7"
+  },
+  "created_at": "2026-11-07T08:13:25.231282+00:00",
+  "dataset_sha256": "dd4baa5ea0dd2af1c9b23259c2df2f1977063131e99e313d6f0bc8a6bf5289ea",
+  "expert_id": "physics_quantum_information",
+  "feature_version": "unicode_word_bigram_l2_v1",
+  "group_split_sha256": "10b0799d40c3f78a3a97b47fdd0e714e4c55f51ea0d72f8a8b3f06af8ffb13f3",
+  "heads": {
+    "concept": [
+      "bell_inequality",
+      "bloch_sphere",
+      "decoherence",
+      "quantum_circuit",
+      "quantum_entanglement",
+      "quantum_error_correction",
+      "quantum_teleportation",
+      "qubit",
+      "schmidt_decomposition",
+      "von_neumann_entropy",
+      "wigner_function"
+    ],
+    "regime": [
+      "error_correction_tomography",
+      "open_decoherence_entropy",
+      "qubit_circuit_entanglement"
+    ]
+  },
+  "inference": {
+    "abstain_labels": {},
+    "min_score": 0.4,
+    "score_type": "uncalibrated_softmax",
+    "zero_feature_policy": "abstain"
+  },
+  "limitations": [
+    "Categorical text classifier; does not read books or generate explanations.",
+    "Softmax scores are uncalibrated and do not certify correctness.",
+    "Reviewed-data status records the input workflow, not production readiness."
+  ],
+  "primary_head": "concept",
+  "schema_version": 1,
+  "status": "reviewed_data",
+  "training": {
+    "augmentation": "none",
+    "best_epoch": 32,
+    "epochs_run": 32,
+    "reviewed_data_required": true,
+    "selection_metric": "validation_weighted_cross_entropy",
+    "source_separated": true,
+    "torch_version": "2.15.0+cpu"
+  },
+  "training_config": {
+    "abstain_labels": {},
+    "batch_size": 8,
+    "dropout": 0.05,
+    "epochs": 45,
+    "expert_id": "physics_quantum_information",
+    "head_weights": {},
+    "heads": {
+      "concept": [
+        "bell_inequality",
+        "bloch_sphere",
+        "decoherence",
+        "quantum_circuit",
+        "quantum_entanglement",
+        "quantum_error_correction",
+        "quantum_teleportation",
+        "qubit",
+        "schmidt_decomposition",
+        "von_neumann_entropy",
+        "wigner_function"
+      ],
+      "regime": [
+        "error_correction_tomography",
+        "open_decoherence_entropy",
+        "qubit_circuit_entanglement"
+      ]
+    },
+    "hidden_dim": 144,
+    "learning_rate": 0.006,
+    "min_delta": 0.0001,
+    "min_score": 0.4,
+    "patience": 8,
+    "primary_head": "concept",
+    "representation_dim": 96,
+    "seed": 42,
+    "test_fraction": 0.15,
+    "threads": 2,
+    "validation_fraction": 0.15,
+    "vocab_size": 3000,
+    "weight_decay": 0.0001
+  }
+}

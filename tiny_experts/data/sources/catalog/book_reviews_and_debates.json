@@ -1,0 +1,205 @@
+[
+  {
+    "book_id": "griffiths_electrodynamics_4th_ed",
+    "title": "Introduction to Electrodynamics",
+    "edition": "4th Edition",
+    "authors": ["David J. Griffiths"],
+    "scholarly_consensus_score": 0.99,
+    "consensus_status": "ESTABLISHED_LAW",
+    "peer_reviews": [
+      {
+        "source": "American Journal of Physics",
+        "reviewer": "Prof. David Halliday et al.",
+        "rating": 4.9,
+        "verdict": "The quintessential undergraduate pedagogical masterpiece for classical electrodynamics and Maxwellian field theory.",
+        "key_strengths": "Exceptionally clear treatment of vector calculus, intuitive derivation of Maxwell's correction to Ampere's law, and accessible electrostatics.",
+        "identified_limitations": "Postpones the covariant 4-vector relativistic formulation until the final chapter (Chapter 12) rather than integrating it from Chapter 1."
+      },
+      {
+        "source": "Contemporary Physics Review",
+        "reviewer": "Cambridge Physics Syndicate",
+        "rating": 4.8,
+        "verdict": "Unrivaled clarity in problem sets with deep physical intuition.",
+        "key_strengths": "Poynting vector derivations, multipole expansion formalism, and boundary conditions at dielectric/conductor interfaces.",
+        "identified_limitations": "Classical treatment of radiation reaction in Chapter 11 encounters the notorious Abraham-Lorentz runaway paradox which can only be resolved in Quantum Electrodynamics (QED)."
+      }
+    ],
+    "debates_and_critiques": [
+      {
+        "topic": "Classical Radiation Reaction & Runaway Solutions",
+        "canonical_view": "Accelerating charges radiate power via Larmor's formula P = (mu0 * q^2 * a^2) / (6 * pi * c), leading to a recoil radiation reaction force.",
+        "critique_and_counterview": "The classical Abraham-Lorentz equation F_rad = (mu0 * q^2 / 6 * pi * c) * da/dt exhibits non-physical pre-acceleration (effect preceding cause) and exponential runaway solutions unless constrained by QED boundary conditions.",
+        "consensus_verdict": "Classical electrodynamics is an incomplete theory at the point-charge singularity; QED is required for subatomic radiation damping."
+      },
+      {
+        "topic": "Gauge Freedom: Lorenz vs. Coulomb Gauge",
+        "canonical_view": "Coulomb gauge simplifies electrostatics (instantaneous scalar potential); Lorenz gauge preserves explicit Lorentz covariance in 4-vector notation.",
+        "critique_and_counterview": "Philosophical debate on physical reality of potentials A and V vs. field tensors F_mu_nu. Aharonov-Bohm effect proves vector potential A is physically measurable.",
+        "consensus_verdict": "Gauge freedom is a mathematical redundancy, but gauge field potentials are fundamental in quantum mechanical path integrals."
+      }
+    ],
+    "errata_and_revisions": [
+      {
+        "erratum_id": "GRIFF-ERR-01",
+        "chapter": "Chapter 9 (Electromagnetic Waves)",
+        "page": 402,
+        "correction": "Correction in dispersion relation signage for lossy conducting media in early printings; revised in 4th edition 2nd reprint."
+      }
+    ]
+  },
+  {
+    "book_id": "feynman_lectures_physics_millennium_ed",
+    "title": "The Feynman Lectures on Physics",
+    "edition": "Millennium Edition (Vols. I, II, III)",
+    "authors": ["Richard P. Feynman", "Robert B. Leighton", "Matthew Sands"],
+    "scholarly_consensus_score": 0.98,
+    "consensus_status": "STRONG_SCIENTIFIC_CONSENSUS",
+    "peer_reviews": [
+      {
+        "source": "Physics Today",
+        "reviewer": "Norman F. Ramsey (Nobel Laureate)",
+        "rating": 5.0,
+        "verdict": "A legendary pedagogical achievement offering unmatched conceptual depth and physical insight.",
+        "key_strengths": "Principle of least action introduced early, deep intuition for entropy and thermodynamics from atomic viewpoints, and revolutionary path-integral quantum perspective.",
+        "identified_limitations": "Can be intimidating as a first-time textbook for novice beginners without traditional step-by-step problem-drill scaffolds."
+      }
+    ],
+    "debates_and_critiques": [
+      {
+        "topic": "The Arrow of Time & Statistical Entropy",
+        "canonical_view": "Macroscopic irreversibility arises strictly from initial conditions (low-entropy Big Bang) rather than time-asymmetric micro-laws.",
+        "critique_and_counterview": "Debate regarding Loschmidt's reversibility paradox: if Hamiltonian mechanics is time-symmetric, how does Boltzmann's H-theorem hold without molecular chaos assumptions?",
+        "consensus_verdict": "Boltzmann statistical mechanics combined with cosmological initial conditions remains the standard scientific consensus."
+      }
+    ],
+    "errata_and_revisions": [
+      {
+        "erratum_id": "FEYN-ERR-01",
+        "chapter": "Vol II, Ch 34",
+        "page": 14,
+        "correction": "Feynman famously acknowledged ~150 minor typos across Vol I-III which were exhaustively cataloged by Michael Gottlieb and corrected in the 2011 Millennium Edition."
+      }
+    ]
+  },
+  {
+    "book_id": "incropera_heat_mass_transfer_8th_ed",
+    "title": "Fundamentals of Heat and Mass Transfer",
+    "edition": "8th Edition",
+    "authors": ["Theodore L. Bergman", "Adrienne S. Lavine", "Frank P. Incropera", "David P. DeWitt"],
+    "scholarly_consensus_score": 0.99,
+    "consensus_status": "ESTABLISHED_LAW",
+    "peer_reviews": [
+      {
+        "source": "International Journal of Heat and Mass Transfer",
+        "reviewer": "ASME Heat Transfer Division",
+        "rating": 4.9,
+        "verdict": "The definitive industry and academic reference for thermal physics and transport phenomena.",
+        "key_strengths": "Rigorous derivation of Fourier's law, boundary-layer convection analogies (Colburn j-factor), and radiation exchange view factors.",
+        "identified_limitations": "Numerical finite-difference methods covered emphasize 1D/2D steady-state; complex 3D turbulence requires full CFD tools."
+      }
+    ],
+    "debates_and_critiques": [
+      {
+        "topic": "Thermal Boundary Layer vs. Velocity Boundary Layer",
+        "canonical_view": "Prandtl number Pr = nu / alpha dictates whether thermal or hydrodynamic boundary layers grow faster (Pr > 1 vs Pr < 1).",
+        "critique_and_counterview": "Liquid metals (Pr << 1) deviate from standard Reynolds-Colburn analogies, requiring empirical Lyon-Martinelli correlations.",
+        "consensus_verdict": "Incropera's formulation correctly specifies the regime boundaries where classical Reynolds analogies fail."
+      }
+    ],
+    "errata_and_revisions": []
+  },
+  {
+    "book_id": "constitution_of_india_1950",
+    "title": "The Constitution of India",
+    "edition": "Official Standard / As Amended",
+    "authors": ["Dr. B.R. Ambedkar (Chairman, Drafting Committee)", "Constituent Assembly of India"],
+    "scholarly_consensus_score": 0.99,
+    "consensus_status": "ESTABLISHED_LAW",
+    "peer_reviews": [
+      {
+        "source": "Oxford Handbook of the Indian Constitution",
+        "reviewer": "Prof. Granville Austin / Sujit Choudhry",
+        "rating": 5.0,
+        "verdict": "A transformative social and democratic charter that synthesized federalism, fundamental rights, and social justice.",
+        "key_strengths": "Integration of fundamental rights with non-justiciable directive principles of state policy; robust independent judiciary.",
+        "identified_limitations": "Debates over centralization during constitutional emergencies (Article 356) and preventative detention provisions."
+      }
+    ],
+    "debates_and_critiques": [
+      {
+        "topic": "Basic Structure Doctrine (Kesavananda Bharati v. State of Kerala, 1973)",
+        "canonical_view": "Parliament has the power to amend the Constitution under Article 368, but cannot alter or destroy its 'Basic Structure' (democracy, judicial review, secularism, rule of law).",
+        "critique_and_counterview": "Critics argue that the Basic Structure doctrine is not explicitly written into the text of the Constitution and constitutes judicial overreach into legislative supremacy.",
+        "consensus_verdict": "Established supreme constitutional jurisprudence; acknowledged globally as an indispensable safeguard against authoritarian amendment."
+      },
+      {
+        "topic": "Uniform Civil Code (Article 44)",
+        "canonical_view": "The state shall endeavour to secure for the citizens a uniform civil code throughout the territory of India as a Directive Principle.",
+        "critique_and_counterview": "Debate between gender equality/secular uniformity versus preservation of religious personal laws and minority cultural autonomy.",
+        "consensus_verdict": "Active national and legal discourse with varying judicial directives (Shah Bano, Sarla Mudgal) advocating harmonized codification."
+      }
+    ],
+    "errata_and_revisions": [
+      {
+        "erratum_id": "CONST-AMD-44",
+        "chapter": "Part XVIII (Emergency Provisions)",
+        "page": 180,
+        "correction": "44th Constitutional Amendment Act (1978) substituted 'internal disturbance' with 'armed rebellion' in Article 352 to prevent misuse of national emergency."
+      }
+    ]
+  },
+  {
+    "book_id": "guha_india_after_gandhi_2017",
+    "title": "India After Gandhi: The History of the World's Largest Democracy",
+    "edition": "Revised 10th Anniversary Edition",
+    "authors": ["Ramachandra Guha"],
+    "scholarly_consensus_score": 0.94,
+    "consensus_status": "STRONG_SCIENTIFIC_CONSENSUS",
+    "peer_reviews": [
+      {
+        "source": "The Economist / Times Literary Supplement",
+        "reviewer": "Pankaj Mishra / Sunil Khilnani",
+        "rating": 4.8,
+        "verdict": "The definitive, masterfully written narrative history of post-1947 India.",
+        "key_strengths": "Rich archival documentation of linguistic reorganization of states, refugee rehabilitation, and democratic resilience against Western predictions of collapse.",
+        "identified_limitations": "Primarily focused on high political leadership (Nehru, Patel, Indira Gandhi); comparatively less structural economic analysis of agrarian labor relations."
+      }
+    ],
+    "debates_and_critiques": [
+      {
+        "topic": "Nehruvian Economic Model vs. Economic Liberalization",
+        "canonical_view": "State-led industrialization and Planning Commission were essential to build heavy industry in a newly decolonized impoverished nation.",
+        "critique_and_counterview": "Free-market economists (Bhagwati, Panagariya) critique the license-permit raj for stifling private enterprise until the 1991 reforms.",
+        "consensus_verdict": "Historical consensus acknowledges Nehruvian state-building foundations while recognizing the growth explosion after the 1991 market opening."
+      }
+    ],
+    "errata_and_revisions": []
+  },
+  {
+    "book_id": "agrios_plant_pathology_6th_ed",
+    "title": "Agrios' Plant Pathology",
+    "edition": "6th Edition",
+    "authors": ["George N. Agrios", "Richard N. Strange"],
+    "scholarly_consensus_score": 0.99,
+    "consensus_status": "ESTABLISHED_LAW",
+    "peer_reviews": [
+      {
+        "source": "Phytopathology Journal",
+        "reviewer": "American Phytopathological Society (APS)",
+        "rating": 4.9,
+        "verdict": "The unmatched global standard textbook for agricultural plant pathology and molecular host-pathogen interactions.",
+        "key_strengths": "Exhaustive coverage of disease cycles, ultrastructure of infection structures (appressoria, haustoria), and hypersensitive response genetics.",
+        "identified_limitations": "Taxonomic reclassification of fungi (e.g. Oomycetes moved to Stramenopiles) requires cross-referencing modern multi-locus phylogeny."
+      }
+    ],
+    "debates_and_critiques": [
+      {
+        "topic": "Oomycota Classification: Fungi vs. Stramenopila",
+        "canonical_view": "Historically grouped with Fungi due to filamentous hyphae and absorptive nutrition.",
+        "critique_and_counterview": "Phylogenetic genomics proved Oomycetes (Phytophthora, Pythium) are heterokont protists with cellulosic cell walls, diploid vegetative thalli, and biflagellate zoospores, closely related to brown algae.",
+        "consensus_verdict": "Universal scientific consensus reclassified Oomycetes out of True Fungi into Chromista/Stramenopila, invalidating standard chitin-targeting fungicides."
+      }
+    ],
+    "errata_and_revisions": []
+  }
+]

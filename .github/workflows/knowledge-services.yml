@@ -1,0 +1,33 @@
+name: Knowledge services acceptance
+on:
+  push:
+    paths: ['tiny_experts/knowledge_services/**', 'tiny_experts/knowledge_core/**', 'tests/services/**', '.github/workflows/knowledge-services.yml']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-services:
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '${{ matrix.python }}'
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: python -m pip install 'pytest>=8,<10' 'Pillow>=10.4,<14'
+      - run: python -m compileall -q tiny_experts/knowledge_services
+      - run: python -m pytest -q tests/services tests/regression/test_knowledge_core.py --junitxml=services-tests.xml
+        env:
+          PYTHONPATH: .
+          HF_HUB_OFFLINE: '1'
+          TRANSFORMERS_OFFLINE: '1'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: services-tests-${{ matrix.python }}
+          path: services-tests.xml

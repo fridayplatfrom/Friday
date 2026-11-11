@@ -1,0 +1,78 @@
+{
+  "source_separated": true,
+  "split_by": "source",
+  "splits": {
+    "test": {
+      "case_ids": [
+        "case_history_politics_topics_constitutional_law_governance_5",
+        "case_history_politics_topics_economic_fiscal_policy_5",
+        "case_history_politics_topics_world_and_modern_history_5"
+      ],
+      "count": 3,
+      "example_ids": [
+        "history_politics_topics_0005",
+        "history_politics_topics_0011",
+        "history_politics_topics_0017"
+      ],
+      "sha256": "550b61f5a99f12445594354b2c13661313412531cb5fb8403156a29690e32139",
+      "source_ids": [
+        "source_history_politics_topics_test_5"
+      ]
+    },
+    "train": {
+      "case_ids": [
+        "case_history_politics_topics_constitutional_law_governance_0",
+        "case_history_politics_topics_constitutional_law_governance_1",
+        "case_history_politics_topics_constitutional_law_governance_2",
+        "case_history_politics_topics_constitutional_law_governance_3",
+        "case_history_politics_topics_economic_fiscal_policy_0",
+        "case_history_politics_topics_economic_fiscal_policy_1",
+        "case_history_politics_topics_economic_fiscal_policy_2",
+        "case_history_politics_topics_economic_fiscal_policy_3",
+        "case_history_politics_topics_world_and_modern_history_0",
+        "case_history_politics_topics_world_and_modern_history_1",
+        "case_history_politics_topics_world_and_modern_history_2",
+        "case_history_politics_topics_world_and_modern_history_3"
+      ],
+      "count": 12,
+      "example_ids": [
+        "history_politics_topics_0000",
+        "history_politics_topics_0001",
+        "history_politics_topics_0002",
+        "history_politics_topics_0003",
+        "history_politics_topics_0006",
+        "history_politics_topics_0007",
+        "history_politics_topics_0008",
+        "history_politics_topics_0009",
+        "history_politics_topics_0012",
+        "history_politics_topics_0013",
+        "history_politics_topics_0014",
+        "history_politics_topics_0015"
+      ],
+      "sha256": "f32031fee8e30669618ef3bc56ad7fcc482d6e0b869890065254f36ee767db59",
+      "source_ids": [
+        "source_history_politics_topics_train_0",
+        "source_history_politics_topics_train_1",
+        "source_history_politics_topics_train_2",
+        "source_history_politics_topics_train_3"
+      ]
+    },
+    "validation": {
+      "case_ids": [
+        "case_history_politics_topics_constitutional_law_governance_4",
+        "case_history_politics_topics_economic_fiscal_policy_4",
+        "case_history_politics_topics_world_and_modern_history_4"
+      ],
+      "count": 3,
+      "example_ids": [
+        "history_politics_topics_0004",
+        "history_politics_topics_0010",
+        "history_politics_topics_0016"
+      ],
+      "sha256": "5262a2c0ca70d3e107f85686e4be7cb218dc50bf05db4eb702a8a60bebf5d6ac",
+      "source_ids": [
+        "source_history_politics_topics_validation_4"
+      ]
+    }
+  }
+}

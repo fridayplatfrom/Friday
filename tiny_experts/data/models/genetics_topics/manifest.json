@@ -1,0 +1,88 @@
+{
+  "architecture": {
+    "dropout": 0.1,
+    "feature_dim": 285,
+    "hidden_dim": 160,
+    "name": "multihead_mlp_v1",
+    "representation_dim": 112
+  },
+  "artifacts": {
+    "metrics.json": "6f484f9666a4187e51a094bdeaebfcd171db8fe6dc138ff868e29e08ef3fb7c1",
+    "model.pt": "4bac82f22f72735641be5a6cac24b2597d50b120f167aaa25435838f12192be2",
+    "splits.json": "255d462df0e0dc2566cdbff7e66f8ba30f2a4dbb63f8fe0842987c3a7199966b",
+    "vocab.json": "1dee6e49d25745cf6a89adb3cfce4614a4c1ef91a842c0ef62cc2a65212502b0"
+  },
+  "created_at": "2026-11-07T14:04:27.609979+00:00",
+  "dataset_sha256": "6d28e62031c1599f0a6366f9a17646cd1fc2d46868190ab67f898d0dba2ee4bb",
+  "expert_id": "genetics_topics",
+  "feature_version": "unicode_word_bigram_l2_v1",
+  "group_split_sha256": "3e5e114a4641508516af7417159850212471a97d6408a8f884c196f94f42b013",
+  "heads": {
+    "topic": [
+      "transcription",
+      "mutation",
+      "crispr",
+      "unknown"
+    ]
+  },
+  "inference": {
+    "abstain_labels": {
+      "topic": [
+        "unknown"
+      ]
+    },
+    "min_score": 0.8,
+    "score_type": "uncalibrated_softmax",
+    "zero_feature_policy": "abstain"
+  },
+  "limitations": [
+    "Categorical text classifier; does not read books or generate explanations.",
+    "Softmax scores are uncalibrated and do not certify correctness.",
+    "Reviewed-data status records the input workflow, not production readiness."
+  ],
+  "primary_head": "topic",
+  "schema_version": 1,
+  "status": "reviewed_data",
+  "training": {
+    "augmentation": "none",
+    "best_epoch": 4,
+    "epochs_run": 12,
+    "reviewed_data_required": true,
+    "selection_metric": "validation_weighted_cross_entropy",
+    "source_separated": true,
+    "torch_version": "2.15.0+cpu"
+  },
+  "training_config": {
+    "abstain_labels": {
+      "topic": [
+        "unknown"
+      ]
+    },
+    "batch_size": 16,
+    "dropout": 0.1,
+    "epochs": 50,
+    "expert_id": "genetics_topics",
+    "head_weights": {},
+    "heads": {
+      "topic": [
+        "transcription",
+        "mutation",
+        "crispr",
+        "unknown"
+      ]
+    },
+    "hidden_dim": 160,
+    "learning_rate": 0.003,
+    "min_delta": 0.0001,
+    "min_score": 0.8,
+    "patience": 8,
+    "primary_head": "topic",
+    "representation_dim": 112,
+    "seed": 42,
+    "test_fraction": 0.15,
+    "threads": 1,
+    "validation_fraction": 0.15,
+    "vocab_size": 1000,
+    "weight_decay": 0.0001
+  }
+}

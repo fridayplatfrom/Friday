@@ -1,0 +1,20 @@
+{
+  "runs": [
+    {
+      "threadId": "session-80c770ce-550f-4e5e-a831-942e7f0ce3a2",
+      "site": "chatgpt-web",
+      "brief": "C:\\Users\\ankus\\.gemini\\antigravity\\scratch\\tiny_expert_system\\integrations\\browser_harness\\tasks\\parallel-m2-cg.txt",
+      "output": "FRIDAY_M2_CG",
+      "start": "FRIDAY_M2_CG_START",
+      "end": "FRIDAY_M2_CG_END"
+    },
+    {
+      "threadId": "session-addde502-835a-42fe-a9ce-afe12b11ba7e",
+      "site": "gemini-web",
+      "brief": "C:\\Users\\ankus\\.gemini\\antigravity\\scratch\\tiny_expert_system\\integrations\\browser_harness\\tasks\\parallel-m2-gem.txt",
+      "output": "FRIDAY_M2_GEM",
+      "start": "FRIDAY_M2_GEM_START",
+      "end": "FRIDAY_M2_GEM_END"
+    }
+  ]
+}

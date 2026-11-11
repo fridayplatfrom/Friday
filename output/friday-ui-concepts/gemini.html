@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FRIDAY — Agent Workspace</title>
+  <style>
+    :root {
+      --bg-canvas: #f8fafc;
+      --bg-sidebar: #f1f5f9;
+      --bg-card: #ffffff;
+      --bg-hover: #e2e8f0;
+      --border-color: #cbd5e1;
+      --border-light: #e2e8f0;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --accent-light: #eff6ff;
+      --success: #16a34a;
+      --warning: #ca8a04;
+      --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+    }
+
+    /* Prototype Banner */
+    .prototype-badge {
+      position: fixed;
+      bottom: 12px;
+      right: 16px;
+      background: rgba(15, 23, 42, 0.85);
+      color: #fff;
+      font-size: 11px;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      z-index: 1000;
+      pointer-events: none;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    }
+
+    /* Layout */
+    .app-container {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    /* Sidebar */
+    sidebar {
+      width: 260px;
+      background-color: var(--bg-sidebar);
+      border-right: 1px solid var(--border-light);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      user-select: none;
+    }
+
+    .sidebar-header {
+      padding: 16px;
+      border-bottom: 1px solid var(--border-light);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: -0.025em;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .brand-dot {
+      width: 8px;
+      height: 8px;
+      background-color: var(--accent);
+      border-radius: 50%;
+    }
+
+    .sidebar-content {
+      padding: 12px;
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    .section-title {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+      padding-left: 8px;
+    }
+
+    .nav-list {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+
+    .nav-item {
+      padding: 8px 10px;
+      border-radius: 6px;
+      font-size: 13px;
+      color: var(--text-main);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.15s;
+    }
+
+    .nav-item:hover {
+      background-color: var(--bg-hover);
+    }
+
+    .nav-item.active {
+      background-color: var(--accent-light);
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    /* Main Content Area */
+    .main-workspace {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--bg-canvas);
+      overflow: hidden;
+    }
+
+    /* Top Task Toolbar */
+    header {
+      height: 52px;
+      border-bottom: 1px solid var(--border-light);
+      background-color: var(--bg-card);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .toolbar-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .task-title {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .toolbar-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .model-selector {
+      position: relative;
+    }
+
+    .model-btn {
+      background: var(--bg-sidebar);
+      border: 1px solid var(--border-light);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-main);
+    }
+
+    .model-dropdown {
+      position: absolute;
+      right: 0;
+      top: 100%;
+      margin-top: 4px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      width: 150px;
+      display: none;
+      z-index: 50;
+    }
+
+    .model-dropdown.open {
+      display: block;
+    }
+
+    .model-option {
+      padding: 8px 12px;
+      font-size: 13px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .model-option:hover {
+      background: var(--bg-hover);
+    }
+
+    .icon-btn {
+      background: transparent;
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: var(--text-muted);
+    }
+
+    .icon-btn:hover {
+      background: var(--bg-hover);
+      color: var(--text-main);
+    }
+
+    /* Workspace Split View */
+    .workspace-body {
+      flex: 1;
+      display: flex;
+      overflow: hidden;
+    }
+
+    /* Chat Area */
+    .chat-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background: var(--bg-card);
+    }
+
+    .chat-messages {
+      flex: 1;
+      overflow-y: auto;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .message {
+      display: flex;
+      gap: 12px;
+      max-width: 720px;
+    }
+
+    .message.user {
+      align-self: flex-end;
+      flex-direction: row-reverse;
+    }
+
+    .avatar {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--border-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+
+    .message.user .avatar {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .message.assistant .avatar {
+      background: var(--text-main);
+      color: #fff;
+    }
+
+    .bubble {
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-size: 13.5px;
+      line-height: 1.5;
+    }
+
+    .message.user .bubble {
+      background: var(--accent);
+      color: #fff;
+      border-bottom-right-radius: 2px;
+    }
+
+    .message.assistant .bubble {
+      background: var(--bg-sidebar);
+      color: var(--text-main);
+      border-bottom-left-radius: 2px;
+      border: 1px solid var(--border-light);
+    }
+
+    /* Expandable Tool Result */
+    .tool-box {
+      margin-top: 8px;
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      background: var(--bg-card);
+      overflow: hidden;
+      font-size: 12px;
+    }
+
+    .tool-header {
+      padding: 8px 12px;
+      background: var(--bg-sidebar);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+
+    .tool-content {
+      padding: 10px 12px;
+      border-top: 1px solid var(--border-light);
+      font-family: monospace;
+      color: var(--text-muted);
+      background: #fafafa;
+      display: none;
+    }
+
+    .tool-content.open {
+      display: block;
+    }
+
+    /* Checklist */
+    .task-checklist {
+      margin-top: 10px;
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      padding: 10px;
+      background: var(--bg-card);
+    }
+
+    .checklist-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12.5px;
+      padding: 4px 0;
+    }
+
+    .checklist-item input {
+      accent-color: var(--accent);
+    }
+
+    .checklist-item.done span {
+      text-decoration: line-through;
+      color: var(--text-muted);
+    }
+
+    /* Interactive Inline Controls */
+    .inline-control {
+      margin-top: 12px;
+      padding: 12px;
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      background: var(--bg-card);
+    }
+
+    .control-title {
+      font-weight: 600;
+      font-size: 12.5px;
+      margin-bottom: 6px;
+    }
+
+    .control-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .btn {
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 500;
+      border-radius: 4px;
+      cursor: pointer;
+      border: 1px solid var(--border-light);
+      background: var(--bg-card);
+    }
+
+    .btn.primary {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    .btn.primary:hover {
+      background: var(--accent-hover);
+    }
+
+    .btn:hover {
+      background: var(--bg-hover);
+    }
+
+    /* Message Composer */
+    .composer-area {
+      padding: 16px 24px;
+      border-top: 1px solid var(--border-light);
+      background: var(--bg-card);
+    }
+
+    .composer-box {
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 10px 14px;
+      background: var(--bg-card);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+    }
+
+    .composer-box:focus-within {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px var(--accent-light);
+    }
+
+    .composer-input {
+      border: none;
+      outline: none;
+      resize: none;
+      font-family: var(--font-sans);
+      font-size: 13.5px;
+      color: var(--text-main);
+      height: 24px;
+      max-height: 100px;
+    }
+
+    .composer-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .composer-tools {
+      display: flex;
+      gap: 6px;
+    }
+
+    .send-btn {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .send-btn:hover {
+      background: var(--accent-hover);
+    }
+
+    /* Inspector / Preview Panel */
+    .inspector-panel {
+      width: 320px;
+      border-left: 1px solid var(--border-light);
+      background: var(--bg-card);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .inspector-header {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border-light);
+      font-size: 12.5px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .inspector-body {
+      padding: 16px;
+      font-size: 13px;
+      color: var(--text-muted);
+      overflow-y: auto;
+    }
+
+    .preview-card {
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      padding: 12px;
+      background: var(--bg-canvas);
+      margin-bottom: 12px;
+    }
+
+    .preview-card-title {
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 4px;
+      font-size: 12.5px;
+    }
+
+    /* Tabs */
+    .tabs {
+      display: flex;
+      border-bottom: 1px solid var(--border-light);
+      background: var(--bg-sidebar);
+      padding: 0 16px;
+    }
+
+    .tab {
+      padding: 10px 14px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      color: var(--text-muted);
+      border-bottom: 2px solid transparent;
+    }
+
+    .tab.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+      background: var(--bg-card);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      sidebar, .inspector-panel {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="prototype-badge">UI Prototype</div>
+
+  <div class="app-container">
+    <!-- Sidebar -->
+    <sidebar>
+      <div>
+        <div class="sidebar-header">
+          <div class="brand">
+            <div class="brand-dot"></div>
+            FRIDAY
+          </div>
+          <button class="icon-btn" title="New Chat">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+        </div>
+        <div class="sidebar-content">
+          <div class="section-title">Workspaces</div>
+          <ul class="nav-list">
+            <li class="nav-item active">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              Engineering Hub
+            </li>
+            <li class="nav-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              Product Spec Review
+            </li>
+          </ul>
+
+          <div class="section-title">Recent Chats</div>
+          <ul class="nav-list" id="chat-history-list">
+            <li class="nav-item active">Q3 Architecture Migration</li>
+            <li class="nav-item">Design Token Refactor</li>
+            <li class="nav-item">Auth Service Audit</li>
+          </ul>
+        </div>
+      </div>
+      <div style="padding: 16px; border-top: 1px solid var(--border-light); font-size: 12px; color: var(--text-muted); display: flex; align-items: center; justify-content: space-between;">
+        <span>Connected Workspace</span>
+        <span style="width: 6px; height: 6px; background: var(--success); border-radius: 50%;"></span>
+      </div>
+    </sidebar>
+
+    <!-- Main Workspace -->
+    <div class="main-workspace">
+      <!-- Top Toolbar -->
+      <header>
+        <div class="toolbar-left">
+          <button class="icon-btn" id="sidebar-toggle" title="Toggle Sidebar">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+          <span class="task-title">Q3 Architecture Migration &bull; Refactor Task</span>
+        </div>
+        <div class="toolbar-right">
+          <div class="model-selector">
+            <button class="model-btn" id="model-select-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+              <span id="current-model-name">Gemini</span>
+            </button>
+            <div class="model-dropdown" id="model-dropdown">
+              <div class="model-option" data-model="ChatGPT">ChatGPT</div>
+              <div class="model-option" data-model="Gemini">Gemini</div>
+              <div class="model-option" data-model="Kimi">Kimi</div>
+              <div class="model-option" data-model="DeepSeek">DeepSeek</div>
+            </div>
+          </div>
+          <button class="icon-btn" id="inspector-toggle" title="Toggle Inspector">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M15 3v18"/></svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <div class="tab active" data-tab="chat">Chat Stream</div>
+        <div class="tab" data-tab="activity">Activity & Logs</div>
+      </div>
+
+      <!-- Workspace Body -->
+      <div class="workspace-body">
+        <!-- Chat Area -->
+        <div class="chat-container">
+          <div class="chat-messages" id="chat-messages">
+            <!-- User Message -->
+            <div class="message user">
+              <div class="avatar">U</div>
+              <div class="bubble">
+                Analyze our current module dependencies and prepare the refactoring task list for authentication components.
+              </div>
+            </div>
+
+            <!-- Assistant Message -->
+            <div class="message assistant">
+              <div class="avatar">F</div>
+              <div class="bubble">
+                I've reviewed the project structure. Here is the analysis breakdown and the generated execution plan for your review.
+
+                <!-- Expandable Tool Result -->
+                <div class="tool-box">
+                  <div class="tool-header" onclick="toggleTool(this)">
+                    <span>Tool Execution: grep("src/auth")</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                  </div>
+                  <div class="tool-content">
+                    Found 14 matching references across 4 files.<br>
+                    - src/auth/provider.ts (L45)<br>
+                    - src/auth/session.ts (L12, L88)
+                  </div>
+                </div>
+
+                <!-- Checklist -->
+                <div class="task-checklist">
+                  <div class="checklist-item done">
+                    <input type="checkbox" checked onchange="toggleCheck(this)">
+                    <span>Scan dependency graph</span>
+                  </div>
+                  <div class="checklist-item">
+                    <input type="checkbox" onchange="toggleCheck(this)">
+                    <span>Isolate legacy token handlers</span>
+                  </div>
+                  <div class="checklist-item">
+                    <input type="checkbox" onchange="toggleCheck(this)">
+                    <span>Draft replacement interface</span>
+                  </div>
+                </div>
+
+                <!-- Inline Approval Control -->
+                <div class="inline-control" id="approval-control">
+                  <div class="control-title">Approval Required: Modify Configuration Files</div>
+                  <div style="font-size: 12px; color: var(--text-muted);">Allow FRIDAY to update package scripts in workspace-write mode?</div>
+                  <div class="control-actions">
+                    <button class="btn primary" onclick="handleApproval(true)">Allow</button>
+                    <button class="btn" onclick="handleApproval(false)">Deny</button>
+                  </div>
+                </div>
+
+                <!-- Inline Question Control -->
+                <div class="inline-control" id="question-control" style="margin-top: 8px;">
+                  <div class="control-title">Choose Target Environment</div>
+                  <div style="font-size: 12px; color: var(--text-muted);">Select the deployment target for initial sandbox verification.</div>
+                  <div class="control-actions">
+                    <button class="btn primary" onclick="handleAnswer('Staging')">Staging (Recommended)</button>
+                    <button class="btn" onclick="handleAnswer('Local Testing')">Local Testing</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Message Composer -->
+          <div class="composer-area">
+            <div class="composer-box">
+              <textarea class="composer-input" id="composer-input" placeholder="Type a message or instruction to FRIDAY..." rows="1"></textarea>
+              <div class="composer-footer">
+                <div class="composer-tools">
+                  <button class="icon-btn" style="width: 24px; height: 24px;" title="Attach File">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+                  </button>
+                  <button class="icon-btn" style="width: 24px; height: 24px;" title="Screenshot Context">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="3"/></svg>
+                  </button>
+                </div>
+                <button class="send-btn" id="send-btn" title="Send Message">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Inspector Panel -->
+        <div class="inspector-panel" id="inspector-panel">
+          <div class="inspector-header">
+            <span>Context Inspector</span>
+            <button class="icon-btn" style="width: 24px; height: 24px;" onclick="toggleInspector()">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+          </div>
+          <div class="inspector-body">
+            <div class="preview-card">
+              <div class="preview-card-title">Active Target File</div>
+              <div style="font-family: monospace; font-size: 11px; color: var(--text-main);">src/auth/provider.ts</div>
+            </div>
+            <div class="preview-card">
+              <div class="preview-card-title">Recovery Status</div>
+              <div style="color: var(--success); font-weight: 500;">Stable &bull; No active faults</div>
+            </div>
+            <div class="preview-card">
+              <div class="preview-card-title">Recent Artifacts</div>
+              <div style="font-size: 12px; line-height: 1.4;">
+                &bull; dependency-graph.json<br>
+                &bull; refactor-plan.md
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Model Dropdown Toggle
+    const modelBtn = document.getElementById('model-select-btn');
+    const modelDropdown = document.getElementById('model-dropdown');
+    const currentModelName = document.getElementById('current-model-name');
+
+    modelBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      modelDropdown.classList.toggle('open');
+    });
+
+    document.querySelectorAll('.model-option').forEach(option => {
+      option.addEventListener('click', () => {
+        currentModelName.textContent = option.getAttribute('data-model');
+        modelDropdown.classList.remove('open');
+      });
+    });
+
+    window.addEventListener('click', () => {
+      modelDropdown.classList.remove('open');
+    });
+
+    // Toggle Tool Content
+    function toggleTool(header) {
+      const content = header.nextElementSibling;
+      content.classList.toggle('open');
+    }
+
+    // Toggle Checklist Item
+    function toggleCheck(checkbox) {
+      const item = checkbox.closest('.checklist-item');
+      item.classList.toggle('done', checkbox.checked);
+    }
+
+    // Inline Approvals / Questions Simulation
+    function handleApproval(allowed) {
+      const control = document.getElementById('approval-control');
+      control.innerHTML = `<div class="control-title" style="color: ${allowed ? 'var(--success)' : 'var(--warning)'};">Action ${allowed ? 'Approved' : 'Denied'}</div><div style="font-size: 12px; color: var(--text-muted);">Simulation state recorded successfully.</div>`;
+    }
+
+    function handleAnswer(choice) {
+      const control = document.getElementById('question-control');
+      control.innerHTML = `<div class="control-title">Selection Recorded</div><div style="font-size: 12px; color: var(--text-muted);">Selected target: <strong>${choice}</strong></div>`;
+    }
+
+    // Inspector Toggle
+    const inspectorPanel = document.getElementById('inspector-panel');
+    function toggleInspector() {
+      inspectorPanel.style.display = inspectorPanel.style.display === 'none' ? 'flex' : 'none';
+    }
+    document.getElementById('inspector-toggle').addEventListener('click', toggleInspector);
+
+    // Sidebar Toggle
+    const sidebar = document.querySelector('sidebar');
+    document.getElementById('sidebar-toggle').addEventListener('click', () => {
+      sidebar.style.display = sidebar.style.display === 'none' ? 'flex' : 'none';
+    });
+
+    // Tabs
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+      });
+    });
+
+    // Local Chat Sending
+    const chatMessages = document.getElementById('chat-messages');
+    const composerInput = document.getElementById('composer-input');
+    const sendBtn = document.getElementById('send-btn');
+
+    function sendUserMessage() {
+      const text = composerInput.value.trim();
+      if (!text) return;
+
+      // Append User Message
+      const userMsg = document.createElement('div');
+      userMsg.className = 'message user';
+      userMsg.innerHTML = `<div class="avatar">U</div><div class="bubble">${escapeHtml(text)}</div>`;
+      chatMessages.appendChild(userMsg);
+      composerInput.value = '';
+
+      // Simulate Assistant Reply
+      setTimeout(() => {
+        const assistantMsg = document.createElement('div');
+        assistantMsg.className = 'message assistant';
+        assistantMsg.innerHTML = `<div class="avatar">F</div><div class="bubble">Received your instruction. Simulating response locally for: "${escapeHtml(text)}". Everything is operating smoothly.</div>`;
+        chatMessages.appendChild(assistantMsg);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }, 600);
+
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    sendBtn.addEventListener('click', sendUserMessage);
+    composerInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        sendUserMessage();
+      }
+    });
+
+    function escapeHtml(str) {
+      return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    }
+  </script>
+</body>
+</html>

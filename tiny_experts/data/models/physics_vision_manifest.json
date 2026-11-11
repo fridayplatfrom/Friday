@@ -1,0 +1,33 @@
+{
+  "bundle_version": 1,
+  "expert_id": "physics_vision",
+  "status": "reviewed_data",
+  "architecture": "leaf_mobilenet_v3_small",
+  "labels": [
+    "carnot_pv_cycle",
+    "inclined_plane",
+    "parallel_circuit",
+    "quantum_energy_levels",
+    "snell_refraction"
+  ],
+  "preprocessing": {
+    "size": 224,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "threshold": 0.55,
+  "weights_file": "physics_vision_mobilenet.pt",
+  "weights_sha256": "a9119da9918cc5b5c38c92541a6da82468fee6af472ab76f49b7851f35ebeff4",
+  "metrics": {
+    "val_accuracy": 1.0,
+    "test_accuracy": 1.0
+  }
+}

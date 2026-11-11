@@ -1,0 +1,2 @@
+# Install CPU PyTorch first when a GPU installation is not needed; see README.
+-e .

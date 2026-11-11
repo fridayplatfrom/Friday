@@ -1,0 +1,87 @@
+{
+  "source_separated": true,
+  "split_by": "source",
+  "splits": {
+    "test": {
+      "case_ids": [
+        "gen-case-crispr-06",
+        "gen-case-mutation-06",
+        "gen-case-transcription-06",
+        "gen-case-unknown-06"
+      ],
+      "count": 4,
+      "example_ids": [
+        "gen-rev-0006",
+        "gen-rev-0012",
+        "gen-rev-0018",
+        "gen-rev-0024"
+      ],
+      "sha256": "56d2820045a22327d5764e84908fcf7c6e81de2053faa69da9b05e0a09b832ad",
+      "source_ids": [
+        "genetics_source_test"
+      ]
+    },
+    "train": {
+      "case_ids": [
+        "gen-case-crispr-01",
+        "gen-case-crispr-02",
+        "gen-case-crispr-03",
+        "gen-case-crispr-04",
+        "gen-case-mutation-01",
+        "gen-case-mutation-02",
+        "gen-case-mutation-03",
+        "gen-case-mutation-04",
+        "gen-case-transcription-01",
+        "gen-case-transcription-02",
+        "gen-case-transcription-03",
+        "gen-case-transcription-04",
+        "gen-case-unknown-01",
+        "gen-case-unknown-02",
+        "gen-case-unknown-03",
+        "gen-case-unknown-04"
+      ],
+      "count": 16,
+      "example_ids": [
+        "gen-rev-0001",
+        "gen-rev-0002",
+        "gen-rev-0003",
+        "gen-rev-0004",
+        "gen-rev-0007",
+        "gen-rev-0008",
+        "gen-rev-0009",
+        "gen-rev-0010",
+        "gen-rev-0013",
+        "gen-rev-0014",
+        "gen-rev-0015",
+        "gen-rev-0016",
+        "gen-rev-0019",
+        "gen-rev-0020",
+        "gen-rev-0021",
+        "gen-rev-0022"
+      ],
+      "sha256": "6651847e17dd0d14c9b91c98307746dfc8a6efa558d0756361c466284aa0588e",
+      "source_ids": [
+        "genetics_source_train"
+      ]
+    },
+    "validation": {
+      "case_ids": [
+        "gen-case-crispr-05",
+        "gen-case-mutation-05",
+        "gen-case-transcription-05",
+        "gen-case-unknown-05"
+      ],
+      "count": 4,
+      "example_ids": [
+        "gen-rev-0005",
+        "gen-rev-0011",
+        "gen-rev-0017",
+        "gen-rev-0023"
+      ],
+      "sha256": "f22606ab73c43cb45a8ca8c20d601e0a3ee0d5d22bea023a77113ac7602f21ed",
+      "source_ids": [
+        "genetics_source_validation"
+      ]
+    }
+  }
+}

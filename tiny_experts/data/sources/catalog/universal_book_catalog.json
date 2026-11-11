@@ -1,0 +1,804 @@
+[
+  {
+    "book_id": "agrios_plant_pathology_6th_ed",
+    "title": "Agrios' Plant Pathology",
+    "subtitle": "Principles and Clinical Phytopathology",
+    "edition": "6th Edition",
+    "year": 2024,
+    "authors": [
+      "George N. Agrios",
+      "Richard P. Oliver"
+    ],
+    "publisher": "Academic Press / Elsevier",
+    "isbn": "978-0123849052",
+    "faculty": "biological_sciences",
+    "faculty_label": "Biological & Agricultural Sciences",
+    "discipline": "pathology",
+    "discipline_label": "Plant Pathology & Clinical Phytopharmacology",
+    "authority_tier": "TIER_2_CANONICAL_TEXTBOOK",
+    "language_primary": "en",
+    "translations": {
+      "hi": {
+        "title": "एग्रियोस पादप रोग विज्ञान",
+        "summary": "कृषि पादप विकृति विज्ञान का मानक संदर्भ ग्रंथ जिसमें कवक, जीवाणु और विषाणु जनित रोगों का संपूर्ण वैज्ञानिक विवरण है।"
+      },
+      "mr": {
+        "title": "अ‍ॅग्रिओस वनस्पती रोगशास्त्र",
+        "summary": "कृषी वनस्पती विकृतीशास्त्राचा आंतरराष्ट्रीय प्रमाण संदर्भ ग्रंथ."
+      },
+      "bn": {
+        "title": "এগ্রিওস উদ্ভিদ রোগবিজ্ঞান",
+        "summary": "উদ্ভিদ প্যাথলজি ও অণুজীব সংক্রমণের আন্তর্জাতিক প্রামাণ্য পাঠ্যপুস্তক।"
+      },
+      "ta": {
+        "title": "அக்ரியோஸ் தாவர நோயியல்",
+        "summary": "தாவர நோயியல் மற்றும் நோய்க்கிருமிகள் பற்றிய விரிவான வழிகாட்டி நூல்."
+      },
+      "te": {
+        "title": "అగ్రియోస్ మొక్కల రోగనిర్ధారణ శాస్త్రం",
+        "summary": "మొక్కల వ్యాధుల నిర్ధారణ మరియు సమగ్ర నివారణ శాస్త్ర గ్రంథం."
+      }
+    },
+    "canonical_chapters": [
+      {
+        "chapter_num": 1,
+        "title": "Parasitism and Disease Development",
+        "keywords": [
+          "pathogenesis",
+          "infection court",
+          "inoculum"
+        ]
+      },
+      {
+        "chapter_num": 8,
+        "title": "Plant Immunity & Systemic Acquired Resistance",
+        "keywords": [
+          "SAR",
+          "PR proteins",
+          "salicylic acid"
+        ]
+      },
+      {
+        "chapter_num": 10,
+        "title": "Plant Diseases Caused by Oomycetes",
+        "keywords": [
+          "Phytophthora infestans",
+          "late blight",
+          "zoospores"
+        ]
+      },
+      {
+        "chapter_num": 11,
+        "title": "Plant Diseases Caused by Ascomycetes",
+        "keywords": [
+          "Alternaria solani",
+          "early blight",
+          "concentric rings"
+        ]
+      }
+    ],
+    "epistemic_hallmarks": [
+      "Disease Triangle (Host-Pathogen-Environment interaction)",
+      "Systemic Acquired Resistance (SAR) pathway",
+      "Target-board concentric necrotic lesion morphology",
+      "Foliar splash transmission dynamics"
+    ],
+    "associated_shelf": "pathology",
+    "figure_plates": [
+      "plate_early_blight",
+      "plate_late_blight",
+      "plate_powdery_mildew"
+    ]
+  },
+  {
+    "book_id": "icar_indian_crop_pathology_reference",
+    "title": "ICAR Reference Compendium of Indian Crop Pathology",
+    "subtitle": "Subtropical Phytopathology, Agro-Climatic Diagnostics, and National IPM Formulations",
+    "edition": "2nd Revised Edition",
+    "year": 2023,
+    "authors": [
+      "Indian Council of Agricultural Research (ICAR)",
+      "Division of Plant Pathology, IARI New Delhi"
+    ],
+    "publisher": "ICAR Directorate of Knowledge Management in Agriculture",
+    "isbn": "978-8171642105",
+    "faculty": "biological_sciences",
+    "faculty_label": "Biological & Agricultural Sciences",
+    "discipline": "pathology",
+    "discipline_label": "Indian Subcontinental Crop Pathology & Regional IPM",
+    "authority_tier": "TIER_1_STATUTORY_AUTHORITY",
+    "language_primary": "en",
+    "translations": {
+      "hi": {
+        "title": "भा.कृ.अनु.प. भारतीय फसल रोग संदर्भ संग्रह",
+        "summary": "भारतीय कृषि अनुसंधान परिषद द्वारा प्रकाशित उपोष्णकटिबंधीय फसलों के रोगों का प्रामाणिक संदर्भ ग्रंथ।"
+      },
+      "mr": {
+        "title": "आय.सी.ए.आर. भारतीय पीक रोग संदर्भ संग्रह",
+        "summary": "भारतीय शेती हवामानातील प्रमुख पिकांच्या रोगांचे अधिकृत मार्गदर्शक पुस्तक."
+      },
+      "bn": {
+        "title": "আইকার ভারতীয় শস্য রোগ রেফারেন্স সংকলন",
+        "summary": "ভারতীয় কৃষি গবেষণা পরিষদ কর্তৃক প্রকাশিত উপমহাদেশের শস্য সুরক্ষার মূল গ্রন্থ।"
+      },
+      "ta": {
+        "title": "ஐ.சி.ஏ.ஆர் இந்திய பயிர் நோயியல் வழிகாட்டி",
+        "summary": "இந்திய வேளாண் ஆராய்ச்சிக் கழகத்தின் அதிகாரப்பூர்வ பயிர் பாதுகாப்பு வழிகாட்டி நூல்."
+      },
+      "te": {
+        "title": "ఐకార్ భారతీయ పంట వ్యాధుల సమగ్ర సంకలనం",
+        "summary": "భారత వ్యవసాయ పరిశోధన మండలి అధికారిక పంట సంరక్షణ గ్రంథం."
+      }
+    },
+    "canonical_chapters": [
+      {
+        "chapter_num": 3,
+        "title": "Solanaceous Blights in Tropical Monsoon Systems",
+        "keywords": [
+          "tomato",
+          "potato",
+          "Alternaria",
+          "Phytophthora"
+        ]
+      },
+      {
+        "chapter_num": 7,
+        "title": "Staple Cereal Rusts & Smuts",
+        "keywords": [
+          "wheat yellow rust",
+          "Puccinia",
+          "rice blast"
+        ]
+      },
+      {
+        "chapter_num": 12,
+        "title": "Bacterial Wilt & Vascular Cankers in Indian Belts",
+        "keywords": [
+          "Ralstonia",
+          "ooze test",
+          "bacterial streaming"
+        ]
+      }
+    ],
+    "epistemic_hallmarks": [
+      "Monsoon humidity thresholds for foliar epidemics",
+      "Subcontinental agro-climatic zoning for blight surge",
+      "Bacterial tumbler ooze verification test",
+      "CIBRC statutory compatibility"
+    ],
+    "associated_shelf": "pathology",
+    "figure_plates": [
+      "plate_rice_bacterial_leaf_blight",
+      "plate_citrus_canker",
+      "plate_bacterial_wilt"
+    ]
+  },
+  {
+    "book_id": "frac_fungicide_directory_2024",
+    "title": "FRAC Global Fungicide Directory & Mode of Action Classification",
+    "subtitle": "Rational Phytopharmacology, Target-Site Cross-Resistance, and Rotation Guidelines",
+    "edition": "2024 Annual Edition",
+    "year": 2024,
+    "authors": [
+      "Fungicide Resistance Action Committee (FRAC)",
+      "CropLife International Working Group"
+    ],
+    "publisher": "FRAC International Secretariat, Brussels",
+    "isbn": "ISSN-2663-872X",
+    "faculty": "biological_sciences",
+    "faculty_label": "Biological & Agricultural Sciences",
+    "discipline": "pathology",
+    "discipline_label": "Chemical Phytopharmacology & Resistance Management",
+    "authority_tier": "TIER_1_STATUTORY_AUTHORITY",
+    "language_primary": "en",
+    "translations": {
+      "hi": {
+        "title": "एफ.आर.ए.सी. वैश्विक कवकनाशी निर्देशिका एवं कार्यप्रणाली वर्गीकरण",
+        "summary": "कवकनाशी प्रतिरोध प्रबंधन, रासायनिक समूहों के कोड और वैज्ञानिक छिड़काव चक्र की अंतरराष्ट्रीय मार्गदर्शिका।"
+      },
+      "mr": {
+        "title": "एफ.आर.ए.सी. आंतरराष्ट्रीय बुरशीनाशक वर्गीकरण निर्देशिका",
+        "summary": "बुरशीनाशक प्रतिकार नियंत्रण आणि रासायनिक फवारणी चक्राचे जागतिक मानक पुस्तक."
+      },
+      "bn": {
+        "title": "ফ্র্যাক আন্তর্জাতিক ছত্রাকনাশক ডিরেক্টরি",
+        "summary": "ছত্রাকনাশক প্রতিরোধ নিয়ন্ত্রণ ও রাসায়নিক অ্যাকশন কোডের আন্তর্জাতিক প্রামাণ্য নির্দেশিকা।"
+      },
+      "ta": {
+        "title": "பிராக் உலகளாவிய பூஞ்சைக்கொல்லி கையேடு",
+        "summary": "பூஞ்சைக்கொல்லி எதிர்ப்பு மேலாண்மை மற்றும் தெளிப்பு முறைகளின் சர்வதேச தர வழிகாட்டி."
+      },
+      "te": {
+        "title": "ఫ్రాక్ అంతర్జాతీయ శిలీంద్ర సంహారిణుల వర్గీకరణ దర్శిని",
+        "summary": "శిలీంద్ర సంహారక రసాయనాల వర్గీకరణ మరియు నిరోధకత నివారణ అంతర్జాతీయ ప్రామాణిక గ్రంథం."
+      }
+    },
+    "canonical_chapters": [
+      {
+        "chapter_num": 1,
+        "title": "Inorganic & Multi-Site Contact Protectants (FRAC M)",
+        "keywords": [
+          "copper octanoate",
+          "mancozeb",
+          "M01",
+          "M03"
+        ]
+      },
+      {
+        "chapter_num": 3,
+        "title": "QoI Fungicides: Complex III Quinone Outside Inhibitors (FRAC 11)",
+        "keywords": [
+          "azoxystrobin",
+          "pyraclostrobin",
+          "mitochondrial respiration"
+        ]
+      },
+      {
+        "chapter_num": 4,
+        "title": "DMI Fungicides: Demethylation Inhibitors (FRAC 3)",
+        "keywords": [
+          "difenoconazole",
+          "tebuconazole",
+          "ergosterol biosynthesis"
+        ]
+      }
+    ],
+    "epistemic_hallmarks": [
+      "Single-site vs Multi-site mutation vulnerability",
+      "Tank-mix synergistic rotation protocol",
+      "Pre-harvest interval (PHI) and maximum residue limits (MRL)"
+    ],
+    "associated_shelf": "pathology",
+    "figure_plates": []
+  },
+  {
+    "book_id": "goldfrank_clinical_toxicology_11th_ed",
+    "title": "Goldfrank's Toxicologic Emergencies",
+    "subtitle": "Clinical Toxicology, Poisoning Management, and Medical Triage Protocols",
+    "edition": "11th Edition",
+    "year": 2023,
+    "authors": [
+      "Lewis S. Nelson",
+      "Mary Ann Howland",
+      "Neal A. Lewin",
+      "Silas W. Smith"
+    ],
+    "publisher": "McGraw-Hill Medical",
+    "isbn": "978-1259859618",
+    "faculty": "biological_sciences",
+    "faculty_label": "Biological & Agricultural Sciences",
+    "discipline": "toxicology",
+    "discipline_label": "Clinical Toxicology & Emergency Poison Triage",
+    "authority_tier": "TIER_2_CANONICAL_TEXTBOOK",
+    "language_primary": "en",
+    "translations": {
+      "hi": {
+        "title": "गोल्डफ्रैंक आपातकालीन विष विज्ञान",
+        "summary": "आपातकालीन विष चिकित्सा, घातक वनस्पतियों और रासायनिक विषाक्तता का विश्व-प्रसिद्ध चिकित्सा ग्रंथ।"
+      },
+      "mr": {
+        "title": "गोल्डफ्रँक वैद्यकीय विषशास्त्र संदर्भ",
+        "summary": "विषबाधा आणि तातडीच्या वैद्यकीय उपचारांचा आंतरराष्ट्रीय संदर्भ ग्रंथ."
+      },
+      "bn": {
+        "title": "গোল্ডফ্র্যাঙ্ক ক্লিনিক্যাল টক্সিকোলজি",
+        "summary": "জরুরী বিষক্রিয়া ব্যবস্থাপনা ও চিকিৎসা শাস্ত্রের আন্তর্জাতিক স্ট্যান্ডার্ড ম্যানুয়াল।"
+      },
+      "ta": {
+        "title": "கோல்ட்ஃபிராங்க் மருத்துவ நச்சுயியல் வழிகாட்டி",
+        "summary": "நச்சு அவசர சிகிச்சை மற்றும் முதலுதவி மருத்துவத்தின் அதிகாரப்பூர்வ நூல்."
+      },
+      "te": {
+        "title": "గోల్డ్‌ఫ్రాంక్ క్లినికల్ టాక్సికాలజీ మార్గదర్శిని",
+        "summary": "విషతుల్యత అత్యవసర చికిత్స మరియు ఔషధ ప్రథమ చికిత్స ప్రామాణిక గ్రంథం."
+      }
+    },
+    "canonical_chapters": [
+      {
+        "chapter_num": 87,
+        "title": "Mushrooms: Amatoxins and Delayed Hepatorenal Failure",
+        "keywords": [
+          "Amanita phalloides",
+          "alpha-amanitin",
+          "silibinin"
+        ]
+      },
+      {
+        "chapter_num": 112,
+        "title": "Organophosphates and Carbamate Insecticides",
+        "keywords": [
+          "atropine",
+          "pralidoxime",
+          "cholinesterase inhibition"
+        ]
+      },
+      {
+        "chapter_num": 118,
+        "title": "Plant Toxicities: Solanine, Atropine, and Urushiol",
+        "keywords": [
+          "contact dermatitis",
+          "nightshade",
+          "poison ivy"
+        ]
+      }
+    ],
+    "epistemic_hallmarks": [
+      "Biphasic latency in amatoxin hepatic necrosis",
+      "Decontamination vs forced emesis contraindications",
+      "ASPCA companion animal comparative toxicity"
+    ],
+    "associated_shelf": "toxicology",
+    "figure_plates": []
+  },
+  {
+    "book_id": "feynman_lectures_on_physics_millennium",
+    "title": "The Feynman Lectures on Physics",
+    "subtitle": "The Definitive Millennium Edition (Vols. I, II, III)",
+    "edition": "Millennium Edition",
+    "year": 2011,
+    "authors": [
+      "Richard P. Feynman",
+      "Robert B. Leighton",
+      "Matthew Sands"
+    ],
+    "publisher": "Basic Books / Caltech",
+    "isbn": "978-0465024933",
+    "faculty": "physics",
+    "faculty_label": "Faculty of Physics & Physical Sciences",
+    "discipline": "classical_and_quantum_physics",
+    "discipline_label": "Foundational Mechanics, Electrodynamics & Quantum Physics",
+    "authority_tier": "TIER_2_CANONICAL_TEXTBOOK",
+    "language_primary": "en",
+    "translations": {
+      "hi": {
+        "title": "फाइनमैन भौतिकी व्याख्यानमाला",
+        "summary": "नोबेल पुरस्कार विजेता रिचर्ड फाइनमैन द्वारा प्रस्तुत यांत्रिकी, विद्युतचुंबकत्व और क्वांटम भौतिकी का अमर ग्रंथ।"
+      },
+      "mr": {
+        "title": "फाइनमन भौतिकशास्त्र व्याख्याने",
+        "summary": "अभिजात यांत्रिकी आणि पुंजभौतिकीचे जगप्रसिद्ध नोबेलविजेते व्याख्यान संग्रह."
+      },
+      "bn": {
+        "title": "ফাইনম্যান লেকচার্স অন ফিজিক্স",
+        "summary": "নোবেলজয়ী রিচার্ড ফাইনম্যানের ক্লাসিক্যাল ও কোয়ান্টাম পদার্থবিজ্ঞানের বিশ্বখ্যাত পাঠমালা।"
+      },
+      "ta": {
+        "title": "பைன்மேன் இயற்பியல் விரிவுரைகள்",
+        "summary": "இயற்பியலின் அடிப்படைக் கோட்பாடுகள் பற்றிய உலகப் புகழ்பெற்ற விரிவுரைத் தொகுப்பு."
+      },
+      "te": {
+        "title": "ఫైన్‌మన్ భౌతికశాస్త్ర ఉపన్యాసాలు",
+        "summary": "క్లాసికల్ మరియు క్వాంటం భౌతికశాస్త్ర సమగ్ర అంతర్జాతీయ గ్రంథం."
+      }
+    },
+    "canonical_chapters": [
+      {
+        "chapter_num": 4,
+        "title": "Conservation of Energy",
+        "keywords": [
+          "gravitational potential",
+          "kinetic energy",
+          "conservation laws"
+        ]
+      },
+      {
+        "chapter_num": 39,
+        "title": "The Kinetic Theory of Gases",
+        "keywords": [
+          "equipartition",
+          "Boltzmann constant",
+          "pressure"
+        ]
+      },
+      {
+        "chapter_num": 52,
+        "title": "Symmetry in Physical Laws",
+        "keywords": [
+          "parity",
+          "spacetime symmetry",
+          "Noether theorem"
+        ]
+      }
+    ],
+    "epistemic_hallmarks": [
+      "Atomic Hypothesis as foundation of all nature",
+      "Principle of Least Action across mechanics and optics",
+      "Wave-particle duality in quantum double-slit"
+    ],
+    "associated_shelf": "physics",
+    "figure_plates": []
+  },
+  {
+    "book_id": "griffiths_electrodynamics_4th_ed",
+    "title": "Introduction to Electrodynamics",
+    "subtitle": "Classical Electromagnetic Theory, Vector Calculus, and Radiation",
+    "edition": "4th Edition",
+    "year": 2013,
+    "authors": [
+      "David J. Griffiths"
+    ],
+    "publisher": "Cambridge University Press / Pearson",
+    "isbn": "978-1108420419",
+    "faculty": "physics",
+    "faculty_label": "Faculty of Physics & Physical Sciences",
+    "discipline": "electromagnetism",
+    "discipline_label": "Classical Electrodynamics & Maxwellian Field Theory",
+    "authority_tier": "TIER_2_CANONICAL_TEXTBOOK",
+    "language_primary": "en",
+    "translations": {
+      "hi": {
+        "title": "ग्रिफिथ्स विद्युतगतिकी परिचय",
+        "summary": "मैक्सवेल के समीकरणों, विद्युतचुंबकीय तरंगों और क्षेत्र सिद्धांतों का मानक विश्वविद्यालय पाठ्यपुस्तक।"
+      },
+      "mr": {
+        "title": "ग्रिफिथ्स विद्युतगतिकी परिचय",
+        "summary": "विद्युतचुंबकीय क्षेत्राचा जागतिक स्तरावर सर्वात जास्त अभ्यासला जाणारा संदर्भ ग्रंथ."
+      },
+      "bn": {
+        "title": "গ্রিফিথস ইলেকট্রোডাইনামিক্স পরিচিতি",
+        "summary": "ম্যাক্সওয়েলের সমীকরণ ও তড়িৎচৌম্বকীয় তরঙ্গের মূল বিশ্ববিদ্যালয় পাঠ্যগ্রন্থ।\""
+      },
+      "ta": {
+        "title": "கிரிஃபித்ஸ் மின்காந்தவியல் அறிமுகம்",
+        "summary": "மின்காந்த அலைகள் மற்றும் மேக்ஸ்வெல் சமன்பாடுகளின் முதன்மை பல்கலைக்கழக நூல்."
+      },
+      "te": {
+        "title": "గ్రిఫిత్స్ విద్యుదయస్కాంత శాస్త్రం",
+        "summary": "మాక్స్‌వెల్ సమీకరణాలు మరియు విద్యుదయస్కాంత క్షేత్రాల ప్రామాణిక గ్రంథం."
+      }
+    },
+    "canonical_chapters": [
+      {
+        "chapter_num": 2,
+        "title": "Electrostatics",
+        "keywords": [
+          "Coulomb law",
+          "Gauss law",
+          "divergence",
+          "potential"
+        ]
+      },
+      {
+        "chapter_num": 5,
+        "title": "Magnetostatics",
+        "keywords": [
+          "Biot-Savart law",
+          "Ampere law",
+          "vector potential"
+        ]
+      },
+      {
+        "chapter_num": 7,
+        "title": "Electrodynamics & Maxwell's Equations",
+        "keywords": [
+          "Faraday induction",
+          "displacement current",
+          "Maxwell equations"
+        ]
+      }
+    ],
+    "epistemic_hallmarks": [
+      "Maxwell's correction to Ampere's Law predicting speed of light",
+      "Poynting theorem of electromagnetic energy flow",
+      "Gauge transformations (Coulomb and Lorenz gauges)"
+    ],
+    "associated_shelf": "physics",
+    "figure_plates": []
+  },
+  {
+    "book_id": "incropera_heat_and_mass_transfer_8th_ed",
+    "title": "Fundamentals of Heat and Mass Transfer",
+    "subtitle": "Conduction, Convection, Radiation, and Phase-Change Thermal Physics",
+    "edition": "8th Edition",
+    "year": 2020,
+    "authors": [
+      "Theodore L. Bergman",
+      "Adrienne S. Lavine",
+      "Frank P. Incropera",
+      "David P. DeWitt"
+    ],
+    "publisher": "John Wiley & Sons",
+    "isbn": "978-1119320425",
+    "faculty": "physics",
+    "faculty_label": "Faculty of Physics & Physical Sciences",
+    "discipline": "thermodynamics",
+    "discipline_label": "Thermodynamics, Heat Transfer & Thermal Engineering",
+    "authority_tier": "TIER_2_CANONICAL_TEXTBOOK",
+    "language_primary": "en",
+    "translations": {
+      "hi": {
+        "title": "इन्क्रोपेरा ऊष्मा एवं द्रव्यमान स्थानांतरण के मूल सिद्धांत",
+        "summary": "चालन, संवहन और विकिरण ऊष्मा अंतरण का विश्व-प्रसिद्ध इंजीनियरिंग एवं भौतिकी संदर्भ ग्रंथ।"
+      },
+      "mr": {
+        "title": "इन्क्रोपेरा उष्णता आणि वस्तुमान वहन तत्त्वे",
+        "summary": "उष्णता संक्रमण आणि ऊष्मागतिकीचे अग्रगण्य संदर्भ ग्रंथ."
+      },
+      "bn": {
+        "title": "ইনক্রোপেরা তাপ ও ভর স্থানান্তর মূলনীতি",
+        "summary": "তাপ সঞ্চালন ও পরিবহন গতিবিদ্যার আন্তর্জাতিক প্রকৌশল মানদণ্ড।"
+      },
+      "ta": {
+        "title": "இன்க்ரோபெரா வெப்பம் மற்றும் நிறை பரிமாற்றக் கோட்பாடுகள்",
+        "summary": "வெப்பக் கடத்தல் மற்றும் வெப்ப இயக்கவியலின் பொறியியல் நூல்."
+      },
+      "te": {
+        "title": "ఇన్‌క్రోపెరా ఉష్ణ మరియు ద్రవ్యరాశి బదిలీ ప్రాథమిక సూత్రాలు",
+        "summary": "ఉష్ణ ప్రసరణ మరియు ఉష్ణగతిక శాస్త్ర ప్రామాణిక ఇంజనీరింగ్ గ్రంథం."
+      }
+    },
+    "canonical_chapters": [
+      {
+        "chapter_num": 1,
+        "title": "Introduction to Conduction, Convection, Radiation",
+        "keywords": [
+          "Fourier law",
+          "Newton cooling",
+          "Stefan-Boltzmann"
+        ]
+      },
+      {
+        "chapter_num": 2,
+        "title": "Introduction to Conduction",
+        "keywords": [
+          "heat diffusion equation",
+          "thermal conductivity"
+        ]
+      },
+      {
+        "chapter_num": 6,
+        "title": "Introduction to Convection",
+        "keywords": [
+          "Nusselt number",
+          "Prandtl number",
+          "boundary layer"
+        ]
+      }
+    ],
+    "epistemic_hallmarks": [
+      "Fourier's Law of thermal conduction",
+      "Stefan-Boltzmann blackbody radiation law",
+      "Dimensionless numbers: Reynolds, Prandtl, Nusselt, Biot"
+    ],
+    "associated_shelf": "physics",
+    "figure_plates": []
+  },
+  {
+    "book_id": "discovery_of_india_nehru",
+    "title": "The Discovery of India",
+    "subtitle": "From Indus Valley Civilization to the Struggle for National Independence",
+    "edition": "Centenary Commemorative Edition",
+    "year": 1946,
+    "authors": [
+      "Jawaharlal Nehru"
+    ],
+    "publisher": "Oxford University Press / Signet Press",
+    "isbn": "978-0195623598",
+    "faculty": "humanities_and_history",
+    "faculty_label": "Faculty of History & Human Civilizations",
+    "discipline": "indian_and_world_history",
+    "discipline_label": "Subcontinental History, Ancient Civilizations & Epistemology",
+    "authority_tier": "TIER_2_CANONICAL_TEXTBOOK",
+    "language_primary": "en",
+    "translations": {
+      "hi": {
+        "title": "भारत एक खोज (द डिस्कवरी ऑफ इंडिया)",
+        "summary": "सिंधु घाटी सभ्यता से लेकर आधुनिक स्वतंत्रता संग्राम तक भारत के इतिहास, संस्कृति और दर्शन का अमर ग्रंथ।"
+      },
+      "mr": {
+        "title": "भारताचा शोध",
+        "summary": "प्राचीन संस्कृती ते आधुनिक भारताचा ऐतिहासिक आणि सांस्कृतिक प्रवास."
+      },
+      "bn": {
+        "title": "ভারত এক খোঁজ",
+        "summary": "সিন্ধু সভ্যতা থেকে আধুনিক ভারতের রাজনৈতিক ও সাংস্কৃতিক জাগরণের ঐতিহাসিক দলিল।\""
+      },
+      "ta": {
+        "title": "இந்தியாவின் கண்டுபிடிப்பு",
+        "summary": "சிந்து சமவெளி நாகரிகம் முதல் விடுதலைப் போராட்டம் வரையிலான வரலாற்றுப் பெட்டகம்."
+      },
+      "te": {
+        "title": "భారతదేశ దర్శనం (ది డిస్కవరీ ఆఫ్ ఇండియా)",
+        "summary": "సింధు లోయ నాగరికత నుండి జాతీయోద్యమ ప్రస్థానం వరకు సమగ్ర భారతదేశ చరిత్ర."
+      }
+    },
+    "canonical_chapters": [
+      {
+        "chapter_num": 3,
+        "title": "The Quest for India & The Indus Valley Civilization",
+        "keywords": [
+          "Mohenjo-daro",
+          "Harappa",
+          "proto-historic"
+        ]
+      },
+      {
+        "chapter_num": 4,
+        "title": "The Coming of the Aryans, Vedas, and Upanishads",
+        "keywords": [
+          "Vedic philosophy",
+          "Gita",
+          "Buddhism"
+        ]
+      },
+      {
+        "chapter_num": 7,
+        "title": "The British Rule & Economic Colonization",
+        "keywords": [
+          "de-industrialization",
+          "1857 revolt",
+          "famines"
+        ]
+      }
+    ],
+    "epistemic_hallmarks": [
+      "Synthesis of continuity in Indian civilization over 5,000 years",
+      "Economic drain theory during colonial administrative exploitation",
+      "Constitutional secularism and scientific temper as state foundation"
+    ],
+    "associated_shelf": "history",
+    "figure_plates": []
+  },
+  {
+    "book_id": "constitution_of_india_commentary",
+    "title": "The Constitution of India & Constitutional Jurisprudence",
+    "subtitle": "Fundamental Rights, Directive Principles, and Federal Jurisprudence",
+    "edition": "Official Commemorative Edition",
+    "year": 1950,
+    "authors": [
+      "Dr. B.R. Ambedkar (Chairman, Drafting Committee)",
+      "Constituent Assembly of India"
+    ],
+    "publisher": "Government of India Publications Division / LexisNexis",
+    "isbn": "978-8131252109",
+    "faculty": "politics_and_law",
+    "faculty_label": "Faculty of Politics, Governance & Jurisprudence",
+    "discipline": "constitutional_law",
+    "discipline_label": "Constitutional Frameworks, Rights Jurisprudence & Governance",
+    "authority_tier": "TIER_1_STATUTORY_AUTHORITY",
+    "language_primary": "en",
+    "translations": {
+      "hi": {
+        "title": "भारत का संविधान एवं संवैधानिक विधिशास्त्र",
+        "summary": "डॉ. भीमराव आंबेडकर द्वारा प्रारूपित भारत का सर्वोच्च कानून, मूल अधिकार, राज्य के नीति निर्देशक तत्व और न्याय प्रणाली।"
+      },
+      "mr": {
+        "title": "भारतीय संविधान व घटनात्मक न्यायशास्त्र",
+        "summary": "डॉ. बाबासाहेब आंबेडकर यांनी मसुदा तयार केलेला भारताचा सर्वोच्च कायदा व मूलभूत हक्क."
+      },
+      "bn": {
+        "title": "ভারতের সংবিধান ও সাংবিধানিক আইনশাস্ত্র",
+        "summary": "ডঃ বি.আর. আম্বেদকর কর্তৃক রচিত ভারতের সর্বোচ্চ আইন ও মৌলিক অধিকারের সনদ।"
+      },
+      "ta": {
+        "title": "இந்திய அரசியலமைப்பு மற்றும் சட்ட நீதித்துறை",
+        "summary": "டாக்டர் பி.ஆர். அம்பேத்கர் உருவாக்கிய நாட்டின் உச்சபட்ச சட்டம் மற்றும் அடிப்படை உரிமைகள்."
+      },
+      "te": {
+        "title": "భారత రాజ్యాంగం మరియు న్యాయసూత్రాలు",
+        "summary": "డాక్టర్ బి.ఆర్. అంబేద్కర్ రూపొందించిన భారత సర్వోన్నత చట్టం మరియు ప్రాథమిక హక్కులు."
+      }
+    },
+    "canonical_chapters": [
+      {
+        "chapter_num": 3,
+        "title": "Part III: Fundamental Rights (Articles 12-35)",
+        "keywords": [
+          "equality",
+          "freedom of speech",
+          "life and liberty",
+          "constitutional remedies"
+        ]
+      },
+      {
+        "chapter_num": 4,
+        "title": "Part IV: Directive Principles of State Policy (Articles 36-51)",
+        "keywords": [
+          "welfare state",
+          "equitable distribution",
+          "panchayats"
+        ]
+      },
+      {
+        "chapter_num": 11,
+        "title": "Part XI: Relations between Union and States",
+        "keywords": [
+          "federalism",
+          "legislative lists",
+          "seventh schedule"
+        ]
+      }
+    ],
+    "epistemic_hallmarks": [
+      "Basic Structure Doctrine (Kesavananda Bharati v. State of Kerala)",
+      "Transformative Constitutionalism and social democracy",
+      "Substantive equality over formal equality (Article 14 & 15)"
+    ],
+    "associated_shelf": "politics_and_law",
+    "figure_plates": []
+  },
+  {
+    "book_id": "test_quantum_mechanics_shankar",
+    "title": "Principles of Quantum Mechanics",
+    "subtitle": "Quantum Postulates, Dirac Notation, and Path Integrals",
+    "edition": "2nd Edition",
+    "year": 2014,
+    "authors": [
+      "R. Shankar"
+    ],
+    "publisher": "Plenum / Springer",
+    "isbn": "978-0306447907",
+    "faculty": "physics",
+    "faculty_label": "Physics",
+    "discipline": "quantum_mechanics",
+    "discipline_label": "Quantum Mechanics",
+    "authority_tier": "TIER_2_CANONICAL_TEXTBOOK",
+    "language_primary": "en",
+    "translations": {
+      "hi": {
+        "title": "Principles of Quantum Mechanics",
+        "summary": "Quantum Postulates, Dirac Notation, and Path Integrals"
+      }
+    },
+    "canonical_chapters": [],
+    "epistemic_hallmarks": [],
+    "associated_shelf": "quantum_mechanics",
+    "figure_plates": []
+  },
+  {
+    "book_id": "plant_heavy_metal_detoxification_2026",
+    "title": "Plant Heavy Metal Detoxification 2026",
+    "subtitle": "Canonical Botany Reference Manual (1 passages)",
+    "edition": "1st Edition",
+    "year": 2024,
+    "authors": [
+      "Verified Contributor / Academic Faculty"
+    ],
+    "publisher": "Academic Press",
+    "isbn": "ISBN-PENDING",
+    "faculty": "biological_sciences",
+    "faculty_label": "Biological Sciences",
+    "discipline": "botany",
+    "discipline_label": "Botany",
+    "authority_tier": "TIER_2_CANONICAL_TEXTBOOK",
+    "language_primary": "en",
+    "translations": {
+      "hi": {
+        "title": "Plant Heavy Metal Detoxification 2026",
+        "summary": "Canonical Botany Reference Manual (1 passages)"
+      }
+    },
+    "canonical_chapters": [],
+    "epistemic_hallmarks": [],
+    "associated_shelf": "botany",
+    "figure_plates": []
+  },
+  {
+    "book_id": "avian_flight_dynamics",
+    "title": "Avian Flight Dynamics",
+    "subtitle": "Canonical Ornithology Reference Manual (1 passages)",
+    "edition": "1st Edition",
+    "year": 2024,
+    "authors": [
+      "Verified Contributor / Academic Faculty"
+    ],
+    "publisher": "Academic Press",
+    "isbn": "ISBN-PENDING",
+    "faculty": "physical_sciences",
+    "faculty_label": "Physical Sciences",
+    "discipline": "ornithology",
+    "discipline_label": "Ornithology",
+    "authority_tier": "TIER_2_CANONICAL_TEXTBOOK",
+    "language_primary": "en",
+    "translations": {
+      "hi": {
+        "title": "Avian Flight Dynamics",
+        "summary": "Canonical Ornithology Reference Manual (1 passages)"
+      }
+    },
+    "canonical_chapters": [],
+    "epistemic_hallmarks": [],
+    "associated_shelf": "ornithology",
+    "figure_plates": []
+  }
+]

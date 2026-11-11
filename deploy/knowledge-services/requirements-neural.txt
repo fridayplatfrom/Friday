@@ -1,0 +1,8 @@
+# Optional provider dependencies. Pin the resolved environment after a real-model
+# compatibility run. These ranges are NOT claimed tested in the offline runner.
+sentence-transformers>=5,<6
+transformers>=4.46,<6
+faster-whisper>=1.1,<2
+safetensors>=0.4,<1
+sentencepiece>=0.2,<1
+boto3>=1.35,<2

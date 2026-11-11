@@ -1,0 +1,114 @@
+{
+  "architecture": {
+    "dropout": 0.1,
+    "feature_dim": 500,
+    "hidden_dim": 128,
+    "name": "multihead_mlp_v1",
+    "representation_dim": 64
+  },
+  "artifacts": {
+    "metrics.json": "41dee3bb51183d66df790b2f8d70f4ade2408432128e3325249b36f626264708",
+    "model.pt": "6ed8bdfd7e80ea142140b9082df7acccc518d8625575c40401aa7d7fd90fd67d",
+    "splits.json": "cac8f4f3a853ebd938562f9c4b7af7238a4570397e22105b1f0f0ba7d17c581e",
+    "vocab.json": "2a3dbb33ac61033d531994f433099e87b5e2fabb0b35db80298dc1a4e704ee5c"
+  },
+  "created_at": "2026-11-07T14:04:28.081487+00:00",
+  "dataset_sha256": "6e4fae6dbcd5e93f7e410141e51dcc9720302715387f76f0203adc3174c14a94",
+  "expert_id": "router",
+  "feature_version": "unicode_word_bigram_l2_v1",
+  "group_split_sha256": "3344fc476e09ab35ff2318d32cdb745ca631e3afdd40f2069616b48b16b4d5b8",
+  "heads": {
+    "expert": [
+      "vision",
+      "botany",
+      "wildlife",
+      "toxicity",
+      "biology",
+      "genetics",
+      "cell_biology",
+      "mycology",
+      "entomology",
+      "ornithology",
+      "ecology",
+      "pathology",
+      "marine",
+      "microbiology",
+      "evolution",
+      "math",
+      "format"
+    ]
+  },
+  "inference": {
+    "abstain_labels": {
+      "expert": [
+        "format"
+      ]
+    },
+    "min_score": 0.8,
+    "score_type": "uncalibrated_softmax",
+    "zero_feature_policy": "abstain"
+  },
+  "limitations": [
+    "Categorical text classifier; does not read books or generate explanations.",
+    "Softmax scores are uncalibrated and do not certify correctness.",
+    "Reviewed-data status records the input workflow, not production readiness."
+  ],
+  "primary_head": "expert",
+  "schema_version": 1,
+  "status": "reviewed_data",
+  "training": {
+    "augmentation": "none",
+    "best_epoch": 10,
+    "epochs_run": 18,
+    "reviewed_data_required": true,
+    "selection_metric": "validation_weighted_cross_entropy",
+    "source_separated": true,
+    "torch_version": "2.15.0+cpu"
+  },
+  "training_config": {
+    "abstain_labels": {
+      "expert": [
+        "format"
+      ]
+    },
+    "batch_size": 16,
+    "dropout": 0.1,
+    "epochs": 40,
+    "expert_id": "router",
+    "head_weights": {},
+    "heads": {
+      "expert": [
+        "vision",
+        "botany",
+        "wildlife",
+        "toxicity",
+        "biology",
+        "genetics",
+        "cell_biology",
+        "mycology",
+        "entomology",
+        "ornithology",
+        "ecology",
+        "pathology",
+        "marine",
+        "microbiology",
+        "evolution",
+        "math",
+        "format"
+      ]
+    },
+    "hidden_dim": 128,
+    "learning_rate": 0.003,
+    "min_delta": 0.0001,
+    "min_score": 0.8,
+    "patience": 8,
+    "primary_head": "expert",
+    "representation_dim": 64,
+    "seed": 42,
+    "test_fraction": 0.15,
+    "threads": 1,
+    "validation_fraction": 0.15,
+    "vocab_size": 500,
+    "weight_decay": 0.0001
+  }
+}

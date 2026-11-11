@@ -1,0 +1,114 @@
+{
+  "architecture": {
+    "dropout": 0.05,
+    "feature_dim": 338,
+    "hidden_dim": 144,
+    "name": "multihead_mlp_v1",
+    "representation_dim": 96
+  },
+  "artifacts": {
+    "metrics.json": "cd6e2009dc856558a0c50b880e19221517786405d752f0b439cca6462a046096",
+    "model.pt": "a994f1b9d2b1a0fb34baa16c8d2b5423612625ec955462ea9fc9efde139f352f",
+    "splits.json": "510a727fb00845f332e038da480846e30bc92a04f9a24857385fb69b49bbf0df",
+    "vocab.json": "739034963b0ebbe2861ab0af6e6d8aa543a1badefbd84277304e12a4595f2aea"
+  },
+  "created_at": "2026-11-07T08:13:06.100860+00:00",
+  "dataset_sha256": "9ebd99a9e8f3039274d4dbc0a21ed1c72bfbf05a0fe3c470c13fcf969304051b",
+  "expert_id": "physics_thermodynamics_stat_mech",
+  "feature_version": "unicode_word_bigram_l2_v1",
+  "group_split_sha256": "ad1154aed7f60bb5f9d724b2265c920a7d82ec13d1b01f7b07849755bb1566c2",
+  "heads": {
+    "concept": [
+      "boltzmann_distribution",
+      "bose-einstein_condensate",
+      "canonical_ensemble",
+      "carnot_cycle",
+      "chemical_potential",
+      "fermi-dirac_distribution",
+      "fluctuation-dissipation",
+      "gibbs_free_energy",
+      "grand_canonical_ensemble",
+      "heat_capacity",
+      "helmholtz_free_energy",
+      "ising_model",
+      "liouville_theorem",
+      "partition_function",
+      "phase_transition",
+      "thermodynamic_entropy"
+    ],
+    "regime": [
+      "equilibrium_partition_ensemble",
+      "free_energy_potentials",
+      "quantum_statistical_gas"
+    ]
+  },
+  "inference": {
+    "abstain_labels": {},
+    "min_score": 0.4,
+    "score_type": "uncalibrated_softmax",
+    "zero_feature_policy": "abstain"
+  },
+  "limitations": [
+    "Categorical text classifier; does not read books or generate explanations.",
+    "Softmax scores are uncalibrated and do not certify correctness.",
+    "Reviewed-data status records the input workflow, not production readiness."
+  ],
+  "primary_head": "concept",
+  "schema_version": 1,
+  "status": "reviewed_data",
+  "training": {
+    "augmentation": "none",
+    "best_epoch": 32,
+    "epochs_run": 32,
+    "reviewed_data_required": true,
+    "selection_metric": "validation_weighted_cross_entropy",
+    "source_separated": true,
+    "torch_version": "2.15.0+cpu"
+  },
+  "training_config": {
+    "abstain_labels": {},
+    "batch_size": 8,
+    "dropout": 0.05,
+    "epochs": 45,
+    "expert_id": "physics_thermodynamics_stat_mech",
+    "head_weights": {},
+    "heads": {
+      "concept": [
+        "boltzmann_distribution",
+        "bose-einstein_condensate",
+        "canonical_ensemble",
+        "carnot_cycle",
+        "chemical_potential",
+        "fermi-dirac_distribution",
+        "fluctuation-dissipation",
+        "gibbs_free_energy",
+        "grand_canonical_ensemble",
+        "heat_capacity",
+        "helmholtz_free_energy",
+        "ising_model",
+        "liouville_theorem",
+        "partition_function",
+        "phase_transition",
+        "thermodynamic_entropy"
+      ],
+      "regime": [
+        "equilibrium_partition_ensemble",
+        "free_energy_potentials",
+        "quantum_statistical_gas"
+      ]
+    },
+    "hidden_dim": 144,
+    "learning_rate": 0.006,
+    "min_delta": 0.0001,
+    "min_score": 0.4,
+    "patience": 8,
+    "primary_head": "concept",
+    "representation_dim": 96,
+    "seed": 42,
+    "test_fraction": 0.15,
+    "threads": 2,
+    "validation_fraction": 0.15,
+    "vocab_size": 3000,
+    "weight_decay": 0.0001
+  }
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "bulletin_id": "ICAR-AGROMET-2026-W44",
+    "date": "2026-11-02",
+    "ttl_days": 14,
+    "urgency": "EMERGENCY_OUTBREAK",
+    "crops": ["Tomato", "Potato", "Solanaceae"],
+    "pathogens": ["Early Blight", "Alternaria solani", "Late Blight", "Phytophthora infestans"],
+    "regions": ["Punjab", "Haryana", "Western UP", "North India"],
+    "headline": "ICAR Emergency Alert: Severe Early Blight & Target-Board Lesion Surge in Nightshade Belts",
+    "summary": "State agriculture surveillance stations report a 40% surge in Alternaria solani concentric ring foliar necrosis across Solanaceae crops following prolonged morning dew (RH > 88%) and 18-24°C night temperatures. Pathogen sporulation is aggressively spreading through lower senescing foliage.",
+    "mandatory_advisory": "Enforce immediate prophylactic copper octanoate (FRAC M01) spray before rain events. Prune lower canopy leaves up to 30 cm and transition strictly to drip irrigation.",
+    "source": "ICAR Central Potato & Horticultural Research Directorate (Nov 2026 Bulletin)"
+  },
+  {
+    "bulletin_id": "ICAR-WHEAT-2026-RUST-01",
+    "date": "2026-11-01",
+    "ttl_days": 21,
+    "urgency": "EMERGENCY_OUTBREAK",
+    "crops": ["Wheat", "Cereal"],
+    "pathogens": ["Yellow Rust", "Stripe Rust", "Puccinia striiformis"],
+    "regions": ["Punjab", "Himachal Pradesh", "Jammu"],
+    "headline": "Special Agro-Advisory: Yellow Rust Incursion in Foothill Plains",
+    "summary": "Puccinia striiformis urediniospore pustules detected on susceptible wheat cultivars in the sub-montane zone. Cold persistent fog is favoring accelerated latent-to-sporulating transitions.",
+    "mandatory_advisory": "Conduct strip surveys at 5-day intervals. Spot application of propiconazole (FRAC 3) recommended upon first pustule detection.",
+    "source": "ICAR Indian Institute of Wheat & Barley Research (IIWBR Karnal)"
+  },
+  {
+    "bulletin_id": "USDA-APHIS-2026-TOBRFV",
+    "date": "2026-10-28",
+    "ttl_days": 30,
+    "urgency": "WARNING",
+    "crops": ["Tomato", "Pepper"],
+    "pathogens": ["Tomato Brown Rugose Fruit Virus", "ToBRFV"],
+    "regions": ["Global", "North America", "Mediterranean"],
+    "headline": "Phytosanitary Quarantine Notice: ToBRFV Mechanical Transmission Protocol",
+    "summary": "Enhanced greenhouse hygiene measures enforced for seed imports to intercept tobamovirus outbreaks exhibiting mosaic patterns and rugose fruit deformation.",
+    "mandatory_advisory": "10% trisodium phosphate (TSP) boot dips and strict disinfestation of pruning shears between plants.",
+    "source": "USDA APHIS Federal Phytosanitary Directorate"
+  }
+]

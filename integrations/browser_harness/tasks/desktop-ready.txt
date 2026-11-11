@@ -1,0 +1,1 @@
+Friday desktop synthetic acceptance 20261111B. Reply exactly FRIDAY_DESKTOP_NATIVE_READY_B without tools, goals, file operations or any other work. This is a new, isolated text-only connection test. Do not repeat the earlier test.

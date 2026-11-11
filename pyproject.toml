@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tiny-expert-system"
+version = "0.2.0"
+description = "Local non-LLM expert workflows, source retrieval, symbolic tools, and small neural classifiers"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "torch>=2.5,<3", "torchvision>=0.20,<1", "numpy>=1.26,<3",
+  "networkx>=3.4,<4", "sympy>=1.13,<2", "Pillow>=10.4,<14",
+  "requests>=2.32,<3", "beautifulsoup4>=4.12,<5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "httpx>=0.27,<1"]
+studio = ["fastapi>=0.115,<1", "uvicorn>=0.30,<1", "python-multipart>=0.0.9,<1"]
+documents = ["pypdf>=5,<7", "PyMuPDF>=1.24,<2", "python-docx>=1.1,<2"]
+
+[tool.setuptools.packages.find]
+include = ["tiny_experts*"]
+
+[tool.setuptools.package-data]
+tiny_experts = ["data/sources/**/*.json", "data/sources/**/*.txt", "data/expert_registry.json", "web/static/*.html", "knowledge_core/data/*.json", "source_studio/web/*.html"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests/regression", "tests/services", "tests/studio", "tests/cognition", "integrations/expertos_harness/tests/test_bridge.py"]
+addopts = "-ra"

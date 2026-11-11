@@ -1,0 +1,29 @@
+name: Cognitive Runtime
+on:
+  push:
+    paths:
+      - 'tiny_experts/cognition/**'
+      - 'tiny_experts/source_studio/**'
+      - 'tests/cognition/**'
+      - '.github/workflows/cognitive-runtime.yml'
+  pull_request:
+    paths:
+      - 'tiny_experts/cognition/**'
+      - 'tiny_experts/source_studio/**'
+      - 'tests/cognition/**'
+      - '.github/workflows/cognitive-runtime.yml'
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.12', '3.13']
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install -e '.[studio,documents,dev]'
+      - run: python -m pytest -q tests/cognition tests/regression tests/services tests/studio

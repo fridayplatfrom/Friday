@@ -1,0 +1,10 @@
+{
+  "name": "tiny-experts-native-llm",
+  "version": "1.0.0",
+  "description": "Native DeepSeek Harness LLM Provider & Engine Replacement powered by Tiny Expert OS (48-Book Physics & 7-Core Neural-Symbolic Engine)",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": {
+    ".": "./index.mjs"
+  }
+}

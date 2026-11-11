@@ -1,0 +1,1 @@
+New diagnostic task. Use native pwsh exactly once with command exactly: Write-Output (Get-Location).Path . Report the actual output between FRIDAY_WORKSPACE_START and FRIDAY_WORKSPACE_END. Read-only; do not retry, edit files, change permissions, or resume older tasks.

@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Friday</title>
+<style>body{font:14px system-ui;background:#151820;color:#eef0f5;width:330px;padding:18px;line-height:1.5}h1{font-size:18px;margin:0 0 10px}label{display:block;margin:10px 0}button{padding:9px 15px;border:0;border-radius:6px;background:#b9d2ff;color:#14213a;font-weight:600}small{color:#b9c0cc}#status{white-space:pre-wrap;margin-top:12px}</style></head>
+<body><h1>Friday</h1>
+<small>Enabled websites receive the current Friday conversation and tool definitions. Each conversation keeps its paired website tab. Two-way ChatGPT chat enables automatically after pairing. Website limits still apply.</small>
+<label><input id="enabled" type="checkbox"> Connect to Friday</label>
+<div id="providers"></div>
+<button id="save">Save connection</button><div id="status" role="status">Checking bridge…</div>
+<button id="downloads">Enable generated download transfer</button>
+<small>Optional Chrome download permission exposes download metadata. This connector uses it only for new files triggered by an active paired task, and imports completed files from your Downloads folder into Harness. Files are never opened or executed.</small>
+<small>Log in directly on each website. This extension never asks for your password or reads cookies. Disable the connection here to stop requests.</small>
+<script src="provider-catalog.js"></script>
+<script src="popup.js"></script></body></html>

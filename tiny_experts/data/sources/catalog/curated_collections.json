@@ -1,0 +1,164 @@
+{
+  "curated_top_10_lists": [
+    {
+      "collection_id": "top_10_world_literature",
+      "title": "Top 10 Masterpieces of World Literature",
+      "faculty": "Faculty of Humanities, Literature & Philosophy",
+      "consensus_method": "Reciprocal Rank Fusion (RRF) across 4 International Institutional Syllabi",
+      "evaluating_sources": [
+        "Nobel Committee for Literature Archives",
+        "Oxford & Cambridge University Comparative Syllabi",
+        "Le Monde's 100 Books of the Century (International Syndicate)",
+        "Sahitya Akademi World Masterpieces Compendium"
+      ],
+      "ranked_items": [
+        {
+          "rank": 1,
+          "title": "War and Peace",
+          "author": "Leo Tolstoy",
+          "year": 1869,
+          "rrf_score": 0.0645,
+          "justification": "Universally acclaimed panoramic synthesis of human psychology, philosophical determinism, and Napoleonic historical warfare."
+        },
+        {
+          "rank": 2,
+          "title": "Gitanjali (Song Offerings)",
+          "author": "Rabindranath Tagore",
+          "year": 1910,
+          "rrf_score": 0.0592,
+          "justification": "First non-Western Nobel-winning poetic masterpiece bridging profound Indian humanist spiritualism with universal lyrical elegance."
+        },
+        {
+          "rank": 3,
+          "title": "Hamlet, Prince of Denmark",
+          "author": "William Shakespeare",
+          "year": 1603,
+          "rrf_score": 0.0581,
+          "justification": "The definitive dramatic exploration of moral hesitation, human existential doubt, and political succession."
+        },
+        {
+          "rank": 4,
+          "title": "The Odyssey",
+          "author": "Homer",
+          "year": -800,
+          "rrf_score": 0.0514,
+          "justification": "The foundational epic of Western narrative storytelling, charting Odysseus's ten-year metaphysical journey home."
+        },
+        {
+          "rank": 5,
+          "title": "One Hundred Years of Solitude",
+          "author": "Gabriel García Márquez",
+          "year": 1967,
+          "rrf_score": 0.0489,
+          "justification": "Pinnacle of magical realism, capturing the generational cycles of solitude, Latin American post-colonial trauma, and memory."
+        },
+        {
+          "rank": 6,
+          "title": "The Divine Comedy (Inferno, Purgatorio, Paradiso)",
+          "author": "Dante Alighieri",
+          "year": 1320,
+          "rrf_score": 0.0452,
+          "justification": "The monumental medieval poetic vision of spiritual redemption and allegorical cosmic order."
+        },
+        {
+          "rank": 7,
+          "title": "Don Quixote",
+          "author": "Miguel de Cervantes",
+          "year": 1605,
+          "rrf_score": 0.0428,
+          "justification": "Regarded as the first modern psychological novel, brilliantly subverting chivalric romance through idealism and reality."
+        },
+        {
+          "rank": 8,
+          "title": "Crime and Punishment",
+          "author": "Fyodor Dostoevsky",
+          "year": 1866,
+          "rrf_score": 0.0410,
+          "justification": "Unrivaled psychological analysis of guilt, utilitarian hubris (Raskolnikov), and moral resurrection."
+        },
+        {
+          "rank": 9,
+          "title": "Godan (The Gift of a Cow)",
+          "author": "Munshi Premchand",
+          "year": 1936,
+          "rrf_score": 0.0387,
+          "justification": "The crowning masterpiece of modern Hindi-Urdu literature, offering an unflinching realistic portrait of Indian peasant exploitation and resilience."
+        },
+        {
+          "rank": 10,
+          "title": "Faust (Part I & II)",
+          "author": "Johann Wolfgang von Goethe",
+          "year": 1808,
+          "rrf_score": 0.0365,
+          "justification": "The supreme philosophical drama of the modern striving spirit, the wager with Mephistopheles, and the search for enlightenment."
+        }
+      ]
+    },
+    {
+      "collection_id": "top_10_physics_breakthroughs",
+      "title": "Top 10 Discoveries in the History of Physics",
+      "faculty": "Faculty of Physics & Physical Sciences",
+      "consensus_method": "American Physical Society (APS) & Royal Swedish Academy Landmark Consensus",
+      "evaluating_sources": [
+        "APS Physical Review Historical Centenary",
+        "Nobel Committee for Physics Centennial Compendium",
+        "Institute of Physics (IOP) Milestone Milestones"
+      ],
+      "ranked_items": [
+        { "rank": 1, "title": "Newtonian Classical Mechanics & Universal Gravitation (1687)", "discoverer": "Sir Isaac Newton", "impact": "Unified celestial orbital mechanics with terrestrial dynamics using calculus." },
+        { "rank": 2, "title": "Maxwell's Equations & Electromagnetic Field Unification (1865)", "discoverer": "James Clerk Maxwell", "impact": "Proved light is an electromagnetic wave and unified electricity and magnetism." },
+        { "rank": 3, "title": "General Relativity & Curved Spacetime (1915)", "discoverer": "Albert Einstein", "impact": "Replaced Newtonian gravitational force with the geometric curvature of 4D spacetime." },
+        { "rank": 4, "title": "Quantum Mechanics & Wave-Particle Duality (1925-1927)", "discoverer": "Max Planck, Erwin Schrödinger, Werner Heisenberg, Louis de Broglie", "impact": "Proved the atomic world is governed by quantized energy packets and probabilistic wavefunctions." },
+        { "rank": 5, "title": "Laws of Thermodynamics & Statistical Entropy", "discoverer": "Sadi Carnot, Rudolf Clausius, Ludwig Boltzmann", "impact": "Established conservation of energy (1st law) and the irreversible arrow of time (2nd law)." },
+        { "rank": 6, "title": "Special Relativity & Mass-Energy Equivalence E = mc^2 (1905)", "discoverer": "Albert Einstein", "impact": "Overthrew absolute time, proving mass and energy are interchangeable manifestations." },
+        { "rank": 7, "title": "Discovery of the Atomic Nucleus & Rutherford Scattering (1911)", "discoverer": "Ernest Rutherford", "impact": "Discovered that the vast majority of atomic mass is concentrated in a tiny dense positive nucleus." },
+        { "rank": 8, "title": "Quantum Electrodynamics (QED) Renormalization (1948)", "discoverer": "Richard Feynman, Julian Schwinger, Shinichiro Tomonaga", "impact": "The most precise physical theory ever constructed, matching experimental magnetic moments to 12 decimal places." },
+        { "rank": 9, "title": "The Raman Effect (Inelastic Molecular Light Scattering, 1928)", "discoverer": "Sir C.V. Raman", "impact": "Provided experimental proof of quantum photon-molecule energy exchange, founding modern spectroscopy." },
+        { "rank": 10, "title": "Cosmic Microwave Background (CMB) & Big Bang Origin (1964)", "discoverer": "Arno Penzias & Robert Wilson", "impact": "Confirmed the cosmological Big Bang thermal relic radiation at 2.725 Kelvin." }
+      ]
+    }
+  ],
+  "how_to_guides": [
+    {
+      "guide_id": "how_to_diagnose_plant_diseases",
+      "title": "How to Scientifically Diagnose Plant Diseases in the Field",
+      "faculty": "Biological & Agricultural Sciences",
+      "authoritative_source": "ICAR-IARI Division of Plant Pathology & Agrios' Plant Pathology",
+      "steps": [
+        { "step_num": 1, "action": "Establish Healthy Host Baseline", "detail": "Verify normal cultivar leaf morphology, growth habit, and coloration to rule out natural genetic variegation." },
+        { "step_num": 2, "action": "Inspect Spatial Field Distribution", "detail": "Uniform field-wide damage indicates abiotic stress (drought, salinity, frost, spray burn). Random patchy clustering indicates biotic living pathogens." },
+        { "step_num": 3, "action": "Examine Characteristic Symptom Margins", "detail": "Bacterial infections exhibit water-soaked margins with bacterial ooze. Fungal spots show concentric rings (target boards) and fungal sporulation signs." },
+        { "step_num": 4, "action": "Conduct In-Field Diagnostic Verification", "detail": "Perform the 30-second clear water bacterial streaming test in a glass jar or examine underside mycelial felt." },
+        { "step_num": 5, "action": "Implement FRAC-Approved Mode of Action Rotation", "detail": "Never spray identical chemical classes consecutively; alternate systemic protectants with contact multi-site barriers." }
+      ]
+    },
+    {
+      "guide_id": "how_to_calculate_thermal_insulation",
+      "title": "How to Calculate Plane Wall Heat Conduction and Thermal Insulation",
+      "faculty": "Physics & Engineering",
+      "authoritative_source": "Incropera & DeWitt Fundamentals of Heat and Mass Transfer",
+      "steps": [
+        { "step_num": 1, "action": "Identify Material Thermal Conductivity (k)", "detail": "Determine material conductivity k in W/(m*K). (e.g. Glass wool k = 0.04, Concrete k = 1.4)." },
+        { "step_num": 2, "action": "Measure Wall Area (A) and Thickness (L)", "detail": "Measure surface area A in square meters (m^2) and insulation layer thickness L in meters." },
+        { "step_num": 3, "action": "Determine Surface Temperature Difference (Delta_T)", "detail": "Calculate interior temperature minus exterior temperature in Kelvin or Celsius." },
+        { "step_num": 4, "action": "Apply Fourier's Conduction Equation", "detail": "Compute total heat loss rate: q = (k * A * Delta_T) / L (in Watts). Thermal resistance is R = L / (k * A)." }
+      ]
+    }
+  ],
+  "what_is_primers": [
+    {
+      "primer_id": "what_is_the_basic_structure_doctrine",
+      "title": "What is the Basic Structure Doctrine?",
+      "faculty": "Constitutional Law & Jurisprudence",
+      "authoritative_source": "Supreme Court of India (Kesavananda Bharati v. State of Kerala, 1973)",
+      "axiomatic_summary": "The Basic Structure Doctrine is a landmark constitutional principle holding that while Parliament possesses broad constituent amending powers under Article 368, it cannot alter, damage, or emasculate the core foundational identity of the Constitution—including democracy, judicial review, the rule of law, federalism, and fundamental rights."
+    },
+    {
+      "primer_id": "what_is_quantum_entanglement",
+      "title": "What is Quantum Entanglement?",
+      "faculty": "Quantum Physics",
+      "authoritative_source": "Feynman Lectures on Physics & EPR-Bell Formalism",
+      "axiomatic_summary": "Quantum entanglement is a physical phenomenon where two or more particles become intertwined such that the physical quantum state of each particle cannot be described independently of the other, regardless of the physical distance separating them, demonstrating non-local quantum correlations verified by violations of Bell's inequalities."
+    }
+  ]
+}

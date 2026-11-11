@@ -1,0 +1,1604 @@
+{
+  "best_epoch": 31,
+  "elapsed_seconds": 2.7546376000000237,
+  "epochs_run": 31,
+  "history": [
+    {
+      "epoch": 1,
+      "training_weighted_cross_entropy": 4.134430281321207,
+      "validation_weighted_cross_entropy": 3.530665874481201
+    },
+    {
+      "epoch": 2,
+      "training_weighted_cross_entropy": 3.5102771759033202,
+      "validation_weighted_cross_entropy": 2.4607951641082764
+    },
+    {
+      "epoch": 3,
+      "training_weighted_cross_entropy": 1.8967821836471557,
+      "validation_weighted_cross_entropy": 0.6957256197929382
+    },
+    {
+      "epoch": 4,
+      "training_weighted_cross_entropy": 0.553974982102712,
+      "validation_weighted_cross_entropy": 0.14140622317790985
+    },
+    {
+      "epoch": 5,
+      "training_weighted_cross_entropy": 0.12031964908043544,
+      "validation_weighted_cross_entropy": 0.04899373650550842
+    },
+    {
+      "epoch": 6,
+      "training_weighted_cross_entropy": 0.03730093849201997,
+      "validation_weighted_cross_entropy": 0.01595156639814377
+    },
+    {
+      "epoch": 7,
+      "training_weighted_cross_entropy": 0.01659140729655822,
+      "validation_weighted_cross_entropy": 0.010929787531495094
+    },
+    {
+      "epoch": 8,
+      "training_weighted_cross_entropy": 0.010580492702623208,
+      "validation_weighted_cross_entropy": 0.008465694263577461
+    },
+    {
+      "epoch": 9,
+      "training_weighted_cross_entropy": 0.008410889655351639,
+      "validation_weighted_cross_entropy": 0.007190552540123463
+    },
+    {
+      "epoch": 10,
+      "training_weighted_cross_entropy": 0.00717295321325461,
+      "validation_weighted_cross_entropy": 0.006231275852769613
+    },
+    {
+      "epoch": 11,
+      "training_weighted_cross_entropy": 0.006070687994360923,
+      "validation_weighted_cross_entropy": 0.0055015962570905685
+    },
+    {
+      "epoch": 12,
+      "training_weighted_cross_entropy": 0.0054293044842779635,
+      "validation_weighted_cross_entropy": 0.004915312863886356
+    },
+    {
+      "epoch": 13,
+      "training_weighted_cross_entropy": 0.005003971513360739,
+      "validation_weighted_cross_entropy": 0.0044426461681723595
+    },
+    {
+      "epoch": 14,
+      "training_weighted_cross_entropy": 0.004418266968180736,
+      "validation_weighted_cross_entropy": 0.004054463468492031
+    },
+    {
+      "epoch": 15,
+      "training_weighted_cross_entropy": 0.004063883408283194,
+      "validation_weighted_cross_entropy": 0.0037166415713727474
+    },
+    {
+      "epoch": 16,
+      "training_weighted_cross_entropy": 0.0036958157705763977,
+      "validation_weighted_cross_entropy": 0.0034294810611754656
+    },
+    {
+      "epoch": 17,
+      "training_weighted_cross_entropy": 0.0033880358406653006,
+      "validation_weighted_cross_entropy": 0.003179424675181508
+    },
+    {
+      "epoch": 18,
+      "training_weighted_cross_entropy": 0.0031567539864530165,
+      "validation_weighted_cross_entropy": 0.002966589294373989
+    },
+    {
+      "epoch": 19,
+      "training_weighted_cross_entropy": 0.0030580513334522645,
+      "validation_weighted_cross_entropy": 0.0027888978365808725
+    },
+    {
+      "epoch": 20,
+      "training_weighted_cross_entropy": 0.0028004939046998817,
+      "validation_weighted_cross_entropy": 0.00263217999599874
+    },
+    {
+      "epoch": 21,
+      "training_weighted_cross_entropy": 0.002633573953062296,
+      "validation_weighted_cross_entropy": 0.0024927062913775444
+    },
+    {
+      "epoch": 22,
+      "training_weighted_cross_entropy": 0.0024588047061115505,
+      "validation_weighted_cross_entropy": 0.0023742136545479298
+    },
+    {
+      "epoch": 23,
+      "training_weighted_cross_entropy": 0.00243672343591849,
+      "validation_weighted_cross_entropy": 0.0022719353437423706
+    },
+    {
+      "epoch": 24,
+      "training_weighted_cross_entropy": 0.0022601073297361532,
+      "validation_weighted_cross_entropy": 0.0021801586262881756
+    },
+    {
+      "epoch": 25,
+      "training_weighted_cross_entropy": 0.0022434718441218136,
+      "validation_weighted_cross_entropy": 0.002100755926221609
+    },
+    {
+      "epoch": 26,
+      "training_weighted_cross_entropy": 0.0021209195256233215,
+      "validation_weighted_cross_entropy": 0.002032645046710968
+    },
+    {
+      "epoch": 27,
+      "training_weighted_cross_entropy": 0.0019998762756586073,
+      "validation_weighted_cross_entropy": 0.001969908596947789
+    },
+    {
+      "epoch": 28,
+      "training_weighted_cross_entropy": 0.0019442431240653,
+      "validation_weighted_cross_entropy": 0.0019149467116221786
+    },
+    {
+      "epoch": 29,
+      "training_weighted_cross_entropy": 0.0019209438314040502,
+      "validation_weighted_cross_entropy": 0.0018647334072738886
+    },
+    {
+      "epoch": 30,
+      "training_weighted_cross_entropy": 0.001907796257485946,
+      "validation_weighted_cross_entropy": 0.0018194906879216433
+    },
+    {
+      "epoch": 31,
+      "training_weighted_cross_entropy": 0.0018393871374428271,
+      "validation_weighted_cross_entropy": 0.0017825578106567264
+    }
+  ],
+  "interpretation": "Held-out source/case evaluation; inspect class coverage and sample counts.",
+  "parameter_count": 63954,
+  "splits": {
+    "test": {
+      "count": 30,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 30,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "action_principle",
+            "angular_momentum",
+            "canonical_transformation",
+            "coriolis_force",
+            "euler-lagrange_equation",
+            "generalized_coordinates",
+            "hamilton-jacobi_equation",
+            "hamiltonian",
+            "kepler_orbit",
+            "lagrangian",
+            "moment_of_inertia",
+            "noether_theorem",
+            "phase_space",
+            "poisson_bracket",
+            "symplectic",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "action_principle",
+            "angular_momentum",
+            "canonical_transformation",
+            "coriolis_force",
+            "euler-lagrange_equation",
+            "generalized_coordinates",
+            "hamilton-jacobi_equation",
+            "hamiltonian",
+            "kepler_orbit",
+            "lagrangian",
+            "moment_of_inertia",
+            "noether_theorem",
+            "phase_space",
+            "poisson_bracket",
+            "symplectic"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0013339873403310776,
+          "per_class": {
+            "action_principle": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "angular_momentum": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "canonical_transformation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "coriolis_force": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "euler-lagrange_equation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "generalized_coordinates": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "hamilton-jacobi_equation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "hamiltonian": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "kepler_orbit": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "lagrangian": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "moment_of_inertia": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "noether_theorem": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "phase_space": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "poisson_bracket": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "symplectic": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 30,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "hamiltonian_symplectic",
+            "lagrangian_variational",
+            "rigid_body_rotational",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              10,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              10,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "hamiltonian_symplectic",
+            "lagrangian_variational",
+            "rigid_body_rotational"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0005625084741041064,
+          "per_class": {
+            "hamiltonian_symplectic": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            },
+            "lagrangian_variational": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            },
+            "rigid_body_rotational": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.001896495814435184,
+      "zero_feature_inputs": 0
+    },
+    "train": {
+      "count": 120,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 120,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "action_principle",
+            "angular_momentum",
+            "canonical_transformation",
+            "coriolis_force",
+            "euler-lagrange_equation",
+            "generalized_coordinates",
+            "hamilton-jacobi_equation",
+            "hamiltonian",
+            "kepler_orbit",
+            "lagrangian",
+            "moment_of_inertia",
+            "noether_theorem",
+            "phase_space",
+            "poisson_bracket",
+            "symplectic",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "action_principle",
+            "angular_momentum",
+            "canonical_transformation",
+            "coriolis_force",
+            "euler-lagrange_equation",
+            "generalized_coordinates",
+            "hamilton-jacobi_equation",
+            "hamiltonian",
+            "kepler_orbit",
+            "lagrangian",
+            "moment_of_inertia",
+            "noether_theorem",
+            "phase_space",
+            "poisson_bracket",
+            "symplectic"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0011623844038695097,
+          "per_class": {
+            "action_principle": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "angular_momentum": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "canonical_transformation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "coriolis_force": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "euler-lagrange_equation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "generalized_coordinates": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "hamilton-jacobi_equation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "hamiltonian": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "kepler_orbit": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "lagrangian": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "moment_of_inertia": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "noether_theorem": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "phase_space": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "poisson_bracket": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "symplectic": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 120,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "hamiltonian_symplectic",
+            "lagrangian_variational",
+            "rigid_body_rotational",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              40,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              40,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              40,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "hamiltonian_symplectic",
+            "lagrangian_variational",
+            "rigid_body_rotational"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.00045514467637985945,
+          "per_class": {
+            "hamiltonian_symplectic": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 40
+            },
+            "lagrangian_variational": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 40
+            },
+            "rigid_body_rotational": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 40
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.0016175290802493691,
+      "zero_feature_inputs": 0
+    },
+    "validation": {
+      "count": 30,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 30,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "action_principle",
+            "angular_momentum",
+            "canonical_transformation",
+            "coriolis_force",
+            "euler-lagrange_equation",
+            "generalized_coordinates",
+            "hamilton-jacobi_equation",
+            "hamiltonian",
+            "kepler_orbit",
+            "lagrangian",
+            "moment_of_inertia",
+            "noether_theorem",
+            "phase_space",
+            "poisson_bracket",
+            "symplectic",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "action_principle",
+            "angular_momentum",
+            "canonical_transformation",
+            "coriolis_force",
+            "euler-lagrange_equation",
+            "generalized_coordinates",
+            "hamilton-jacobi_equation",
+            "hamiltonian",
+            "kepler_orbit",
+            "lagrangian",
+            "moment_of_inertia",
+            "noether_theorem",
+            "phase_space",
+            "poisson_bracket",
+            "symplectic"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0013271491043269634,
+          "per_class": {
+            "action_principle": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "angular_momentum": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "canonical_transformation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "coriolis_force": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "euler-lagrange_equation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "generalized_coordinates": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "hamilton-jacobi_equation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "hamiltonian": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "kepler_orbit": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "lagrangian": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "moment_of_inertia": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "noether_theorem": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "phase_space": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "poisson_bracket": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "symplectic": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 30,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "hamiltonian_symplectic",
+            "lagrangian_variational",
+            "rigid_body_rotational",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              10,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              10,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "hamiltonian_symplectic",
+            "lagrangian_variational",
+            "rigid_body_rotational"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0004554086772259325,
+          "per_class": {
+            "hamiltonian_symplectic": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            },
+            "lagrangian_variational": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            },
+            "rigid_body_rotational": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.0017825578106567264,
+      "zero_feature_inputs": 0
+    }
+  },
+  "unsupported_training_labels": {}
+}

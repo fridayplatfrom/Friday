@@ -1,0 +1,26 @@
+{
+  "router_source_train": {
+    "title": "ExpertOS & HuggingFace SciQ Router Corpus (train)",
+    "sha256": "b16709fd2b5c4ef760682d2bb6653a5bb54145f527b65a55da648ea5c26e33b2",
+    "license": "CC-BY-NC-3.0 (Allen Institute for AI - HuggingFace allenai/sciq)",
+    "source_url": "https://huggingface.co/datasets/allenai/sciq",
+    "review_status": "reviewed",
+    "reviewer": "hf-sciq-curator-v2"
+  },
+  "router_source_validation": {
+    "title": "ExpertOS & HuggingFace SciQ Router Corpus (validation)",
+    "sha256": "bc5de4df0e6f0e8885d558db24fb937bcc11e5807d731c9e630eb3687682494b",
+    "license": "CC-BY-NC-3.0 (Allen Institute for AI - HuggingFace allenai/sciq)",
+    "source_url": "https://huggingface.co/datasets/allenai/sciq",
+    "review_status": "reviewed",
+    "reviewer": "hf-sciq-curator-v2"
+  },
+  "router_source_test": {
+    "title": "ExpertOS & HuggingFace SciQ Router Corpus (test)",
+    "sha256": "f56e76e109939ecc65a93fe5dbe920daf477e2a76be6cc9eb239878462aa7f00",
+    "license": "CC-BY-NC-3.0 (Allen Institute for AI - HuggingFace allenai/sciq)",
+    "source_url": "https://huggingface.co/datasets/allenai/sciq",
+    "review_status": "reviewed",
+    "reviewer": "hf-sciq-curator-v2"
+  }
+}

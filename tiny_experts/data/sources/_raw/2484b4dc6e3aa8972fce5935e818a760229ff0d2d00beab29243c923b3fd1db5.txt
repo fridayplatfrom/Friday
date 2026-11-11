@@ -1,0 +1,3826 @@
+Hawking & Ellis — The Large Scale Structure of Space-Time — Authoritative Graduate Reference (Relativity Cosmology, 400 pages). This authoritative work establishes foundational principles and rigorous derivations for singularity theorems, geodesic completeness, causal structure, penrose diagram, event horizon, black hole uniqueness. Core physical concepts analyzed: singularity theorems, geodesic completeness, causal structure, penrose diagram, event horizon, black hole uniqueness.
+
+[p.2] The large scale
+structure
+ofspace-time
+S.W.HAWKING & G. F.R. ELLIS
+CAMBRIDGE MONOGRAPHS ON
+MATHEMATICAL PHYSICS [p.3] THE LARGE SCALE STRUCTURE
+OF SPACE-TIME
+S. W. HAWKING, F.R.S.
+Lucasian Professor of Mathematics in the University of Cambridge and
+Fellow of Conville and Caius College
+AND
+G. F. R. ELLIS
+Professor of Appl.ied Mathematics, University of Cape Town
+,"':i.. CAMBRIDGE
+:::
+UNIVERSITY PRESS [p.4] Published by the Press Syndicate of the University of Cambridge
+The Pitt Building, Trumpington Street, Cambridge CB2 IRP
+40 West 20th Street, New York, NY 10011-4211, USA
+10 Stamford Road. Oakleigh. Melbourne 3166. Australia
+C Cambridge University Press 1973
+F~tpublishedl973
+First paperback edition 1974
+Reprinted 1976. 1977.1979. 1980.1984. 1986.
+1987. 1989. 1991. 1993 (twice). 1994,
+Printed in the United States of America
+Library of Congress Catalogue card number: 72-93671
+ISBN 0-521-09906-4 paperback [p.5] To
+D.W.SOIAMA [p.6] Preface
+1
+The role of gravity
+Contents
+page xi
+1
+2
+Differential geometry
+10
+2.1 Manifolds
+11
+2.2 Vectors and tensors
+15
+2.3 Maps of manifolds
+22
+2.4 Exterior differentiation and the Lie derivative
+24
+2.5 Covariant differentiation and the curvature tensor
+30
+2.6 The metric
+36
+2.7 Hypersurfaces
+44
+2.8 The -volume element and Gauss' theorem
+47
+2.9 Fibre bundles
+50
+3
+General Relativity
+56
+3.1 The space-time manifold
+56
+3.2 The matter fields
+59
+3.3 Lagrangian formulation
+64
+3.4 The field equations
+71
+4
+The physical significance of curvature
+78
+4.1 Timelike curves
+78
+4.2 Null curves
+86
+4.3 Energy conditions -
+88
+4.4 Conjugate points
+96
+4.5 Variation of arc-length
+102
+5
+Exact solutions
+117
+5.1 Minkowski space-time
+118
+5.2 De Sitter and anti-de Sitter space-times
+124
+5.3 Robertson-Walker spaces
+134
+5.4 Spatially homogeneous cosmological models
+142
+[ vii] [p.7] CONTENTS
+5.5 The Schwarzschild and Reissner-Nordstrom
+solutions
+5.6 The Kerr solution
+5.7 Godel's universe
+5.8 Taub-NUT space
+5.9 Further exact solutions
+6
+Causal structure
+6.1 Orientability
+6.2 Causal curves
+6.3 Achronal boundaries
+6.4 Causality conditions
+6.5 Cauchy developments
+6.6 Global hyperbolicity
+6.7 The existence of geodesics
+6.8 The causal boundary of space-time
+6.9 Asymptotically simple spaces
+page 149
+161
+168
+170
+178
+180
+181
+182
+186
+189
+201
+206
+213
+217
+221
+7
+The Cauchy problem in General Relativity
+226
+7.1 The nature of the problem
+227
+7.2 The reduced Einstein equations
+228
+7.3 The initial data
+231
+7.4 Second order hyperbolic equations
+233
+7,Ii Thl' l'xillt.nnol' l\Iul nniqnOlloll1l of dnvo)uIJlIlOIlLII fUI'
+the empty space Einstein equations
+244
+7.6 The maximal development and stability
+249
+7.7 The Einstein equations with matter
+254
+8
+Space-time singularities
+256
+8.1 The definition of singularities
+256
+8.2 Singularity theorems
+261
+8.3 The description of singularities
+276
+8.4 The character of the singularities
+284
+8.5 Imprisoned incompleteness
+289
+9
+Gravitational collapse and black holes
+299
+9.1 Stellar collapse
+299
+9.2 Black holes
+308
+9.3 The final state of black holes
+323 [p.8] CONTENTS
+10
+The initial singularity in the universe
+J0.1 The expansion of the universe
+10.2 The na.ture and implications of singularities
+Appendix A:
+Translation of an essay by P. S. ~place
+Appendix B:
+Spherically symmetric solutions and Birkhoff's
+theorem
+References
+Notation
+Index
+page 348
+348
+359
+365
+369
+373
+381
+385 [p.9] 1
+The role of gravity
+The view of physics that is most generally accepted at the moment is
+that one can divide the discussion ofthe universe into two parts. First,
+there is the question of the local laws satisfied by the various physical
+fields. These are usually expressed in the form ofdifferential equations.
+Secondly, there is the problem of the boundary conditions for these
+equations, and the global nature of their solutions. This involves
+thinking about the edge ofspace-time in some sense. These two parts
+may not be independent. Indeed it has been held that the local laws
+are determined by the large scale structure of the universe. This view
+is generally connected with the name of Mach, and has more recently
+been developed by Dirac (1938), Sciama (1953), Dicke (1964), Hoyle
+and Narlikar (1964), and others. We shall adopt a less ambitious
+approach: we shall take the local physical laws that have been experimentally determined, and shall see what these laws imply about the
+large scale structure of the universe.
+There is of course a large extrapolation in the assumption that the
+physical laws one determines in the laboratory should apply at other
+points of space-time where conditions may be very different. If they
+failed to hold we should take the view that there was some other
+physic,al field which entered into the local physical laws but whose
+existence had not yet bl'.m detected in our experiments, because it
+variesvery little over a region such as the solar system. In fact most of
+our results will be independent of the detailed nature of the physical
+laws, but will merely involve certain general properties such as the
+description of space-time by a pseudo-Riemannian geometry and the
+positive definiteness of tlnt.tgy density.
+The fundamental interactions at present known to physics can be
+divided into four classes: the strong and weak nuclear interactions,
+electromagnetism, and gravity. Ofthese, gravity is by far the weakest
+(the ratio Gm2/e2 of the gravitational to electric force between two
+electrons is about 10-40). Nevertheless it plays the dominant role in
+shaping the large scale structure of the universe. This is because the [p.10] Preface
+The subject of this book is the structure of space-time on lengthscales from 10-13 em, the radius of an elementary particle, up to
+1028 em, the radius of the universe. For reasons explained in
+chapters 1 and 3, we base our treatment on Einstein's General
+Theory of Relativity. This theory leads to two remarkable pre-
+dictions about the universe: first, that the final fate of massive
+stars is to collapse behind an event horizon to form a 'black hole'
+which w
+
+[p.15] 6
+THE ROLE OF GRAVITY
+f/ and p. Similar results can be proved for null geodesics. These results
+are used in chapter 8 to establish the existence of singularities under
+certain conditions.
+In chapter 5 we describe a number of exact solutions of Einstein's
+equations. These solutions are not realistic in that they all possess
+exact symmetries. However they provide useful examples for the succeeding chapters and illustrate various possible behaviours. In
+particular, the highly symmetrical cosmological models nearly all
+possess space-time singularities. For a long time it was thought that
+these singularities might be simply a result of the high degree of
+symmetry, and would not be present in more realistic models. It will
+be one of our main objects to show that this is not the case.
+In chapter 6 we study the causal structure ofspace-time. In Special
+Relativity, the events that a given event can be causally affected by,
+or can causally affect, are the interiors of the past and future light
+cones respectively (see figure 3). However in General Relativity the
+metric g which determines the light cones will in general vary from
+point to point, and the topology of the space-time manifold Jt need
+not be that ofEuclidean space R4. This allows many more possibilities.
+For instance one can identify corresponding points on the surfaces
+f/1 and f/2 in figure 3, .to produce a space-time with topology R3 x SI.
+This would contain closed timelike curves. The existence of such a
+curve would lead to causality breakdowns in that one could travel into
+one's past. We shall mostly consider only space-times which do not
+permit such causality violations. In such a space-time, given any
+spacelike surface f/, there is a maximal region of space-time (called
+the Cauchy development off/) which can bepredictedfrom knowledge
+of data onf/. A Cauchy development has a property ('Global hyperbolicity') which implies thatiftwo points in it can be joined by a time-
+like curve, then there exists a longest such curve between the points.
+This curve will be a geodesic.
+The causal structure ofspace-time can be used to define a boundary
+or edge to space-time. This boundary represents both infinity and the
+part of the edge of space-time which is at a finite distance, i.e. the
+singular points.
+In chapter 7 we discuss the Cauchy problem for General Relativity.
+We show that initial data on a spacelike surfaCe determines a unique
+solution on the Cauchy development of the surface, and that in a
+certain sense this solution depends continuously on the initial data.
+This chapter is included for completeness and because it uses a number [p.16] THE ROLE OF ORAVITY
+7
+Past light cone
+,-------1~----~-------~9j
+Time
+J-s-
+Spacc
+FIGURE '3. In Special Relativity, the light cone of an event p is the set of all
+light r~ys through p. The past ofp is the interior ofthe past light cone, and the
+future of p is the interior of the future light cone.
+of results ofthe previous chapter. However it is not necessary to read
+it in order to understand the fOllowing chapters.
+In chapter 8 we discuss the definition of space-time singularities.
+This presentscertain diffi~mltiesbecauseone cannot regardthesingular
+points as being part ofthe space-time manifold JI.
+We then prove four theorems which establish the occurrence of
+space-time singularities under certain conditions. These conditions
+fall into three categories. First, there is the requirement that gravity
+shall be attractive. This can be expressed as an inequality on the
+energy-momentum tensor. Secondly, there is the requirement that
+there is enough matter present in some region to prevent anything
+escaping from that region. This will occur if there is a closed trapped [p.17] 8
+THE ROLE OF GRAVITY
+surface, or if the whole universe is itself spatially closed. The third
+requirement is that there should be no causality violations. However
+this requirement is not necessary in one of the theorems. The basic
+idea ofthe proofs is to use the results ofchapter 6 to prove there must
+be longest timelike curves between certain pairs of points. One then
+shows that if there were no singularities, there would be focal points
+which would imply that there were no longest curves between the pairs
+of points.
+We next describe a proceduresuggested by Schmidtfor constructing
+a boundary to space-time which represents the singular points of
+space-time. This boundary may be different from that part of the
+cl1llRal boundl1ry (defined in ohl1pter 6) whieh represents singularitios.
+In
+oI11~pt,(1r n, we IIhow
+t111~t tho IIClCom! (1ondition of thoormn 2 of
+chaptor 8 should be satisfied ncar stars ofmore than 1i times the solar
+mass in the final stagesoftheir evolution. Thesingularitieswhich occur
+are probably hidden behind an event horizon, and 80 are not visible
+Ihull uul.l:lhltl. Tu ItII tlxl.tll'llItI uLI:lt1l'Vt1l', tht1l'tl It!'l'tlltl'l:l tu Ltl It
+• Lllwk
+hole' where the star once was. We discuss the properties ofsuch black
+holes, and show that they probably settle down finally to one of the
+Kerr family of solutions. Assuming this to be the case, one can place
+certain upper bounds on the amount ofenergy which can be extracted
+from black holes. In chapter 10 we show that the second conditions of
+theorems 2 and 3 of chapter 8 should be satisfied, in a time-reversed
+sense, in the whole universe. In this case, the singularities are in our
+past and constitute a beginning for all or partofthe observed universe.
+The essential part ofthe introductory material is that in §3.1, §3.2
+and §3.4. A reader wishing to understand the theorems predicting the
+existence ofsingularities in the universe need read further only chap-
+ter 4, §6.2-§ 6.7, and §8.1 and §8.2. The application ofthese theorems
+to collapsing stars follows in §9.1 (which uses the results of appen-
+dix B); the application to the universe as a whole is given in § 10.1, and
+relies on an understanding of the Robertson-Walker universe models
+(§ 5.3). Our discussion of the nature of 
+
+[p.29] 20
+DIFFERENTIAL GEOMETRY
+[2.2
+1'1""1 = ..!. {1'"'' - 1'1m}
+21
+.
+If {Ea'}' {Ea'} are another pair of dual bases, the contraction Gl(T)
+defined by them is
+G'l(T) = Ta·b·...d·a'/'..•o· Eb• ®
+® Ed' ® W' ® ... ® E)"
+= fPa'a fPah• Th·b·•.. d'a'r
+rt cf)b.b '"
+cf)d·d cf)r/ ••• cf)ItII
+.Eb ®
+® Ed ® EJ ... ® Eo
+= Tab...da/...o~ ® ... ® Ed ® E/®
+® Eo = GieT),
+so the contraction Oi ofa tensor is independent ofthe basis used in its
+definition. Similarly, one could contract T over any pair of contra-
+variantand covariantindices. (Ifwe were to contract over two contravariant or covariant indices, the resultant tensor would depend on the
+basis used.)
+The symmetric part of a tensor T of type (2,0) is the tensor SeT)
+defined by
+for all '1)1' '1)2 E T*p' We shall denote the components S(T)ab ofSeT) by
+T(ab). then
+,
+1
+T<ab) = 21 {Tab + pba}.
+Similarly, the components of the skew-symmetric part of T will be
+denoted by
+In general, the components ofthe symmetric or antisymmetric part of
+a tensor on a given set of covariant or contravariant indices will be
+denoted by placing round or square brackets around the indices. Thus
+Tra1...a,}···/
+= fr{sum over all permutations of the indices at to a,(Ta1... a,b..•/)}
+and
+= ~ {alternating sum over all permutations ofthe indices
+r.
+a to a (T.
+b••• /)}.
+1
+r
+01 ... Or
+For example,
+Ka1bcd1 = MKabcd+Kadbc+ Kacdb - KaMe - KacM - Kadeb}' [p.30] 2.2]
+VECTORS AND TENSORS
+21
+A tensor is symmetric in a given set of contravariant or covariant
+indices if it is equal to its symmetrized part on these indices, and is
+antisymmetric if it is equal to its antisymmetrized part. Thus, for
+example, a tensor T of type (0,2) is symmetric if Tab = l(Tab+ Too),
+(which we can also express in the form: l1ab) = 0).
+A particularly important subset of tensors is the set of tensors of
+type (O,q) which are antisymmetric on all q positions (so q ~ n); such
+a tensor is called a q-form. IfA and Bare p- and q-forms respectively,
+one can define a (p+q)-form A" B from them, where" is the skewsymmetrized tensor product ®; that is, A" B is the tensor of type
+(0, p +q) with components determined by
+(A" B)a... bc•••/ = A[a...bBc.../)·
+This rule implies (A" B) = (- )Pll (B "A). With this product, the
+space of forms (Le. the space of all p-forms for all p, including one-
+forms and defining scalars as zero-forms) constitutes the Grassmann
+algebra of forms. If {Ea} is a basis of one-forms, tIren the forms
+Eal" ... " Eap (airun from 1 ton) are a basisofp-forms, as anyp-form
+A can be written A = Aa...I>Ea" ... " Eb, where Aa... l> = A la...b).
+So far, we have considered the set of tensors defined at a point on
+the manifold. A set of local coordinates {xi} on an open set "lI in JI
+defines a basis {(OjOxi>lp} of vectors and a basis {(dxi)lp} of one-forms
+at each point p of "lI, and so defines a basis of tensors of type (r,8) at
+nn,nh point; of 41/. RlInh n, lIn,HiR of t;nnRorR will hI' nn,lInrl n, noorrlinfll,n
+basis. A Ok tensorfield T aftype (r, s) on a set '1'" c JI is an assignment
+of an element of ~(p) to each point pe'1'" such that the components
+of T with respect to any coordinate basis defined on an open subset
+off are Ok functions.
+In general one need not use a coordinate basis of tensors, Le. given
+any basis of vectors {Ea} and dual basis offorms {Ea} on f, there will
+not necessarily exist any open set in f
+on which there are local
+coordinates {xa} such that Ea = o/Oxa and Ea = dxa• However if one
+does use a coordinate basis, certain specializations will result; in parti-
+cular for any functionf, the relations Ea(Ebf) = Eb(EJ) are satisfied,
+being equivalent to the relations o2f/oxaOxb = o2f/Oxboxo. If one
+changes from a coordinate basis Ea = o/Oxa to a coordinate basis
+Ea, = OjOxa', applying (2.2), (2.3) to xa, xa' shows that
+'"
+a _ oXO
+,If,n'
+_
+oXO'
+'Va'
+-
+oXO"
+'V-a -
+oXO'
+Clearly a general basis {Ea} can be obtained from a coordinate basis [p.31] 22
+DIFFERENTIAL GEOMETRY
+[2.2
+{%xi } by giving the functions E a' which are the components ofthe Ea
+with respectto the basis{%xi}; then (2.2)takestheformE.. = Eai%xi
+and (2.3) takes the form Eo = EOidxi, where the matrix EOi is dual to
+the matrix Eai.
+2.3
+Maps of manifolds
+In this section we define, via the general concept ofa Ok manifold map,
+the concepts of 'imbedding', 'immersion', and of associated tensor
+maps, the first two being useful later in the study ofsubmanifolds, and
+the last playing an important role in studying the behaviour of
+families of curves as well as in studying symmetry properties of
+manifolds.
+A map ¢ fwm a (}k n-dimensionalmanifold.A to a Ok' n'-dimensional
+manifold .A' is said to be a Or map (r ~ k, r ~ k') if, for any local
+coordinate systems in .A and .A', the coordinates of the image point
+¢(p) in .A' are or functions of the coordinates ofp in .A. As the map
+wiII in general be many-one rather than one-one (e.g. it cannot be
+one-one if n > n'), it will in general not have an inverse; and if a Or
+map does have an inverse, this inverse will in general not be Or (e.g.
+if¢ is the map Rl-.+-Rl given by x-.+-x3, then ¢-l is not differentiable at
+the point x = 0).
+Iffis a function on.A', the mapping ¢ defines the function ¢*fon.A
+as t.he function whose value at the point p of.A is the value ofl at
+¢(p), l.e.
+¢*f(P) = f(¢(p».
+(2.5)
+Thus when ¢ maps points from .A to .A', ¢* maps functions linearly
+from .A' to .A.
+If A(t) is a curve through the point p e.A, then the image curve
+¢(A(t»
+in .A' passes through the point ¢(P). If r ~ 1, the tangent
+vector to this curve at ¢(P) will be denoted by ¢*(%t).~.I!6<p);one can
+regard it as the image, under the map ¢, ofthe vector (o/Oth-Ip. Clearly
+¢* is a linear map of Tp(.A) into T~(p)(.A').From (2.5) and the definition (2.1) of a vector as a directional derivative, the vector map ¢*
+can be characterized by the relation: for each Or (r ~ 1) functionf at
+¢(P) and vector X at p,
+X(¢*f)lp =
+¢*X(f)I~(p)'
+(2.6)
+Using the vector mapping ¢* from.A to J(', we can if r ~ 1 define
+a linear one-form mapping ¢* 
+
+[p.43] 34
+DIFFERENTIAL GEOMETRY
+[2.5
+open neighbourhood ~ of the origin in Tp and an open neighbourhood
+.A-; of p in J! such that the map exp is a (Jr diffeomorphism of O/V0
+onto.A-;. Such a neighbourhood.A-; is called a normal neighbourhood
+ofp. Further, one can choose.A-; to be convex, Le. to be such that any
+point q of .A-; can be joined to any other point r in .A-; by a unique
+geodesic starting at q and totally contained in.A-;. Within a convex
+normal neighbourhood.Al" one can define coordinates (Xl, ...,x1l) by
+choosing any point qe.Al", choosing a basis {Ea} ofTq, and defining the
+coordinates of the point r in.K by the relation r = exp (xaEa ) (Le. one
+assigns to r the coordinates, with respect to the basis {Ea}, ofthe point
+exp-1 (r) in Tq.) Then (8/axi )lq = Ei and (by (2.15») J'i{Jkllq = O. Such
+coordinates will be called normal coordinates based on q. The existence
+of normal neighbourhoods has been used by Geroch (1968c) to prove
+that a connected OS Hausdorff manifold J! with a 0 1 connection has
+a countable basis. Thus one may infer the property ofparaeompactness
+ofa 0 8 manifold from the existence ofa 0 1 connection on the manifold.
+The' normal' local behaviour of geodesics in these neighbourhoods is
+in contrast to the behaviour ofgeodesics in the large in a general space,
+where on the one hand two arbitrary points cannot in general be
+joined by any geodesic, and on the other hand some of the geodesics
+through one point may converge to 'focus' at some other point. We
+shall later encounter examples of both types of behaviour.
+Given a Or connection V, one can define a Or-1 tensor field T of
+type (1, 2) by the relation
+T(X, Y) = VxY - VyX - [X, Y],
+where X, Yare arbitrary Or vector fields. This tensor is called the
+torsion tensor. Using a coordinate basis, its components are
+T'sk = r iSk - r'kS'
+We shall deal only with torsion-free connections, Le. we shall assume
+T = O. In this case, the coordinate components ofthe connection obey
+riSk = r'kj, so such a connection is often called a symmetric connection. A connection is torsion-free if and only if!:ij = !:ji for all func-
+tionsf. From the geodesic equation (2.15) it follows that a torsion-free
+connection is completely determined by a knowledge of the geodesics
+onJ!.
+When the torsion vanishes, the covariant derivatives ofarbitrary 0 1
+vector fields X, Yare related to their Lie derivative by
+[X, Y] = VxY- VyX<:> (LxYr = ya:bXb-xa:bP,
+(2.16) [p.44] 2.5]
+THE CURVATURE TENSOR
+35
+and for any 0 1 tensor field T of type (r, s) one finds
+( T. T)ab...d
+= Tab...d
+Xh _ Tib...d
+Xa
+.6.JX
+ef...g
+ef...g; h
+ef...g;1
+- (all upper indices)+Tab...dif...gXi:e+(all lower indices).
+(2.17)
+One can also easily verify that the exterior derivative is related to the
+covariant derivative by
+dA = Aa...c;ddxd" dxa" ... "dxC<:> (dA)a...cd = (- )J'Ara...c;dl'
+where A is any p-form. Thus equations involving the exterior derivative or Lie derivative can always be expressed in terms of the covariant derivative. However, because of their definitions, the Lie
+derivative and exterior derivative are independent of the connection.
+If one starts from a given point p and parallelly transfers a vector
+Xp along a curve y that ends at p again, one will obtain a vector X'"
+which is in general different from X p ; if one chooses a different curve
+y', the new vector one obtains at p will in general be different from
+Xp and X'p ' This non-integrability of parallel transfer corresponds to
+the fact that the covariant derivatives do not generally commute. The
+Riemann (curvature) tensor gives a It\easure of tliis non-commutation.
+Given Or+l vector fields X, Y, Z, a Or-l vector field R(X, Y) Z is defined
+by a Or connection V by
+R(X, Y)Z = Vx(VyZ)- Vy(VxZ)- VlX.YJZ,
+(2.18)
+Then R(X, Y) Z is linear in X, Y, Z and it may be verified that the
+'value ofR(X, Y) Z at p depends only on the values of X, Y, Z at p, i.e.
+it is a Or-l tensor field of type (3,1). To write (2.18) in component
+form, we define the second covariant derivative VVZ of the vector Z
+as the covariant derivative V(VZ) of VZ; it has components
+Za;bC = (Za;b);C'
+Then (2.18) can be written
+RabcdxcYdZb = (za; d ~d);cXC- (za:dXd);c ye
+_za: d(Yd:cxc_Xd;c YC)
+= (za;dc-za;Cd)XCYd,
+where the Riemann tensor components Rabcd with respect to dual
+bases {Eah {Ea} are defined by Rabcd = (Ea, R(Ec' Ed) Eb). As X, Yare
+arbitrary vectors,
+za;dc-za;Cd = RabcdZb
+(2.19)
+expresses the non-commutation of second covariant derivatives of Z
+in terms of the Riemann tensor. [p.45] 36
+DIFFERENTIAL GEOMETRY
+[2.5
+Since
+VX(l'J®VyZ) = Vxl'J®VyZ+l'J®VxVyZ
+=> (l'J, VxVyZ) = X«l'J, VyZ»- (Vxl'J, VyZ)
+holds for any 02 one-form field l'J and vector fields X, Y, Z, (2.18)
+implies
+(2.21a)
+(Ea,R(Ee, Ed)Eb) = Ee«Ea, VEdEb»-Ed«Ea, VEcEb»
+- (VEcEa, VEdEb)+ (VEdEa, VEcEb)- (Ea, VlEc.~lEb)'
+Choosing the bases as coordinate bases, one finds the expression
+Rabecl = aradb/8xC - araeb/8xd + rae/rl db - r ad/r/eb
+(2.20)
+for the coordinate components ofthe Riemann tensor, in terms of the
+coordinate components of the connection.
+It can be verified from these definitions that in addition to the
+symmetry
+Rabecl = - RaMe <:> Rab<cdJ = 0
+the curvature tensor has the symmetry
+Ba[bed) = O<:>Rabecl+Radbc+Raedb = O.
+(2.21b)
+Similarly the first covariant derivatives ofthe Riemann tensor satisfy
+Bianchi'8 identities
+Rab[ed;cl = O<:>Rabecl;c+Rabec;d+Rabdt;e = O.
+(2.22)
+It now turns out that pamllel transfer of an arbitrary vector along
+an arbitrary closed curve islocally integrable (i.e. X 'p is necessarily the
+same as Xz, for eachpE.A') only if Rabed = 0 at all points of.A'; in this
+case we say that the connection isflat.
+By contracting the curvature tensor, one can define the Ricci tensor
+as the tensor of type (0,2) with components
+R M = Rabad·
+2.6
+The metric
+g(X,Y)
+A metric tensor g at a point p E.A' is a symmetric tensor of type (0, 2)
+at p, so a Or metric on.A' is a Or symmetric tensor field g. The metric g
+at p assigns a
+<magnitude' (Jg(X, X)j)t to each vector X ETp and
+defines
+
+[p.57] 48
+DIFFERENTIAL GEOMETRY
+[2.8
+(2.37)
+1)ab... d;e = 0 = 1)ab... d;e'
+If{Ea"}, related to {Ea} by Ea' = (})a"aEa, is another basis, the n-form
+£' defined by this basis will be related to £ by
+£' = det ((})a'a) £,
+so this form is not unique. However, one can use the existence of the
+metric to define (in a given basis) the form
+l'J = IgII£
+where g == det (gab)' This form has components
+1)ab••.d = n! Ig/181Ca82
+11 '" 8ndj•
+The transformation law for g will just cancel the determinant,
+det «(})a'a), provided that det «(})a'a) > O. Therefore if JI is orientable
+the n-forms l'J defined by coordinate bases of an oriented atlas will be
+identical, i.e. given an orientation of JI, one can define a unique
+n-form field l'J, the canonical n1orm, on JI.
+The contravariant antisymmetric tensor
+1)ab...d -
+,.,aerobJ
+,.,dh'1l
+-
+If
+II
+'"
+II
+'/et...h
+has components
+1)ab...d = (- )1<n-8)n! Igil 8Ca18b2'" 8d1n ,
+where 8 is the signature of g (so !(n-8) is the number of negative
+eigenvalues ofthe matrix of metric components (gab»' Therefore these
+tensors satisfy the relations
+1)ab...tL..
+= (- )1<n-8)n' ~c
+HI
+~d I
+'/et...h
+.0- eo·t ... 0 ".
+The Christoffel relations imply that the covariant derivatives of
+1)011••• d and 1)all... d with respect to the connection defined by the metric
+vanish, i.e.
+Using the canonical n-form, one can define the volume (with respect
+to the metric g) of an n-dimensional submanifold %' as .!..f l'J.
+n!
+...
+Thus l'J Can be regarded as a pOsitive definite volume measure on JI.
+We shall often use it in this sense, and shall denote it by dv. Note that
+d is not meant to represent the exterior differential operator here; dv
+is simply a measure on JI. Iff is a function on JI, One can define its
+integral over %' with respect to this volume measure as
+f fdv = -.!.f fl'J·
+...
+n!
+... [p.58] 2.8]
+VOLUME ELEMENT AND GAUSS' THEOREM
+49
+With respect to local oriented coordinates {XI}, this can be expressed
+as the multiple integral
+which is invariant under a change of coordinates.
+IfX is a vector field on JI, its contraction with Yj will be an (n - 1)-
+form field X .Yj, where
+(X·Yj)b•.• d = Xa1Jab... d·
+This (n-1)-form may be integrated over any (n-1)-dimensional
+compact orientable submanifold 1'. We write this integral as
+I.y Xaduu = (n~ 1)! I.y X. Yj.
+where the canonical form Yj is regarded as defining a measure-valued
+form dUa on the submanifold 1'. If the orientation ofl' is given by
+the direction of the normal form na' then dua can be expressed as
+nadu where du is a positive definite volume measure on the sub-
+manifold 1'. The volume measure du is not unique unless the normal
+na is normalized. Ifna is normalized to unit magnitude in a metric g
+on JI, i.e. nanbyab = ± 1. then duisequal to the volume measure onl'
+defined by the induced metric on l' (to see this, simply choose an
+orthonormal basis with nayab as one of the basis vectors).
+Using the canonical form, one can derive Gauss' formula from
+Stokes' theorem: for any compact n-dimensional submanifold %' ofJI,
+J,,,,xa dUa = (n~1)!Ia",X.Yj = (n~1)!I~d(X.Yj).
+But
+(d(X. Yj»a..• de = { - )n-l (Xo1Jo[a •.. d);eJ
+= (- )n-18s[a .•• 8td8"eJ1JoS...tXO;u
+1
+= (- )(n-l)-!(n-s)_",s...t"1J
+'l1
+Xo.
+n!'/
+a... de os·..t
+."
+= 1Ja... de 8s[s ••• 8 tt 8"olXo; u
+= n-11Ja... de X";".
+on using relation (2.37) twice. Therefore
+f
+Xadua =f XO·odv
+M/
+'"
+• [p.59] 50
+DIFFERENTIAL GEOMETRY
+[2.8
+holds for any vector field X; this is Gauss' theorem. Note that the
+orientation on ~ for which this theorem is valid is that given by the
+normal form 1) such that (n, X) is positive ifX is a vector which points
+out of~. If the metric g is such that gOOnanb is negative, the vector
+gabnb will point into ~.
+2.9
+Fibre bundles
+Some of the geometrical properties of a manifold JI can be most
+easily examined by constructing a manifold called a fibre bundle,
+which is locally a direct product of JI and a suitable space. In this
+section we shall give the definition of a fibre bundle and shall consider
+four examples that will be used later: the tangent bundle T(JI), the
+tensor bundle ~(JI), the bundle of linear frames or bases L(JI), and
+the bundle of orthonormal frames O(JI).
+A Ok bundle over a Oa (8 ~ k) manifold JI is a Ok manifold G and
+a Ok surjective map 17: G-7 JI. The manifoldG is called the total space,
+JI is called the base space and 17 the projection. Where no confusion
+can arise, we will denote the bundle simply by G. In general, the
+inverse image 17-1(P) of a point p e JI need not be homeomorphic to
+17-1(q) for another point qeJl. The simplest example of a bundle is
+a product bundle (JI x .91, JI, 17) where .91 is some manifold and the
+projection 17 is defined bYl7(P, v) = p for allpeJl, ved. For example,
+if one chooses JI as the circle 8 1 and .91 as the real line Rl, one con-
+structs the cylinder 0 2 as a product bundle over 8 1•
+A bundle which is locally a product bundle is called a fibre bundle.
+Thus a bundle is afibre bundle with fibre F ifthere exists a neighbour-
+hood ~ofeachpointq ofJI such that l7-l(~)is isomorphic with ~ x F-
+in the sense that for each point pe~ there is a diffeomorphism ¢p of
+17-1(p) onto F such that the map ljr defined by \fr(u) = (l7(U), ¢.,{w) is
+a diffeomorphism ljr: l7-l(~) -7 ~ x F. Since JI is paracompact, we
+can choose a locally finite covering of JI by such open sets ~... If
+~.. and ~p are two members of such a covering, the map
+is a diffeomorphism ofF onto itselffor each p e (~.. n ~pl. The inverse
+images 17-1(p) of points peJi are therefore necessarily all diffeo-
+morphic to F (and so to each other). For example, the Mobius strip
+is a fibre bundie over 8 1 with fibre Rl; we need two open sets ~1' ~2 [p.60] 2.9]
+FIBRE BUNDLES
+51
+to give a covering by sets ofthe form ~i x RI. This example shows that
+if a manifold is locally the direct product of two other manifolds, it is
+nevertheless not, in general, a product manifold; it is for this reason
+that the concept of a fibre bundle is so useful.
+The tangent bundle T(.A) is the fibre bundle over a 
+
+[p.71] 62
+GENERAL RELATIVITY
+[3.2
+Condition (i) expresses the principle that all fields have energy. One
+might possibly object to the' only if' on the grounds that there might
+be two non-zero fields, one ofwhose energy-momentum tensor exactly
+cancelled that of the other. This possibility is related to that of the
+existence of negative energy which will be discussed in §3.3.
+Ifthe metric admits a Killing vector field K, equations (3.1) can be
+integrated to give a conservation law. To see this, define pa to be the
+vector whose components are pa = TabKb. Then,
+pa;a = Tab;aKb+TabKb;a'
+The first term is zero by the conservation equations, and the second
+vanishes as Tab is symmetric and 2K1a;b) = Lggab = 0, since K is a
+Killing vector. Thusif~ is a compact orientable region with boundary
+o~, Gauss' theorem (§2.7) shows
+(3.2)
+L = %x"-
+(a = 1, 2, 3, 4)
+..
+f
+Pbdub =I pb'b dv = O.
+iJB/
+B/
+•
+This may be interpreted as saying that the total flux over a closed
+surface of the K-component of energy-momentum is zero.
+When the metric is flat, as it is in the Special Theory of Relativity,
+one may choose coordinates {xa} in which the components ofthe metric
+are gab = ea8ab (no summation) where 8ab is the Kronecker delta and
+ea is - 1 if a = 4 and is + 1 if a = 1,2,3. Then the following are
+Killing vectors:
+(these generate four translations) and
+M = e..x"- ';).°P - epxP~
+(no summation; a,fJ = 1, 2, 3, 4)
+..p
+oX
+(/;(;-
+(these generate six 'rotations' in space-time). These isometries form
+the ten-parameter Lie group ofisometries offlat space-time known as
+the inhomogeneous Lorentz group. One may use them to define ten
+vectors pa and pa which will obey (3.2). We may think of Pas repre-
+..
+..{J
+4
+senting the flow ofenergy and P, P, P as the flow ofthe three compo-
+1
+2
+3
+nents of linear momentum. The P can be interpreted as the flow of
+..p
+angular momentum.
+If the metric is not flat there will not, in general, be any Killing
+vectors and sothe above integral conservation laws will not hold. How-
+ever, in a suitable neighbourhood of a point q one may introduce [p.72] 3.2]
+THE MATTER FIELDS
+63
+normal coordinates {xa}. Then at q the components gab ofthe metric are
+eO. Bab (no summation), and the components r alle of the connection are
+zero. One may take a neighbourhood !!t of q in which the gab and ralle
+differ-from their values at q by an arbitrarily small amount; then the
+L Ca' b) and M ca • b) will not exactly vanish in!!t, but will in this neigh-
+ct
+'
+all
+'
+bourhood differ from zero by an arbitrarily small amount. Thus
+f
+pbdub
+and f
+pbdub
+DB/a.
+DB/a.P
+will still be zero in the first approximation; that is to say, one still has
+approximate
+conservation
+of energy,
+momentum and
+angular
+momentum in a small region ofspace-time. Using this it can be shown
+that a small isolated body moves approximately on a timelike geodesic
+curve independentofits internal constitution provided thatthe energy
+density ofmatter in it is non-negative (for an account ofthe motion of
+a small body in relativity, see Dixon (1970». This may be thought of
+as Galileo's principle that all bodies fall equally fast. In Newtonian
+terms one would say that the inertial mass (the m in F = ma) and the
+passive gravitational mass (the mass acted on by a gravitational field)
+are equal for all bodies. This has been verified to a high order of
+accuracy in experiments by E6tvos and by Dicke (1964).
+Postulate (a) enables one to measure the metric up to a conformal
+factor at each point. Using postulate (b) one may relate these factors
+at different points, for the conservation equations Tab; b = 0 would not
+in general hold for a connection derived from a metric g = Q~. One
+way ofdoing this would be to observe the paths ofsmall 'test' particles
+and so to determine the timelike geodesic curves. Then ify(t) is such a
+curve with tangent vector K = (a/at)'}', one has from (2.29)
+f> Ka = D Ka+2Q-IQ. KbKa_Q-l(KbKCIl )fJadQ
+m
+m
+,b
+VIle;~
+Since y(t) is a geodesic, with respect to the space-time metric g,
+]([b(D/ot) Kal = O. Thus
+]{[b ~ Kal = - (KCKdfJcd) ]{[bfJale (log Q); e'
+(3.3)
+Knowing the conformal structure, one can choose a metric g which
+represents the conformal equivalence class ofmetrics and canevaluate
+the left-handside of(3.3) for any testparticle. Then the right-hand side
+of (3.3) determines (log Q); b up to the addition ofa multiple of KafJab' [p.73] 64
+GENERAL RELATIVITY
+[3.2
+By considering another curve y'(t) whose tangent vector K'c is not
+parallel to Kc, one can find (logO);b and so can determine 0 everywhere up to a constant multiplying factor. This constant factor
+specifies one's units ofmeasurement, and so can be chosen arbitrarily.
+This is, ofcourse, not the way one measures the conformal factor in
+practice; one makes use of the fact that there exist a large number of
+similar systems (such as the electronic states ofatoms) whose internal
+motions define a number of events along the timelike curve which
+represents their position in space-time. The intervals between these
+events seem to be independent of their past history in the sense that
+the intervals measured by two nearby systems correspond. Ifone can
+effectively isolate them against external matter fields (so they must
+move on geodesic curves) and if one assumes their internal motion is
+independent ofthe curvature ofspace-time, then the only thing it can
+depend on is the metric. Thus the arc-length between two successive
+events on a curve must be the same for each pair of successive events
+on any such curve.Ifone takes this arc-length as one's unit ofmeasure-
+ment, one can determine the conformal,factor at any point of space-
+time.
+In fact it may not be possible to isolate a system from external
+matter fields. Thus for example in the Brans-Dicke theory there is
+a scalar field which is non-zero everywhere. However the conformal
+factor can still be determined by the requirement that the conservation equation TCb; b = 0 should hold. Thus knowledge of the energymomentum tensor Tcb determines the conf
+
+[p.85] 76
+GENERAL RELATIVITY
+[3.4
+where 7Jab is a flat metric as in Special Relativity. Then
+t::.gab = 20-I t::.Ogab
+and the action will be stationary if
+{(A(IR-A)gab-Rab) +Tab}t::.Ogab = 0
+for all t::.0, that is if
+R + A-IT = 4A.
+From (2.30),
+R = - 60-30 1001]00 = - 60-10; 00 gOO+ 120-20;c O;dgcd,
+where I denotes covariant differentiation with respect to the flat
+metric 1]ab. Ifthe metric is static, 0 will be constant along the integral
+curves of the Killing vector K (it will be independent of the time t).
+The magnitude of K will be proportional to O. Therefore
+!:ab(gab+ ya yb)j-l = 0; ab(gab+ yaYb) 0-1
+=-tR+20-20:aO;bgab_0-l0;aya:b yb
+= -tR +j-2!:af:bgab.
+gab = 02(1]ab + JY.. JYr,),
+where JY.. is an arbitrary one-form field. This would give the Newtonian
+limit in a static metric in which JY.. was parallel to the timelike Killing
+vector. There could however also be other static metrics where JY.. was
+not parallel to the Killing vector and these would not give the
+Newtonian limit. Further this restriction on the form of the metric
+Thus the Laplacian ofjwill be equal to -IR plus a term proportional
+to the square of the gradient ofJ. This last term may be neglected in
+a weak field. From the field equations, -tR will be equal to
+IA-IT- tA. For a perfect fluid, T = - JL +3p. One will therefore get
+agreementwith Newtonian theoryifA is small orzeroandA-I = - 2411'.
+This theory in which the metric is restricted to be conformally flat
+is known as the Nordstrom theory. It can be reformulated as a theory
+in which the metric is the flat metric Yj and in which the gravitational
+interaction is represented by an additional scalar field 1>. As mentioned before, this sort of theory would be inconsistent with the
+observed deflection of light by massive objects, and it would not
+account for the measured advance of the perihelion of Mercury.
+One could in fact obtain the observed deflection of light and the
+advance of the perihelion ofMercury ifthe metric was restricted to be
+of the form [p.86] 3.4]
+THE FIELD EQUATIONS
+77
+seems rather artificial. It appears more natural not to restrict the
+metric, apart from requiring that it be Lorentzian.
+We therefore adopt as our third postulate,
+Postulate (c): Field equations
+Einstein's field equations (3.15) hold on .ft.
+The predictions ofthese field equations agree, within the experimtm-
+tal errors, with the observations that have been made so far on the
+deflection of light and the advance of the perihelion of Mercury,
+though the question of whether there exists a long range scalar field
+which ought to be included in the energy-momentum tensor remains
+open at the present time. [p.87] 4
+The physical significance of curvature
+In this chapter we consider the effect of space-time curvature on
+families of timelike and null curves. These could represent flow lines
+of fluids or the histories of photons. In §4.1 and §4.2 we derive the
+formulae for the rate of change of vorticity, shear and expansion of
+such families of curves; the equation for the rate of change of expansion (Raychaudhuri's equation) plays a central role in the proofs of
+the singularity theorems of chapter 8. In §4.3 we discuss the general
+inequalities on the energy-momentum tensor which imply that the
+gravitational effect ofmatter is always to tend to cause convergence of
+timelike and of null curves. A consequence of these energy conditions
+is, as is seen in §4.4, that conjugate or focal points will occur in families
+of non-rotating timelike or null geodesics in general space-times. In
+§4.5 it is shown that the existence of conjugate points implies the
+existence of variations ofcurves between two points which take a null
+geodesic into a timelike curve, or a timelike geodesic into a longer
+timelike curve.
+4.1
+Timelike curves
+In chapter 3 we saw that ifthe metric was static there was a relation
+between the magnitude of the timelike Killing vector and the
+Newtonian potential. One was able to tell whether a body was in a
+gravitational field by whether, ifreleased from rest, itwould accelerate
+withrespectto the static frame defined bythe Killing vector. However,
+in general, space-time will not have any Killing vectors. Thus one will
+not have any special frame against which to measure acceleration; the
+best one can do is to take two bodies close together and measure their'
+relative acceleration. This will enable one tq measure the gradient of
+the gravitational field. If one thinks of the metric as being analogous
+to the Newtonian potential, the gradient ofthe Newtonian field would
+correspond to the second derivatives ofthe metric. These are described
+by the Riemann tensor. Thus one would expect that the relative
+[ 78] [p.88] 4.1]
+TIMELIKE CURVES
+79
+(4.2)
+(4.3)
+acceleration of two neighbouring bodies would be related to some
+components of the Riemann tensor.
+In order to investigate this relation more precisely we shall examine
+the behaviour of a congruence of timelike curves with timelike unit
+tangent vector V (g(V, V) = -1). These curves could represent the
+histories ofsmall test particles, in which case they would be geodesics,
+or they might represent the flow lines of a fluid. Ifthis were a perfect
+fluid, then by (3.10)
+(,u+p) Va = -P:b hab,
+(4.1)
+where
+Va = va; b Vb
+is the acceleration of the flow lines and
+hab = 8ab+ vaY" is the tensor which projects a vector XE~ into its
+component in the subspace Hq of Tq orthogonal to V. One may also
+think of hab as the metric in Hq (cf. §2.7).
+Suppose A(t) is a curve with tangent vector Z = (oIOt))." Then one
+may construct a family A(t, s) of curves by moving each point of the
+curve A(t) a distance s along the integral curves ofV.1fOne now defines
+Z as (oloth-(t,s) it follows from the definition of the Lie derivative (see
+§2.4) that LvZ = 0 or in other words that
+D_Za = va.bZb.
+os
+•
+One may interpret Z as representing the separation of points equal
+distances from some arbitrary initial points along two neighbouring
+curves. Ifone adds a multiple ofV to Z then this vector wil
+
+[p.99] 90
+PHYSICAL SIGNIFICANCE OF CURVATURE
+[4.3
+This is the special case in which the energy-momentum tensor has
+a double null eigenvector (Ea+E4). The only observed occurrence of
+this form is for zero rest-mass fields when they represent radiation all
+of which is travelling in the direction Ea+E 4• In this casePI' P2 and K
+are zero.
+Type III.
+o
+0
+-v
+1
+1 -v
+1
+0
+This is the special case in which the energy-momentum tensor has
+a triple null eigenvector (Ea+E 4). There are no observed fields which
+have energy-momentum tensors of this form.
+Type IV.
+PI
+0
+o
+o
+This is the general case in which the energy-momentum tensor has no
+timelike or null eigenvector. There are no observed fields which have
+energy-momentum tensors of this form.
+For type I, the weak energy condition will hold ifP ~ 0, P+Pa ~ 0
+(a = 1, 2, 3). For type II it will hold ifPI ~ 0, P2 ~ 0, K ~ 0, V = + 1.
+These inequalities are very reasonable requirements and are satisfied
+by all experimentally detected fields. The condition will not hold for
+the physically unrealized types III and IV.
+The condition will also holdforthe scalar field¢ postulatedby Brans
+and Dicke and by Dicke (see Dicke (1964)). This field is required to be
+positive everywhere. It has an energy-momentum tensor of the form
+(3.6) where now m = o. The energy-tensor ofthe other fields is ¢ times
+what it would have been had the scalar field not existed.
+The condition will not hold for the'C'-field proposed by Hoyle and '
+Narlikar (1963). This again is a scalar field wi~h m zero, only this time
+the energy-momentum tensor has the opposite sign and so the energy
+density is negative. This allows the simultaneous creation ofquanta of
+positive energy fields and of the negative energy C-field. This process
+occurs in the steady-state model of the universe suggested by Hoyle [p.100] 4.3]
+ENERGY CONDITIONS
+91
+and Narlikar in which, as particles move apart due to the general
+expansion of the universe, new matter is continually being created to
+keep the average density constant. There is, however, a quantum
+mechanical difficulty associated with such a process. For even if the
+cross-section for the process were very small, the infinite phase space
+available to the positive and negative energy quanta would seem to
+result in an infinite number of such pairs being produced in a finite
+region of space-time.
+Such a catastrophe could not occur if the weak energy condition
+held. If a slightly stronger condition holds then creation is impossible
+in the sense that space-time must remain empty ifit is empty at one
+time and no matter comes in from infinity. Conversely, matter present
+at one time cannot disappear and so must be present at another time.
+The condition is
+The dominant energy condition
+For every timelike lfa, Tablfam~ 0, and Tablfa is a non-spacelike
+vector.
+This may be interpreted as saying that to any observer the local
+energy density appears non-negative and the local energy flow vector
+is non-spacelike. An equivalent statement is that in any orthonormal
+basis the energy dominates the other components of Tab' i.e.
+Too ~ ITabl
+for each a, b.
+This holds for type I if /1- ~ 0, - /1- ~ Pa ~ /1- (a = 1,2,3) and for
+type II if v = + 1, K ~ 0, 0 ~ Pi ~ K (i = 1,2). In other words, the
+dominant energy condition is the weak energy condition with the
+additional requirementthat the pressure should not exceed the energy
+density. This holds for all known forms of matter and there is in fact
+good reason for believing that this should be the case in all situations.
+For the speed of sound waves travelling in the E a direction is dPa/dP-
+(adiabatic) times the spee~of light. Thus dpJd/1- must be less than or
+equal to one, as by postulate (a) in §3.2 no signal can propagate faster
+than light. It follows that Pa ~ /1-' since, for every known form of
+matter, the pressures are small when the density is small. (Bludman
+and Ruderman (1968, 1970) have shown that there might be fields for
+which mass renormalization could lead to pressure being greater than
+the density. We feel, however, that this probably indicates a failure of
+renormalization theory rather than that such a situation would occur.)
+Now consider the situation depicted in figure 9 in which there is a 0 2 [p.101] 92
+PHYSICAL SIGNIFICANCE OF CURVATURE
+Surface8 {I = con8tant}
+[4.3
+1 increases
+1=1'
+( '11).
+FIGURE 9. A compact region tW ofspac&-time with past and future non-timelike
+boundaries {8'f1h. (8'f1). and timelike boundary (8'f1)a' The part of tW lying to
+the past of the surface Jf"{t') (defined by t =t') is tWIt').
+function t whose gradient is everywhere timelike. (It will be shown in
+§6.4 that such a function will exist provided space-time is not on the
+verge ofviolating causality.) The boundary 0'11 ofthe compact region
+'11 consists of a part (o'1lh. whose normal form n is non-spacelike and
+such that nat;bfflbis positive, a part (0'11)2 whose normal form n is non-
+spacelike and such that nat:bfflb is negative, and a remaining part
+(0'11)3 (which may be empty). The sign ofthe normal form n is given by
+the requirement that (n, X) be positive for all vectors X which point
+out of '11 (cf. §2.8), £'(t') denotes the surface t = t' and '1I(t') denotes
+the region of '11 for which t < t'. For later use in §7.4 we shall establish
+an inequality which holds not only for the energy-momentum tensor
+Tab but also for any symmetric tensor 8ab which satisfies the dominant
+energy condition. Applied to the energy-momentum tensor this
+inequality will show that Tab vanishes everywhere on '11 ifit vanishes
+on (0'11)3 and on the initial surface (o'1lh.
+Lemma 4.3.1
+There is some positive constant P such that for any tensor 8ab which'
+satisfies the dominant energy condition and vanishes on (o'1l)a,
+f
+8abt: adUb ~-f
+8abt; adUb
+.1t"(I)n'1l
+(iI'1I),
++pf'(f
+8abt; adUb) de'+f'(f
+8ab;a dub) dr.
+.1t"(I') n 4'
+.1t"(I') n 4' [p.102] 4.3]
+ENERGY CONDITIONS
+93
+Consider the volume integral
+By Gauss' theorem this can be transformed into an integral over the
+boundary o
+
+[p.113] 104
+PHYSICAL SIGNIFICANC.E o.F CURv..(TURE
+Geodesic
+[4.5
+X,~II
+cone
+exp, (8X(t))
+Surface 11 = constant
+(11 =_82)
+Null cOile
+Thus
+FIGURE 11. In a normal neighbourhood. surfaces at constant distance from q
+are orthogonal to the geodesics through q.
+The first term on the right is zero as %s is the unit tangent vector to
+the timelike geodesics from q. In the second term one has from the
+definition of the Lie derivative that
+DoD°
+osm= at os'
+o (0 0)
+(0
+D 0)
+1 0 (0 0)
+osg os' m= g os' at oS = '2mg O8' &
+= O.
+Therefore g(%s,%t) is independent of s. But at s = 0, (%t)a. = o.
+Thus g(%s, o/Ot) is identically zero.
+0
+Proof ofproposition 4.5.1. Let Oq denote the set of all timelike vectors
+at q. These constitute the interior of a solid cone in Tq with vertex at
+the origin. Let yet) be a timelike curve in 0/1 from q to p and let yet) be
+the piecewise ()2 curve in Tq defined by yet) = expq-I(y(t». Then
+identifying the tangent space to Tq with 1:z itself, one has
+(%t)ylq = (%t);lq· [p.114] 4.5]
+v ARIATION OF ARC-LENGTH
+105
+Therefore at q, (%t); will be timelike. This shows that the curve yet)
+will enter the region Oq. But expq (Oq) is the region of ON on which u is
+negative and in which by the previous lemma the surfaces of constant
+a are spacelike. Thus u must monotonically decrease along yet) since
+(oIOt)y being timelike can never be tangent to the surfaces ofconstant u
+and since at any non-differentiable point of yet) the two tangent
+vectors point into the same half ofthe null cone. Therefore p E expq(Oq)
+which completes the proof for timelike curves. To prove that a non-
+spacelike curve yet) remains in expq (Oq), one performs a small variation of yet) which makes it into a timelike curve. Let Y be a vector
+field on Tq such that in ON the induced vector field expq.(Y) is everywhere timelike and such that g(Y, (%t)Ylq) < o. For each e ~ 0 let
+per, e) be the curve ~ starting at the origin such that the tangent
+vector (o/ar)p equals (olot):ylt=r+eYIp<r.e)' Then p(r,e) depends differentiably on rand e. For each e> 0, expq(p(r,e» is a timelike curve
+in ON and so is contained in expq (Oq)' Thus the non-spacelike curve
+expq (p(r, 0» = y(r) is contained in eXPq (Oq) = expq (Oq).
+0
+Oorollary
+IfpEON can be reached from q by a non-spacelike curve but not by a
+timelike curve, then p lies on a null geodesic from q.
+0
+The length of a non-spacelike curve yet) from q to pis
+L(y,q,p) = I:[ -g(~, ~)Ydt,
+where the integral is taken over the differentiable sections ofthe curve.
+In a positive definite metric one mayseek the shortestcurve between
+two points but in a Lorentz metric there will not be any shortest curve
+as any curve can be deformed into a null curve which has zero length.
+However, in certain cases there will be a longest non-spacelike curve
+between two points or between a point and a spacelike three-surface.
+We deal first with the situation when the two points are close together.
+We shall then derive necessary conditions in the general case when the
+two points are not close. The sufficient condition in this case will be
+dealt with in §6.7.
+Proposition 4.5.3
+Let q and p lie in a convex normal neighbourhood ON. Then, if q and p
+can be joined by a non-spacelike curve in ON, the longest such curve
+is the unique non-spacelike geodesic curve in ON from q to p. Moreover, [p.115] 106
+PHYSICAL SIGNIFICANCE OF CURVATURE
+[4.5
+defining p(q,p) as the length of this curve if it exists, and as zero
+otherwise, p(q,p) is a continuous function on 0/1 x 0/1.
+By the definition of convex normal neighbourhoods (§2.5), there is
+a unique geodesic yet) in 0/1 with yeO) = q, y(1) = p. Since this geodesic
+depends differentiably on its endpoints, the function
+will be differentiable on 0/1 x 0/1. (This function u is the same as that
+in lemma 4.5.2.) Thus p(q,p) will be continuous on 0/1 x 0/1 since it
+equals [-u(q,p)]t if (J' < 0 and is zero otherwise. It now remains to
+show that if q and p can be joined by a timelike curve in 0/1 then the
+timelike geodesic y between them is the longest such curve. Let a(s, t)
+be eXPll (sX(t» as before where g(X(t), X(t» = - 1. If A(t) is a time-
+like curve in 0/1 from q to p, it can be represented as A(t) = a(f(t),t).
+Th@n
+Since the two vectors on the right are mutually orthogonal by lemma
+4.5.2. and since g«%s)a., (%s)a.) = - 1, this gives
+the equality holding if and only if (%t)a. = 0 and hence if and only if
+Ais a geodesic curve. Thus
+L(A,q,p) ~ f:f'(t)dt = p(q,p),
+the equality holding if and only if Ais the unique geodesic curve in 0/1
+from q to p.
+0
+We shall now consider the case where q and p are not necessarily
+contained in a convex normal neighbourhood 0/1. By considering small
+variations we shall derive necessary conditions for a timelike curve
+yet) from q to p to be the longest such curve from q to p. A variation a
+of yet) is a 0 1- map a: (- 6, 6) X[0, tp ] ~ J( such that
+(1) a(O,t) = yet);
+(2) there is a subdivision 0 = t1 < t2 ••• < tn = tp of [0, tp ] such that
+a is 0 3 on each (-6,6) X [ti,ti+1];
+(3) a(u,O) = q, a(u, tp ) = p;
+(4) for each constant u, a(u, t) is a timelike curve. [p.116] 4.5]
+VARIATION OF ARC-LENGTH
+107
+The vector (%u)"lu_o will be called the variation vector Z. Con-
+versely, given a continuous, piecewise ()2 vector field Z along yet)
+vanishing at q and p, we may define a variation a for which Z will
+be the variation vector by:
+a(u, t) = expr (uZlr)'
+where u E ( - €, €) for some € > 0 and r = yet).
+Lemma 4.5.4
+The variation of the length from q to p under a is
+oLI
+n-l rl+· (0 {
+D °
+(oj) oJ)
+n-l (0
+[
+0])
+au ..-0 = i~dl' g au' j-1 Ft Ft-j-2
+Ol
+Ft
+dt+ i~/ au' j-1 Ft
+'
+where j2 = g(%t,O/ot) is the magnitude of the tangent vector and
+[j-l 0/Ol] is the discontinuity at one of the singular points of yet).
+We have:
+~~I..=o = >::uf( -0 (~. ~))ldt
+= -I:fg(D ~
+~)j-ldt
+au Ol' ot
+= -I:fg(D ~ ~)j-Idt
+ot au' ot
+Integrating the first term by parts one has the required formula.
+0
+One may simplify the formula by choosing the parameter t to be the
+arc-length s. Then g(%t,olot) = -
+
+[p.127] 118
+EXACT SOLUTIONS
+[5
+(5.3)
+generalizations are discussed in §5.4. It is shown that all such simple
+models will have a singular origin provided that A does not take large
+positive values. The spherically symmetric metrics which describe
+the field outside a massive charged or neutral body are examined in
+§5.5, and the axially symmetric metrics describing the field outside
+a special class of massive rotating bodies are described in §5.6. It is
+shown that some ofthe apparent singularities are simply due to a bad
+choice of coordinates. In §5.7 we describe the Godel universe and in
+§5.8 the Taub-NUT solutions. These probably do not represent the
+actual universe but they are of interest because of their pathological
+global properties. Finally some other exact solutions of interest are
+mentioned in §5.9.
+5.1
+Minkowski space-time
+Minkowski space-time (..,ft,"l) is the simplest empty space-time in
+General Relativity, and is in fact the space-time ofSpecial Relativity.
+Mathematically, it is the manifold R4 with a flat Lorentz metric "l.
+In terms of the natural coordinates (XI ,X2,X3,X4) on R4, the metric "l
+can be expressed in the form
+<isS = - (dx4)2+ (dXI)2+ (dx2)2+ (dx3)2.
+(5.2)
+If one uses spherical polar coordinates
+(t, r, 0, if»
+where x4 = t,
+x 3 = r C08 0, x 2 = rsinocos if>, Xl = rsinosin if>, the metric takes the
+form
+This metric is apparently singular for r = 0 and sin 0 = 0; however
+this is because the coordinates used are not admissible coordinates at
+these points. To obtain regular coordinate neighbourhoods one has to
+restrict the coordinates, e.g. to the ranges 0 < r < 00, 0 < 0 < TT,
+0< if> < 2TT. One needs two such coordinate neighbourhoods to cover
+the whole of Minkowski space.
+An alternative coordinate system is given by choosing advanced
+and retarded null coordinates v, W defined by v = t+ r, W = t- r
+(=> v ~ w). The metric becomes
+ds2= -dvdw+!(v-w)2(d(J2+ sin20dif>2),
+(5.4)
+,
+where - 00 < v < 00,
+- 00 < w < 00. The absence in the metric of
+terms in dv2, dw2corresponds to the fact that the surfaces {w = constant}, {v = constant} are null (i.e. w;aw;bgab = 0 = v;av;bgab); see
+figure 12. [p.128] 5.1]
+r=O
+MINKOWSKI SPACE-TIME
+w = constant
+119
+r
+v = constant
+IE--~E--~~--r
+v = constant
+m
+~
+FIGURE 12. Minkowski space. The null coordinate v(w) may be thought of as
+incoming (outgoing) spherical waves travelling at the speed of light; they are
+advanced
+(retarded)
+time
+coordinates.
+The
+intersection
+of
+a
+surface
+{v =constant} with a surface {w =constant} is a two-sphere.
+(i) The v, w coordinate surfaces (one coordinate is suppressed).
+(ii) The (t, r) plane; each point represents a two-sphere ofradills r.
+In a coordinate system in which the metric takes the form (5.2), the
+geodesics have the form xa(v) = bav+ea where baand ea are constants.
+Thus the exponential map expp : Tp 4 ..,II is given by
+xa(expp X) = Xa+xa(p),
+where Xa are the components ofX with respect to the coordinate basis
+{olexa} of Tp- Since exp is one-one and onto, it is a diffeomorphism
+between Tp and Jt. Thus any two points of Jt can be joined by a
+unique geodesic curve. AB exp is defined everywhere on Tp for all p,
+(Jt, Yl) is geodesically complete.
+For a spacelike three-surface Y, the future (past) Cauchy develop-
+ment D+(Y) (D-(Y» is defined as the set ofall points qEJt such that
+each past-directed (future-directed) inextendible non-spacelike curve
+through q intersects Y, cf. §6.5. IfD+(Y) uD-(Y) = Jt, i.e. ifevery
+inextendible non-spacelike curve in Jt intersects Y, then Y is said
+to be a Cauchy surface. In Minkowski space-time, the surfaces
+{x4 = constant} are a family ofCauchy surfaces which cover the whole
+ofJt. One can however find inextendible spacelike surfaces which are
+not Cauchy surfaces; for example the surfaces
+~: {- (x4)2 + (X1)2+(X2)2+ (xlI)2 = U = constant}, [p.129] 120
+EXACT SOLUTIONS
+[5.1
+where u < 0, x4 < 0, are spacelike surfaces which lie entirely inside the
+past null cone of the origin 0, and so are not Cauchy surfaces (see
+figure 13). In fact the future Cauchy development of ~ is the region
+bounded by ~ and the past light cone of the origin. By lemma 4.5.2,
+the timelike geodesics through the origin 0 are orthogonal to the
+surfaces
+~. If
+rED+(~)U D-(~) then
+the timelike geodesic
+through r and 0 is the longest timelike curve between rand Y (T" If
+Surface
+{xt = constant)
+Past null
+cone of 0
+FIGURE 13. A Cauchy surface {xc:;:: constant} in Minkowski space-time, and
+spacelike surfaces .9""•.9"", which are not Cauchy surfaces. The norma.l geodesics
+to the surfaces .9"(/', .9"(/', all intersect at O.
+however r does not lie in D+(~)u D-(~) there is no longest timelike
+curve between r and ~: either r lies in the region u ~ 0, in which case
+there is no timelike geodesic through r orthogonal to ~, or r lies in
+the region u < 0, x4 ~ 0, in which case there is a timelike geodesic
+through r orthogonal to ~ but this geodesic is not the longest curve-
+between r and ~ as it contains a conjugate point to ~ at 0 (cf.
+figure 13).
+To study the structure ofinfinity in Minkowski space-time, we shall
+use the interesting representation ofthis space-timegiven by Penrose.
+From the null coordinates v, W, we define new null coordinates in [p.130] 5.1]
+MINKOWSKI SPACE-TIME
+121
+which the infinities of v, w have been transformed to finite values;
+thus we define p, q by tanp = v, tanq = w where -l11 < P < l",
+-l11 < q < !11 (andp ~ q). Then the metric of (.L,Yl) takes the form
+ds2= sec2p sec2q( - dpdq+ ! sinll (p - q)(d02 + sin20 d¢2».
+The physical metric Yl is therefore conformal to the metric g given by
+dsll = -4dpdq+sin2(p-q)(d02+sinllOd¢2).
+(5.5)
+This metric can be reduced to a more usual form by defining
+t' = p+q,
+r' = p-q,
+where
+-11 < t' +r' < 11,
+-11 < t' -r' < 11,
+r' ~ 0;
+(5.6)
+(5.5) is then
+d82= - (dt')2+ (dr')2+sin2r'(dOll+sin20d¢2).
+(5.7)
+Thus the whole ofMinkowski space-time is given by the region (5.6) of
+the metric
+where ds2 is determined by (5.7); the coordinates t, r of (5.3) are
+related to t', r' by
+2t = t
+
+[p.141] 132
+EXACT SOLUTIONS
+[5.2
+,.' =
+.~1I'
+Lines
+{r = constant}
+Surfaces
+1I:l111:--t--+-+-t""~~~{t'= constant}
+:;-.l.~lrl--+"'l:A--r {t =+~}
+Surfaces
+{t = constant}
+{t =-~}
+Lines
+~H-Jj:.,!4t-;~~;zt::r-{x = constant}
+~5~~~~~td:;::NUllgeodesics
+t;
+from infinity to r
+t' = O---'N-JI
+(I)
+p
+Timelike
+geodesics
+fromp
+Null
+/."......."1-"- geodesic
+fromp
+(li)
+FIGURE 20
+(i) Universal anti-de Sitter space is conformal to one half of the Einstein
+static universe. While coordinates (t'. r, 0, ¢J) cover the whole space, coordinates
+(t. X. 0, ¢J) cover only one diamond-shaped region 88 shown..The geodesics
+orthogonal to the surfaces {t =constant} all converge at p and q. and then
+diverge out into similar diamond-shaped regions.
+(ii) The Penrose diagram ofuniversal anti-de Sitter space. Infinity consists of
+the timelike surface oF and the disjoint points i+, i-. The projection of some
+timelike and null geodesics is shown. [p.142] 5.2]
+ANTI-DE SITTER SPACE-TIME
+133
+One cannot find a conformal transformation which makes timelike
+infinity finite withont pinching off the Einstein static universe to a
+point (ifa conformal transformation makes the time coordinate finite
+it also scales the space sections by an infinite factor), so we represent
+timelike infinity by the disjoint points i+, i-.
+The lines {X,(J, cf> constant} are the geodesics orthogonal to the
+surfaces {t = constant}; they all converge to points g (respectively, p)
+in the future (respectively, past) of the surface, and this convergence
+is the reason for the apparent (coordinate) singularities in the original
+metric form. The region covered by these coordinates is the region
+between the surface t = 0 and the null surfaces on which these normals
+become degenerate.
+The space has two further interesting properties. First, as a consequence of the timelike infinity, there exists no Cauchy surface
+whatever in the space. While one can find families of spacelike
+surfaces (such as the surfaces {t' = constant}) which cover the space
+completely, each surface being a complete cross-section of the space-
+time, one can find null geodesics which never intersect any given
+surface in the family. Given initial data on any such surface, one
+cannot predict beyond the Cauchy development of the surface; thus
+from the surface {t = O}, one can predict only in the region covered by
+the coordinates t, X, 0, cf>. Any attempt to predict beyond this region is
+prevented by fresh information coming in from the timelike infinity,
+Secondly, corresponding to the fact that the geodesic normals from
+t = 0 all converge at p and g, all the past timelike geodesics from p
+expand out (normal to the surfaces {t = constant}) and reconverge
+at g. In fact, all the timelike geodesics from any point in this space
+(to either the past or future) reconverge to an image point, diverging
+again from this image point to refocus at a second image point, and
+so on. The future timelike geodesics from p therefore never reach oF, in
+contrastto the future null geodesics which go to oF from p and form the
+boundary of the future of p. This separation of timelike and null
+geodesics results in the existence ofregions in the future ofp (i.e. which
+can be reached from p by a future-directed timelike line) which cannot
+be reached from p by any geodesic. The set of points which can be
+reached by future-directed timelike lines from p is the set of points
+lying beyond the future null cone ofp; the set ofpoints which can be
+reached from p by future-directed timelike geodesics is the interior of
+the infinite chain of diamond-shaped regions similar to that covered
+by coordinates (t,x,O, cf». One notes that all points in the Cauchy [p.143] 134
+EXACT SOLUTIONS
+[5.2
+development of the surface t = 0 can be reached from this surface by
+a unique geodesic normal to this surface, but that a general point
+outside this Cauchy development cannot be reached by any geodesic
+normal to the surface.
+5.3
+Robertson-Walker spaces
+So far, we have not considered the relation of exact solutions to the
+physical universe. Following Einstein, we can ask: can one find spacetimes which are exact solutions for some suitable form of matter and
+which give a good representation of the large scale properties of the
+observable universe? Ifso, we can claim to have a reasonable' cosmological model' or model of the physical universe.
+However we are not able to make cosmological models without some
+admixture ofideology. In the earliest cosmologies, man placed himself
+in a commanding position at the centre ofthe universe. Since the time
+ofCopernicus we have been steadily demoted to a medium sized planet
+going round a medium sized star on the outer edge of a fairly average
+galaxy, which is itself simply one of a local group of galaxies. Indeed
+we are now so democratic that we would not claim that our position in
+space is specially distinguished in any way. We shall, following Bondi
+(1960), call this assumption the Oopernican principle.
+A reasonable interpretation of this somewhat vague principle is to
+understand it as implying that, when viewed on a suitable scale, the
+universe is approximately spatially homogeneous.
+By spatially homogeneous, we mean there is a group of isometries
+which acts freely on JI, and whose surfaces of transitivity are space-
+like three-surfaces; in other words, any point on one of these surfaces
+is equivalent to any other point on the same surface. Of course, the
+universe is not exactly spatially homogeneous; there are local irregularities, such as stars and galaxies. Nevertheless it might seem reasonable to suppose that the universe is spatially homogeneous on a large
+enough scale.
+While one can build mathematical models fulfilling this requirement
+of homogeneity (see next section), it is difficult to test homogeneity
+directly by observation, as there is no simple way of measuring the
+separation between us and distant objects. This difficulty is eased by
+the fact that we can, in principle, fairly easily observe iBotropies in
+extr
+
+[p.155] 146
+EXACT SOLUTIONS
+[5.4
+World-lines
+of galaxies
+{x = constant}
+/7'---,~"..Surfaces
+{t = constant}
+~-------"""TJ
+(i)
+Golaxies not seen by 0 at p
+Past light cone
+of point p sa (To, 0, 0)
+O's world·line
+SingularitY-':::::~\llliIl
+Galo.xy
+world-Jines~;~~~~~~~:~~~~
+these have
+:::~~~~~~~~
+been seen
+by 0 at p
+Surfaces
+{t = constant}
+(ii)
+FIGURE 22. Dust-filled Bianchi I space with a pancake singularity.
+(i) The (T, '1]) plane; null lines are at ± 45°.
+(ii) A half-section of the space in (T, '1], y) coordinates (the z-coordinate is
+suppressed), showing the past light cone of the point p := (To, 0, 0). There is a
+particle horizon in the y-direction but not in the x- (i.e;~) direction.
+field equations equivalent to (5.16), (5.17) inside "f", and is a flat
+space-time outside "f". However the solution is not 0 1 across the
+boundary of "f", and in fact the density of matter becomes infinite on
+this boundary (as S-+ 0 there). Since the first derivatives are not
+square integrable, the Einstein field equations cannot be interEreted
+on the boundary even in a distributional sense (see §8.4). While the [p.156] 5.4]
+HOMOGENEOUS COSMOLOGIES
+147
+extension onto the boundary is unique, it is in no way unique beyond
+the boundary. We have carried out the extension in the case of dust;
+a similar extension could be carried out if one had a mixture ofmatter
+and radiation.
+Let us now return to considering general non-empty spatially homogeneous models. The existence of a singularity in these models will
+follow directly from Raychaudhuri's equation if the motion of the
+matter is geodesic and without rotation (as must be the case, for
+example, if the world-lines are orthogonal to the surfaces of homogeneity) and the timelike convergence condition is satisfied; however
+there exist such spaces in which the matter accelerates and rotates,
+and either of these factors could possibly prevent the existence of a
+singularity. The following result, which is an improved version of a
+theorem of Hawking and Ellis (1965), shows that in fact neither
+acceleration nor rotation can prevent the existence of singularities in
+these models.
+Theorem
+(.A', g) cannot be timelike geodesically complete if:
+(1) RabKaKb> 0 for all timelike and null vectors K (this is true
+if the energy-momentum tensor is type I (§ 4.3) and It +Pi > 0,
+1t+~Pi-411A > 0);
+i
+(2) there exist equations of motion for the matter fields such that
+the Cauchy problem has a unique solution (see chapter 7);
+(3) the Cauchy data on some spacelike three-surface Jr is invariant
+under a group of diffeomorphisms of Jr which is transitive on Jr.
+Since the intrinsic geometry of Jr is invariant under a transitive
+group of diffeomorphisms, these are isometries and Jr is complete,
+i.e. cannot have any boundary. It can be shown (see §6.5) that ifthere
+is a non-spacelike curve which intersectsJr more than once, then there
+exists a covering manifoldviiof.A'in which each connected component
+ofthe image ofJrwill not intersect any non-spacelike curve more than
+once. We shall assume that.1l is timelike geodesically complete, and
+show that this is inconsistent with conditions (1), (2) and (3).
+Let .if be a connected component of the image ofJr in JI. By (3),
+"-
+the Cauchy data on Yf is homogeneous. Therefore by condition (2),
+"-
+the Cauchy development ofany region ofYf is isometric to the Cauchy
+"-
+development of any other similar region of Yf. This implies that the
+surfaces {s = constant} are homogeneous ifthey lie within the Cauchy [p.157] 148
+EXACT SOLUTIONS
+[5.4
+"
+"
+development of .Yt, where 8 is the distance from Yf measured along
+the geodesic normals to £'. These surfaces must lie either entirely
+within or entirely outside the Cauchy development of.it>, as otherwise
+"
+there would be equivalent regions in Yf which had inequivalent
+Cauchy evolutions. The surfaces {8 = constant} will lie in the Cauchy
+development of if as long as they remain spacelike, because the
+"
+boundary of the Cauchy development of Yf (if it exists) must be null
+(§ 6.5).
+• The geodesics orthogonal to £' will be orthogonal to the surfaces
+{8 = constant}, as a vector representing the separation of points equal
+distances along neighbouring geodesics will remain orthogonal to the
+geodesics if it is so initially. As in §4.1, one can repr~sentthe spatial
+Reparation of neighbouring geodesics orthogonal to .Yt' by a matrix A
+"
+which is the unit matrix on :Yf'. By homogeneity, it will be constant on
+the surfaces {8 = constant} while these lie in the Cauchy development
+of :ff. While A is non-degenerate, the map from if to a surface
+{8 = constant} defined by the normal geodesics will be of rank three
+and so the surfaces will be spacelike three-surfaces contained within
+the Cauchy development ofit. The expansion
+. () = (detA)-1d(detA)/d8
+of these geodesics obeys Raychaudhuri's equation (4.26) with the
+vorticity and acceleration zero. By condition (1), Rab yayb is positive
+for all timelike vectors ya. Thus () will become infinite and A will be
+degenerate for some finite positive or negative value 80of 8. The map
+from £' to the surface 8 = 80 can have at most rank two; there wiil
+therefore be at least one vector field Z on :if such that AZ = O. The
+integral curves ofthis vector field are curves in.itwhich are mapped by
+the geodesic normals to one point in the surface 8 = 80, Thus this
+surface will be at most two-dimensional. As the geodesics lie in the
+Cauchy development of.it for 181 < 1801, the surface 8 = 80 will lie in
+the Cauchy development or on the boundary of the Cauchy develop-
+ment of if. By condition (I), the energy-momentum tensor has a
+unique timelike eigenvector at each point. These eigenvectors will
+form a 0 1timelike vector field whose integral curves may be thought·
+ofas representing the flow lines ofthe matter. As the surface 8 = 80lies
+in the Cauchy development ofit' or on its boundary, all the flow lines
+that pass tlu:ough it must intersect.it. But then as .itis homogeneous,
+all the flow li~that pass throu
+
+[p.169] 160
+EXACT SOLUTIONS
+[5.0
+p
+r=O
+(singularity)
+p
+r=O
+(singularity)
+p
+r=O
+(singularity)
+r=m
+p
+r=O
+(singularity)
+p
+r=oo
+I
+(i)
+r =00
+Homogeneous
+surfaces
+{r = constant}
+(ii)
+FIGURE 26. Penrose diagrams for the maximally extended Reissner-Nordstr6m
+solutions:
+0)
+I
+I
+(1
+e =m,
+(ti) el :> m l ,
+In the first case there is an infinite chain or regions I (00 > r> m) connected by
+regions III (m > r > 0). The pointsp are not part ofthe singularity at r = 0, but
+are really exceptional points at infinity. [p.170] 5.5]
+THE REISSNER-NORDSTROM SOLUTION
+161
+A particle P crossing the surface r = r+ would appear to have
+infinite redshift to an observer 0 whose world-line remains outside
+r = r+ and approaches the future infinity i+ (figure 25). In the region II
+between r = r+ and r = r_, the surfaces ofconstant rare spacelike and
+so each point of the figure represents a two-sphere which is a closed
+trapped surface. An observer P crossing the surface r = r_ would see
+the whole of the history of one of the asymptotically flat regions I in
+a finite time. Objects in this region would therefore appear to be
+infinitely blue-shifted as they approached i+. This suggests that the
+surface r = r_ would be unstable against small perturbations in the
+initial data on the spacelike surface,<;P, and that such perturbations
+would in general lead to singularities on r = r_.
+5.6
+The Kerr solution
+In general, astronomical bodies are rotating and so one would not
+expect the solution outside them to be exactly spherically symmetric.
+The Kerr solutions are the only known family ofexact solutions which
+could represent the stationary axisymmetric asymptotically flat field
+outside a rotating massive object. They will be the exterior solutions
+only for massive rotating bodies with a particular combination of
+multipole moments; bodies with different combinations of moments
+will have other exterior solutions. The Kerr solutions do however
+appear to be the only possible exterior solutions for black holes (see
+§9.2 and §9.3).
+The solutions can be given in Boyer and Lindquist coordinates
+(r, (J, ¢, t) in which the metric takes the form
+d82 = p2(~2 +d()2) + (r2+a2)sin2(Jd¢2-dt2+ 2;r (asin2(Jd¢-dt)2,
+(5.29)
+where
+p2(r,(J) == r2+a2cos2(J
+and
+Ll(r) == r2-2mr+a2.
+m and a are constants, m representing the mass and ma the angular
+momentum as measured from infinity (Boyer and Price (1965»; when
+a = 0 the solution reduces to the Schwarzschild solution. This metric
+form is clearly invariant under simultaneous inversion of t and ¢,
+i.e. under the transformation t 4
+- t, ¢ 4
+- ¢, although it is not
+invariant under inversion oft alone (except when a = 0). This is what
+one would expect, since time inversion of a rotating object produces
+an object rotating in the opposite direction. [p.171] 162
+EXACT SOLUTIONS
+[5.6
+(5.30)
+When all > mil, 11 > 0 and the above metric is singular only when
+r = O. The singularity at r = 0 is not in fact a point but a ring, as can
+be seen by transforming to Kerr-8child coordinates (x, y, 'I., t), where
+x+iy = (r+ ia) sin Oexpif(d¢+al1-1dr),
+'I. = rcose,
+1=f(dt+ (rll+all)11-1dr)-r.
+In these coordinates, the metric takes the form
+d811 = dx2 + dyll+dzll - dI2
+2mr3
+(r(Xdx+Ydy)-a(Xdy-ydx)
+zdz d-)l1
++
++-+t
+r4+allzll
+rll + all
+r'
+where r is determined implicitly, up to a sign, in terms of x, y, 'I. by
+r4_(xll+yll+zll_all)rll_allzlI = O.
+For r =1= 0, the surfaces {r = constant} are confocal ellipsoids in the
+(x, y, 'I.) plane, which degenerate for r = 0 to the disc '1.11 + yll ~ all, 'I. = O.
+The ring Xll+yll = all, 'I. = 0 which is the boundary ofthis disc, is a real
+curvature singularity as the scalar polynomial RabcdRabcd diverges
+there. However no scalar polynomial diverges on the disc except at
+the boundary ring. The function r can in fact be analytically continued from positive to negative values through the interior ofthe disc
+Xli + y2 < all,
+'I. = 0, to obtain a maximal analytic extension of the
+solution.
+To do this, one attaches another plane defined by coordinates
+(x',y',z') where a point on the top side of the disc Xll+yll < all, 'I. = 0
+in the (x, y, 'I.) plane is identified with a point with the same x and y
+coordinates on the bottom side of the corresponding disc in the
+(x', y', 'I.') plane. Similarly a point on the bottom side of the disc in the
+(x, y, 'I.) plane is identified with a point on the top side ofthe disc in the
+(x',y',z') plane (see figure 27). The metric (5.30) extends in the obvious
+way to this larger manifold. The metric on the (x', y', 'I.') region is again
+of the form (5.29), but with negative rather than positive values of r.
+At large negative values of r, the space is again asymptotically flat
+but this time w;ith negative mass. For small negative values ofr near
+the ring singularity, the vector 0lo¢ is timelike, so the circles
+(t = constant, r = constant, e= constant) are closed timelike curves.
+These closed timelike curves can be deformed to pass through any
+point of the extended space (Carter (1968a». This solution is geodesic- [p.172] 5.6]
+THE KERR SOLUTION
+163
+ally incomplete at the ring singularity. However the only timelike and
+null geodesics which reach this singularity are those in the equatorial
+plane on the positive r side (Carter (1968a)).
+r = constant
+(r> 0)
+Symmetry
+axis
+0 "" constant
+(j=O
+S)'mmptry
+axis
+(j=O
+FIGURE 27. The maximal extension ofthe Kerr solution for at > mt is obtained
+by identifying the top ofthe discxt+yt < at, z =.0 in the (x, y. z) plane with the
+bottom of the corresponding disc in the (x', y', z') plane, and vice versa. The
+figure shows the sections y = 0, y' = 0 of these planes. On circling twice round
+the singularity at x 2+yt =at, Z =0 one passes from the (x, y, z) plane to tho
+(x'. y', z') plane (where r is negative) and back to the (x, y, z) plano (where r is
+positive).
+The extension in the case a2 < m2 is rather more complicated,
+because of the existence of the two values r+ = m + (m2 - a2)l and
+r_ = m-(m2_a2)1 of r at which
+~\r) vanishes. These surfaces 
+
+[p.183] 174
+EXACT SOLUTIONS
+[5.8
+This kind of non-Hausdorff behaviour is different from that in the
+example given in §2.1. In that example, one could have continuous
+curves which bifurcate, one branch going into one region and another
+branch going into another region. Such behaviour of an observer's
+world-line would be very uncomfortable. However the manifold
+(I+II+III)/O does not have any such bifurcating curves; curves in I
+can be extended into II or III but not into both simultaneously. Thus
+one might be prepared to relax the Hausdorffrequirement on a space-
+time model to allow this sort ofsituation but not the sort in which one
+gets bifurcating curves. Further work on non-Hausdorff space-times
+can be found in the papers of Hajicek (1971).
+Condition (1) is in fact satisfied by the action of0 on.Jj -{p}. Thus
+the space (..i' -{ph Yi)/O is in some sense the maximal non-Hausdorff
+extension of (..I, ~). However it is still not geodesically complete
+because there are geodesics which pass through the point p which has
+been left out. Ifp is included the action of the group does not satisfy
+condition (1), and so the quotient.Jj10 is not even a non-Hausdorff
+manifold. However consider the bundle oflinear frames L(.Jj), i.e. the
+collection ofall pairs (X, Y), X, Y E Tcr, oflinearly independent vectors
+at all points qE.Jj. The action of an element A of the isometry group
+o on';; induces an action A* on L(.Jj) which takes the frame (X, Y)
+at q to the frame (A.X,A. Y) at A(q). This action satisfies condition (1) because even for (X, Y) E Tp , A.X =t= X and A.Y =t= Y unless
+A = identity, and satisfies condition (2) even ifX and Y lie on the null
+cone of p. Thus the quotient L(.Jj)/O is a Hausdorff manifold. It is
+a fibre bundle over the non-Hausdorff non-manifold..K/0. One could
+in a sense regard it as the bundle of linear frames for this space. The
+fact that the bundle of frames can be well behaved even though the
+space is not, suggests that it is useful to look at singularities by using
+the bundle of linear frames. A general procedure for doing this will
+be given in §8.3.
+We shall now return to the four-dimensional Taub space
+(o4,~)
+where ..Iis Rl X S3 and ~ is given by (5.32). As ..I is simply connected,
+one cannot take a covering space as we did in the two-dimensional
+example. However one can achieve a similar result by considering ..I
+as a fibre bundle over 8 2 with fibre Rl x 8 1; the bundle projection
+17: .L_S2 is defined by (t,'l/F,O,ep)-(O,ep): This is in fact the pro-
+duct with the t-axis of the Hopf fibering sa_s2 (Steenrod (1951»
+which has fibre SI. The space (.L,~) admits a four-dimensional group
+of isometries whose surfaces of transitivity are the three-spheres [p.184] 5.8]
+TAUB-NUT SPACE
+175
+{t = constant}. This group of isometries maps fibres of the bundle
+17: JI_82into fibres, and so the pairs (~, g) are all isometric, where
+~ is a fibre (~ ~ Rl X 81) and g is the metric induced on the fibre
+by the four-dimensional metric g on Jt. The fibre ~ can be regarded
+as the (t, J/f) plane, and the metric g on ~ is obtained from (5.32) by
+dropping the terms in dO and d¢>; thus g is given by
+(5.33)
+The tangent space Tq at the point qEJI can be decomposed into
+a vertical subspace ~ which is tangent to the fibre and is spanned by
+the vectors a/Ot and a/aJ/f, and a horizontal subspace Hq which is
+spanned by the vectors alae and a/a¢>-cosoa/OJ/f. Any vector XETq
+can be split into a part Xv lying in ~ and a part XH lying in Hq• The
+metric g on Tg can then be expressed as
+y(X, Y) = Yv(Xv ,Yv)+ (t2+12) YH(l7*XH,l7.YH ),
+(5.34)
+where Yv == g and gH is the standard metric on the two-sphere given
+by ds2= d02+sin20d¢>2. Thus although the metric g is not the direct
+sum ofgv and (t2+ 12)gH (because Rl x 8 3 is not the direct product of
+Rl x 81 with 82) it can nevertheless be regarded as such a sum locally.
+The interesting part of the metric g is contained in gv and we shall
+therefore consider analytic extensions ofthe pair (~,gv). When combined with the metric gH of the two-sphere as in (5.34), these give
+analytic extensions of (Jt, g).
+The metric gv, given by (5.33), has singularities at t = t± where
+U = o. However if one takes the manifold ~ defined by J/f and by
+C < t < t+, (~o, gv) can be extended by defining
+./,'
+./,
+1I dt
+'i'
+= 'i' + 21
+U(t)"
+The metric then takes the form gv' given by
+ds2 == 41dJ/f'(lU(t) dJ/f' - dt).
+This is analytic on the manifold ~' with topology 81 x R defined by
+J/f' and by - co < t < co. The region C < t < t+ of (~', gv') is isometric
+with
+(~o, gv). There are no closed timelike curves in the region
+C < t < t+ but there are for t < C and for t > t+. The behaviour is very
+much as for the space (JI', g') we considered before, except that there
+are now two horizons (at t = C and t = t+) instead of the one horizon
+(att = 0). One family ofnull geodesics crosses both horizons t = C and [p.185] 17ti
+EXACT SOLUTIONS
+[5.8
+./,"
+./,
+1f dt
+'i'
+= 'i' - 21
+U{t)"
+t = t+ but the other family spirals round near these surfaces and is
+incomplete.
+As before, one can make another extension by defining the
+coordinate
+The metric then takes the form gy" given by
+ds2 = 41 d1/f"(lU(t) d1/f" +dt)
+which is analytic on the manifold §" defined by
+1/f" and by
+- co < t < 00, and is again isometric to (§o, gy) on C < t < t+.
+Once again one can show the relation between the different exten-
+sions by going to the covering space. The covering space of §
+0 is the
+manifold .#0 defined
+by the coordinates
+- 00 < 1/f < 00 and by
+C < t < t+. On.#o the metriclly can be written in the double null form
+ds2 = 412U(t) d1/f' d1/f",
+(5.35)
+where - 00 < 1/f' < 00, - 00 < 1/f" < 00. One can extend this in a manner
+similar to that used in the Reissner-Nordstrom solution. Define new
+coordinates (u+, v+) and (u_, v_) on §o by
+u± = arctan (exp1/f'/a±),
+v± = arctan (-(exp-1/f"/a±)),
+h
+-
+t+-C
+d
+_
+t+-C
+.
+were
+a+ -
+41(mt+12)
+an
+a_ -
+4nl(mt+12)'
+n is some int.ep;er p;rent.er thnn (m.I., + 12)/('111L -I [2). Thllll t.l1O ,"cl.ric gv
+ob
+
+[p.197] 188
+OAUSAL STRUCTURE
+[6.3
+FIGURE 36. An achronal bounda.ry 9' can be divided into four sets: .9"0 is space-
+like, 9'N is null, and g+ (respectively, 9'_l is the future (respectively, past)
+endpoint of a null geodesic in Y.
+It is sufficientto prove (i) since.9' can also be regarded as the boundary
+of the past set (.A-9'). Let {x,J be an infinite sequence of points in
+[+(q) n 11/ which converge on q. If [+(q) c [+(9" -
+if~), there will be
+a past-directed timelike curve An to 9'- 11/ from each xn. By lemma
+6.2.1 there will be a past-directed limit curve Afrom q to (9'- 11/). As
+[-(q) is open and contained in.A-9', [-(q) n9'is empty. Thus Amust
+be a null geodesic and must lie in.9'.
+0
+As an example of the above results, consider j+(:;t") = l+(:;t"), the
+boundary of the future of a closed set:;t". By proposition 6.3.1 it is an
+achronal manifold and by the above lemma, every point of j(:;t") -:;t"
+belongs to [j+(:;t")}N or [j+(:;t")]+. This means that j(:;t") -:;t" is
+generated by null geodesic segments which may have future end-
+points in j+(:;t") - :;t" but which, if they do have past endpoints, can
+have them only on :;t" itself. As figure 34 shows, there may be null
+geodesic generating segments which do not have past endpoints at all
+but which go out to infinity. This example is admittedly rather
+artificial but Penrose (1965a) has shown that similar behaviour
+occurs in something as simple as the plane wave solutions; the anti-
+de Sitter (§ 5.2) and Reissner-Nordstrom (§ 5.5) solutions provide
+other examples. We shall see in §6.6 that this behaviour is connected
+with the absence of a Cauchy surface for these solutions.
+We shall say that an open set tPJ is causally simple if for every
+compact set :;t" c tPJ,
+j+(:;t") n tPJ = E+(:;t") n tPJ
+and
+j-(:;t") n tPJ = E-(:;t") n tPJ.
+This is equivalent to saying that J+(:;t") and J-(:;t") are closed in tPJ. [p.198] 6.4]
+OAUSALITY OONDITIONS
+189
+6.4
+Causality conditions
+Postulate (a) of §3.2 required only that causality should hold locally;
+the global question was left open. Thus we did not rule out the possibility that on a large scale there might be closed timelike curves (i.e.
+timelike Sl's). However the existence of such curves would seem to
+lead to the possibility of logical paradoxes: for, one could imagine
+that with a suitable rocketship one could travel round such a curve
+and, arriving back before one's departure, one could prevent oneself
+from setting out in the first place. Of course there is a contradiction
+only if one assumes a simple notion of free will; but this is not something which can be dropped lightly since the whole of our philosophy
+of science is based on the assumption that one is free to perform any
+experiment. It might be possible to form a theory in which there were
+closed timelike curves and in which the concept of free will was modified (see, for example, Schmidt (1966» but one would be much more
+ready to believe that space-time satisfies what we shall call the
+chronology condition: namely, that there are no closed timelike curves.
+One must however bear in mind the possibility that there might be
+points (maybe where the density or curvature was very high) of
+space-time at which this condition does not hold. The set of all such
+points will be called the chronology violating set of JI and has the
+following character:
+Proposition 6.4.1 (Garter)
+The chronology violating set of Jt is the disjoint union of sets of the
+form j+(q) n j-(q), qEJI.
+H q is in the chronology violating set of vIt, there must be a futuredirected timelike curve A with past and future endpoints at q. If
+r E j-(q) n j+(q), there will be past- and future-directed timelike curves
+#1 and#2 from q to r. Then (#1)-1 0 A0 #2 will be a future-directed time-
+like curve with past and future endpoints at r. Moreover if
+rE[I-(q) nI+(q)] n [I-(p) nI+(p)]
+then
+pEj-(q) n j+(q) = j-(p) n j+(p).
+To complete the proof, note that every point r at which chronology is
+violated is in the set j-(r) n j+(r).
+0
+Proposition 6.4.2
+If JI is compact. the chronology violating set of JI is non-empty. [p.199] 190
+CAUSAL STRUCTURE
+[6.4
+.ft can be covered by open sets ofthe form I +(q), qE.ft. Ifthe chrono-
+logy condition holds at g, then q¢ I+(q). Thus if the chronology
+condition held at every point, .ft could not be covered by a finite
+number of Bets of the form I+(q).
+0
+From this result it would seem reasonable to assume that space-time
+is non-compact. Another argument against compactness is that any
+compact, four-dimensional manifold on which there is a Lorentz
+metric cannot be simply connected. (The existence ofa Lorentz metric
+implies that the Euler number X(.ft) is zero (Steenrod (1951), p. 207).
+I.
+Now X = L (-1)"B" whereB" ~ 0 is the nth Betti number of.ft. By
+,,-0
+duality (Spanier (1966), p. 297) Bn = B'_n' Since B o = B, = 1, this
+implies that B 1 '* 0 which in turn implies 1T1(.ft) '* 0 (Spanier (1966),
+p. 398).) Thus a compact space-time is really a non-compact manifold
+in which points have been identified. It would seem physically reasonable not to identify points but to regard the covering manifold as
+representing space-time.
+We shall say that the causality condition holds if there are no closed
+non-spacelike curves. Similar to proposition 6.4.1, one has:
+Proposition 6.4.3
+The Bet of points at which the causality condition does not hold is the
+disjoint union of sets of the form J-(q) nJ+(q), qE.ft.
+0
+In particular, if the causality condition is violated at qEJt but the
+chronology condition holds, there must be a closed null geodesic
+curve y through q. Letv be an affine parameter on y (regarded as a map
+ofan open interval ofRIto.ft) and let ... , V_I' vo' VI' V2, ••• be successive
+values ofvat q. Then we may compare at qthe tangent vector 8/8vlv_vo
+and the tangent Vector 8/8vlv_1' obtained by parallelly transporting
+8/8vlv_. round y. Since they both point in the same direction, they
+must ibe proportional: 8/8vlv_1 = a 8/8vIv-vo' The factor a has the
+following significa
+
+[p.211] 202
+CAUSAL STRUCTURE
+[6.5
+Proposition 6.5.1
+D+(fIl) = D+(fIl).
+Clearly D+(fIl) ::> D+(fIl). IfqEJ(-D+(fIl) there is a neighbourhood 0/1
+of q which does not intersect fIl. From q there is a past-inextendible
+curve;\ which does not intersect fIl. If rE;\ nI-(q,o/1) then J+(r, 0/1) is
+an open neighbourhood of q in J( - D+(fIl). Thus J( - D+(fIl) is open
+and the set D+(fIl) is closed. Suppose there were a point p E D+(fIl)
+which had a neighbourhood 1/" which did not intersect D+(fIl). Choose
+a point xEI-(p, 1/"). From x there would be a past-inextendible non-
+spacelike curve y which did not intersect fIl. Let y" be a sequence of
+points on y which did not converge to any point and which were such
+that y"+1 was to the past of y". Let "If"" be convex normal neighbour-
+hoods of the corresponding points y" such that "If""+l did not intersect
+il"~. Let z" be a sequence of points such that
+There would be an inextendible timelike cur,'e from p which passed
+through each point z" and which did not intersect fIl. This would con-
+tradict p E D+(fIl). Thus D+(fIl) is contained in the closure of D+(fIl),
+and 80 D+(fIl) = D+(fIl).
+0
+The future boundary ofD+(fIl), that is D+(fIl) - I-(D+(fIl» , marks the
+limit ofthe region that can be predicted from knowledge ofdata on fIl.
+We call this closed achronal set the future Oauchy horizon of fIl and
+denote it by H+(fIl). As figure 43 shows, it will intersect fIl iffIl is null
+or if fIl has an •edge'. To make this precise we define edge (fIl) for an
+achronal set fIl as the set of all points qE g such that in every neigh-
+bourhood 0/1 of q there are points pEI-(q,o/1) and rEI+(q,0/1) which
+can be joined by a timelike curve in 0/1 which does not intersectfIl. By
+an argument similar to that in proposition 6.3.1 it follows that if
+edge (fIl) is empty for a non-empty achronal set fIl, then fIl is a threedimensional imbedded 0 1- submanifold.
+Proposition 6.5.2
+For a closed achronalset fIl,
+edge(H+(fIl» = edge (fIl).
+Let 0/1" be a sequence of neighbourhoods of a point qE edge (H+(fIl» [p.212] 6.5)
+CAUCHY DEVELOPMENTS
+203
+such that any neighbourhood of q encloses all the ~.. for n sufficiently
+large. In each~.. there will be points p..e1-(q, ~..) and r.. e1+(q,~..)
+which can be joined by a timelike curve -\a which does not intersect
+H+(.9). This means that -\a cannot intersect D+(.9). By proposition
+6.5.1, qeD+(.9) and so 1-(q) c 1-(D+(.9)) c 1-(.9) uD+(.9). Thus P..
+must lie in 1-(.9). Also every timelike curve from q which is inextendible in the past direction must intersect.9. Therefore for each n, there
+Edge (9') and
+edge H+(9')
+FIGURE 43. The future Cauchy development D+(9') and future Cauchy horizon
+H+(9') of a closed set 9' which is partly null and partly spacelike. Note tha.t
+H+(9') is not necessarily connected. Null lines are'at ± 45
+0 and a strip has been
+removed.
+must be a point of.9 on every timelike curve in ~n between q and P..
+and so q must lie in !/. As the curves A.. do not intersect.9, q lies in
+edge (.9). The proof the other way round is similar.
+0
+Proposition 6.5.3
+Let.9 be a closed achronal set. Then H+(.9) is generated by null
+geodesic segments which either have no past endpoints or have past
+endpoints at edge (.9).
+The set!F == D+(.9) u]-(.9) is a past set. Thus by proposition 6.3.1
+fI; is an achronal 0 1- manifold. H+(.9) is a closed subset of:F. Let q be
+a point of H+(.9)-edge(.9). If q is not in .9 then qe1+(.9) since
+qeD+(.9). As.9 is achronal one can find a convex normal neighbour- [p.213] 204
+CAUSAL STRUCTURE
+[6.5
+FIGURE 44. Y is a connected
+spacelikehypersurfacewithout
+edge in JI. It is not a partial
+Cauchy surface; however each
+ima.ge 7T-1(y) of Y in the Wli-
+versal covering manifold.JIof
+JI, is a partial Cauchy surface
+in..il.
+".-1(V)
+1--------
+,,-I(V)
+,...------
+,,-I(V)
+,,-1(9')
+--
+1------
+"
+1-- - -- -
+r--
+f
+:\
+v
+I····.. J
+hood"lr ofg which does not intersect [-(.9'). Alternatively ifg is in.9',
+let "Ir be a convex normal neighbourhood of g such that no point of
+[+(g, "Ir) can be joined to any point in [-(g, "Ir) by a timelike curve
+in "Ir which does not intersect .9'.
+In either case, if p is any point in
+[+(g) there must be a past-directed time-
+like curve from P to some point of
+JI - IF- "Ir since otherwise P would be
+in D+(.9'). Therefore by condition (i) of
+lemma 6.3.2, applied to the future set
+JI-IF, gEFNU:F+,
+0
+Corollary
+Hedge (.9') vanishes, then H+(.9'),ifnonempty, is an achronal three-dimensional
+imbedded Cl- manifold which is generated by null geodesic segments which
+have no past endpoint.
+We shall call an acausal set.9' with no
+edge, a partial Cauchy Burface. That is, a
+partial Cauchy surface is a spacelike
+hypersurface which no
+non-spacelike
+curve intersects morethan once. Suppose
+there were a connected spacelike hypersurface.9' (with no edge) whichsome non-
+spacelike curve Aintersected at points PI
+and P2' Then one could join PI and Pi by
+a curve p in.9'and p UAwould be a closed
+curve which crossed.9' once only. This
+curve couldnotbecontinuouslydeformed
+to zero since such a deformation could
+change the number of times it crossed.9'
+by an even number only, Thus JI could
+not be simply connected. This means we
+could' unwrap'JI bygoingto the simply
+connected universal covering manifold ..il in which each connected
+component of the image of.9' is a spacelike hypersurface (with no
+edge) and is therefore a partial Cauchy surface in.il (figure 44). How-
+ever going to the universal covering manifold may unwrap JI more
+than is required to obtain a partial Cauchy surface and may result in [p.214] 6.5J
+CAUCHY DEVELOPMENTS
+205
+the partial Cauchy surface being non-compact even though !7 was
+compact. For the purposes of the following chapters we would like
+a covering manifold which unwrappedJI sufficiently so that each connected component ofthe image of!7 was a partial Cauchy surface but
+so that each such component remained homeomorphic to !7. Such a
+covering manifold may be obtained in at least two different ways.
+Recall that the un
+
+[p.225] 216
+CAUSAL STRUCTURE
+[6.7
+We shall first prove d(p, q) is finite. Since strong causality holds on the
+compact set J+(P) n J-(q), one can cover it with a finite number of
+local causality sets such that each set contains no non-spacelike curve
+longer than some bound e. Since any non-spacelike curve from p to q
+can enter each neighbourhood at most once, it must have finite length.
+Now suppose that for p, qe%, there is a 8 > 0 such that every
+neighbourhood of q contains a point re% such that
+d(p, r) > d(p, q) +8.
+Let Xn be an infinite sequence of points in % converging to q such that
+d(p, xn ) > d(p, q) +8. Then from each Xn one can find a non-spacelike
+curve An to P of length> d(p, q) +8. By lemma 6.2.1 there will be
+a past-directed non-spacelike curve Athrough q which is a limit curve
+ofthe An' Let lilt be a local causality neighbourhood ofq. Then Acannot
+intersect ]-(q) n lilt since if it did one of the An could be deformed to
+give a non-spacelike curve from p to q of length> d(p, q). Thus An lilt
+must be a null geodesic from qand at each point x ofAn lilt, d(p, x) will
+have a discontinuity greater than' 8. This argument can be repeated
+to show that A is a null geodesic and at each point xeA, d(P,x) has
+a discontinuity greater than 8. This shows that Acannot have an end-
+point at p, since by proposition 4.5.3, d(p, x) is continuous on a local
+causality neighbourhood ofp. On the other hand, Awould be inextendible in J( - p and 80 ifit did not have an endpoint at p, it would have
+to leave the compact set J+(P) n J-(q) by proposition 6.4.7. This shows
+that d(p, q) is upper semi-continuous on %.
+0
+In the case that % is open, one can easily construct the geodesic of
+maximum length from p to q by using the distance function. Let
+lilt c % be a local causalityneighbourhood ofp which does not contain
+q and let xeJ+(p) n J-(q) be such that d(p, r) +d(r, q), reOU, is maximized for r = x. Construct the future-directed geodesic y from p
+through x. The relation d(p, r) +d(r, q) = d(p, q) will hold for all points
+r on y between p and x. Suppose there were a point y e J -(q) - q which
+was the last point on y at which this relation held. Let "Y c % be
+a local causality neighbourhood of y which does not contain q and
+let zeJ+(y) n J-(q) n -f" be such that dey, r) +d(r, q), rej/', attains its
+maximum value dey, q) for r = z. Ifz did not lie on y, then
+,
+d(p, z) > d(p, y) +dey, z)
+and
+d(p, z) +d(z, q) > d(p, q)
+which is impossible. This shows that the relation
+d(p, r) +d(r, q) = d(p, q) [p.226] 6.7]
+THE EXISTENCE OF GEODESICS
+217
+must hold for all reyf\ J-(q). AB J+(P)f\ J-(q) is compact, y must
+leave J-(q) at some point y. Suppose y oF q; then y would lie on a
+past-directed null geodesic i\ from q. Joining y to i\ would give a non-
+spacelike curve from p to q which could be varied to give a curve
+longer than d(p, q), which is impossible. Thus y is a geodesic curve
+from p to q of length d(p, q).
+0
+Corollary
+If 51' is a C2 partial Cauchy surface, then to each point qeD+(5P)
+there is a future-directed timelike geodesic curve orthogonal to 51' of
+length d(5P, q), which does not contain any point conjugate to 51'
+between 51' and q.
+By proposition 6.5.2, H+(5P) and H-(5P) do not intersect51' and so are
+not in D(5P). Thus D(5P) = intD(5P) is globally hyperbolic by proposition 6.6.3. By proposition 6.6.6, 51' f\ J-(q) is compact and so d(p, q),
+pe5P, will attain its maximum value of d(5P, q) at some point re5P.
+There will be a geodesic curve y from r to q oflength d(5P, q) which by
+lemma 4.5.5 and proposition 4.5.9 must be orthogonal to 51' and not
+contain a point conjugate to [/' between [/' and q.
+0
+6.8
+The causal boundary of space-time
+In this section we shall give a brief outline of the method of Geroch,
+Kronheimer and Penrose (1972) for attaching a boundary to space-
+time. The construction depends only on the causa1structure of(1, g).
+This means that it does not distinguish between boundary points at a
+finite distance (singular points) and boundary points at infinity. In
+§8.3 weshall describe a different construction whichattaches a bound-
+ary which represents only singular points. Unfortunately there does
+not seem to be any obvious relation between the two constructions.
+We shall assume that (1, g) satisfies the strong causality condition.
+Then any pointpin{1, g) is uniquely determined by its chronological
+past ]-(P) or its future ]+(p), Le.
+]-(p) = ]-(q) <:>]+(P) = ]+(q)<:>p = q.
+The chronological past ir == ]-(P) of any point pe1 has the
+properties:
+(1) ir is open;
+(2) ir is a past set, Le. I-fir) c ir; [p.227] 218
+CAUSAL STRUCTURE
+[6.8
+(3) "II' cannot be expressed as the union of two proper subsets
+which have properties (1) and (2).
+We shall call a set with properties (1), (2) and (3) an indecomposable
+paBt set, abbreviated as IP. (The definition given by Geroch, Kron-
+heimer and Penrose does not include property (1). However it is
+equivalent to the definition given here, since by •a past set' they mean
+a set which equals its chronological past, rather than merely con-
+tainingit.) One candefine an IF, orindecomposablefuture set, similarly.
+One can divide IPs into two classes: proper IPs (PIPs) which are
+the pasts of points in Jt, and terminal IPs (TIPs) which are not the
+past of any point in Jt. The idea is to regard these TIPs and the
+similarly defined TIFs as representing points of the causal boundary
+(c-bounda~y) of (Jt, g). For instance, in Minkowski space one would
+regard tIle shaded region in figure 47 (i) as representing the point p
+on J+. Note that in this example, the whole ofJt is itself a TIP and
+also a TIF. These can be thought ofas representing the points i+ and i-
+respectively. In fact all the points of the conformal boundary of
+Minkowski space, except iO, can be represented as TIPs or TIFs. In
+some cases, such as anti-de Sitter space, wherethe conformal boundary
+is timelike, points of the boundary will be represented by both a TIP
+and a TIF (see figure 47 (ii)).
+One can also characte
+
+[p.239] 230
+THE CAUCHY PROBLEM
+[7.2
+time development in terms of the initial values and first derivatives.
+The reason for this is, as was mentioned above, that a solution of the
+Einstein equations can be unique only up to a diffeomorphism. In
+order to obtain a definite solution one removes this freedom to make
+diffeomorphiBms by imposing four gauge conditions on the covariant
+derivatives of ~ with respect to the background metric A. We shall use
+the so-called 'harmonic' conditions
+J/rb = ¢bclC = 0
+which are analogous to the Lorentz gauge conditions A';• = 0 in
+electrodynamics. With this condition one obtains the reduced Ei'Mtein
+equations
+g1.i¢M"i+ (terms in ¢cd1e and ¢ab) = 161TTab- 2flab+ frbfl.
+(7.8)
+We shall denote the left-hand side of (7.8) by Eabcd(¢cd), where Eabcd is
+the Ei'Mtein operator. For suitable forms of the energy-momentum
+tensor Tab these are second order hyperbolic equations for which we
+shall demonstrate the existence and 'uniqueness of solutions in §7.5.
+We still have to check that the harmonic conditions are consistent
+with the Einstein equations. That is to say: we derived (7.8) from the
+Einstein equations by aBBuming that ¢bC1c was zero. We now have to
+verify that the solution that (7.8) gives rise to does indeed have this
+property. To do this, differentiate (7.8) and contract. This gives an
+equation of the form
+(7.9)
+where a semi-colon denotes differentiation with respect to g, and the
+tensors Bcbi and Ccb depend on {f'b, flabcd, gab and gab/c' Equations (7.9)
+may be regarded as second order linear hyperbolic equations for J/rb.
+Since the right-hand side vanishes, one can use the uniqueness
+theorem for such equations (proposition 7.4.5) to show that J/rb will
+vanish everywhere if it and its first derivatives are zero on the initial
+surface. We shall see in the next section that this can be arranged by
+a suitable diffeomorphism.
+We still have to show that the unique solution obtained by imposing
+the harmonic gauge condition is related by a diffeomorphism to any
+other solution of the Einstein equations ~ith the same initial data.
+This will be done in §7.4 by making a special choice ofthe background
+metric. [p.240] 7.3]
+THE INITIAL DATA
+231
+7.3
+The initial data
+AB (7.8) is a second order hyperbolic system it seems that to determine
+the solution one should prescribe the values of yab and gableue on the
+initial surface 0(.51'), where ue is some vector field which is not tangent
+to 0(.51'). However not all these twenty components are significant or
+independent: some can be given arbitrary initial values without
+changing the solution by more than a diffeomorphism, and others have
+to obey certain consistency conditions.
+Consider a diffeomorphism p:.At~.At which leaves 0(.51') pointwise
+fixed. This will induce a map p. which takes gab at p e 0(.51') into a new
+tensor p.gab at p. If naeT·p is orthogonal to 0(.51') (Le. naVa = 0 for
+any va e Tp tangent to 0(.51'» and normalized so that nabab~ = - 1
+then, by suitable choice ofp, naP.gab can be made equal to any vector
+at p which is not tangent to 0(.51'). Thus the components nagab are not
+significant. On the other hand as p leaves 0(.51') pointwise fixed, the
+induced metric hab = O·gab on .51' will remain unchanged. It is therefore
+only this part of ~ which lies in 0(.51') which need be given to determine
+the solution. The other components nagab can be prescribed arbitrarily
+without changing the solution by more than a diffeomorphism.
+Another way of seeing this is to recall that we formulated the Cauchy
+problem in terms of certain data on a disembodied three-manifold .51'
+and then looked for an imbedding into some four-manifold.At. Now
+on .51' itselfone cannot define a four-dimensional tensor field like ~ but
+only a three-dimensional metric h, which we shall take to be positive
+definite. The contravariant and covariant forms of h are related by
+(7.10)
+(7.11 )
+where now 8tJe is a three-dimensional tensor in .51'. The imbedding 0 will
+carry hab into a contravariant tensor field O.hab on 0(.51') which has
+the property
+As nagab is arbitrary, one may now define ~ on 0(.51') by
+yab = O.hab-uaub,
+(7.12)
+where ua is any vector field on 0(.51') which is nowhere zero or tangent
+to 0(.51'). Defining gab by (7.1), one has:
+hab = O·gab'
+nagab = -nauaub,
+gabuaUb = -1.
+(7.13)
+Thus hab is the metric induced on .51' by ~ and ua is the unit vector
+orthogonal to 0(.51') in the metric ~. [p.241] 232
+THE CAUCHY PROBLEM
+[7.3
+(7.17)
+(7.18)
+The situation with the first derivatives g"blCuc is similar: nag"b,cUC
+can be given any value by suitable diffeomorphisms. However there is
+now an additional complication in that g"b,c depends not only on ~ but
+also on the background metric Aon.At. In order to give a description
+ofthe significant part ofthe first derivative of ~ in terms only oftensor
+fields defined on!/', we proceed as {ollows. We prescribe a symmetric
+contravariant tensor field Xab on !/'. Under the imbedding Xab is
+mapped into a tensor field O.~ on O(!/'). We require that this is
+equal to the second fundamental form (see §2.7) of the submanifold
+o(!/') in the metric ~. This gives
+O.Xab = O.h4CO.hbd(uegec);d
+= O.h4CO.hbd«uegec)/d-8r'cduegej)'
+(7.14)
+Using (7.3), one has
+O.Xab = 10.h4CO.hbd( -gcigd;gi;lkUk+gbiui,c+gciuilb)'
+(7.15)
+This may be inverted to give gablcUCin terms of°.Xab:
+l!f'b,cuc = -°.Xab+O.h4CO.hbdgiCcU\'ll+u(aWbl,
+(7.16)
+where Wb is some vector field on O(!/'). It can be given any required
+value by a suitable diffeomorphism }to
+The tensor fields hab and Xab cannot be prescribed completely
+independently on!/'. For multiplying the Einstein equations (7.7) by
+na, one obtains four equations which do not contain g"bICducUd, the
+second derivatives of ~ out of!/'o Thus there must be four relations
+between gab, g"b/cuc and naTab. Using (2.36) and (2.35), they can be
+expressed as equations in the three-manifold !/':
+XCdUdhce- XCdnehcd = 81TO·(TtUud ),
+where a double stroke" denotes covariant differentiation in!/' with
+respect to the metr
+
+[p.253] 244
+THE CAUCHY PROBLEM
+[7.5
+7.5
+The existence and uniqueness of developments for the
+empty space Einstein equations
+We shall now apply the results of the previous section to the Cauchy
+problem in General Relativity. We shall first deal with the Einstein
+equations for empty space (Tab = 0), and shall discuss the effect of
+matter in §7.7.
+The reduced Einstein equations
+Eabcd(¢cd)
+::= 81TTab_(!lab-I!lDab)
+(7.42)
+are quasi-linear second order hyperbolic equations. That is, they have
+the form (7.20) where the coefficients A, Band C are functions of
+K and DK (actually, in this case Aab = gab is a function of ¢ab and
+not of ¢ab/c)' To prove the existence of solutions of these equations we
+proceed as follows. We take some suitable trial field ¢'ab and use this
+to determine the valuesofthe coefficients A, Band C in the operatorE.
+Using these values we then solve (7.~2) as a linear equation with the
+prescribed initial data and obtain a 'new field ¢!'ab. We thus have a
+map a which takes r/J' into r/J", and we show that under suitable condi-
+tions this map has a fixed point (i.e. there is some ¢ such that
+a(r/J) = r/J). This fixed point will be the desired solution of the quasi-
+linear equation.
+We shall take the background metric ~ to be a solution ofthe empty
+space Einstein equations and choose the surfaces
+~(t) (1 ~+ and
+ad/l (1 ~+ to be spacelike in ~. Then by lemma 7.4.1 there will be Bome
+positive constants Qa such that if for some value of a ~ 0
+(7.43)
+then the coefficients A', B' and C' determined by r/J' satisfy conditions
+(1), (2) and (4) of lemma 7.4.6 for given values of Q1 and Qa" From
+(7.41) one then has
+I/r/J", d/I+IIHa ~ ~. a{~or/J, ~(O) (1 ~~4+a + II lr/J, $(0) (1 ~Wa+a}'
+Thus the map a: W4+a(d/I+)~W4+a(d/I+) will take the closed ball W(r)
+ofradiuB r (r < Qa) in WHa(tf/+) into i~selfprovidedthat
+llor/J, ~(O) (1 ~ffHa ~ !r.P7•a-1
+and
+II1r/J, ~(0)(1 ~ia+a ~ !rP7.a-1.
+(7.44)
+We shall show that a has a fixed point if (7.44) holds and if r is
+sufficiently small. [p.254] 7.5]
+EXISTENCE AND UNIQUENESS
+245
+(7.45)
+Suppose r/Jl' and r/J2' are In W(r). The fields r/J1" = a(r/J1') and
+r/J2" = a(r/J2') satisfy E1'(r/Jl") = 0, E2'(r/J2") = 0 where E1' is the
+Einstein operator with coefficients AI" B1' and C1' determined. by r/J1'.
+Thus
+Since the coefficients AI" B1' and C1' depend differentiably on r/J1' and
+Dr/J1' for r/J1' in W(r), there will be some constant Q4 such that on qj+
+IA'1- A'21 "Q41r/J\-r/J'al,
+}
+IB'1- B'21" Q4(1r/J'1-r/J'21+IDr/J'1- Dr/J'21),
+IC'l- c'21 " Q4(1r/J'1 - r/J'21 +IDr/J'l- Dr/J'21)·
+(7.46)
+Therefore by lemmas 7.4.1 and 7.4.6,
+I(E'1-E'2) (r/J"2>1 "
+3rQ4PIP7.~P6.IJOr/J'1- r/J'21 +IDr/J\- Dr/J'2/)'
+We now apply lemma 7.4.4 to (7.45) to obtain the result
+where Q5 is some constant independent of r. Thus for sufficiently
+small r, the map a will be contracting in the
+II III norm (i.e.
+Ila(r/J1) - a(r/Ja)II 1< IIr/J1-
+r/J2~1) and the sequence an(r/J'1) will converge
+strongly in W1("II+) to some field r/J. But by the theorem ofRiesz some
+subsequence of the an (r/J'1) will converge weakly to some field
+cf) eW(r). Thus r/J must equal cf) and so be in W(r). Therefore a(r/J) will
+be defined. Now
+Ila(r/J)- an+1(r/J'1)' "11+111" rQ511r/J- an(r/J'l)' "11+111'
+As
+n~oo, the right-hand side tends to zero. This implies that
+Ila(r/J)- r/J, "11+111 = 0 and so that a(r/J) = r/J. Since the map a is contracting the fixed point is unique in W(r). We have therefore proved:
+Proposition 7.5.1
+If ~ is a solution of the empty space Einstein equations, the reduced
+empty space Einstein equations have a solution r/Je WHIJ("II+) if
+IIor/J,~(O)(1 qjUHIJ
+and
+Illr/J,~(O)(1 qj~3+a are sufficiently small.
+IIr/J, ~(O) (1 qj+IIHIJ will be bounded and so r/J will be at least C(2+IJ)-. 0
+This solution will be locally unique even among solutions which are
+not in W4("II+). [p.255] 246
+THE CAUCHY PROBLEM
+[7.5
+(7.48)
+where
+Proposition 7.5.2
+Let cf) be a ()1-solution ofthe reduced empty space Einstein equations
+with the same initial data on an open set1/ c .n"(O) n "lI. Then cf) = ep
+on a neighbourhood of "Y in tfI+.
+Since cf) is continuous one can find a neighbourhood "lI' of"Y in tfI such
+that the conditions oflemma 7.4.4 hold for A, Band C. AB before one
+has
+Similarly there will be some Q6 such that
+Applying lemma 7.4.4 to (7.48) one obtains an inequality of the form
+dx/dt ~ Q,x,
+x =f: llcf)-ep,.n"(t')n tfI~llldt'.
+Therefore cf) = ep on qf~.
+o
+Proposition 7.5.1 shows that if one makes a sufficiently small
+perturbation in the initial data of an empty space solution of the
+Einstein equations one obtains a solution in a region tfI+. What one
+wants however isto prove the existence ofdevelopmentsfor any initial
+data hab and XOb which satisfy the constraint equations on a three-
+manifold .9. To do this we proceed as follows. We take J( to be R4,
+e to be the Euclidean metric and ~ to be the flat, Minkowski metric
+(this is a solution ofthe empty space Einstein equations). In the usual
+Minkowski coordinates Xl, x2, xl! and x4 (x4 = t) we take tfI to be such
+that a"lln qf+ is spacelike and .n"(O)n dij consists of the points for
+which (X1)2+ (X2)2+ (X3)2 ~ 1, x4 = o. The idea now is that any metric
+appears nearly flat iflooked at on a fine enough scale. Therefore ifone
+maps a sufficiently small region of .9 onto .n"(O)n dij, one can use
+proposition 7.5.1 and obtain a solution on tfI+. We then repeat this for
+other portions of.9 and join up the resulting solutions to form a
+manifold J( with metric ~ which is a development of (.9, w).
+Let,v;. be a coordinate neighbourhood in.9 with coordinates yl, y2
+and y3 such that at p, the origin of the coordinates, the coordinate
+components of hab equal8ab• Let ,v;.(/l) be the open ball of coordinate
+radius 11 about p. Define an imbedding°1: ~(/l) ~ tfI by Xi = Il-lyi
+(i = 1,2, 3), x4 = o. By the UBuallaw of transformation of a basis, the [p.256] · 7.5]
+EXISTENCE AND UNIQUENESS
+247
+(7.49)
+components of O*hab and O*Xab with respect to the coordinates {x} are
+11-ll times the component
+
+[p.267] 258
+SPACE-TIME SINGULARITIES
+[8.1
+(1) 0 = 1 outside the region between the vertical lines x = - 1 and
+x= +1;
+(2) 0 is symmetric about the t-axis, that is, O(t, x) = O(t, - x);
+(3) on the t-axis, t20 -+- 0 as t -+- 00.
+By (2) the t-axis is a timelike geodesic which by (3) is incomplete as
+t -+- 00. However every null and spacelike geodesic must leave and not
+re-enter the region between x =-1 and x = + 1. Therefore by (1) the
+space is null and spacelike complete. In fact one can construct
+examples which are incomplete in any of the three possible ways and
+complete in the ~mainingtwo.
+Timelike geodesic incompleteness has an immediate physicalsignificance in that it presents the possibility that there could be freely
+moving observers or particles whose histories did not exist after (or
+before) a finite interval of proper time. This would appear to be an
+even more objectionable feature than infinite curvature and so it
+seems appropriate to regard such a space as singular. Although the
+affine parameter on a null geodesic does not have quite the same
+physical significance as proper time does on timelike geodesics, one
+should probably also regard a null geodesically incomplete space-time
+as singular both because null geodesics are the histories of zero rest-
+mass particles and because there are some examples (such as the
+Reissner-Nordstrom solution, §5.5) which one would think of as
+singular but which are timelike but not null geodesically complete.
+As nothing moves on spacelike curves, the significance of spacelike
+geodesic incompleteness is not so clear. We shall therefore adopt the
+view that timelike and nuU geodesic completeness are minimum condi-
+tions for space-time to be considered singularity-free. Therefore if a
+space-time is timelike or null geodesically incomplete, we shall say
+that it has a singularity.
+The advantage of taking timelike and/o~ null incompleteness as
+being indicative of the presence of a singularity is that on this basis
+one can establish a number of theorems about their occurrence. How-
+ever, the class oftimelike and/or null incomplete space-times does not
+include all those one might wish to consider as singular in some sense.
+For example Geroch (1968b) has constructed a space-time which is
+geodesically complete but which contains an inextendible timelike
+curve of bounded acceleration and finite length. An observer with
+a suitable rocketship and a finite amount of fuel could traverse this
+curve. After a finite interval oftime he would no longer be represented
+by a point ofthe space-time manifold. Ifone is going to say that there [p.268] 8.1]
+THE DEFINITION OF SINGULARITIES
+259
+is a singularity in a space-time in which a freely falling observer comes
+to an untimely end, one should presumably do the same for an
+observer in a rocketship. What one needs is some generalization ofthe
+concept of an affine parameter to all 0 1 curves, geodesic or non-
+geodesic. One could then define a notion of completeness by requiring
+that every Q1 curve of finite length as measured by such a parameter
+had an endpoint. The idea we are going to use seems to have been first
+suggested by Ehresman (1957), and has been reformulated in an
+elegant manner by Schmidt (1971).
+Let A(t) be a 0 1 curve through p EJI and let {Ei } (i = 1,2,3,4) be
+a basis for Tp • One can parallelly propagate {Ei } along A(t) to obtain
+a basis for
+TACt) for each value of t. Then the tangent vector
+V = (fJlfJt)".w can be expressedin terms ofthe basis as V = Viet) Ei , and
+one can define a generalized affine parameter u on Aby
+Ei =
+~A/El"
+j'
+As {Ei ,} and {Et } are parallelly transported along A(t), this relation is
+maintained with constant A[. Thus
+u =f (~ViVi)ldt.
+p
+•
+The parameter u depends on the pointp and the basis{Ei } atp. If{Ed
+is another basis at p, then there is some non-singular matrix Ai such
+that
+V'~(t) = ~ Al Viet).
+j
+Since A/ is a non-singular matrix, there is some constant 0 > 0 such
+that
+o~ ViVi '" ~ V'·Vi' '" 0-1 ~ PVi.
+i
+t'
+i
+Thus the length of a curve Ais finite in the parameter u if and only if
+it is finite in the parameter u'. IfAis a geodesic curve then u is an affine
+parameter on A, but the beauty ofthe definition is that u can be defined
+on any Q1 curve. We shall say that (JI,I1) is b-complete (short for
+bundle complete, see §8.3) if there is an endpoint for every 0 1 curve
+of finite length as measured by a generalized affine parameter. Ifthe
+length is finite in one such parameter it will be finite in all such
+parameters, so one loses nothing by restricting the bases to be orthonormal bases. lithe metric g is positive definite, the generalized affine
+parameter defined by an orthonormal basis is arc-length and so
+b-completeness coincides with·m-completeness. However b-complete-
+ness can be defined even ifthe metric is not positive definite; in fact it [p.269] 260
+SPACE-TIME SINGULARITIES
+[8.1
+can be defined providing there is a connection on
+.,,1(. Clearly
+b-completeness implies g-completeness, but the example quoted
+shows that the converse is not true.
+We shall therefore define a space-time to be singularity-free if it is
+b-complete. This definition conforms with the requirement made
+above, that timelike and null geodesic completeness are minimum
+conditions for a space-time to be considered singularity-free. One
+might possibly wish to weaken this condition slightly, to say that
+space-time is singularity-free it it is only non-spacelike b-complete,
+Le. if there is an endpoint for all non-spacelike 0 1 curves with finite
+length as measured by a generalized affine parameter. However this
+definition would appear rather awkward in the bundle formulation of
+b-completeness which we shallgive in §8.3. In fact each ofthe theorems
+we give in §8.2 implies that (.,,1(, 11) is timelike or null g-incomplete and
+hence has a singularity by both the above definitions.
+One feels intuitively that a singularity ought to involve the curvature becoming unboundedly large near a singular point. However
+since we h
+
+[p.281] 272
+SPACE-TIME SINGULARITIES
+[8.2
+from
+p
+were complete,
+E-(P) would be compact. Any point
+qeJ-(E-(p» -E-(P) would be in ]-(P). Thus it could not be in
+J +(E-(P» since E-(P) is achronal. Therefore
+J+(E-(p» n J-(E-(P» = E-(P)
+and so would be compact. Then by proposition 6.6.7, D-(E-(P» would
+be globally hyperbolic. By proposition 6.7.1, each point reD-(E-(p»
+would be joined to p by a non-spacelike geodesic which did not contain
+any point conjugate to p between r and p. Thus by proposition 4.4.1,
+D-(E-(P» would be contained in expp (F) where F is the compact
+region of Tp consisting of all past-directed non-spacelike vectors Ka
+such that KalYa ~ - 2b. Ifall past non-spacelike geodesics from p were
+complete, expp (Ka) would be defined for every Ka eF, and so expp (F)
+would be compact being the image ofa compact set under a continuous
+map. However by the corollary to lemma 8.2.1, D-(E-(P» contains
+a past-inextendible timelike curve. By proposition 6.4.7 this could not
+be totally imprisoned in the compact set expp(F), therefore the
+assumption that all past-directed non-spacelike geodesics from pare
+complete must be false.
+0
+Theorems 2 and 3 are the most useful theorems on singularities since
+it can be shown that their conditions are satisfied in a number of
+physical situations (see next chapter). However it might be that what
+occurred was not a singularity but a closed timelike curve, violating
+the causality conditions. This would be much worse than the mere
+breakdown of prediction which was the alternative after theorem 1,
+and it is our personal opinion that it would be physically more objectionable than a singularity. Nevertheless one would like to know
+whether such causality violations would prevent the occurrence of
+singularities. The following theorem shows that they cannot in certain
+situations. This means that we have to take singularities seriously and
+it gives us confidence that, in general, causality breakdowns are not
+the way out.
+Theorem 4 (Hawking (1967»
+Space-time is not timelike geodesica1ly complete if:
+(1) RabKaKb ~ 0 for every non-spacelike vector K (cf. §4.3);
+(2) there exists a compact spacelike three-surface !/ (without
+edge);
+(3) the unit normals to !/ are everywhere converging (or everywhere diverging) on !/. [p.282] 8.2]
+SINGULARITY THEOREMS
+273
+Remarks. Condition (2) may be interpreted as saying that the universe
+is spatially closed and condition (3) as saying that it is contracting
+(or expanding). As explained in §6.5 one may take a covering manifold
+..II in which each connected component of the image of 09 is diffeo-
+morphic to09 and is a partial Cauchy surfacein..ll. We shall work in.Ji
+and shall denote by!? one connected component of the image of g.
+Considering the Cauchy evolution problem in ..II one sees that the
+occurrence of singularities (though not necessarily their nature) is a
+stable property of the Cauchy data on !? since a sufficiently small
+variation of the data on !? will not violate condition (3). This is a
+counterexample to the conjecture by Lifshitz and Khalatnikov that
+singularities occur only for a set of Cauchy data of measure zero,
+though it must be remembered that the definition of a singularity
+adopted here is not that used by Lifshitz and Khalatnikov
+Proof. By conditions (2) and (3) the contraction Xaa of the second
+fundamental form of!? has a negative upper bound on g. Thus if.A'
+(and hence JI) was timelike geodesica1ly complete there would be
+a point conjugate to !? on every future-directed geodesic orthogonal
+to !? within a finite upper bound b of distance from!? (proposition
+4.4.3). But by the corollary to proposition 6.7.1, to every point
+q ED+(!?) there is a future-directed geodesic orthogonal to !? which
+does not contain any point conjugate to!? between!? and q. Let
+fJ:!? x [O,b]~..IIbe the differentiable map which takes a point pE!?
+a distance 8 E[0, b] up the future-directed geodesic through P orthogonal to g. Then fJ(!? x [0, b]) would be compact and would contain
+D+(!?). Thus 15+(!?) and hence H+(!?) would be compact. If one
+assumed the strong causality condition the desired contradiction
+would follow from lemma 8.2.1. However even without strong
+causality one can obtain a contradiction. Consider a point qEH+(!?).
+Since every past-directed non-spacelike curve from q to !? would
+consist of a (possibly zero) null geodesic segment in H+(!?) and then
+a non-spacelike curve in D+(!?), it follows that d(!?, q) would be less
+than or equal to b. Thus, as d is lower semi-continuous, one could find
+an infinite sequence of points rn ED+(!?) converging to q such that
+d(!?, rn) converged to d(!?, q). To each rn there would correspond at
+least one elementfJ-l(r,,) of!? x [0, b] Since!? x [0, b] is compact there
+would be an element (p,8) whic.h was a limit point of the p-l(r,,). Bv
+continuity 8 = d(!?,q) and P(p,8) = q. Thus to every point qEH+(:7)
+there would be a timelike geodesic of length d(!?, q) from !? Now let [p.283] 274
+SPACE-TIME SINGULARITIES
+[8.2
+gl EH+(.?) lie to the past of g on the same null geodesic generator Aof
+H+(.?). Joining the geodesic of length d(.?,gl) from.? to gl to the
+segment ofAbetween 2'1 and 2', one would obtain a non-spacelike curve
+of length d(.?, gl) from.? to 2' which could be varied to give a longer
+curve between these endpoints (proposition 4.5.10). Thus d(.?, g),
+gEH+(.?), would strictly decrease along every past-directed generator
+of H+(.?). But by proposition 6.5.2, such generators could have no
+past endpoints. This leads to a contradiction since as d(.?, g) is lower
+semi-continuous in g, it would have a minimum on the compact
+set H+(.?).
+0
+Condition (2) that9' is compact is necessary, sincein Minkowski space
+(.-K, Yj) the non-compact surface 9': (X1)2+ (X2)2+ (xa)2- (X4)2 = -1,
+x4 < 0, is a partial Cauchy surface with Xaa = - 3 at all points. If one
+took the region of Minkowski space defined by
+x4 < 0,
+(X1)2+(X2)2+(X8)2 - (X4)2 < 0,
+one could identify points under a discrete group of isometries G such
+
+[p.295] 286
+SPACE-TIME SINGULARITIES
+[8.4
+a sufficiently small variation of the energy condition will not prevent
+the occurrence of conjugate points in the metric ~. within a distance
+less than d.(.?,p). For the expansion B. of the geodesics in the metric
+~. obeys the Raychaudhuri equation:
+dB./ds = -!B.z-20'.z-R.a"v,;av,;lJ.
+Thus d(B.-l)/ds ;?; ! +R.ab vaVIJO.-z. Therefore if the initial value 0.0
+were negative and 38B...-2 were less than one, B.-l would become zero
+within a distance 3/Bo(1- 38Bo-Z) from .9. But BOo-+ Boas e-+ O. This
+shows that for sufficiently small values ofe there would be a conjugate
+point on every geodesic in the metric ~. orthogonal to'? within a
+distance less than d.(.?, pl. ThereforeJt must be timelike geodesically
+incomplete even if the metric is required only to be 0 2-.
+This result implies that ifspace-time is extended to try to continue
+the incomplete geodesics, the metric must fail to be Lorentzian or the
+curvature must be locally unbounded, i.e. there would be a curvature
+singularity. However even though the curvature were locally unbounded, the metric might still be able to be interpreted as a distributional solution of the Einstein equations provided that the volume
+integrals ofthe components ofthe curvature tensor over any compact
+region were finite. This would be the case if the metric were Lorentz,
+continuous and had square integrable first derivatives. In particular
+this would be true if the metric were Lorentz and 0 1- (i.e. locally
+Lipschitz). Examples ofsuch 0 1- solutions include gravitational shock
+waves (where the curvature has a 8-functionbehaviour on a null threesurface, see, for example, Choquet-Bruhat (1968) and Penrose
+(1972a»; thin mass shells (where the curvature has a 8-function
+behaviour on a timelike three-surface, see, for example, Israel (1966»;
+and solutions containing pressure-free matter where the geodesic flow
+lines have two- or three-dimensional caustics (see Papapetrou and
+Hamoui (1967), Grischuk (1967». Because of the non-linear dependence of the curvature on the metric one cannot necessarily approximate a 0 1- distributional solution by a 0 2 metric which obeys the
+convergence condition at every point, or at least does not violate it
+by more than a small amount as in the case above
+(prope~y (4».
+However in all the examples given above one can. Indeed this is their
+physical justification: they are regarded as mathematical idealizations
+of 0 2 or OrJ solutions which obey the convergence condition and in
+which the curvature is very large in a small region. One could apply
+the theorems of §8.2 to these 0 2 solutions and prove the existence of [p.296] 8.4]
+THE CHARACTER OF THE SINGULARITIES
+287
+incomplete geodesics in them. This shows that the singularities predicted cannot be just gravitational1mpulse waves or caustics of flow
+lines but must be more serious breakdowns of the metric. (Ordinary
+hydrodynamic shock waves involve only discontinuities of density
+and pressure and so can exist with a 0 2- metric.) Although we are not
+quite able to prove it we believe that the singularities must be such
+that the metric cannot be extended to be even a distributional solution
+of the Einstein equations, i.e. as well as the components of the curvature being unbounded at a singular point, their volume integral over
+any neighbourhood ofsuch a point must also be unbounded. This is so
+in all known examples ofsingularities other than the exceptional case
+ofthe Taub-NUT solution, which will be dealt with in the nextsection.
+If this conjecture is correct for' generic' singularities (i.e. except for
+those arising from a set ofinitial conditions ofmeasure zero), then one
+can regard a singularity as a point where the Einstein equations (and
+presumably the other presently known laws ofphysics) break down.
+Another question one would like to answer is: how many incomplete
+geodesics are there1If there were only one, one might be tempted to
+feel that the singularity could be ignored. From the proofoftheorem 4
+one can see that if there is no Cauchy horizon, i.e. if:J is a Cauchy
+surface, then no timelike curve from :J (geodesic or not) can be
+extended to a length greater than - 3/80 where 80 is the maximum
+value of Xaa on 9'. In fact this result is true even if9' is non-compact
+provided that xaa still has a negative upper bound. However this does
+not necessarily indicate that what happens is that every timelike curve
+hits the singularity. Rather it suggests that a singularity will be
+accompanied by a Cauchy horizon and so our ability to predict the
+future will break down. An example of this is shown in figure 53. Here
+the metric is singular at the pointp and so this point has been removed
+from the space-time manifold. Spreading out from this hole there is
+a Cauchy horizon. This example shows that the most one can hope to
+prove is that there is ~ three-dimensional family of geodesics which
+are incomplete and which remain within the Cauchy development of
+:J (in the example these arethe geodesics which would pass through p).
+There may be other geodesics which leave the Cauchy development
+of:J and which are incomplete but one cannot predict their behaviour
+from knowledge of conditions on :J.
+It is clear that thet'!Llllust- bP. more than one incomplete geodesic in
+D+(:J). For from theorem 4 it follows that there must be a geodesic y,
+orthogonal to :J, which remains in D+(:J) but which is incomplete. [p.297] 288
+SPACE-TIME SINGULARITIES
+p
+[8.4
+FIGURE 53. The pointp has been removed from space-timebecause a singularity
+occurs there. Consequently there is a Cauchy horizon H+(9'} for the surface g.
+Let p be the point where y intersects /J. Then one can make a small
+variation of/J in a neighbourhood ofp to obtain a new surface /J' for
+which Xaa is still negative, but which is not orthogonal to y. Then by
+theorem 4 there must be some other timelike geodesic y' orthogonal
+to /J' which is incomplete and which does not cross H+(/J'), which is
+the same as H+(!?).
+One can
+
+[p.309] 300
+GRAVITATIONAL COLLAPSE
+[9.1
+r> 2m
+Schwarzschild empty
+solution (exterior solution)
+r = 2m
+r < 2m
+Singularity~
+Origin of
+polar
+Surface of fluid
+coordinates
+(i)
+r = 0 (singularity)
+Empty
+space
+(ii)
+(iii)
+FIGURE 54. Collapse of a spherical star.
+(i)
+Finkelstein diagram «(r,t) plane) of a collapsing spherically symmetric
+fluid ball. Each point represents a two-sphere.
+(ii) Penrose diagram of the collapsing fluid ball.
+(iii) Diagram of the collapse with only one spatial dimension suppressed.
+greater than 2m (the 'Schwarzschild radius'). This follows because
+the surface of a static star must correspond to the orbit of a timelike
+Killing vector, and in the Schwarzschild solution there is a timelike
+Killing vector only where T > 2m. If TO were less than 2m, the surface
+of the star would be expanding or contracting. To get an idea of the
+magnitude of the Schwarzschild radius, we note that the Schwarz-
+schild radius of the earth is 1.0 cm and that of the sun is 3.0 Km; [p.310] 9.1]
+STELLAR COLLAPSE
+301
+the ratios of the Schwarzschild radius to the radius of the earth and
+the sun are 7 x 10-10 and 2 x 10-6 respectively. Thus normal stars
+. are a long way from their Schwarzschild radii.
+The life of a typical star will consist of a long (,.., 109 years) quasi-
+static phase in which it is burning nuclear fuel and supporting itself
+against gravity by thermal and radiation pressure. However when the
+nuclear fuel is exhausted, the star will cool, the pressure will be
+reduced, and so it will contract. Now suppose that this contraction
+cannot be halted by the pressure before the radius becomes less than
+the Schwarzschild radius (we shall see below that this seems likely for
+stars of greater than a certain mass). Then since the solution outside
+the star is the Schwarzschild solution, there will be a closed trapped
+surface $" around the star (see figure 54), and so, by theorem 2, a
+singularity will occur provided that causality is not violated and the
+appropriate energy condition holds. Ofcourse in this case, because the
+exterior solution is the Schwarzschild solution, it is obvious (see
+figure 54) that there must be a singularity. However the point is that
+even if the star is not exactly spherically symmetric, a closed trapped
+surface will still occur providing the departures from sphericalsymmetry are not too great. This follows from the stability of the Cauchy
+development proved in §7.5; for one can regard the solution as
+developing from a partial Cauchy surface JI' (figure 55). Now if one
+changes the initial data by a sufficiently small amount on the compact
+region J-($") n JI', the new development of JI' will still be sufficiently
+near the old in the compact region J+(JI') n J-($") that there will still
+be a closed trapped surface around the star in the perturbed solution.
+Thus we have shown that there is a non-zero measure set of initial
+conditions which lead to a closed trapped surface and hence to a singularity by theorem 2.
+The two principal reasons why a star may depart from spherical
+symmetry are that it may be rotating or may have a magnetic field.
+One may get Borne idea of how large the rotation may be without
+preventing the occurrenceofa trappedsurface by considering the Kerr
+solution. This solution can be thought of as representing the exterior
+solution for a body with mass m and angular momentum L = am.
+If a is less than m there are closed trapped surfaces, but if a is greater
+than m they do not occur. Thus one might expect that if the angular
+momentum of the star were greater than the square of its mass, it
+would be able to halt the contraction ofthestar before a closed trapped
+surface developed. Another way of seeing this is that if L = m2 and
+angular momentum is conserved during the coHapse, then the velocity [p.311] 302
+GRAVITATIONAL COLLAPSE
+[9.1
+J-(9") n Jr
+FIGURE 55. Collapse of a spherical star as in figure 54 (iii) showing a partial
+Cauchy surface;/l'. It is the initial data on the comPact region J-(!T) ()£
+of £
+which leads to the occurrence of the closed trapped surface !T in the
+compact region J-(!T) () J+(;f").
+ofthe surface ofthe star would be about the velocity oflight when the
+star was at its Schwarzschild radius. Now many stars have an angular
+momentum greaterthan the square oftheir mass (for the sun, L ,..,. m 2).
+Howeveritseems reasonable to expectsomelossofangularmomentum
+during the collapse because of braking by magnetic fields and because
+ofgravitational radiation. The situation is therefore thatin some stars,
+and probably most, angular momentum would not preventoccurrence
+of closed trapped surfaces, and hence a singularity.
+In a nearly spherical collapse a magnetic field B which is frozen into
+a star will increase as the matter density p to the i power. Thus the
+magnetic pressure is proportional to pt. This rate ofincrease is so slow
+that if the magnetic pressure is not important initially in supporting
+the star, then it will never be strong enough to have a significant effect
+on the collapse.
+To see why a burnt-out star of more than a certain mass cannot
+support itself against gravity, we shall give a qualitative discussion
+(based on unpublished work by Carter) of the zero temperature
+equation of state for matter. [p.312] 9.1]
+STELLAR COLLAPSE
+303
+In hot matter there is pressure produced by the thermal motions
+ofthe atoms and by the radiation present. However in cold matter at
+densities lower than that of nuclear matter (,.., 1014gm cm-3), the only
+significant pressure will arise from the quantum mechanical exclusion
+principle. To estimate this, consider a number density n of fermions
+of mass m. By the exclusion principle, each fermion will effectively
+occupy a volume ofn-1• Thus by the uncertainty principle, it will have
+a spatial component of momentum of order lin!. If the fermions are
+non-relativistic, i.e. if lin! is less than m, the velocity of the fermions
+will be of order lint/m , while if the fermions are relativistic (i.e. lin! is
+greater than m) th
+
+[p.323] 314
+GRAVITATIONAL COLLAPSE
+--~-r-----,,:;//;-----,4.re:::.::='_~iO
+[9.2
+FIGURE 58. A space (.L, g) which is strongly future asymptotically predictable
+from a partial Cauchy surface f/, showing a family f/(7) of spacelike surfaces
+which cover D+(f/) -f/ and intersect J+ in a family of two·spheres ~(7).
+Given any e > 0, one can find a r
+whose volume is > k(T) - e. Thus
+thereisa8> Osuchthatk(T-8) > k(T)-e.Ontheotherhand,suppose
+there were an open set if'which did not intersect I-(~(T),.ii)n D+(9')
+but which was contained in
+I-(~(T'),Ji)n D+(9') for any T' > T.
+Then if p e if', there would be past-directed timelike curves ~, from
+each ~(T') to p. As the region ofJ+ between ~(T) and ~(Tl) is compact
+for any T 1 > T, there would be a past-directed non-spacelike curve A
+from ~(T) which was the limit curve ofthe {~,}. Since the {~,} did not
+intersect I-(~(T),.ihA would not either, and so it would be a null
+geodesic and would lie in l-(~(T),Ji). It would enter J( and so it
+would either have a past endpoint at p, or would intersect 9'. The
+former is impossible asit would imply that if'intersected I-(~(T),Ji),
+and the latter is impossible as peI+(9'). This shows that there is no
+open set which is in I-(~(T'),.ii)for every T' > T, but which is not in
+I-(~(T),Ji) nD+(9'). Thus given e, there is a 8 such that
+k(T+8) < k(T)+e.
+Therefore k(T) is continuous.
+0 [p.324] 9.2]
+BLACK HOLES
+315
+Proofofproposition 9.2.3. Define functionsf(p) and k(p, r), peD+(.9),
+which are volumes of1+(p) andI-(p)-l-(~(r),.it).As in proposition
+6.4.9, the functionf(p) is continuous on the globally hyperbolic region
+D+(.9) -.9, and goes to zero on every future-inextendible non-
+spacelike curve. Since I-(~(r),.it)nJI is a past set,
+D+(.9) -I-(~(r),A)-.9
+is globally hyperbolic. Thus for each r, k(p, r) is continuous on
+D+(.9)-.9. This means that given anye > O,one can find a neighbour-
+hood %' ofp such that \k(q,r)-k(p,r)\ < ie for any qe%'. By lemma
+9.2.4, one can find a 8> 0 such that Ik(r')-k(r)\ < ie for Ir' -r\ < 8.
+Then Ik(q, r') - k(p, r) I < e, which shows that k(p, r) is continuous on
+(D+(.9) -.9) x (0,00). The surfaces.9(r) can then be defined as the set
+of points peD+(.9)-.9 such that k(p,r) = rf(p). Clearly these are
+spacelike surfaces which cover D+(.9) -.9 and satisfy properties
+(a)-(c).
+To define the homeomorphism a, one needs a timelike vector field
+on D+(.9) -.9 which intersects each surface .9(r). We construct such
+a vector field as follows. Let r
+be a neighbourhood of J+ in the
+conformal manifold.ii, let Xl be a non-spacelike vector field on r
+which is tangent to the generators ofJ+ on J+, and let Xl ~ 0 be a C2
+function which vanishes outside r
+and is non-zero on J+. Let X2 be
+a timelike vector field on JI, and let x2 ~ 0 be a Q2 function on.it
+which is non-zero on JI and is zero on J+. Then the vector field
+X = Xl Xl+X 2~ has the required property.' The homeomorphism
+a: D+(.9)-.9 ~ (0,00) x.9 then maps a point peD+(.9)-.9 to (r,q)
+where r is such that p e.9(r), and the integral curve of X through p
+intersects.9 at q.
+0
+Ifthere is an event horizon J-(J+, A) in the region D+(.9) ofa future
+asymptotically predictable space, then it follows from property (b) of
+proposition 9.2.3 that ~or sufficiently large r, the surfaces .9(r) will
+intersectit. We define a blackhole on the surface.9(r) to be a connected
+component of the set f!I(r) == .9(r)-J-(J+,.it). In other words, it is
+a region of.9(r) from which particles or photons cannot escape to J +.
+As r increases, black holes can merge together, and new black holes
+can form as the result of further bodies collapsing. However, the
+following result shows that black holes can never bifurcate. [p.325] 316
+GRAVITATIONAL COLLAPSE
+[9.2
+Proposition 9.2.5
+Let tlif1(71) be a black hole on 9'(71). Let tlif2(72) and tlif3(72) be black
+holes on a later surface 9'(72), If tlif2(72) and tlif3(72) both intersect
+J+(tlif1(7 1)), then tlif2(T2) = tlif3(72).
+By property (c) of proposition 9.2.3, every future-directed inextendible timelike curve from tlif1(71) will intersect 9'(72). Thus
+J+(tlif1(71»n9'(72)
+is connected, and will be contained in a connected component of
+tlif(72).
+0
+For physical applications, one is interested primarily in black holes
+which form as the result of gravitational collapse from an initially
+non-singular state. To make this notion precise, we shall say that the
+partial Cauchy surface 9' has an asymptotically simple past if J-(9')
+is isometric to the region J-(9") of some asymptotically simple and
+empty space-time (vIt', g'), where 9" is a Cauchy surface for (vIt', g').
+By proposition 6.9.4, the surface9" has the topology R3 and so9' also
+has this topology. Proposition 9.2.3 therefore shows that if (vIt, g) is
+strongly future asymptotically predictable from a surface 9' with an
+asymptotically simple past, then each surface 9'(7) has the topology
+R3, and the union of9'(7) with the boundary two-sphere j!(7) on oF+ is
+homeomorphic to the unit cube 13•
+Although one is primarily interested in spaces which have asymptotically simple pasts it will in the next section be convenient to consider future asymptotically predictable spaces which do not have this
+property, but which at large times may closely approximate to spaces
+which do. An example ofthis is the spherically symmetric collapse we
+considered at the beginning ofthis section. Once the surface ofthe star
+has passed inside the event horizon, the metric of the exterior region
+is that of the Schwarzschild solution, and is unaffected by the fate of
+the star. When studying the asymptotic behaviour it is therefore
+convenient simply to forget about the star, and consider the empty
+Schwarzschild solution as a space which is strongly future asymptotically predictable from a surface 9' such a~ that shown in figure 24
+on p. 154. This surface does not have an asymptotically simple past,
+and its topology is 8 2 x Rl instead of R3. However the portion of 9'
+outside theevent horizoninregion I hasthe sametopologyasthe r
+
+[p.337] 328
+GRAVITATIONAL COLLAPSE
+[9.3
+particle would have to remain in the exterior region. By repeating the
+process, one could continue to extract energy from the solution. As
+one did this, one would expect the solution to change gradually. How-
+ever the ergosphere cannotshrink to zero, as therehas to be somewhere
+for these negative energy particles to exist. It therefore appears that
+either one could extract an infinite amount of energy (which seems
+improbable), orthat the ergosphere would eventually have to intersect
+the horizon. We shall show that in the latter case the solution would
+spontaneously become either axisymmetric or static without any
+further extraction of energy by the Penrose process. Either the possibility of the extraction of an infinite amount of energy or the occurrence ofa spontaneous change would seem to indicate that the original
+state ofthe black hole was unstable. It therefore seems reasonable to
+assume that in any realistic black hole situation the ergosphere
+intersects the horizon.
+Hajicek (1973) has shown that the stationary limit surface, which is
+the outer boundary of the ergosphere, will contain at least two
+integral null geodesic curves of Ka. If the gradient ofjis non-zero on
+these curves, and if they are geodesically complete in the past, they
+will contain points where Ka is zero. However there can be no such
+points in the exterior region (see proposition 9.3.3), so the ergosphere
+must intersect the horizon in this case. However although it might be
+reasonable to assume that the integral curves of Ka were complete in
+the future, it does not seem reasonable to assume that they are complete in the past, since that would be to assume something about the
+past region of the solution which, as we said before, is not physically
+significant. In the static case one could show that the solution was
+time symmetric, but there is no a priori reason why a stationary non-
+static solution should be time symmetric. For this reason we shall rely
+on the energy extraction argument above rather than on Hajicek's
+results, to justify our assumption that the ergosphere intersects the
+horizon.
+One can explain the significance of the ergosphere touching the
+horizon as follows. Let!21 be one connected component of
+J';'(J+,.ii)n J+(.f-,.ii)
+and let t§1 be the quotient of !21 by its generators. By propositions
+9.3.1 and 9.3.2, this will be homeomorphic to a two-sphere. Byproposi-
+tion 9.3.1, the spatial separation of two neighbouring generators is
+constant along the generators, and so can be represented by an induced [p.338] 9.3]
+THE FINAL STATE
+329
+metric h on t§1. The isometry Of moves generators into generators, and
+so acts as an isometry group of (t§I' h). Ifthe ergosphere intersects the
+horizon, Ka will be spacelike somewhere on the horizon and the action
+of Of on (t§I' h) is non-trivial. Therefore it must correspond to a rotation ofthe sphere t§1 around an axis, and the orbits of the group in t§1
+will be two points, corresponding to the poles, and a family of circles.
+A particle moving along one of the generators of the horizon would
+therefore appear to be moving relative to the frame defined by Ka
+which is stationary at infinity. One could therefore say that the
+horizon was rotating with respect to infinity.
+The next result shows that a rotating black hole must be
+axisymmetric.
+Propo8ition 9.3.6
+Let (..A', g) be a stationary non-static regular predictable space, in
+which the ergosphere intersects J-(f+,..ii) nJ+(f-, ..ii). Then there
+is a one-parameter cyclic isometry group 09 (0 ~ ¢ ~ 217) of (..A', g)
+which commutes with Of' and whose orbits are spacelike near f +
+and f-.
+The method of proof of proposition 9.3.6 is to use the analyticity of
+the metric g to show that there is an isometry 09 in a neighbourhood
+of the horizon. One then extends the isometry by analytic continuation. The method would therefore work even if the metric were not
+analytic in isolated regions away from the horizon, forexample ifthere
+were a ring of matter or a frame of rods around the black hole. This
+leads to an apparent paradox. Consider a rotating star surrounded by
+a stationary square frame of rods. Suppose that the star collapsed to
+form a rotating black hole. If the black hole approached a stationary
+state, it would follow from proposition 9.3.6 that the metric g was
+axisymmetric except where it was non-analytic at the rods. However
+the gravitational effect of the rods would prevent the metric being
+axisymmetric. The res9lution of the paradox seems to be that the
+black hole would not be in a stationary state while it was rotating.
+What would happen is that the gravitational effect ofthe rods would
+distort the black hole slightly. The back reaction on the frame would
+cause it to start rotating and so to radiate angular momentum.
+Eventually the rotation ofboth the black hole and the frame would be
+damped out and the solution would approach a static state. A static
+black hole need not be axisymmetric if the space outside it is not
+empty, i.e. if condition (a) of Israel's theorem is not satisfied. [p.339] 330
+GRAVITATIONAL COLLAPSE
+[9.3
+The above discussion indicates that a realistic black hole will never
+be exactly stationary while it is rotating, as the universe will not be
+exactly axisymmetric about it. However in most circumstances, the
+rate ofslowing down ofthe rotation of the black hole is extremely slow
+(Press (1972), Hartle and Hawking (1972b». Thus itis a good approximation to neglect the small asymmetries produced by matter at a
+distance from the black hole, and to regard the rotating black hole as
+being in a stationary state. We shall therefore now consider the
+properties of a rotating axisymmetric black hole.
+The following result of Papapetrou (1966), generalized by Carter
+(1969), shows that the Killing vectors Ka corresponding to the time
+translation Of and /{a corresponding to the angular rotation 0lf; are
+both orthogonal to families of two-surfaces.
+Proposition 9.3.7
+Let (..A', g
+
+[p.351] 342
+GRAvITATIONAL COLLAPSE
+-- -------
+[9.3
+FIGURE 61. The isometry 01, moves the point p and the surface 9i'(v) into the
+point OI,(P) and the surface 9i'(v+tl ) in the horizon !Ill' YI is tangent to a null
+geodesic generator of fill' Y. is a null vector orthogonal to 9i'(v). and Ya lies in
+9i'(v). K is the Killing vector field on !Ill which generates the isometry group 01,
+In a neighbourhood of !Ill' there will be a unique null geodesic i\
+orthogonal to a surface 9'(v) through a given point r. One can then
+define coordinates (v,w,e,¢) for the point r, where w is the affine
+distance (as measured by Y2) along J1" and (v,e,¢) have their values
+at J1, n !Ill' where e and ¢ are spherical polar coordinates for the
+generators of !Ill such that yaae.a = 0, ~a¢.a = 0. (In other words,
+we choose Ya = (21T/tl ) fJ/fJ¢ and Y.. = fJifJe on !Ild We shall take the
+basis {YI' Y2• Ya, YJ to be parallelly propagated along the null geo-
+desics with tangent vector Y2• Then Y2 = fJ/fJw. We define the vector
+:t( to be fJ/fJv. This means that the Lie derivative of :t( by Y2 is zero.
+We define the vector Za to be
+1 {yaa
+y'a'
+}
+Za = ../2 (YabYab)i +i (~bY4b)i .
+Then
+znZa = 0,
+zaZa = 1,
+ZaZa = 0,
+where - denotes the complex conjugate. [p.352] 9.3]
+THE FINAL STATE
+343
+One can define on !i1 a family {gn} of tensor fields, where
+go = g
+and
+gn = Ly (Ly (... (Lr.g) ...».
+.....
+t
+t
+__
+.;
+n terms
+gn+lab = gnab;c:YzC+gncbY2C;a+gll ac:Yzc;b'
+The Lie derivative with respect to f{ of the second and third terms
+on the right are zero. The first term involves covariant derivatives of
+YIi oforder (n + 1) and lower orders. The Lie derivative with respect to
+:f{ of all the lower order terms are zero. The terms involving (n+ 1)
+covariant derivatives are
+In the coordinates given above, gnab = on(gab)jown. Since the solution
+is analytic, it is completely determined by the family gn on ~l' We
+shall show that on !iI' the Lie derivatives with respect to f{ ofall the
+gn vanish. Then the Lie derivative ofthe gn with respect to:K = f{ - K
+will also vanish. This shows that the solution will admit a oneparameter group 0", generated by it For simplicity we shall consider
+only the empty space case, but similar arguments hold in the presence
+of matter fields, like the electromagnetic or scalar fields, which obey
+well-behaved hyperbolic equations.
+By our choice of coordinates, the components ofLxg are the partial
+derivatives with respect to v of the coordinate components gab' These
+arealIconstanton~I'soLigl.11 = O. We shall show below LXg11:l1 = 0,
+and then proceed by a method of induction. Suppose that
+Lxgnl.f1 = 0,
+n ~ 1.
+It then follows from the construction of the basis that Lx of the nth
+covariant derivatives of all the basis vectors YI' Y2- Z, Z are zero.
+Now
+(¥2a;be/...llhc+:Yzb;ae/...llhc)Y2":Yz/· . .:Yzh:Yzc
+= (:Yza;bt:Yze+:Yzb;a,,:Yz");/...llhC:Yz/, ..:Yzc+lower order terms
+= «:Yza; "Y2");b + Rpabe:YzP:Yz" + (:Yzb; ,,:Yz");a + Rpba,,:YzP:Yz");/...Oh
+x :Yz/.. .:YzC+ lower order terms.
+The Lie derivatives with respect to f{ of this expression will be zero,
+if the Lie derivative with respect to f{ of the Riemann tensor and its
+covariant derivatives to order (n-1) vanish. Then Lxgn+lI.f1 will be
+zero.
+To show that the Lie derivatives with respect to f{ of gl and of the
+covariant derivatives ofthe Riemann tensor are zero, it is convenient
+to use some notation introduced by Newman and Penrose (1962). [p.353] 344
+GRAVITATIONAL COLLAPSE
+[9.3
+This involves using a pseudo-orthonormal basis with the two spacelike
+vectors Ya and Y.. combined to give a single complex null vector Z,
+giving each component of the connection and the curvature tensor
+a separate symbol, and writing out all the Bianchi identities and the
+defining equations for the curvature tensor explicitly without summation. These relations are combined in pairs to form half the number
+ofcomplex equations. Thesymbolsfor the connection components are:
+K = Yla; bZaYlb,
+p = Y;.a: bzaZb,
+U = Yla; bzaZb,
+T = Y;.a: bZa~b,
+rr = -~a; bzaYlb,
+A:= -Y2a;bzaZb,
+p = -~a: bzaZb,
+V = -Y2a; bzaY2b,
+e = l(Yla; bY2aY;.b_Za;bZay;'b),
+a = l(y;'a; bY2aZb-Zn: bZaZb),
+(i = ·HY;.a; b:Yt.aZb-Za; bzaZb),
+'Y =
+l(Y~.a; b~aY2b-Za; bZaYl).
+The symbols for the Weyl tensor are:
+'Yo =
+-Gabcdy;'aZb~cZd,
+'YI = -Gabcdy;'a:Yt.by;'cZd,
+'Y2= -!Gabcd(y;'a~by;'cY2d_J;aY2bzeZd),
+o/a = GabcdJ;a~b~cZd
+'Y.. = -Gabcd~aZb~cZd.
+We are considering empty space, so the Ricci tensor is zero (Le.
+cI>.A.B = 0 = A in the Newman-Penrose formalism). Since the basis is
+parallelly propagated along Y2, v = 'Y:= T = O. As Y2 is the gradient
+of the coordinate v,
+rr = 1J+a and p = p. Furthermore on !!lI'
+K = P = u = 0, e = e, Y1(e) = 0 and 'Yo = O.
+The equations we shall need are:
+y;'(a) -Z(e) = (p+e-2e)a+fJU-lle-KA+ (e+p)rr,
+y;'({i) - Z(e) = (a +rr)u+ (p- e){i - pK- (a-1i)e+ 'YI ,
+y;'(A) -Z(rr) = PA +O'p+rr2+ (a-ll)rr- (3e-e)A,
+YI(,u)- Z(rr) = pp +UA+ rr1i- (e+e)p -rr(a-(i) +'Y2,
+Z(p)-Z(u) =p(a+{i)-u(3a-ll)-'Y1
+(9.11 a)
+(9.11 b)
+(9.11 c)
+(9.11 d)
+(9.11 e) [p.354] 9.3]
+THE FIN AL STATE
+345
+(these are obtained from the Newman-Penrose equations (4.2)), and:
+y;'('Yl)-Z('Yo) = - 3K'Y2+ (2£+4p)'Yl - (-1T+ 4a)'Yo,
+(9.12a)
+Y~J'Y2) -Z('YI ) = - 2K'Ya+ 3p'Y2- (-21T+ 2/%)'1'1- .\'1'0'
+(9.12b)
+Yl('Ya)- Z('Y2) = - K'Y.. - (2£- 2p) 'Ya+ 31T'Y2- 2.\'1'1'
+(9.12c)
+y;'('Y..)- Z('Ya) = - (4€-p)'Y..+(41T+ 2a) 'Ya-
+3~'Y2'
+(9.12d)
+¥2('YO)-Z('Yl ) = -,u'Y0-2,B'Yl +3u'Y2
+(9.12e)
+(these are obtained from the Newman-Penrose equations (4.5)).
+From (9.11e), '1'1 = Oon.,qr Then from (9.12b), 1';,('1'2) = 1?('Y2) = 0
+on .,ql. Adding (9.11a) to the complex conjugate of (9.11b), one
+obtains
+y;'(1T) = y;'(a+,B) = Z(€) + Z(e) + 21TP+ 21Tu-1T(€-e)-K.\-Kll +'Yr
+On .,ql' this becomes
+y;'(1T) = Z(€) +Z(e).
+Therefore YI (Yl(1T)) = J;.(Z(€) +Z(e)) on .,ql. But on .,qI' Lt,Z = 0 and
+y;.(€) = o. Thus Y;.(J;.(1T)) = 0 on .,ql. This shows that 1T = A +Bv on .,qI'
+where A and B are constant along a generator of .,qI' However
+1Tlp = 1Tlet,(p); therefore 1T is a constant along the gen
+
+[p.365] 356
+THE INITIAL SINGULARITY
+[10.1
+(10.7)
+meet up around the back). However the singularity is in the future.
+Of course this is a rather unreasonable example but it shows that one
+has to be careful. We shall therefore give an argument based on
+theorem 3 which indicates that the universe contains a singularity in
+our past, providing that the Copernican principle holds. Theorem 3
+is similar to theorem 2, but requires that all the past-directed timelike
+geodesics from a point shall start to reconverge, instead of all the null
+geodesics. This condition is not satisfied in the example given above,
+though it is there satisfied by the future-directed geodesics from any
+point.
+By an argument similar to that given above for the null geodesics,
+the convergence O(s) of the past-directed timelike geodesics from a
+point p will be less than
+!_fB Roo VoVb ds,
+So
+80
+where s is proper distance along the geodesics, V = alas and s > so'
+LetW be a past-directed timelike unit vectoratp, and let e == - V°Jv,.lp
+(so e ~ 1). Then 0 will become less than - e within a distance Rile
+along any geodesic if there is some Ro' R 1 > Ro > 0, such that
+f
+R"CRob VoVbds > e(3/Ro+6)
+R.lc
+along that geodesic. Condition (3) of theorem 3 will then be satisfied
+with b = max (Rl , (36)-1).
+To make (10.7) appear more similar to (10.6), we shall introduce an
+affine parameter v = sfe along the timelike geodesics; then (10.7)
+becomes
+fR.
+lRo
+RooKoKbdv> 1+lR06,
+(10.8)
+R.
+where K = a/av and KOWol p = - 1. We cannot verify this condition
+directly by observation as in the case of (10.6) because it refers to
+timelike geodesics. We therefore have to appeal to the arguments
+given in the first part ofthis section to show that the universe is close
+to a Robertson-Walker universe model at least back to the time the
+microwave background radiation was last scattered.
+In a Robertson-Walker model, let W be the vector -a/at. Along·
+a past-directed timelike geodesic through p,
+~(W KO) = W. KoKb
+dv
+°
+o,b
+1 dS
+= -8 dt {(WOKo)2_ 1/e2}. [p.366] 10.1]
+THE EXPANSION OF THE UNIVERSE
+357
+(10.9)
+(10.10)
+Therefore, providing that dS/dt > 0, Jv,.Ka ~ -1. However
+WaKa = dt/dv;
+thus for some 6 > 0, (10.8) will be satisfied for every geodesic provided
+that there are times t2, ta with t2 < ta < tp such that
+tp ; taf- Rab KaKb( - J¥cKC)-l dt > 1.
+By the field equations with A = 0,
+RabKaKb = 87T{(Jl+p) (Jv..Ka)2_i(P-p)c-2}.
+Therefore, providing P ~ 0,
+RabKaKb ~ 47TJl(Jv,.Ka)2.
+Thus (10.9) will be satisfied if
+t -t f'-
+p 3 a
+47TJldt> 1.
+,-
+Assuming that the microwave radiation has a black body spectrum
+at 2.7 oK, its energy density is about 1O-a4 gm em-aat the present time.
+If this radiation is primaeval, its energy density will be proportional
+toS--4. SinceS-1 = O(t-l) D.S ttends to zero, one can seethat (10.10) can
+be satisfied by taking t8 to be ltp and t2 to be sufficiently small. How
+small t2 has to be depends on the detailed behaviour ofS, which in turn
+depends on the density of matter in the universe. This is somewhat
+uncertain, but seems to lie between to-81gm cm-8 and 5 x 10-29gm
+em-a. In the former case, t2will have to be such that S(tp )/S(t2) ~ 30,
+and in the latter case, S(tp )/S(t2) ~ 300. Sincethe microwave radiation
+seems to be all pervasive, any past-directed timelike geodesic must
+pass through it. Thus an e~timate based on· the Robertson-Walker
+models should be a good approximation for its contribution to (10.10),
+provided that the radiation was not emitted more recently than t2,
+and providedthat a Robertson-Walker model is a good approximation
+back that far. From the arguments at the beginning ofthis section, the
+latter should be the case-provided that the radiation has propagated
+freely towards us since t2• However there may be ionized intergalactic
+gas present with a density as high as 5 x 10-29gm cm-8, in which case
+the radiation could be last scatteredat a time t such that S(tp)/S(t) '" 5.
+The optical depth back to a time t is
+I:P KJlgssdt,
+(10.11)
+where K is at most 0.5 if Jl is measured in gm cm-8 and t in em. [p.367] 358
+THE INITIAL SINGULARITY
+[10.1
+As before, there can beno significantopacity backto t = tp - 1017 sec,
+since we see objects at distances of at least 3 x 10117 cm. Taking ta to
+have this value, we see that the gas density will cause (10.11) to be
+satisfied for a value of til corresponding to an optical depth ofat most
+0.5.
+Thus the position is as follows. We assume the Copernican principle,
+and that the microwave radiation has been emitted either before a
+time til such that S(tp)/S(tll) ~ 300, or before the time corresponding to
+the optical depth ofthe universe being unity, ifthis is less than til. In
+the former case, condition (2) of theorem 3 will be satisfied by the
+radiation density, and in the latter case by the gas density. Thus ifthe
+usual energy conditions and causality conditions hold, we can conclude that there should be a singularity in our past (i.e. there should be
+a past-directed non-spacelike geodesic from us which is incomplete).
+Suppose one takes a spacelike surface which intersects our past
+light cone and takes a number of points on that surface; can one say
+that there is a singularity in each of their pasts1 This will be the case
+if the universe is sufficiently homogeneous and isotropic in the past to
+converge all the past-directed timelike geodesics from these points.
+In view of the close connection between the convergence of timelike
+geodesics and cloaedtrapped surfaces, we would expect this to be the
+case ifthe universe is homogeneous and isotropic at that time on the
+scale ofthe Schwarzschild length (3/871fl)1.
+We have direct evidence of the homogeneity ofthe universe in our
+past from the measurements ofPenzias, Schraml and Wilson (1969),
+who found that the intensity ofthe microwave backgroundis isotropic
+to within 4 %for a beam width of 1.4 x 10-8 square degrees. Assuming
+that the microwave radiation has not been emitted since a surface in
+our past corresponding to optical depth unity, the observ
+
+[p.379] 370
+APPENDIX B
+(A2)
+orthogonal to ~(q), as it leaves ~(q) invariant; since I q must operate
+in the group orbit 9'(1') through 1', this orbit is orthogonal to ~(q).
+Thus (Schmidt (1967)) the group orbits 9' are orthogonal to the
+surfaces
+~. Further these surfaces define locally a one-one map
+between the group orbits, where the image f(q) of q in 9'(1') is the
+intersection of ~(q) and 9'(1'). Since this map is invariant under Iq ,
+vectors of equal magnitude in 9'(q) at q are mapped into vectors of
+equal magnitude in 9'(1') at f(q); and since all the points of9'(q) are
+equivalent, the same magnitude multiplication factor occurs for the
+maps of vectors from any point in 9'(q) to its image in 9'(1'). Thus
+(Schmidt (1967)) the orthogonal surfaces ~ map the trajectories 9'
+conformally onto each othero
+Ifone chooses coordinates {t, 1', e, ~} so that the group orbits 9' are
+the surfaces {t, l' = constant} and the orthogonal surfaces ~ are the
+surfaces {e, ~ = constant}, it now follows that the metric takes the
+form ds2= dr2(t, 1') + Y2(t, 1') dn2(e, ~), where dr2is an indefinite twosurface and dn2 is a surface of positive constant curvature. If one
+further chooses the functions t, l' so that the curves {t = constant},
+{1' = constant} are orthogonal in the two-surfaces ~ (cf. Bergmann,
+Cahen and Komar (1965)), one can write the metric in the form
+_dt2
+ds2 = F2(t, 1') +X2(t, 1') d1'2+ Y2(t, 1')(d(J2+sin2ed~2)o
+(A 1)
+(Note that this still leaves the freedom to choose arbitrarily either
+l' or't in these surfaces.)
+Let an observer moving along the t-lines measure an energy density
+p, an isotropic pressure p, an energy flux q, and no anisotropic pressures. Then the field equations for the metric (A 1) may be written
+in the form
+2X(r'
+X"Y'
+rF')
+-81Tq=y y- XY + YF
+'
+1
+2 (
+Y')'
+( Y')2
+x·r
+(r)2
+81Tp = Y2+ X
+- XY
+-~ XY
++2F2 XY +F2 Y
+,(A3)
+1
+(r)·
+(r)2
+2 Y'F'
+(Y')2
+-81Tp = p+ 2F Fy
++3 Y
+F2+ X2 YF -
+XY
+,
+(A4)
+1 (
+F')'
+(X·)O
+(r)·
+(XO
+)2
+41T(P+3p) = X
+- FX
+-F F y
+-?oF J!'y
+-F2 Y
+_
+2(r)2
+..!.- (F')2 _~ Y'F'
+2F
+Y
++Xv. F
+Xv. YF'
+(A 5)
+where' denotes %r and . denotes o/Ot. [p.380] SPHERICAL SYMMETRY
+371
+We first considerthe empty space field equations R ab = 0; this means
+that in (A2)-(A5) we must set p = p = q = o. The local solution
+depends on the nature of the surfaces {Y = constant}; these surfaces
+may be timelike, spacelike or null, or they may not be defined (if Y is
+constant). In the exceptional case when Y: "Y;a = 0on some open set 111
+(this includes the case when Y is constant),
+~ = FY"
+(A6)
+holds in 111. However when (A 6) holds, the value of Y"' determined
+by (A 2) is inconsistent with (A 3). Thus we may consider some point
+p where y;aY;a < 0 or Y; aY;a > 0; the same inequality must hold in
+some open neighbourhood 111 ofp.
+Consider first the situation when Y; aY;a < o. Then the surfaces
+{Y = constant} are timelike in 111, and one can choose Y to be the
+coordinate r. (Then r is an area coordinate, as the area of the twosurfaces {r, t = constant} is 417r2.) Thus Y" = 0, Y' = 1and (A 2) shows
+that X· = o. Further (A4) shows that (F'IF)" = 0, so one can choose
+a new time coordinate t'(t) in such a way as to se.t F = F(r). Then one
+has F = F(r), X = X(r), Y = r; the solution is necessarily static.
+Equation (A 3) now shows d(rIX2)/dr = 1, so solutions are ofthe form
+X2 = (1- 2m/r)-1 where 2m is a constant of integration. Equation
+(A 4) can be integrated, with a suitable choice ofa constant ofintegration, to give F2 = X2, and then (A 5) is identically satisfied. With
+these forms of F and X the metric (A 1) becomes
+ds2 = _ (1- 2m) dt2+
+dr
+2
++r2(d02+sin2ed~2).
+(A 7)
+r
+(1- 2;n)
+,
+this is the Schwarzschild metric for r > 2m.
+Now suppose y; aY;a > o. Then the surfaces {Y = constant} are
+spacelike in 111, and one can choose Y to be the coordinate t. Then
+yo = 1, Y' = 0 and (A2) shows F' = o. One can choose the r-coordinate
+so that X = X(t); thEm F = F(t), X = X(t), Y = t and the solution is
+spatially homogeneous. Now (A 4) and (A 5) can be integrated to find
+the solution
+d8' ~ - (~dt~ I) + ("~- I) d'"H'(de'+sin' 0d¢~.
+(A 8)
+This is part of the Schwarzschild solution inside the Schwarzschild
+radius, for the transformation t-+r', r-+t' transforms this metric into [p.381] 372
+APFENDIX B
+the form (A 7) with r' < 2m. Finally, ifthe surfaces{Y = constant} are
+spacelike in some part of an open set "I'" and timelike in another part,
+one can obtain solutions (A 8) and (A 7) in these parts, and then join
+them together across the surfaces where
+Y; aY;a = 0 as in §5.5,
+obtaining a part of the maximal Schwarzschild solution which lies
+in "1'". Thus we have proved Birkhoff's theorem: any 0 2 solution of
+Einstein's empty space equations which is spherically symmetric in
+an open set "1'", is locally equivalent to part ofthe maximally extended
+Schwarzschild solution in "1'". (This is true even if the space is CO,
+piecewise 0; see Bergmann, Cahen and Komar (1965).)
+We now consider spherically symmetric static perfectfluid solutions.
+Then one can find coordinates {t, r, e,~} such that the metric has the
+form (A 1), the fluid moves along the t-lines (so q = 0), and F = F(r),
+X = X(r), Y = Y(r). The field equations (A 3), (A 4) now show that
+if Y' = 0, then p + p = 0; we exclude this as being unreasonable for
+a physical fluid, so we assume Y' =t= o. One may therefore again choose
+Y as the coordinate r; the metric then h~ the form
+dt2
+,
+ds2= - F2(r) +X2(r)dr2+r2(de2+sin2ed~2).
+(A9)
+The contracted Bianchi identities Tab;b = 0 now shows
+p'-(p+p)F'/F = 0;
+(A 10)
+(A 5) is identically satisfied if (A 3), (A 4) and (A 10) are
+~tisfied.
+Equation (A 3) can be directly integrated to show
+X 2 = ( 1- 2~rl ,
+(A 11)
+where
+111(1') == 41T f:pr2dr,
+and the boundary condition X (0) = 1 has been used (i.e. the fluid
+sphere has a regular centre). With (A 10), (A 11), equation (A 4) takes
+the form
+dp
+(p,+p) (if + 41Tpr3)
+dr = -
+r(r- 2111)
+(A 12)
+which determinesp as a function ofr, ifthe equation ofstate is known.
+Finally (A 10) shows that
+f
+Pcrl dp
+F
+
+[p.393] 384
+NOTATION
+Boundary of space-time
+Jt* = Jt ub.
+where b. is the c-boundary, 220
+J+, J-, i+,i-
+c-boundary of asymptotically simple and empty
+spaces, 122, 225
+.Ii = Jt UoJt when Jt is weakly asymptotically simple; the
+boundary oJt of JI consists of J+ and J-, 221, 225
+Jt+ = Jlu 0
+where 0 is the b-boundary, 283 [p.394] Index
+Referencu in italiC8 are main referencu or deftniti0n8.
+acausal set, 211
+partial Cauchy surface, 204
+acceleration vector, 70, 72, 79, 84, 107
+relative acceleration of world lines,
+78-80
+achronal boundary, 187, 312
+achronalset,186, 187,202,203,209,211,
+266, 267: edge, 202
+affine parameter, 33, 86
+generalized, 259, 278, 291
+Alexandrov topology, 196
+anti-de Sitter space, 131-4, 188,206,218
+apparent horizon, 320, 321-3, 324
+area law for black holes, 318, 332, 333
+asymptotic tlatness, 221-5
+asymptotically
+simple
+spaces,
+222:
+empty and simple spaces, 222
+weakly
+asymptotically
+simple
+and
+empty spaces, 225, 310: asymptotically predictable spaces, 310, 311,
+312
+strongly future asymptotically predictable,
+313,
+315,
+317:
+regular
+predictable space,
+318, 319, 320;
+static,
+325, 326; stationary,
+324,
+325,327-31,334-47
+asymptotically simple past, 316
+atlas, 11, 12, 14
+axisymmetric
+stationary
+space-times,
+161-70
+black holes, 329, 331, 341-7
+b-boundary, 283, 289
+b-bounded, 292, 293
+b-completeness, 259,277,278
+bases of vectors,
+one-forms,
+tensors,
+16-18,51
+change of basis, 19, 21
+coordinate basis, 21
+orthonormal basis, 38, 52
+pseudo-orthonormal basis, 86
+beginning of universe, 3, 8, 358-9, 363
+in Robertson-Walker models, 137-42
+in spatiallyhomogeneousmodels, 144-9
+Bianchi's identities, 36, 42, 43, 85
+bifurcation
+of black holes, 315-16
+of event horizons, 326
+BirkhotI's theorem, 372
+black-body radiation in universe, 348-
+50,354-5,357, 363
+black holes, 308-23, 315
+final state of, 323-47
+rotating black hole, 329
+boundary
+of manifold, 12
+of future set, 187
+of space-time:
+c-boundary,
+217-21,
+222-6: b-boundary, 276-84, 289-91
+Brans-Dicke scalar field, 59, 64, 71, 77,
+362
+energy inequalities, 90, 95
+bundle, 50, 174
+of linear frames,
+51,
+53,
+64,
+174,
+292-4
+of orthonormal frames, 52, 54, 27&-83,
+289: metric on, 278
+of tensors, 51, 04, 198
+tangent bundle, 51, 54
+c-boundary, 217-21, 224-6
+canonical form, 48
+Carter's theorem, 331
+Cartesian product, 15
+Cauchy data, 147, 231-3, 254
+Cauchy development, 6, 94, 119, 147,
+201-6,209-11,217,228
+local existence, 248, 265
+global existence, 251, 255
+stability, 253, 256, 301, 310
+Cauchy horizon, 202-4, 265, 287, 362
+examples, 120, 133, 169, 178,203,206,
+287
+Cauchy problem, 60, 226-55
+Cauchy sequences, 257,282
+Cauchy surface, 205, 211, 212, 263, 265,
+274,287, 313
+examples, 119, 125, 142, 154
+[ 386 ] [p.395] 386
+INDEX
+Cauchy surface (cant.)
+lack of, 133, 169, 178, 206, 206
+partial
+Cauchy
+surface,
+204,
+217,
+301-2, 310-20, 323
+causal boundary of space-time, 217-21,
+221-5: /lee alIlo conformal structure
+causal future (past), J+(J-), 183
+causal structure, 6, 127-30,180-225
+causally simple set, 188,206, 207, 223
+local causality neighbourhood, 195
+causality conditions
+local causality, 60
+.
+chronology condition, 189
+causality condition, 190
+future, past distinguishing conditions,
+192
+strong causality condition, 192
+stable causality condition, 198
+causality violations, 6, 162, 164, 170, 175,
+189,492, 197
+and singularity theorems, 272
+caustics, 120,
+132-3,
+170;
+/lee
+alIlo
+conjugate points
+charged scalar field, 68
+chart, 11
+Christoffel relations, 40
+chronological future (past), 1+(1-), 182,
+217
+chronology condition, 189, 192, 194, 266
+violating set, 189
+cigar singularity, 144
+closed trapped surface, 2, 262, 263, 266
+examples, 156, 161
+in asymptotically fiat spaces, 311, 319
+outer trapped surface, 319; marginally
+outer trapped surface, 321
+outside collapsing star, 301, 308
+in expanding universe, 363-8
+Codacci's equaticn, 47, 232, 362
+collapse of star, 3, 8, 300-23, 360
+compact space-time, 40, 189
+compact space sections, 272-5
+completeness conditions
+inextendibility,58
+metric completeness, 257
+geodesic completeness, 257
+b-completeness, 259, 278-283
+completion by Cauchy sequences, 282,
+283
+components of connection, 31
+components of tensor, 19
+of p.form, 21
+conformal curvature tensor, 41, 86; /lee
+Weyl tensor
+conformal metrics, 42, 60, 63, 180,222
+conformal
+structure
+of
+infinity
+and
+singUlarities
+c-boundary, 217-21
+examples, 122, 127, 132, 141, 146, 164,
+168, 160, 166, 177
+in asymptotically fiat spaces, 222-4
+horizons, 128-30
+conformally fiat theory, 75-6
+congruence of curves, 69
+conjugate points, 4, 6, 267
+on timelike geodesics, 97, 98, 111, 100,
+112,217
+on null geodesics, 100, 101, 116, 102,
+116
+connection, 30, 31, 34, 40, 41, 69, 63
+and bundles over .I, 53-6, 277
+on hypersurface, 46
+conservation
+ofenergy and momentum, 61,62,67, 73
+of matter, theorem, 94, 298
+of vorticity, 83-4
+constraint equations, 232
+continuity conditions
+for map, 11
+of space-time, 57, 284
+contraction of tensor, 19
+contracted Bianchi identities, 43
+convergence of curves, /lee expansion
+convergence of fields
+weak,243
+strong, 243
+convex normal neighbourhood, 34, 60,
+103, 105, 184
+local causality neighbourhood, 196
+coordinates, 12
+normal coordinates, 34, 41
+coordinate singularities, 118, 133, 160,
+156, 163, 171,
+Copernican principle,
+134,
+135,
+142,
+350, 366, 368
+cosmological constant, 73, 96, 124, 137,
+139, 168, 362
+cosmological models
+isotropic, 134-42
+spatially homogeneous, 142-9
+covariant derivatives, 31-5, 40, 69
+covering spaces, 181, 204-5, 273,293
+cross-section of a bundle, 52
+curvature tensor, 35, 36, 41
+identities, 36, 42, 43
+of hypersurface, 47
+physical significance, 78-116
+curve, 15
+geodesic, 33, 63,103-16,213-17
+non-spacelike, 106, 112, 184, 185, 207,
+213
+null,86-8
+timelike, 78-86, 103, 182,184,213-17
+de Sitter space-time, 124-31
+density of matter in universe, 137, 367 [p.396] INDEX
+387
+development, 228,248,251,263
+existence, 246-9
+deviation equation
+timelike curves, 80
+null geodesics, 87
+diffeomorphism, 22, 66, 74, 227
+differentiability conditions, 11, 12
+and singularities, 284-7
+of initia

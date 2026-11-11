@@ -1,0 +1,1262 @@
+{
+  "best_epoch": 31,
+  "elapsed_seconds": 2.3160532000001695,
+  "epochs_run": 31,
+  "history": [
+    {
+      "epoch": 1,
+      "training_weighted_cross_entropy": 3.7908939321835837,
+      "validation_weighted_cross_entropy": 3.185289144515991
+    },
+    {
+      "epoch": 2,
+      "training_weighted_cross_entropy": 3.0543824235598245,
+      "validation_weighted_cross_entropy": 1.7624856233596802
+    },
+    {
+      "epoch": 3,
+      "training_weighted_cross_entropy": 1.545674741268158,
+      "validation_weighted_cross_entropy": 0.6442242860794067
+    },
+    {
+      "epoch": 4,
+      "training_weighted_cross_entropy": 0.5739245377480984,
+      "validation_weighted_cross_entropy": 0.15578532218933105
+    },
+    {
+      "epoch": 5,
+      "training_weighted_cross_entropy": 0.13054730743169785,
+      "validation_weighted_cross_entropy": 0.040459584444761276
+    },
+    {
+      "epoch": 6,
+      "training_weighted_cross_entropy": 0.0392463404374818,
+      "validation_weighted_cross_entropy": 0.019422344863414764
+    },
+    {
+      "epoch": 7,
+      "training_weighted_cross_entropy": 0.016370895861958463,
+      "validation_weighted_cross_entropy": 0.011840380728244781
+    },
+    {
+      "epoch": 8,
+      "training_weighted_cross_entropy": 0.011467691045254469,
+      "validation_weighted_cross_entropy": 0.009066865779459476
+    },
+    {
+      "epoch": 9,
+      "training_weighted_cross_entropy": 0.008752962884803614,
+      "validation_weighted_cross_entropy": 0.007516748271882534
+    },
+    {
+      "epoch": 10,
+      "training_weighted_cross_entropy": 0.0074018011800944805,
+      "validation_weighted_cross_entropy": 0.006517645437270403
+    },
+    {
+      "epoch": 11,
+      "training_weighted_cross_entropy": 0.0063350424558545155,
+      "validation_weighted_cross_entropy": 0.005750942509621382
+    },
+    {
+      "epoch": 12,
+      "training_weighted_cross_entropy": 0.005633069124693672,
+      "validation_weighted_cross_entropy": 0.005159543827176094
+    },
+    {
+      "epoch": 13,
+      "training_weighted_cross_entropy": 0.005030486577500899,
+      "validation_weighted_cross_entropy": 0.004690546076744795
+    },
+    {
+      "epoch": 14,
+      "training_weighted_cross_entropy": 0.004499599609213571,
+      "validation_weighted_cross_entropy": 0.004304261412471533
+    },
+    {
+      "epoch": 15,
+      "training_weighted_cross_entropy": 0.004245411740460743,
+      "validation_weighted_cross_entropy": 0.003978133201599121
+    },
+    {
+      "epoch": 16,
+      "training_weighted_cross_entropy": 0.003888394703002026,
+      "validation_weighted_cross_entropy": 0.00369644770398736
+    },
+    {
+      "epoch": 17,
+      "training_weighted_cross_entropy": 0.003627292811870575,
+      "validation_weighted_cross_entropy": 0.00344610377214849
+    },
+    {
+      "epoch": 18,
+      "training_weighted_cross_entropy": 0.0033229570059726634,
+      "validation_weighted_cross_entropy": 0.0032252215314656496
+    },
+    {
+      "epoch": 19,
+      "training_weighted_cross_entropy": 0.003189966567636778,
+      "validation_weighted_cross_entropy": 0.0030399372335523367
+    },
+    {
+      "epoch": 20,
+      "training_weighted_cross_entropy": 0.0029118067080465457,
+      "validation_weighted_cross_entropy": 0.0028889772947877645
+    },
+    {
+      "epoch": 21,
+      "training_weighted_cross_entropy": 0.002824697740531216,
+      "validation_weighted_cross_entropy": 0.00275163515470922
+    },
+    {
+      "epoch": 22,
+      "training_weighted_cross_entropy": 0.0026689598065180085,
+      "validation_weighted_cross_entropy": 0.0026254532858729362
+    },
+    {
+      "epoch": 23,
+      "training_weighted_cross_entropy": 0.002564362638319532,
+      "validation_weighted_cross_entropy": 0.0025191784370690584
+    },
+    {
+      "epoch": 24,
+      "training_weighted_cross_entropy": 0.002460642484948039,
+      "validation_weighted_cross_entropy": 0.0024247998371720314
+    },
+    {
+      "epoch": 25,
+      "training_weighted_cross_entropy": 0.0023523803489903608,
+      "validation_weighted_cross_entropy": 0.0023353509604930878
+    },
+    {
+      "epoch": 26,
+      "training_weighted_cross_entropy": 0.0022508565452881157,
+      "validation_weighted_cross_entropy": 0.002257983898743987
+    },
+    {
+      "epoch": 27,
+      "training_weighted_cross_entropy": 0.0022089601455566785,
+      "validation_weighted_cross_entropy": 0.002192724496126175
+    },
+    {
+      "epoch": 28,
+      "training_weighted_cross_entropy": 0.002119359696128716,
+      "validation_weighted_cross_entropy": 0.002132743364199996
+    },
+    {
+      "epoch": 29,
+      "training_weighted_cross_entropy": 0.002086682691394041,
+      "validation_weighted_cross_entropy": 0.0020807671826332808
+    },
+    {
+      "epoch": 30,
+      "training_weighted_cross_entropy": 0.002062771983522301,
+      "validation_weighted_cross_entropy": 0.002035311656072736
+    },
+    {
+      "epoch": 31,
+      "training_weighted_cross_entropy": 0.0019921664400802306,
+      "validation_weighted_cross_entropy": 0.001997154438868165
+    }
+  ],
+  "interpretation": "Held-out source/case evaluation; inspect class coverage and sample counts.",
+  "parameter_count": 57039,
+  "splits": {
+    "test": {
+      "count": 24,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 24,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "birefringence",
+            "brewster_angle",
+            "diffraction_grating",
+            "doppler_shift",
+            "focal_length",
+            "fresnel_equations",
+            "group_velocity",
+            "huygens_principle",
+            "interferometer",
+            "phase_velocity",
+            "snell_law",
+            "standing_wave",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "birefringence",
+            "brewster_angle",
+            "diffraction_grating",
+            "doppler_shift",
+            "focal_length",
+            "fresnel_equations",
+            "group_velocity",
+            "huygens_principle",
+            "interferometer",
+            "phase_velocity",
+            "snell_law",
+            "standing_wave"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0016194371273741126,
+          "per_class": {
+            "birefringence": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "brewster_angle": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "diffraction_grating": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "doppler_shift": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "focal_length": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "fresnel_equations": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "group_velocity": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "huygens_principle": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "interferometer": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "phase_velocity": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "snell_law": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "standing_wave": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 24,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "dispersive_polarization_wave",
+            "geometric_ray_lens",
+            "physical_interference_diffraction",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              8,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "dispersive_polarization_wave",
+            "geometric_ray_lens",
+            "physical_interference_diffraction"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0005618954310193658,
+          "per_class": {
+            "dispersive_polarization_wave": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "geometric_ray_lens": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "physical_interference_diffraction": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.0021813325583934784,
+      "zero_feature_inputs": 0
+    },
+    "train": {
+      "count": 96,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 96,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "birefringence",
+            "brewster_angle",
+            "diffraction_grating",
+            "doppler_shift",
+            "focal_length",
+            "fresnel_equations",
+            "group_velocity",
+            "huygens_principle",
+            "interferometer",
+            "phase_velocity",
+            "snell_law",
+            "standing_wave",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "birefringence",
+            "brewster_angle",
+            "diffraction_grating",
+            "doppler_shift",
+            "focal_length",
+            "fresnel_equations",
+            "group_velocity",
+            "huygens_principle",
+            "interferometer",
+            "phase_velocity",
+            "snell_law",
+            "standing_wave"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0012569971149787307,
+          "per_class": {
+            "birefringence": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "brewster_angle": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "diffraction_grating": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "doppler_shift": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "focal_length": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "fresnel_equations": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "group_velocity": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "huygens_principle": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "interferometer": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "phase_velocity": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "snell_law": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "standing_wave": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 96,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "dispersive_polarization_wave",
+            "geometric_ray_lens",
+            "physical_interference_diffraction",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              32,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              32,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              32,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "dispersive_polarization_wave",
+            "geometric_ray_lens",
+            "physical_interference_diffraction"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0005332353175617754,
+          "per_class": {
+            "dispersive_polarization_wave": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 32
+            },
+            "geometric_ray_lens": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 32
+            },
+            "physical_interference_diffraction": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 32
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.001790232490748167,
+      "zero_feature_inputs": 0
+    },
+    "validation": {
+      "count": 24,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 24,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "birefringence",
+            "brewster_angle",
+            "diffraction_grating",
+            "doppler_shift",
+            "focal_length",
+            "fresnel_equations",
+            "group_velocity",
+            "huygens_principle",
+            "interferometer",
+            "phase_velocity",
+            "snell_law",
+            "standing_wave",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "birefringence",
+            "brewster_angle",
+            "diffraction_grating",
+            "doppler_shift",
+            "focal_length",
+            "fresnel_equations",
+            "group_velocity",
+            "huygens_principle",
+            "interferometer",
+            "phase_velocity",
+            "snell_law",
+            "standing_wave"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0014541653217747808,
+          "per_class": {
+            "birefringence": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "brewster_angle": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "diffraction_grating": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "doppler_shift": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "focal_length": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "fresnel_equations": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "group_velocity": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "huygens_principle": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "interferometer": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "phase_velocity": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "snell_law": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "standing_wave": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 24,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "dispersive_polarization_wave",
+            "geometric_ray_lens",
+            "physical_interference_diffraction",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              8,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "dispersive_polarization_wave",
+            "geometric_ray_lens",
+            "physical_interference_diffraction"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0005429891753010452,
+          "per_class": {
+            "dispersive_polarization_wave": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "geometric_ray_lens": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "physical_interference_diffraction": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.001997154438868165,
+      "zero_feature_inputs": 0
+    }
+  },
+  "unsupported_training_labels": {}
+}

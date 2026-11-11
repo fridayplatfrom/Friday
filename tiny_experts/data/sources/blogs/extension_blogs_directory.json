@@ -1,0 +1,70 @@
+[
+  {
+    "guide_id": "UMN-EXT-TOMATO-EB",
+    "crop": "Tomato",
+    "disease": "Early Blight",
+    "pathogen": "Alternaria solani",
+    "title": "Early Blight in Tomato: Identification and Integrated Management",
+    "institution": "University of Minnesota Extension",
+    "author": "Dr. J. Grabowski, Extension Specialist",
+    "canonical_url": "https://extension.umn.edu/plant-diseases/early-blight-tomato",
+    "publication_year": 2025,
+    "practical_summary": "Early blight lesions typically start on older, lower leaves as brown circular spots with diagnostic concentric rings. As spots enlarge, the surrounding leaf tissue turns yellow. Severe infections can defoliate plants, exposing fruit to sunscald.",
+    "field_pro_tips": [
+      "Prune bottom 12-18 inches of foliage once plants reach 3 feet tall to prevent soil-splash inoculum.",
+      "Water at the base using drip irrigation or soaker hoses; avoid overhead watering after 10 AM.",
+      "Mulch heavily with straw or landscape fabric to barrier soil-borne fungal spores."
+    ]
+  },
+  {
+    "guide_id": "UCDAVIS-IPM-POTATO-LB",
+    "crop": "Potato",
+    "disease": "Late Blight",
+    "pathogen": "Phytophthora infestans",
+    "title": "Late Blight Management in Solanaceous Crops",
+    "institution": "University of California Statewide IPM Program",
+    "author": "UC Davis Extension Plant Pathology",
+    "canonical_url": "https://ipm.ucanr.edu/PMG/r606100111.html",
+    "publication_year": 2025,
+    "practical_summary": "Late blight is a water-mold oomycete disease producing water-soaked lesions that turn dark brown or purplish with pale borders. Under humid conditions, white fluffy sporulation appears on leaf undersides.",
+    "field_pro_tips": [
+      "Scout low areas in fields where morning fog and moisture linger.",
+      "Destroy all volunteer potato plants and cull piles before the planting season.",
+      "Rotate with non-solanaceous crops for at least 3 years."
+    ]
+  },
+  {
+    "guide_id": "TNAU-AGRITECH-RICE-BLAST",
+    "crop": "Rice",
+    "disease": "Rice Blast",
+    "pathogen": "Magnaporthe oryzae (Pyricularia oryzae)",
+    "title": "Rice Blast Disease: Integrated Nutrient & Disease Management",
+    "institution": "Tamil Nadu Agricultural University (TNAU) Agritech Portal",
+    "author": "Department of Plant Pathology, TNAU",
+    "canonical_url": "https://agritech.tnau.ac.in/crop_protection/crop_prot_crop%20diseases_cereals_rice_1.html",
+    "publication_year": 2026,
+    "practical_summary": "Spindle-shaped elliptical lesions with greyish-white centers and dark brown margins appear on leaves. Node and neck blast cause lodging and empty grain panicles ('rotten neck').",
+    "field_pro_tips": [
+      "Avoid excessive nitrogenous fertilizer application; split nitrogen into 3-4 doses.",
+      "Treat seeds with Pseudomonas fluorescens or Tricyclazole before nursery sowing.",
+      "Maintain 5 cm water level in field to moderate microclimatic humidity spikes."
+    ]
+  },
+  {
+    "guide_id": "ICAR-NCIPM-COTTON-CLCuV",
+    "crop": "Cotton",
+    "disease": "Cotton Leaf Curl Virus",
+    "pathogen": "Cotton Leaf Curl Virus (CLCuV)",
+    "title": "Ecologically Engineered Whitefly & CLCuV Vector Management",
+    "institution": "ICAR-National Research Centre for Integrated Pest Management",
+    "author": "Division of Crop Protection, ICAR-NCIPM",
+    "canonical_url": "https://ncipm.icar.gov.in/Advisory/Cotton_IPM_Advisory.pdf",
+    "publication_year": 2025,
+    "practical_summary": "CLCuV is transmitted by sweetpotato whitefly (Bemisia tabaci). Symptoms include upward leaf curling, thickening of veins, and diagnostic cup-shaped leafy enations on leaf undersides.",
+    "field_pro_tips": [
+      "Plant barrier border rows of pearl millet (Bajra) or maize to intercept migrating whiteflies.",
+      "Install yellow sticky traps at 10-15 per acre at crop canopy height.",
+      "Spray neem seed kernel extract (NSKE 5%) at early vegetative stages."
+    ]
+  }
+]

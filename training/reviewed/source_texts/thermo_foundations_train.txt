@@ -1,0 +1,1 @@
+In classical thermodynamics, the Carnot heat engine defines the upper limit of thermal efficiency for any cycle operating between a hot reservoir and a cold sink. According to Fourier heat conduction, conductive thermal flux depends linearly on thermal conductivity and the negative temperature gradient. Boltzmann entropy quantifies macroscopic disorder across microstates.

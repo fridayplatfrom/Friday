@@ -1,0 +1,106 @@
+{
+  "architecture": {
+    "dropout": 0.05,
+    "feature_dim": 291,
+    "hidden_dim": 144,
+    "name": "multihead_mlp_v1",
+    "representation_dim": 96
+  },
+  "artifacts": {
+    "metrics.json": "0d90ac09f8b3ed6fc1085c028586b2495d3fa6fb0c3ecbf28675a5f6766ff563",
+    "model.pt": "567dac03330da881fe4efd597851c6676dc5d01a53a321cd0392a68ac7e82f49",
+    "splits.json": "2e354ead947c531761bd580ce13a1c902f746fee261c9b859f37c0db067e1c7d",
+    "vocab.json": "977784e5dcd616ed6657188eb3abcc6bf87fa70893369977ee725613b868045b"
+  },
+  "created_at": "2026-11-07T08:13:20.370931+00:00",
+  "dataset_sha256": "dd7f01e2e75301ab2c6b42e2c2a36fb529269f1d7827c9569e549d004ce3366a",
+  "expert_id": "physics_quantum_field_theory",
+  "feature_version": "unicode_word_bigram_l2_v1",
+  "group_split_sha256": "212047f49fbfded49689382de4e850accfd7ee2fd3830837e63450af888c1985",
+  "heads": {
+    "concept": [
+      "dirac_equation",
+      "dysons_series",
+      "feynman_diagram",
+      "gauge_invariance",
+      "goldstone_boson",
+      "klein-gordon_equation",
+      "propagator",
+      "renormalization",
+      "spontaneous_symmetry_breaking",
+      "string_worldsheet",
+      "wick_theorem",
+      "yang-mills_theory"
+    ],
+    "regime": [
+      "canonical_free_fields",
+      "gauge_symmetry_breaking",
+      "perturbative_feynman_renorm"
+    ]
+  },
+  "inference": {
+    "abstain_labels": {},
+    "min_score": 0.4,
+    "score_type": "uncalibrated_softmax",
+    "zero_feature_policy": "abstain"
+  },
+  "limitations": [
+    "Categorical text classifier; does not read books or generate explanations.",
+    "Softmax scores are uncalibrated and do not certify correctness.",
+    "Reviewed-data status records the input workflow, not production readiness."
+  ],
+  "primary_head": "concept",
+  "schema_version": 1,
+  "status": "reviewed_data",
+  "training": {
+    "augmentation": "none",
+    "best_epoch": 30,
+    "epochs_run": 30,
+    "reviewed_data_required": true,
+    "selection_metric": "validation_weighted_cross_entropy",
+    "source_separated": true,
+    "torch_version": "2.15.0+cpu"
+  },
+  "training_config": {
+    "abstain_labels": {},
+    "batch_size": 8,
+    "dropout": 0.05,
+    "epochs": 45,
+    "expert_id": "physics_quantum_field_theory",
+    "head_weights": {},
+    "heads": {
+      "concept": [
+        "dirac_equation",
+        "dysons_series",
+        "feynman_diagram",
+        "gauge_invariance",
+        "goldstone_boson",
+        "klein-gordon_equation",
+        "propagator",
+        "renormalization",
+        "spontaneous_symmetry_breaking",
+        "string_worldsheet",
+        "wick_theorem",
+        "yang-mills_theory"
+      ],
+      "regime": [
+        "canonical_free_fields",
+        "gauge_symmetry_breaking",
+        "perturbative_feynman_renorm"
+      ]
+    },
+    "hidden_dim": 144,
+    "learning_rate": 0.006,
+    "min_delta": 0.0001,
+    "min_score": 0.4,
+    "patience": 8,
+    "primary_head": "concept",
+    "representation_dim": 96,
+    "seed": 42,
+    "test_fraction": 0.15,
+    "threads": 2,
+    "validation_fraction": 0.15,
+    "vocab_size": 3000,
+    "weight_decay": 0.0001
+  }
+}

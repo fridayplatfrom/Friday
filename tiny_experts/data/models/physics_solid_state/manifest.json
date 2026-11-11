@@ -1,0 +1,106 @@
+{
+  "architecture": {
+    "dropout": 0.05,
+    "feature_dim": 283,
+    "hidden_dim": 144,
+    "name": "multihead_mlp_v1",
+    "representation_dim": 96
+  },
+  "artifacts": {
+    "metrics.json": "e1cdb81194ae72dfb0d8807065ee0df6a694a9b6d8bf7237239a5e0281eb6d24",
+    "model.pt": "90d4ac7674d1b0e42dd8e8ae8ee317e4dd985474d8e02f8ac17d61e124125816",
+    "splits.json": "992e174eb81a2286b5b2a2ab454df8e41e5422c54fe0a51cf26b3650ab52c7b1",
+    "vocab.json": "5d23fc80e1573ecc16f47a913745a75b8b3d3658a6399bc13f2b0d494f27c3a7"
+  },
+  "created_at": "2026-11-07T08:13:17.917918+00:00",
+  "dataset_sha256": "fa3ebb0ecd189e8485f51c7c23f779a7a9519293590a8609addc65755046ba0e",
+  "expert_id": "physics_solid_state",
+  "feature_version": "unicode_word_bigram_l2_v1",
+  "group_split_sha256": "5fea48dcef55b5f154966ca483fffb1440cce4be2d194f5d7bd4719b3b8572cf",
+  "heads": {
+    "concept": [
+      "band_gap",
+      "bloch_theorem",
+      "brillouin_zone",
+      "cooper_pair",
+      "drude_model",
+      "fermi_surface",
+      "meissner_effect",
+      "phonon_dispersion",
+      "quantum_hall_effect",
+      "reciprocal_lattice",
+      "superconductivity",
+      "tight-binding_model"
+    ],
+    "regime": [
+      "correlated_superconducting_quantum",
+      "crystalline_bloch_band",
+      "phonon_lattice_transport"
+    ]
+  },
+  "inference": {
+    "abstain_labels": {},
+    "min_score": 0.4,
+    "score_type": "uncalibrated_softmax",
+    "zero_feature_policy": "abstain"
+  },
+  "limitations": [
+    "Categorical text classifier; does not read books or generate explanations.",
+    "Softmax scores are uncalibrated and do not certify correctness.",
+    "Reviewed-data status records the input workflow, not production readiness."
+  ],
+  "primary_head": "concept",
+  "schema_version": 1,
+  "status": "reviewed_data",
+  "training": {
+    "augmentation": "none",
+    "best_epoch": 29,
+    "epochs_run": 29,
+    "reviewed_data_required": true,
+    "selection_metric": "validation_weighted_cross_entropy",
+    "source_separated": true,
+    "torch_version": "2.15.0+cpu"
+  },
+  "training_config": {
+    "abstain_labels": {},
+    "batch_size": 8,
+    "dropout": 0.05,
+    "epochs": 45,
+    "expert_id": "physics_solid_state",
+    "head_weights": {},
+    "heads": {
+      "concept": [
+        "band_gap",
+        "bloch_theorem",
+        "brillouin_zone",
+        "cooper_pair",
+        "drude_model",
+        "fermi_surface",
+        "meissner_effect",
+        "phonon_dispersion",
+        "quantum_hall_effect",
+        "reciprocal_lattice",
+        "superconductivity",
+        "tight-binding_model"
+      ],
+      "regime": [
+        "correlated_superconducting_quantum",
+        "crystalline_bloch_band",
+        "phonon_lattice_transport"
+      ]
+    },
+    "hidden_dim": 144,
+    "learning_rate": 0.006,
+    "min_delta": 0.0001,
+    "min_score": 0.4,
+    "patience": 8,
+    "primary_head": "concept",
+    "representation_dim": 96,
+    "seed": 42,
+    "test_fraction": 0.15,
+    "threads": 2,
+    "validation_fraction": 0.15,
+    "vocab_size": 3000,
+    "weight_decay": 0.0001
+  }
+}

@@ -1,0 +1,21 @@
+Section 1: Root-Knot Nematodes (Meloidogyne incognita / hapla / javanica).
+Root-Knot Nematodes (RKN) are microscopic, obligate endoparasitic roundworms (phylum Nematoda, family Meloidogynidae) attacking over 3,000 plant species, especially tomatoes, melons, carrots, and potatoes.
+- Infection Lifecycle:
+  1. Second-stage juveniles (J2) hatch from egg masses in the soil and migrate toward root elongation zones attracted by root exudates.
+  2. J2 nematodes penetrate behind root tips using their hollow chitinous mouth specks (stylets) and secretion of cellulases and pectate lyases.
+  3. Juveniles migrate intercellularly into the vascular cylinder, establish permanent feeding sites, and inject subventral and dorsal esophageal gland secretions into 4 to 8 vascular parenchyma cells.
+  4. These cells undergo repeated rounds of nuclear division without cytokinesis (endoreduplication), forming massive, multinucleated, metabolically hyperactive 'giant cells'.
+  5. The surrounding cortical cells proliferate rapidly (hyperplasia) and enlarge (hypertrophy), producing the conspicuous, swollen diagnostic root galls or knots.
+- Above-Ground Clinical Symptoms: Severely stunted plant growth, chlorosis, micro-nutrient deficiencies, and severe midday wilting even in moist soil because gall formation destroys the root xylem architecture.
+- Root Galling Index: Evaluated on a 0 to 5 Zeck rating scale (0 = no galls, 5 = over 75% of root system severely galled with deformed root system).
+
+Section 2: Synergistic Nematode-Fungal Disease Complexes.
+Plant parasitic nematodes rarely act alone; they frequently establish lethal synergistic disease complexes with soil-borne fungi:
+- The Meloidogyne-Fusarium Wilt Complex: Physical penetration wounds created by nematode stylets serve as primary portals of entry for Fusarium oxysporum chlamydospores. More critically, physiological changes induced by giant cells suppress host phytoalexin production and alter xylem fluid chemistry, breaking genetic resistance in tomato cultivars that carry single-gene Fusarium resistance (e.g. I-gene). Plants collapse 10 times faster than when exposed to either pathogen alone.
+- Black Shank Complex: Root-knot nematode infection dramatically exacerbates Phytophthora nicotianae (black shank) severity in solanaceous crops.
+
+Section 3: Sustainable Nematode IPM & Management.
+Nematode control cannot be achieved with single foliar pesticide sprays:
+1. Bio-Fumigation with Brassica Cover Crops: Planting and shredding high-glucosinolate mustard crops (Brassica juncea, Sinapis alba). Incorporating fresh tissue into moist soil and immediately covering with plastic film releases volatile allyl isothiocyanates (AITC) through myrosinase enzyme breakdown, acting as a natural broad-spectrum nematicide and bio-fumigant.
+2. Soil Solarization: Laying transparent polyethylene plastic sheets over moist soil for 6 to 8 weeks during peak summer sunshine elevates soil temperatures to 45°C - 55°C in top 15 cm, killing J2 nematodes and fungal resting structures.
+3. Biological Bionematicides: Applying beneficial nematophagous fungi such as Purpureocillium lilacinum (formerly Paecilomyces lilacinus, strain 251), which parasitizes nematode egg masses, or Pasteuria penetrans, an obligate bacterial parasite whose endospores adhere to and kill migrating J2 juveniles.

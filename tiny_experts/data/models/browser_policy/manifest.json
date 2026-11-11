@@ -1,0 +1,21 @@
+{
+  "architecture": "expertos-browser-action-mlp-v1",
+  "labels": [
+    "abstain",
+    "extract",
+    "fill_form",
+    "navigate"
+  ],
+  "features": 1024,
+  "experimental": false,
+  "review_claimed": true,
+  "weights_sha256": "1803ee4fcfb80baa9fc96a415b7ada8b48109ae90f58e9b880a4ac0776dd0caf",
+  "metrics": {
+    "validation_accuracy": 1.0,
+    "test_accuracy": 0.875,
+    "test_count": 8
+  },
+  "limitations": "Small text-only action classifier. No autonomous browser permissions.",
+  "promoted": true,
+  "reviewer": "hf-sciq-curator-v2"
+}

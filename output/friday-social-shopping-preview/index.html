@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Friday — Social & Shopping concept</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<div class="demo-banner"><span><i></i> INTERACTIVE CONCEPT <b>Sample accounts and data. No real posts, orders, or schedules.</b></span><button data-action="reset">Reset demo ↺</button></div>
+<div class="app-shell">
+ <aside class="sidebar">
+  <a class="brand" href="#social" aria-label="Friday home"><span class="friday-mark">F</span><strong>FRIDAY</strong><span class="brand-dot"></span></a>
+  <button class="search" data-action="search"><span data-icon="search"></span>Search Friday<kbd>⌘ K</kbd></button>
+  <div class="nav-label">WORKSPACES</div>
+  <nav class="mode-nav" aria-label="Workspaces"><button data-mode="social" class="active"><span data-icon="social"></span>Social<span class="nav-count">4</span></button><button data-mode="shopping"><span data-icon="bag"></span>Shopping<span class="new-dot"></span></button></nav>
+  <div class="nav-rule"></div><div class="nav-label">YOUR WORKFLOWS</div>
+  <button class="workflow active" data-mode="social"><i class="workflow-dot"></i><span>Daily social content<small>Morrow Coffee</small></span></button>
+  <button class="workflow" data-mode="shopping"><i class="workflow-dot muted"></i><span>Headphones shortlist<small>Personal shopping</small></span></button>
+  <div class="sidebar-bottom"><div class="local-note"><span class="tiny-dot"></span>Browser sessions stay local</div><button data-action="about"><span class="avatar">A</span><span>Your workspace<small>Personal · Friday</small></span><span data-icon="settings"></span></button></div>
+ </aside>
+ <section class="workspace">
+  <header class="workspace-header"><div><span class="crumb">Your workspace <span>/</span> <span id="mode-label">Social</span></span><h1 id="workspace-title">Daily social content</h1></div><div class="header-actions"><span class="background-indicator"><i></i>Agent in background</span><select id="model" aria-label="Planning model"><option>ChatGPT</option><option>Gemini</option><option>DeepSeek</option><option>Kimi</option></select></div></header>
+  <div class="view-tabs"><button class="selected" id="workspace-tab" data-action="workspace">Workspace</button><button id="activity-tab" data-action="activity">Activity <span id="activity-count">3</span></button><span>Cards, not chat bubbles</span></div>
+  <div class="feed" id="feed" aria-live="polite"></div>
+  <form class="composer" id="prompt-form"><label for="prompt" id="prompt-label">Describe what you want Friday to do</label><textarea id="prompt" rows="2" placeholder="Make a week of image posts in our brand style…"></textarea><div><span><span data-icon="spark"></span>Friday turns your brief into a workflow</span><button class="send-button" aria-label="Create workflow preview" type="submit">↑</button></div></form>
+ </section>
+ <aside class="browser-pane" aria-label="Workspace browser preview"><div class="browser-heading"><span><span data-icon="browser"></span>Workspace browser</span><span class="sample-tag">SIMULATED</span></div><div class="browser-tabs" id="browser-tabs" role="tablist" aria-label="Account browser tabs"></div><div class="address-row"><span data-icon="lock"></span><span id="address">instagram.com/morrowcoffee/</span><button data-action="refresh-preview" title="Refresh sample preview" aria-label="Refresh sample preview">↻</button></div><div id="browser-content" class="browser-content"></div><footer class="browser-footer"><span><i></i>Visible when you need it</span><span>Mock browser · no website connection</span></footer></aside>
+</div>
+<dialog id="dialog" aria-labelledby="dialog-title"><div class="dialog-heading"><h2 id="dialog-title"></h2><button class="icon-button" data-action="close-dialog" aria-label="Close dialog">×</button></div><div id="dialog-content"></div></dialog>
+<div id="toast" role="status" class="toast"></div>
+<script src="app.js"></script>
+</body></html>

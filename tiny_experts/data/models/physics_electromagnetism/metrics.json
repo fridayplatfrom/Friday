@@ -1,0 +1,1730 @@
+{
+  "best_epoch": 31,
+  "elapsed_seconds": 2.984578699999929,
+  "epochs_run": 31,
+  "history": [
+    {
+      "epoch": 1,
+      "training_weighted_cross_entropy": 4.164712846279144,
+      "validation_weighted_cross_entropy": 3.608259677886963
+    },
+    {
+      "epoch": 2,
+      "training_weighted_cross_entropy": 3.429636463522911,
+      "validation_weighted_cross_entropy": 1.6882505416870117
+    },
+    {
+      "epoch": 3,
+      "training_weighted_cross_entropy": 1.4248660579323769,
+      "validation_weighted_cross_entropy": 0.4271682798862457
+    },
+    {
+      "epoch": 4,
+      "training_weighted_cross_entropy": 0.27400929760187864,
+      "validation_weighted_cross_entropy": 0.0696726143360138
+    },
+    {
+      "epoch": 5,
+      "training_weighted_cross_entropy": 0.0523638732265681,
+      "validation_weighted_cross_entropy": 0.024389073252677917
+    },
+    {
+      "epoch": 6,
+      "training_weighted_cross_entropy": 0.020618864451535046,
+      "validation_weighted_cross_entropy": 0.014509204775094986
+    },
+    {
+      "epoch": 7,
+      "training_weighted_cross_entropy": 0.012775110022630543,
+      "validation_weighted_cross_entropy": 0.010497714392840862
+    },
+    {
+      "epoch": 8,
+      "training_weighted_cross_entropy": 0.009851650451309979,
+      "validation_weighted_cross_entropy": 0.008523708209395409
+    },
+    {
+      "epoch": 9,
+      "training_weighted_cross_entropy": 0.007970343780471012,
+      "validation_weighted_cross_entropy": 0.007303393445909023
+    },
+    {
+      "epoch": 10,
+      "training_weighted_cross_entropy": 0.0070185596705414355,
+      "validation_weighted_cross_entropy": 0.006342906504869461
+    },
+    {
+      "epoch": 11,
+      "training_weighted_cross_entropy": 0.005991889425786212,
+      "validation_weighted_cross_entropy": 0.005509302485734224
+    },
+    {
+      "epoch": 12,
+      "training_weighted_cross_entropy": 0.00521409948123619,
+      "validation_weighted_cross_entropy": 0.004873942118138075
+    },
+    {
+      "epoch": 13,
+      "training_weighted_cross_entropy": 0.0046814629167784005,
+      "validation_weighted_cross_entropy": 0.00440239068120718
+    },
+    {
+      "epoch": 14,
+      "training_weighted_cross_entropy": 0.004215683773509227,
+      "validation_weighted_cross_entropy": 0.004008213058114052
+    },
+    {
+      "epoch": 15,
+      "training_weighted_cross_entropy": 0.003822929909802042,
+      "validation_weighted_cross_entropy": 0.003633549204096198
+    },
+    {
+      "epoch": 16,
+      "training_weighted_cross_entropy": 0.0035212083312217146,
+      "validation_weighted_cross_entropy": 0.0033204262144863605
+    },
+    {
+      "epoch": 17,
+      "training_weighted_cross_entropy": 0.0032026375556597486,
+      "validation_weighted_cross_entropy": 0.0030746101401746273
+    },
+    {
+      "epoch": 18,
+      "training_weighted_cross_entropy": 0.0029768706299364567,
+      "validation_weighted_cross_entropy": 0.0028639654628932476
+    },
+    {
+      "epoch": 19,
+      "training_weighted_cross_entropy": 0.0027768550062319264,
+      "validation_weighted_cross_entropy": 0.002682832069694996
+    },
+    {
+      "epoch": 20,
+      "training_weighted_cross_entropy": 0.002625644439831376,
+      "validation_weighted_cross_entropy": 0.002535442356020212
+    },
+    {
+      "epoch": 21,
+      "training_weighted_cross_entropy": 0.0024084087053779513,
+      "validation_weighted_cross_entropy": 0.002403826219961047
+    },
+    {
+      "epoch": 22,
+      "training_weighted_cross_entropy": 0.0023578729887958616,
+      "validation_weighted_cross_entropy": 0.0022934069857001305
+    },
+    {
+      "epoch": 23,
+      "training_weighted_cross_entropy": 0.002217895773355849,
+      "validation_weighted_cross_entropy": 0.0021911475341767073
+    },
+    {
+      "epoch": 24,
+      "training_weighted_cross_entropy": 0.002089526860800106,
+      "validation_weighted_cross_entropy": 0.002103415783494711
+    },
+    {
+      "epoch": 25,
+      "training_weighted_cross_entropy": 0.002003904912271537,
+      "validation_weighted_cross_entropy": 0.002020348096266389
+    },
+    {
+      "epoch": 26,
+      "training_weighted_cross_entropy": 0.0019328877388034016,
+      "validation_weighted_cross_entropy": 0.0019469269318506122
+    },
+    {
+      "epoch": 27,
+      "training_weighted_cross_entropy": 0.0018816835872712545,
+      "validation_weighted_cross_entropy": 0.0018834907095879316
+    },
+    {
+      "epoch": 28,
+      "training_weighted_cross_entropy": 0.0018265341350343078,
+      "validation_weighted_cross_entropy": 0.0018283405806869268
+    },
+    {
+      "epoch": 29,
+      "training_weighted_cross_entropy": 0.0017949156026588753,
+      "validation_weighted_cross_entropy": 0.0017835921607911587
+    },
+    {
+      "epoch": 30,
+      "training_weighted_cross_entropy": 0.00175896620930871,
+      "validation_weighted_cross_entropy": 0.001739573199301958
+    },
+    {
+      "epoch": 31,
+      "training_weighted_cross_entropy": 0.001690184697508812,
+      "validation_weighted_cross_entropy": 0.001701059634797275
+    }
+  ],
+  "interpretation": "Held-out source/case evaluation; inspect class coverage and sample counts.",
+  "parameter_count": 63763,
+  "splits": {
+    "test": {
+      "count": 32,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 32,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "ampere_law",
+            "coulomb_gauge",
+            "dielectric_tensor",
+            "electric_field",
+            "electromagnetic_wave",
+            "faraday_law",
+            "gauss_law",
+            "larmor_formula",
+            "lorentz_force",
+            "lorenz_gauge",
+            "magnetic_flux",
+            "maxwell_equations",
+            "multipole_expansion",
+            "poynting_vector",
+            "vector_potential",
+            "waveguide",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "ampere_law",
+            "coulomb_gauge",
+            "dielectric_tensor",
+            "electric_field",
+            "electromagnetic_wave",
+            "faraday_law",
+            "gauss_law",
+            "larmor_formula",
+            "lorentz_force",
+            "lorenz_gauge",
+            "magnetic_flux",
+            "maxwell_equations",
+            "multipole_expansion",
+            "poynting_vector",
+            "vector_potential",
+            "waveguide"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0012862833682447672,
+          "per_class": {
+            "ampere_law": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "coulomb_gauge": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "dielectric_tensor": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "electric_field": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "electromagnetic_wave": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "faraday_law": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "gauss_law": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "larmor_formula": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "lorentz_force": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "lorenz_gauge": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "magnetic_flux": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "maxwell_equations": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "multipole_expansion": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "poynting_vector": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "vector_potential": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "waveguide": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 32,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "electrodynamic_maxwell_wave",
+            "electrostatic_gauss",
+            "magnetostatic_ampere",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              10,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              12,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "electrodynamic_maxwell_wave",
+            "electrostatic_gauss",
+            "magnetostatic_ampere"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0005420514498837292,
+          "per_class": {
+            "electrodynamic_maxwell_wave": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            },
+            "electrostatic_gauss": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 12
+            },
+            "magnetostatic_ampere": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.0018283347599208355,
+      "zero_feature_inputs": 0
+    },
+    "train": {
+      "count": 128,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 128,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "ampere_law",
+            "coulomb_gauge",
+            "dielectric_tensor",
+            "electric_field",
+            "electromagnetic_wave",
+            "faraday_law",
+            "gauss_law",
+            "larmor_formula",
+            "lorentz_force",
+            "lorenz_gauge",
+            "magnetic_flux",
+            "maxwell_equations",
+            "multipole_expansion",
+            "poynting_vector",
+            "vector_potential",
+            "waveguide",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "ampere_law",
+            "coulomb_gauge",
+            "dielectric_tensor",
+            "electric_field",
+            "electromagnetic_wave",
+            "faraday_law",
+            "gauss_law",
+            "larmor_formula",
+            "lorentz_force",
+            "lorenz_gauge",
+            "magnetic_flux",
+            "maxwell_equations",
+            "multipole_expansion",
+            "poynting_vector",
+            "vector_potential",
+            "waveguide"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0010945501271635294,
+          "per_class": {
+            "ampere_law": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "coulomb_gauge": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "dielectric_tensor": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "electric_field": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "electromagnetic_wave": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "faraday_law": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "gauss_law": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "larmor_formula": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "lorentz_force": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "lorenz_gauge": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "magnetic_flux": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "maxwell_equations": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "multipole_expansion": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "poynting_vector": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "vector_potential": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "waveguide": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 128,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "electrodynamic_maxwell_wave",
+            "electrostatic_gauss",
+            "magnetostatic_ampere",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              40,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              48,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              40,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "electrodynamic_maxwell_wave",
+            "electrostatic_gauss",
+            "magnetostatic_ampere"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0003934958076570183,
+          "per_class": {
+            "electrodynamic_maxwell_wave": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 40
+            },
+            "electrostatic_gauss": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 48
+            },
+            "magnetostatic_ampere": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 40
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.0014880459057167172,
+      "zero_feature_inputs": 0
+    },
+    "validation": {
+      "count": 32,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 32,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "ampere_law",
+            "coulomb_gauge",
+            "dielectric_tensor",
+            "electric_field",
+            "electromagnetic_wave",
+            "faraday_law",
+            "gauss_law",
+            "larmor_formula",
+            "lorentz_force",
+            "lorenz_gauge",
+            "magnetic_flux",
+            "maxwell_equations",
+            "multipole_expansion",
+            "poynting_vector",
+            "vector_potential",
+            "waveguide",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "ampere_law",
+            "coulomb_gauge",
+            "dielectric_tensor",
+            "electric_field",
+            "electromagnetic_wave",
+            "faraday_law",
+            "gauss_law",
+            "larmor_formula",
+            "lorentz_force",
+            "lorenz_gauge",
+            "magnetic_flux",
+            "maxwell_equations",
+            "multipole_expansion",
+            "poynting_vector",
+            "vector_potential",
+            "waveguide"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.001231903093867004,
+          "per_class": {
+            "ampere_law": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "coulomb_gauge": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "dielectric_tensor": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "electric_field": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "electromagnetic_wave": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "faraday_law": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "gauss_law": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "larmor_formula": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "lorentz_force": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "lorenz_gauge": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "magnetic_flux": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "maxwell_equations": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "multipole_expansion": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "poynting_vector": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "vector_potential": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "waveguide": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 32,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "electrodynamic_maxwell_wave",
+            "electrostatic_gauss",
+            "magnetostatic_ampere",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              10,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              12,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "electrodynamic_maxwell_wave",
+            "electrostatic_gauss",
+            "magnetostatic_ampere"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.00046915654093027115,
+          "per_class": {
+            "electrodynamic_maxwell_wave": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            },
+            "electrostatic_gauss": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 12
+            },
+            "magnetostatic_ampere": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.001701059634797275,
+      "zero_feature_inputs": 0
+    }
+  },
+  "unsupported_training_labels": {}
+}

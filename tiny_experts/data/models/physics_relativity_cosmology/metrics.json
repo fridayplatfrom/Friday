@@ -1,0 +1,1599 @@
+{
+  "best_epoch": 30,
+  "elapsed_seconds": 2.7000472000004265,
+  "epochs_run": 30,
+  "history": [
+    {
+      "epoch": 1,
+      "training_weighted_cross_entropy": 4.073378499348959,
+      "validation_weighted_cross_entropy": 3.416085958480835
+    },
+    {
+      "epoch": 2,
+      "training_weighted_cross_entropy": 3.0706560452779135,
+      "validation_weighted_cross_entropy": 1.5235095024108887
+    },
+    {
+      "epoch": 3,
+      "training_weighted_cross_entropy": 1.1880719463030498,
+      "validation_weighted_cross_entropy": 0.38402700424194336
+    },
+    {
+      "epoch": 4,
+      "training_weighted_cross_entropy": 0.2640579879283905,
+      "validation_weighted_cross_entropy": 0.07538268715143204
+    },
+    {
+      "epoch": 5,
+      "training_weighted_cross_entropy": 0.05619151356319586,
+      "validation_weighted_cross_entropy": 0.023604724556207657
+    },
+    {
+      "epoch": 6,
+      "training_weighted_cross_entropy": 0.021485032017032304,
+      "validation_weighted_cross_entropy": 0.01261168159544468
+    },
+    {
+      "epoch": 7,
+      "training_weighted_cross_entropy": 0.012901359237730503,
+      "validation_weighted_cross_entropy": 0.009096169844269753
+    },
+    {
+      "epoch": 8,
+      "training_weighted_cross_entropy": 0.00919607567290465,
+      "validation_weighted_cross_entropy": 0.0074793132953345776
+    },
+    {
+      "epoch": 9,
+      "training_weighted_cross_entropy": 0.0074565022252500055,
+      "validation_weighted_cross_entropy": 0.006413515657186508
+    },
+    {
+      "epoch": 10,
+      "training_weighted_cross_entropy": 0.00650360236565272,
+      "validation_weighted_cross_entropy": 0.005592445842921734
+    },
+    {
+      "epoch": 11,
+      "training_weighted_cross_entropy": 0.005686478658268849,
+      "validation_weighted_cross_entropy": 0.00490993307903409
+    },
+    {
+      "epoch": 12,
+      "training_weighted_cross_entropy": 0.004951863115032514,
+      "validation_weighted_cross_entropy": 0.004372810013592243
+    },
+    {
+      "epoch": 13,
+      "training_weighted_cross_entropy": 0.004540614970028401,
+      "validation_weighted_cross_entropy": 0.003964120987802744
+    },
+    {
+      "epoch": 14,
+      "training_weighted_cross_entropy": 0.004029525490477681,
+      "validation_weighted_cross_entropy": 0.0036280304193496704
+    },
+    {
+      "epoch": 15,
+      "training_weighted_cross_entropy": 0.003691874211654067,
+      "validation_weighted_cross_entropy": 0.0033460338599979877
+    },
+    {
+      "epoch": 16,
+      "training_weighted_cross_entropy": 0.003411758551374078,
+      "validation_weighted_cross_entropy": 0.0030904735904186964
+    },
+    {
+      "epoch": 17,
+      "training_weighted_cross_entropy": 0.0030921516784777245,
+      "validation_weighted_cross_entropy": 0.0028636418282985687
+    },
+    {
+      "epoch": 18,
+      "training_weighted_cross_entropy": 0.002942614940305551,
+      "validation_weighted_cross_entropy": 0.0026666633784770966
+    },
+    {
+      "epoch": 19,
+      "training_weighted_cross_entropy": 0.0027347030738989514,
+      "validation_weighted_cross_entropy": 0.0025052246637642384
+    },
+    {
+      "epoch": 20,
+      "training_weighted_cross_entropy": 0.0025779223069548607,
+      "validation_weighted_cross_entropy": 0.0023589911870658398
+    },
+    {
+      "epoch": 21,
+      "training_weighted_cross_entropy": 0.0023880197666585447,
+      "validation_weighted_cross_entropy": 0.0022397106513381004
+    },
+    {
+      "epoch": 22,
+      "training_weighted_cross_entropy": 0.002297562671204408,
+      "validation_weighted_cross_entropy": 0.002131769899278879
+    },
+    {
+      "epoch": 23,
+      "training_weighted_cross_entropy": 0.002238064988826712,
+      "validation_weighted_cross_entropy": 0.002043047919869423
+    },
+    {
+      "epoch": 24,
+      "training_weighted_cross_entropy": 0.0020839717782412965,
+      "validation_weighted_cross_entropy": 0.001961638918146491
+    },
+    {
+      "epoch": 25,
+      "training_weighted_cross_entropy": 0.0020056078443303703,
+      "validation_weighted_cross_entropy": 0.0018903632881119847
+    },
+    {
+      "epoch": 26,
+      "training_weighted_cross_entropy": 0.001959353336133063,
+      "validation_weighted_cross_entropy": 0.0018257575575262308
+    },
+    {
+      "epoch": 27,
+      "training_weighted_cross_entropy": 0.0018674210800478856,
+      "validation_weighted_cross_entropy": 0.0017675637500360608
+    },
+    {
+      "epoch": 28,
+      "training_weighted_cross_entropy": 0.0018618619612728556,
+      "validation_weighted_cross_entropy": 0.001716432860121131
+    },
+    {
+      "epoch": 29,
+      "training_weighted_cross_entropy": 0.00182519619508336,
+      "validation_weighted_cross_entropy": 0.0016748730558902025
+    },
+    {
+      "epoch": 30,
+      "training_weighted_cross_entropy": 0.001769585721194744,
+      "validation_weighted_cross_entropy": 0.0016355928964912891
+    }
+  ],
+  "interpretation": "Held-out source/case evaluation; inspect class coverage and sample counts.",
+  "parameter_count": 63954,
+  "splits": {
+    "test": {
+      "count": 30,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 30,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "christoffel_symbol",
+            "cosmic_microwave_background",
+            "cosmological_redshift",
+            "einstein_field_equations",
+            "equivalence_principle",
+            "event_horizon",
+            "friedmann_equation",
+            "geodesic_equation",
+            "hubble_parameter",
+            "inflaton",
+            "lorentz_transformation",
+            "minkowski_metric",
+            "proper_time",
+            "riemann_curvature_tensor",
+            "schwarzschild_metric",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "christoffel_symbol",
+            "cosmic_microwave_background",
+            "cosmological_redshift",
+            "einstein_field_equations",
+            "equivalence_principle",
+            "event_horizon",
+            "friedmann_equation",
+            "geodesic_equation",
+            "hubble_parameter",
+            "inflaton",
+            "lorentz_transformation",
+            "minkowski_metric",
+            "proper_time",
+            "riemann_curvature_tensor",
+            "schwarzschild_metric"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0013485728995874524,
+          "per_class": {
+            "christoffel_symbol": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "cosmic_microwave_background": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "cosmological_redshift": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "einstein_field_equations": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "equivalence_principle": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "event_horizon": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "friedmann_equation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "geodesic_equation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "hubble_parameter": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "inflaton": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "lorentz_transformation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "minkowski_metric": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "proper_time": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "riemann_curvature_tensor": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "schwarzschild_metric": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 30,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "flrw_cosmological_expansion",
+            "minkowski_special_relativity",
+            "riemannian_einstein_gravity",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              10,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              10,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "flrw_cosmological_expansion",
+            "minkowski_special_relativity",
+            "riemannian_einstein_gravity"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.00041778411832638085,
+          "per_class": {
+            "flrw_cosmological_expansion": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            },
+            "minkowski_special_relativity": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            },
+            "riemannian_einstein_gravity": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.0017663569888100028,
+      "zero_feature_inputs": 0
+    },
+    "train": {
+      "count": 120,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 120,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "christoffel_symbol",
+            "cosmic_microwave_background",
+            "cosmological_redshift",
+            "einstein_field_equations",
+            "equivalence_principle",
+            "event_horizon",
+            "friedmann_equation",
+            "geodesic_equation",
+            "hubble_parameter",
+            "inflaton",
+            "lorentz_transformation",
+            "minkowski_metric",
+            "proper_time",
+            "riemann_curvature_tensor",
+            "schwarzschild_metric",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "christoffel_symbol",
+            "cosmic_microwave_background",
+            "cosmological_redshift",
+            "einstein_field_equations",
+            "equivalence_principle",
+            "event_horizon",
+            "friedmann_equation",
+            "geodesic_equation",
+            "hubble_parameter",
+            "inflaton",
+            "lorentz_transformation",
+            "minkowski_metric",
+            "proper_time",
+            "riemann_curvature_tensor",
+            "schwarzschild_metric"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0011463080300018191,
+          "per_class": {
+            "christoffel_symbol": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "cosmic_microwave_background": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "cosmological_redshift": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "einstein_field_equations": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "equivalence_principle": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "event_horizon": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "friedmann_equation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "geodesic_equation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "hubble_parameter": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "inflaton": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "lorentz_transformation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "minkowski_metric": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "proper_time": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "riemann_curvature_tensor": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "schwarzschild_metric": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 120,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "flrw_cosmological_expansion",
+            "minkowski_special_relativity",
+            "riemannian_einstein_gravity",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              40,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              40,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              40,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "flrw_cosmological_expansion",
+            "minkowski_special_relativity",
+            "riemannian_einstein_gravity"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.00038658641278743744,
+          "per_class": {
+            "flrw_cosmological_expansion": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 40
+            },
+            "minkowski_special_relativity": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 40
+            },
+            "riemannian_einstein_gravity": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 40
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.0015328944427892566,
+      "zero_feature_inputs": 0
+    },
+    "validation": {
+      "count": 30,
+      "heads": {
+        "concept": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 30,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "christoffel_symbol",
+            "cosmic_microwave_background",
+            "cosmological_redshift",
+            "einstein_field_equations",
+            "equivalence_principle",
+            "event_horizon",
+            "friedmann_equation",
+            "geodesic_equation",
+            "hubble_parameter",
+            "inflaton",
+            "lorentz_transformation",
+            "minkowski_metric",
+            "proper_time",
+            "riemann_curvature_tensor",
+            "schwarzschild_metric",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "christoffel_symbol",
+            "cosmic_microwave_background",
+            "cosmological_redshift",
+            "einstein_field_equations",
+            "equivalence_principle",
+            "event_horizon",
+            "friedmann_equation",
+            "geodesic_equation",
+            "hubble_parameter",
+            "inflaton",
+            "lorentz_transformation",
+            "minkowski_metric",
+            "proper_time",
+            "riemann_curvature_tensor",
+            "schwarzschild_metric"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0012588954996317625,
+          "per_class": {
+            "christoffel_symbol": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "cosmic_microwave_background": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "cosmological_redshift": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "einstein_field_equations": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "equivalence_principle": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "event_horizon": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "friedmann_equation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "geodesic_equation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "hubble_parameter": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "inflaton": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "lorentz_transformation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "minkowski_metric": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "proper_time": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "riemann_curvature_tensor": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "schwarzschild_metric": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        },
+        "regime": {
+          "acceptance_threshold": 0.4,
+          "accepted_count": 30,
+          "accuracy": 1.0,
+          "accuracy_when_accepted": 1.0,
+          "class_coverage": 1.0,
+          "confusion_columns": [
+            "flrw_cosmological_expansion",
+            "minkowski_special_relativity",
+            "riemannian_einstein_gravity",
+            null
+          ],
+          "confusion_matrix": [
+            [
+              10,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              10,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10,
+              0
+            ]
+          ],
+          "confusion_rows": [
+            "flrw_cosmological_expansion",
+            "minkowski_special_relativity",
+            "riemannian_einstein_gravity"
+          ],
+          "coverage_at_threshold": 1.0,
+          "macro_f1": 1.0,
+          "negative_log_likelihood": 0.0003766973386518657,
+          "per_class": {
+            "flrw_cosmological_expansion": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            },
+            "minkowski_special_relativity": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            },
+            "riemannian_einstein_gravity": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 10
+            }
+          },
+          "score_type": "uncalibrated_softmax"
+        }
+      },
+      "weighted_cross_entropy": 0.0016355928964912891,
+      "zero_feature_inputs": 0
+    }
+  },
+  "unsupported_training_labels": {}
+}

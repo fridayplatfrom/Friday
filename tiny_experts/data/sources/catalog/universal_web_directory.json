@@ -1,0 +1,72 @@
+[
+  {
+    "site_id": "supreme_court_india",
+    "title": "Supreme Court of India (Official Portal)",
+    "url": "https://main.sci.gov.in",
+    "authority_tier": "TIER_1_GOV_STATUTORY",
+    "badge": "🏛️ Sovereign Statutory Authority",
+    "faculty": "Law & Constitutional Jurisprudence",
+    "description": "Apex judicial body of the Republic of India; primary source for constitutional bench rulings, PIL judgments, and statutory interpretations.",
+    "topics": ["law", "constitution", "supreme court", "basic structure", "fundamental rights", "judiciary"]
+  },
+  {
+    "site_id": "icar_official",
+    "title": "Indian Council of Agricultural Research (ICAR)",
+    "url": "https://icar.org.in",
+    "authority_tier": "TIER_1_GOV_STATUTORY",
+    "badge": "🏛️ Sovereign Agricultural Authority",
+    "faculty": "Biological & Agricultural Sciences",
+    "description": "Autonomous statutory body responsible for coordinating agricultural education and research in India under the Ministry of Agriculture.",
+    "topics": ["agriculture", "crops", "plant pathology", "soil", "icar", "farming", "horticulture"]
+  },
+  {
+    "site_id": "nasa_science",
+    "title": "NASA Planetary & Astrophysics Science Portal",
+    "url": "https://science.nasa.gov",
+    "authority_tier": "TIER_1_GOV_STATUTORY",
+    "badge": "🏛️ Space Agency Statutory Portal",
+    "faculty": "Physics, Astronomy & Planetary Science",
+    "description": "United States National Aeronautics and Space Administration portal for planetary exploration, astrophysics missions, and climate data.",
+    "topics": ["space", "nasa", "astrophysics", "planets", "exoplanets", "telescope", "cosmos"]
+  },
+  {
+    "site_id": "mit_ocw",
+    "title": "MIT OpenCourseWare",
+    "url": "https://ocw.mit.edu",
+    "authority_tier": "TIER_2_ACADEMIC_RESEARCH",
+    "badge": "🎓 Premier University Courseware",
+    "faculty": "Multidisciplinary Engineering & Sciences",
+    "description": "Free, open publication of Massachusetts Institute of Technology undergraduate and graduate course materials.",
+    "topics": ["physics", "math", "computer science", "engineering", "mit", "circuits", "mechanics"]
+  },
+  {
+    "site_id": "arxiv_org",
+    "title": "arXiv Open-Access Research Archive",
+    "url": "https://arxiv.org",
+    "authority_tier": "TIER_2_ACADEMIC_RESEARCH",
+    "badge": "🎓 Cornell Open Research Archive",
+    "faculty": "Physics, Mathematics, Computer Science & Quantitative Biology",
+    "description": "Curated research-sharing platform operated by Cornell University with 2+ million peer-reviewed and preprint scientific articles.",
+    "topics": ["arxiv", "physics", "math", "preprints", "quantum", "research", "algorithms"]
+  },
+  {
+    "site_id": "aps_physics",
+    "title": "American Physical Society (APS)",
+    "url": "https://www.aps.org",
+    "authority_tier": "TIER_3_LEARNED_SOCIETIES",
+    "badge": "📜 International Learned Society",
+    "faculty": "Physics & Physical Sciences",
+    "description": "World's second-largest organization of physicists, publisher of the Physical Review and Physical Review Letters journals.",
+    "topics": ["physics", "aps", "physical review", "thermodynamics", "quantum", "electrodynamics"]
+  },
+  {
+    "site_id": "stanford_philosophy",
+    "title": "Stanford Encyclopedia of Philosophy (SEP)",
+    "url": "https://plato.stanford.edu",
+    "authority_tier": "TIER_4_CURATED_COMMUNITY",
+    "badge": "🌐 Peer-Reviewed Philosophy Reference",
+    "faculty": "Humanities, Logic & Philosophy",
+    "description": "Dynamic digital encyclopedia of philosophy maintained by Stanford University with peer-reviewed articles by global scholars.",
+    "topics": ["philosophy", "ethics", "logic", "epistemology", "kant", "aristotle", "darshanas"]
+  }
+]

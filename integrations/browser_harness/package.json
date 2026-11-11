@@ -1,0 +1,41 @@
+{
+  "name": "harness-browser-provider",
+  "version": "0.10.3",
+  "private": true,
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "node --test --test-concurrency=2 tests/*.test.mjs",
+    "test:agui": "node --test tests/ag-ui.test.mjs",
+    "test:matrix": "node --test tests/variation-matrix.test.mjs"
+  },
+  "description": "Friday connects Harness to browser model websites without model API keys",
+  "dependencies": {
+    "@ag-ui/core": "1.0.4",
+    "@ag-ui/encoder": "1.0.4",
+    "@playwright/mcp": "0.0.80",
+    "playwright-core": "1.63.0-alpha-2026-08-31"
+  },
+  "exports": {
+    ".": "./index.mjs",
+    "./client": "./client.js"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings-models",
+        "@deepseek-ai/dsh-client-ui-sidebar-right",
+        "@deepseek-ai/dsh-client-ui-sidebar-browser"
+      ],
+      "external": [
+        "react",
+        "@deepseek-ai/dsh-client-ui-primitives"
+      ]
+    }
+  },
+  "devDependencies": {
+    "@ag-ui/client": "1.0.4",
+    "@copilotkit/aimock": "1.47.0"
+  }
+}

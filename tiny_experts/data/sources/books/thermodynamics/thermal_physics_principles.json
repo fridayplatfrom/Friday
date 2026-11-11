@@ -1,0 +1,32 @@
+[
+  {
+    "source": "Fundamentals of Heat and Mass Transfer, Ch. 1 (Fourier's Law & Conduction)",
+    "text": "Fourier's law of heat conduction establishes that the local heat flux is proportional to the negative local temperature gradient: q'' = -k * grad(T). For one-dimensional steady-state conduction through a plane wall of thickness L and thermal conductivity k with surface temperatures T1 and T2, the total heat transfer rate is q = k * A * (T1 - T2) / L. Thermal resistance of a plane wall is defined as R_t,cond = L / (k * A). In series composite walls, total thermal resistance is the sum of individual conductive and convective resistances.",
+    "book_id": "incropera_heat_mass_transfer_8th_ed",
+    "edition": "8th Edition",
+    "chapter_num": 1,
+    "chapter_title": "Introduction to Heat Transfer",
+    "page_range": [2, 28],
+    "citation": "Bergman, Lavine, Incropera, & DeWitt (2020). Fundamentals of Heat and Mass Transfer, 8th Ed."
+  },
+  {
+    "source": "The Feynman Lectures on Physics, Vol. I, Ch. 44 (Carnot Cycle & Entropy)",
+    "text": "The Carnot engine operates on a reversible cycle composed of two isothermal processes and two adiabatic processes. The maximum theoretical thermal efficiency of any heat engine operating between a hot reservoir at absolute temperature T_H and a cold reservoir at T_C is given by eta_Carnot = 1 - (T_C / T_H), where temperatures must be expressed in Kelvin. The second law of thermodynamics mandates that no heat engine operating between two given thermal reservoirs can be more efficient than a reversible Carnot engine operating between the same reservoirs.",
+    "book_id": "feynman_lectures_physics_millennium_ed",
+    "edition": "Millennium Edition",
+    "chapter_num": 44,
+    "chapter_title": "The Laws of Thermodynamics",
+    "page_range": [44.1, 44.12],
+    "citation": "Feynman, Leighton, & Sands (2011). The Feynman Lectures on Physics, Millennium Ed."
+  },
+  {
+    "source": "Fundamentals of Heat and Mass Transfer, Ch. 12 (Radiation Exchange & Stefan-Boltzmann)",
+    "text": "All matter at a non-zero absolute temperature emits thermal radiation. The ideal emitter is a blackbody, which absorbs all incident radiation and emits according to the Stefan-Boltzmann law: E_b = sigma * T^4, where sigma is the Stefan-Boltzmann constant, approximately 5.670374e-8 W/(m^2 * K^4). For real non-black surfaces with total hemispherical emissivity epsilon, net radiative heat exchange with large surroundings at temperature T_sur is q = epsilon * sigma * A * (T^4 - T_sur^4).",
+    "book_id": "incropera_heat_mass_transfer_8th_ed",
+    "edition": "8th Edition",
+    "chapter_num": 12,
+    "chapter_title": "Radiation: Processes and Properties",
+    "page_range": [753, 804],
+    "citation": "Bergman, Lavine, Incropera, & DeWitt (2020). Fundamentals of Heat and Mass Transfer, 8th Ed."
+  }
+]

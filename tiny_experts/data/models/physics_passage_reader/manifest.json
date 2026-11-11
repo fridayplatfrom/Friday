@@ -1,0 +1,55 @@
+{
+  "architecture": {
+    "embedding": 48,
+    "hidden": 48,
+    "max_passage": 256,
+    "max_question": 48
+  },
+  "artifacts": {
+    "metrics.json": "23140ce1081352ce85b2cf8a4426f7e02f5b24528016e32eb4395ee76888d688",
+    "model.pt": "b52a8bdf1d2a5b12021096b222db6a492e01aa862eaff670802c1ab0c2c85f57",
+    "vocab.json": "9fee531ce6a9e3fdf2faa2e78fa1ce7e7b54974fc4c4d91316d7527b8b8dfacd"
+  },
+  "best_epoch": 52,
+  "demo": false,
+  "experimental": true,
+  "limitations": "Uncalibrated experimental model; not independently accepted for pathology diagnosis.",
+  "parameter_count": 86308,
+  "schema": "extractive-reader-v1",
+  "test_sources": [
+    "span_src_test_classical_mechanics",
+    "span_src_test_electromagnetism",
+    "span_src_test_fluid_plasma",
+    "span_src_test_optics_waves",
+    "span_src_test_quantum_field_theory",
+    "span_src_test_quantum_information",
+    "span_src_test_quantum_mechanics",
+    "span_src_test_relativity_cosmology",
+    "span_src_test_solid_state",
+    "span_src_test_thermodynamics_stat_mech"
+  ],
+  "train_sources": [
+    "span_src_train_classical_mechanics",
+    "span_src_train_electromagnetism",
+    "span_src_train_fluid_plasma",
+    "span_src_train_optics_waves",
+    "span_src_train_quantum_field_theory",
+    "span_src_train_quantum_information",
+    "span_src_train_quantum_mechanics",
+    "span_src_train_relativity_cosmology",
+    "span_src_train_solid_state",
+    "span_src_train_thermodynamics_stat_mech"
+  ],
+  "validation_sources": [
+    "span_src_validation_classical_mechanics",
+    "span_src_validation_electromagnetism",
+    "span_src_validation_fluid_plasma",
+    "span_src_validation_optics_waves",
+    "span_src_validation_quantum_field_theory",
+    "span_src_validation_quantum_information",
+    "span_src_validation_quantum_mechanics",
+    "span_src_validation_relativity_cosmology",
+    "span_src_validation_solid_state",
+    "span_src_validation_thermodynamics_stat_mech"
+  ]
+}

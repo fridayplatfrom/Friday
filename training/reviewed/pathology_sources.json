@@ -1,0 +1,26 @@
+{
+  "pathology_source_train": {
+    "title": "ExpertOS Plant Pathology Reference Corpus (train)",
+    "sha256": "b4589f4ee3543b085a20f1899b7924b472e9f3b13ffe24f1de510eaaf51700a3",
+    "license": "CC-BY-NC-3.0 (Allen Institute for AI - HuggingFace allenai/sciq)",
+    "source_url": "https://huggingface.co/datasets/allenai/sciq",
+    "review_status": "reviewed",
+    "reviewer": "hf-sciq-curator-v2"
+  },
+  "pathology_source_validation": {
+    "title": "ExpertOS Plant Pathology Reference Corpus (validation)",
+    "sha256": "b0a9c44cb8bf607d308f2076502de2e87c9c96e81f39275ec9085ffce763a07c",
+    "license": "CC-BY-NC-3.0 (Allen Institute for AI - HuggingFace allenai/sciq)",
+    "source_url": "https://huggingface.co/datasets/allenai/sciq",
+    "review_status": "reviewed",
+    "reviewer": "hf-sciq-curator-v2"
+  },
+  "pathology_source_test": {
+    "title": "ExpertOS Plant Pathology Reference Corpus (test)",
+    "sha256": "c03f8fb17bd5082616f13de015d11f5f89a981f050a0516598a9901e8e613735",
+    "license": "CC-BY-NC-3.0 (Allen Institute for AI - HuggingFace allenai/sciq)",
+    "source_url": "https://huggingface.co/datasets/allenai/sciq",
+    "review_status": "reviewed",
+    "reviewer": "hf-sciq-curator-v2"
+  }
+}

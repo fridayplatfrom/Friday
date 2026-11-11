@@ -1,0 +1,52 @@
+[
+  {
+    "crop": "Tomato",
+    "modal_price_per_quintal_inr": 2200,
+    "modal_price_per_kg_inr": 22.0,
+    "average_yield_quintals_per_acre": 120,
+    "primary_mandi": "Azadpur / Nashik / Kolar (e-NAM)",
+    "market_trend": "Firm / High Demand",
+    "standard_chemical_costs_inr": {
+      "copper_octanoate": 650,
+      "chlorothalonil": 750,
+      "bacillus_biofungicide": 450
+    }
+  },
+  {
+    "crop": "Potato",
+    "modal_price_per_quintal_inr": 1400,
+    "modal_price_per_kg_inr": 14.0,
+    "average_yield_quintals_per_acre": 100,
+    "primary_mandi": "Agra / Jalandhar / Hooghly",
+    "market_trend": "Stable",
+    "standard_chemical_costs_inr": {
+      "mancozeb": 500,
+      "copper_oxychloride": 550,
+      "dimethomorph": 1100
+    }
+  },
+  {
+    "crop": "Wheat",
+    "modal_price_per_quintal_inr": 2275,
+    "modal_price_per_kg_inr": 22.75,
+    "average_yield_quintals_per_acre": 20,
+    "primary_mandi": "Khanna / Karnal (MSP Guaranteed)",
+    "market_trend": "Guaranteed Govt MSP",
+    "standard_chemical_costs_inr": {
+      "propiconazole": 650,
+      "tebuconazole": 800
+    }
+  },
+  {
+    "crop": "Rice",
+    "modal_price_per_quintal_inr": 2300,
+    "modal_price_per_kg_inr": 23.0,
+    "average_yield_quintals_per_acre": 25,
+    "primary_mandi": "Thanjavur / Sambalpur (e-NAM)",
+    "market_trend": "Steady",
+    "standard_chemical_costs_inr": {
+      "tricyclazole": 700,
+      "pseudomonas": 350
+    }
+  }
+]

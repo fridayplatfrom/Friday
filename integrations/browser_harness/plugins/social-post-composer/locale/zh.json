@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "社交媒体发帖助手",
+    "description": "在输入框下方撰写帖子，按 X/Twitter 与 LinkedIn 的字数限制计数，并复制文本与分享链接。"
+  },
+  "open": "撰写社交媒体帖子",
+  "close": "关闭社交媒体发帖助手",
+  "title": "社交媒体帖子",
+  "placeholder": "写下你想发布的帖子…",
+  "clear": "清空",
+  "copy": "复制文本",
+  "copied": "已复制",
+  "openOn": "在以下平台打开",
+  "over": "超出 {network} 限制 {n} 个字符",
+  "remaining": "{network} 还可输入 {n} 个字符",
+  "empty": "暂无内容可复制",
+  "copyFailed": "复制失败，请手动选择文本复制"
+}

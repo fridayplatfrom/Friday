@@ -1,11 +1,12 @@
 import http from 'node:http';
 import {persistenceFixture} from './browser-persistence-fixture.mjs';
+import {nativeBrowserFixture} from './native-browser-fixture.mjs';
 
 const escape = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const shell = body => `<!doctype html><html lang="en"><meta charset="utf-8"><title>Harness Form Test</title>
 <style>body{font:16px system-ui;max-width:650px;margin:50px auto;padding:25px;background:#f6f7fa;color:#182334}label{display:block;margin:18px 0}input:not([type=checkbox]),select,textarea{display:block;width:95%;padding:10px;margin-top:7px;border:1px solid #9caabc;border-radius:5px}button{padding:12px 20px;background:#245ca7;color:white;border:0;border-radius:6px}pre{white-space:pre-wrap;background:white;padding:20px}</style>${body}</html>`;
 export class DemoFormServer {
-  constructor({ port = 8767 } = {}) { this.port = port; this.result = null; this.submissions = 0; }
+  constructor({ port = 8767, testRoot } = {}) { this.port = port;this.testRoot=testRoot; this.result = null; this.submissions = 0; }
   async start() {
     this.server = http.createServer((req, res) => this.handle(req, res).catch(() => { res.writeHead(400); res.end('Invalid demo request'); }));
     await new Promise((resolve, reject) => { this.server.once('error', reject); this.server.listen(this.port, '127.0.0.1', resolve); });
@@ -15,6 +16,7 @@ export class DemoFormServer {
     if (req.headers.host !== `127.0.0.1:${this.port}`) { res.writeHead(403); return res.end(); }
     if(req.headers.origin&&req.headers.origin!==`http://127.0.0.1:${this.port}`){res.writeHead(403);return res.end();}
     if(persistenceFixture(req,res))return;
+    if(await nativeBrowserFixture(req,res,{root:this.testRoot}))return;
     res.setHeader('Cache-Control', 'no-store');
     res.setHeader('Content-Security-Policy', "default-src 'none'; style-src 'unsafe-inline'; form-action 'self'; frame-ancestors 'none'");
     if (req.method === 'GET' && req.url === '/result') {

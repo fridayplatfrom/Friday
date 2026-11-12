@@ -17,6 +17,7 @@ import {FridayAGUI} from './ag-ui.mjs';
 import {publicProvider,PROVIDERS,providerProbe} from './providers.mjs';
 import {recoveryDiagnostic} from './diagnostics.mjs';
 import {RequestScheduler} from './request-scheduler.mjs';
+import {startSetupTest} from './setup-test.mjs';
 
 export class BrowserBridge {
   constructor({ token, port = 8766, timeoutMs = 300000, connectionGraceMs = 45000, controller = null, transportMode='extension',autoTwoWay=false,stateDirectory, extensionManifestPath=join(homedir(),'.dsh/browser-connector/extension/manifest.json'),downloadDirectory=join(homedir(),'Downloads'), now = () => Date.now() } = {}) {
@@ -91,6 +92,20 @@ export class BrowserBridge {
       this.desktopOwner=path==='/desktop/claim'?input.clientId:null;
       this.lastSeen=0;this.enabledSites=[];
       return this.json(res,200,{ok:true,transport:this.desktopOwner?'desktop':this.transportMode});
+    }
+    if(req.method==='POST'&&path==='/desktop/setup-test'){
+      return this.json(res,200,startSetupTest(this,await this.body(req)));
+    }
+    if(req.method==='POST'&&path==='/desktop/setup-default'){
+      const input=await this.body(req),test=this.setupTests?.get(input.id)||this.sessions.get('friday-setup-'+input.id)?.setupConnectionTest;
+      if(!this.desktopOwner||input.clientId!==this.desktopOwner||test?.status!=='passed'||test.site!==input.site)throw Error('A verified Desktop setup test is required.');
+      if(this.schedulingStatus().pending)throw Error('Finish the active task first.');
+      if(!this.configureSetupDefault)throw Error('Native default-model settings are not ready. Your connection is verified; try finishing setup again.');
+      await this.configureSetupDefault(input.site);return this.json(res,200,{ok:true});
+    }
+    if(req.method==='GET'&&path.startsWith('/desktop/setup-test/')){
+      if(!this.desktopOwner||req.headers['x-friday-client']!==this.desktopOwner)return this.json(res,403,{error:'Friday Desktop ownership required.'});
+      const result=this.setupTests?.get(path.split('/').at(-1));return this.json(res,result?200:404,result||{error:'Test unavailable after restart. Inspect the provider chat; no test was resent.'});
     }
     if(req.method==='POST'&&path==='/provider-health'){
       const input=await this.body(req);(this.providerHealth||={})[input.site]=providerProbe(input);return this.json(res,200,{ok:true});

@@ -173,14 +173,21 @@
     if (!preset || !preset.hosts.includes(location.hostname)) throw new Error('Website mismatch.');
     if (active) throw new Error('This browser tab is already handling a request.');
     if (typeof message.prompt !== 'string' || message.prompt.length > 80000) throw new Error('Invalid prompt.');
-    const tracked=message.purpose==='introduction'||message.purpose==='context'||/^(?:You are answering one request for a local Harness agent\.|Harness continuation:)/.test(message.prompt);
+    const tracked=message.purpose==='introduction'||message.purpose==='context'||/^(?:You are answering one request for a local Harness agent\.|Harness continuation:|FRIDAY MODEL HANDOFF:|Friday connector feedback)/.test(message.prompt);
     const outgoingPrompt=tracked?`HARNESS_REQUEST_ID ${message.id}\n\n${message.prompt}`:message.prompt;
     const submittedMatches=bubble=>{
       const actual=normalized(userMessageText(bubble)),expected=normalized(outgoingPrompt);
       // ChatGPT truncates long user-message renderers and renders JSON as
       // Markdown. The unique transport ID plus leading text identifies the turn;
       // the entire raw editor contents are checked separately before Send.
-      return actual===expected||tracked&&actual.startsWith(expected.slice(0,Math.min(240,expected.length)));
+      // The rendered bubble can prepend controls or collapse even the leading
+      // prose. Correlate its high-entropy request ID, after the complete editor
+      // was verified before Send; never relax matching for ordinary user text.
+      const marker='HARNESS_REQUEST_ID '+message.id;
+      const full=normalized(messageText(bubble));
+      const markerAt=full.indexOf(marker);
+      const markerMatches=markerAt>=0&&(markerAt===0||/\s/.test(full[markerAt-1]))&&(full.length===markerAt+marker.length||/\s/.test(full[markerAt+marker.length]));
+      return actual===expected||tracked&&(actual.startsWith(expected.slice(0,Math.min(240,expected.length)))||markerMatches);
     };
     const job = { id: message.id, attachments:message.attachments||[], cancelled: false, preset }; active = job;
     const start = Date.now();

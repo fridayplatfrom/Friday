@@ -9,15 +9,16 @@ export function workspaceIdentity(directory){
 }
 const canonical=value=>Array.isArray(value)?value.map(canonical):value&&typeof value==='object'?Object.fromEntries(Object.keys(value).sort().map(key=>[key,canonical(value[key])])):value;
 export const argumentDigest=value=>createHash('sha256').update(JSON.stringify(canonical(value??{}))).digest('hex');
-export const readOnlyBrowserCall=(name,args={})=>['browser_snapshot','browser_take_screenshot','browser_console_messages','browser_network_requests','browser_wait_for'].includes(name)||(name==='browser_tabs'&&args.action==='list');
+export const readOnlyBrowserCall=(name,args={})=>['browser_snapshot','browser_take_screenshot','browser_console_messages','browser_network_requests','browser_network_request','browser_find','browser_wait_for'].includes(name)||(name==='browser_tabs'&&args.action==='list');
 export function restorableTab(value,origins){
  try{
-  const url=new URL(value);if(!['http:','https:'].includes(url.protocol)||url.username||url.password||!origins.includes(url.origin))return null;
+  const url=new URL(value);if(!['http:','https:'].includes(url.protocol)||url.username||url.password||!origins.includes('*')&&!origins.includes(url.origin))return null;
   let route=url.pathname;for(let i=0;i<3;i++){const decoded=decodeURIComponent(route);if(decoded===route)break;route=decoded;}
   route=route.replaceAll('\\','/');
   if(/[\x00-\x1f\x7f]/.test(route)||/(?:^|\/)(?:logout|logoff|signout|sign-out|callback|authorize|oauth2?|login|signin|sign-in|intent)(?:[\/.;]|$)/i.test(route))return null;
-  // Queries/fragments can contain credentials, OAuth codes or prefilled posts.
-  return url.origin+url.pathname;
+  // Persist common search queries only; credentials, OAuth codes, prefilled posts and fragments are excluded.
+  const search=new URLSearchParams();for(const [key,value]of url.searchParams)if(['k','q','query','search','page'].includes(key)&&value.length<=2000)search.append(key,value);
+  return url.origin+url.pathname+(search.size?'?'+search:'');
  }catch{return null;}
 }
 
@@ -41,13 +42,17 @@ export class WorkspaceBrowserState{
  save(){this.state.revision++;const fd=openSync(this.file+'.tmp','w');try{writeFileSync(fd,JSON.stringify(this.state));fsyncSync(fd);}finally{closeSync(fd);}renameSync(this.file+'.tmp',this.file);}
  tabs(values,activeIndex=0){this.state.tabs=values.slice(0,40);this.state.activeIndex=Math.max(0,Math.min(activeIndex,values.length-1));this.save();}
  pending(){return this.state.actions.filter(a=>a.status==='uncertain'||a.status==='started'||a.status==='completed'&&!a.delivered);}
- begin(call){
+ checkBegin(call){
   if(this.state.actions.some(a=>a.id===call.id))throw new Error('This browser action already has a receipt. It was not replayed. Inspect its saved native result.');
   if(this.pending().length)throw new Error('An interrupted browser action may already have applied. Inspect the page and review its receipt in Friday before another browser write. Nothing was replayed.');
+ }
+ begin(call){
+  this.checkBegin(call);
   const record={id:call.id,sessionId:call.sessionId,tool:call.tool,digest:call.digest,status:'started',startedAt:Date.now()};
   this.state.actions.push(record);this.save();return record;
  }
  settle(id,success){const action=this.state.actions.find(a=>a.id===id);if(!action)return;action.status=success?'completed':'uncertain';action.endedAt=Date.now();this.save();}
+ rejectBeforeInput(id,reason='native-reference-not-found'){if(!['native-reference-not-found','native-tab-not-found'].includes(reason))throw Error('Unsupported pre-input rejection.');const action=this.state.actions.find(a=>a.id===id&&a.status==='started');if(!action)throw Error('Only an admitted action can be rejected before input.');action.status='confirmed-not-applied';action.endedAt=Date.now();action.rejection=reason;this.save();}
  acknowledge(id,sessionId,success=true){const action=this.state.actions.find(a=>a.id===id&&a.sessionId===sessionId);if(action?.status==='completed'&&!action.delivered){if(success)action.delivered=true;else action.status='uncertain';this.save();}}
  review(id,decision,revision){
   if(!['confirmed-applied','confirmed-not-applied'].includes(decision))throw new Error('Inspect the actual website outcome first.');

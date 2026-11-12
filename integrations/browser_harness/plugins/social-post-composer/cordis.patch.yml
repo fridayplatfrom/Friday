@@ -1,0 +1,3 @@
+- insert:
+    - id: social-post-composer
+      name: '@local/social-post-composer'

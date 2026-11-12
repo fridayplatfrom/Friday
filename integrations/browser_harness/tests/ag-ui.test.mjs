@@ -122,13 +122,16 @@ test('one official client continues a second turn with exact saved history and e
 });
 
 test('output limits and explicit cancellation settle AG-UI truthfully without bypassing native cancellation',async t=>{
- const f=await fixture(t,{scenario:async()=>{await delay(120);}});
+ let finish;const running=new Promise(resolve=>{finish=resolve;});
+ const f=await fixture(t,{scenario:()=>running});
  const input={threadId:'thread',runId:randomUUID(),messages:[f.message],tools:[],context:[],state:{},forwardedProps:{}};
  f.bridge.agui.admit(input);
- const cancel=await fetch(f.url+'/cancel',{method:'POST',headers:{Authorization:'owner','X-Harness-Models':'1'},body:JSON.stringify({threadId:'thread',runId:input.runId})});
- assert.equal(cancel.status,200);assert.equal(f.counts().cancellations,1);
- assert.equal(f.bridge.agui.records('thread',input.runId).at(-1).data.event.outcome.type,'cancelled');
- await delay(150);
+ try{
+  const cancel=await fetch(f.url+'/cancel',{method:'POST',headers:{Authorization:'owner','X-Harness-Models':'1'},body:JSON.stringify({threadId:'thread',runId:input.runId})});
+  assert.equal(cancel.status,200);assert.equal(f.counts().cancellations,1);
+  assert.equal(f.bridge.agui.records('thread',input.runId).at(-1).data.event.outcome.type,'cancelled');
+ }finally{finish();}
+ await new Promise(setImmediate);
  const run=f.bridge.agui.create('thread');f.bridge.agui.maxBytes=200;
  f.bridge.agui.emit('thread',run.runId,{type:'CUSTOM',name:'oversized',value:'x'.repeat(500)});
  assert.equal(f.bridge.agui.records('thread',run.runId).at(-1).data.event.code,'AGUI_OUTPUT_LIMIT');

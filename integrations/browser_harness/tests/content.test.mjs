@@ -6,12 +6,22 @@ import {PROVIDERS} from '../providers.mjs';
 
 const script = readFileSync(new URL('../extension/provider-catalog.js', import.meta.url), 'utf8')+'\n'+readFileSync(new URL('../extension/content.js', import.meta.url), 'utf8');
 const standaloneScript=readFileSync(new URL('../extension/content.js',import.meta.url),'utf8');
+test('a collapsed tracked message uses its unique request marker after full editor verification',async()=>{
+ const f=page({verifySubmission:true,collapsedMarker:true,prompt:'You are answering one request for a local Harness agent. '+ 'Context words '.repeat(500)});
+ const result=await f.run();assert.equal(result.ok,true,result.error);assert.equal(f.counts().clickCount,1);
+ const wrong=page({verifySubmission:true,collapsedMarker:true,wrongSubmission:true,prompt:'You are answering one request for a local Harness agent.'});assert.equal((await wrong.run()).ok,false);assert.equal(wrong.counts().clickCount,1);
+});
+test('model handoffs and connector feedback carry the same tracked submission identity',async()=>{
+ for(const prefix of ['FRIDAY MODEL HANDOFF: DeepSeek -> ChatGPT.','Friday connector feedback — this turn failed']){
+  const f=page({verifySubmission:true,collapsedMarker:true,prompt:prefix+' Context '.repeat(500)});const result=await f.run();assert.equal(result.ok,true,result.error);assert.match(f.composer.value||f.composer.innerText,/^HARNESS_REQUEST_ID /);assert.equal(f.counts().clickCount,1);
+ }
+});
 test('single-line Kimi wire preserves exact JSON without the multiline clipboard path',async()=>{
  const prompt='FRIDAY_REQUEST_ID sample '+JSON.stringify({requestText:'Original\nrequest with "quotes" and \\ paths'});
  const f=page({host:'www.kimi.ai',lexical:true,prompt});
  const result=await f.run();assert.equal(result.ok,true,result.error);assert.equal(f.composer.innerText,prompt);assert.equal(f.counts().inputEvents,0);assert.equal(f.counts().clickCount,1);
 });
-function page({ desktopSubmit=false, frozenTimers=false, emptyOnce=false, replacementDraft="", semanticSend=false, disabledDecoy=false, ambiguousSend=false, capacityNotice=null, clipboardAccepted=true, lexical=false, semanticBusyUntil=0, deepseekGenerationUntil=1500, standalone=false, downloadUpdate = null, draft = '', prompt = 'test prompt', host = 'chatgpt.com', completion = true, cancelAt = Infinity, modern = false, imageMode = false, fencedReply = false, mathReply = false, extraReplyText = '', quotedImageProgress = false, thinkingPlaceholder = false, external = false, resume = null, unrelatedTurn = false, editable = false, linkLayout = false, revertDraft = false, verifySubmission = false, wrongSubmission = false, overflowUI = false, renderedAgent = false, remountedHistory = false, remountComposer = false, accountLoadingUntil = 0, loadingFrom = Infinity, loadingUntil = Infinity, loadingText = "This response couldn’t load" } = {}) {
+function page({ desktopSubmit=false, frozenTimers=false, emptyOnce=false, replacementDraft="", semanticSend=false, disabledDecoy=false, ambiguousSend=false, capacityNotice=null, clipboardAccepted=true, lexical=false, semanticBusyUntil=0, deepseekGenerationUntil=1500, standalone=false, downloadUpdate = null, draft = '', prompt = 'test prompt', host = 'chatgpt.com', completion = true, cancelAt = Infinity, modern = false, imageMode = false, fencedReply = false, mathReply = false, extraReplyText = '', quotedImageProgress = false, thinkingPlaceholder = false, external = false, resume = null, unrelatedTurn = false, editable = false, linkLayout = false, revertDraft = false, verifySubmission = false, wrongSubmission = false, overflowUI = false, renderedAgent = false, collapsedMarker = false, remountedHistory = false, remountComposer = false, accountLoadingUntil = 0, loadingFrom = Infinity, loadingUntil = Infinity, loadingText = "This response couldn’t load" } = {}) {
   const deepseek=host==='chat.deepseek.com';
   const site=Object.keys(PROVIDERS).find(id=>PROVIDERS[id].selectors.hosts.includes(host))||'chatgpt-web';
   const contract=PROVIDERS[site].selectors,ordered=contract.correlation==='ordered-user-message';
@@ -54,7 +64,7 @@ function page({ desktopSubmit=false, frozenTimers=false, emptyOnce=false, replac
     }
     if(selector==='button[aria-label="Open profile menu"][disabled]')return now<accountLoadingUntil?[visible]:[];
     if(selector==='[data-turn-key]'&&resume&&!verifySubmission)return [{getAttribute:()=> 'native-turn',querySelector:()=>({innerText:wrongSubmission?'different request':prompt})}];
-    if(selector==='[data-turn-key]')return verifySubmission&&submitted?[...(remountedHistory?[{getAttribute:()=> 'remounted-old-turn',querySelector:()=>({innerText:'old introduction'})}]:[]),{getAttribute:()=> 'submitted-turn',querySelector:()=>({innerText:wrongSubmission?'old introduction':overflowUI?submittedText+' … Show more':renderedAgent?submittedText.slice(0,500)+' [rendered content shortened]':submittedText,querySelector:()=>overflowUI?{innerText:submittedText}:null})}]:[];
+    if(selector==='[data-turn-key]')return verifySubmission&&submitted?[...(remountedHistory?[{getAttribute:()=> 'remounted-old-turn',querySelector:()=>({innerText:'old introduction'})}]:[]),{getAttribute:()=> 'submitted-turn',querySelector:()=>({innerText:wrongSubmission?'old introduction':collapsedMarker?'You said: '+submittedText.split('\n')[0]+' … Show more':overflowUI?submittedText+' … Show more':renderedAgent?submittedText.slice(0,500)+' [rendered content shortened]':submittedText,querySelector:()=>overflowUI?{innerText:submittedText}:null})}]:[];
     if (imageMode && submitted && selector.includes('generated-image-preview')) return now >= 2000 ? [image] : [];
     if (imageMode && submitted && selector === '[data-talvt-turn-state], article[data-testid^="conversation-turn-"]') return [turn];
     if (quotedImageProgress && submitted && selector === '[data-talvt-turn-state], article[data-testid^="conversation-turn-"]') return [quotedTurn];

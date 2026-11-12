@@ -11,6 +11,42 @@ import {upstreamConnection} from '../workspace-browser-upstream.mjs';
 import {workspaceBrowserProfile} from '../workspace-browser-config.mjs';
 function fixture(t){const root=mkdtempSync(join(tmpdir(),'friday-workspace-'));t.after(()=>rmSync(root,{recursive:true,force:true}));const a=join(root,'a'),b=join(root,'b');mkdirSync(a);mkdirSync(b);return {root,a,b};}
 const call=(directory,id='native-1',tool='browser_click',args={ref:'x'})=>({directory,id,sessionId:'native-session',tool,digest:argumentDigest(args)});
+test('an exact native stale-click rejection permits a fresh call but cannot replay the rejected call ID',async t=>{
+ const {root,a}=fixture(t);const args={target:'f1e10'};
+ const manager=new WorkspaceBrowserManager({root,origins:[],launch:()=>{throw Error('unused');},upstream:async()=>({callTool:async()=>({isError:true,content:[{type:'text',text:'### Error\nError: Ref f1e10 not found in the current page snapshot. Try capturing new snapshot.'}]}),close:async()=>{}})});
+ manager.select(call(a,'stale-click','browser_click',args));const result=await manager.call('browser_click',args);assert.equal(result.isError,true);assert.equal(manager.workspace(a).state.pending().length,0);assert.equal(manager.workspace(a).state.state.actions[0].status,'confirmed-not-applied');
+ await assert.rejects(manager.call('browser_click',args),/not replayed/);manager.release('stale-click');manager.select(call(a,'fresh-call','browser_click',{target:'f2e10'}));assert.equal(manager.lease.id,'fresh-call');
+});
+test('evaluation errors and multi-field failures cannot masquerade as a pre-input click rejection',async t=>{
+ const {clickRejectedBeforeInput}=await import('../workspace-browser-manager.mjs');const error={isError:true,content:[{type:'text',text:'### Error\nError: Ref f1e10 not found in the current page snapshot. Try capturing new snapshot.'}]};
+ assert.equal(clickRejectedBeforeInput('browser_evaluate',{target:'f1e10'},error),false);assert.equal(clickRejectedBeforeInput('browser_fill_form',{target:'f1e10'},error),false);assert.equal(clickRejectedBeforeInput('browser_click',{target:'f1e10'},{...error,content:[...error.content,{type:'text',text:'Other output'}]}),false);
+});
+test('missing tab selection preserves selection, permits recovery, and cannot replay its receipt',async t=>{
+ const {root,a}=fixture(t),args={action:'select',index:8};let calls=0;
+ const manager=new WorkspaceBrowserManager({root,origins:[],upstream:async()=>({callTool:async()=>{calls++;return {isError:true,content:[{type:'text',text:'### Error\nError: Tab 8 not found'}]};},close:async()=>{}})});
+ manager.select(call(a,'missing-tab','browser_tabs',args));assert.equal((await manager.call('browser_tabs',args)).isError,true);
+ const state=manager.workspace(a).state;assert.equal(state.pending().length,0);assert.equal(state.state.activeIndex,0);assert.equal(state.state.actions[0].rejection,'native-tab-not-found');
+ await assert.rejects(manager.call('browser_tabs',args),/not replayed/);assert.equal(calls,1);manager.release('missing-tab');
+ manager.select(call(a,'new-selection','browser_tabs',{action:'select',index:0}));assert.equal(manager.lease.id,'new-selection');await manager.close();
+});
+
+test('tab timeouts, close errors and extra output retain the uncertain-action protection',async()=>{
+ const {tabRejectedBeforeActivation}=await import('../workspace-browser-manager.mjs'),args={action:'select',index:8},error={isError:true,content:[{type:'text',text:'### Error\nError: Tab 8 not found'}]};
+ assert.equal(tabRejectedBeforeActivation('browser_tabs',args,error),true);
+ assert.equal(tabRejectedBeforeActivation('browser_tabs',{...args,action:'close'},error),false);
+ assert.equal(tabRejectedBeforeActivation('browser_tabs',{...args,index:7},error),false);
+ assert.equal(tabRejectedBeforeActivation('browser_tabs',args,{...error,content:[{type:'text',text:'Timeout after activation'}]}),false);
+ assert.equal(tabRejectedBeforeActivation('browser_tabs',args,{...error,content:[...error.content,{type:'text',text:'other output'}]}),false);
+ assert.equal(tabRejectedBeforeActivation('browser_evaluate',args,error),false);
+});
+
+test('missing native Desktop fails before an action receipt and never launches a fallback',async t=>{
+ const {root,a}=fixture(t);let dispatched=0;
+ const manager=new WorkspaceBrowserManager({root,origins:['https://example.com'],nativeDesktop:true,launch:async()=>{throw Error('Desktop offline');},upstream:async()=>{dispatched++;}});
+ manager.select(call(a,'desktop-offline','browser_navigate',{url:'https://example.com'}));
+ await assert.rejects(manager.call('browser_navigate',{url:'https://example.com'}),/Desktop offline/);
+ assert.equal(manager.workspace(a).state.state.actions.length,0);assert.equal(dispatched,0);
+});
 test('encoded sign-out and callback routes are never automatically restored',()=>{
  const origins=['https://example.com'];
  for(const route of ['/%6cogout','/%256cogout','/%5clogout','/logout.php','/signout;session=abc','/oauth2/callback','/logout%00'])assert.equal(restorableTab('https://example.com'+route,origins),null,route);

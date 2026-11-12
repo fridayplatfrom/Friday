@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "Social Post Composer",
+    "description": "Drafts a post below the composer, counts it against X/Twitter and LinkedIn limits, and copies it with share links."
+  },
+  "open": "Compose a social post",
+  "close": "Close the social post composer",
+  "title": "Social post",
+  "placeholder": "Write the post you want to publish…",
+  "clear": "Clear",
+  "copy": "Copy text",
+  "copied": "Copied",
+  "openOn": "Open on",
+  "over": "{n} characters over the {network} limit",
+  "remaining": "{n} left on {network}",
+  "empty": "Nothing to copy yet",
+  "copyFailed": "Copy failed — select the text and copy it manually"
+}

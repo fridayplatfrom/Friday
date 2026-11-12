@@ -1,11 +1,43 @@
 # Friday desktop prototype
 
+## First-time assistant setup
+
+Fresh desktop profiles show the lavender/charcoal connection guide. Choose one
+provider, sign in on its own page if required, and explicitly send a fixed
+text-only connection test. A matching reply verifies message transport; it does
+not certify browser tools, files, image generation or unrestricted website access.
+Finishing saves the provider through Harness's native default-model service for
+new chats. Existing conversations retain their selections.
+
+Existing state or an existing desktop profile skips first-run setup automatically.
+The same guide is the Models management page, opened from the sidebar above
+Settings or View → Models. The chat header no longer repeats provider shortcuts,
+and Settings no longer lists a separate Models navigation row. The existing
+API-model settings remain available through the Models page's Advanced option.
+Management can test a connection, remember each provider's verification, choose
+the default for new chats or disable a connection without signing out.
+The composer retains native per-conversation model switching.
+Skipping and completion survive restart. An
+interrupted test is marked for review and never automatically resent. Provider
+cookies, native tabs, permissions and action receipts are not reset or migrated.
+The guide uses the installed local Harness server; this is not a packaged
+installer or an automatic dependency-installation service.
+
 This is an experimental Electron host for the existing Friday/Harness UI and
 ChatGPT website. It reuses extension/background.js, content.js, transfers.js,
 two-way.js, the native tool loop, permission cards, files and AG-UI backend.
 It does not use a model API or import Chrome cookies.
 
 ## Start
+
+### Default Friday design
+
+Friday uses its lavender home, charcoal work surfaces, rounded panels and provider
+logos by default, in both the web interface and desktop. The shared stylesheet is
+`../friday.css`. Chat, browser/file tabs, permissions and settings retain their
+native implementation. Provider websites retain their appearance and logins.
+Press Ctrl+Shift+F12 (View → Reload appearance) to reload local style edits without
+navigating or resending a task. The old preview launcher starts the same default.
 
 Start the existing Harness server with ../start_harness.cmd. Install this
 folder's dependencies with `npm ci` (Electron 45.3.0), then double-click
@@ -81,3 +113,13 @@ round trip without duplicate execution, and one generated download imported
 with exact bytes. Passing unit tests does not establish those live gates.
 
 This is a runnable prototype, not a signed installer or production release.
+
+The browser/file dock receives about two-thirds of the workspace by default, subject to native minimum widths. Drag the existing divider to adjust both panels. Friday saves the chosen width locally and restores it after refresh or restart; fullscreen and tab contents retain their native behavior. Developers changing layout-preferences.mjs should run npm run build:layout-client from the parent integration folder to update the bundled client.
+
+## Original Harness Browser
+
+The installed ui-sidebar-browser plugin supplies the original Browser guide, address bar, tabs and history. The desktop preload supplies its dshDesktop.browser lease bridge; the Harness view enables webviewTag, and main applies the upstream guest-isolation and ownership checks. No streamed-page component replaces BrowserBody. Workspace partitions are persistent; provider profiles are not migrated or cleared. The Web profile explicitly enables the shipped Browser plugin. In a normal web browser that same plugin uses an iframe, so sites may refuse embedding; Friday Desktop uses native Electron webviews.
+
+The existing browser MCP tools now attach to these retained task webviews through a private, authenticated, loopback CDP adapter. There is no Electron remote-debugging port and no external Chrome fallback. The original Harness permission/execution hook and durable action receipts remain in effect. Each connection is limited to the current conversation and canonical workspace; provider views and the Harness renderer are never targets. Native tab creation, selection and closure go through the original sidebar controller. New task guests opened through links join that scoped connection once their ownership is registered. Closing the MCP connection disconnects automation without closing tabs or clearing cookies. After restart, an explicit agent connection can restore the saved Browser page; no form, prompt or prior tool action is replayed.
+
+Task downloads use the owning workspace's `.friday-browser-artifacts` directory and the existing MCP download result/save-as flow. Arbitrary download directories and redirected artifact directories are rejected; files are never executed automatically. Download events are associated with the exact task guest/frame, rather than exposed across provider profiles. Device/media permissions and other browser-wide commands stay blocked. Provider-generated file downloads retain their existing separate transfer path. A fictional loopback fixture under `/_browser-test/<run>` records raw form/upload/download counts for restart and duplicate-execution acceptance tests.

@@ -61,7 +61,7 @@ if (-not $PrepareOnly) {
         $taskOriginsJson=$taskOrigins|ConvertTo-Json -Compress
         $taskBrowserYaml += "        workspaceBrowser: true`n        demoForm: true`n    - id: harness-playwright`n      name: '@deepseek-ai/dsh-mcp-client'`n      config:`n        serverName: browser`n        transport: stdio`n        command: $taskNode`n        args: [$taskMcpCliJson, '--executable-path', $taskChrome, '--image-responses', 'allow', '--allowed-origins', $taskOriginsJson]`n        failOnStartupError: true`n"
     }
-    $taskYaml = $taskYaml.TrimEnd() + "`n# BEGIN HARNESS BROWSER CONNECTOR`n- insert:`n    - id: harness-browser-provider`n      name: $taskPlugin$taskBrowserYaml`n- id: agent-default-model`n  name: '@deepseek-ai/dsh-agent-default-model'`n  config:`n    provider: browser-web`n    model: chatgpt-web`n# END HARNESS BROWSER CONNECTOR`n"
+    $taskYaml = $taskYaml.TrimEnd() + "`n# BEGIN HARNESS BROWSER CONNECTOR`n- insert:`n    - id: harness-browser-provider`n      name: $taskPlugin$taskBrowserYaml`n- id: ui-sidebar-browser`n  name: '@deepseek-ai/dsh-client-ui-sidebar-browser'`n  disabled: false`n- id: agent-default-model`n  name: '@deepseek-ai/dsh-agent-default-model'`n  config:`n    provider: browser-web`n    model: chatgpt-web`n# END HARNESS BROWSER CONNECTOR`n"
     [System.IO.File]::WriteAllText($taskPatch, $taskYaml, (New-Object System.Text.UTF8Encoding($false)))
     & node (Join-Path $taskSource 'native-question-config.mjs') $taskPatch
     if ($LASTEXITCODE -ne 0) { throw 'Native question configuration failed; restore the saved profile backup.' }

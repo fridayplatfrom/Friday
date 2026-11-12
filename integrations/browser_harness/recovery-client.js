@@ -2,7 +2,7 @@
   // Web-shell branding only. Native package IDs and saved session identities stay intact.
   const brandTitle=()=>{if(typeof document.title!=='string')return;const title=document.title.replace(/DeepSeek\s+Harness/gi,'Friday');if(title!==document.title)document.title=title;};
   brandTitle();if(document.head&&typeof MutationObserver==='function')new MutationObserver(brandTitle).observe(document.head,{subtree:true,childList:true,characterData:true});
-  if(document.head){let icon=document.querySelector('link[rel="icon"]');if(!icon){icon=document.createElement('link');icon.rel='icon';document.head.append(icon);}icon.href='/browser-models/brand/friday.png';icon.type='image/png';}
+  if(document.head){let icons=[...document.querySelectorAll('link[rel~="icon"]')];if(!icons.length){const icon=document.createElement('link');icon.rel='icon';document.head.append(icon);icons=[icon];}for(const icon of icons){icon.href='/browser-models/brand/friday.png';icon.type='image/png';icon.removeAttribute('media');}}
   // Runs outside the native UI plugin lifecycle so a failed reconnect cannot remove it.
   let instance; let pending = false; let banner; let unavailable = false; let reconnectNeeded = false;
   function show(text, reconnect = false) {

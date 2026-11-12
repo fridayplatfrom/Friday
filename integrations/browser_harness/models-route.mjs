@@ -8,7 +8,7 @@ export function modelsHandler(connection, bridge) {
     }
     if(/^(?:127\.0\.0\.1|localhost):\d+$/.test(req.headers.host||''))bridge.harnessOrigin=`${req.socket?.encrypted?'https':'http'}://${req.headers.host}`;
     const url = new URL(req.url, 'http://localhost');
-    if(req.method==='GET'&&['/browser-models/ag-ui-client.mjs','/browser-models/interactions.mjs'].includes(url.pathname)){
+    if(req.method==='GET'&&['/browser-models/ag-ui-client.mjs','/browser-models/interactions.mjs','/browser-models/onboarding-client.mjs','/browser-models/models-navigation.mjs'].includes(url.pathname)){
       const bytes=readFileSync(new URL('./'+url.pathname.split('/').at(-1),import.meta.url));
       res.writeHead(200,{'Content-Type':'text/javascript; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Cross-Origin-Resource-Policy':'same-origin'});return res.end(bytes);
     }

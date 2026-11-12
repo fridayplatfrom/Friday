@@ -1,3 +1,6 @@
+import {DesktopBrowserGuests} from './native-browser-guests.mjs';
+import {startTaskBrowserRelay} from './task-browser-relay.mjs';
+import {realpathSync} from 'node:fs';
 import {app,BrowserWindow,WebContentsView,session,ipcMain,dialog,Menu} from 'electron';
 import fs from 'node:fs';
 import {join,dirname,basename} from 'node:path';
@@ -11,11 +14,19 @@ import {dockBounds} from './dock.mjs';
 import {WebsiteTabManager} from '../extension/tab-manager.js';
 import {RecoveryBudget,recoveryTarget} from './recovery.mjs';
 import {arrangeBackgroundViews,presentedDock} from './background.mjs';
+import {fridayTheme} from './theme.mjs';
+import {FirstRunSetup} from './onboarding.mjs';
+import {setupSession} from '../setup-test.mjs';
+import {ensureBundledBackend} from './backend-runtime.mjs';
 
 const here=dirname(fileURLToPath(import.meta.url)),extension=join(here,'../extension');
-app.setName('Friday Desktop Prototype');
+app.setName('Friday');
 app.commandLine.appendSwitch('disable-renderer-backgrounding');
+// Native task guests must keep rendering for visibility checks and screenshots
+// even while another application covers Friday's window.
+app.commandLine.appendSwitch('disable-backgrounding-occluded-windows');
 const root=join(homedir(),'.dsh/friday-desktop');
+const existingInstallation=fs.existsSync(join(root,'state.json'))||fs.existsSync(join(root,'profile'));
 fs.mkdirSync(root,{recursive:true});app.setPath('userData',join(root,'profile'));
 if(!app.requestSingleInstanceLock())app.exit(0);
 else void start().catch(error=>{dialog.showErrorBox('Friday desktop could not start',String(error.message));app.exit(1);});
@@ -23,6 +34,7 @@ app.on('window-all-closed',()=>app.quit());
 
 async function start(){
  await app.whenReady();
+ const bundledBackend=app.isPackaged?await ensureBundledBackend({resources:process.resourcesPath,executable:process.execPath}):null;
  const state=new DesktopState(join(root,'state.json'));
  state.data.clientId||=randomUUID();state.save();
  const connection=JSON.parse(fs.readFileSync(join(homedir(),'.dsh/browser-connector/connection.json'),'utf8'));
@@ -40,7 +52,7 @@ async function start(){
  const lastTabs={...state.data.lastTabs};
  const workspaceSession=()=>state.data.nativeSessionId||Object.values(state.data.storage.harnessWebsitePairs||{}).find(pair=>pair.tabId===activeId)?.sessionId;
  const shellURL=pathToFileURL(join(here,'shell.html')).href;
- const win=new BrowserWindow({width:1450,height:930,minWidth:1000,minHeight:650,title:'Friday',backgroundColor:'#151515',webPreferences:{preload:join(here,'recovery-preload.cjs'),contextIsolation:true,nodeIntegration:false,sandbox:true}});
+ const win=new BrowserWindow({width:1450,height:930,minWidth:1000,minHeight:650,title:'Friday',icon:join(here,'../assets/friday.png'),backgroundColor:'#202023',webPreferences:{preload:join(here,'recovery-preload.cjs'),contextIsolation:true,nodeIntegration:false,sandbox:true}});
  const recoveryBudget=new RecoveryBudget();let harnessHealthy=true;
  const diagnose=(event,details={})=>{try{const file=join(root,'renderer-health.jsonl');if(fs.existsSync(file)&&fs.statSync(file).size>1048576)fs.renameSync(file,file+'.previous');fs.appendFileSync(file,JSON.stringify({at:new Date().toISOString(),event,...details})+'\n');}catch{}};
  app.on('child-process-gone',(_event,details)=>diagnose('child-process-gone',{type:details.type,reason:details.reason,exitCode:details.exitCode}));
@@ -51,7 +63,8 @@ async function start(){
  const saveTabs=()=>{if(!restoringTabs){state.data.tabs=[...pages.values()].map(p=>({id:p.id,site:p.site,url:providerURL(p.view.webContents.getURL(),p.site)||p.lastChatURL}));state.data.activeId=activeId;state.data.selectedSite=selectedSite;state.save();}publish();};
  let harness;
  let dock=null;let dockQueue=Promise.resolve();let revealedProvider=null;
- const layout=()=>{if(win.isDestroyed())return;const [width,height]=win.getContentSize();arrangeBackgroundViews({contentView:win.contentView,harness,pages:pages.values(),dock:presentedDock(dock,revealedProvider),healthy:harnessHealthy,width,height});};
+ let setupFlow,setupDock=null;
+ const layout=()=>{if(win.isDestroyed())return;const [width,height]=win.getContentSize();arrangeBackgroundViews({contentView:win.contentView,harness,pages:pages.values(),dock:setupFlow?.visible?setupDock:presentedDock(dock,revealedProvider),healthy:harnessHealthy,width,height});};
  const focus=id=>{const p=pages.get(id);if(!p)throw Error('Unknown desktop tab');activeId=id;selectedSite=p.site;lastTabs[p.site]=id;state.data.lastTabs=lastTabs;ensureLoaded(p);const owner=Object.values(state.data.storage.harnessWebsitePairs||{}).find(pair=>pair.tabId===id);if(!restoringTabs){revealedProvider={site:p.site,sessionId:owner?.sessionId||workspaceSession()};harness?.webContents.send('friday-native-focus',revealedProvider);}layout();saveTabs();};
  const fromEvent=event=>{const p=[...pages.values()].find(p=>p.view.webContents===event.sender);if(!p||event.senderFrame!==event.sender.mainFrame||siteForURL(event.senderFrame.url)!==p.site)throw Error('Untrusted Friday page sender');return p;};
  ipcMain.on('friday-native-session',(event,id)=>{if(event.sender!==harness?.webContents||event.senderFrame!==event.sender.mainFrame||!localHarness(event.senderFrame.url)||!/^session-[a-f0-9-]{36}$/i.test(id||''))return;if(state.data.nativeSessionId!==id){state.data.nativeSessionId=id;dock=null;revealedProvider=null;layout();state.save();publish();}});
@@ -159,8 +172,88 @@ async function start(){
  // Desktop owns a separate pairing map and never imports Chrome's tab IDs.
  state.data.storage.enabled??=true;state.data.storage.sites??=['chatgpt-web'];state.save();
  await win.loadFile(join(here,'shell.html'));
- harness=new WebContentsView({webPreferences:{partition:'persist:friday-harness',preload:join(here,'harness-preload.cjs'),contextIsolation:true,nodeIntegration:false,sandbox:true}});win.contentView.addChildView(harness);
- harness.setBackgroundColor('#151515');
+ harness=new WebContentsView({webPreferences:{partition:'persist:friday-harness',preload:join(here,'harness-preload.cjs'),contextIsolation:true,nodeIntegration:false,sandbox:true,webviewTag:true}});win.contentView.addChildView(harness);
+ const browserGuests=new DesktopBrowserGuests(()=> 'http://127.0.0.1:3030');
+ browserGuests.bind(harness.webContents);
+ const nativeBrowserSender=event=>{if(event.sender!==harness.webContents||event.senderFrame!==harness.webContents.mainFrame||!localHarness(event.senderFrame.url))throw Error('Untrusted native Browser sender');};
+ setupFlow=new FirstRunSetup({state,existing:existingInstallation,
+  disable:async site=>{state.data.storage.sites=(state.data.storage.sites||[]).filter(value=>value!==site);state.save();},
+  complete:(site,id)=>bridge('/desktop/setup-default',{clientId:state.data.clientId,site,id}),
+  open:async site=>{
+   const pairedIds=new Set(Object.values(state.data.storage.harnessWebsitePairs||{}).filter(p=>p.sessionId!==setupSession(state.data.clientId,site)).map(p=>p.tabId));
+   let page=[...pages.values()].find(p=>p.site===site&&!pairedIds.has(p.id));
+   if(!page){const tab=await create({url:desktopProviders.find(p=>p.id===site).url,active:false});page=pages.get(tab.id);}
+   ensureLoaded(page);setupFlow.pageId=page.id;setupDock=null;layout();
+  },
+  test:async(site,id)=>{
+   const page=pages.get(setupFlow.pageId);if(!page?.ready)throw Error('The website is still loading. Finish sign-in or verification on the right, then test again. No test message was sent.');
+   const sessionId=setupSession(state.data.clientId,site);
+   const manager=new WebsiteTabManager(globalThis.chrome);
+   await manager.pairExisting({sessionId,site},describe(page));
+   const sites=new Set(state.data.storage.sites||[]);sites.add(site);state.data.storage.sites=[...sites];state.save();
+   let result=await bridge('/desktop/setup-test',{clientId:state.data.clientId,site,id});
+   for(let i=0;result.status==='running'&&i<130;i++){
+    await new Promise(resolve=>setTimeout(resolve,1000));
+    const response=await nativeFetch(`http://127.0.0.1:8766/desktop/setup-test/${id}`,{headers:{Authorization:`Bearer ${connection.token}`,'X-Friday-Client':state.data.clientId},signal:AbortSignal.timeout(10000)});
+    result=await response.json();if(!response.ok)throw Error(result.error);
+   }
+   if(result.status==='running')throw Error('Still awaiting the test reply. Inspect the provider chat before starting another test.');
+   return result;
+  }});
+ ipcMain.handle('friday-onboarding',async(event,input)=>{
+  nativeBrowserSender(event);
+  if(input?.action!=='status'&&(await bridge('/status')).pending)throw Error('Finish the active Friday task first.');
+  const result=await setupFlow.action(input);
+  if(setupFlow.visible&&result.site&&!setupFlow.pageId)await setupFlow.open(result.site);
+  if(!setupFlow.visible)setupDock=null;layout();return result;
+ });
+ ipcMain.on('friday-onboarding-dock',(event,input)=>{
+  nativeBrowserSender(event);if(!setupFlow.visible||!setupFlow.pageId)return;
+  const [width,height]=win.getContentSize();const {x,y,width:w,height:h}=input||{};
+  if(![x,y,w,h].every(Number.isFinite)||x<0||y<0||w<1||h<1||x+w>width+1||y+h>height+1)return;
+  setupDock={visible:true,pageId:setupFlow.pageId,bounds:{x:Math.ceil(x),y:Math.ceil(y),width:Math.max(1,Math.floor(w)-1),height:Math.max(1,Math.floor(h)-1)}};layout();
+ });
+ ipcMain.handle('friday-native-browser-acquire',(event,workspace)=>{nativeBrowserSender(event);return browserGuests.acquire(event.sender,workspace);});
+ ipcMain.handle('friday-native-browser-release',(event,lease)=>{nativeBrowserSender(event);return browserGuests.release(event.sender,lease);});
+ const taskRequests=new Map();
+ ipcMain.on('friday-task-browser-register',(event,input)=>{
+   nativeBrowserSender(event);
+   const lease=[...browserGuests.leases.values()].find(l=>l.owner===event.sender&&l.guest?.id===input?.guestId);
+   if(!lease||typeof input.tabId!=='string'||!/^session-[a-f0-9-]{36}$/i.test(input.sessionId||''))return;
+   if(lease.sessionId&&lease.sessionId!==input.sessionId)return;
+   const changed=lease.sessionId!==input.sessionId||lease.tabId!==input.tabId;
+   lease.sessionId=input.sessionId;lease.tabId=input.tabId;if(changed)browserGuests.notify();
+ });
+ ipcMain.on('friday-task-browser-result',(event,input)=>{nativeBrowserSender(event);const request=taskRequests.get(input?.nonce);if(request){taskRequests.delete(input.nonce);clearTimeout(request.timer);input.ok?request.resolve():request.reject(Error(input.error||'Native Browser request failed.'));}});
+ const nativeTaskRequest=input=>new Promise((resolve,reject)=>{
+   const nonce=randomUUID(),timer=setTimeout(()=>{taskRequests.delete(nonce);reject(Error('Native Browser UI did not respond. No browser action was replayed.'));},15000);
+   taskRequests.set(nonce,{resolve,reject,timer});harness.webContents.send('friday-task-browser',{...input,nonce});
+ });
+ const taskRelay=await startTaskBrowserRelay({guests:browserGuests,file:join(homedir(),'.dsh/browser-connector/desktop-browser-control.json'),connect:async input=>{
+   if(input.sessionId!==state.data.nativeSessionId)throw Error('Select this Friday conversation before controlling its native Browser.');
+   if(typeof input.directory!=='string')throw Error('A workspace directory is required.');
+   const normalize=directory=>{const value=realpathSync(directory);return process.platform==='win32'?value.toLowerCase():value;};
+   const directory=normalize(input.directory),workspace='cwd:'+directory;
+   const matches=()=>[...browserGuests.leases.values()].filter(l=>l.workspace.startsWith('cwd:')&&normalize(l.workspace.slice(4))===directory&&l.sessionId===input.sessionId&&l.guest&&!l.guest.isDestroyed());
+   const open=async options=>{
+     if(state.data.nativeSessionId!==input.sessionId)throw Error('The active Friday conversation changed. No action was replayed.');
+     const previous=new Set(matches().map(l=>l.guest.id));
+     const guestId=options.closeGuestId||options.focusGuestId;
+     if(guestId){const lease=matches().find(l=>l.guest.id===guestId);if(!lease)throw Error('Unknown native task tab.');await nativeTaskRequest({sessionId:input.sessionId,tabId:lease.tabId,action:options.closeGuestId?'close':'focus'});if(options.focusGuestId)lease.guest.focus();return lease;}
+     const existing=!options.fresh&&matches()[0];
+     if(existing){await nativeTaskRequest({sessionId:input.sessionId,tabId:existing.tabId,action:'focus'});return existing;}
+     await nativeTaskRequest({sessionId:input.sessionId,action:'open',fresh:!!options.fresh,url:options.url||'https://example.com/'});
+     for(let i=0;i<150;i++){const lease=matches().find(l=>!previous.has(l.guest.id));if(lease)return lease;await new Promise(resolve=>setTimeout(resolve,100));}
+     throw Error('The native Browser tab has not attached yet. No tool action was replayed.');
+   };
+   const first=await open({});
+   // Use the exact upstream workspace spelling for partition/lease selection.
+   return {workspace:first.workspace,directory,sessionId:input.sessionId,open,validate:()=>{if(state.data.nativeSessionId!==input.sessionId)throw Error('The active Friday conversation changed. Select the task conversation to continue.');}};
+ }});
+ harness.setBackgroundColor('#202023');
+ const theme=fridayTheme({webContents:harness.webContents,
+   css:()=>fs.readFileSync(join(here,'../friday.css'),'utf8'),allowed:localHarness,
+   onError:error=>diagnose('theme-error',{message:String(error.message).slice(0,200)})});
  const interfaceStatus=(message,recovering)=>win.webContents.send('friday-interface-status',{message,recovering});
  const restoreHarness=async()=>{
    if(closing||harness.webContents.isDestroyed())return;
@@ -191,8 +284,14 @@ async function start(){
  const savedTabs=[...state.data.tabs],restoreActive=activeId;for(const tab of savedTabs.filter(t=>providerURL(t.url)))await create({...tab,active:false,lazy:true});
  if(!pages.size)await create();else focus(pages.has(restoreActive)?restoreActive:[...pages.keys()].at(-1));
  restoringTabs=false;layout();saveTabs();
- Menu.setApplicationMenu(null);win.on('resize',layout);layout();publish();
- win.on('close',event=>{if(closing)return;event.preventDefault();void(async()=>{closing=true;try{await bridge('/desktop/release',{clientId:state.data.clientId});for(const profile of profiles.values()){await profile.cookies.flushStore();profile.flushStorageData();}saveTabs();for(const p of pages.values())p.view.webContents.close();harness.webContents.close();app.quit();}catch(error){closing=false;dialog.showMessageBox(win,{type:'info',message:'Finish or cancel the active Friday task before closing.',detail:error.message});}})();});
+ // Refresh appearance without navigating, touching profiles, or resending tasks.
+ Menu.setApplicationMenu(Menu.buildFromTemplate([{label:'View',submenu:[
+   {label:'Models',click:()=>harness.webContents.send('friday-onboarding-show')},
+   {label:'Reload appearance',accelerator:'CommandOrControl+Shift+F12',click:()=>void theme.apply()},
+   {type:'separator'},{role:'togglefullscreen'}
+ ]}]));win.setAutoHideMenuBar(true);win.setMenuBarVisibility(false);
+ win.on('resize',layout);layout();publish();
+ win.on('close',event=>{if(closing)return;event.preventDefault();void(async()=>{closing=true;try{await bridge('/desktop/release',{clientId:state.data.clientId});taskRelay.close();await browserGuests.flush();for(const profile of profiles.values()){await profile.cookies.flushStore();profile.flushStorageData();}saveTabs();await bundledBackend?.close?.();for(const p of pages.values())p.view.webContents.close();harness.webContents.close();app.quit();}catch(error){closing=false;dialog.showMessageBox(win,{type:'info',message:'Finish or cancel the active Friday task before closing.',detail:error.message});}})();});
  app.on('second-instance',()=>{win.show();win.focus();});
  await import('../extension/background.js');
 }

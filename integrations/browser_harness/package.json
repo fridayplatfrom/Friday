@@ -7,7 +7,9 @@
   "scripts": {
     "test": "node --test --test-concurrency=2 tests/*.test.mjs",
     "test:agui": "node --test tests/ag-ui.test.mjs",
-    "test:matrix": "node --test tests/variation-matrix.test.mjs"
+    "test:matrix": "node --test tests/variation-matrix.test.mjs",
+    "test:browser-comparison": "node tests/browser-comparison.mjs",
+    "build:layout-client": "node build-layout-client.mjs"
   },
   "description": "Friday connects Harness to browser model websites without model API keys",
   "dependencies": {

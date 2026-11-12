@@ -21,6 +21,7 @@ const collect = async iterable => { const chunks = []; for await (const chunk of
 
 test('native planning and goal tools retain their schemas and return calls to Harness for execution',async t=>{
  const {bridge,request,poll}=await fixture(t);
+ await poll(); // Establish the simulated connector before admitting its task.
  const tools=[{name:'todo_write',parameters:{type:'object',properties:{todos:{type:'array',items:{type:'object'}}},required:['todos']}},
  {name:'create_goal',parameters:{type:'object',properties:{objective:{type:'string'}},required:['objective']}}];
  const options={sessionId:'native-controls',model:'chatgpt-web',system:'Workspace Write permissions. Harness owns approvals.',tools,

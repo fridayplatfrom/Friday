@@ -11,7 +11,7 @@ export function workspaceBrowserProfile(profile,entry){
  if(document.errors.length)throw new Error('Browser configuration needs review.');
  const node=document.getIn([0,'config','args'],true),values=node?.toJSON();
  if(!Array.isArray(values)||!node.range||!values[0]?.replaceAll('\\','/').match(/\/(?:@playwright\/mcp\/cli\.js|workspace-browser-mcp\.mjs)$/))throw new Error('Unsupported browser configuration.');
- const result=[entry];for(let i=1;i<values.length;i++){if(values[i]==='--isolated')continue;if(!['--executable-path','--allowed-origins','--image-responses'].includes(values[i])||!values[i+1])throw new Error('Custom browser option requires review.');result.push(values[i],values[++i]);}
+ const result=[entry];for(let i=1;i<values.length;i++){if(values[i]==='--isolated')continue;if(!['--executable-path','--allowed-origins','--image-responses','--public-web'].includes(values[i])||!values[i+1])throw new Error('Custom browser option requires review.');result.push(values[i],values[++i]);}
  if(!result.includes('--allowed-origins')||!result.includes('--executable-path'))throw new Error('Retain the existing browser executable and origin policy.');
  block=block.slice(0,node.range[0])+JSON.stringify(result)+block.slice(node.range[1]);
  let next=profile.slice(0,match.index)+block+profile.slice(end);

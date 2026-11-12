@@ -1,20 +1,38 @@
+import {WorkspacePreview,webTarget,checkTaskOrigin} from './workspace-preview.mjs';
 import {WorkspaceBrowserState,workspaceIdentity,argumentDigest,readOnlyBrowserCall,restorableTab} from './workspace-browser-state.mjs';
 import {randomUUID} from 'node:crypto';
 
+// Only the single-target native click resolver's exact rejection proves that
+// input was never dispatched. Never infer this from page text, evaluation errors,
+// multi-field actions, timeouts or truncated logs.
+export function clickRejectedBeforeInput(name,args,result){
+ if(name!=='browser_click'||!result?.isError||!/^f\d+e\d+$/.test(args.target||''))return false;
+ const blocks=result.content||[];if(blocks.length!==1||blocks[0].type!=='text')return false;
+ return String(blocks[0].text).trim()===`### Error\nError: Ref ${args.target} not found in the current page snapshot. Try capturing new snapshot.`;
+}
+
+// Upstream validates the index before bringToFront; no input or activation
+// occurs on this exact rejection. Never infer this from timeouts or page text.
+export function tabRejectedBeforeActivation(name,args,result){
+ if(name!=='browser_tabs'||args.action!=='select'||!Number.isInteger(args.index)||args.index<0||!result?.isError)return false;
+ const blocks=result.content||[];
+ return blocks.length===1&&blocks[0].type==='text'&&String(blocks[0].text).trim()===`### Error\nError: Tab ${args.index} not found`;
+}
+
 export class WorkspaceBrowserManager{
- constructor({root,origins,launch,upstream,maxOpen=2}){Object.assign(this,{root,origins,launch,upstream,maxOpen});this.workspaces=new Map();this.lease=null;this.running=false;this.closing=false;}
- workspace(directory){const identity=workspaceIdentity(directory);if(!this.workspaces.has(identity.key))this.workspaces.set(identity.key,{state:new WorkspaceBrowserState(this.root,identity),context:null,lastUsed:0});return this.workspaces.get(identity.key);}
- async context(workspace){
+ constructor({root,origins,launch,upstream,maxOpen=2,nativeDesktop=false}){Object.assign(this,{root,origins,launch,upstream,maxOpen,nativeDesktop});this.workspaces=new Map();this.lease=null;this.running=false;this.closing=false;}
+ workspace(directory){const identity=workspaceIdentity(directory);if(!this.workspaces.has(identity.key))this.workspaces.set(identity.key,{state:new WorkspaceBrowserState(this.root,identity),context:null,lastUsed:0,preview:new WorkspacePreview(identity.directory)});return this.workspaces.get(identity.key);}
+ async context(workspace,scope=this.lease){
   workspace.lastUsed=Date.now();if(workspace.context)return workspace.proxy;
   const open=[...this.workspaces.values()].filter(w=>w.context&&w!==workspace).sort((a,b)=>a.lastUsed-b.lastUsed);
   while(open.length>=this.maxOpen)await this.closeWorkspace(open.shift());
-  const context=await this.launch(workspace.state.profile);workspace.context=context;
+  const context=await this.launch(workspace.state.profile,workspace,scope);workspace.context=context;workspace.nativeSession=scope?.sessionId;
   const save=()=>{if(workspace.closing||workspace.restoring||workspace.context!==context)return;const tabs=context.pages().map(page=>restorableTab(page.url(),this.origins)).filter(Boolean);if(tabs.length)workspace.state.tabs(tabs,workspace.state.state.activeIndex);};
   const watch=page=>{page.on('framenavigated',()=>{clearTimeout(workspace.timer);workspace.timer=setTimeout(save,150);});page.on('close',()=>{clearTimeout(workspace.timer);workspace.timer=setTimeout(save,150);});};
   context.on('page',watch);context.on('close',()=>{clearTimeout(workspace.timer);workspace.context=null;const client=workspace.client;workspace.client=null;void client?.close().catch(()=>{});});context.pages().forEach(watch);
   workspace.restoring=true;
   try{
-   const saved=workspace.state.state.tabs.filter(url=>restorableTab(url,this.origins)===url);
+   const saved=this.nativeDesktop?[]:workspace.state.state.tabs.filter(url=>restorableTab(url,this.origins)===url);
    const available=context.pages().slice();for(const url of saved){let page=available.find(p=>p.url()===url);if(page){available.splice(available.indexOf(page),1);continue;}page=await context.newPage();try{await page.goto(url,{waitUntil:'domcontentloaded',timeout:15000});}catch{/* keep saved URL; never resubmit a form */}}
    if(saved.length){for(const page of context.pages())if(page.url()==='about:blank')await page.close();await context.pages()[workspace.state.state.activeIndex]?.bringToFront();}
   }finally{workspace.restoring=false;}
@@ -48,17 +66,28 @@ export class WorkspaceBrowserManager{
   if(this.running)throw new Error('Browser execution is already active.');
   const workspace=lease.workspace,write=!readOnlyBrowserCall(name,args);let begun=false;this.running=true;
   try{
-   signal?.throwIfAborted();if(write){workspace.state.begin(lease);begun=true;}
+   signal?.throwIfAborted();
+   let dispatchArgs=args;
+   if((name==='browser_navigate'||name==='browser_tabs'&&args.action==='new')&&args.url){
+    const target=name==='browser_tabs'&&args.url==='about:blank'?'about:blank':args.url.startsWith('file:')?await workspace.preview.url(args.url):checkTaskOrigin(webTarget(args.url),this.origins);
+    dispatchArgs={...args,url:target};
+   }
+   if(this.nativeDesktop&&workspace.context&&workspace.nativeSession!==lease.sessionId)await this.closeWorkspace(workspace);
+   // Establish ownership before admitting an action. A missing Desktop/listener
+   // cannot have executed a tool and must not create an uncertain write receipt.
+   if(this.nativeDesktop){if(write)workspace.state.checkBegin(lease);await this.context(workspace);}
+   if(write){workspace.state.begin(lease);begun=true;}
    if(!workspace.client)workspace.client=await this.upstream(()=>this.context(workspace),workspace.state.state.directory);
-   const result=await workspace.client.callTool({name,arguments:args},undefined,{signal,timeout:300000});
+   const result=await workspace.client.callTool({name,arguments:dispatchArgs},undefined,{signal,timeout:300000});
    if(name==='browser_close'&&!result.isError)await this.closeWorkspace(workspace);
-   if(write)workspace.state.settle(lease.id,!result.isError&&!signal?.aborted);
-   if(name==='browser_tabs'&&args.action==='select'&&Number.isInteger(args.index))workspace.state.state.activeIndex=args.index;
+   if(write){if(!signal?.aborted&&clickRejectedBeforeInput(name,args,result))workspace.state.rejectBeforeInput(lease.id);else if(!signal?.aborted&&tabRejectedBeforeActivation(name,args,result))workspace.state.rejectBeforeInput(lease.id,'native-tab-not-found');else workspace.state.settle(lease.id,!result.isError&&!signal?.aborted);}
+   if(!result.isError&&name==='browser_tabs'&&args.action==='select'&&Number.isInteger(args.index))workspace.state.state.activeIndex=args.index;
+   if(name==='browser_tabs'&&args.action==='new'&&workspace.context)workspace.state.state.activeIndex=workspace.context.pages().length-1;
    if(name!=='browser_close')this.saveTabs(workspace);
    const status=write?workspace.state.state.actions.find(action=>action.id===lease.id)?.status:'read-only';
    return {...result,...(signal?.aborted?{isError:true}:{}),content:[...(result.content||[]),{type:'text',text:'Friday workspace browser receipt: '+JSON.stringify({workspace:workspace.state.state.key,actionId:lease.id,status,pending:workspace.state.pending().length})}]};
   }catch(error){if(begun)workspace.state.settle(lease.id,false);throw error;}
   finally{this.running=false;if(lease.releaseRequested&&this.lease===lease)this.lease=null;}
  }
- async close(){this.closing=true;for(const w of this.workspaces.values()){await this.closeWorkspace(w);await w.client?.close().catch(()=>{});}}
+ async close(){this.closing=true;for(const w of this.workspaces.values()){await this.closeWorkspace(w);await w.client?.close().catch(()=>{});await w.preview?.close();}}
 }

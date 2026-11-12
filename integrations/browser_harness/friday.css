@@ -1,0 +1,245 @@
+/* Explicit Light remains a native appearance choice; System and Dark use Friday. */
+@scope (html:not([data-ds-theme-source="light"]) body) {
+/* Friday default design. Native layout and controls continue to own behavior. */
+:scope {
+  color-scheme: dark;
+  --dsw-alias-bg-base: #202023 !important;
+  --dsw-alias-bg-layer-1: #080809 !important;
+  --dsw-alias-bg-layer-2: #252527 !important;
+  --dsw-alias-bg-layer-3: #3b3b3e !important;
+  --dsw-specific-sidebar-fill: #101012 !important;
+  --dsw-specific-input-major: #303032 !important;
+  --dsw-specific-login-input: #18181a !important;
+  --dsw-specific-bubble: #bca9ec !important;
+  --dsw-specific-bubble-highlight: #d0bff5 !important;
+  --dsw-specific-selector: #353537 !important;
+  --dsw-specific-sidebar-nav-item-active: #303032 !important;
+  --dsw-specific-sidebar-nav-item-active-accent: #303032 !important;
+  --dsw-alias-label-primary: #f5f3f8 !important;
+  --dsw-alias-label-primary-bluish: #f5f3f8 !important;
+  --dsw-alias-label-primary-dimmed: #ddd9e4 !important;
+  --dsw-alias-label-secondary: #bcb8c3 !important;
+  --dsw-alias-label-tertiary: #a5a2aa !important;
+  --dsw-alias-label-caption: #a5a2aa !important;
+  --dsw-alias-label-primary-foreground: #20172c !important;
+  --dsw-alias-brand-primary: #bca9ec !important;
+  --dsw-alias-brand-primary-new-colorprimary-new-color: #bca9ec !important;
+  --dsw-alias-onboarding-accent: #bca9ec !important;
+  --dsw-alias-link: #c8b3f4 !important;
+  --dsw-alias-button-primary-fill: #bca9ec !important;
+  --dsw-alias-button-primary-hover: #d3c1fa !important;
+  --dsw-alias-button-primary-dimmed: #414044 !important;
+  --dsw-alias-button-info-fill: #bca9ec !important;
+  --dsw-alias-button-info-hover: #d3c1fa !important;
+  --dsw-alias-button-elevated-fill: #353537 !important;
+  --dsw-alias-button-floating-fill: #303032 !important;
+  --dsw-alias-button-floating-hover: #353537 !important;
+  --dsw-alias-border-l1: #ffffff0c !important;
+  --dsw-alias-border-l2: #bca9ec24 !important;
+  --dsw-alias-border-l2-darkmode-thin: #bca9ec1a !important;
+  --dsw-alias-border-l4: #bca9ec42 !important;
+  --dsw-alias-border-primary: #bca9ec24 !important;
+  --dsw-alias-settings-card-fill: #080809 !important;
+  --dsw-alias-bg-module-platform: #101012 !important;
+  --dsw-alias-settings-card-stroke: #bca9ec24 !important;
+  --dsw-alias-markdown-code-block: #101012 !important;
+  --dsw-alias-markdown-code-block-banner: #18181a !important;
+  --dsw-alias-markdown-inline-code: #3b3b3e !important;
+  --dsw-alias-menu-group-header-fill: #303032 !important;
+  --dsw-specific-menu: #303032f5 !important;
+  --dsw-alias-menu-icon: #ddd9e4 !important;
+  --dsw-alias-tooltip-bg: #353537 !important;
+  --dsw-alias-toast-bg: #353537 !important;
+  --dsw-alias-interactive-bg-hover: #bca9ec12 !important;
+  --dsw-alias-interactive-bg-hover-solid: #3b3b3e !important;
+  --dsw-alias-interactive-bg-active: #bca9ec24 !important;
+  --dsw-alias-bg-document-selection: #bca9ec40 !important;
+  --dsw-alias-scrollbar-bg-l1: #50465d !important;
+  --dsw-alias-scrollbar-bg-l2: #746383 !important;
+  background: #202023;
+  color: #f5f3f8;
+}
+/* Pin cosmetic selectors to inspected native components, never to behavior. */
+.GRgSLq_card {
+  background: #303032 !important;
+  border: 1px solid #bca9ec35;
+  border-radius: 22px;
+  box-shadow: 0 8px 28px #00000018;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+.GRgSLq_card:focus-within { border-color: #bca9ec85; box-shadow: 0 0 0 3px #bca9ec0c; }
+.LOmM4q_bubble { color: #20172c !important; border-radius: 20px !important; }
+.LOmM4q_bubble a { color: #392252 !important; }
+.LOmM4q_bubble [class*="time"] { color: #51405f !important; }
+.GRgSLq_primary:not(:disabled) { background: #bca9ec !important; color: #20172c !important; }
+.GRgSLq_primary:disabled { background: #414044 !important; color: #a5a2aa !important; }
+.an3WzG_tabActive { color: #c8b3f4 !important; border-color: #bca9ec !important; }
+.an3WzG_header { background: #202023 !important; }
+.hbm-friday-mark { color: #bca9ec; }
+.hbm-header-tools { color: #ddd9e4; }
+.hbm-header-activity { border-color: #bca9ec35 !important; background: #303032 !important; }
+.hbm-interaction { background: #080809 !important; border-color: #ffffff18 !important; border-radius: 18px !important; }
+.hbm-progress { accent-color: #bca9ec; }
+[role="tab"][aria-selected="true"] { color: #dbc8ff; }
+button:focus-visible, [role="tab"]:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid #bca9ec; outline-offset: 3px;
+}
+::selection { background: #bca9ec55; }
+@media (prefers-reduced-motion: reduce) { .GRgSLq_card { transition: none; } }
+
+/* Grey-to-purple frame from the reference, surrounding solid working surfaces.
+   Native flex sizing, dividers and provider bounds remain owned by Harness. */
+.mP3x-q_frame {
+  box-sizing: border-box !important;
+  background: linear-gradient(155deg, #505052 0%, #46424d 45%, #72558e 100%) !important;
+}
+.mP3x-q_frame::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 30;
+  border: 5px solid transparent;
+  border-image: linear-gradient(155deg, #505052, #46424d 45%, #72558e) 1;
+}
+.mP3x-q_sidebarCol {
+  background: #101012 !important;
+  border-radius: 18px !important;
+  margin: 6px 4px;
+}
+.mP3x-q_centerCol {
+  background: #202023 !important;
+  border-radius: 20px !important;
+  overflow: hidden;
+  box-shadow: 0 5px 18px #0002;
+  margin: 6px 4px;
+}
+.mP3x-q_rightbarCol {
+  background: transparent !important;
+}
+.acoR2W_panel {
+  background: transparent !important;
+  border: 6px solid transparent !important;
+  box-sizing: border-box !important;
+  border-radius: 24px !important;
+}
+.acoR2W_panelBody { border-radius: 18px !important; }
+/* Harness keeps the dock mounted while collapsed. Its wrapper must never
+   paint over the full-width home, even after a theme update or animation. */
+.acoR2W_panel:not([data-sidebar-right-open]),
+.acoR2W_panel:not([data-sidebar-right-open]) .acoR2W_panelBody {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.an3WzG_header { background: #202023 !important; }
+.an3WzG_tabActive::after { background: #bca9ec !important; }
+.GRgSLq_card { border-color: #ffffff18 !important; border-radius: 22px !important; }
+.GRgSLq_card:focus-within { border-color: #bca9ec85 !important; }
+.hbm-header-activity { background: #101012 !important; }
+/* Lavender is reserved for the selected action, not every message or button. */
+.hbm-interaction:has([role="status"]) > strong { color: #c8b3f4; }
+/* Native review card: lavender action surface with an inset black command. */
+.Zf6DNq_card {
+  --dsw-alias-label-primary: #20172c !important;
+  --dsw-alias-label-secondary: #4b3a5d !important;
+  background: #bca9ec !important;
+  color: #20172c !important;
+  border-radius: 18px !important;
+}
+.Zf6DNq_command { background: #101012 !important; color: #f5f3f8 !important; border-radius: 12px !important; }
+.ZG377q_card, .hKdVjq_ioCard, .cr4P6W_ioCard { background: #080809 !important; border-color: #ffffff18 !important; }
+@media (max-width: 1050px) { .mP3x-q_frame::after { border-width: 3px; } }
+
+/* Home only. Conversations keep their solid charcoal reading surface. */
+.an3WzG_root[data-phase="hero"] {
+  background: linear-gradient(170deg, #505052 0%, #5d526c 35%, #8562a6 70%, #a16ddd 100%) !important;
+}
+.an3WzG_root[data-phase="hero"] .an3WzG_header { background: transparent !important; }
+.an3WzG_root[data-phase="hero"] .GRgSLq_card {
+  background: #202023 !important;
+  border-color: #ffffff24 !important;
+  box-shadow: 0 12px 40px #20172c30;
+}
+.an3WzG_root[data-phase="hero"] .an3WzG_heroWorkspaceRow {
+  color: #fff !important;
+  --dsw-alias-label-secondary: #f5efff !important;
+}
+
+/* The rail is inset; center its controls in the available column, not the
+   original full-width strip. Expanded navigation keeps its native layout. */
+.wtg9ga_root.wtg9ga_collapsed { width: 100% !important; max-width: 100% !important; box-sizing: border-box; }
+.wtg9ga_collapsed .wtg9ga_logoRow { padding-inline: 0 !important; justify-content: center !important; }
+.mP3x-q_sidebarCol:has(.wtg9ga_collapsed) button {
+  box-sizing: border-box;
+  width: 40px !important;
+  max-width: 100% !important;
+  margin-inline: auto !important;
+  padding-inline: 0 !important;
+  justify-content: center !important;
+}
+.wtg9ga_collapsed .wtg9ga_panelList { align-items: center !important; }
+.wtg9ga_collapsed .wtg9ga_moreAnchor { display: flex; justify-content: center; }
+.GAkraW_root.GAkraW_rail { width: 100% !important; max-width: 100% !important; padding-inline: 0 !important; }
+.GAkraW_rail .GAkraW_search { width: 40px !important; max-width: 100%; margin-inline: auto !important; }
+.an3WzG_root[data-phase="hero"] .hbm-friday-logo {
+  width: min(180px, 44vw) !important;
+  height: 60px !important;
+  object-fit: cover;
+}
+
+/* Keep Harness's accessible toggle and its real open/close action. */
+.wtg9ga_railMark, .wtg9ga_brandMark { display:none !important; }
+.wtg9ga_toggle .wtg9ga_panelIcon { display:inline-flex !important; opacity:1 !important; }
+.wtg9ga_root.wtg9ga_collapsed { padding-inline:0 !important; }
+.wtg9ga_collapsed .wtg9ga_logoRow { width:100%; }
+.wtg9ga_collapsed .wtg9ga_iconButton,
+.wtg9ga_collapsed .wtg9ga_panelRow,
+.GAkraW_rail .GAkraW_search { align-self:center; flex-shrink:0; }
+.wtg9ga_collapsed .wtg9ga_regionArea { align-items:center; width:100%; }
+.wtg9ga_collapsed .wtg9ga_newSession { margin-inline:auto !important; }
+.wtg9ga_collapsed .wtg9ga_toggle { background:transparent !important; }
+.wtg9ga_toggle:hover { background:var(--dsw-alias-interactive-bg-hover) !important; }
+.hbm-provider-icon { width:18px; height:18px; flex:none; vertical-align:middle; }
+
+/* Shared control geometry; menus/settings inherit the same global tokens. */
+[role="dialog"], [role="menu"] { border-radius:18px !important; }
+[role="dialog"] input:not([type="checkbox"]):not([type="radio"]),
+[role="dialog"] select, [role="dialog"] textarea { border-radius:10px; }
+[role="menuitem"], [role="option"], .hbm-provider button { border-radius:10px; }
+.hbm-list { background:#101012; border-color:#bca9ec24; border-radius:18px; }
+.hbm-provider { padding:16px 18px; }
+.hbm-identity svg { width:22px; height:22px; }
+.hbm-tag { border-color:#bca9ec35; border-radius:6px; }
+
+/* Rounded outline navigation marks; native buttons and names own interaction. */
+.wtg9ga_toggle svg { width:18px !important; height:18px !important; flex:none; background:currentColor; mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%223%22%20y%3D%224%22%20width%3D%2218%22%20height%3D%2216%22%20rx%3D%223%22%2F%3E%3Cpath%20d%3D%22M9%204v16m4-11%203%203-3%203%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat; }
+.wtg9ga_toggle svg > * { visibility:hidden; }
+.wtg9ga_newSession svg { width:18px !important; height:18px !important; flex:none; background:currentColor; mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M13%204H6a3%203%200%200%200-3%203v11a3%203%200%200%200%203%203h11a3%203%200%200%200%203-3v-7M16%203l5%205M9%2015l1-5%208-8%205%205-8%208-6%201Z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat; }
+.wtg9ga_newSession svg > * { visibility:hidden; }
+.wtg9ga_panelRow[aria-label="Plugins"] svg { width:18px !important; height:18px !important; flex:none; background:currentColor; mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M8%203h8v5h5v8h-5v5H8v-5H3V8h5V3Z%22%2F%3E%3Cpath%20d%3D%22M9%209h6v6H9z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat; }
+.wtg9ga_panelRow[aria-label="Plugins"] svg > * { visibility:hidden; }
+.wtg9ga_panelRow[aria-label="Automation tasks"] svg { width:18px !important; height:18px !important; flex:none; background:currentColor; mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M20%207a9%209%200%201%200%201%208M20%203v5h-5M12%207v5l3%202%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat; }
+.wtg9ga_panelRow[aria-label="Automation tasks"] svg > * { visibility:hidden; }
+.wtg9ga_panelRow[aria-label="More"] svg { width:18px !important; height:18px !important; flex:none; background:currentColor; mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%223%22%20y%3D%223%22%20width%3D%227%22%20height%3D%227%22%20rx%3D%222%22%2F%3E%3Crect%20x%3D%2214%22%20y%3D%223%22%20width%3D%227%22%20height%3D%227%22%20rx%3D%222%22%2F%3E%3Crect%20x%3D%223%22%20y%3D%2214%22%20width%3D%227%22%20height%3D%227%22%20rx%3D%222%22%2F%3E%3Cpath%20d%3D%22M14%2017h7m-3.5-3.5v7%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat; }
+.wtg9ga_panelRow[aria-label="More"] svg > * { visibility:hidden; }
+.mP3x-q_sidebarCol button[aria-label="Add workspace"] svg { width:18px !important; height:18px !important; flex:none; background:currentColor; mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M3%208V6a2%202%200%200%201%202-2h5l2%203h7a2%202%200%200%201%202%202v10a2%202%200%200%201-2%202H5a2%202%200%200%201-2-2V8Zm6%206h6m-3-3v6%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat; }
+.mP3x-q_sidebarCol button[aria-label="Add workspace"] svg > * { visibility:hidden; }
+.mP3x-q_sidebarCol button[aria-label="Search sessions"] svg { width:18px !important; height:18px !important; flex:none; background:currentColor; mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%2210.5%22%20cy%3D%2210.5%22%20r%3D%227%22%2F%3E%3Cpath%20d%3D%22m16%2016%205%205%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat; }
+.mP3x-q_sidebarCol button[aria-label="Search sessions"] svg > * { visibility:hidden; }
+.mP3x-q_sidebarCol button[aria-label="Settings"] svg { width:18px !important; height:18px !important; flex:none; background:currentColor; mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M4%206h16M4%2012h16M4%2018h16%22%2F%3E%3Crect%20x%3D%227%22%20y%3D%223%22%20width%3D%224%22%20height%3D%226%22%20rx%3D%221.5%22%20fill%3D%22black%22%2F%3E%3Crect%20x%3D%2214%22%20y%3D%229%22%20width%3D%224%22%20height%3D%226%22%20rx%3D%221.5%22%20fill%3D%22black%22%2F%3E%3Crect%20x%3D%227%22%20y%3D%2215%22%20width%3D%224%22%20height%3D%226%22%20rx%3D%221.5%22%20fill%3D%22black%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat; }
+.mP3x-q_sidebarCol button[aria-label="Settings"] svg > * { visibility:hidden; }
+
+/* Branding only: do not hide failed boot diagnostics or change boot completion. */
+[data-dsh-boot] { background:linear-gradient(165deg,#505052 0%,#5d526c 45%,#8562a6 80%,#a16ddd 100%) !important; }
+[data-dsh-boot] [class*="_wordmark_"] { font-size:0 !important; width:180px; height:60px; background:url('/browser-models/brand/friday.png') center/cover no-repeat; }
+[data-dsh-boot] [class*="_hint_"] { display:none !important; }
+[data-dsh-boot-spinner] { border-color:#ffffff25 !important; color:#dbc8ff; }
+[data-dsh-boot] [class*="_failed_"] { max-width:min(640px,85vw); padding:20px; border-radius:18px; background:#202023; color:#f5f3f8; }
+
+/* Native dock tabs, menus and toolbars share the same quiet hierarchy. */
+[data-dockkit-host="dock"] [role="tab"] { border-radius:10px !important; color:var(--dsw-alias-label-secondary); }
+[data-dockkit-host="dock"] [role="tab"][aria-selected="true"] { background:#bca9ec1f !important; color:#dbc8ff !important; box-shadow:inset 0 0 0 1px #bca9ec25; }
+[data-dockkit-host="dock"] [role="tab"]:hover { background:#bca9ec12; }
+[data-dockkit-host="dock"] [role="tablist"] { gap:4px; }
+[role="dialog"] button[class*="_button_"], [role="menu"] button { border-radius:10px; }
+[role="menu"] { box-shadow:0 12px 32px #0004; border:1px solid #bca9ec24; }
+.hbm-header-tools button, .hbm-header-tools summary { border-radius:9px; }
+.hbm-header-tools svg { flex-shrink:0; }
+
+}

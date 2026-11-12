@@ -1,3 +1,4 @@
+import {fridayThemeScript} from './theme.mjs';
 import { readFileSync } from 'node:fs';
 import { homedir } from 'node:os';
 import { join } from 'node:path';
@@ -5,6 +6,7 @@ import { BrowserBridge } from './bridge.mjs';
 import { SITES, buildPrompt, nativeImagePrompt, ReplyDecoder, HARNESS_INTRODUCTION, INTRODUCTION_ACK, INTRODUCTION_VERSION } from './protocol.mjs';
 import { DemoFormServer } from './demo-form.mjs';
 import { BrowserDriver } from './browser-driver.mjs';
+// Retain the native Browser tab; agent browser tools remain a separate provider.
 import { modelsHandler } from './models-route.mjs';
 import { prepareContext } from './context.mjs';
 import { localSessionTitle } from './session-title.mjs';
@@ -209,10 +211,15 @@ export async function apply(ctx, config = {}) {
     downloadDirectory:config.downloadDirectory,
     stateDirectory: join(homedir(), '.dsh', 'browser-connector', 'sessions') }).start();
   ctx.on('dispose', () => bridge.close());
+  ctx.inject(['agentDefaultModel'],scope=>scope.effect(()=>{
+    bridge.configureSetupDefault=site=>scope.agentDefaultModel.saveSelection({...scope.agentDefaultModel.currentSelection(),provider:PROVIDER,model:site});
+    return()=>{bridge.configureSetupDefault=null;};
+  }));
   if(config.workspaceBrowser){const {browserControl}=await import('./workspace-browser-control.mjs');bridge.workspaceBrowser=async(action,input)=>{const agent=bridge.resolveAgent?.(input.sessionId),directory=agent?.session?.header?.cwd;if(!directory)throw new Error('Open the native workspace conversation first.');return browserControl(action,{...input,directory});};}
   ctx.inject(['webServer', 'connection'], scope => {
-    scope.on('webserver/index-inject', table => table.push({ kind: 'script', placement: 'body-end',
-      text: readFileSync(new URL('./recovery-client.js', import.meta.url), 'utf8') }));
+    scope.on('webserver/index-inject', table => table.push(
+      {kind:'script',placement:'head',text:fridayThemeScript()},
+      {kind:'script',placement:'body-end',text:readFileSync(new URL('./recovery-client.js',import.meta.url),'utf8')}));
     scope.effect(() => scope.webServer.register({ kind: 'prefix', path: '/browser-models',
       handler: modelsHandler(scope.connection, bridge) }));
   });

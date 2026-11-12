@@ -26,7 +26,7 @@ export function workspaceControlServer(manager,token){
    if(req.url==='/focus')return reply(200,await manager.inspect(workspace,{tabId:input.tabId,focus:true}));
    if(req.url==='/acknowledge'){workspace.state.acknowledge(input.id,input.sessionId,input.success!==false);return reply(200,{ok:true});}
    if(manager.running||manager.lease)throw new Error('A native browser action is active.');
-   if(req.url==='/open'){manager.running=true;try{await manager.context(workspace);return reply(200,workspace.state.summary());}finally{manager.running=false;}}
+   if(req.url==='/open'){manager.running=true;try{if(manager.nativeDesktop&&workspace.context&&workspace.nativeSession!==input.sessionId)await manager.closeWorkspace(workspace);await manager.context(workspace,{sessionId:input.sessionId});return reply(200,workspace.state.summary());}finally{manager.running=false;}}
    workspace.state.review(input.id,input.decision,input.revision);return reply(200,workspace.state.summary());
   }catch(error){reply(409,{error:error.message});}
  });
